@@ -1,1 +1,2 @@
 # Nasjonal-arkitektur v/Digdir
+Her kommer metamodell og kapabilitetsbasert digital arkitektur som gir struktur for utforming av felles løsninger og komponenter. Målet er at dette skal føre til økt deling, gjenbruk og bedre samhandling på tvers av forvaltningsorganene.
