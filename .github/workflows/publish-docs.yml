@@ -32,5 +32,10 @@ jobs:
           cp data/nasjonal-arkitektur.yaml docs/
           cp "model/Nasjonal Arkitektur kapabilitetsmodell-2026-05-20.archimate" "docs/Nasjonal Arkitektur kapabilitetsmodell.archimate"
           
+      - name: Configure Git Credentials
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force
