@@ -16,12 +16,29 @@ def generate_markdown(yaml_file, docs_dir):
         
     # Create docs dir if not exists
     os.makedirs(docs_dir, exist_ok=True)
-    
+    # Read README.md if it exists
+    readme_content = ""
+    try:
+        with open('README.md', 'r', encoding='utf-8') as f:
+            readme_content = f.read()
+    except FileNotFoundError:
+        pass
+
     # Generate index.md
     with open(os.path.join(docs_dir, 'index.md'), 'w', encoding='utf-8') as f:
-        f.write(f"# {data.get('model', {}).get('name', 'Nasjonal Arkitektur')}\n\n")
-        f.write("Velkommen til dokumentasjonen for Nasjonal Arkitektur.\n\n")
-        f.write("## Innhold\n")
+        if readme_content:
+            f.write(readme_content + "\n\n")
+        else:
+            f.write(f"# {data.get('model', {}).get('name', 'Nasjonal Arkitektur')}\n\n")
+            f.write("Velkommen til dokumentasjonen for Nasjonal Arkitektur.\n\n")
+            
+        f.write("## Last ned filer\n\n")
+        f.write("Her kan du laste ned selve arkitekturmodellen i ulike formater:\n\n")
+        f.write("- **[ArchiMate-fil](Nasjonal%20Arkitektur%20kapabilitetsmodell.archimate)**: Originalmodellen. Kan åpnes i [Archi](https://www.archimatetool.com/) eller andre verktøy som støtter ArchiMate.\n")
+        f.write("- **[YAML-fil](nasjonal-arkitektur.yaml)**: En strukturert data-representasjon av modellen, ypperlig for analyse, maskinell lesing og KI-agenter.\n\n")
+
+        f.write("## Utforsk modellen\n\n")
+        f.write("Innholdet i modellen er sortert etter følgende elementtyper:\n\n")
         for el_type in sorted(by_type.keys()):
             f.write(f"- [{el_type}]({el_type}.md)\n")
             
