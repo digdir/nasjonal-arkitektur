@@ -2,7 +2,7 @@ site_name: Nasjonal Arkitektur
 site_description: Dokumentasjon generert fra ArchiMate-modell
 theme:
   name: material
-  language: no
+  language: 'no'
   palette:
     primary: indigo
     accent: indigo
