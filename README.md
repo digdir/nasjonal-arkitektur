@@ -2,14 +2,14 @@
 
 Her kommer metamodell og kapabilitetsbasert digital arkitektur som gir struktur for utforming av felles løsninger og komponenter. Målet er at dette skal føre til økt deling, gjenbruk og bedre samhandling på tvers av forvaltningsorganene.
 
-** Nasjonal arkitektur kapabilitetskart **
+**Nasjonal arkitektur kapabilitetskart**
 
 - Modellert i Archimate, representert i .archimate format
 - 3 nivåer av kapabiliteter inkludert definisjon og dokumentasjon (dokumentasjon er work-in-progress)
 - representert i YAML (for bruk til analyse etc)
 - Python script for konvertering fra .archimate til .yaml
 
-** Nasjonal arkitektur modell **
+**Nasjonal arkitektur modell**
 
 - Modellert i Archimate
 - relasjoner til overordnete arkitekturprinsipper for offentlig sektor
