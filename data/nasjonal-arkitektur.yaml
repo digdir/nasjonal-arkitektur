@@ -3036,6 +3036,7 @@ views:
       id-3d3b55ad03984427937540400b67f4b2:
         type: DiagramObject
         archimate_element_id: id-eb6f01d0d0ef4230b7a5c9c73c3842c5
+        parent_node_id: null
         bounds:
           x: '840'
           y: '324'
@@ -3044,6 +3045,7 @@ views:
       id-64362d5d704a4628a929e3805cf48ff8:
         type: DiagramObject
         archimate_element_id: id-fa68712eb0924092abd996fa6c511065
+        parent_node_id: id-3d3b55ad03984427937540400b67f4b2
         bounds:
           x: '48'
           y: '48'
@@ -3052,6 +3054,7 @@ views:
       id-adb79fea3a0a4b08b199a9d991ad6434:
         type: DiagramObject
         archimate_element_id: id-9860d11ff3fd40a5b541b8f929ed305f
+        parent_node_id: null
         bounds:
           x: '840'
           y: '540'
@@ -3060,6 +3063,7 @@ views:
       id-93b5dfc389b04bbfbab41fff539299ee:
         type: DiagramObject
         archimate_element_id: id-456429d236544c28b3d7257893b0dec6
+        parent_node_id: id-adb79fea3a0a4b08b199a9d991ad6434
         bounds:
           x: '24'
           y: '168'
@@ -3068,6 +3072,7 @@ views:
       id-2cf0586e276d4287b45b74674fd70bad:
         type: DiagramObject
         archimate_element_id: id-f1f34cea2b2e4b5b8f8a9be88321de42
+        parent_node_id: id-adb79fea3a0a4b08b199a9d991ad6434
         bounds:
           x: '24'
           y: '96'
@@ -3076,6 +3081,7 @@ views:
       id-4ad01c11468f4d2cbc86b8a25c0ca384:
         type: DiagramObject
         archimate_element_id: id-a947552722064b7c93181833028cc2f1
+        parent_node_id: id-adb79fea3a0a4b08b199a9d991ad6434
         bounds:
           x: '192'
           y: '96'
@@ -3084,6 +3090,7 @@ views:
       id-10943b6f66fb4c1b99a6b61335adc431:
         type: DiagramObject
         archimate_element_id: id-199ae45b0a6c47b28b3507837647c6c8
+        parent_node_id: id-adb79fea3a0a4b08b199a9d991ad6434
         bounds:
           x: '24'
           y: '24'
@@ -3092,6 +3099,7 @@ views:
       id-b42d1c247f644f8893e0f95683287147:
         type: DiagramObject
         archimate_element_id: id-0cf363c3f2ff4fa3a34bda7a610e6f70
+        parent_node_id: null
         bounds:
           x: '928'
           y: '132'
@@ -3100,6 +3108,7 @@ views:
       id-4df9f0578822490ca12307a4fde4214f:
         type: DiagramObject
         archimate_element_id: id-534850df1c7b48e2a2e7cc966ece233f
+        parent_node_id: null
         bounds:
           x: '928'
           y: '48'
@@ -3108,6 +3117,7 @@ views:
       id-f38c9ffcb2094254bedb4ea07615d58a:
         type: DiagramObject
         archimate_element_id: id-30e12f5fdabe414db1430b0d735ed1f4
+        parent_node_id: null
         bounds:
           x: '660'
           y: '132'
@@ -3116,6 +3126,7 @@ views:
       id-893d747b928b4d969cee81009d5ac7b5:
         type: Note
         archimate_element_id: ''
+        parent_node_id: null
         bounds:
           x: '636'
           y: '-24'
@@ -3124,6 +3135,7 @@ views:
       id-b79597e7a3d74266bd7c526bdc8dc3d2:
         type: DiagramObject
         archimate_element_id: id-31be9bc0b80e4be4b2df2d8e0000dc6f
+        parent_node_id: null
         bounds:
           x: '1272'
           y: '132'
@@ -3132,6 +3144,7 @@ views:
       id-559aac7f70244271af0cdda8066d997f:
         type: DiagramObject
         archimate_element_id: id-04fef6c083b449dba91c876ae2e3715f
+        parent_node_id: null
         bounds:
           x: '623'
           y: '402'
@@ -3140,6 +3153,7 @@ views:
       id-df479b6fbf9147efb756e02cfba5445e:
         type: DiagramObject
         archimate_element_id: id-d7a27706ca3240468e16d88afbcd4a3e
+        parent_node_id: null
         bounds:
           x: '372'
           y: '456'
@@ -3148,6 +3162,7 @@ views:
       id-7609ed2be16c43d4baa6016a6043979c:
         type: DiagramObject
         archimate_element_id: id-63eeffd71e92467281f421c58bac305f
+        parent_node_id: null
         bounds:
           x: '660'
           y: '48'
@@ -3156,6 +3171,7 @@ views:
       id-ab72ef4e68d2411fa4709cbc3ad8863b:
         type: DiagramObject
         archimate_element_id: id-87d27b24cab34a089853e52f3512c376
+        parent_node_id: null
         bounds:
           x: '791'
           y: '48'
@@ -3164,6 +3180,7 @@ views:
       id-cede42366b3d4e40a599079dc05b3f2c:
         type: DiagramObject
         archimate_element_id: id-23598cee556747ef80cab10dbad84e65
+        parent_node_id: null
         bounds:
           x: '1248'
           y: '324'
@@ -3172,6 +3189,7 @@ views:
       id-54df8645b90148f49dca3767084840a2:
         type: DiagramObject
         archimate_element_id: id-4157e35b43184dd7bbcb4405e7edea46
+        parent_node_id: null
         bounds:
           x: '1248'
           y: '540'
@@ -3180,6 +3198,7 @@ views:
       id-3d82aa2d010549939e2d165315929b1d:
         type: DiagramObject
         archimate_element_id: id-6cb4bed065c44e1b8821c60d4515ef28
+        parent_node_id: null
         bounds:
           x: '804'
           y: '204'
@@ -3188,6 +3207,7 @@ views:
       id-75a8862df21f49c2a2cc9c1bacd6a2da:
         type: DiagramObject
         archimate_element_id: id-66f38bffcd9f48d796a041a9a292d6ed
+        parent_node_id: null
         bounds:
           x: '372'
           y: '228'
@@ -3196,6 +3216,7 @@ views:
       id-504ab324adf1463b8515fec03c8f5154:
         type: DiagramObject
         archimate_element_id: id-ac4c391b696f493da64833de20f7df9c
+        parent_node_id: null
         bounds:
           x: '288'
           y: '156'
@@ -3204,6 +3225,7 @@ views:
       id-4a3ea8d25e8246e499313ad237cf619a:
         type: DiagramObject
         archimate_element_id: id-0d355bfbd31e4a188766733761ede0ba
+        parent_node_id: null
         bounds:
           x: '457'
           y: '156'
@@ -3212,6 +3234,7 @@ views:
       id-9e961a0cf2fd4ade8cab59f1a5016849:
         type: DiagramObject
         archimate_element_id: id-8810f83ff9fe44c2a3368cdef932526b
+        parent_node_id: null
         bounds:
           x: '564'
           y: '312'
@@ -3220,6 +3243,7 @@ views:
       id-1e256084ffb246ae8414ad2000ecba01:
         type: Note
         archimate_element_id: ''
+        parent_node_id: null
         bounds:
           x: '180'
           y: '600'
@@ -3370,6 +3394,7 @@ views:
       id-69ebf83823574f2fa97704aa3caf2af2:
         type: DiagramObject
         archimate_element_id: id-ba60560a9ed64b4d87b2fd4fa6b32937
+        parent_node_id: null
         bounds:
           x: '96'
           y: '-840'
@@ -3378,6 +3403,7 @@ views:
       id-93baba518bcd4cdc88be11aec6de3cae:
         type: DiagramObject
         archimate_element_id: id-d503cf06faa1417b8acd4b26a5c0741e
+        parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
           x: '43'
           y: '660'
@@ -3386,6 +3412,7 @@ views:
       id-8d79b6a466e34131b788b183b6c6fd78:
         type: DiagramObject
         archimate_element_id: id-a8a1eb0181f04006ba7d3b5ab2fa9ca8
+        parent_node_id: id-93baba518bcd4cdc88be11aec6de3cae
         bounds:
           x: '157'
           y: '18'
@@ -3394,6 +3421,7 @@ views:
       id-e9478b9b6d5d4be79448cd79ed620ab5:
         type: DiagramObject
         archimate_element_id: id-b440252bc3de42dea8468be54e54b1fa
+        parent_node_id: id-93baba518bcd4cdc88be11aec6de3cae
         bounds:
           x: '157'
           y: '90'
@@ -3402,6 +3430,7 @@ views:
       id-93f7f88301b84f849481b37bd3905bba:
         type: DiagramObject
         archimate_element_id: id-4b66bbf964834654b5f0c61e955b91b1
+        parent_node_id: id-93baba518bcd4cdc88be11aec6de3cae
         bounds:
           x: '312'
           y: '18'
@@ -3410,6 +3439,7 @@ views:
       id-b8031edbf29c41479100041b076fdf2e:
         type: DiagramObject
         archimate_element_id: id-f5214c3db8de4738ab03abb7b7e553ed
+        parent_node_id: id-93baba518bcd4cdc88be11aec6de3cae
         bounds:
           x: '624'
           y: '18'
@@ -3418,6 +3448,7 @@ views:
       id-2739f03c99554a7abc226ddefe696272:
         type: DiagramObject
         archimate_element_id: id-809f454dc4024d56ab54079252fdfe29
+        parent_node_id: id-93baba518bcd4cdc88be11aec6de3cae
         bounds:
           x: '25'
           y: '89'
@@ -3426,6 +3457,7 @@ views:
       id-ccffe05106854b3591b31108754da232:
         type: DiagramObject
         archimate_element_id: id-b2aafe1f4c534db6b92c40b1eef605f2
+        parent_node_id: id-93baba518bcd4cdc88be11aec6de3cae
         bounds:
           x: '25'
           y: '18'
@@ -3434,6 +3466,7 @@ views:
       id-143e7bc326f44a4ea56a103c54471433:
         type: DiagramObject
         archimate_element_id: id-ec0afaac123d4f9e83889d9022a198c3
+        parent_node_id: id-93baba518bcd4cdc88be11aec6de3cae
         bounds:
           x: '312'
           y: '90'
@@ -3442,6 +3475,7 @@ views:
       id-f765a621db4948128097a5a659a581a3:
         type: DiagramObject
         archimate_element_id: id-2dfe07b3eae740b9a292e0a4a42d22db
+        parent_node_id: id-93baba518bcd4cdc88be11aec6de3cae
         bounds:
           x: '456'
           y: '18'
@@ -3450,6 +3484,7 @@ views:
       id-e87e977abf2b472480b8a3ae48829afc:
         type: DiagramObject
         archimate_element_id: id-1be148b57796458993c3f7f5f24815ca
+        parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
           x: '660'
           y: '144'
@@ -3458,6 +3493,7 @@ views:
       id-1a18c0ef7f35411c8d119b97eb93625d:
         type: DiagramObject
         archimate_element_id: id-0aa7eced8c5c460f8bc64b77bd6a16c4
+        parent_node_id: id-e87e977abf2b472480b8a3ae48829afc
         bounds:
           x: '24'
           y: '36'
@@ -3466,6 +3502,7 @@ views:
       id-80bc121fe4de4eebbd8e293fd4a34d01:
         type: DiagramObject
         archimate_element_id: id-825b1ea1217b4eedb6caae165aeb8e41
+        parent_node_id: id-e87e977abf2b472480b8a3ae48829afc
         bounds:
           x: '264'
           y: '36'
@@ -3474,6 +3511,7 @@ views:
       id-c55cb13978944095a091dbcb174dfa78:
         type: DiagramObject
         archimate_element_id: id-9bc3012bcd154e27aa094ac36bf391be
+        parent_node_id: id-e87e977abf2b472480b8a3ae48829afc
         bounds:
           x: '408'
           y: '36'
@@ -3482,6 +3520,7 @@ views:
       id-4b5c46cbbaeb4d52baf61e075bf1c98e:
         type: DiagramObject
         archimate_element_id: id-ad6f81e892a74590840828b6aabb270d
+        parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
           x: '36'
           y: '261'
@@ -3490,6 +3529,7 @@ views:
       id-20923cf30b4446a7ace20c482b653c7f:
         type: DiagramObject
         archimate_element_id: id-9119e1fb3de64872abb90e122280f4d9
+        parent_node_id: id-4b5c46cbbaeb4d52baf61e075bf1c98e
         bounds:
           x: '1190'
           y: '21'
@@ -3498,6 +3538,7 @@ views:
       id-94b20a5aebde43ab9050d57d7b03aeaa:
         type: DiagramObject
         archimate_element_id: id-efe1a2676c124eeab946802af96a1ab7
+        parent_node_id: id-4b5c46cbbaeb4d52baf61e075bf1c98e
         bounds:
           x: '612'
           y: '24'
@@ -3506,6 +3547,7 @@ views:
       id-207638d177b841e3adabcd2e34688539:
         type: DiagramObject
         archimate_element_id: id-84629318a3b84213ac3a83bdb6a1aad9
+        parent_node_id: id-4b5c46cbbaeb4d52baf61e075bf1c98e
         bounds:
           x: '468'
           y: '24'
@@ -3514,6 +3556,7 @@ views:
       id-2b2a215c81434bafa92576d8bbb24461:
         type: DiagramObject
         archimate_element_id: id-b503993b59044b83b3c38fb179fa732c
+        parent_node_id: id-4b5c46cbbaeb4d52baf61e075bf1c98e
         bounds:
           x: '144'
           y: '24'
@@ -3522,6 +3565,7 @@ views:
       id-a6d89b0fb21f46cc85fc5841b53308df:
         type: DiagramObject
         archimate_element_id: id-64811e71d98647e5a678a0a2e79ae617
+        parent_node_id: id-4b5c46cbbaeb4d52baf61e075bf1c98e
         bounds:
           x: '276'
           y: '21'
@@ -3530,6 +3574,7 @@ views:
       id-3532290d41434552b6ca8e2a9571dedf:
         type: DiagramObject
         archimate_element_id: id-c3f87c86b19547359c677a333b16f03b
+        parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
           x: '48'
           y: '828'
@@ -3538,6 +3583,7 @@ views:
       id-2c444f342cdb4e95b63fff94790709ee:
         type: DiagramObject
         archimate_element_id: id-697145d3768b40d39f9463667b78f749
+        parent_node_id: id-3532290d41434552b6ca8e2a9571dedf
         bounds:
           x: '144'
           y: '36'
@@ -3546,6 +3592,7 @@ views:
       id-53bd3085cdc0431cbc2acb10ba59604f:
         type: DiagramObject
         archimate_element_id: id-b99fcd8160d24e5f8ea3c17b15072f7a
+        parent_node_id: id-3532290d41434552b6ca8e2a9571dedf
         bounds:
           x: '12'
           y: '36'
@@ -3554,6 +3601,7 @@ views:
       id-2651e98b9e224f5293a6c536806de572:
         type: DiagramObject
         archimate_element_id: id-682d96a51e604ed2a00e1f4824023bab
+        parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
           x: '38'
           y: '36'
@@ -3562,6 +3610,7 @@ views:
       id-3a3b6a4cd26f4f3198eb6f13ed4fdb9d:
         type: DiagramObject
         archimate_element_id: id-ecdde89168314bfb94b6a6ac70a55bc7
+        parent_node_id: id-2651e98b9e224f5293a6c536806de572
         bounds:
           x: '348'
           y: '27'
@@ -3570,6 +3619,7 @@ views:
       id-20c1d03d60264e0c86029c81578bfdd7:
         type: DiagramObject
         archimate_element_id: id-dabf94e621f644ffa53ebb44dcc9ff79
+        parent_node_id: id-2651e98b9e224f5293a6c536806de572
         bounds:
           x: '144'
           y: '27'
@@ -3578,6 +3628,7 @@ views:
       id-421bc9c08e20453b8f0e29fc9a63f527:
         type: DiagramObject
         archimate_element_id: id-034543e002414306a8fbecc8c9d8e496
+        parent_node_id: id-2651e98b9e224f5293a6c536806de572
         bounds:
           x: '12'
           y: '27'
@@ -3586,6 +3637,7 @@ views:
       id-f22bf73939cf4b73b2555d73fcd8bf81:
         type: DiagramObject
         archimate_element_id: id-cd3b6a8989a448a2b4dfbf430a41bad4
+        parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
           x: '38'
           y: '144'
@@ -3594,6 +3646,7 @@ views:
       id-2094572b8eae4d41b7fbddedb82d3c94:
         type: DiagramObject
         archimate_element_id: id-ce84b9b6943f4789bca153c0ed15245a
+        parent_node_id: id-f22bf73939cf4b73b2555d73fcd8bf81
         bounds:
           x: '24'
           y: '36'
@@ -3602,6 +3655,7 @@ views:
       id-6295ef5ced1e4f1ab28181a2262ba21d:
         type: DiagramObject
         archimate_element_id: id-60827614648541ef8520df87fa25d100
+        parent_node_id: id-f22bf73939cf4b73b2555d73fcd8bf81
         bounds:
           x: '168'
           y: '36'
@@ -3610,6 +3664,7 @@ views:
       id-62583801931f4dbfbd6026f2e54dca43:
         type: DiagramObject
         archimate_element_id: id-f696350f5d844a96854deadb83bc3c81
+        parent_node_id: id-f22bf73939cf4b73b2555d73fcd8bf81
         bounds:
           x: '312'
           y: '36'
@@ -3618,6 +3673,7 @@ views:
       id-8865bdbf4e2942a8a48caa8a61a079ca:
         type: DiagramObject
         archimate_element_id: id-379e167f7b9c4fbea9c6969425ba7f6c
+        parent_node_id: id-f22bf73939cf4b73b2555d73fcd8bf81
         bounds:
           x: '456'
           y: '36'
@@ -3626,6 +3682,7 @@ views:
       id-5862a6b1eb0b4c4081576575dd4ffc39:
         type: DiagramObject
         archimate_element_id: id-48c9873ae59341a49c2dca27379fab55
+        parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
           x: '816'
           y: '660'
@@ -3634,6 +3691,7 @@ views:
       id-88844f6f597f497080cf3480e925ef3f:
         type: DiagramObject
         archimate_element_id: id-980043f78fa94eec8ecf46338a5b9c6b
+        parent_node_id: id-5862a6b1eb0b4c4081576575dd4ffc39
         bounds:
           x: '228'
           y: '24'
@@ -3642,6 +3700,7 @@ views:
       id-2d34e59bf6ee4cedb21c3c0b592cceb0:
         type: DiagramObject
         archimate_element_id: id-34d3d64b3afe4327a29ee6c2f7f74dff
+        parent_node_id: id-5862a6b1eb0b4c4081576575dd4ffc39
         bounds:
           x: '48'
           y: '24'
@@ -3650,6 +3709,7 @@ views:
       id-e0de5fff7f9f48d89cc0327a8ebfd25d:
         type: DiagramObject
         archimate_element_id: id-896e4c1434604caa891b94bcce964720
+        parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
           x: '38'
           y: '492'
@@ -3658,6 +3718,7 @@ views:
       id-f805166cbdc8407ab20ab49df8a7fb86:
         type: DiagramObject
         archimate_element_id: id-a40bf39259434db48f358cc543428c8a
+        parent_node_id: id-e0de5fff7f9f48d89cc0327a8ebfd25d
         bounds:
           x: '722'
           y: '12'
@@ -3666,6 +3727,7 @@ views:
       id-f1a0d23234f5459f83d049c4b239ff95:
         type: DiagramObject
         archimate_element_id: id-3c6f94ba791a4aa298809ef3f46bdc87
+        parent_node_id: id-e0de5fff7f9f48d89cc0327a8ebfd25d
         bounds:
           x: '902'
           y: '84'
@@ -3674,6 +3736,7 @@ views:
       id-38c2be65f4e44442a022b3212d3a15a6:
         type: DiagramObject
         archimate_element_id: id-e5a55d4bacd14740a656bc896d25497a
+        parent_node_id: id-e0de5fff7f9f48d89cc0327a8ebfd25d
         bounds:
           x: '1034'
           y: '12'
@@ -3682,6 +3745,7 @@ views:
       id-665c70412c4943e89f67bec553e4465d:
         type: DiagramObject
         archimate_element_id: id-718d8e94a9b847a485fc6518b4f2588d
+        parent_node_id: id-e0de5fff7f9f48d89cc0327a8ebfd25d
         bounds:
           x: '1034'
           y: '84'
@@ -3690,6 +3754,7 @@ views:
       id-330f30e9acf14e2ca40014406ce27056:
         type: DiagramObject
         archimate_element_id: id-dc38d2667240445db35f7f0f38fc1e15
+        parent_node_id: id-e0de5fff7f9f48d89cc0327a8ebfd25d
         bounds:
           x: '722'
           y: '84'
@@ -3698,6 +3763,7 @@ views:
       id-8786adfd733944469dccdac291880eb5:
         type: DiagramObject
         archimate_element_id: id-d9374751da7d4b36bb0b3be609ff7d28
+        parent_node_id: id-e0de5fff7f9f48d89cc0327a8ebfd25d
         bounds:
           x: '902'
           y: '12'
@@ -3706,6 +3772,7 @@ views:
       id-d8adbc8eb4f740c7864fe9520faa9be4:
         type: DiagramObject
         archimate_element_id: id-5852d070415849fab42749cb488d984a
+        parent_node_id: id-e0de5fff7f9f48d89cc0327a8ebfd25d
         bounds:
           x: '240'
           y: '12'
@@ -3714,6 +3781,7 @@ views:
       id-a72953225afe4320b7f84ab855bd7d26:
         type: DiagramObject
         archimate_element_id: id-5c6c20d50b6a4b168524901372f0ca6e
+        parent_node_id: id-e0de5fff7f9f48d89cc0327a8ebfd25d
         bounds:
           x: '24'
           y: '12'
@@ -3722,6 +3790,7 @@ views:
       id-bdfc6e078e7c4a2fb3fd1d76ccf1942c:
         type: DiagramObject
         archimate_element_id: id-d7aa97e6319a492d8a1345bcaa8e154a
+        parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
           x: '516'
           y: '379'
@@ -3730,6 +3799,7 @@ views:
       id-9471b51e5e35430cba5a4beaea608fc8:
         type: DiagramObject
         archimate_element_id: id-711390c3ddaa4b67914ccbcc2f1831aa
+        parent_node_id: id-bdfc6e078e7c4a2fb3fd1d76ccf1942c
         bounds:
           x: '156'
           y: '24'
@@ -3738,6 +3808,7 @@ views:
       id-e1f59a179eb8425a9ffc7c1460d0ed83:
         type: DiagramObject
         archimate_element_id: id-db4f30a87ae84561a4058d4d264177b1
+        parent_node_id: id-bdfc6e078e7c4a2fb3fd1d76ccf1942c
         bounds:
           x: '288'
           y: '24'
@@ -3746,6 +3817,7 @@ views:
       id-f6b7316f7fa34da8b1f4ad76085a7cd8:
         type: DiagramObject
         archimate_element_id: id-3dbd3a9115cb4c54876490cbf02b0c58
+        parent_node_id: id-bdfc6e078e7c4a2fb3fd1d76ccf1942c
         bounds:
           x: '24'
           y: '24'
@@ -3754,6 +3826,7 @@ views:
       id-6412585d58a94367870f2b29bb5c6d00:
         type: DiagramObject
         archimate_element_id: id-68ec332ee94c483e878a3a2ae903863f
+        parent_node_id: id-bdfc6e078e7c4a2fb3fd1d76ccf1942c
         bounds:
           x: '420'
           y: '24'
@@ -3762,6 +3835,7 @@ views:
       id-1765acce13a147d99e70c0e63f9644fc:
         type: DiagramObject
         archimate_element_id: id-08d657e690c046019dbf6d52b1ed4d63
+        parent_node_id: id-bdfc6e078e7c4a2fb3fd1d76ccf1942c
         bounds:
           x: '564'
           y: '24'
@@ -3770,6 +3844,7 @@ views:
       id-6599228a8ca64dcc9e11f74721671a5c:
         type: DiagramObject
         archimate_element_id: id-98df6c2b4df340c7a3a3ad32d99ca37e
+        parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
           x: '36'
           y: '381'
@@ -3778,6 +3853,7 @@ views:
       id-ed1af7480d9c4b3588eb39e53e14d7f7:
         type: DiagramObject
         archimate_element_id: id-fa54a429cbd84db09da1b2b2165fc352
+        parent_node_id: id-6599228a8ca64dcc9e11f74721671a5c
         bounds:
           x: '12'
           y: '33'
@@ -3786,6 +3862,7 @@ views:
       id-a03136b60d8f4a179a8264b2912b066b:
         type: DiagramObject
         archimate_element_id: id-7e3d1d3396914d65a177c9d5346d6feb
+        parent_node_id: id-6599228a8ca64dcc9e11f74721671a5c
         bounds:
           x: '144'
           y: '34'
@@ -3794,6 +3871,7 @@ views:
       id-645471456f92437982c62430ea8ad5cb:
         type: DiagramObject
         archimate_element_id: id-8914d57f4f1442b1b562252a3630a686
+        parent_node_id: id-6599228a8ca64dcc9e11f74721671a5c
         bounds:
           x: '288'
           y: '33'
@@ -3802,6 +3880,7 @@ views:
       id-097184c9fb104c4486607319c83d7b7b:
         type: DiagramObject
         archimate_element_id: id-e67a4f2983ce40f9823ec34ba460055a
+        parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
           x: '564'
           y: '36'
@@ -3810,6 +3889,7 @@ views:
       id-189b3fc095894781a20dc7209cc55889:
         type: DiagramObject
         archimate_element_id: id-9ea8fbaeb19243fa971013c57c3e96f9
+        parent_node_id: id-097184c9fb104c4486607319c83d7b7b
         bounds:
           x: '168'
           y: '30'
@@ -3818,6 +3898,7 @@ views:
       id-162bb1d0beab4b7592e1f11bad3259b3:
         type: DiagramObject
         archimate_element_id: id-b4a86e2e430c472b9f74bedb7f66fd74
+        parent_node_id: id-097184c9fb104c4486607319c83d7b7b
         bounds:
           x: '12'
           y: '30'
@@ -3826,6 +3907,7 @@ views:
       id-3c4c1b94e63f4a799acb1b47fd58fac6:
         type: DiagramObject
         archimate_element_id: id-3f59d920995e4d488e56f61356dcf97a
+        parent_node_id: id-097184c9fb104c4486607319c83d7b7b
         bounds:
           x: '300'
           y: '30'
@@ -3834,6 +3916,7 @@ views:
       id-9173d9539afb4044a1789ecf9c6ed2c3:
         type: DiagramObject
         archimate_element_id: id-299fc063873a4f278a1d3c0ac9480467
+        parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
           x: '1012'
           y: '36'
@@ -3842,6 +3925,7 @@ views:
       id-0029e2c3b6884b3fb9ffd03adf64c5c4:
         type: DiagramObject
         archimate_element_id: id-0119029984674da59dbbfdc3a8ca3e95
+        parent_node_id: id-9173d9539afb4044a1789ecf9c6ed2c3
         bounds:
           x: '12'
           y: '24'
@@ -3850,6 +3934,7 @@ views:
       id-be9fb55bedb34ac090d70312fbae8702:
         type: DiagramObject
         archimate_element_id: id-0209483504444508a40415aa6e3fc39c
+        parent_node_id: id-9173d9539afb4044a1789ecf9c6ed2c3
         bounds:
           x: '108'
           y: '24'
@@ -3858,6 +3943,7 @@ views:
       id-267bf994416341c09e218571c79f2c40:
         type: DiagramObject
         archimate_element_id: id-c0547226c598467a942dced879d0c18b
+        parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
           x: '564'
           y: '828'
@@ -3866,6 +3952,7 @@ views:
       id-8d21839b044849e3bdfef610824d2867:
         type: DiagramObject
         archimate_element_id: id-a601bb3d7b11478185903149965f7842
+        parent_node_id: id-267bf994416341c09e218571c79f2c40
         bounds:
           x: '180'
           y: '36'
@@ -3874,6 +3961,7 @@ views:
       id-a28546521a6446df904b97c96d8118e2:
         type: DiagramObject
         archimate_element_id: id-0bfa29018e7144578b2184e70414b7e8
+        parent_node_id: id-267bf994416341c09e218571c79f2c40
         bounds:
           x: '36'
           y: '36'
@@ -4204,6 +4292,7 @@ views:
       id-1ffeb371ce6240f48aac41147582af8b:
         type: DiagramObject
         archimate_element_id: id-ba60560a9ed64b4d87b2fd4fa6b32937
+        parent_node_id: null
         bounds:
           x: '24'
           y: '24'
@@ -4212,6 +4301,7 @@ views:
       id-104200d9dc294625974f9f50109219dc:
         type: DiagramObject
         archimate_element_id: id-897fd3d0f5fd4c2891e824a371d5e69b
+        parent_node_id: null
         bounds:
           x: '324'
           y: '12'
@@ -4220,6 +4310,7 @@ views:
       id-6bc3c69ec6b24c76a6c092b52c00dcea:
         type: DiagramObject
         archimate_element_id: id-a4062153239a4d13a9fdef8cc205c8e6
+        parent_node_id: null
         bounds:
           x: '660'
           y: '18'
@@ -4228,6 +4319,7 @@ views:
       id-c149b794c6794ddda12dece881bfab42:
         type: DiagramObject
         archimate_element_id: id-cbc357e78ede45e8aa565fde3b7380b5
+        parent_node_id: null
         bounds:
           x: '660'
           y: '72'
@@ -4236,6 +4328,7 @@ views:
       id-ac1b538447f449a0beb5350ae3f044a2:
         type: DiagramObject
         archimate_element_id: id-56e7246019f54eec8093568bd0fb8e22
+        parent_node_id: null
         bounds:
           x: '660'
           y: '168'
@@ -4244,6 +4337,7 @@ views:
       id-254847113c86423ab81565f09f0d3d49:
         type: DiagramObject
         archimate_element_id: id-90ff9c60528d4dfe93d534bd6a7bcfeb
+        parent_node_id: null
         bounds:
           x: '660'
           y: '252'
@@ -4252,6 +4346,7 @@ views:
       id-325565ea34534d019b75cc0ec0ae620d:
         type: DiagramObject
         archimate_element_id: id-9f2593113134463ea6863703c308b251
+        parent_node_id: null
         bounds:
           x: '660'
           y: '312'
@@ -4260,6 +4355,7 @@ views:
       id-3c22cc8555334ae79b38e44286650e0d:
         type: DiagramObject
         archimate_element_id: id-bf3fa917baad486d9865b9627199a2d4
+        parent_node_id: null
         bounds:
           x: '660'
           y: '372'
@@ -4268,6 +4364,7 @@ views:
       id-77ddbd99c6604a418416a7dfdf4b332c:
         type: DiagramObject
         archimate_element_id: id-89e255a238d346a4901424f0059e6345
+        parent_node_id: null
         bounds:
           x: '663'
           y: '480'
@@ -4276,6 +4373,7 @@ views:
       id-8af5f634c61b4675bd67b868f53c19fc:
         type: DiagramObject
         archimate_element_id: id-9622546accfc43d28a38cebdecf8818a
+        parent_node_id: null
         bounds:
           x: '660'
           y: '552'
@@ -4336,6 +4434,7 @@ views:
       id-eda656d8cf9d4e46bc80318e053b1921:
         type: DiagramObject
         archimate_element_id: id-94f7473fb4184e3b94bb92c35186b88f
+        parent_node_id: null
         bounds:
           x: '792'
           y: '240'
@@ -4344,6 +4443,7 @@ views:
       id-9bba3e32a19d41c38c573bc7736480fe:
         type: DiagramObject
         archimate_element_id: id-a27833cb9e324549916a528f31481dce
+        parent_node_id: null
         bounds:
           x: '792'
           y: '456'
@@ -4352,6 +4452,7 @@ views:
       id-9e9490e7f31e4129b0804d55a9f595eb:
         type: DiagramObject
         archimate_element_id: id-5b6ec861e2d246ce90c99ea282d35610
+        parent_node_id: null
         bounds:
           x: '792'
           y: '696'
@@ -4360,6 +4461,7 @@ views:
       id-02ee3561e2f84cd5983480124bea5b43:
         type: DiagramObject
         archimate_element_id: id-d0918d8701a4408b93a9ab278ecbb85e
+        parent_node_id: null
         bounds:
           x: '792'
           y: '532'
@@ -4368,6 +4470,7 @@ views:
       id-82d425fc125c4c338ebca97ba8dead1b:
         type: DiagramObject
         archimate_element_id: id-dbfcb14c3e024a40b6cb71138311abc0
+        parent_node_id: null
         bounds:
           x: '792'
           y: '312'
@@ -4376,6 +4479,7 @@ views:
       id-42c3e3046a4e41ab81604bbbc499b27d:
         type: DiagramObject
         archimate_element_id: id-7d62a886cdc14d20a5b361cf68da5754
+        parent_node_id: null
         bounds:
           x: '792'
           y: '384'
@@ -4384,6 +4488,7 @@ views:
       id-338781f4da7044f39ae23564a1843f93:
         type: DiagramObject
         archimate_element_id: id-0007ec16e9a1406d9f6aabd1f975d993
+        parent_node_id: null
         bounds:
           x: '792'
           y: '618'
@@ -4392,6 +4497,7 @@ views:
       id-1d34e68f83484b4eb89d2e0a784ae12c:
         type: DiagramObject
         archimate_element_id: id-ba60560a9ed64b4d87b2fd4fa6b32937
+        parent_node_id: null
         bounds:
           x: '530'
           y: '72'
@@ -4400,6 +4506,7 @@ views:
       id-a550995f1e27415f8f7afd5c2fe97ab6:
         type: DiagramObject
         archimate_element_id: id-682d96a51e604ed2a00e1f4824023bab
+        parent_node_id: null
         bounds:
           x: '516'
           y: '288'
@@ -4408,6 +4515,7 @@ views:
       id-5148a0efdd7849ba83656218a15283dd:
         type: DiagramObject
         archimate_element_id: id-e67a4f2983ce40f9823ec34ba460055a
+        parent_node_id: null
         bounds:
           x: '516'
           y: '350'
@@ -4416,6 +4524,7 @@ views:
       id-bf0d236e678f40ff8bc7eb560fd82069:
         type: DiagramObject
         archimate_element_id: id-299fc063873a4f278a1d3c0ac9480467
+        parent_node_id: null
         bounds:
           x: '516'
           y: '408'
@@ -4424,6 +4533,7 @@ views:
       id-9b4b91d920aa4d1481c812198859f3d9:
         type: DiagramObject
         archimate_element_id: id-cd3b6a8989a448a2b4dfbf430a41bad4
+        parent_node_id: null
         bounds:
           x: '1146'
           y: '542'
@@ -4432,6 +4542,7 @@ views:
       id-1c12fdc443024162af92bb422913c53f:
         type: DiagramObject
         archimate_element_id: id-1be148b57796458993c3f7f5f24815ca
+        parent_node_id: null
         bounds:
           x: '1104'
           y: '240'
@@ -4440,6 +4551,7 @@ views:
       id-fee7aa9f0aff4d29b5831c7c14c3e1df:
         type: DiagramObject
         archimate_element_id: id-896e4c1434604caa891b94bcce964720
+        parent_node_id: null
         bounds:
           x: '1056'
           y: '628'
@@ -4448,6 +4560,7 @@ views:
       id-d67c994256af462191444b612a0241b9:
         type: DiagramObject
         archimate_element_id: id-d7aa97e6319a492d8a1345bcaa8e154a
+        parent_node_id: null
         bounds:
           x: '1185'
           y: '312'
@@ -4456,6 +4569,7 @@ views:
       id-db63ac634b8a4e14b51ce5f6669091b3:
         type: DiagramObject
         archimate_element_id: id-ad6f81e892a74590840828b6aabb270d
+        parent_node_id: null
         bounds:
           x: '1188'
           y: '368'
@@ -4464,6 +4578,7 @@ views:
       id-a4e05819cd0547d8892029677a9bcef8:
         type: DiagramObject
         archimate_element_id: id-98df6c2b4df340c7a3a3ad32d99ca37e
+        parent_node_id: null
         bounds:
           x: '1192'
           y: '440'
@@ -4472,6 +4587,7 @@ views:
       id-0d29e714eca641888d4418a808038e21:
         type: DiagramObject
         archimate_element_id: id-d503cf06faa1417b8acd4b26a5c0741e
+        parent_node_id: null
         bounds:
           x: '1056'
           y: '706'
@@ -4480,6 +4596,7 @@ views:
       id-f8ae05f036454066b5bdfb988d12ad9f:
         type: DiagramObject
         archimate_element_id: id-48c9873ae59341a49c2dca27379fab55
+        parent_node_id: null
         bounds:
           x: '516'
           y: '716'
@@ -4488,6 +4605,7 @@ views:
       id-79a78827935d40939c672fa115f26c91:
         type: DiagramObject
         archimate_element_id: id-c0547226c598467a942dced879d0c18b
+        parent_node_id: null
         bounds:
           x: '516'
           y: '664'
@@ -4496,6 +4614,7 @@ views:
       id-351b40d4d3044668a4da3297fa85402f:
         type: DiagramObject
         archimate_element_id: id-c3f87c86b19547359c677a333b16f03b
+        parent_node_id: null
         bounds:
           x: '514'
           y: '612'
@@ -4504,6 +4623,7 @@ views:
       id-8679aadc91c24e0cb17ef325c5e74146:
         type: DiagramObject
         archimate_element_id: id-46a97f13294345f89decd549d4269848
+        parent_node_id: null
         bounds:
           x: '792'
           y: '132'
@@ -4626,6 +4746,7 @@ views:
       id-ad40ba6f30eb470180f457ef91323d84:
         type: DiagramObject
         archimate_element_id: id-3fd615c0b19e4762953cd34908523dbc
+        parent_node_id: null
         bounds:
           x: '636'
           y: '204'
@@ -4634,6 +4755,7 @@ views:
       id-37e3990b98e041e8a85101129f80a024:
         type: DiagramObject
         archimate_element_id: id-503ab92854754702ab00164afdbf6f70
+        parent_node_id: null
         bounds:
           x: '636'
           y: '365'
@@ -4642,6 +4764,7 @@ views:
       id-6fceb7f3ba4d40ac92057bc0f21eb433:
         type: DiagramObject
         archimate_element_id: id-6c59a946ea8e4ad8903fbb1a6ffa9219
+        parent_node_id: null
         bounds:
           x: '636'
           y: '516'
@@ -4650,6 +4773,7 @@ views:
       id-430039282873434680710965a7737099:
         type: DiagramObject
         archimate_element_id: id-e236b66b0d574a2bb97dbd79d7d38d47
+        parent_node_id: null
         bounds:
           x: '636'
           y: '48'
@@ -4658,6 +4782,7 @@ views:
       id-ad7abf2b74cf45bca40df40724e335a6:
         type: DiagramObject
         archimate_element_id: id-661cb46063c544be82d804511f5ea9f9
+        parent_node_id: null
         bounds:
           x: '336'
           y: '48'
@@ -4693,6 +4818,7 @@ views:
       id-6de7ec45041447ddb234d680b8a4e866:
         type: DiagramObject
         archimate_element_id: id-8810f83ff9fe44c2a3368cdef932526b
+        parent_node_id: null
         bounds:
           x: '660'
           y: '-528'
@@ -4701,6 +4827,7 @@ views:
       id-684847cb5c8a4035a67c8b69d83ce8a5:
         type: DiagramObject
         archimate_element_id: id-3fd615c0b19e4762953cd34908523dbc
+        parent_node_id: null
         bounds:
           x: '936'
           y: '-312'
@@ -4709,6 +4836,7 @@ views:
       id-9c6cfcc1db4a442db23dee688fbd2131:
         type: DiagramObject
         archimate_element_id: id-503ab92854754702ab00164afdbf6f70
+        parent_node_id: null
         bounds:
           x: '936'
           y: '-216'
@@ -4717,6 +4845,7 @@ views:
       id-dc02e659c7584ad8a6e46e7e9cef062c:
         type: DiagramObject
         archimate_element_id: id-6c59a946ea8e4ad8903fbb1a6ffa9219
+        parent_node_id: null
         bounds:
           x: '939'
           y: '-107'
@@ -4725,6 +4854,7 @@ views:
       id-3de611bc9ef0411e99c193d865e02949:
         type: DiagramObject
         archimate_element_id: id-e236b66b0d574a2bb97dbd79d7d38d47
+        parent_node_id: null
         bounds:
           x: '940'
           y: '-408'
@@ -4733,6 +4863,7 @@ views:
       id-95d2df6aadb54fb29c02915e19c2381a:
         type: DiagramObject
         archimate_element_id: id-661cb46063c544be82d804511f5ea9f9
+        parent_node_id: null
         bounds:
           x: '1164'
           y: '-412'
@@ -4741,6 +4872,7 @@ views:
       id-cefdb7d7c4ac476abc83c5cfe24e9f07:
         type: DiagramObject
         archimate_element_id: id-682d96a51e604ed2a00e1f4824023bab
+        parent_node_id: null
         bounds:
           x: '1356'
           y: '-412'
@@ -4749,6 +4881,7 @@ views:
       id-f901ca98b0884a2d9a9f753c341182c9:
         type: DiagramObject
         archimate_element_id: id-299fc063873a4f278a1d3c0ac9480467
+        parent_node_id: null
         bounds:
           x: '996'
           y: '-468'
@@ -4757,6 +4890,7 @@ views:
       id-981c9c7ee94141339315d51fb65df540:
         type: DiagramObject
         archimate_element_id: id-cd3b6a8989a448a2b4dfbf430a41bad4
+        parent_node_id: null
         bounds:
           x: '408'
           y: '-360'
@@ -4765,6 +4899,7 @@ views:
       id-3133bd16dadd49989902d4f855af9a61:
         type: DiagramObject
         archimate_element_id: id-1be148b57796458993c3f7f5f24815ca
+        parent_node_id: null
         bounds:
           x: '355'
           y: '-312'
@@ -4773,6 +4908,7 @@ views:
       id-6d586372f271404ab803a39b6ad20dbe:
         type: DiagramObject
         archimate_element_id: id-98df6c2b4df340c7a3a3ad32d99ca37e
+        parent_node_id: null
         bounds:
           x: '648'
           y: '-457'
@@ -4781,6 +4917,7 @@ views:
       id-4ac04d8f6cf84189aa31275e300c807f:
         type: DiagramObject
         archimate_element_id: id-d7aa97e6319a492d8a1345bcaa8e154a
+        parent_node_id: null
         bounds:
           x: '681'
           y: null
@@ -4789,6 +4926,7 @@ views:
       id-945e05ddc288495fa7d76de490acbfbd:
         type: DiagramObject
         archimate_element_id: id-ad6f81e892a74590840828b6aabb270d
+        parent_node_id: null
         bounds:
           x: '348'
           y: '-187'
@@ -4797,6 +4935,7 @@ views:
       id-41cb75ef32084940b277463702cf6170:
         type: DiagramObject
         archimate_element_id: id-896e4c1434604caa891b94bcce964720
+        parent_node_id: null
         bounds:
           x: '288'
           y: '-252'
@@ -4805,6 +4944,7 @@ views:
       id-2ccc8531c4bb4add91d7525c8131ba7b:
         type: DiagramObject
         archimate_element_id: id-d503cf06faa1417b8acd4b26a5c0741e
+        parent_node_id: null
         bounds:
           x: '425'
           y: '-120'
@@ -4813,6 +4953,7 @@ views:
       id-7ecb8d38869a4d04a69736762aadf82e:
         type: DiagramObject
         archimate_element_id: id-48c9873ae59341a49c2dca27379fab55
+        parent_node_id: null
         bounds:
           x: '530'
           y: '-52'
@@ -4821,6 +4962,7 @@ views:
       id-ce94117f2e0f4a118d827c5ae4c22d18:
         type: DiagramObject
         archimate_element_id: id-c3f87c86b19547359c677a333b16f03b
+        parent_node_id: null
         bounds:
           x: '1356'
           y: '-360'
@@ -4829,6 +4971,7 @@ views:
       id-947b0c0f2e6a461b880bb5c47e8719fc:
         type: DiagramObject
         archimate_element_id: id-c0547226c598467a942dced879d0c18b
+        parent_node_id: null
         bounds:
           x: '1356'
           y: '-312'
@@ -4837,6 +4980,7 @@ views:
       id-7e5a6e5fa8c14d15909f40495a0f80f6:
         type: DiagramObject
         archimate_element_id: id-e67a4f2983ce40f9823ec34ba460055a
+        parent_node_id: null
         bounds:
           x: '564'
           y: '-408'
@@ -4845,6 +4989,7 @@ views:
       id-25852b62d5074e1f907082ae08bd5ff2:
         type: DiagramObject
         archimate_element_id: id-ba60560a9ed64b4d87b2fd4fa6b32937
+        parent_node_id: null
         bounds:
           x: '236'
           y: '-528'
@@ -5065,6 +5210,7 @@ views:
       id-0e7e71bde9d041cea455d34949f55c93:
         type: DiagramObject
         archimate_element_id: id-ba60560a9ed64b4d87b2fd4fa6b32937
+        parent_node_id: null
         bounds:
           x: '84'
           y: '120'
@@ -5073,6 +5219,7 @@ views:
       id-6cb52dc0ab77441b9a2c4bd57630698f:
         type: DiagramObject
         archimate_element_id: id-c0547226c598467a942dced879d0c18b
+        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
         bounds:
           x: '231'
           y: '336'
@@ -5081,6 +5228,7 @@ views:
       id-0fc1bf9be19f43fab6184ae6e9df1073:
         type: DiagramObject
         archimate_element_id: id-1be148b57796458993c3f7f5f24815ca
+        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
         bounds:
           x: '228'
           y: '96'
@@ -5089,6 +5237,7 @@ views:
       id-205e55052332487d9cc4d487272d2c75:
         type: DiagramObject
         archimate_element_id: id-e67a4f2983ce40f9823ec34ba460055a
+        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
         bounds:
           x: '162'
           y: '36'
@@ -5097,6 +5246,7 @@ views:
       id-7c38a9a5752448129f03440eed0edac3:
         type: DiagramObject
         archimate_element_id: id-d7aa97e6319a492d8a1345bcaa8e154a
+        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
         bounds:
           x: '26'
           y: '192'
@@ -5105,6 +5255,7 @@ views:
       id-8381d1c70aa8433889c23fa3201f19fa:
         type: DiagramObject
         archimate_element_id: id-d503cf06faa1417b8acd4b26a5c0741e
+        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
         bounds:
           x: '28'
           y: '288'
@@ -5113,6 +5264,7 @@ views:
       id-2ba40c796cf34863be235f6fe636ae01:
         type: DiagramObject
         archimate_element_id: id-98df6c2b4df340c7a3a3ad32d99ca37e
+        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
         bounds:
           x: '28'
           y: '144'
@@ -5121,6 +5273,7 @@ views:
       id-8ab706826d234552be1e89b72900d5ed:
         type: DiagramObject
         archimate_element_id: id-48c9873ae59341a49c2dca27379fab55
+        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
         bounds:
           x: '228'
           y: '288'
@@ -5129,6 +5282,7 @@ views:
       id-d95b8a46a6904c34ac2d99a8eebcae34:
         type: DiagramObject
         archimate_element_id: id-cd3b6a8989a448a2b4dfbf430a41bad4
+        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
         bounds:
           x: '25'
           y: '96'
@@ -5137,6 +5291,7 @@ views:
       id-9a9047c9ecc8432abd140d348b59e89c:
         type: DiagramObject
         archimate_element_id: id-896e4c1434604caa891b94bcce964720
+        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
         bounds:
           x: '26'
           y: '240'
@@ -5145,6 +5300,7 @@ views:
       id-7a4f94bd27624fb4be1ae09c22b223a3:
         type: DiagramObject
         archimate_element_id: id-ad6f81e892a74590840828b6aabb270d
+        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
         bounds:
           x: '231'
           y: '192'
@@ -5153,6 +5309,7 @@ views:
       id-c923dc542a474638820475f3e78a0d85:
         type: DiagramObject
         archimate_element_id: id-c3f87c86b19547359c677a333b16f03b
+        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
         bounds:
           x: '28'
           y: '336'
@@ -5161,6 +5318,7 @@ views:
       id-16afd8a2e18142dcbed616fd0c67431c:
         type: DiagramObject
         archimate_element_id: id-682d96a51e604ed2a00e1f4824023bab
+        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
         bounds:
           x: '24'
           y: '36'
@@ -5169,6 +5327,7 @@ views:
       id-3105c19b44884ca7a3ac3061f9a71e3d:
         type: DiagramObject
         archimate_element_id: id-299fc063873a4f278a1d3c0ac9480467
+        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
         bounds:
           x: '288'
           y: '36'
@@ -5244,6 +5403,7 @@ views:
       id-9e637bc2c34e433c9c899ee74f73835e:
         type: DiagramObject
         archimate_element_id: id-eb6f01d0d0ef4230b7a5c9c73c3842c5
+        parent_node_id: null
         bounds:
           x: '672'
           y: '324'
@@ -5252,6 +5412,7 @@ views:
       id-7fabbfad4f8d43548a8dcec747e85e21:
         type: DiagramObject
         archimate_element_id: id-fa68712eb0924092abd996fa6c511065
+        parent_node_id: id-9e637bc2c34e433c9c899ee74f73835e
         bounds:
           x: '48'
           y: '48'
@@ -5260,6 +5421,7 @@ views:
       id-42c8ee19a2b34f0ea8ef493a3edc7f56:
         type: DiagramObject
         archimate_element_id: id-9860d11ff3fd40a5b541b8f929ed305f
+        parent_node_id: null
         bounds:
           x: '672'
           y: '516'
@@ -5268,6 +5430,7 @@ views:
       id-99e7f597f2cc4639a9e2dd3d9fb7b895:
         type: DiagramObject
         archimate_element_id: id-456429d236544c28b3d7257893b0dec6
+        parent_node_id: id-42c8ee19a2b34f0ea8ef493a3edc7f56
         bounds:
           x: '24'
           y: '168'
@@ -5276,6 +5439,7 @@ views:
       id-a7068199b4f544ed891df99fd5b10a23:
         type: DiagramObject
         archimate_element_id: id-f1f34cea2b2e4b5b8f8a9be88321de42
+        parent_node_id: id-42c8ee19a2b34f0ea8ef493a3edc7f56
         bounds:
           x: '24'
           y: '96'
@@ -5284,6 +5448,7 @@ views:
       id-3491c56604ff47c8be56c21e7c0c1f53:
         type: DiagramObject
         archimate_element_id: id-a947552722064b7c93181833028cc2f1
+        parent_node_id: id-42c8ee19a2b34f0ea8ef493a3edc7f56
         bounds:
           x: '192'
           y: '96'
@@ -5292,6 +5457,7 @@ views:
       id-b74717a6c39d48bfbe6bada7feda0efa:
         type: DiagramObject
         archimate_element_id: id-199ae45b0a6c47b28b3507837647c6c8
+        parent_node_id: id-42c8ee19a2b34f0ea8ef493a3edc7f56
         bounds:
           x: '24'
           y: '24'
@@ -5300,6 +5466,7 @@ views:
       id-5c57aebed9624a5fbab91e41c43fa0ec:
         type: Note
         archimate_element_id: ''
+        parent_node_id: null
         bounds:
           x: '538'
           y: '-24'
@@ -5308,6 +5475,7 @@ views:
       id-35fdb9b62dd7437c8fba6c90e9b7fb6c:
         type: DiagramObject
         archimate_element_id: id-d7a27706ca3240468e16d88afbcd4a3e
+        parent_node_id: null
         bounds:
           x: '492'
           y: '432'
@@ -5316,6 +5484,7 @@ views:
       id-fe9034234f6040fd94ce500efe9c6eb6:
         type: DiagramObject
         archimate_element_id: id-23598cee556747ef80cab10dbad84e65
+        parent_node_id: null
         bounds:
           x: '1062'
           y: '324'
@@ -5324,6 +5493,7 @@ views:
       id-fe0346e6f2f74a0e9502d4e9a1353cc3:
         type: DiagramObject
         archimate_element_id: id-4157e35b43184dd7bbcb4405e7edea46
+        parent_node_id: null
         bounds:
           x: '1068'
           y: '516'
@@ -5332,6 +5502,7 @@ views:
       id-b8c8de25c41643c39930d2080c90e2e3:
         type: DiagramObject
         archimate_element_id: id-66f38bffcd9f48d796a041a9a292d6ed
+        parent_node_id: null
         bounds:
           x: '348'
           y: '438'
@@ -5340,6 +5511,7 @@ views:
       id-f0f2ef114f37409ca6ef5299614be842:
         type: DiagramObject
         archimate_element_id: id-ac4c391b696f493da64833de20f7df9c
+        parent_node_id: null
         bounds:
           x: '288'
           y: '504'
@@ -5348,6 +5520,7 @@ views:
       id-bdad134aceda47c1a2c7f0069067c506:
         type: DiagramObject
         archimate_element_id: id-0d355bfbd31e4a188766733761ede0ba
+        parent_node_id: null
         bounds:
           x: '419'
           y: '504'
@@ -5356,6 +5529,7 @@ views:
       id-6c7b3649011849fa9624025c5e9b04c6:
         type: DiagramObject
         archimate_element_id: id-6cb4bed065c44e1b8821c60d4515ef28
+        parent_node_id: null
         bounds:
           x: '576'
           y: '216'
@@ -5364,6 +5538,7 @@ views:
       id-d0529378105044e1b81b2f087ccac006:
         type: DiagramObject
         archimate_element_id: id-534850df1c7b48e2a2e7cc966ece233f
+        parent_node_id: null
         bounds:
           x: '744'
           y: '36'
@@ -5372,6 +5547,7 @@ views:
       id-7f03797d1e674f24855925ccb2839c5f:
         type: DiagramObject
         archimate_element_id: id-0cf363c3f2ff4fa3a34bda7a610e6f70
+        parent_node_id: null
         bounds:
           x: '744'
           y: '120'

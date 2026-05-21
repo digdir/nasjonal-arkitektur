@@ -66,13 +66,14 @@ def parse_archimate(file_path):
                     'connections': {}
                 }
                 
-                def process_view_child(view_child):
+                def process_view_child(view_child, parent_node_id=None):
                     vc_tag = get_tag_name(view_child)
                     if vc_tag == 'child':
                         node_id = view_child.get('id')
                         node_data = {
                             'type': view_child.get(f"{{{ns_map['xsi']}}}type", '').split(':')[-1],
                             'archimate_element_id': view_child.get('archimateElement', ''),
+                            'parent_node_id': parent_node_id,
                             'bounds': {}
                         }
                         for b_child in view_child:
@@ -97,7 +98,7 @@ def parse_archimate(file_path):
                         # recursively process children of view_child (nested objects in views)
                         for b_child in view_child:
                             if get_tag_name(b_child) == 'child':
-                                process_view_child(b_child)
+                                process_view_child(b_child, parent_node_id=node_id)
                 
                 for child in elem:
                     process_view_child(child)
