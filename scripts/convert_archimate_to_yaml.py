@@ -42,7 +42,7 @@ def parse_archimate(file_path):
             for child in elem:
                 child_tag = get_tag_name(child)
                 if child_tag == 'documentation':
-                    doc = child.text if child.text else ''
+                    doc = child.text.replace('\r\n', '\n') if child.text else ''
                 elif child_tag == 'property':
                     properties[child.get('key')] = child.get('value')
             
