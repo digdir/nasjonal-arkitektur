@@ -1,142 +1,29 @@
 import yaml
 import os
 import re
-from PIL import Image, ImageDraw, ImageFont
+import shutil
+import glob
 
-def get_color(el_type):
-    el_type = el_type.lower()
-    if 'capability' in el_type or 'resource' in el_type or 'courseofaction' in el_type:
-        return '#F5DEAA' # Strategy / Capability
-    elif 'business' in el_type:
-        return '#FFFFB5'
-    elif 'application' in el_type:
-        return '#B5FFFF'
-    elif 'technology' in el_type or 'node' in el_type or 'device' in el_type:
-        return '#C9E7B7'
-    elif 'motivation' in el_type or 'goal' in el_type or 'principle' in el_type or 'requirement' in el_type or 'outcome' in el_type:
-        return '#CCCCFF'
-    elif 'note' in el_type:
-        return '#FFFFFF'
-    else:
-        return '#EFEFEF'
+def find_exported_image(view_id, html_export_dir='model/html-export'):
+    """Find the exported image for a view in the ArchiMate HTML export."""
+    # The images are typically located at model/html-export/id-*/images/{view_id}.png
+    search_pattern = os.path.join(html_export_dir, '**', 'images', f"{view_id}.png")
+    matches = glob.glob(search_pattern, recursive=True)
+    if matches:
+        return matches[0]
+    return None
 
-def draw_view(view_name, view_data, elements, docs_dir):
-    nodes = view_data.get('nodes', {})
-    connections = view_data.get('connections', {})
-    
-    # 1. Compute absolute bounds for all nodes
-    abs_bounds = {}
-    
-    def get_abs(node_id):
-        if node_id in abs_bounds:
-            return abs_bounds[node_id]
-        
-        node = nodes.get(node_id)
-        if not node: return None
-        bounds = node.get('bounds', {})
-        if not bounds:
-            return None
-            
-        x = int(bounds.get('x', 0) or 0)
-        y = int(bounds.get('y', 0) or 0)
-        w = int(bounds.get('width', 100) or 100)
-        h = int(bounds.get('height', 50) or 50)
-        
-        parent_id = node.get('parent_node_id')
-        if parent_id and parent_id in nodes:
-            res = get_abs(parent_id)
-            if res:
-                px, py, _, _ = res
-                x += px
-                y += py
-            
-        abs_bounds[node_id] = (x, y, w, h)
-        return (x, y, w, h)
-        
-    for nid in nodes.keys():
-        get_abs(nid)
-        
-    if not abs_bounds:
-        return None
-        
-    # 2. Determine image size
-    min_x = min(b[0] for b in abs_bounds.values())
-    min_y = min(b[1] for b in abs_bounds.values())
-    max_x = max(b[0] + b[2] for b in abs_bounds.values())
-    max_y = max(b[1] + b[3] for b in abs_bounds.values())
-    
-    # Add padding
-    pad = 50
-    width = max_x - min_x + (pad * 2)
-    height = max_y - min_y + (pad * 2)
-    
-    # To avoid huge images if something is wrong
-    if width > 8000 or height > 8000:
-        width, height = min(width, 8000), min(height, 8000)
-    
-    img = Image.new('RGB', (width, height), color='white')
-    draw = ImageDraw.Draw(img)
-    
-    try:
-        font = ImageFont.load_default()
-    except:
-        font = None
-
-    # 3. Draw connections
-    for c_id, conn in connections.items():
-        src = conn.get('source_node')
-        tgt = conn.get('target_node')
-        if src in abs_bounds and tgt in abs_bounds:
-            sx, sy, sw, sh = abs_bounds[src]
-            tx, ty, tw, th = abs_bounds[tgt]
-            start = (sx + sw//2 - min_x + pad, sy + sh//2 - min_y + pad)
-            end = (tx + tw//2 - min_x + pad, ty + th//2 - min_y + pad)
-            draw.line([start, end], fill='black', width=2)
-            
-    # 4. Draw nodes (sort by area descending so parents are drawn before children)
-    sorted_nodes = sorted(abs_bounds.keys(), key=lambda n: abs_bounds[n][2] * abs_bounds[n][3], reverse=True)
-    
-    for nid in sorted_nodes:
-        x, y, w, h = abs_bounds[nid]
-        node = nodes[nid]
-        el_id = node.get('archimate_element_id')
-        el_type = node.get('type', '')
-        
-        name = ""
-        if el_id and el_id in elements:
-            name = elements[el_id].get('name', '')
-            el_type = elements[el_id].get('type', el_type)
-            
-        color = get_color(el_type)
-        
-        rect_x0 = x - min_x + pad
-        rect_y0 = y - min_y + pad
-        rect_x1 = rect_x0 + w
-        rect_y1 = rect_y0 + h
-        
-        draw.rectangle([rect_x0, rect_y0, rect_x1, rect_y1], fill=color, outline='black', width=1)
-        
-        if name:
-            words = name.split()
-            lines = []
-            curr_line = []
-            for word in words:
-                curr_line.append(word)
-                if len(" ".join(curr_line)) > 15:
-                    lines.append(" ".join(curr_line))
-                    curr_line = []
-            if curr_line:
-                lines.append(" ".join(curr_line))
-                
-            text = "\n".join(lines)
-            if font:
-                draw.text((rect_x0 + 5, rect_y0 + 5), text, fill='black', font=font)
-            
+def copy_view_image(view_id, view_name, docs_dir):
+    """Finds the exported image and copies it to docs/images/"""
     safe_name = re.sub(r'[^a-zA-Z0-9_\- ]', '', view_name).strip()
     img_path = os.path.join(docs_dir, 'images', f"{safe_name}.png")
     os.makedirs(os.path.dirname(img_path), exist_ok=True)
-    img.save(img_path)
-    return f"images/{safe_name}.png"
+    
+    src_img = find_exported_image(view_id)
+    if src_img and os.path.exists(src_img):
+        shutil.copy2(src_img, img_path)
+        return f"images/{safe_name}.png"
+    return None
 
 def generate_markdown(yaml_file, docs_dir):
     with open(yaml_file, 'r', encoding='utf-8') as f:
@@ -154,7 +41,8 @@ def generate_markdown(yaml_file, docs_dir):
         v_name = view_data.get('name', 'Unnamed View')
         safe_name = re.sub(r'[^a-zA-Z0-9_\- ]', '', v_name).strip()
         
-        img_rel_path = draw_view(safe_name, view_data, elements, docs_dir)
+        # Copy image from HTML export instead of drawing it
+        img_rel_path = copy_view_image(view_id, safe_name, docs_dir)
         
         md_path = os.path.join(docs_dir, f"{safe_name}.md")
         view_files.append((v_name, f"{safe_name}.md"))
@@ -163,6 +51,8 @@ def generate_markdown(yaml_file, docs_dir):
             f.write(f"# {v_name}\n\n")
             if img_rel_path:
                 f.write(f"![{v_name}]({img_rel_path})\n\n")
+            else:
+                f.write(f"> *Kunne ikke finne bildet for viewet i HTML-eksporten.*\n\n")
                 
             if v_name.startswith("01") or v_name.startswith("02"):
                 f.write("## Kapabiliteter\n\n")
@@ -224,6 +114,18 @@ def generate_markdown(yaml_file, docs_dir):
                         f.write(f"{el.get('documentation')}\n\n")
                     f.write("---\n\n")
 
+    # Copy the entire HTML export to docs/archimate-report if it exists
+    html_export_dir = 'model/html-export'
+    report_dest = os.path.join(docs_dir, 'archimate-report')
+    has_report = False
+    if os.path.exists(html_export_dir):
+        # We don't use shutil.copytree directly if the dest exists to avoid errors, 
+        # but docs/ is cleaned on github actions anyway. For local testing:
+        if os.path.exists(report_dest):
+            shutil.rmtree(report_dest)
+        shutil.copytree(html_export_dir, report_dest)
+        has_report = True
+
     readme_content = ""
     try:
         with open('README.md', 'r', encoding='utf-8') as f:
@@ -242,6 +144,11 @@ def generate_markdown(yaml_file, docs_dir):
         f.write("Her kan du laste ned selve arkitekturmodellen i ulike formater:\n\n")
         f.write("- **[ArchiMate-fil](Nasjonal%20Arkitektur%20kapabilitetsmodell.archimate)**: Originalmodellen. Kan åpnes i [Archi](https://www.archimatetool.com/) eller andre verktøy som støtter ArchiMate.\n")
         f.write("- **[YAML-fil](nasjonal-arkitektur.yaml)**: En strukturert data-representasjon av modellen, ypperlig for analyse, maskinell lesing og KI-agenter.\n\n")
+        
+        if has_report:
+            f.write("## Utforsk den fulle rapporten\n\n")
+            f.write("Du kan se den fulle, interaktive HTML-rapporten generert fra ArchiMate her:\n")
+            f.write("- **[Åpne interaktiv ArchiMate-rapport](archimate-report/index.html)**\n\n")
 
         f.write("## Utforsk modellen\n\n")
         f.write("Arkitekturen er beskrevet gjennom følgende visuelle views:\n\n")
@@ -250,7 +157,7 @@ def generate_markdown(yaml_file, docs_dir):
         for v_name, v_file in view_files:
             f.write(f"- [{v_name}]({v_file})\n")
 
-    print(f"Generated {len(view_files)} view documents with PNGs in {docs_dir}")
+    print(f"Generated {len(view_files)} view documents with HTML-exported PNGs in {docs_dir}")
 
 if __name__ == '__main__':
     generate_markdown('data/nasjonal-arkitektur.yaml', 'docs')
