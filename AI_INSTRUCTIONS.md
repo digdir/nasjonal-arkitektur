@@ -11,3 +11,7 @@ Du skal **IKKE** prøve å parse `.archimate`-filen i `model/`-mappen direkte fo
 ## 2. Arbeidsflyt for dokumentasjon
 - Markdown-dokumentasjonen i `docs/` genereres automatisk fra YAML-filen ved hjelp av `scripts/generate_docs.py`. 
 - Ikke gjør manuelle innholdsendringer i de autogenererte `.md`-filene i `docs/`. Innhold skal endres i kilden (ArchiMate), som deretter konverteres. Endringer i utseende/struktur på dokumentasjonen gjøres ved å oppdatere scriptet `scripts/generate_docs.py`.
+
+## 3. Språk
+- **Alltid** svar på norsk når du kommuniserer med brukeren.
+- Fremtidige analyser, uttrekk, oppsummeringer og generering av dokumentasjon skal **alltid** gjøres på **norsk bokmål**, med mindre brukeren eksplisitt ber om noe annet.
