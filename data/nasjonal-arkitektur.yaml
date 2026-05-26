@@ -4366,6 +4366,15 @@ views:
           y: '552'
           width: '229'
           height: '37'
+      id-ecbc7f228e9040d792d3c3b71721018a:
+        type: Note
+        archimate_element_id: ''
+        parent_node_id: null
+        bounds:
+          x: '36'
+          y: '-60'
+          width: '841'
+          height: '46'
     connections:
       id-af54caba83f24ba196a5e8b1ed13bd7c:
         type: Connection
@@ -4726,158 +4735,6 @@ views:
         relationship_id: ''
         source_node: id-351b40d4d3044668a4da3297fa85402f
         target_node: id-338781f4da7044f39ae23564a1843f93
-  id-9a7719e0479b4ef598a463ab6ca0ec74:
-    type: ArchimateDiagramModel
-    name: 07-Mål
-    documentation: Mål i Digitaliseringsstrategien og relevans til tiltaket Nasjonal
-      arkitektur
-    properties: {}
-    nodes:
-      id-31e68bc7ef484a7a89268fe97dcb1c4f:
-        type: DiagramObject
-        archimate_element_id: id-897fd3d0f5fd4c2891e824a371d5e69b
-        parent_node_id: null
-        bounds:
-          x: '456'
-          y: '120'
-          width: '215'
-          height: '89'
-      id-e79a7378cc9f4f3abbc711e0521638fb:
-        type: DiagramObject
-        archimate_element_id: id-9f2593113134463ea6863703c308b251
-        parent_node_id: null
-        bounds:
-          x: '252'
-          y: '96'
-          width: '120'
-          height: '55'
-      id-6319048d813c41309730ce6c1f2374b7:
-        type: DiagramObject
-        archimate_element_id: id-56e7246019f54eec8093568bd0fb8e22
-        parent_node_id: null
-        bounds:
-          x: '588'
-          y: '270'
-          width: '120'
-          height: '55'
-      id-41bfcefda020402a8f98f57e5ed7087b:
-        type: DiagramObject
-        archimate_element_id: id-bf3fa917baad486d9865b9627199a2d4
-        parent_node_id: null
-        bounds:
-          x: '745'
-          y: '96'
-          width: '120'
-          height: '55'
-      id-0c7e5183259a46f4a7118ef15a067355:
-        type: DiagramObject
-        archimate_element_id: id-89e255a238d346a4901424f0059e6345
-        parent_node_id: null
-        bounds:
-          x: '252'
-          y: '180'
-          width: '120'
-          height: '55'
-      id-9ac5713b1b5944828b062ba69a6c4002:
-        type: DiagramObject
-        archimate_element_id: id-a4062153239a4d13a9fdef8cc205c8e6
-        parent_node_id: null
-        bounds:
-          x: '720'
-          y: '270'
-          width: '120'
-          height: '55'
-      id-912e35dd1c204c3b95d46584bebb9e94:
-        type: DiagramObject
-        archimate_element_id: id-9622546accfc43d28a38cebdecf8818a
-        parent_node_id: null
-        bounds:
-          x: '744'
-          y: '180'
-          width: '120'
-          height: '55'
-      id-f351f475744c49db90a52ddd39267b94:
-        type: DiagramObject
-        archimate_element_id: id-90ff9c60528d4dfe93d534bd6a7bcfeb
-        parent_node_id: null
-        bounds:
-          x: '288'
-          y: '270'
-          width: '120'
-          height: '55'
-      id-4941f333c1b24d1db802fc778c053895:
-        type: DiagramObject
-        archimate_element_id: id-cbc357e78ede45e8aa565fde3b7380b5
-        parent_node_id: null
-        bounds:
-          x: '456'
-          y: '270'
-          width: '120'
-          height: '55'
-      id-be21383ecd0f4ebf854d9e2eb48d486c:
-        type: DiagramObject
-        archimate_element_id: id-ba60560a9ed64b4d87b2fd4fa6b32937
-        parent_node_id: null
-        bounds:
-          x: '503'
-          y: '24'
-          width: '120'
-          height: '55'
-      id-042b732b25aa4391a276c6dfc006e0e2:
-        type: Note
-        archimate_element_id: ''
-        parent_node_id: null
-        bounds:
-          x: '245'
-          y: '-36'
-          width: '619'
-          height: '46'
-    connections:
-      id-0f7c6ce213854eb79fee5369b85bb17f:
-        type: Connection
-        relationship_id: ''
-        source_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
-        target_node: id-e79a7378cc9f4f3abbc711e0521638fb
-      id-2ab6887fca864cf3b9b19c0010aece76:
-        type: Connection
-        relationship_id: ''
-        source_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
-        target_node: id-6319048d813c41309730ce6c1f2374b7
-      id-37b4ca0a305049df9bc7ea9fba5b88d2:
-        type: Connection
-        relationship_id: ''
-        source_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
-        target_node: id-41bfcefda020402a8f98f57e5ed7087b
-      id-c9a8b61c86fd4aeb83bccd544015c0bd:
-        type: Connection
-        relationship_id: ''
-        source_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
-        target_node: id-0c7e5183259a46f4a7118ef15a067355
-      id-8795adaa9fab4513b93944007b58ea3b:
-        type: Connection
-        relationship_id: ''
-        source_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
-        target_node: id-9ac5713b1b5944828b062ba69a6c4002
-      id-cbd52c91b08d4b5eab2cd05ce0cbcc9e:
-        type: Connection
-        relationship_id: ''
-        source_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
-        target_node: id-912e35dd1c204c3b95d46584bebb9e94
-      id-9ee7fadec7214ed9b8cd344e3f9fd303:
-        type: Connection
-        relationship_id: ''
-        source_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
-        target_node: id-f351f475744c49db90a52ddd39267b94
-      id-e491f77c70ee40f485b2bc2177b351d5:
-        type: Connection
-        relationship_id: ''
-        source_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
-        target_node: id-4941f333c1b24d1db802fc778c053895
-      id-2a8dc8366b0f48ac96d3f036f4d8db70:
-        type: Connection
-        relationship_id: ''
-        source_node: id-be21383ecd0f4ebf854d9e2eb48d486c
-        target_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
   id-b9bcc8618287449ab162521aa9352413:
     type: ArchimateDiagramModel
     name: 05-EIF lagmodell

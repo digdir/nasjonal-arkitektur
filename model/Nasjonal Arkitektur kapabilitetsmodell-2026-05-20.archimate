@@ -1537,6 +1537,10 @@ I denne oversikten over nasjonale fellesløsninger viser vi også andre fellesl�
       <child xsi:type="archimate:DiagramObject" id="id-8af5f634c61b4675bd67b868f53c19fc" targetConnections="id-d2307c93b4274b078f78e888179491c6" archimateElement="id-9622546accfc43d28a38cebdecf8818a">
         <bounds x="660" y="552" width="229" height="37"/>
       </child>
+      <child xsi:type="archimate:Note" id="id-ecbc7f228e9040d792d3c3b71721018a" font="1|Segoe UI|18.0|0|WINDOWS|1|-30|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#e2e2e2">
+        <bounds x="36" y="-60" width="841" height="46"/>
+        <content>Relasjon til Digitaliseringsstrategiens relevante mål</content>
+      </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="03-Arkitekturprinsipper og NA" id="id-661971276dac4903b1d75fa62987873b">
       <child xsi:type="archimate:DiagramObject" id="id-eda656d8cf9d4e46bc80318e053b1921" targetConnections="id-dbf26302c88647e880015f969040dc5b id-5bf3fc650df54a4cb647ba7ae5abc7a8" archimateElement="id-94f7473fb4184e3b94bb92c35186b88f">
@@ -1630,52 +1634,6 @@ I denne oversikten over nasjonale fellesløsninger viser vi også andre fellesl�
         <content>Overordnede arkitekturprinsippene for digitalisering av offentlig sektor</content>
       </child>
       <documentation>https://www.digdir.no/digital-samhandling/prinsipp-1-ta-utgangspunkt-i-brukernes-behov/1055</documentation>
-    </element>
-    <element xsi:type="archimate:ArchimateDiagramModel" name="07-Mål" id="id-9a7719e0479b4ef598a463ab6ca0ec74" connectionRouterType="2">
-      <child xsi:type="archimate:DiagramObject" id="id-31e68bc7ef484a7a89268fe97dcb1c4f" targetConnections="id-2a8dc8366b0f48ac96d3f036f4d8db70" archimateElement="id-897fd3d0f5fd4c2891e824a371d5e69b">
-        <bounds x="456" y="120" width="215" height="89"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-0f7c6ce213854eb79fee5369b85bb17f" source="id-31e68bc7ef484a7a89268fe97dcb1c4f" target="id-e79a7378cc9f4f3abbc711e0521638fb" archimateRelationship="id-fdbbf5895f2b427b8aa6d322ab9c9677"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-2ab6887fca864cf3b9b19c0010aece76" source="id-31e68bc7ef484a7a89268fe97dcb1c4f" target="id-6319048d813c41309730ce6c1f2374b7" archimateRelationship="id-3da7121a0c43480cb36a26cd7bfa215f"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-37b4ca0a305049df9bc7ea9fba5b88d2" source="id-31e68bc7ef484a7a89268fe97dcb1c4f" target="id-41bfcefda020402a8f98f57e5ed7087b" archimateRelationship="id-34c9b05c7c5b453bab9d2e84c53fb8b2"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-c9a8b61c86fd4aeb83bccd544015c0bd" source="id-31e68bc7ef484a7a89268fe97dcb1c4f" target="id-0c7e5183259a46f4a7118ef15a067355" archimateRelationship="id-8d9c225e7458449f82439c0276e88b30"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-8795adaa9fab4513b93944007b58ea3b" source="id-31e68bc7ef484a7a89268fe97dcb1c4f" target="id-9ac5713b1b5944828b062ba69a6c4002" archimateRelationship="id-b3ddd68251534c77bd8e522558f5b03d"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-cbd52c91b08d4b5eab2cd05ce0cbcc9e" source="id-31e68bc7ef484a7a89268fe97dcb1c4f" target="id-912e35dd1c204c3b95d46584bebb9e94" archimateRelationship="id-213914132281446daf1723a04242dec6"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-9ee7fadec7214ed9b8cd344e3f9fd303" source="id-31e68bc7ef484a7a89268fe97dcb1c4f" target="id-f351f475744c49db90a52ddd39267b94" archimateRelationship="id-2e38953b12614d9285677c6097fb3d36"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-e491f77c70ee40f485b2bc2177b351d5" source="id-31e68bc7ef484a7a89268fe97dcb1c4f" target="id-4941f333c1b24d1db802fc778c053895" archimateRelationship="id-a4523b3547904a5face599b51ab78b1e"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="id-e79a7378cc9f4f3abbc711e0521638fb" targetConnections="id-0f7c6ce213854eb79fee5369b85bb17f" archimateElement="id-9f2593113134463ea6863703c308b251">
-        <bounds x="252" y="96" width="120" height="55"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="id-6319048d813c41309730ce6c1f2374b7" targetConnections="id-2ab6887fca864cf3b9b19c0010aece76" archimateElement="id-56e7246019f54eec8093568bd0fb8e22">
-        <bounds x="588" y="270" width="120" height="55"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="id-41bfcefda020402a8f98f57e5ed7087b" targetConnections="id-37b4ca0a305049df9bc7ea9fba5b88d2" archimateElement="id-bf3fa917baad486d9865b9627199a2d4">
-        <bounds x="745" y="96" width="120" height="55"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="id-0c7e5183259a46f4a7118ef15a067355" targetConnections="id-c9a8b61c86fd4aeb83bccd544015c0bd" archimateElement="id-89e255a238d346a4901424f0059e6345">
-        <bounds x="252" y="180" width="120" height="55"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="id-9ac5713b1b5944828b062ba69a6c4002" targetConnections="id-8795adaa9fab4513b93944007b58ea3b" archimateElement="id-a4062153239a4d13a9fdef8cc205c8e6">
-        <bounds x="720" y="270" width="120" height="55"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="id-912e35dd1c204c3b95d46584bebb9e94" targetConnections="id-cbd52c91b08d4b5eab2cd05ce0cbcc9e" archimateElement="id-9622546accfc43d28a38cebdecf8818a">
-        <bounds x="744" y="180" width="120" height="55"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="id-f351f475744c49db90a52ddd39267b94" targetConnections="id-9ee7fadec7214ed9b8cd344e3f9fd303" archimateElement="id-90ff9c60528d4dfe93d534bd6a7bcfeb">
-        <bounds x="288" y="270" width="120" height="55"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="id-4941f333c1b24d1db802fc778c053895" targetConnections="id-e491f77c70ee40f485b2bc2177b351d5" archimateElement="id-cbc357e78ede45e8aa565fde3b7380b5">
-        <bounds x="456" y="270" width="120" height="55"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="id-be21383ecd0f4ebf854d9e2eb48d486c" archimateElement="id-ba60560a9ed64b4d87b2fd4fa6b32937">
-        <bounds x="503" y="24" width="120" height="55"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-2a8dc8366b0f48ac96d3f036f4d8db70" source="id-be21383ecd0f4ebf854d9e2eb48d486c" target="id-31e68bc7ef484a7a89268fe97dcb1c4f" archimateRelationship="id-d23f13df2b914f51867c3e0749a1aa9b"/>
-      </child>
-      <child xsi:type="archimate:Note" id="id-042b732b25aa4391a276c6dfc006e0e2" font="1|Segoe UI|18.0|0|WINDOWS|1|-30|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#e2e2e2">
-        <bounds x="245" y="-36" width="619" height="46"/>
-        <content>Relasjon til Digitaliseringsstrategiens relevante mål</content>
-      </child>
-      <documentation>Mål i Digitaliseringsstrategien og relevans til tiltaket Nasjonal arkitektur</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="05-EIF lagmodell" id="id-b9bcc8618287449ab162521aa9352413">
       <child xsi:type="archimate:DiagramObject" id="id-ad40ba6f30eb470180f457ef91323d84" targetConnections="id-8f75e073afaa4a49aa5d5394f17f044e" font="1|Segoe UI|12.0|0|WINDOWS|1|-20|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" textAlignment="1" fillColor="#ff8000" archimateElement="id-3fd615c0b19e4762953cd34908523dbc">

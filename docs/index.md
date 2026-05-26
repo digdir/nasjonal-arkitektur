@@ -43,4 +43,3 @@ Arkitekturen er beskrevet gjennom følgende visuelle views:
 - [04-Digitaliseringsstrategiens mål og NA](04-Digitaliseringsstrategiens ml og NA.md)
 - [05-EIF lagmodell](05-EIF lagmodell.md)
 - [06-EIF og relasjon til NA](06-EIF og relasjon til NA.md)
-- [07-Mål](07-Ml.md)
