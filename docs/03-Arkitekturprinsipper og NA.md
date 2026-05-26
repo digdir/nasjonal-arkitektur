@@ -4,31 +4,6 @@
 
 ## Elementer i viewet
 
-### Datakilder
-**Type:** Capability
-
-Evne til å tilgjengeliggjøre og forvalte data som en nasjonal fellesressurs, slik at de kan oppdages, forstås og gjenbrukes på en sikker og standardisert måte.
-
-Dette innebærer også:
-Å organisere og styre data innenfor definerte tematiske domener, for å sikre helhetlig forvaltning og strategisk utvikling av dataressurser innenfor kritiske samfunnsområder.
-
-
-
-
----
-
-### Samarbeid
-**Type:** Capability
-
-Evne til å samarbeid og samhandling på tvers av offentlig og privat forvaltning.
-
----
-
-### P1: Ta utgangspunkt i brukernes behov
-**Type:** Principle
-
----
-
 ### Datautveksling og integrasjon
 **Type:** Capability
 
@@ -39,77 +14,10 @@ Mrk: Lommebok er inkludert i denne
 
 ---
 
-### Tillit
-**Type:** Capability
-
-Evne å tilby tillitstjenester som muliggjører autentisering og autorisasjon på tvers av tjenestekjeder, og støtte en distribuert arkitektur og føderering mellom ulike domener og tjeneste
-
----
-
-### P5: Del og gjenbruk løsninger
-**Type:** Principle
-
-https://www.digdir.no/digital-samhandling/prinsipp-5-del-og-gjenbruk-losninger/1062
-
----
-
-### Prinsipper Nasjonal Arkitektur
-**Type:** Principle
-
-https://www.digdir.no/digital-samhandling/overordnede-arkitekturprinsipper/1065
-
-
----
-
-### P7: Sørg for tillit til oppgaveløsningen
-**Type:** Principle
-
-https://www.digdir.no/digital-samhandling/prinsipp-7-sorg-tillit-til-oppgavelosningen/1064
-
----
-
 ### P4: Del og gjenbruk data
 **Type:** Principle
 
 https://www.digdir.no/digital-samhandling/prinsipp-4-del-og-gjenbruk-data/1061
-
----
-
-### Nasjonal arkitektur for samhandling
-**Type:** Capability
-
-Evne til å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem.
-
-
-Felles økosystem skal bidra til økt deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv måte og skaper økte verdier for samfunnet.
-Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen mellom aktørene. 
-Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette.
-
-
-
----
-
-### Informasjonssikkerhet
-**Type:** Capability
-
-Evne til å ha tilstrekkelig sikkerhet i tjenester og løsninger som benyttes i felles økosystem. 
-Merk: Er sterkt knyttet til kapabilitet "Tillit"
-
----
-
-### Tjenesteutvikling
-**Type:** Capability
-
-Evne til å utvikle sammenhengende digitale tjenester.
-
-Dette er knyttet til prosess- og kompetanse-kapabilitet. Det innebærer å utvikle tjenester basert på metodikk, design, koding og samarbeid.
-
----
-
-### Informasjonsforvaltning
-**Type:** Capability
-
-Evne til å ha et felles rammeverk og styringsmodell for informasjonsforvaltning, slik at offentlige virksomheter kan utveksle og dele data og beskrivelser. 
 
 ---
 
@@ -123,28 +31,6 @@ Etisk og ansvarlig datautnyttelse: All bruk av data skjer på en sikker, lovlig 
 Dette innebærer:
 Forvaltningen systematisk bruker data som en strategisk ressurs i prosesser, beslutningstaking og tjenesteutvikling for å levere bedre og mer effektive tjenester til innbyggere og næringsliv.
 Dette forutsetter åpenhet, deling av data, og evne til å hente ut verdi fra data gjennom blant annet analyse, automatisering og bruk av kunstig intelligens.
-
----
-
-### Strategisk styring
-**Type:** Capability
-
-Evnen til å sette retning for nasjonal arkitektur og realisere strategiske mål.
-
----
-
-### Standardisering
-**Type:** Capability
-
-Evne til å identifisere, vedta, forvalte og fremme bruk av omforente standarder og spesifikasjoner som sikrer interoperabilitet og gjenbruk på tvers av sektorer og landegrenser.
-
-Dette innebærer:
-Harmonisering: Å sikre at nasjonale standarder er i samsvar med internasjonale standarder (som EU-harmoniserte standarder) for å muliggjøre samhandling over landegrensene.
-Livssyklusforvaltning: Å ha prosesser for å vurdere nye standarder, vedlikeholde eksisterende, og fase ut foreldede standarder i takt med teknologisk utvikling.
-Veiledning: Å gjøre standardene tilgjengelige og forståelige, slik at de enkelt kan implementeres i tjenester og løsninger.
-Etterlevelse: Å legge til rette for at fellesløsninger og virksomheter faktisk tar i bruk vedtatte forvaltningsstandarder i sine anskaffelser og utviklingsløp.
-
-
 
 ---
 
@@ -163,10 +49,109 @@ Risikovurdering: Å etablere felles metoder og standarder for juridisk risikovur
 
 ---
 
-### P2: Ta arkitektur-beslutninger på rett nivå
+### Standardisering
+**Type:** Capability
+
+Evne til å identifisere, vedta, forvalte og fremme bruk av omforente standarder og spesifikasjoner som sikrer interoperabilitet og gjenbruk på tvers av sektorer og landegrenser.
+
+Dette innebærer:
+Harmonisering: Å sikre at nasjonale standarder er i samsvar med internasjonale standarder (som EU-harmoniserte standarder) for å muliggjøre samhandling over landegrensene.
+Livssyklusforvaltning: Å ha prosesser for å vurdere nye standarder, vedlikeholde eksisterende, og fase ut foreldede standarder i takt med teknologisk utvikling.
+Veiledning: Å gjøre standardene tilgjengelige og forståelige, slik at de enkelt kan implementeres i tjenester og løsninger.
+Etterlevelse: Å legge til rette for at fellesløsninger og virksomheter faktisk tar i bruk vedtatte forvaltningsstandarder i sine anskaffelser og utviklingsløp.
+
+
+
+---
+
+### Datakilder
+**Type:** Capability
+
+Evne til å tilgjengeliggjøre og forvalte data som en nasjonal fellesressurs, slik at de kan oppdages, forstås og gjenbrukes på en sikker og standardisert måte.
+
+Dette innebærer også:
+Å organisere og styre data innenfor definerte tematiske domener, for å sikre helhetlig forvaltning og strategisk utvikling av dataressurser innenfor kritiske samfunnsområder.
+
+
+
+
+---
+
+### P5: Del og gjenbruk løsninger
 **Type:** Principle
 
-https://www.digdir.no/digital-samhandling/prinsipp-2-ta-arkitekturbeslutninger-pa-rett-niva/1056
+https://www.digdir.no/digital-samhandling/prinsipp-5-del-og-gjenbruk-losninger/1062
+
+---
+
+### Nasjonal arkitektur for samhandling
+**Type:** Capability
+
+Evne til å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem.
+
+
+Felles økosystem skal bidra til økt deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv måte og skaper økte verdier for samfunnet.
+Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen mellom aktørene. 
+Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette.
+
+
+
+---
+
+### Samarbeid
+**Type:** Capability
+
+Evne til å samarbeid og samhandling på tvers av offentlig og privat forvaltning.
+
+---
+
+### P6: Lag digitale løsninger som støtter samhandling
+**Type:** Principle
+
+https://www.digdir.no/digital-samhandling/prinsipp-6-lag-digitale-losninger-som-stotter-samhandling/1063
+
+---
+
+### Tillit
+**Type:** Capability
+
+Evne å tilby tillitstjenester som muliggjører autentisering og autorisasjon på tvers av tjenestekjeder, og støtte en distribuert arkitektur og føderering mellom ulike domener og tjeneste
+
+---
+
+### Prinsipper Nasjonal Arkitektur
+**Type:** Principle
+
+https://www.digdir.no/digital-samhandling/overordnede-arkitekturprinsipper/1065
+
+
+---
+
+### Informasjonssikkerhet
+**Type:** Capability
+
+Evne til å ha tilstrekkelig sikkerhet i tjenester og løsninger som benyttes i felles økosystem. 
+Merk: Er sterkt knyttet til kapabilitet "Tillit"
+
+---
+
+### P1: Ta utgangspunkt i brukernes behov
+**Type:** Principle
+
+---
+
+### Sluttbrukertjenester
+**Type:** Capability
+
+Evne til å tilby en sammenhengende digital brukeropplevelse gjennom et økosystem av standardiserte og integrerbare tjenester.
+
+
+---
+
+### Informasjonsforvaltning
+**Type:** Capability
+
+Evne til å ha et felles rammeverk og styringsmodell for informasjonsforvaltning, slik at offentlige virksomheter kan utveksle og dele data og beskrivelser. 
 
 ---
 
@@ -177,11 +162,24 @@ https://www.digdir.no/digital-samhandling/prinsipp-3-bidra-til-digitaliseringsve
 
 ---
 
-### Sluttbrukertjenester
+### P7: Sørg for tillit til oppgaveløsningen
+**Type:** Principle
+
+https://www.digdir.no/digital-samhandling/prinsipp-7-sorg-tillit-til-oppgavelosningen/1064
+
+---
+
+### Strategisk styring
 **Type:** Capability
 
-Evne til å tilby en sammenhengende digital brukeropplevelse gjennom et økosystem av standardiserte og integrerbare tjenester.
+Evnen til å sette retning for nasjonal arkitektur og realisere strategiske mål.
 
+---
+
+### P2: Ta arkitektur-beslutninger på rett nivå
+**Type:** Principle
+
+https://www.digdir.no/digital-samhandling/prinsipp-2-ta-arkitekturbeslutninger-pa-rett-niva/1056
 
 ---
 
@@ -208,10 +206,12 @@ Veiledere kan ha ulik grad av styrke:
 
 ---
 
-### P6: Lag digitale løsninger som støtter samhandling
-**Type:** Principle
+### Tjenesteutvikling
+**Type:** Capability
 
-https://www.digdir.no/digital-samhandling/prinsipp-6-lag-digitale-losninger-som-stotter-samhandling/1063
+Evne til å utvikle sammenhengende digitale tjenester.
+
+Dette er knyttet til prosess- og kompetanse-kapabilitet. Det innebærer å utvikle tjenester basert på metodikk, design, koding og samarbeid.
 
 ---
 
