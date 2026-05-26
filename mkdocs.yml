@@ -6,5 +6,9 @@ theme:
   palette:
     primary: indigo
     accent: indigo
+markdown_extensions:
+  - toc:
+      title: "Innhold på denne siden"
 nav:
   - Forside: index.md
+  - Rammeverksmodell for Nasjonal arkitektur: modell.md

@@ -19,27 +19,3 @@ Her kommer metamodell og kapabilitetsbasert digital arkitektur som gir struktur 
 - Metamodell og kontektsuell tmodell
 
 
-## Last ned filer
-
-Her kan du laste ned selve arkitekturmodellen i ulike formater:
-
-- **[ArchiMate-fil](Nasjonal%20Arkitektur%20kapabilitetsmodell.archimate)**: Originalmodellen. Kan åpnes i [Archi](https://www.archimatetool.com/) eller andre verktøy som støtter ArchiMate.
-- **[YAML-fil](nasjonal-arkitektur.yaml)**: En strukturert data-representasjon av modellen, ypperlig for analyse, maskinell lesing og KI-agenter.
-
-## Utforsk den fulle rapporten
-
-Du kan se den fulle, interaktive HTML-rapporten generert fra ArchiMate her:
-- **[Åpne interaktiv ArchiMate-rapport](archimate-report/index.html)**
-
-## Utforsk modellen
-
-Arkitekturen er beskrevet gjennom følgende visuelle views:
-
-- [00-Metamodell kontekst](00-Metamodell kontekst.md)
-- [001-Metamodell kjerne](001-Metamodell kjerne.md)
-- [01-NA Hovedkapabiliteter](01-NA Hovedkapabiliteter.md)
-- [02-Nasjonal Arkitektur Kapabilitetskart](02-Nasjonal Arkitektur Kapabilitetskart.md)
-- [03-Arkitekturprinsipper og NA](03-Arkitekturprinsipper og NA.md)
-- [04-Digitaliseringsstrategiens mål og NA](04-Digitaliseringsstrategiens ml og NA.md)
-- [05-EIF lagmodell](05-EIF lagmodell.md)
-- [06-EIF og relasjon til NA](06-EIF og relasjon til NA.md)

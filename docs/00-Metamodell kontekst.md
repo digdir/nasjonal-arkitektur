@@ -4,59 +4,62 @@
 
 ## Elementer i viewet
 
-### Verdistrømmer og prosesser
-**Type:** ValueStream
-
-Verdistrøm representerer en sekvens av aktiviteter som skaper et samlet resultat for en kunde, interessent eller sluttbruker.
-
-Nasjonal arkitektur skal være kunnskaps- og datadrevet, og skal inneholde informasjon som skal kunne gjenbrukes i ulike verdistrømmer. Den skal inneholde viktige kapabiliteter og rammer for samhandling i felles økosystem, og den skal inneholde oversikt over hvilke løsninger og ressurser som kan benyttes for å dekke behov.  
-
-Det kan være ulike verdistrømmer for ulike brukergrupper og for ulike behov.
-* Operasjonelle verdistrømmer, der Nasjonal arkitektur inngår som en verktøykasse for daglige oppgaver. F.eks. tjenesteutvikling og produktutvikling.
-Målgruppe: Utførere, planleggere
-* Strategiske verdistrømmer, der Nasjonal arkitektur bidrar til at man tar valg for fremtiden
-Målgruppe: Beslutningstagere, planleggere
+### Ønsket situasjon
+**Type:** Plateau
 
 ---
 
-### Strategiske mål
-**Type:** Goal
+### Tiltak for å nå fremtidige mål
+**Type:** CourseOfAction
 
-Målene fra Digitaliseringsstrategien.
+Dette er tiltak som realiserer eller gjør endringer på en eller flere kapabiliteter.
 
----
-
-### Samhandlingsareneaer og organisering
-**Type:** Resource
-
-Organiserte nettverk og styringsorganer for både dialog og strategisk samordning.
+Tiltakslisten (123) fra Digitaliseringsstrategien følges opp, i tillegg til andre relavante tiltak som bidrar til målene.
 
 ---
 
-### Rammebetingelser
-**Type:** Resource
+### Hindringer
+**Type:** Constraint
 
-Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
-
-Ressurser innenfor:
-* Finansielle virkemidler/Finansieringsordninger
-* Lovhjemler og juridiske virkemidler
-* Samordning
-
-
-
+Hindringer: Hva stopper eller begrenser oss?
 
 ---
 
-### Effektmål
-**Type:** Outcome
+### Strategisk kapabilitet (overordnet)
+**Type:** Capability
 
+En kapabilitet beskriver "hva" en eller flere aktører må kunne gjøre for å skape verdi, uavhengig av hvordan det gjøres. Dette er den forretningsmessige evnen til å oppnå et mål.
+En kapabilitet er en grunnleggende funksjonell evne i det digitale økosystemet. Den beskriver hva som må være på plass for å oppnå felles nasjonale mål, uavhengig av organisatoriske grenser og tekniske løsninger.
+
+Kapabiliteter er typisk uttrykt med generelle termer og på høyt nivå. For at en kapabilitet skal nås kreves evner i form av ferdigheter gjennom en kombinasjon av ulike ressurser. 
+
+Prosesser, Organisasjon/mennesker, Teknologi, Informasjon (POTI).
+
+Kapabiliteter og grad av måloppnåelse
+- målverdi
+- dagens verdi
+= Finner Gap og modenhet 
+En kapabilitet kan realisere både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer, oppfyller eller tolker hensikten bak prinsippet i praksis.
+Modenhetsmodell, som CMMI (Capability Maturity Model Integration:
+* Måling av kapabilitetsmodenhet (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn ved å synliggjøre gapet mellom "hvor gode vi er" (As-Is) og "hvor gode vi må være" (To-Be).
+* Modenheten til en kapabilitet vurderes basert på tilstanden til de underliggende ressursene.
+
+Se også:
 De konkrete resultatene av å bruke kapabilitetene.
 Se på dybdeindikatorene fra nullpunktsmåling:
 https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
 F.eks:
 * https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
 * https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
+
+Hvordan vurdere modenhet? Gjør dette iht POTI
+People (Folk/Organisasjon): Har vi riktig kompetanse og nok hoder?
+Process (Prosess): Er rutinene dokumenterte og etterlevd?
+Technology (Teknologi): Har vi verktøystøtte som fungerer?
+Information (Informasjon): Er "innholdet" (dataene, kunnskapen, veiledningen)
+
+Togaf om Kapabilitetsplanlegging:
+https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap28.html
 
 
 ---
@@ -102,6 +105,42 @@ De nasjonale felleskomponentene, slik de er definert i Digital agenda:
 
 ### Domeneressurs
 **Type:** Resource
+
+---
+
+### Rammeverk for digital samhandling (European Interoperability Framework)
+**Type:** Grouping
+
+Rammeverk for digital samhandling.
+https://www.digdir.no/digital-samhandling/rammeverk-digital-samhandling/2148
+
+Bakgrunnsinformasjon og opprinnelse:
+EU har utviklet European Interoperability Framework (EIF), et felles rammeverk for digital samhandling. Målet er å fremme digital samhandling på tvers av landegrenser og innenfor hvert enkelt land. Norge forpliktet seg til å implementere EIF da vi undertegnet Tallinn-erklæringen i 2017, sammen med EU og andre EFTA-land.
+
+Som et resultat har Norge etablert sitt eget nasjonale rammeverk for interoperabilitet (NIF- National Interoperability Framework), som i dag heter "Rammeverk for digital samhandling". Den første versjonen ble utarbeidet som et Skate-tiltak i 2018.
+
+
+
+
+---
+
+### Kapabilitet (Operasjonell)
+**Type:** Capability
+
+---
+
+### Rammebetingelser
+**Type:** Resource
+
+Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
+
+Ressurser innenfor:
+* Finansielle virkemidler/Finansieringsordninger
+* Lovhjemler og juridiske virkemidler
+* Samordning
+
+
+
 
 ---
 
@@ -173,11 +212,6 @@ Ved å bruke dette rammeverket kan selskaper utvikle et veikart for «nåsituasj
 
 ---
 
-### Nåværende situasjon
-**Type:** Plateau
-
----
-
 ### Drivere
 **Type:** Driver
 
@@ -188,68 +222,10 @@ Ei styrking her vil vere blant dei viktigaste drivarane for å oppnå resultat o
 
 ---
 
-### Rammeverk for digital samhandling (European Interoperability Framework)
-**Type:** Grouping
+### Strategiske mål
+**Type:** Goal
 
-Rammeverk for digital samhandling.
-https://www.digdir.no/digital-samhandling/rammeverk-digital-samhandling/2148
-
-Bakgrunnsinformasjon og opprinnelse:
-EU har utviklet European Interoperability Framework (EIF), et felles rammeverk for digital samhandling. Målet er å fremme digital samhandling på tvers av landegrenser og innenfor hvert enkelt land. Norge forpliktet seg til å implementere EIF da vi undertegnet Tallinn-erklæringen i 2017, sammen med EU og andre EFTA-land.
-
-Som et resultat har Norge etablert sitt eget nasjonale rammeverk for interoperabilitet (NIF- National Interoperability Framework), som i dag heter "Rammeverk for digital samhandling". Den første versjonen ble utarbeidet som et Skate-tiltak i 2018.
-
-
-
-
----
-
-### Ønsket situasjon
-**Type:** Plateau
-
----
-
-### Strategisk kapabilitet (overordnet)
-**Type:** Capability
-
-En kapabilitet beskriver "hva" en eller flere aktører må kunne gjøre for å skape verdi, uavhengig av hvordan det gjøres. Dette er den forretningsmessige evnen til å oppnå et mål.
-En kapabilitet er en grunnleggende funksjonell evne i det digitale økosystemet. Den beskriver hva som må være på plass for å oppnå felles nasjonale mål, uavhengig av organisatoriske grenser og tekniske løsninger.
-
-Kapabiliteter er typisk uttrykt med generelle termer og på høyt nivå. For at en kapabilitet skal nås kreves evner i form av ferdigheter gjennom en kombinasjon av ulike ressurser. 
-
-Prosesser, Organisasjon/mennesker, Teknologi, Informasjon (POTI).
-
-Kapabiliteter og grad av måloppnåelse
-- målverdi
-- dagens verdi
-= Finner Gap og modenhet 
-En kapabilitet kan realisere både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer, oppfyller eller tolker hensikten bak prinsippet i praksis.
-Modenhetsmodell, som CMMI (Capability Maturity Model Integration:
-* Måling av kapabilitetsmodenhet (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn ved å synliggjøre gapet mellom "hvor gode vi er" (As-Is) og "hvor gode vi må være" (To-Be).
-* Modenheten til en kapabilitet vurderes basert på tilstanden til de underliggende ressursene.
-
-Se også:
-De konkrete resultatene av å bruke kapabilitetene.
-Se på dybdeindikatorene fra nullpunktsmåling:
-https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
-F.eks:
-* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
-* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
-
-Hvordan vurdere modenhet? Gjør dette iht POTI
-People (Folk/Organisasjon): Har vi riktig kompetanse og nok hoder?
-Process (Prosess): Er rutinene dokumenterte og etterlevd?
-Technology (Teknologi): Har vi verktøystøtte som fungerer?
-Information (Informasjon): Er "innholdet" (dataene, kunnskapen, veiledningen)
-
-Togaf om Kapabilitetsplanlegging:
-https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap28.html
-
-
----
-
-### Domenekapabilitet
-**Type:** Capability
+Målene fra Digitaliseringsstrategien.
 
 ---
 
@@ -260,43 +236,16 @@ Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjona
 
 ---
 
-### Hindringer
-**Type:** Constraint
+### Effektmål
+**Type:** Outcome
 
-Hindringer: Hva stopper eller begrenser oss?
+De konkrete resultatene av å bruke kapabilitetene.
+Se på dybdeindikatorene fra nullpunktsmåling:
+https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
+F.eks:
+* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
+* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
 
----
-
-### Standarder og veiledning
-**Type:** Resource
-
-Ressurser som setter regler eller gir retning.
-
-Dette kan være:
-Standarder, veiledere, referansearkitekturer, metodikk
-Normeringsgrad kan være knyttet til disse virkemidlene.
-
----
-
-### Tiltak for å nå fremtidige mål
-**Type:** CourseOfAction
-
-Dette er tiltak som realiserer eller gjør endringer på en eller flere kapabiliteter.
-
-Tiltakslisten (123) fra Digitaliseringsstrategien følges opp, i tillegg til andre relavante tiltak som bidrar til målene.
-
----
-
-### Kapabilitet (Operasjonell)
-**Type:** Capability
-
----
-
-### Konkret tiltak
-**Type:** WorkPackage
-
-Realiserer endringer som fjerner gap. Dette er konkrete tiltak som har startet eller er planlagt.
-Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
 
 ---
 
@@ -359,6 +308,57 @@ Se:  https://joinup.ec.europa.eu/collection/common-assessment-method-standards-a
 Togaf definisjon og beste-praksis beskrivelse og definisjon av Arkitekturprinsipper:
 https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap20.html
 
+
+---
+
+### Samhandlingsareneaer og organisering
+**Type:** Resource
+
+Organiserte nettverk og styringsorganer for både dialog og strategisk samordning.
+
+---
+
+### Domenekapabilitet
+**Type:** Capability
+
+---
+
+### Verdistrømmer og prosesser
+**Type:** ValueStream
+
+Verdistrøm representerer en sekvens av aktiviteter som skaper et samlet resultat for en kunde, interessent eller sluttbruker.
+
+Nasjonal arkitektur skal være kunnskaps- og datadrevet, og skal inneholde informasjon som skal kunne gjenbrukes i ulike verdistrømmer. Den skal inneholde viktige kapabiliteter og rammer for samhandling i felles økosystem, og den skal inneholde oversikt over hvilke løsninger og ressurser som kan benyttes for å dekke behov.  
+
+Det kan være ulike verdistrømmer for ulike brukergrupper og for ulike behov.
+* Operasjonelle verdistrømmer, der Nasjonal arkitektur inngår som en verktøykasse for daglige oppgaver. F.eks. tjenesteutvikling og produktutvikling.
+Målgruppe: Utførere, planleggere
+* Strategiske verdistrømmer, der Nasjonal arkitektur bidrar til at man tar valg for fremtiden
+Målgruppe: Beslutningstagere, planleggere
+
+---
+
+### Konkret tiltak
+**Type:** WorkPackage
+
+Realiserer endringer som fjerner gap. Dette er konkrete tiltak som har startet eller er planlagt.
+Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
+
+---
+
+### Nåværende situasjon
+**Type:** Plateau
+
+---
+
+### Standarder og veiledning
+**Type:** Resource
+
+Ressurser som setter regler eller gir retning.
+
+Dette kan være:
+Standarder, veiledere, referansearkitekturer, metodikk
+Normeringsgrad kan være knyttet til disse virkemidlene.
 
 ---
 

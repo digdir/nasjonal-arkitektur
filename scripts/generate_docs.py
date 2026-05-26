@@ -150,18 +150,21 @@ def generate_markdown(yaml_file, docs_dir):
         else:
             f.write(f"# {data.get('model', {}).get('name', 'Nasjonal Arkitektur')}\n\n")
             f.write("Velkommen til dokumentasjonen for Nasjonal Arkitektur.\n\n")
-            
+
+    with open(os.path.join(docs_dir, 'modell.md'), 'w', encoding='utf-8') as f:
+        f.write("# Rammeverksmodell for Nasjonal arkitektur\n\n")
+        
         f.write("## Last ned filer\n\n")
         f.write("Her kan du laste ned selve arkitekturmodellen i ulike formater:\n\n")
         f.write("- **[ArchiMate-fil](Nasjonal%20Arkitektur%20kapabilitetsmodell.archimate)**: Originalmodellen. Kan åpnes i [Archi](https://www.archimatetool.com/) eller andre verktøy som støtter ArchiMate.\n")
         f.write("- **[YAML-fil](nasjonal-arkitektur.yaml)**: En strukturert data-representasjon av modellen, ypperlig for analyse, maskinell lesing og KI-agenter.\n\n")
+
+        f.write("## Utforsk modell\n\n")
         
         if has_report:
-            f.write("## Utforsk den fulle rapporten\n\n")
-            f.write("Du kan se den fulle, interaktive HTML-rapporten generert fra ArchiMate her:\n")
+            f.write("Du kan se HTML-rapporten generert fra ArchiMate her:\n")
             f.write("- **[Åpne interaktiv ArchiMate-rapport](archimate-report/index.html)**\n\n")
 
-        f.write("## Utforsk modellen\n\n")
         f.write("Arkitekturen er beskrevet gjennom følgende visuelle views:\n\n")
         
         view_files.sort(key=lambda x: x[0])
