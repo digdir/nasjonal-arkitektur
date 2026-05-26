@@ -1,45 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Nasjonal Arkitektur" id="id-91814cfd070848099d96b5a751963e49" version="5.0.0">
   <folder name="Strategy" id="id-a50c4e7fb5fc4ed8a40303c38d08d786" type="strategy">
-    <element xsi:type="archimate:Capability" name="Strategisk kapabilitet (overordnet)" id="id-eb6f01d0d0ef4230b7a5c9c73c3842c5">
-      <documentation>En kapabilitet beskriver &quot;hva&quot; en eller flere aktører må kunne gjøre for å skape verdi, uavhengig av hvordan det gjøres. Dette er den forretningsmessige evnen til å oppnå et mål.&#xD;
-En kapabilitet er en grunnleggende funksjonell evne i det digitale økosystemet. Den beskriver hva som må være på plass for å oppnå felles nasjonale mål, uavhengig av organisatoriske grenser og tekniske løsninger.&#xD;
+    <folder name="Metamodell" id="id-43ed1263370e4591b227b01a248887b3">
+      <element xsi:type="archimate:Capability" name="Domenekapabilitet" id="id-23598cee556747ef80cab10dbad84e65"/>
+      <element xsi:type="archimate:Resource" name="Domeneressurs" id="id-4157e35b43184dd7bbcb4405e7edea46"/>
+      <element xsi:type="archimate:Resource" name="Fellesløsning" id="id-199ae45b0a6c47b28b3507837647c6c8">
+        <documentation>Fellesløsninger er tekniske komponenter eller applikasjoner som leverer funksjonalitet og dekker behov på tvers av eller innenfor sektorer, og/eller forvaltningsnivå. &#xD;
+Tekniske løsninger som utvikles én gang og brukes av mange.&#xD;
+Fellesløsninger er byggeklosser som kan brukes i utviklingen av offentlige digitale tjenester. Noen er obligatoriske å bruke, andre er anbefalte - både for statlige virksomheter og for kommunal sektor.&#xD;
 &#xD;
-Kapabiliteter er typisk uttrykt med generelle termer og på høyt nivå. For at en kapabilitet skal nås kreves evner i form av ferdigheter gjennom en kombinasjon av ulike ressurser. &#xD;
+Fellesløsning til forretningstjenester, som er forretningsaktivitet med et spesifisert resultat og som støtter et spesifikt forretningsmål. &#xD;
+Den er brukersentert og representerer funksjonalitet som leverer verdi til en ekstern bruker. &#xD;
+Brukerorienterte eller funksjonelle tjenester som leverer verdi, ofte på tvers av løsninger.&#xD;
 &#xD;
-Prosesser, Organisasjon/mennesker, Teknologi, Informasjon (POTI).&#xD;
+Merk:&#xD;
+Selv om en tjeneste bruker teknologi, er selve &quot;tjenesten&quot; (f.eks. eSignering eller Autentisering) det funksjonelle resultatet av en prosess rettet mot en bruker&#xD;
 &#xD;
-Kapabiliteter og grad av måloppnåelse&#xD;
-- målverdi&#xD;
-- dagens verdi&#xD;
-= Finner Gap og modenhet &#xD;
-En kapabilitet kan realisere både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer, oppfyller eller tolker hensikten bak prinsippet i praksis.&#xD;
-Modenhetsmodell, som CMMI (Capability Maturity Model Integration:&#xD;
-* Måling av kapabilitetsmodenhet (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn ved å synliggjøre gapet mellom &quot;hvor gode vi er&quot; (As-Is) og &quot;hvor gode vi må være&quot; (To-Be).&#xD;
-* Modenheten til en kapabilitet vurderes basert på tilstanden til de underliggende ressursene.&#xD;
+Strategiske prinsipper for nasjonale felleskomponenter (gammel - bør ha en felles beskrivelse av felles-&quot;løsninger&quot; i stedet)&#xD;
+https://www.digdir.no/media/395/download&#xD;
+https://www.regjeringen.no/contentassets/fe3e34b866034b82b9c623c5cec39823/no/pdfs/stm201520160027000dddpdfs.pdf&#xD;
 &#xD;
-Se også:&#xD;
-De konkrete resultatene av å bruke kapabilitetene.&#xD;
-Se på dybdeindikatorene fra nullpunktsmåling:&#xD;
-https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416&#xD;
-F.eks:&#xD;
-* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429&#xD;
-* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428&#xD;
+Fellesløsning vs. felles løsning:&#xD;
+* Forskjellen er institusjonell. &#xD;
+* Fellesløsning:  referer til nasjonale fellesløsninger, som er spesifikk tekniske komponenter som skal kunne brukes av svært mange i offentlig sektor for å løse generiske behov. &#xD;
+* Felles løsning: Gjenbrukbar løsnning som kan benyttes av flere og med formåk om samarbeid og stordriftsfordeler, men uten nødvendigvis å ha status som en nasjonal komponent i økosystemet.&#xD;
+* Fellestjeneste: Den forretningsmessige eller tekniske funksjonaliteten som tilbys.&#xD;
 &#xD;
-Hvordan vurdere modenhet? Gjør dette iht POTI&#xD;
-People (Folk/Organisasjon): Har vi riktig kompetanse og nok hoder?&#xD;
-Process (Prosess): Er rutinene dokumenterte og etterlevd?&#xD;
-Technology (Teknologi): Har vi verktøystøtte som fungerer?&#xD;
-Information (Informasjon): Er &quot;innholdet&quot; (dataene, kunnskapen, veiledningen)&#xD;
+Sluttbrukertjenester: Det innbyggeren eller næringslivet opplever (f.eks. &quot;Søke om barnehageplass&quot; eller &quot;Levere skattemelding&quot;). &#xD;
+Støttetjenester: Tekniske tjenester som ikke er synlige for sluttbrukeren, men som er nødvendige for at systemene skal snakke sammen (f.eks. gjennom et API)&#xD;
 &#xD;
-Togaf om Kapabilitetsplanlegging:&#xD;
-https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap28.html&#xD;
+De nasjonale felleskomponentene, slik de er definert i Digital agenda:&#xD;
+– Har en statlig virksomhet som forvaltningsansvarlig.&#xD;
+– Dekker behov på tvers av mange sektorer og/eller forvaltningsnivå.&#xD;
+– Vil være sentrale komponenter i en rekke digitale tjenester.&#xD;
+– Er av stor samfunnsøkonomisk betydning som felles mulighetsrom for digital tjenesteutvikling og gevinstrealisering i virksomhetene.&#xD;
+&#xD;
+&#xD;
+&#xD;
 </documentation>
-      <property key="Maturity_Current" value="1-5"/>
-      <property key="Maturity_Target" value="1-5"/>
-    </element>
-    <element xsi:type="archimate:Resource" name="Ressurs" id="id-9860d11ff3fd40a5b541b8f929ed305f">
-      <documentation>Ressurs (med hva):&#xD;
+      </element>
+      <element xsi:type="archimate:Capability" name="Kapabilitet (Operasjonell)" id="id-fa68712eb0924092abd996fa6c511065"/>
+      <element xsi:type="archimate:Resource" name="Ressurs" id="id-9860d11ff3fd40a5b541b8f929ed305f">
+        <documentation>Ressurs (med hva):&#xD;
 Ressursene er de konkrete byggeklossene som realiserer ønskede kapabiliteter, og løser konkrete behov.&#xD;
 En ressurs er noe vi har (byggeklossene) som løser et konkret behov eller krav til funksjonalitet, og som bidrar til å realisere en eller flere kapabiliteter.&#xD;
 &#xD;
@@ -101,181 +103,73 @@ POTI er spesielt nyttig når en organisasjon:&#xD;
 &#xD;
 Ved å bruke dette rammeverket kan selskaper utvikle et veikart for «nåsituasjon vs. fremtidig situasjon» og prioritere viktige tiltak for å lukke gap.&#xD;
 </documentation>
-      <property key="Dekningsgrad" value="1-5"/>
-    </element>
-    <element xsi:type="archimate:Capability" name="Kapabilitet (Operasjonell)" id="id-fa68712eb0924092abd996fa6c511065"/>
-    <element xsi:type="archimate:CourseOfAction" name="Tiltak for å nå fremtidige mål" id="id-30e12f5fdabe414db1430b0d735ed1f4">
-      <documentation>Dette er tiltak som realiserer eller gjør endringer på en eller flere kapabiliteter.&#xD;
+        <property key="Dekningsgrad" value="1-5"/>
+      </element>
+      <element xsi:type="archimate:Resource" name="Standarder og veiledning" id="id-f1f34cea2b2e4b5b8f8a9be88321de42">
+        <documentation>Ressurser som setter regler eller gir retning.&#xD;
+&#xD;
+Dette kan være:&#xD;
+Standarder, veiledere, referansearkitekturer, metodikk&#xD;
+Normeringsgrad kan være knyttet til disse virkemidlene.</documentation>
+      </element>
+      <element xsi:type="archimate:Resource" name="Samhandlingsareneaer og organisering" id="id-a947552722064b7c93181833028cc2f1">
+        <documentation>Organiserte nettverk og styringsorganer for både dialog og strategisk samordning.</documentation>
+      </element>
+      <element xsi:type="archimate:Resource" name="Rammebetingelser" id="id-456429d236544c28b3d7257893b0dec6">
+        <documentation>Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.&#xD;
+&#xD;
+Ressurser innenfor:&#xD;
+* Finansielle virkemidler/Finansieringsordninger&#xD;
+* Lovhjemler og juridiske virkemidler&#xD;
+* Samordning&#xD;
+&#xD;
+&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Strategisk kapabilitet (overordnet)" id="id-eb6f01d0d0ef4230b7a5c9c73c3842c5">
+        <documentation>En kapabilitet beskriver &quot;hva&quot; en eller flere aktører må kunne gjøre for å skape verdi, uavhengig av hvordan det gjøres. Dette er den forretningsmessige evnen til å oppnå et mål.&#xD;
+En kapabilitet er en grunnleggende funksjonell evne i det digitale økosystemet. Den beskriver hva som må være på plass for å oppnå felles nasjonale mål, uavhengig av organisatoriske grenser og tekniske løsninger.&#xD;
+&#xD;
+Kapabiliteter er typisk uttrykt med generelle termer og på høyt nivå. For at en kapabilitet skal nås kreves evner i form av ferdigheter gjennom en kombinasjon av ulike ressurser. &#xD;
+&#xD;
+Prosesser, Organisasjon/mennesker, Teknologi, Informasjon (POTI).&#xD;
+&#xD;
+Kapabiliteter og grad av måloppnåelse&#xD;
+- målverdi&#xD;
+- dagens verdi&#xD;
+= Finner Gap og modenhet &#xD;
+En kapabilitet kan realisere både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer, oppfyller eller tolker hensikten bak prinsippet i praksis.&#xD;
+Modenhetsmodell, som CMMI (Capability Maturity Model Integration:&#xD;
+* Måling av kapabilitetsmodenhet (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn ved å synliggjøre gapet mellom &quot;hvor gode vi er&quot; (As-Is) og &quot;hvor gode vi må være&quot; (To-Be).&#xD;
+* Modenheten til en kapabilitet vurderes basert på tilstanden til de underliggende ressursene.&#xD;
+&#xD;
+Se også:&#xD;
+De konkrete resultatene av å bruke kapabilitetene.&#xD;
+Se på dybdeindikatorene fra nullpunktsmåling:&#xD;
+https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416&#xD;
+F.eks:&#xD;
+* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429&#xD;
+* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428&#xD;
+&#xD;
+Hvordan vurdere modenhet? Gjør dette iht POTI&#xD;
+People (Folk/Organisasjon): Har vi riktig kompetanse og nok hoder?&#xD;
+Process (Prosess): Er rutinene dokumenterte og etterlevd?&#xD;
+Technology (Teknologi): Har vi verktøystøtte som fungerer?&#xD;
+Information (Informasjon): Er &quot;innholdet&quot; (dataene, kunnskapen, veiledningen)&#xD;
+&#xD;
+Togaf om Kapabilitetsplanlegging:&#xD;
+https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap28.html&#xD;
+</documentation>
+        <property key="Maturity_Current" value="1-5"/>
+        <property key="Maturity_Target" value="1-5"/>
+      </element>
+      <element xsi:type="archimate:CourseOfAction" name="Tiltak for å nå fremtidige mål" id="id-30e12f5fdabe414db1430b0d735ed1f4">
+        <documentation>Dette er tiltak som realiserer eller gjør endringer på en eller flere kapabiliteter.&#xD;
 &#xD;
 Tiltakslisten (123) fra Digitaliseringsstrategien følges opp, i tillegg til andre relavante tiltak som bidrar til målene.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Strategisk styring" id="id-682d96a51e604ed2a00e1f4824023bab">
-      <documentation>Evnen til å sette retning for nasjonal arkitektur og realisere strategiske mål.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Finansiering" id="id-ecdde89168314bfb94b6a6ac70a55bc7">
-      <documentation>Evne til å utforme, anvende og forvalte finansielle virkemidler for å styre digitalisering i økosystemets i tråd med nasjonale mål</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Juridisk samhandling" id="id-299fc063873a4f278a1d3c0ac9480467">
-      <documentation>Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.&#xD;
-&#xD;
-Dette innebærer:&#xD;
-Harmonisering: Å identifisere og håndtere motstridende eller overlappende lovverk og forskrifter som hindrer samhandling og datadeling.&#xD;
-Fortolkning og veiledning: Å tilby felles, autoritative tolkninger av relevant regelverk (f.eks. GDPR, forvaltningsloven, eIDAS, EU lovverk) og utarbeide praktiske veiledere for virksomhetene.&#xD;
-Regelverksutvikling: Å foreslå og koordinere endringer i regelverket for å tilpasse det til teknologisk utvikling og nye behov i økosystemet.&#xD;
-Risikovurdering: Å etablere felles metoder og standarder for juridisk risikovurdering knyttet til datadeling og utvikling av nye, tverrgående tjenester.&#xD;
-&#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Informasjonsforvaltning" id="id-896e4c1434604caa891b94bcce964720">
-      <documentation>Evne til å ha et felles rammeverk og styringsmodell for informasjonsforvaltning, slik at offentlige virksomheter kan utveksle og dele data og beskrivelser. </documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Informasjonsarkitektur" id="id-5c6c20d50b6a4b168524901372f0ca6e">
-      <documentation>Evne til å strukturere og modellere informasjon på en standardisert måte, slik at data og innhold blir finnbart, forståelig og gjenbrukbart for både mennesker og maskiner på tvers av hele økosystemet.&#xD;
-&#xD;
-&#xD;
-Dette betyr:&#xD;
-Arkitekturbeskrivelse gjennom et sett av krav, prinsipper og modeller, som er nødvendig for fleksibel deling og utveksling av informasjon for å oppnå endringsdyktighet</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Informasjonssikkerhet" id="id-48c9873ae59341a49c2dca27379fab55">
-      <documentation>Evne til å ha tilstrekkelig sikkerhet i tjenester og løsninger som benyttes i felles økosystem. &#xD;
-Merk: Er sterkt knyttet til kapabilitet &quot;Tillit&quot;</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Tillit" id="id-d503cf06faa1417b8acd4b26a5c0741e">
-      <documentation>Evne å tilby tillitstjenester som muliggjører autentisering og autorisasjon på tvers av tjenestekjeder, og støtte en distribuert arkitektur og føderering mellom ulike domener og tjeneste</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Representasjon" id="id-b2aafe1f4c534db6b92c40b1eef605f2">
-      <documentation>Evne til å kunne opptre eller utføre handlinger digitalt på vegne av andre. &#xD;
-&#xD;
-Dette innebærer:&#xD;
-Å kunne etablere, validere, forvalte og dokumentere representasjonsforhold mellom en representant og en representert, slik at rettigheter og myndighet kan utøves på vegne av andre i henhold til lovverk, fullmakter eller vedtak.&#xD;
-Det må kunne være sporbart og ha tilstrekkelig oversikt for involverte parter.&#xD;
-&#xD;
-Representasjon betyr at en person (representanten) har rett til å handle på vegne av en annen person eller en virksomhet (den representerte) på en slik måte at den representerte blir bundet av handlingen.&#xD;
-&#xD;
-Representasjon inkluderer bl.a. følgende:&#xD;
-* Fullmakt (avtaleregulert representasjonsforhold): Innebærer kunne gi en viljeserklæring, der den som gir fullmakt tildeler en person eller en virksomhet (fullmektigen) myndighet til å opptre eller gjøre noe på sine vegne.&#xD;
-* Vergemål (lovregulert representasjonsforhold)&#xD;
-* Foreldreansvar (lovregulert representasjonsforhold)&#xD;
-&#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Tilgangsstyring" id="id-b440252bc3de42dea8468be54e54b1fa">
-      <documentation>Evne til å styre og gi tilgang til hvem som har rettighet til å benytte en ressurs (tjeneste, system, API, opplysning) på vegne av seg selv, andre personer eller virksomheter. Autorisering.&#xD;
-&#xD;
-Dette er en overordnet kapabilitet som omfatter hele livssyklusen til en rettighet. I praksis betyr det å ha systemer og prosesser for å:&#xD;
-Definere roller: Sette opp roller med forhåndsdefinerte sett av rettigheter (f.eks., &quot;regnskapsfører&quot; eller &quot;daglig leder&quot;).&#xD;
-Delegere tilgang: Gi virksomheter og personer mulighet til å tildele disse rollene og enkeltrettigheter til andre, for eksempel en ansatt eller en regnskapsfører.&#xD;
-Forvalte representasjon: Håndtere hvem som kan handle på vegne av en virksomhet eller en annen person.&#xD;
-Opprettholde oversikt: Sikre oversikt over hvem som har tilgang til hva, slik at det er mulig å revidere og trekke tilbake tilganger ved behov.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Identifisering" id="id-4b66bbf964834654b5f0c61e955b91b1">
-      <documentation>Evne til entydig å fastslå og registrere identiteter (personer, virksomheter eller systemer) gjennom pålitelige metoder og kilder.&#xD;
-&#xD;
-Dette betyr videre at disse identitetene senere kan gjenkjennes og skilles fra andre, uavhengig av kontekst, og som legger til rette for sikker tilgangskontroll, sporbarhet og tillit</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Samtykke" id="id-809f454dc4024d56ab54079252fdfe29">
-      <documentation>Evne til å akseptere, godkjenne eller gi tillatelse til at en handling kan foretas på vegne av seg selv eller andre, der det foreligger et representasjonsforhold.&#xD;
-&#xD;
-Dette innebærer å kunne innhente, administrere og dokumentere gyldige, frivillige og informerte samtykker fra personer for behandling og deling av deres opplysninger og sikre at samtykker kan gis, spores, og enkelt trekkes tilbake.&#xD;
-Et samtykke er en aktiv, frivillig og informert viljeserklæring fra en person som gir en annen part tillatelse til å utføre en bestemt handling som berører dem eller deres data.&#xD;
-Merk at: Samtykke er i utgangspunktet ikke en formell form for representasjon.&#xD;
-&#xD;
-Eksempel:&#xD;
-Samtykke: Jeg gir noen lov til å gjøre noe overfor meg eller med mine data. Handlingen er rettet mot meg selv eller min sfære.&#xD;
-Eksempel: Jeg gir Altinn (tjenesteyter) lov til å hente mine skattedata. Altinn handler ikke på mine vegne, de utfører en handling jeg har gitt dem tillatelse til.&#xD;
-&#xD;
-Det kan oppstå situasjoner der en representant må gi et samtykke på vegne av den de representerer.&#xD;
-Eksempel: En verge (representant) gir samtykke til en medisinsk behandling for et barn (den representerte).&#xD;
-I dette tilfellet ser vi hvordan konseptene virker sammen: Vergen utøver sin representasjonsrett til å avgi et samtykke på vegne av barnet. Men selve samtykket og representasjonen er fortsatt to distinkte juridiske handlinger.&#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Tilgangskontroll" id="id-a8a1eb0181f04006ba7d3b5ab2fa9ca8">
-      <documentation>Evne til å kontrollere at en bruker har rettighet til å benytte angitt ressurs eller tjeneste på vegne av andre eller seg selv.&#xD;
-&#xD;
-Tilgangskontroll er den operative og tekniske evnen til å verifisere og håndheve en brukers rettigheter i sanntid når de forsøker å utføre en handling.&#xD;
-Det er den tekniske håndhevelsen av tilgangsstyringen.&#xD;
-&#xD;
-Tilgangsstyring er forutsetningen for god tilgangskontroll.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Sporbarhet og innsyn" id="id-2dfe07b3eae740b9a292e0a4a42d22db">
-      <documentation>Evne til dokumentasjon og logging av oppysninger for bruk i innsyn, forvaltning og kontroll av tillitstjenester.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Signering" id="id-f5214c3db8de4738ab03abb7b7e553ed">
-      <documentation>Evne til juridisk bindende signerering av dokumenter eller transaksjoner</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Oversikt over informasjonsmodeller" id="id-a40bf39259434db48f358cc543428c8a">
-      <documentation>Evne til å gi oversikt over informasjonsmodeller for å kunne gi en felles forståelse av datastrukturer, slik at data kan tolkes korrekt og meningsfullt.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Oversikt over hendelser" id="id-e5a55d4bacd14740a656bc896d25497a">
-      <documentation>Evne til å få oversikt over hvilke hendelser som utløser eller utløses av en tjeneste.&#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Oversikt over tjenester" id="id-d9374751da7d4b36bb0b3be609ff7d28">
-      <documentation>Evne til å gi oversikt over og oppdage tjenester som tilbys av eller på vegne av offentlig sektor.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Oversikt over API " id="id-718d8e94a9b847a485fc6518b4f2588d">
-      <documentation>Evne til å datadeling og tjenesteintegrasjon ved å oppdage, forstå og koble seg til tilgjengelige data via en standardisert oversikt over maskinlesbare grensesnitt (API-er).</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Oversikt over begreper" id="id-dc38d2667240445db35f7f0f38fc1e15">
-      <documentation>Evne til å etablere en omforent begrepsforståelse ved å definere, dele og gjenbruke begreper på tvers av virksomheter, for å sikre entydig kommunikasjon og semantisk samhandlingsevne</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Veiledning" id="id-c0547226c598467a942dced879d0c18b">
-      <documentation>Evne til at veiledninger for digital samhandling utarbeides og benyttes i felles økosystem.&#xD;
-&#xD;
-Dette innebærer:&#xD;
-* Beskrivelser av beste praksis&#xD;
-* Omforente prinsipper, mønstre og standarder for hvordan løsninger skal bygges for å fungere optimalt, sikkert og sammenhengende i det nasjonale økosystemet.&#xD;
-* Referansearkitekturer&#xD;
-&#xD;
-* hva som er god faglig praksis&#xD;
-* hvordan relevant regelverk skal tolkes&#xD;
-* hvilke prioriteringer som er i samsvar med vedtatt politikk&#xD;
-&#xD;
-Veiledere kan ha ulik grad av styrke:&#xD;
-* Bør benyttes: en sterk anbefaling/råd som vil gjelde de aller fleste. Denne er så klart faglig forankret at det sjelden er forsvarlig ikke å gjøre som anbefalt&#xD;
-* Kan eller foreslår: en svak anbefaling/råd der ulike valg kan være riktig.&#xD;
-&#xD;
-&#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Datautveksling og integrasjon" id="id-ad6f81e892a74590840828b6aabb270d">
-      <documentation>Evne til å sikkert, effektivt og standardisert utveksle data mellom aktører i økosystemet.&#xD;
-&#xD;
-&#xD;
-Mrk: Lommebok er inkludert i denne</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Bruke data fra andre" id="id-84629318a3b84213ac3a83bdb6a1aad9">
-      <documentation>Evne til å gjenbruke data fra andre i egne tjenester og prosesser.&#xD;
-&#xD;
-Dette innebærer:&#xD;
-* At man ikke skal behøve å samle inn den samme informasjonen på nytt.&#xD;
-* Å bruke grensesnitt basert på API, f.eks REST, GraphQL, eller andre klare, standardiserte og gjenbrukbare grensesnitt.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Meldingsformidling" id="id-b503993b59044b83b3c38fb179fa732c">
-      <documentation>Evnen til å garantere levering og meldingsrekkefølge til rett mottaker.&#xD;
-&#xD;
-Meldingsformidling er den evnen vi trenger for å tilby en tekniske infrastruktur og de tjenestene som ligger mellom avsender og mottaker for å sørge for at utvekslingen skjer på en sikker, pålitelig og standardisert måte.&#xD;
-&#xD;
-Merk: Meldingsutveksling tilhører kapabiliteten innunder &quot;Datautveksling&quot;</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Veiledning og standardisering (copy)" id="id-9119e1fb3de64872abb90e122280f4d9">
-      <documentation>Evne til å veilede, gi råd og utarbeide standarder </documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Hendelsesdrevet" id="id-64811e71d98647e5a678a0a2e79ae617">
-      <documentation>Evne til å publisere og reagere på digitale hendelser og kontinuerlige datastrømmer når de inntreffer.&#xD;
-&#xD;
-Hendelsesdrevet arkitektur er et designparadigme der en tjeneste kjøres etter å ha mottatt en hendelse. Det gjør det mulig å utveksle informasjon mellom distribuerte løsninger på tvers av virksomheter og sektorer i tilnærmet sanntid uten komplekse og tette integrasjoner.&#xD;
-Det gjør det mulig å &#xD;
-* knytte tjenester sammen i tjenestekjeder, uten tette koplinger. &#xD;
-* monitorere og analysere data, ofte knyttet til «IoT – Internet of things» og datastrømmer.&#xD;
-* tilby proaktive tjenester basert på analyser og hendelser&#xD;
-&#xD;
-&#xD;
-&#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:ValueStream" name="Verdistrømmer og prosesser" id="id-31be9bc0b80e4be4b2df2d8e0000dc6f">
-      <documentation>Verdistrøm representerer en sekvens av aktiviteter som skaper et samlet resultat for en kunde, interessent eller sluttbruker.&#xD;
+      </element>
+      <element xsi:type="archimate:ValueStream" name="Verdistrømmer og prosesser" id="id-31be9bc0b80e4be4b2df2d8e0000dc6f">
+        <documentation>Verdistrøm representerer en sekvens av aktiviteter som skaper et samlet resultat for en kunde, interessent eller sluttbruker.&#xD;
 &#xD;
 Nasjonal arkitektur skal være kunnskaps- og datadrevet, og skal inneholde informasjon som skal kunne gjenbrukes i ulike verdistrømmer. Den skal inneholde viktige kapabiliteter og rammer for samhandling i felles økosystem, og den skal inneholde oversikt over hvilke løsninger og ressurser som kan benyttes for å dekke behov.  &#xD;
 &#xD;
@@ -284,79 +178,75 @@ Det kan være ulike verdistrømmer for ulike brukergrupper og for ulike behov.&#
 Målgruppe: Utførere, planleggere&#xD;
 * Strategiske verdistrømmer, der Nasjonal arkitektur bidrar til at man tar valg for fremtiden&#xD;
 Målgruppe: Beslutningstagere, planleggere</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Oversikt over datasett" id="id-3c6f94ba791a4aa298809ef3f46bdc87">
-      <documentation>Evne til å systematisk oppdage, vurdere og gjenbruke data på tvers av offentlig sektor gjennom en sentral, standardisert oversikt over tilgjengelige datasett.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Dele data med andre" id="id-efe1a2676c124eeab946802af96a1ab7">
-      <documentation>Evne til å tilgjengeliggjøre egne data som veldokumenterte og sikre API-er, slik at andre aktører med lovlig grunnlag enkelt kan oppdage og gjenbruke dem.&#xD;
+      </element>
+    </folder>
+    <folder name="Kapabiliteter i NA" id="id-07de057ecd884803b94c0def71735591">
+      <element xsi:type="archimate:Capability" name="Anvendelse av veiledning" id="id-a601bb3d7b11478185903149965f7842">
+        <documentation>Evne til tolke og benytte veiledere i prosjekter og tiltak.&#xD;
 &#xD;
 Dette innebærer:&#xD;
-&#xD;
-Å etablere og forvalte sikre API-er etter nasjonale standarder.&#xD;
-&#xD;
-Å publisere og dokumentere dataene i Felles datakatalog, slik at de blir lette å finne og forstå.&#xD;
-&#xD;
-Å ha robuste systemer for tilgangsstyring som sikrer at data kun deles med de som har lov til det (f.eks. via Maskinporten).&#xD;
+* Faktisk bruk av veiledningsmateriell til å faktisk å forstå og bruke dem i egne prosjekte og tiltak.&#xD;
 &#xD;
 </documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Tjenesteutvikling" id="id-cd3b6a8989a448a2b4dfbf430a41bad4">
-      <documentation>Evne til å utvikle sammenhengende digitale tjenester.&#xD;
-&#xD;
-Dette er knyttet til prosess- og kompetanse-kapabilitet. Det innebærer å utvikle tjenester basert på metodikk, design, koding og samarbeid.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Sammenhengende tjenester" id="id-0aa7eced8c5c460f8bc64b77bd6a16c4">
-      <documentation>Evne til å levere en digital brukerorienterte tjenester som fremstår som en logisk og uavbrutt prosess for brukeren, selv når den involverer og koordinerer handlinger og tjenester fra flere, uavhengige virksomheter.&#xD;
-&#xD;
-Dette oppleves av brukeren som:&#xD;
-&#xD;
-En guidet reise: Brukeren blir ledet steg-for-steg gjennom en prosess fra start til slutt, uten å måtte lete etter neste skritt eller lure på hva som skjer nå. Tjenesten forteller proaktivt hva som er gjort, og hva som er neste steg.&#xD;
-&#xD;
-&quot;Kun én gang&quot;-prinsippet: Brukeren oppgir informasjon kun én gang. Denne informasjonen gjenbrukes intelligent i alle senere steg i prosessen, uavhengig av hvilken etat som trenger den.&#xD;
-&#xD;
-Ingen &quot;døde ender&quot;: Brukeren blir aldri stående fast med beskjeden &quot;Nå må du gå til X-etatens nettsider for å fortsette&quot;. Systemet sender brukeren, eller dataene, videre til neste ledd i kjeden på en kontrollert og sømløs måte.&#xD;
-&#xD;
-Skjult kompleksitet: Brukeren trenger ikke å kjenne til, eller forholde seg til, hvilke etater eller forvaltningsnivåer (statlig, kommunal) som er involvert. Opplevelsen er at man forholder seg til &quot;Det Offentlige&quot;.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Sluttbrukertjenester" id="id-1be148b57796458993c3f7f5f24815ca">
-      <documentation>Evne til å tilby en sammenhengende digital brukeropplevelse gjennom et økosystem av standardiserte og integrerbare tjenester.&#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Gjenbrukbare tjenester" id="id-f696350f5d844a96854deadb83bc3c81">
-      <documentation>Evne til å utvikle og benytte tjenester som kan brukes i nye sammenhenger på tvers av offentlig forvaltning og næringsliv. &#xD;
-&#xD;
-Dette er en forretningsmessig verdi, som betyr at en tjeneste løser et problem som flere har, og at den er utviklet slik at den kan brukes av andre.&#xD;
-&#xD;
-Merk at knytningen til &quot;Integrerbare&quot; er at &#xD;
-Du kan ha et system som er teknisk integrerbart (har et API), men som ikke er gjenbrukbart (fordi forretningslogikken er for spesifikk/låst). Derfor bør de holdes adskilt.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Integrerbare tjenester" id="id-60827614648541ef8520df87fa25d100">
-      <documentation>Evne til å designe, utvikle og eksponere data og funksjonalitet som selvstendige, standardiserte og maskinlesbare tjenester (API-er), slik at de enkelt kan oppdages, forstås og integreres i nye, tverrgående prosesser og løsninger.&#xD;
+      </element>
+      <element xsi:type="archimate:Capability" name="Arkitekturstyring" id="id-dabf94e621f644ffa53ebb44dcc9ff79">
+        <documentation>Evne til å etablere, forvalte og styre en helhetlig nasjonal digital arkitektur som et felles, forpliktende rammeverk, for å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem&#xD;
 &#xD;
 Dette innebærer:&#xD;
-&quot;API-først&quot;-metodikk: Å utvikle tjenestene med det maskinlesbare grensesnittet (API-et) som det primære produktet, uavhengig av en spesifikk sluttbruker-applikasjon. API-et er designet for å være en robust og gjenbrukbar byggekloss.&#xD;
-Sikkerhet: Å bygge inn sikkerhet og kontrollert tilgangsstyring som en fundamental del av tjenesten, slik at data kun deles med de som har lovlig grunnlag og legitimt behov.&#xD;
-Robust livssyklusforvaltning: Å ha klare rutiner for versjonering, vedlikehold og en forutsigbar utfasing av tjenester, slik at de som bruker dem kan stole på at de er stabile over tid.&#xD;
+* Å sørger for at &quot;alle drar i samme retning&quot;. Uten den vil digitaliseringen fortsette å være fragmentert, silobasert og suboptimal, der hver virksomhet optimaliserer for seg selv. Alle de andre kapabilitetene vi har definert – fra datadeling og integrasjon til sammenhengende tjenester – er resultater av at denne styringskapabiliteten fungerer. &#xD;
+* Å kunne benytte både myke og mer normerende virkemidler for å sikre etterlevelse og tatt i bruk.&#xD;
+* Å opprettholde en helhetlig og kontinuerlig oversikt over de sentrale byggeklossene, arkitekturproduktene og ressursene i det nasjonale digitale økosystemet.  &#xD;
+Oversikt må omfatte nasjonale fellesløsninger (som ID-porten og Altinn), felles datakilder (grunndata), felles plattformer (som KS sin FIKS-plattform) og kritiske tverrgående dataflyter. &#xD;
+En slik oversikt er fundamental for å kunne identifisere muligheter for gjenbruk, unngå kostbar duplisering av funksjonalitet, og styre livssyklusen til felleskomponentene på en strategisk måte. Porteføljeforvaltningen gir beslutningstakere det nødvendige grunnlaget for å vurdere hvilke nye fellesløsninger som bør utvikles og hvilke eksisterende som eventuelt bør fases ut.&#xD;
 &#xD;
+Etablering av rammeverk: Å utvikle og forvalte de sentrale komponentene i arkitekturen: Felles prinsipper, referansearkitekturer, obligatoriske standarder og en portefølje av nasjonale fellesløsninger.&#xD;
 &#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Datakilder" id="id-d7aa97e6319a492d8a1345bcaa8e154a">
-      <documentation>Evne til å tilgjengeliggjøre og forvalte data som en nasjonal fellesressurs, slik at de kan oppdages, forstås og gjenbrukes på en sikker og standardisert måte.&#xD;
+* Å jevnlig og systematisk vurdere modenhetsnivået for de nasjonale samhandlingskapabilitetene.&#xD;
+Dette betyr å evaluere nåværende modenhetsnivåer for kapabiliteter og sette realistiske mål for forbedring. Dette kan gjøres gjennom ulike vurderingsmetoder, som selvvurderinger, lederes vurderinger og ekspertvurderinger, for å identifisere gap mellom nåværende og ønsket kapabilitetsnivå. &#xD;
+Et eksempel på en kjent metode er CMMI (Capability Maturity Model Integration).&#xD;
+Det innebærer også å kunne vurdere nasjonale ressurser slik at de dekker fremtidens behov og deres egnethet til å realisere ønskede kapabiliteter.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Autentisering" id="id-ec0afaac123d4f9e83889d9022a198c3">
+        <documentation>Evne til å på en sikker og entydig måte verifisere den digitale identiteten til brukere og systemer</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Bruke data fra andre" id="id-84629318a3b84213ac3a83bdb6a1aad9">
+        <documentation>Evne til å gjenbruke data fra andre i egne tjenester og prosesser.&#xD;
+&#xD;
+Dette innebærer:&#xD;
+* At man ikke skal behøve å samle inn den samme informasjonen på nytt.&#xD;
+* Å bruke grensesnitt basert på API, f.eks REST, GraphQL, eller andre klare, standardiserte og gjenbrukbare grensesnitt.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Datadrevet" id="id-98df6c2b4df340c7a3a3ad32d99ca37e">
+        <documentation>Evne til å systematisk bruke data som en strategisk ressurs for å skape innsikt, informere beslutninger og utvikle bedre, mer treffsikre og effektive tjenester.&#xD;
+&#xD;
+Etisk og ansvarlig datautnyttelse: All bruk av data skjer på en sikker, lovlig og etisk forsvarlig måte som ivaretar personvern og rettssikkerhet.&#xD;
+&#xD;
+Dette innebærer:&#xD;
+Forvaltningen systematisk bruker data som en strategisk ressurs i prosesser, beslutningstaking og tjenesteutvikling for å levere bedre og mer effektive tjenester til innbyggere og næringsliv.&#xD;
+Dette forutsetter åpenhet, deling av data, og evne til å hente ut verdi fra data gjennom blant annet analyse, automatisering og bruk av kunstig intelligens.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Datakilder" id="id-d7aa97e6319a492d8a1345bcaa8e154a">
+        <documentation>Evne til å tilgjengeliggjøre og forvalte data som en nasjonal fellesressurs, slik at de kan oppdages, forstås og gjenbrukes på en sikker og standardisert måte.&#xD;
 &#xD;
 Dette innebærer også:&#xD;
 Å organisere og styre data innenfor definerte tematiske domener, for å sikre helhetlig forvaltning og strategisk utvikling av dataressurser innenfor kritiske samfunnsområder.&#xD;
 &#xD;
 &#xD;
 </documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Tjenestekjeder" id="id-825b1ea1217b4eedb6caae165aeb8e41">
-      <documentation>Evne til å dynamisk sette sammen, koordinere og automatisere flyten av informasjon og prosesser på tvers av uavhengige, integrerbare tjenester for å levere en komplett ende-til-ende-tjeneste for brukeren.&#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Dataanalyse" id="id-fa54a429cbd84db09da1b2b2165fc352">
-      <documentation>Evnen til å transformere rådata til meningsfull innsikt og bygge prediktive modeller.&#xD;
+      </element>
+      <element xsi:type="archimate:Capability" name="Datastyring" id="id-5852d070415849fab42749cb488d984a">
+        <documentation>Evne til å sikre enhetlig og ansvarlig forvaltning av dataressurser gjennom felles rammeverk, klar ansvarsplassering og systematisk kvalitetsarbeid.&#xD;
+&#xD;
+Datastyring (Data Governance) er rammeverket av roller, ansvar, prosesser og standarder som sikrer effektiv og forsvarlig forvaltning av data som en strategisk ressurs gjennom hele livssyklusen.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Datautveksling og integrasjon" id="id-ad6f81e892a74590840828b6aabb270d">
+        <documentation>Evne til å sikkert, effektivt og standardisert utveksle data mellom aktører i økosystemet.&#xD;
+&#xD;
+&#xD;
+Mrk: Lommebok er inkludert i denne</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Dataanalyse" id="id-fa54a429cbd84db09da1b2b2165fc352">
+        <documentation>Evnen til å transformere rådata til meningsfull innsikt og bygge prediktive modeller.&#xD;
 &#xD;
 Herunder ligger bruk av KI-teknikker:&#xD;
 Dette innebærer:&#xD;
@@ -381,21 +271,46 @@ Mer intelligente og treffsikre tjenester: KI er selve motoren bak avansert perso
 Bedre beslutningsgrunnlag: KI kan analysere komplekse datasett og avdekke innsikter og sammenhenger som er umulige for mennesker å oppdage. Dette gir ledere og beslutningstakere et dypere og mer nøyaktig grunnlag for å utforme politikk og strategi.&#xD;
 &#xD;
 Økt innovasjonsevne: KI åpner opp for å løse problemer som tidligere var uløselige. Det kan for eksempel brukes til å analysere medisinske bilder, overvåke miljøendringer via satellittdata eller optimalisere trafikkflyt i en by i sanntid.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Sammenstilling av data" id="id-7e3d1d3396914d65a177c9d5346d6feb">
-      <documentation>Evne til å hente, kombinere og foredle data fra ulike kilder for å skape ny innsikt, et helhetlig beslutningsgrunnlag, eller sammenhengende tjenester for brukeren.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Datadrevet" id="id-98df6c2b4df340c7a3a3ad32d99ca37e">
-      <documentation>Evne til å systematisk bruke data som en strategisk ressurs for å skape innsikt, informere beslutninger og utvikle bedre, mer treffsikre og effektive tjenester.&#xD;
-&#xD;
-Etisk og ansvarlig datautnyttelse: All bruk av data skjer på en sikker, lovlig og etisk forsvarlig måte som ivaretar personvern og rettssikkerhet.&#xD;
+      </element>
+      <element xsi:type="archimate:Capability" name="Dele data med andre" id="id-efe1a2676c124eeab946802af96a1ab7">
+        <documentation>Evne til å tilgjengeliggjøre egne data som veldokumenterte og sikre API-er, slik at andre aktører med lovlig grunnlag enkelt kan oppdage og gjenbruke dem.&#xD;
 &#xD;
 Dette innebærer:&#xD;
-Forvaltningen systematisk bruker data som en strategisk ressurs i prosesser, beslutningstaking og tjenesteutvikling for å levere bedre og mer effektive tjenester til innbyggere og næringsliv.&#xD;
-Dette forutsetter åpenhet, deling av data, og evne til å hente ut verdi fra data gjennom blant annet analyse, automatisering og bruk av kunstig intelligens.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Grunndata" id="id-3dbd3a9115cb4c54876490cbf02b0c58">
-      <documentation>Evne til å identifisere og formelt anerkjenne autoritative datakilder basert på en systematisk vurdering av deres verdi.&#xD;
+&#xD;
+Å etablere og forvalte sikre API-er etter nasjonale standarder.&#xD;
+&#xD;
+Å publisere og dokumentere dataene i Felles datakatalog, slik at de blir lette å finne og forstå.&#xD;
+&#xD;
+Å ha robuste systemer for tilgangsstyring som sikrer at data kun deles med de som har lov til det (f.eks. via Maskinporten).&#xD;
+&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="EU standarder" id="id-697145d3768b40d39f9463667b78f749">
+        <documentation>Evnen til at EU standardene forstås og tas i bruk.&#xD;
+&#xD;
+Forklaring:&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Finansiering" id="id-ecdde89168314bfb94b6a6ac70a55bc7">
+        <documentation>Evne til å utforme, anvende og forvalte finansielle virkemidler for å styre digitalisering i økosystemets i tråd med nasjonale mål</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Forvaltningsstandarder" id="id-b99fcd8160d24e5f8ea3c17b15072f7a">
+        <documentation>Evne til å implementere og ta i bruk nasjonale standarder&#xD;
+&#xD;
+Dette innebærer:&#xD;
+* inkluderer også EU harmoniserte standarder, som er vedtatt i norsk forvaltning&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Gjenbrukbare tjenester" id="id-f696350f5d844a96854deadb83bc3c81">
+        <documentation>Evne til å utvikle og benytte tjenester som kan brukes i nye sammenhenger på tvers av offentlig forvaltning og næringsliv. &#xD;
+&#xD;
+Dette er en forretningsmessig verdi, som betyr at en tjeneste løser et problem som flere har, og at den er utviklet slik at den kan brukes av andre.&#xD;
+&#xD;
+Merk at knytningen til &quot;Integrerbare&quot; er at &#xD;
+Du kan ha et system som er teknisk integrerbart (har et API), men som ikke er gjenbrukbart (fordi forretningslogikken er for spesifikk/låst). Derfor bør de holdes adskilt.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Grunndata" id="id-3dbd3a9115cb4c54876490cbf02b0c58">
+        <documentation>Evne til å identifisere og formelt anerkjenne autoritative datakilder basert på en systematisk vurdering av deres verdi.&#xD;
 &#xD;
 Eksempler på kandidater nasjonale grunndata:&#xD;
 Nøkkelregistre som er nasjonale grunndata:&#xD;
@@ -405,48 +320,111 @@ Matrikkelen (Eiendomsregisteret): Norges offisielle register over fast eiendom, 
 Arbeidsgiver- og arbeidstakerregisteret (Aa-registeret): Inneholder data om arbeidsforhold i Norge. Forvaltes av NAV.&#xD;
 &#xD;
 Geografiske grunndata: Forvaltes av Kartverket.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Sanntidsdata" id="id-711390c3ddaa4b67914ccbcc2f1831aa">
-      <documentation>Evne til å sikkert prosessere og distribuere kontinuerlige datastrømmer for å muliggjøre sanntidsinnsikt, automatisering og umiddelbar respons.&#xD;
+      </element>
+      <element xsi:type="archimate:Capability" name="Hendelsesdrevet" id="id-64811e71d98647e5a678a0a2e79ae617">
+        <documentation>Evne til å publisere og reagere på digitale hendelser og kontinuerlige datastrømmer når de inntreffer.&#xD;
 &#xD;
-Dette innebærer:&#xD;
-* Å kunne tilby data fra sensorer, tingenes internett (IoT) og andre hendelseskilder</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Åpne data" id="id-db4f30a87ae84561a4058d4d264177b1">
-      <documentation>Evne til å tilgjengeliggjøre åpne data slik at den kan leses og tolkes av både maskiner og mennesker, og som alle kan få tilgang til, bruke og dele.&#xD;
+Hendelsesdrevet arkitektur er et designparadigme der en tjeneste kjøres etter å ha mottatt en hendelse. Det gjør det mulig å utveksle informasjon mellom distribuerte løsninger på tvers av virksomheter og sektorer i tilnærmet sanntid uten komplekse og tette integrasjoner.&#xD;
+Det gjør det mulig å &#xD;
+* knytte tjenester sammen i tjenestekjeder, uten tette koplinger. &#xD;
+* monitorere og analysere data, ofte knyttet til «IoT – Internet of things» og datastrømmer.&#xD;
+* tilby proaktive tjenester basert på analyser og hendelser&#xD;
 &#xD;
-Begrunnelse for relevans&#xD;
-Dette er en kapabilitet som utvider verdien av offentlige data utover forvaltningens egne grenser og gir avkastning i hele samfunnet.&#xD;
 &#xD;
-Styrker demokrati og åpenhet: Åpne data gir innbyggere, journalister og interessegrupper mulighet til innsyn i forvaltningens arbeid og beslutningsgrunnlag. Dette øker transparensen og legger til rette for en mer informert offentlig debatt.&#xD;
-&#xD;
-Er et råstoff for næringsutvikling og innovasjon: Dette er en av de viktigste begrunnelsene. Offentlige data representerer en enorm, uutnyttet ressurs. Ved å gjøre dem fritt tilgjengelige, gir man næringslivet råmaterialet de trenger for å skape nye produkter, tjenester og arbeidsplasser som det offentlige aldri ville utviklet selv.&#xD;
-&#xD;
-Forbedrer forskning og faktabasert politikkutforming: Forskere får tilgang til rike datasett som kan brukes til å analysere samfunnstrender, evaluere politikk og løse komplekse samfunnsutfordringer.&#xD;
-&#xD;
-Gode åpne data kjennetegnes ved:&#xD;
-* at de er godt dokumenterte slik at de er lette å oppdage, vurdere og bruke&#xD;
-* at de kan linkes til slik at de lett kan deles og diskuteres&#xD;
-*  at de er tilgjengelige i et maskinleselig, standardisert og strukturert format slik at de enkelt kan bearbeides&#xD;
-* at de har garantier for tilgjengelighet og pålitelighet over tid, slik at andre kan stole på de&#xD;
-* at de er sporbare tilbake til hvor de kommer fra, slik at andre kan vurdere pålitelighet</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Autentisering" id="id-ec0afaac123d4f9e83889d9022a198c3">
-      <documentation>Evne til å på en sikker og entydig måte verifisere den digitale identiteten til brukere og systemer</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Standardisering" id="id-c3f87c86b19547359c677a333b16f03b">
-      <documentation>Evne til å identifisere, vedta, forvalte og fremme bruk av omforente standarder og spesifikasjoner som sikrer interoperabilitet og gjenbruk på tvers av sektorer og landegrenser.&#xD;
-&#xD;
-Dette innebærer:&#xD;
-Harmonisering: Å sikre at nasjonale standarder er i samsvar med internasjonale standarder (som EU-harmoniserte standarder) for å muliggjøre samhandling over landegrensene.&#xD;
-Livssyklusforvaltning: Å ha prosesser for å vurdere nye standarder, vedlikeholde eksisterende, og fase ut foreldede standarder i takt med teknologisk utvikling.&#xD;
-Veiledning: Å gjøre standardene tilgjengelige og forståelige, slik at de enkelt kan implementeres i tjenester og løsninger.&#xD;
-Etterlevelse: Å legge til rette for at fellesløsninger og virksomheter faktisk tar i bruk vedtatte forvaltningsstandarder i sine anskaffelser og utviklingsløp.&#xD;
 &#xD;
 </documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Proaktive tjenester" id="id-9bc3012bcd154e27aa094ac36bf391be">
-      <documentation>Evne til å, basert på registrerte hendelser og delte data, automatisk identifisere en brukers behov for offentlige tjenester og proaktivt tilby relevant informasjon, veiledning eller starte en tjenesteprosess på vegne av brukeren.&#xD;
+      </element>
+      <element xsi:type="archimate:Capability" name="Identifisering" id="id-4b66bbf964834654b5f0c61e955b91b1">
+        <documentation>Evne til entydig å fastslå og registrere identiteter (personer, virksomheter eller systemer) gjennom pålitelige metoder og kilder.&#xD;
+&#xD;
+Dette betyr videre at disse identitetene senere kan gjenkjennes og skilles fra andre, uavhengig av kontekst, og som legger til rette for sikker tilgangskontroll, sporbarhet og tillit</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Informasjonsarkitektur" id="id-5c6c20d50b6a4b168524901372f0ca6e">
+        <documentation>Evne til å strukturere og modellere informasjon på en standardisert måte, slik at data og innhold blir finnbart, forståelig og gjenbrukbart for både mennesker og maskiner på tvers av hele økosystemet.&#xD;
+&#xD;
+&#xD;
+Dette betyr:&#xD;
+Arkitekturbeskrivelse gjennom et sett av krav, prinsipper og modeller, som er nødvendig for fleksibel deling og utveksling av informasjon for å oppnå endringsdyktighet</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Informasjonsforvaltning" id="id-896e4c1434604caa891b94bcce964720">
+        <documentation>Evne til å ha et felles rammeverk og styringsmodell for informasjonsforvaltning, slik at offentlige virksomheter kan utveksle og dele data og beskrivelser. </documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Informasjonssikkerhet" id="id-48c9873ae59341a49c2dca27379fab55">
+        <documentation>Evne til å ha tilstrekkelig sikkerhet i tjenester og løsninger som benyttes i felles økosystem. &#xD;
+Merk: Er sterkt knyttet til kapabilitet &quot;Tillit&quot;</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Integrerbare tjenester" id="id-60827614648541ef8520df87fa25d100">
+        <documentation>Evne til å designe, utvikle og eksponere data og funksjonalitet som selvstendige, standardiserte og maskinlesbare tjenester (API-er), slik at de enkelt kan oppdages, forstås og integreres i nye, tverrgående prosesser og løsninger.&#xD;
+&#xD;
+Dette innebærer:&#xD;
+&quot;API-først&quot;-metodikk: Å utvikle tjenestene med det maskinlesbare grensesnittet (API-et) som det primære produktet, uavhengig av en spesifikk sluttbruker-applikasjon. API-et er designet for å være en robust og gjenbrukbar byggekloss.&#xD;
+Sikkerhet: Å bygge inn sikkerhet og kontrollert tilgangsstyring som en fundamental del av tjenesten, slik at data kun deles med de som har lovlig grunnlag og legitimt behov.&#xD;
+Robust livssyklusforvaltning: Å ha klare rutiner for versjonering, vedlikehold og en forutsigbar utfasing av tjenester, slik at de som bruker dem kan stole på at de er stabile over tid.&#xD;
+&#xD;
+&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Juridisk samhandling" id="id-299fc063873a4f278a1d3c0ac9480467">
+        <documentation>Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.&#xD;
+&#xD;
+Dette innebærer:&#xD;
+Harmonisering: Å identifisere og håndtere motstridende eller overlappende lovverk og forskrifter som hindrer samhandling og datadeling.&#xD;
+Fortolkning og veiledning: Å tilby felles, autoritative tolkninger av relevant regelverk (f.eks. GDPR, forvaltningsloven, eIDAS, EU lovverk) og utarbeide praktiske veiledere for virksomhetene.&#xD;
+Regelverksutvikling: Å foreslå og koordinere endringer i regelverket for å tilpasse det til teknologisk utvikling og nye behov i økosystemet.&#xD;
+Risikovurdering: Å etablere felles metoder og standarder for juridisk risikovurdering knyttet til datadeling og utvikling av nye, tverrgående tjenester.&#xD;
+&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Meldingsformidling" id="id-b503993b59044b83b3c38fb179fa732c">
+        <documentation>Evnen til å garantere levering og meldingsrekkefølge til rett mottaker.&#xD;
+&#xD;
+Meldingsformidling er den evnen vi trenger for å tilby en tekniske infrastruktur og de tjenestene som ligger mellom avsender og mottaker for å sørge for at utvekslingen skjer på en sikker, pålitelig og standardisert måte.&#xD;
+&#xD;
+Merk: Meldingsutveksling tilhører kapabiliteten innunder &quot;Datautveksling&quot;</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Nasjonal arkitektur for samhandling" id="id-ba60560a9ed64b4d87b2fd4fa6b32937">
+        <documentation>Evne til å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem.&#xD;
+&#xD;
+&#xD;
+Felles økosystem skal bidra til økt deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv måte og skaper økte verdier for samfunnet.&#xD;
+Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen mellom aktørene. &#xD;
+Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette.&#xD;
+&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Organisatorisk samhandling" id="id-9ea8fbaeb19243fa971013c57c3e96f9">
+        <documentation>Evnen til å effektivisere forretningsprosesser og verdikjeder på tvers av organisatoriske grenser. &#xD;
+&#xD;
+Dette er en operativ og strukturell evne.&#xD;
+Dette innebære:&#xD;
+A kunne utvikle tjenester med utgangspunkt i brukerens behov og livssituasjon uavhengig av organisatoriske grenser og strukturer.&#xD;
+Eksempel:&#xD;
+Scenario A: Dere har gode samarbeidsarenaer (møter, fagforum), men arbeidsprosessene (selve samhandlingen) kan fortsatt være manuelle, tungvinte og ikke samkjørte.&#xD;
+&#xD;
+&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Oversikt over API " id="id-718d8e94a9b847a485fc6518b4f2588d">
+        <documentation>Evne til å datadeling og tjenesteintegrasjon ved å oppdage, forstå og koble seg til tilgjengelige data via en standardisert oversikt over maskinlesbare grensesnitt (API-er).</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Oversikt over begreper" id="id-dc38d2667240445db35f7f0f38fc1e15">
+        <documentation>Evne til å etablere en omforent begrepsforståelse ved å definere, dele og gjenbruke begreper på tvers av virksomheter, for å sikre entydig kommunikasjon og semantisk samhandlingsevne</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Oversikt over datasett" id="id-3c6f94ba791a4aa298809ef3f46bdc87">
+        <documentation>Evne til å systematisk oppdage, vurdere og gjenbruke data på tvers av offentlig sektor gjennom en sentral, standardisert oversikt over tilgjengelige datasett.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Oversikt over hendelser" id="id-e5a55d4bacd14740a656bc896d25497a">
+        <documentation>Evne til å få oversikt over hvilke hendelser som utløser eller utløses av en tjeneste.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Oversikt over informasjonsmodeller" id="id-a40bf39259434db48f358cc543428c8a">
+        <documentation>Evne til å gi oversikt over informasjonsmodeller for å kunne gi en felles forståelse av datastrukturer, slik at data kan tolkes korrekt og meningsfullt.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Oversikt over tjenester" id="id-d9374751da7d4b36bb0b3be609ff7d28">
+        <documentation>Evne til å gi oversikt over og oppdage tjenester som tilbys av eller på vegne av offentlig sektor.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Proaktive tjenester" id="id-9bc3012bcd154e27aa094ac36bf391be">
+        <documentation>Evne til å, basert på registrerte hendelser og delte data, automatisk identifisere en brukers behov for offentlige tjenester og proaktivt tilby relevant informasjon, veiledning eller starte en tjenesteprosess på vegne av brukeren.&#xD;
 &#xD;
 Brukeren blir varslet om rettigheter, plikter eller muligheter de har, før de selv har etterspurt det.&#xD;
 Dette kan innebære:&#xD;
@@ -473,75 +451,43 @@ Uten proaktivitet forblir selv de beste digitale tjenestene passive verktøy som
 &#xD;
 &#xD;
 </documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Visualisering" id="id-8914d57f4f1442b1b562252a3630a686">
-      <documentation>Evne til å omforme komplekse data til visuelle fremstillinger som gjør innsikt lett tilgjengelig, forståelig og anvendbar.&#xD;
-&#xD;
-Visualisering er den kapabiliteten som gjør at vi kan &quot;se&quot; historien dataene forteller. &#xD;
+      </element>
+      <element xsi:type="archimate:Capability" name="Regelverkstolkning" id="id-0209483504444508a40415aa6e3fc39c">
+        <documentation>Evne til å tilby felles, autoritative tolkninger av relevant regelverk.&#xD;
 &#xD;
 Dette innebærer:&#xD;
-* Beslutningsstøtte i sanntid: Å lage oversikter (dashboards) som oppdaterer seg selv, slik at man kan ta valg basert på hvordan situasjonen er akkurat nå.&#xD;
-* Geografisk fremstilling: Å koble data til kart for å forstå sammenhenger mellom sted og hendelser (for eksempel smittespredning, trafikkflyt eller andre ressursbehov).&#xD;
-* Datadrevet historiefortelling: Å presentere fakta på en måte som gjør det enkelt å kommunisere et budskap til andre.&#xD;
-&#xD;
-&#xD;
-&#xD;
-&#xD;
-&#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="EU standarder" id="id-697145d3768b40d39f9463667b78f749">
-      <documentation>Evnen til at EU standardene forstås og tas i bruk.&#xD;
-&#xD;
-Forklaring:&#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Forvaltningsstandarder" id="id-b99fcd8160d24e5f8ea3c17b15072f7a">
-      <documentation>Evne til å implementere og ta i bruk nasjonale standarder&#xD;
+* juridisk risikovurdering: Ved å tilby felles tolkninger, etablerer man også felles risikoforståelse.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Regelverksutvikling" id="id-0119029984674da59dbbfdc3a8ca3e95">
+        <documentation>Evne til å foreslå og koordinere endringer i regelverket for å tilpasse det til teknologisk utvikling og nye behov.&#xD;
 &#xD;
 Dette innebærer:&#xD;
-* inkluderer også EU harmoniserte standarder, som er vedtatt i norsk forvaltning&#xD;
+* Å identifisere motstridende regelverk, der hamonisering er nødvendig&#xD;
+* Foreslå og koordinere endringer for å tilpasse lovverket&#xD;
+&#xD;
 </documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Styringssystem" id="id-980043f78fa94eec8ecf46338a5b9c6b">
-      <documentation>Evne til å evaluere, forbedre, fornye styringssystem for informasjonssikkerhet.&#xD;
+      </element>
+      <element xsi:type="archimate:Capability" name="Representasjon" id="id-b2aafe1f4c534db6b92c40b1eef605f2">
+        <documentation>Evne til å kunne opptre eller utføre handlinger digitalt på vegne av andre. &#xD;
 &#xD;
 Dette innebærer:&#xD;
-Innebærer at en virksomhet systematisk vurderer hvordan deres nåværende sikkerhetsstyringssystem fungerer, identifiserer forbedringsområder, og tilpasser eller oppdaterer systemet for å møte nye trusler, sårbarheter og endringer i virksomhetens behov eller omgivelsene. Dette inkluderer regelmessige risikovurderinger, kontroll av om sikkerhetstiltak er effektive, og implementering av tiltak for å lukke eventuelle sikkerhetsgap</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Sikring av informasjonsflyt og datautveksling" id="id-34d3d64b3afe4327a29ee6c2f7f74dff">
-      <documentation>Kapabiliteten omfatter de tekniske og organisatoriske tiltakene som sikrer at informasjon som utveksles mellom virksomheter er beskyttet mot innsyn og manipulering, og at dataflyten er kontrollert.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Samarbeid" id="id-e67a4f2983ce40f9823ec34ba460055a">
-      <documentation>Evne til å samarbeid og samhandling på tvers av offentlig og privat forvaltning.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Tjenesteforvaltning" id="id-3f59d920995e4d488e56f61356dcf97a">
-      <documentation>Evne til å formalisere samarbeid gjennom tydelig definerte roller, ansvar og avtaler for å sikre forutsigbar og effektiv felles styring mellom samhandlende virksomheter.&#xD;
-Avtalefesting av ansvar (SLA, governance) i tjenestekjeder.&#xD;
+Å kunne etablere, validere, forvalte og dokumentere representasjonsforhold mellom en representant og en representert, slik at rettigheter og myndighet kan utøves på vegne av andre i henhold til lovverk, fullmakter eller vedtak.&#xD;
+Det må kunne være sporbart og ha tilstrekkelig oversikt for involverte parter.&#xD;
 &#xD;
-Når tjenester settes sammen av bidrag fra flere ulike virksomheter, oppstår det nye og komplekse styringsutfordringer. Denne kapabiliteten handler om å designe og implementere styringsmodeller som er tilpasset slike tverrgående tjenestekjeder og digitale økosystemer. Dette innebærer å tydelig definere roller og ansvar for hele kjeden, fra ende-til-ende, og plassere ansvaret for at helheten fungerer. For de prioriterte livshendelsene i digitaliseringsstrategien, vil slike styringsmodeller være avgjørende for å sikre at brukeren opplever en sømløs tjeneste, uavhengig av hvordan forvaltningen er organisert &quot;bak fasaden&quot;&#xD;
+Representasjon betyr at en person (representanten) har rett til å handle på vegne av en annen person eller en virksomhet (den representerte) på en slik måte at den representerte blir bundet av handlingen.&#xD;
 &#xD;
-Dette innebærer:&#xD;
-Etablere klare roller og ansvar: Hver virksomhet må vite nøyaktig hva som forventes av dem i samarbeidet.&#xD;
-Formalisere samarbeid: Inngåelse av formelle avtaler som samforståelsesmemorandum (MoU) og tjenestenivåavtaler (SLA) for å sikre forpliktelse og forutsigbarhet i leveransene.&#xD;
-Felles forvaltningsmodeller: Enighet om hvordan felles løsninger og tjenester skal styres, vedlikeholdes og videreutvikles over tid.&#xD;
+Representasjon inkluderer bl.a. følgende:&#xD;
+* Fullmakt (avtaleregulert representasjonsforhold): Innebærer kunne gi en viljeserklæring, der den som gir fullmakt tildeler en person eller en virksomhet (fullmektigen) myndighet til å opptre eller gjøre noe på sine vegne.&#xD;
+* Vergemål (lovregulert representasjonsforhold)&#xD;
+* Foreldreansvar (lovregulert representasjonsforhold)&#xD;
 &#xD;
 </documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Organisatorisk samhandling" id="id-9ea8fbaeb19243fa971013c57c3e96f9">
-      <documentation>Evnen til å effektivisere forretningsprosesser og verdikjeder på tvers av organisatoriske grenser. &#xD;
-&#xD;
-Dette er en operativ og strukturell evne.&#xD;
-Dette innebære:&#xD;
-A kunne utvikle tjenester med utgangspunkt i brukerens behov og livssituasjon uavhengig av organisatoriske grenser og strukturer.&#xD;
-Eksempel:&#xD;
-Scenario A: Dere har gode samarbeidsarenaer (møter, fagforum), men arbeidsprosessene (selve samhandlingen) kan fortsatt være manuelle, tungvinte og ikke samkjørte.&#xD;
-&#xD;
-&#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Samarbeidsarenaer og nettverk" id="id-b4a86e2e430c472b9f74bedb7f66fd74">
-      <documentation>Evne til å effektivisere, etablere, forvalte og fasilitere arenaer, nettverk og prosesser som fremmer kunnskapsdeling, dialog og samordning på tvers av virksomheter i økosystemet.&#xD;
+      </element>
+      <element xsi:type="archimate:Capability" name="Samarbeid" id="id-e67a4f2983ce40f9823ec34ba460055a">
+        <documentation>Evne til å samarbeid og samhandling på tvers av offentlig og privat forvaltning.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Samarbeidsarenaer og nettverk" id="id-b4a86e2e430c472b9f74bedb7f66fd74">
+        <documentation>Evne til å effektivisere, etablere, forvalte og fasilitere arenaer, nettverk og prosesser som fremmer kunnskapsdeling, dialog og samordning på tvers av virksomheter i økosystemet.&#xD;
 &#xD;
 Dette innebærer:&#xD;
 Etablering av samhandlingsarenaer: Å skape og drifte møteplasser, både fysiske og digitale (f.eks. fagforum, workshops, partnersamlinger), hvor aktører kan utveksle erfaringer, diskutere felles utfordringer, utforske samarbeidsmuligheter og være rådgivende. &#xD;
@@ -553,38 +499,25 @@ Systematisk kunnskapsdeling: Å etablere kanaler og rutiner for å dele innsikt,
 Fasilitering og prosessledelse: Å tilby nøytral møte- og prosessledelse for å hjelpe grupper med å oppnå felles forståelse, bygge konsensus og utvikle felles løsninger, uten å ha formell beslutningsmyndighet.&#xD;
 &#xD;
 Rådgivning om samarbeidsmodeller: Å gi råd og veiledning til virksomheter om egnede modeller for samarbeid, som felles prosjekter, partnerskap eller mer uformelle nettverk.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Arkitekturstyring" id="id-dabf94e621f644ffa53ebb44dcc9ff79">
-      <documentation>Evne til å etablere, forvalte og styre en helhetlig nasjonal digital arkitektur som et felles, forpliktende rammeverk, for å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem&#xD;
+      </element>
+      <element xsi:type="archimate:Capability" name="Sammenhengende tjenester" id="id-0aa7eced8c5c460f8bc64b77bd6a16c4">
+        <documentation>Evne til å levere en digital brukerorienterte tjenester som fremstår som en logisk og uavbrutt prosess for brukeren, selv når den involverer og koordinerer handlinger og tjenester fra flere, uavhengige virksomheter.&#xD;
 &#xD;
-Dette innebærer:&#xD;
-* Å sørger for at &quot;alle drar i samme retning&quot;. Uten den vil digitaliseringen fortsette å være fragmentert, silobasert og suboptimal, der hver virksomhet optimaliserer for seg selv. Alle de andre kapabilitetene vi har definert – fra datadeling og integrasjon til sammenhengende tjenester – er resultater av at denne styringskapabiliteten fungerer. &#xD;
-* Å kunne benytte både myke og mer normerende virkemidler for å sikre etterlevelse og tatt i bruk.&#xD;
-* Å opprettholde en helhetlig og kontinuerlig oversikt over de sentrale byggeklossene, arkitekturproduktene og ressursene i det nasjonale digitale økosystemet.  &#xD;
-Oversikt må omfatte nasjonale fellesløsninger (som ID-porten og Altinn), felles datakilder (grunndata), felles plattformer (som KS sin FIKS-plattform) og kritiske tverrgående dataflyter. &#xD;
-En slik oversikt er fundamental for å kunne identifisere muligheter for gjenbruk, unngå kostbar duplisering av funksjonalitet, og styre livssyklusen til felleskomponentene på en strategisk måte. Porteføljeforvaltningen gir beslutningstakere det nødvendige grunnlaget for å vurdere hvilke nye fellesløsninger som bør utvikles og hvilke eksisterende som eventuelt bør fases ut.&#xD;
+Dette oppleves av brukeren som:&#xD;
 &#xD;
-Etablering av rammeverk: Å utvikle og forvalte de sentrale komponentene i arkitekturen: Felles prinsipper, referansearkitekturer, obligatoriske standarder og en portefølje av nasjonale fellesløsninger.&#xD;
+En guidet reise: Brukeren blir ledet steg-for-steg gjennom en prosess fra start til slutt, uten å måtte lete etter neste skritt eller lure på hva som skjer nå. Tjenesten forteller proaktivt hva som er gjort, og hva som er neste steg.&#xD;
 &#xD;
-* Å jevnlig og systematisk vurdere modenhetsnivået for de nasjonale samhandlingskapabilitetene.&#xD;
-Dette betyr å evaluere nåværende modenhetsnivåer for kapabiliteter og sette realistiske mål for forbedring. Dette kan gjøres gjennom ulike vurderingsmetoder, som selvvurderinger, lederes vurderinger og ekspertvurderinger, for å identifisere gap mellom nåværende og ønsket kapabilitetsnivå. &#xD;
-Et eksempel på en kjent metode er CMMI (Capability Maturity Model Integration).&#xD;
-Det innebærer også å kunne vurdere nasjonale ressurser slik at de dekker fremtidens behov og deres egnethet til å realisere ønskede kapabiliteter.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Datastyring" id="id-5852d070415849fab42749cb488d984a">
-      <documentation>Evne til å sikre enhetlig og ansvarlig forvaltning av dataressurser gjennom felles rammeverk, klar ansvarsplassering og systematisk kvalitetsarbeid.&#xD;
+&quot;Kun én gang&quot;-prinsippet: Brukeren oppgir informasjon kun én gang. Denne informasjonen gjenbrukes intelligent i alle senere steg i prosessen, uavhengig av hvilken etat som trenger den.&#xD;
 &#xD;
-Datastyring (Data Governance) er rammeverket av roller, ansvar, prosesser og standarder som sikrer effektiv og forsvarlig forvaltning av data som en strategisk ressurs gjennom hele livssyklusen.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Utviklings- og kjøretidsmiljø" id="id-ce84b9b6943f4789bca153c0ed15245a">
-      <documentation>Evne til å tilby og forvalte en felles, skalerbar teknisk plattform og en tilhørende verktøykasse med standardiserte byggeklosser, verktøy og utviklingsmiljøe som forenkler og akselererer utviklingen av digitale tjenester.&#xD;
+Ingen &quot;døde ender&quot;: Brukeren blir aldri stående fast med beskjeden &quot;Nå må du gå til X-etatens nettsider for å fortsette&quot;. Systemet sender brukeren, eller dataene, videre til neste ledd i kjeden på en kontrollert og sømløs måte.&#xD;
 &#xD;
-Dette innebærer:&#xD;
-Tjenesteutvikling foregår i stor grad i sektorene og den enkelte virksomhet. Det vil allikevel være behov for å tilby felles utviklings- og kjøretidsmiljø for hele offentlig sektor eller for enkeltsektorer. &#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Samordning" id="id-034543e002414306a8fbecc8c9d8e496">
-      <documentation>Evnen til å harmonisere og koordinere strategisk retning, beslutninger og ressursbruk på tvers av virksomheter, for å realisere felles samfunnsmål og sammenhengende tjenester.&#xD;
+Skjult kompleksitet: Brukeren trenger ikke å kjenne til, eller forholde seg til, hvilke etater eller forvaltningsnivåer (statlig, kommunal) som er involvert. Opplevelsen er at man forholder seg til &quot;Det Offentlige&quot;.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Sammenstilling av data" id="id-7e3d1d3396914d65a177c9d5346d6feb">
+        <documentation>Evne til å hente, kombinere og foredle data fra ulike kilder for å skape ny innsikt, et helhetlig beslutningsgrunnlag, eller sammenhengende tjenester for brukeren.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Samordning" id="id-034543e002414306a8fbecc8c9d8e496">
+        <documentation>Evnen til å harmonisere og koordinere strategisk retning, beslutninger og ressursbruk på tvers av virksomheter, for å realisere felles samfunnsmål og sammenhengende tjenester.&#xD;
 &#xD;
 Dette innebærer:&#xD;
 En tydelig styring eller mandat som krever at aktørene tilpasser hverandre. &#xD;
@@ -601,31 +534,64 @@ Samordning på ulike nivåer (Juridisk, Organisatorisk Semantisk, Teknisk):&#xD;
 &#xD;
 &#xD;
 </documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Domenekapabilitet" id="id-23598cee556747ef80cab10dbad84e65"/>
-    <element xsi:type="archimate:Capability" name="Nasjonal arkitektur for samhandling" id="id-ba60560a9ed64b4d87b2fd4fa6b32937">
-      <documentation>Evne til å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem.&#xD;
+      </element>
+      <element xsi:type="archimate:Capability" name="Samtykke" id="id-809f454dc4024d56ab54079252fdfe29">
+        <documentation>Evne til å akseptere, godkjenne eller gi tillatelse til at en handling kan foretas på vegne av seg selv eller andre, der det foreligger et representasjonsforhold.&#xD;
 &#xD;
+Dette innebærer å kunne innhente, administrere og dokumentere gyldige, frivillige og informerte samtykker fra personer for behandling og deling av deres opplysninger og sikre at samtykker kan gis, spores, og enkelt trekkes tilbake.&#xD;
+Et samtykke er en aktiv, frivillig og informert viljeserklæring fra en person som gir en annen part tillatelse til å utføre en bestemt handling som berører dem eller deres data.&#xD;
+Merk at: Samtykke er i utgangspunktet ikke en formell form for representasjon.&#xD;
 &#xD;
-Felles økosystem skal bidra til økt deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv måte og skaper økte verdier for samfunnet.&#xD;
-Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen mellom aktørene. &#xD;
-Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette.&#xD;
+Eksempel:&#xD;
+Samtykke: Jeg gir noen lov til å gjøre noe overfor meg eller med mine data. Handlingen er rettet mot meg selv eller min sfære.&#xD;
+Eksempel: Jeg gir Altinn (tjenesteyter) lov til å hente mine skattedata. Altinn handler ikke på mine vegne, de utfører en handling jeg har gitt dem tillatelse til.&#xD;
 &#xD;
+Det kan oppstå situasjoner der en representant må gi et samtykke på vegne av den de representerer.&#xD;
+Eksempel: En verge (representant) gir samtykke til en medisinsk behandling for et barn (den representerte).&#xD;
+I dette tilfellet ser vi hvordan konseptene virker sammen: Vergen utøver sin representasjonsrett til å avgi et samtykke på vegne av barnet. Men selve samtykket og representasjonen er fortsatt to distinkte juridiske handlinger.&#xD;
 </documentation>
-    </element>
-    <element xsi:type="archimate:Resource" name="Domeneressurs" id="id-4157e35b43184dd7bbcb4405e7edea46"/>
-    <element xsi:type="archimate:Capability" name="Tjenestedesign" id="id-379e167f7b9c4fbea9c6969425ba7f6c">
-      <documentation>Evne til å sette brukerens behov, livssituasjon og helhetlige reise som utgangspunkt for utvikling av sammenhengende tjenester.&#xD;
+      </element>
+      <element xsi:type="archimate:Capability" name="Sanntidsdata" id="id-711390c3ddaa4b67914ccbcc2f1831aa">
+        <documentation>Evne til å sikkert prosessere og distribuere kontinuerlige datastrømmer for å muliggjøre sanntidsinnsikt, automatisering og umiddelbar respons.&#xD;
 &#xD;
 Dette innebærer:&#xD;
-* Å systematisk innhente og bruke kunnskap om brukernes faktiske behov, adferd og utfordringer.&#xD;
-* Å designe tjenester som dekker hele brukerbehovet fra start til slutt, selv når løsningen krever samarbeid tverrsektorielt og ulike forvaltningsnivå.&#xD;
+* Å kunne tilby data fra sensorer, tingenes internett (IoT) og andre hendelseskilder</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Signering" id="id-f5214c3db8de4738ab03abb7b7e553ed">
+        <documentation>Evne til juridisk bindende signerering av dokumenter eller transaksjoner</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Sikring av informasjonsflyt og datautveksling" id="id-34d3d64b3afe4327a29ee6c2f7f74dff">
+        <documentation>Kapabiliteten omfatter de tekniske og organisatoriske tiltakene som sikrer at informasjon som utveksles mellom virksomheter er beskyttet mot innsyn og manipulering, og at dataflyten er kontrollert.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Sluttbrukertjenester" id="id-1be148b57796458993c3f7f5f24815ca">
+        <documentation>Evne til å tilby en sammenhengende digital brukeropplevelse gjennom et økosystem av standardiserte og integrerbare tjenester.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Sporbarhet og innsyn" id="id-2dfe07b3eae740b9a292e0a4a42d22db">
+        <documentation>Evne til dokumentasjon og logging av oppysninger for bruk i innsyn, forvaltning og kontroll av tillitstjenester.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Standardisering" id="id-c3f87c86b19547359c677a333b16f03b">
+        <documentation>Evne til å identifisere, vedta, forvalte og fremme bruk av omforente standarder og spesifikasjoner som sikrer interoperabilitet og gjenbruk på tvers av sektorer og landegrenser.&#xD;
 &#xD;
+Dette innebærer:&#xD;
+Harmonisering: Å sikre at nasjonale standarder er i samsvar med internasjonale standarder (som EU-harmoniserte standarder) for å muliggjøre samhandling over landegrensene.&#xD;
+Livssyklusforvaltning: Å ha prosesser for å vurdere nye standarder, vedlikeholde eksisterende, og fase ut foreldede standarder i takt med teknologisk utvikling.&#xD;
+Veiledning: Å gjøre standardene tilgjengelige og forståelige, slik at de enkelt kan implementeres i tjenester og løsninger.&#xD;
+Etterlevelse: Å legge til rette for at fellesløsninger og virksomheter faktisk tar i bruk vedtatte forvaltningsstandarder i sine anskaffelser og utviklingsløp.&#xD;
 &#xD;
 </documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Testdata" id="id-68ec332ee94c483e878a3a2ae903863f">
-      <documentation>Evne til å generere og tilgjengeliggjøre representative og personvernsikre datasett.&#xD;
+      </element>
+      <element xsi:type="archimate:Capability" name="Strategisk styring" id="id-682d96a51e604ed2a00e1f4824023bab">
+        <documentation>Evnen til å sette retning for nasjonal arkitektur og realisere strategiske mål.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Styringssystem" id="id-980043f78fa94eec8ecf46338a5b9c6b">
+        <documentation>Evne til å evaluere, forbedre, fornye styringssystem for informasjonssikkerhet.&#xD;
+&#xD;
+Dette innebærer:&#xD;
+Innebærer at en virksomhet systematisk vurderer hvordan deres nåværende sikkerhetsstyringssystem fungerer, identifiserer forbedringsområder, og tilpasser eller oppdaterer systemet for å møte nye trusler, sårbarheter og endringer i virksomhetens behov eller omgivelsene. Dette inkluderer regelmessige risikovurderinger, kontroll av om sikkerhetstiltak er effektive, og implementering av tiltak for å lukke eventuelle sikkerhetsgap</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Testdata" id="id-68ec332ee94c483e878a3a2ae903863f">
+        <documentation>Evne til å generere og tilgjengeliggjøre representative og personvernsikre datasett.&#xD;
 &#xD;
 &#xD;
 Dette innebærer:&#xD;
@@ -645,102 +611,137 @@ Inkluderer ulike teknikker som:&#xD;
 &#xD;
 &#xD;
 </documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Ustrukturerte data" id="id-08d657e690c046019dbf6d52b1ed4d63">
-      <documentation>Evne til å tilgjengeliggjøre og forvalte data som ikke er påført en forhåndsdefinert struktur.&#xD;
+      </element>
+      <element xsi:type="archimate:Capability" name="Tilgangskontroll" id="id-a8a1eb0181f04006ba7d3b5ab2fa9ca8">
+        <documentation>Evne til å kontrollere at en bruker har rettighet til å benytte angitt ressurs eller tjeneste på vegne av andre eller seg selv.&#xD;
+&#xD;
+Tilgangskontroll er den operative og tekniske evnen til å verifisere og håndheve en brukers rettigheter i sanntid når de forsøker å utføre en handling.&#xD;
+Det er den tekniske håndhevelsen av tilgangsstyringen.&#xD;
+&#xD;
+Tilgangsstyring er forutsetningen for god tilgangskontroll.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Tilgangsstyring" id="id-b440252bc3de42dea8468be54e54b1fa">
+        <documentation>Evne til å styre og gi tilgang til hvem som har rettighet til å benytte en ressurs (tjeneste, system, API, opplysning) på vegne av seg selv, andre personer eller virksomheter. Autorisering.&#xD;
+&#xD;
+Dette er en overordnet kapabilitet som omfatter hele livssyklusen til en rettighet. I praksis betyr det å ha systemer og prosesser for å:&#xD;
+Definere roller: Sette opp roller med forhåndsdefinerte sett av rettigheter (f.eks., &quot;regnskapsfører&quot; eller &quot;daglig leder&quot;).&#xD;
+Delegere tilgang: Gi virksomheter og personer mulighet til å tildele disse rollene og enkeltrettigheter til andre, for eksempel en ansatt eller en regnskapsfører.&#xD;
+Forvalte representasjon: Håndtere hvem som kan handle på vegne av en virksomhet eller en annen person.&#xD;
+Opprettholde oversikt: Sikre oversikt over hvem som har tilgang til hva, slik at det er mulig å revidere og trekke tilbake tilganger ved behov.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Tillit" id="id-d503cf06faa1417b8acd4b26a5c0741e">
+        <documentation>Evne å tilby tillitstjenester som muliggjører autentisering og autorisasjon på tvers av tjenestekjeder, og støtte en distribuert arkitektur og føderering mellom ulike domener og tjeneste</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Tjenestedesign" id="id-379e167f7b9c4fbea9c6969425ba7f6c">
+        <documentation>Evne til å sette brukerens behov, livssituasjon og helhetlige reise som utgangspunkt for utvikling av sammenhengende tjenester.&#xD;
+&#xD;
+Dette innebærer:&#xD;
+* Å systematisk innhente og bruke kunnskap om brukernes faktiske behov, adferd og utfordringer.&#xD;
+* Å designe tjenester som dekker hele brukerbehovet fra start til slutt, selv når løsningen krever samarbeid tverrsektorielt og ulike forvaltningsnivå.&#xD;
+&#xD;
+&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Tjenesteforvaltning" id="id-3f59d920995e4d488e56f61356dcf97a">
+        <documentation>Evne til å formalisere samarbeid gjennom tydelig definerte roller, ansvar og avtaler for å sikre forutsigbar og effektiv felles styring mellom samhandlende virksomheter.&#xD;
+Avtalefesting av ansvar (SLA, governance) i tjenestekjeder.&#xD;
+&#xD;
+Når tjenester settes sammen av bidrag fra flere ulike virksomheter, oppstår det nye og komplekse styringsutfordringer. Denne kapabiliteten handler om å designe og implementere styringsmodeller som er tilpasset slike tverrgående tjenestekjeder og digitale økosystemer. Dette innebærer å tydelig definere roller og ansvar for hele kjeden, fra ende-til-ende, og plassere ansvaret for at helheten fungerer. For de prioriterte livshendelsene i digitaliseringsstrategien, vil slike styringsmodeller være avgjørende for å sikre at brukeren opplever en sømløs tjeneste, uavhengig av hvordan forvaltningen er organisert &quot;bak fasaden&quot;&#xD;
+&#xD;
+Dette innebærer:&#xD;
+Etablere klare roller og ansvar: Hver virksomhet må vite nøyaktig hva som forventes av dem i samarbeidet.&#xD;
+Formalisere samarbeid: Inngåelse av formelle avtaler som samforståelsesmemorandum (MoU) og tjenestenivåavtaler (SLA) for å sikre forpliktelse og forutsigbarhet i leveransene.&#xD;
+Felles forvaltningsmodeller: Enighet om hvordan felles løsninger og tjenester skal styres, vedlikeholdes og videreutvikles over tid.&#xD;
+&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Tjenestekjeder" id="id-825b1ea1217b4eedb6caae165aeb8e41">
+        <documentation>Evne til å dynamisk sette sammen, koordinere og automatisere flyten av informasjon og prosesser på tvers av uavhengige, integrerbare tjenester for å levere en komplett ende-til-ende-tjeneste for brukeren.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Tjenesteutvikling" id="id-cd3b6a8989a448a2b4dfbf430a41bad4">
+        <documentation>Evne til å utvikle sammenhengende digitale tjenester.&#xD;
+&#xD;
+Dette er knyttet til prosess- og kompetanse-kapabilitet. Det innebærer å utvikle tjenester basert på metodikk, design, koding og samarbeid.</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Ustrukturerte data" id="id-08d657e690c046019dbf6d52b1ed4d63">
+        <documentation>Evne til å tilgjengeliggjøre og forvalte data som ikke er påført en forhåndsdefinert struktur.&#xD;
 &#xD;
 &#xD;
 Dette innebærer:&#xD;
 * Kapasitet til å lagre og organisere data som ikke passer i tradisjonelle strukturer, slik som fritekst-dokumenter, e-poster, bilder, lydopptak, video og råe loggfiler.&#xD;
 * Dataene er ofte i sin opprinnelige form.&#xD;
 </documentation>
-    </element>
-    <element xsi:type="archimate:Resource" name="Rammebetingelser" id="id-456429d236544c28b3d7257893b0dec6">
-      <documentation>Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.&#xD;
-&#xD;
-Ressurser innenfor:&#xD;
-* Finansielle virkemidler/Finansieringsordninger&#xD;
-* Lovhjemler og juridiske virkemidler&#xD;
-* Samordning&#xD;
-&#xD;
-&#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Resource" name="Standarder og veiledning" id="id-f1f34cea2b2e4b5b8f8a9be88321de42">
-      <documentation>Ressurser som setter regler eller gir retning.&#xD;
-&#xD;
-Dette kan være:&#xD;
-Standarder, veiledere, referansearkitekturer, metodikk&#xD;
-Normeringsgrad kan være knyttet til disse virkemidlene.</documentation>
-    </element>
-    <element xsi:type="archimate:Resource" name="Samhandlingsareneaer og organisering" id="id-a947552722064b7c93181833028cc2f1">
-      <documentation>Organiserte nettverk og styringsorganer for både dialog og strategisk samordning.</documentation>
-    </element>
-    <element xsi:type="archimate:Resource" name="Fellesløsning" id="id-199ae45b0a6c47b28b3507837647c6c8">
-      <documentation>Fellesløsninger er tekniske komponenter eller applikasjoner som leverer funksjonalitet og dekker behov på tvers av eller innenfor sektorer, og/eller forvaltningsnivå. &#xD;
-Tekniske løsninger som utvikles én gang og brukes av mange.&#xD;
-Fellesløsninger er byggeklosser som kan brukes i utviklingen av offentlige digitale tjenester. Noen er obligatoriske å bruke, andre er anbefalte - både for statlige virksomheter og for kommunal sektor.&#xD;
-&#xD;
-Fellesløsning til forretningstjenester, som er forretningsaktivitet med et spesifisert resultat og som støtter et spesifikt forretningsmål. &#xD;
-Den er brukersentert og representerer funksjonalitet som leverer verdi til en ekstern bruker. &#xD;
-Brukerorienterte eller funksjonelle tjenester som leverer verdi, ofte på tvers av løsninger.&#xD;
-&#xD;
-Merk:&#xD;
-Selv om en tjeneste bruker teknologi, er selve &quot;tjenesten&quot; (f.eks. eSignering eller Autentisering) det funksjonelle resultatet av en prosess rettet mot en bruker&#xD;
-&#xD;
-Strategiske prinsipper for nasjonale felleskomponenter (gammel - bør ha en felles beskrivelse av felles-&quot;løsninger&quot; i stedet)&#xD;
-https://www.digdir.no/media/395/download&#xD;
-https://www.regjeringen.no/contentassets/fe3e34b866034b82b9c623c5cec39823/no/pdfs/stm201520160027000dddpdfs.pdf&#xD;
-&#xD;
-Fellesløsning vs. felles løsning:&#xD;
-* Forskjellen er institusjonell. &#xD;
-* Fellesløsning:  referer til nasjonale fellesløsninger, som er spesifikk tekniske komponenter som skal kunne brukes av svært mange i offentlig sektor for å løse generiske behov. &#xD;
-* Felles løsning: Gjenbrukbar løsnning som kan benyttes av flere og med formåk om samarbeid og stordriftsfordeler, men uten nødvendigvis å ha status som en nasjonal komponent i økosystemet.&#xD;
-* Fellestjeneste: Den forretningsmessige eller tekniske funksjonaliteten som tilbys.&#xD;
-&#xD;
-Sluttbrukertjenester: Det innbyggeren eller næringslivet opplever (f.eks. &quot;Søke om barnehageplass&quot; eller &quot;Levere skattemelding&quot;). &#xD;
-Støttetjenester: Tekniske tjenester som ikke er synlige for sluttbrukeren, men som er nødvendige for at systemene skal snakke sammen (f.eks. gjennom et API)&#xD;
-&#xD;
-De nasjonale felleskomponentene, slik de er definert i Digital agenda:&#xD;
-– Har en statlig virksomhet som forvaltningsansvarlig.&#xD;
-– Dekker behov på tvers av mange sektorer og/eller forvaltningsnivå.&#xD;
-– Vil være sentrale komponenter i en rekke digitale tjenester.&#xD;
-– Er av stor samfunnsøkonomisk betydning som felles mulighetsrom for digital tjenesteutvikling og gevinstrealisering i virksomhetene.&#xD;
-&#xD;
-&#xD;
-&#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Regelverksutvikling" id="id-0119029984674da59dbbfdc3a8ca3e95">
-      <documentation>Evne til å foreslå og koordinere endringer i regelverket for å tilpasse det til teknologisk utvikling og nye behov.&#xD;
-&#xD;
-Dette innebærer:&#xD;
-* Å identifisere motstridende regelverk, der hamonisering er nødvendig&#xD;
-* Foreslå og koordinere endringer for å tilpasse lovverket&#xD;
-&#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Regelverkstolkning" id="id-0209483504444508a40415aa6e3fc39c">
-      <documentation>Evne til å tilby felles, autoritative tolkninger av relevant regelverk.&#xD;
-&#xD;
-Dette innebærer:&#xD;
-* juridisk risikovurdering: Ved å tilby felles tolkninger, etablerer man også felles risikoforståelse.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Anvendelse av veiledning" id="id-a601bb3d7b11478185903149965f7842">
-      <documentation>Evne til tolke og benytte veiledere i prosjekter og tiltak.&#xD;
-&#xD;
-Dette innebærer:&#xD;
-* Faktisk bruk av veiledningsmateriell til å faktisk å forstå og bruke dem i egne prosjekte og tiltak.&#xD;
-&#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Utvikling og formidling av veiledning" id="id-0bfa29018e7144578b2184e70414b7e8">
-      <documentation>Evne til å utarbeide, kvalitetssikre og tilgjengeliggjøre veiledning.&#xD;
+      </element>
+      <element xsi:type="archimate:Capability" name="Utvikling og formidling av veiledning" id="id-0bfa29018e7144578b2184e70414b7e8">
+        <documentation>Evne til å utarbeide, kvalitetssikre og tilgjengeliggjøre veiledning.&#xD;
 &#xD;
 Denne innebærer:&#xD;
 * Å kunne omsette politikk, juss og teknologisk beste praksis til forståelige og distribuerte verktøy (prinsipper, referansearkitekturer osv.).&#xD;
 * F.eks. veiledninger på regelverk, referansearkitekturer, omforente prinsipper, standarder, samhandlingsmønstre og beskrivelser av beste praksis.</documentation>
-    </element>
+      </element>
+      <element xsi:type="archimate:Capability" name="Utviklings- og kjøretidsmiljø" id="id-ce84b9b6943f4789bca153c0ed15245a">
+        <documentation>Evne til å tilby og forvalte en felles, skalerbar teknisk plattform og en tilhørende verktøykasse med standardiserte byggeklosser, verktøy og utviklingsmiljøe som forenkler og akselererer utviklingen av digitale tjenester.&#xD;
+&#xD;
+Dette innebærer:&#xD;
+Tjenesteutvikling foregår i stor grad i sektorene og den enkelte virksomhet. Det vil allikevel være behov for å tilby felles utviklings- og kjøretidsmiljø for hele offentlig sektor eller for enkeltsektorer. &#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Veiledning" id="id-c0547226c598467a942dced879d0c18b">
+        <documentation>Evne til at veiledninger for digital samhandling utarbeides og benyttes i felles økosystem.&#xD;
+&#xD;
+Dette innebærer:&#xD;
+* Beskrivelser av beste praksis&#xD;
+* Omforente prinsipper, mønstre og standarder for hvordan løsninger skal bygges for å fungere optimalt, sikkert og sammenhengende i det nasjonale økosystemet.&#xD;
+* Referansearkitekturer&#xD;
+&#xD;
+* hva som er god faglig praksis&#xD;
+* hvordan relevant regelverk skal tolkes&#xD;
+* hvilke prioriteringer som er i samsvar med vedtatt politikk&#xD;
+&#xD;
+Veiledere kan ha ulik grad av styrke:&#xD;
+* Bør benyttes: en sterk anbefaling/råd som vil gjelde de aller fleste. Denne er så klart faglig forankret at det sjelden er forsvarlig ikke å gjøre som anbefalt&#xD;
+* Kan eller foreslår: en svak anbefaling/råd der ulike valg kan være riktig.&#xD;
+&#xD;
+&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Visualisering" id="id-8914d57f4f1442b1b562252a3630a686">
+        <documentation>Evne til å omforme komplekse data til visuelle fremstillinger som gjør innsikt lett tilgjengelig, forståelig og anvendbar.&#xD;
+&#xD;
+Visualisering er den kapabiliteten som gjør at vi kan &quot;se&quot; historien dataene forteller. &#xD;
+&#xD;
+Dette innebærer:&#xD;
+* Beslutningsstøtte i sanntid: Å lage oversikter (dashboards) som oppdaterer seg selv, slik at man kan ta valg basert på hvordan situasjonen er akkurat nå.&#xD;
+* Geografisk fremstilling: Å koble data til kart for å forstå sammenhenger mellom sted og hendelser (for eksempel smittespredning, trafikkflyt eller andre ressursbehov).&#xD;
+* Datadrevet historiefortelling: Å presentere fakta på en måte som gjør det enkelt å kommunisere et budskap til andre.&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Capability" name="Åpne data" id="id-db4f30a87ae84561a4058d4d264177b1">
+        <documentation>Evne til å tilgjengeliggjøre åpne data slik at den kan leses og tolkes av både maskiner og mennesker, og som alle kan få tilgang til, bruke og dele.&#xD;
+&#xD;
+Begrunnelse for relevans&#xD;
+Dette er en kapabilitet som utvider verdien av offentlige data utover forvaltningens egne grenser og gir avkastning i hele samfunnet.&#xD;
+&#xD;
+Styrker demokrati og åpenhet: Åpne data gir innbyggere, journalister og interessegrupper mulighet til innsyn i forvaltningens arbeid og beslutningsgrunnlag. Dette øker transparensen og legger til rette for en mer informert offentlig debatt.&#xD;
+&#xD;
+Er et råstoff for næringsutvikling og innovasjon: Dette er en av de viktigste begrunnelsene. Offentlige data representerer en enorm, uutnyttet ressurs. Ved å gjøre dem fritt tilgjengelige, gir man næringslivet råmaterialet de trenger for å skape nye produkter, tjenester og arbeidsplasser som det offentlige aldri ville utviklet selv.&#xD;
+&#xD;
+Forbedrer forskning og faktabasert politikkutforming: Forskere får tilgang til rike datasett som kan brukes til å analysere samfunnstrender, evaluere politikk og løse komplekse samfunnsutfordringer.&#xD;
+&#xD;
+Gode åpne data kjennetegnes ved:&#xD;
+* at de er godt dokumenterte slik at de er lette å oppdage, vurdere og bruke&#xD;
+* at de kan linkes til slik at de lett kan deles og diskuteres&#xD;
+*  at de er tilgjengelige i et maskinleselig, standardisert og strukturert format slik at de enkelt kan bearbeides&#xD;
+* at de har garantier for tilgjengelighet og pålitelighet over tid, slik at andre kan stole på de&#xD;
+* at de er sporbare tilbake til hvor de kommer fra, slik at andre kan vurdere pålitelighet</documentation>
+      </element>
+    </folder>
   </folder>
   <folder name="Business" id="id-34e2af7867e2486485f8ebe84261ea58" type="business"/>
   <folder name="Application" id="id-b3e00a454d244f8a80d1d0b96bf7e6e6" type="application"/>
@@ -771,6 +772,51 @@ Denne innebærer:&#xD;
         <documentation>For å lykkes med arbeidet med finansieringsmodeller er samarbeid og samordning helt sentralt.</documentation>
       </element>
       <element xsi:type="archimate:Constraint" name="Samarbeid og samordning" id="id-f3680e1c37814287acc93c4b4404e7a7"/>
+    </folder>
+    <folder name="Relevante mål fra Digitaliseringsstrategien" id="id-73af1f3c62854919b68f6e1642d06c86">
+      <element xsi:type="archimate:Goal" name="Et velfungerende felles digitalt økosystem for samhandling og tjenesteutvikling i offentlig sektor" id="id-897fd3d0f5fd4c2891e824a371d5e69b">
+        <documentation>Offentlig sektor må øke digitaliseringstakten. Skal vi kunne utnytte de mulighetene teknologien gir, og bidra til en mer effektiv og bærekraftig digital utvikling, trenger vi en nasjonal arkitektur for samhandling. Arkitekturen bør beskrive nødvendige ressurser for samhandling, som fellesløsninger, infrastruktur for deling av data og standarder, og standardiserte grensesnitt (API-er). Gjennom en nasjonal arkitektur tydeliggjøres sammenhenger og ansvar, og det blir enklere å identifisere behov for tiltak.&#xD;
+&#xD;
+Regjeringen vil sikre sterkere styring og samordning av digitaliseringen på tvers av sektorer og forvaltningsnivåer. Nasjonal arkitektur er et av flere viktige virkemidler for å realisere målet og beskriver blant annet nødvendige ressurser for digital samhandling - inkludert fellesløsninger, infrastruktur for datautveksling og felles standarder. Ved å tydeliggjøre sammenhenger, ansvar og tiltak blir det enklere å identifisere behov og koordinere innsatsen på tvers av sektorer og forvaltningsnivåer. Utvikling, forvaltning og prioritering av nasjonal arkitektur bidrar til å gjøre digitaliseringen robust, skalerbar og målrettet, samtidig som det reduserer unødvendig dobbeltarbeid og forenkler brukeropplevelsen. &#xD;
+Sammen med teamet som jobber med Nasjonalt veikart vil vi aktivt bidra opp under målet ved at vi styrker nasjonal arkitekturstyring og lager kunnskapsgrunnlag for felles prioritering. Vi vil i tillegg samarbeide med andre team som arbeider med organisatoriske, økonomiske og juridiske virkemidler som styrker styring og samordning på tvers. Det er derfor relevant å ha dialog rundt arbeid om for eksempel Digitaliseringsrundskrivet, medfinansieringsordningen, livshendelser og sektorovergripende prosjekter. &#xD;
+Nasjonal arkitektur har en viktig rolle fordi den legger til rette for at digitaliseringsarbeidet ikke skal skje fragmentert, men som en integrert og koordinert helhet. Den underbygger styringsmekanismene ved å tilby verktøy og prinsipper for beslutninger, tekniske standarder, og hjelper til med å balansere arkitektur lokalt, sektorielt og nasjonalt. &#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Goal" name="Få på plass en nasjonal infrastruktur for kunstig intelligens (KI)" id="id-9f2593113134463ea6863703c308b251"/>
+      <element xsi:type="archimate:Goal" name="Norge skal være ledende på verdiskaping med data og på datadrevet forskning og innovasjon" id="id-56e7246019f54eec8093568bd0fb8e22">
+        <documentation>For å få til datadeling må de riktige ressursene i felles økosystem være på plass. Det gjelder standarder, felles formater, rammeverk, åpne API-er, referansearkitekturer, fellesløsninger mv. Rammeverk for EUs dataområder (data spaces) inneholder også referansearkitekturer og standarder. Nasjonal arkitektur (samhandlingsarkitektur) er nødvendig for å få til datadeling.&#xD;
+Data governance og master data management er nødvendig for at man skal dele data og bruke data, og er viktig for et velfungerende felles økosystem for digital samhandling. Det er pågående arbeid på flere områder innenfor dette målet som bør være koordinert med arbeidet med Nasjonal arkitektur&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Goal" name="Næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering." id="id-89e255a238d346a4901424f0059e6345">
+        <documentation>Evnen til å tilrettelegge for at det nasjonale økosystemet fremmer et omstillingsdyktig og innovativt næringsliv. &#xD;
+&#xD;
+Dette innebærer:&#xD;
+* rammebetingelser, insentiver og samarbeidsformer som gjør det attraktivt og forutsigbart for private aktører å bygge tjenester oppå nasjonale fellesløsninger og data&#xD;
+&#xD;
+Hvorfor er dette viktig?&#xD;
+* Offentlige data som råstoff: Åpne og tilgjengelige data er en ressurs som næringslivet trenger for å skape produkter forvaltningen selv ikke ville utviklet.&#xD;
+* Styrket konkurransekraft: Ved å gjøre offentlige fellesløsninger tilgjengelige for private aktører, økes mulighetene for innovasjon i næringslivet.&#xD;
+I Digitaliseringsstrategien er det et mål at:&#xD;
+*  Regjeringen vil frem mot 2030 legge til rette for at næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering. Oppstartsbedrifter skal ha gode rammevilkår. Vi skal sørge for at digitalisering og utnyttelse av data forsterker våre fortrinn i viktige bransjer, slik som helse, energi, havbruk og andre maritime næringer.</documentation>
+      </element>
+      <element xsi:type="archimate:Goal" name="Næringslivet skal ha gode rammevilkår for å utvikle og bruke KI. Offentlig sektor skal anvende KI for å utvikle bedre tjenester og løse oppgaver mer effektivt" id="id-bf3fa917baad486d9865b9627199a2d4"/>
+      <element xsi:type="archimate:Goal" name="Vi skal ha en offentlig sektor som tilbyr bedre, mer sammenhengende digitale tjenester til innbyggere og næringsliv  " id="id-cbc357e78ede45e8aa565fde3b7380b5">
+        <documentation>Målet om sammenhengende tjenester til beste for bruker stiller krav til nasjonal arkitektur.&#xD;
+Nasjonal arkitektur er nødvendig for å få til samhandling og sammenhengende tjenester. Felles økosystem tilbyr ressurser for samhandling og sammenhengende tjenester. Vi skal både tilby ressurser som muliggjør dette, men også sette rammer som styrer offentlig sektor i retning av sammenhengende digitale tjenester. &#xD;
+Nasjonal arkitektur kan også bidra til å balansere styrkeforholdet mellom store offentlige etater og mindre statlig/kommunale. Gjennom felles standarder, arkitekturer og retningslinjer kan vi bidra til at det blir lettere å dele og bruke data og få til bedre samhandling.&#xD;
+Nasjonal arkitektur bør bidra til utforskning av nye måter å skape sammenheng og forenkling for innbygger og næringsliv. Sammenhengende tjenester introduserer også noen nye utfordringer som bør avklares og nasjonal arkitektur bør foreslå hvordan disse utfordringene adresseres. Ved å samarbeide tett med avdelingen for «Sammenhengende tjenester og livshendelser» og jobbe behovsdrevet med ekte problemer og ekte behov, skal vi aktivt prøve å finne løsninger på de arkitekturmessige hindringene. &#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:Goal" name="Vi skal delta i EUs satsing på dataområder der det er relevant" id="id-90ff9c60528d4dfe93d534bd6a7bcfeb">
+        <documentation>Arbeidet med dataområdene i EU vil komme med referansearkitekturer og standarder som må innføres som en del av nasjonal arkitektur.</documentation>
+      </element>
+      <element xsi:type="archimate:Goal" name="Sørge for at alle har et tilbud om en elektronisk identitet" id="id-9622546accfc43d28a38cebdecf8818a"/>
+      <element xsi:type="archimate:Goal" name="Sterkere styring og samordning av digitalisering på tvers av sektorer" id="id-a4062153239a4d13a9fdef8cc205c8e6">
+        <documentation>Nasjonal arkitektur er et viktig virkemiddel for å skape sterke synergier mellom norsk og europeisk digitaliseringspolitikk. Den skal bygge på føringer fra EU og fungerer som et rammeverk som integrerer EUs regelverk, standarder og referansearkitekturer i norsk digitaliseringsarbeid. EU-forordninger etablerer nasjonale funksjoner og styringsformer som også dekker Norges behov for koordinering og styring av arkitektur. &#xD;
+Ved å implementere felles europeiske standarder, sikrer nasjonal arkitektur at norske digitale tjenester kan samhandle effektivt over landegrensene. Samtidig bør Norge bli bedre på å hente erfaringer fra andre land og bruke internasjonale løsninger som utgangspunkt for egen utvikling, noe som reduserer både kostnader og utviklingstid. Gjennom dette sikrer nasjonal arkitektur en helhetlig og framtidsrettet digitalisering som både møter norske behov og Europas digitale agenda. &#xD;
+</documentation>
+      </element>
     </folder>
     <element xsi:type="archimate:Outcome" name="Effektmål" id="id-0cf363c3f2ff4fa3a34bda7a610e6f70">
       <documentation>De konkrete resultatene av å bruke kapabilitetene.&#xD;
@@ -874,49 +920,6 @@ Ei styrking her vil vere blant dei viktigaste drivarane for å oppnå resultat o
     <element xsi:type="archimate:Principle" name="P6: Lag digitale løsninger som støtter samhandling" id="id-0007ec16e9a1406d9f6aabd1f975d993">
       <documentation>https://www.digdir.no/digital-samhandling/prinsipp-6-lag-digitale-losninger-som-stotter-samhandling/1063</documentation>
     </element>
-    <element xsi:type="archimate:Goal" name="Et velfungerende felles digitalt økosystem for samhandling og tjenesteutvikling i offentlig sektor" id="id-897fd3d0f5fd4c2891e824a371d5e69b">
-      <documentation>Offentlig sektor må øke digitaliseringstakten. Skal vi kunne utnytte de mulighetene teknologien gir, og bidra til en mer effektiv og bærekraftig digital utvikling, trenger vi en nasjonal arkitektur for samhandling. Arkitekturen bør beskrive nødvendige ressurser for samhandling, som fellesløsninger, infrastruktur for deling av data og standarder, og standardiserte grensesnitt (API-er). Gjennom en nasjonal arkitektur tydeliggjøres sammenhenger og ansvar, og det blir enklere å identifisere behov for tiltak.&#xD;
-&#xD;
-Regjeringen vil sikre sterkere styring og samordning av digitaliseringen på tvers av sektorer og forvaltningsnivåer. Nasjonal arkitektur er et av flere viktige virkemidler for å realisere målet og beskriver blant annet nødvendige ressurser for digital samhandling - inkludert fellesløsninger, infrastruktur for datautveksling og felles standarder. Ved å tydeliggjøre sammenhenger, ansvar og tiltak blir det enklere å identifisere behov og koordinere innsatsen på tvers av sektorer og forvaltningsnivåer. Utvikling, forvaltning og prioritering av nasjonal arkitektur bidrar til å gjøre digitaliseringen robust, skalerbar og målrettet, samtidig som det reduserer unødvendig dobbeltarbeid og forenkler brukeropplevelsen. &#xD;
-Sammen med teamet som jobber med Nasjonalt veikart vil vi aktivt bidra opp under målet ved at vi styrker nasjonal arkitekturstyring og lager kunnskapsgrunnlag for felles prioritering. Vi vil i tillegg samarbeide med andre team som arbeider med organisatoriske, økonomiske og juridiske virkemidler som styrker styring og samordning på tvers. Det er derfor relevant å ha dialog rundt arbeid om for eksempel Digitaliseringsrundskrivet, medfinansieringsordningen, livshendelser og sektorovergripende prosjekter. &#xD;
-Nasjonal arkitektur har en viktig rolle fordi den legger til rette for at digitaliseringsarbeidet ikke skal skje fragmentert, men som en integrert og koordinert helhet. Den underbygger styringsmekanismene ved å tilby verktøy og prinsipper for beslutninger, tekniske standarder, og hjelper til med å balansere arkitektur lokalt, sektorielt og nasjonalt. &#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Goal" name="Sterkere styring og samordning av digitalisering på tvers av sektorer" id="id-a4062153239a4d13a9fdef8cc205c8e6">
-      <documentation>Nasjonal arkitektur er et viktig virkemiddel for å skape sterke synergier mellom norsk og europeisk digitaliseringspolitikk. Den skal bygge på føringer fra EU og fungerer som et rammeverk som integrerer EUs regelverk, standarder og referansearkitekturer i norsk digitaliseringsarbeid. EU-forordninger etablerer nasjonale funksjoner og styringsformer som også dekker Norges behov for koordinering og styring av arkitektur. &#xD;
-Ved å implementere felles europeiske standarder, sikrer nasjonal arkitektur at norske digitale tjenester kan samhandle effektivt over landegrensene. Samtidig bør Norge bli bedre på å hente erfaringer fra andre land og bruke internasjonale løsninger som utgangspunkt for egen utvikling, noe som reduserer både kostnader og utviklingstid. Gjennom dette sikrer nasjonal arkitektur en helhetlig og framtidsrettet digitalisering som både møter norske behov og Europas digitale agenda. &#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Goal" name="Vi skal ha en offentlig sektor som tilbyr bedre, mer sammenhengende digitale tjenester til innbyggere og næringsliv  " id="id-cbc357e78ede45e8aa565fde3b7380b5">
-      <documentation>Målet om sammenhengende tjenester til beste for bruker stiller krav til nasjonal arkitektur.&#xD;
-Nasjonal arkitektur er nødvendig for å få til samhandling og sammenhengende tjenester. Felles økosystem tilbyr ressurser for samhandling og sammenhengende tjenester. Vi skal både tilby ressurser som muliggjør dette, men også sette rammer som styrer offentlig sektor i retning av sammenhengende digitale tjenester. &#xD;
-Nasjonal arkitektur kan også bidra til å balansere styrkeforholdet mellom store offentlige etater og mindre statlig/kommunale. Gjennom felles standarder, arkitekturer og retningslinjer kan vi bidra til at det blir lettere å dele og bruke data og få til bedre samhandling.&#xD;
-Nasjonal arkitektur bør bidra til utforskning av nye måter å skape sammenheng og forenkling for innbygger og næringsliv. Sammenhengende tjenester introduserer også noen nye utfordringer som bør avklares og nasjonal arkitektur bør foreslå hvordan disse utfordringene adresseres. Ved å samarbeide tett med avdelingen for «Sammenhengende tjenester og livshendelser» og jobbe behovsdrevet med ekte problemer og ekte behov, skal vi aktivt prøve å finne løsninger på de arkitekturmessige hindringene. &#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Goal" name="Norge skal være ledende på verdiskaping med data og på datadrevet forskning og innovasjon" id="id-56e7246019f54eec8093568bd0fb8e22">
-      <documentation>For å få til datadeling må de riktige ressursene i felles økosystem være på plass. Det gjelder standarder, felles formater, rammeverk, åpne API-er, referansearkitekturer, fellesløsninger mv. Rammeverk for EUs dataområder (data spaces) inneholder også referansearkitekturer og standarder. Nasjonal arkitektur (samhandlingsarkitektur) er nødvendig for å få til datadeling.&#xD;
-Data governance og master data management er nødvendig for at man skal dele data og bruke data, og er viktig for et velfungerende felles økosystem for digital samhandling. Det er pågående arbeid på flere områder innenfor dette målet som bør være koordinert med arbeidet med Nasjonal arkitektur&#xD;
-</documentation>
-    </element>
-    <element xsi:type="archimate:Goal" name="Vi skal delta i EUs satsing på dataområder der det er relevant" id="id-90ff9c60528d4dfe93d534bd6a7bcfeb">
-      <documentation>Arbeidet med dataområdene i EU vil komme med referansearkitekturer og standarder som må innføres som en del av nasjonal arkitektur.</documentation>
-    </element>
-    <element xsi:type="archimate:Goal" name="Få på plass en nasjonal infrastruktur for kunstig intelligens (KI)" id="id-9f2593113134463ea6863703c308b251"/>
-    <element xsi:type="archimate:Goal" name="Næringslivet skal ha gode rammevilkår for å utvikle og bruke KI. Offentlig sektor skal anvende KI for å utvikle bedre tjenester og løse oppgaver mer effektivt" id="id-bf3fa917baad486d9865b9627199a2d4"/>
-    <element xsi:type="archimate:Goal" name="Næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering." id="id-89e255a238d346a4901424f0059e6345">
-      <documentation>Evnen til å tilrettelegge for at det nasjonale økosystemet fremmer et omstillingsdyktig og innovativt næringsliv. &#xD;
-&#xD;
-Dette innebærer:&#xD;
-* rammebetingelser, insentiver og samarbeidsformer som gjør det attraktivt og forutsigbart for private aktører å bygge tjenester oppå nasjonale fellesløsninger og data&#xD;
-&#xD;
-Hvorfor er dette viktig?&#xD;
-* Offentlige data som råstoff: Åpne og tilgjengelige data er en ressurs som næringslivet trenger for å skape produkter forvaltningen selv ikke ville utviklet.&#xD;
-* Styrket konkurransekraft: Ved å gjøre offentlige fellesløsninger tilgjengelige for private aktører, økes mulighetene for innovasjon i næringslivet.&#xD;
-I Digitaliseringsstrategien er det et mål at:&#xD;
-*  Regjeringen vil frem mot 2030 legge til rette for at næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering. Oppstartsbedrifter skal ha gode rammevilkår. Vi skal sørge for at digitalisering og utnyttelse av data forsterker våre fortrinn i viktige bransjer, slik som helse, energi, havbruk og andre maritime næringer.</documentation>
-    </element>
-    <element xsi:type="archimate:Goal" name="Sørge for at alle har et tilbud om en elektronisk identitet" id="id-9622546accfc43d28a38cebdecf8818a"/>
     <element xsi:type="archimate:Principle" name="FAIR" id="id-74e15ee821794ae09cd9f7f7a38f32aa"/>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-a675f44ed3c049e3aa64e4ad754be859" type="implementation_migration">
@@ -971,7 +974,6 @@ Som et resultat har Norge etablert sitt eget nasjonale rammeverk for interoperab
     <element xsi:type="archimate:AggregationRelationship" id="id-bb8bb1377c7b4cb9892b3544b27fd987" source="id-d503cf06faa1417b8acd4b26a5c0741e" target="id-2dfe07b3eae740b9a292e0a4a42d22db"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-a0778b3ca1cc446d9e45335d119dc343" source="id-d503cf06faa1417b8acd4b26a5c0741e" target="id-a8a1eb0181f04006ba7d3b5ab2fa9ca8"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-5c9d4f96d8ed4f209a13d6341bcd0a3a" source="id-d503cf06faa1417b8acd4b26a5c0741e" target="id-f5214c3db8de4738ab03abb7b7e553ed"/>
-    <element xsi:type="archimate:AggregationRelationship" id="id-10d91ff607044e9da6c8ef3750f163b8" source="id-ad6f81e892a74590840828b6aabb270d" target="id-9119e1fb3de64872abb90e122280f4d9"/>
     <element xsi:type="archimate:ServingRelationship" name="benyttes i" id="id-bdd7b5946ff24e8d966fdec23ebe54c3" source="id-eb6f01d0d0ef4230b7a5c9c73c3842c5" target="id-31be9bc0b80e4be4b2df2d8e0000dc6f"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-3608c7db061346b7974df54281fbf632" source="id-1be148b57796458993c3f7f5f24815ca" target="id-0aa7eced8c5c460f8bc64b77bd6a16c4"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-96a5057cb2ea446bac5fb7b29e98eb19" source="id-1be148b57796458993c3f7f5f24815ca" target="id-825b1ea1217b4eedb6caae165aeb8e41"/>
@@ -1292,14 +1294,10 @@ I denne oversikten over nasjonale fellesløsninger viser vi også andre fellesl�
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-4b5c46cbbaeb4d52baf61e075bf1c98e" targetConnections="id-7b355effeb634f92a38b4a1ffee9ee38" archimateElement="id-ad6f81e892a74590840828b6aabb270d">
           <bounds x="36" y="261" width="757" height="100"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-f1fae8bb72974591a65b0b293dfea382" source="id-4b5c46cbbaeb4d52baf61e075bf1c98e" target="id-20923cf30b4446a7ace20c482b653c7f" archimateRelationship="id-10d91ff607044e9da6c8ef3750f163b8"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-2caa06c7a6aa41639af08e70a3fe0d59" source="id-4b5c46cbbaeb4d52baf61e075bf1c98e" target="id-94b20a5aebde43ab9050d57d7b03aeaa" archimateRelationship="id-d6964a1537034eaa843f23b9d12bd3e0"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-081cbb5028f240178a043e56b37783ff" source="id-4b5c46cbbaeb4d52baf61e075bf1c98e" target="id-207638d177b841e3adabcd2e34688539" archimateRelationship="id-fb015a60e782415fa90a2ef6e38c376b"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-1b31bd4383804a0cba86e0639a8f684b" source="id-4b5c46cbbaeb4d52baf61e075bf1c98e" target="id-2b2a215c81434bafa92576d8bbb24461" archimateRelationship="id-751d25e243bd494883bf441aa900468a"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-2fe8956174d748b68ffd1406607a7ee2" source="id-4b5c46cbbaeb4d52baf61e075bf1c98e" target="id-a6d89b0fb21f46cc85fc5841b53308df" archimateRelationship="id-ec6325c3b0784545b202fcb2e7be8a5f"/>
-          <child xsi:type="archimate:DiagramObject" id="id-20923cf30b4446a7ace20c482b653c7f" targetConnections="id-f1fae8bb72974591a65b0b293dfea382" fillColor="#e2e2e2" archimateElement="id-9119e1fb3de64872abb90e122280f4d9">
-            <bounds x="1190" y="21" width="120" height="55"/>
-          </child>
           <child xsi:type="archimate:DiagramObject" id="id-94b20a5aebde43ab9050d57d7b03aeaa" targetConnections="id-2caa06c7a6aa41639af08e70a3fe0d59" archimateElement="id-efe1a2676c124eeab946802af96a1ab7">
             <bounds x="612" y="24" width="120" height="55"/>
           </child>
@@ -1480,6 +1478,10 @@ I denne oversikten over nasjonale fellesløsninger viser vi også andre fellesl�
           </child>
         </child>
       </child>
+      <child xsi:type="archimate:Note" id="id-1878725c8ff54026974bda0be7461d2c" font="1|Segoe UI|18.0|0|WINDOWS|1|-30|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#e2e2e2">
+        <bounds x="372" y="-900" width="805" height="46"/>
+        <content>Nasjonal arkitektur kapabilitetskart (detaljert)</content>
+      </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="04-Digitaliseringsstrategiens mål og NA" id="id-623c2b878f81427187c41e072b4deff5">
       <child xsi:type="archimate:DiagramObject" id="id-1ffeb371ce6240f48aac41147582af8b" archimateElement="id-ba60560a9ed64b4d87b2fd4fa6b32937">
@@ -1623,9 +1625,58 @@ I denne oversikten over nasjonale fellesløsninger viser vi også andre fellesl�
       <child xsi:type="archimate:DiagramObject" id="id-8679aadc91c24e0cb17ef325c5e74146" targetConnections="id-17d6f5f313ce492681cfdb706ece9fd6" archimateElement="id-46a97f13294345f89decd549d4269848">
         <bounds x="792" y="132" width="205" height="55"/>
       </child>
+      <child xsi:type="archimate:Note" id="id-0b4533ee93da44888caf24bade7efcc8" font="1|Segoe UI|18.0|0|WINDOWS|1|-30|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#e2e2e2">
+        <bounds x="500" y="12" width="805" height="46"/>
+        <content>Overordnede arkitekturprinsippene for digitalisering av offentlig sektor</content>
+      </child>
       <documentation>https://www.digdir.no/digital-samhandling/prinsipp-1-ta-utgangspunkt-i-brukernes-behov/1055</documentation>
     </element>
-    <element xsi:type="archimate:ArchimateDiagramModel" name="07-Mål" id="id-9a7719e0479b4ef598a463ab6ca0ec74"/>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="07-Mål" id="id-9a7719e0479b4ef598a463ab6ca0ec74" connectionRouterType="2">
+      <child xsi:type="archimate:DiagramObject" id="id-31e68bc7ef484a7a89268fe97dcb1c4f" targetConnections="id-2a8dc8366b0f48ac96d3f036f4d8db70" archimateElement="id-897fd3d0f5fd4c2891e824a371d5e69b">
+        <bounds x="456" y="120" width="215" height="89"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-0f7c6ce213854eb79fee5369b85bb17f" source="id-31e68bc7ef484a7a89268fe97dcb1c4f" target="id-e79a7378cc9f4f3abbc711e0521638fb" archimateRelationship="id-fdbbf5895f2b427b8aa6d322ab9c9677"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-2ab6887fca864cf3b9b19c0010aece76" source="id-31e68bc7ef484a7a89268fe97dcb1c4f" target="id-6319048d813c41309730ce6c1f2374b7" archimateRelationship="id-3da7121a0c43480cb36a26cd7bfa215f"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-37b4ca0a305049df9bc7ea9fba5b88d2" source="id-31e68bc7ef484a7a89268fe97dcb1c4f" target="id-41bfcefda020402a8f98f57e5ed7087b" archimateRelationship="id-34c9b05c7c5b453bab9d2e84c53fb8b2"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-c9a8b61c86fd4aeb83bccd544015c0bd" source="id-31e68bc7ef484a7a89268fe97dcb1c4f" target="id-0c7e5183259a46f4a7118ef15a067355" archimateRelationship="id-8d9c225e7458449f82439c0276e88b30"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-8795adaa9fab4513b93944007b58ea3b" source="id-31e68bc7ef484a7a89268fe97dcb1c4f" target="id-9ac5713b1b5944828b062ba69a6c4002" archimateRelationship="id-b3ddd68251534c77bd8e522558f5b03d"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-cbd52c91b08d4b5eab2cd05ce0cbcc9e" source="id-31e68bc7ef484a7a89268fe97dcb1c4f" target="id-912e35dd1c204c3b95d46584bebb9e94" archimateRelationship="id-213914132281446daf1723a04242dec6"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-9ee7fadec7214ed9b8cd344e3f9fd303" source="id-31e68bc7ef484a7a89268fe97dcb1c4f" target="id-f351f475744c49db90a52ddd39267b94" archimateRelationship="id-2e38953b12614d9285677c6097fb3d36"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-e491f77c70ee40f485b2bc2177b351d5" source="id-31e68bc7ef484a7a89268fe97dcb1c4f" target="id-4941f333c1b24d1db802fc778c053895" archimateRelationship="id-a4523b3547904a5face599b51ab78b1e"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-e79a7378cc9f4f3abbc711e0521638fb" targetConnections="id-0f7c6ce213854eb79fee5369b85bb17f" archimateElement="id-9f2593113134463ea6863703c308b251">
+        <bounds x="252" y="96" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-6319048d813c41309730ce6c1f2374b7" targetConnections="id-2ab6887fca864cf3b9b19c0010aece76" archimateElement="id-56e7246019f54eec8093568bd0fb8e22">
+        <bounds x="588" y="270" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-41bfcefda020402a8f98f57e5ed7087b" targetConnections="id-37b4ca0a305049df9bc7ea9fba5b88d2" archimateElement="id-bf3fa917baad486d9865b9627199a2d4">
+        <bounds x="745" y="96" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-0c7e5183259a46f4a7118ef15a067355" targetConnections="id-c9a8b61c86fd4aeb83bccd544015c0bd" archimateElement="id-89e255a238d346a4901424f0059e6345">
+        <bounds x="252" y="180" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-9ac5713b1b5944828b062ba69a6c4002" targetConnections="id-8795adaa9fab4513b93944007b58ea3b" archimateElement="id-a4062153239a4d13a9fdef8cc205c8e6">
+        <bounds x="720" y="270" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-912e35dd1c204c3b95d46584bebb9e94" targetConnections="id-cbd52c91b08d4b5eab2cd05ce0cbcc9e" archimateElement="id-9622546accfc43d28a38cebdecf8818a">
+        <bounds x="744" y="180" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-f351f475744c49db90a52ddd39267b94" targetConnections="id-9ee7fadec7214ed9b8cd344e3f9fd303" archimateElement="id-90ff9c60528d4dfe93d534bd6a7bcfeb">
+        <bounds x="288" y="270" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-4941f333c1b24d1db802fc778c053895" targetConnections="id-e491f77c70ee40f485b2bc2177b351d5" archimateElement="id-cbc357e78ede45e8aa565fde3b7380b5">
+        <bounds x="456" y="270" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-be21383ecd0f4ebf854d9e2eb48d486c" archimateElement="id-ba60560a9ed64b4d87b2fd4fa6b32937">
+        <bounds x="503" y="24" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-2a8dc8366b0f48ac96d3f036f4d8db70" source="id-be21383ecd0f4ebf854d9e2eb48d486c" target="id-31e68bc7ef484a7a89268fe97dcb1c4f" archimateRelationship="id-d23f13df2b914f51867c3e0749a1aa9b"/>
+      </child>
+      <child xsi:type="archimate:Note" id="id-042b732b25aa4391a276c6dfc006e0e2" font="1|Segoe UI|18.0|0|WINDOWS|1|-30|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#e2e2e2">
+        <bounds x="245" y="-36" width="619" height="46"/>
+        <content>Relasjon til Digitaliseringsstrategiens relevante mål</content>
+      </child>
+      <documentation>Mål i Digitaliseringsstrategien og relevans til tiltaket Nasjonal arkitektur</documentation>
+    </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="05-EIF lagmodell" id="id-b9bcc8618287449ab162521aa9352413">
       <child xsi:type="archimate:DiagramObject" id="id-ad40ba6f30eb470180f457ef91323d84" targetConnections="id-8f75e073afaa4a49aa5d5394f17f044e" font="1|Segoe UI|12.0|0|WINDOWS|1|-20|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" textAlignment="1" fillColor="#ff8000" archimateElement="id-3fd615c0b19e4762953cd34908523dbc">
         <bounds x="636" y="204" width="400" height="140"/>
@@ -1645,6 +1696,10 @@ I denne oversikten over nasjonale fellesløsninger viser vi også andre fellesl�
         <sourceConnection xsi:type="archimate:Connection" id="id-8f75e073afaa4a49aa5d5394f17f044e" source="id-ad7abf2b74cf45bca40df40724e335a6" target="id-ad40ba6f30eb470180f457ef91323d84" archimateRelationship="id-c2f61540e86d4ee881d5d62a40ea94d0"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-6338c6734f6b404ea82483f3fb06e308" source="id-ad7abf2b74cf45bca40df40724e335a6" target="id-37e3990b98e041e8a85101129f80a024" archimateRelationship="id-df58ca19471f4ea8a055a6c11396a5e4"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-fd960269b2a144c6ada7732c78f63831" source="id-ad7abf2b74cf45bca40df40724e335a6" target="id-6fceb7f3ba4d40ac92057bc0f21eb433" archimateRelationship="id-4caf809f8a3a4f5f9780517fd0ef62c3"/>
+      </child>
+      <child xsi:type="archimate:Note" id="id-e93b6f0a862a4b4d84bb4e16b8b4d7f0" font="1|Segoe UI|18.0|0|WINDOWS|1|-30|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#e2e2e2">
+        <bounds x="336" y="-12" width="700" height="46"/>
+        <content>EIF lagmodell</content>
       </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="06-EIF og relasjon til NA" id="id-3664090f36dc49feb47d246e00fffaae">
@@ -1749,10 +1804,14 @@ I denne oversikten over nasjonale fellesløsninger viser vi også andre fellesl�
         <sourceConnection xsi:type="archimate:Connection" id="id-050398c41efa456e886610de1bde10f6" source="id-25852b62d5074e1f907082ae08bd5ff2" target="id-2ccc8531c4bb4add91d7525c8131ba7b" archimateRelationship="id-78c0cacbc5454aa2ae8a7e0617ea492d"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-3271e3cd498149448a5f62a38be69d43" source="id-25852b62d5074e1f907082ae08bd5ff2" target="id-6de7ec45041447ddb234d680b8a4e866" archimateRelationship="id-f6fcdfb945004e2f8c66445bbd789bea"/>
       </child>
+      <child xsi:type="archimate:Note" id="id-22c7f277f10c4c2a8da9796f0ce6704c" font="1|Segoe UI|18.0|0|WINDOWS|1|-30|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#e2e2e2">
+        <bounds x="778" y="-600" width="618" height="46"/>
+        <content>EIF lagmodell relasjon til hovedkapabiliteter</content>
+      </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="01-NA Hovedkapabiliteter" id="id-c7f9551d156048389c4a955bfaa5254c">
       <child xsi:type="archimate:DiagramObject" id="id-0e7e71bde9d041cea455d34949f55c93" archimateElement="id-ba60560a9ed64b4d87b2fd4fa6b32937">
-        <bounds x="84" y="120" width="457" height="397"/>
+        <bounds x="240" y="120" width="457" height="397"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-062821a1358443c0b2f3416df0e8248c" source="id-0e7e71bde9d041cea455d34949f55c93" target="id-0fc1bf9be19f43fab6184ae6e9df1073" archimateRelationship="id-1c1c276db27f4281a16eda2af3fce4d0"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-794d08a72aa14b4189b29e3a78555b69" source="id-0e7e71bde9d041cea455d34949f55c93" target="id-205e55052332487d9cc4d487272d2c75" archimateRelationship="id-76b5fb12b61e4dc9986e26cb5830336c"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-ecc511c5ed0646c894aeed44cce73ca4" source="id-0e7e71bde9d041cea455d34949f55c93" target="id-7c38a9a5752448129f03440eed0edac3" archimateRelationship="id-96d1bb4634c9476e8f1d69d572df5b89"/>
@@ -1804,6 +1863,10 @@ I denne oversikten over nasjonale fellesløsninger viser vi også andre fellesl�
         <child xsi:type="archimate:DiagramObject" id="id-3105c19b44884ca7a3ac3061f9a71e3d" targetConnections="id-8cc183bc83014131949808471b6a9758" fillColor="#ff8040" archimateElement="id-299fc063873a4f278a1d3c0ac9480467">
           <bounds x="288" y="36" width="120" height="55"/>
         </child>
+      </child>
+      <child xsi:type="archimate:Note" id="id-2b04c41bf1a847209356a2d19bf93e6c" font="1|Segoe UI|18.0|0|WINDOWS|1|-30|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#e2e2e2">
+        <bounds x="240" y="48" width="457" height="46"/>
+        <content>Nasjonal arkitektur hovedkapabiliter</content>
       </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="001-Metamodell kjerne" id="id-b513e2dbd37e447184ee9f969874a681" connectionRouterType="2">
