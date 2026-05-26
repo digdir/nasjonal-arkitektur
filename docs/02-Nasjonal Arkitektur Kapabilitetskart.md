@@ -19,7 +19,6 @@
     - **Tjenestekjeder** - *Evne til å dynamisk sette sammen, koordinere og automatisere flyten av informasjon og prosesser på tvers av uavhengige, integrerbare tjenester for å levere en komplett ende-til-ende-tjeneste for brukeren.*
     - **Proaktive tjenester** - *Evne til å, basert på registrerte hendelser og delte data, automatisk identifisere en brukers behov for offentlige tjenester og proaktivt tilby relevant informasjon, veiledning eller starte en tjenesteprosess på vegne av brukeren.*
   - **Datautveksling og integrasjon** - *Evne til å sikkert, effektivt og standardisert utveksle data mellom aktører i økosystemet.*
-    - **Veiledning og standardisering (copy)** - *Evne til å veilede, gi råd og utarbeide standarder *
     - **Dele data med andre** - *Evne til å tilgjengeliggjøre egne data som veldokumenterte og sikre API-er, slik at andre aktører med lovlig grunnlag enkelt kan oppdage og gjenbruke dem.*
     - **Bruke data fra andre** - *Evne til å gjenbruke data fra andre i egne tjenester og prosesser.*
     - **Meldingsformidling** - *Evnen til å garantere levering og meldingsrekkefølge til rett mottaker.*

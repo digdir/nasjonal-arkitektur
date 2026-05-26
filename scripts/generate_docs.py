@@ -119,11 +119,7 @@ def generate_markdown(yaml_file, docs_dir):
     report_dest = os.path.join(docs_dir, 'archimate-report')
     has_report = False
     if os.path.exists(html_export_dir):
-        # We don't use shutil.copytree directly if the dest exists to avoid errors, 
-        # but docs/ is cleaned on github actions anyway. For local testing:
-        if os.path.exists(report_dest):
-            shutil.rmtree(report_dest)
-        shutil.copytree(html_export_dir, report_dest)
+        shutil.copytree(html_export_dir, report_dest, dirs_exist_ok=True)
         has_report = True
 
     readme_content = ""

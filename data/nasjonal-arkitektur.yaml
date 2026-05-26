@@ -3,40 +3,62 @@ model:
   name: Nasjonal Arkitektur
   version: 5.0.0
 elements:
-  id-eb6f01d0d0ef4230b7a5c9c73c3842c5:
+  id-23598cee556747ef80cab10dbad84e65:
     type: Capability
-    name: Strategisk kapabilitet (overordnet)
-    documentation: "En kapabilitet beskriver \"hva\" en eller flere aktører må kunne\
-      \ gjøre for å skape verdi, uavhengig av hvordan det gjøres. Dette er den forretningsmessige\
-      \ evnen til å oppnå et mål.\nEn kapabilitet er en grunnleggende funksjonell\
-      \ evne i det digitale økosystemet. Den beskriver hva som må være på plass for\
-      \ å oppnå felles nasjonale mål, uavhengig av organisatoriske grenser og tekniske\
-      \ løsninger.\n\nKapabiliteter er typisk uttrykt med generelle termer og på høyt\
-      \ nivå. For at en kapabilitet skal nås kreves evner i form av ferdigheter gjennom\
-      \ en kombinasjon av ulike ressurser. \n\nProsesser, Organisasjon/mennesker,\
-      \ Teknologi, Informasjon (POTI).\n\nKapabiliteter og grad av måloppnåelse\n\
-      - målverdi\n- dagens verdi\n= Finner Gap og modenhet \nEn kapabilitet kan realisere\
-      \ både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer,\
-      \ oppfyller eller tolker hensikten bak prinsippet i praksis.\nModenhetsmodell,\
-      \ som CMMI (Capability Maturity Model Integration:\n* Måling av kapabilitetsmodenhet\
-      \ (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn\
-      \ ved å synliggjøre gapet mellom \"hvor gode vi er\" (As-Is) og \"hvor gode\
-      \ vi må være\" (To-Be).\n* Modenheten til en kapabilitet vurderes basert på\
-      \ tilstanden til de underliggende ressursene.\n\nSe også:\nDe konkrete resultatene\
-      \ av å bruke kapabilitetene.\nSe på dybdeindikatorene fra nullpunktsmåling:\n\
-      https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416\n\
-      F.eks:\n* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429\n\
-      * https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428\n\
-      \nHvordan vurdere modenhet? Gjør dette iht POTI\nPeople (Folk/Organisasjon):\
-      \ Har vi riktig kompetanse og nok hoder?\nProcess (Prosess): Er rutinene dokumenterte\
-      \ og etterlevd?\nTechnology (Teknologi): Har vi verktøystøtte som fungerer?\n\
-      Information (Informasjon): Er \"innholdet\" (dataene, kunnskapen, veiledningen)\n\
-      \nTogaf om Kapabilitetsplanlegging:\nhttps://pubs.opengroup.org/architecture/togaf9-doc/arch/chap28.html\n"
-    properties:
-      Maturity_Current: 1-5
-      Maturity_Target: 1-5
+    name: Domenekapabilitet
+    documentation: ''
+    properties: {}
     folder_path: &id001
     - Strategy
+    - Metamodell
+  id-4157e35b43184dd7bbcb4405e7edea46:
+    type: Resource
+    name: Domeneressurs
+    documentation: ''
+    properties: {}
+    folder_path: *id001
+  id-199ae45b0a6c47b28b3507837647c6c8:
+    type: Resource
+    name: Fellesløsning
+    documentation: "Fellesløsninger er tekniske komponenter eller applikasjoner som\
+      \ leverer funksjonalitet og dekker behov på tvers av eller innenfor sektorer,\
+      \ og/eller forvaltningsnivå. \nTekniske løsninger som utvikles én gang og brukes\
+      \ av mange.\nFellesløsninger er byggeklosser som kan brukes i utviklingen av\
+      \ offentlige digitale tjenester. Noen er obligatoriske å bruke, andre er anbefalte\
+      \ - både for statlige virksomheter og for kommunal sektor.\n\nFellesløsning\
+      \ til forretningstjenester, som er forretningsaktivitet med et spesifisert resultat\
+      \ og som støtter et spesifikt forretningsmål. \nDen er brukersentert og representerer\
+      \ funksjonalitet som leverer verdi til en ekstern bruker. \nBrukerorienterte\
+      \ eller funksjonelle tjenester som leverer verdi, ofte på tvers av løsninger.\n\
+      \nMerk:\nSelv om en tjeneste bruker teknologi, er selve \"tjenesten\" (f.eks.\
+      \ eSignering eller Autentisering) det funksjonelle resultatet av en prosess\
+      \ rettet mot en bruker\n\nStrategiske prinsipper for nasjonale felleskomponenter\
+      \ (gammel - bør ha en felles beskrivelse av felles-\"løsninger\" i stedet)\n\
+      https://www.digdir.no/media/395/download\nhttps://www.regjeringen.no/contentassets/fe3e34b866034b82b9c623c5cec39823/no/pdfs/stm201520160027000dddpdfs.pdf\n\
+      \nFellesløsning vs. felles løsning:\n* Forskjellen er institusjonell. \n* Fellesløsning:\
+      \  referer til nasjonale fellesløsninger, som er spesifikk tekniske komponenter\
+      \ som skal kunne brukes av svært mange i offentlig sektor for å løse generiske\
+      \ behov. \n* Felles løsning: Gjenbrukbar løsnning som kan benyttes av flere\
+      \ og med formåk om samarbeid og stordriftsfordeler, men uten nødvendigvis å\
+      \ ha status som en nasjonal komponent i økosystemet.\n* Fellestjeneste: Den\
+      \ forretningsmessige eller tekniske funksjonaliteten som tilbys.\n\nSluttbrukertjenester:\
+      \ Det innbyggeren eller næringslivet opplever (f.eks. \"Søke om barnehageplass\"\
+      \ eller \"Levere skattemelding\"). \nStøttetjenester: Tekniske tjenester som\
+      \ ikke er synlige for sluttbrukeren, men som er nødvendige for at systemene\
+      \ skal snakke sammen (f.eks. gjennom et API)\n\nDe nasjonale felleskomponentene,\
+      \ slik de er definert i Digital agenda:\n– Har en statlig virksomhet som forvaltningsansvarlig.\n\
+      – Dekker behov på tvers av mange sektorer og/eller forvaltningsnivå.\n– Vil\
+      \ være sentrale komponenter i en rekke digitale tjenester.\n– Er av stor samfunnsøkonomisk\
+      \ betydning som felles mulighetsrom for digital tjenesteutvikling og gevinstrealisering\
+      \ i virksomhetene.\n\n\n\n"
+    properties: {}
+    folder_path: *id001
+  id-fa68712eb0924092abd996fa6c511065:
+    type: Capability
+    name: Kapabilitet (Operasjonell)
+    documentation: ''
+    properties: {}
+    folder_path: *id001
   id-9860d11ff3fd40a5b541b8f929ed305f:
     type: Resource
     name: Ressurs
@@ -179,11 +201,77 @@ elements:
     properties:
       Dekningsgrad: 1-5
     folder_path: *id001
-  id-fa68712eb0924092abd996fa6c511065:
-    type: Capability
-    name: Kapabilitet (Operasjonell)
-    documentation: ''
+  id-f1f34cea2b2e4b5b8f8a9be88321de42:
+    type: Resource
+    name: Standarder og veiledning
+    documentation: 'Ressurser som setter regler eller gir retning.
+
+
+      Dette kan være:
+
+      Standarder, veiledere, referansearkitekturer, metodikk
+
+      Normeringsgrad kan være knyttet til disse virkemidlene.'
     properties: {}
+    folder_path: *id001
+  id-a947552722064b7c93181833028cc2f1:
+    type: Resource
+    name: Samhandlingsareneaer og organisering
+    documentation: Organiserte nettverk og styringsorganer for både dialog og strategisk
+      samordning.
+    properties: {}
+    folder_path: *id001
+  id-456429d236544c28b3d7257893b0dec6:
+    type: Resource
+    name: Rammebetingelser
+    documentation: 'Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
+
+
+      Ressurser innenfor:
+
+      * Finansielle virkemidler/Finansieringsordninger
+
+      * Lovhjemler og juridiske virkemidler
+
+      * Samordning
+
+
+
+      '
+    properties: {}
+    folder_path: *id001
+  id-eb6f01d0d0ef4230b7a5c9c73c3842c5:
+    type: Capability
+    name: Strategisk kapabilitet (overordnet)
+    documentation: "En kapabilitet beskriver \"hva\" en eller flere aktører må kunne\
+      \ gjøre for å skape verdi, uavhengig av hvordan det gjøres. Dette er den forretningsmessige\
+      \ evnen til å oppnå et mål.\nEn kapabilitet er en grunnleggende funksjonell\
+      \ evne i det digitale økosystemet. Den beskriver hva som må være på plass for\
+      \ å oppnå felles nasjonale mål, uavhengig av organisatoriske grenser og tekniske\
+      \ løsninger.\n\nKapabiliteter er typisk uttrykt med generelle termer og på høyt\
+      \ nivå. For at en kapabilitet skal nås kreves evner i form av ferdigheter gjennom\
+      \ en kombinasjon av ulike ressurser. \n\nProsesser, Organisasjon/mennesker,\
+      \ Teknologi, Informasjon (POTI).\n\nKapabiliteter og grad av måloppnåelse\n\
+      - målverdi\n- dagens verdi\n= Finner Gap og modenhet \nEn kapabilitet kan realisere\
+      \ både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer,\
+      \ oppfyller eller tolker hensikten bak prinsippet i praksis.\nModenhetsmodell,\
+      \ som CMMI (Capability Maturity Model Integration:\n* Måling av kapabilitetsmodenhet\
+      \ (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn\
+      \ ved å synliggjøre gapet mellom \"hvor gode vi er\" (As-Is) og \"hvor gode\
+      \ vi må være\" (To-Be).\n* Modenheten til en kapabilitet vurderes basert på\
+      \ tilstanden til de underliggende ressursene.\n\nSe også:\nDe konkrete resultatene\
+      \ av å bruke kapabilitetene.\nSe på dybdeindikatorene fra nullpunktsmåling:\n\
+      https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416\n\
+      F.eks:\n* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429\n\
+      * https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428\n\
+      \nHvordan vurdere modenhet? Gjør dette iht POTI\nPeople (Folk/Organisasjon):\
+      \ Har vi riktig kompetanse og nok hoder?\nProcess (Prosess): Er rutinene dokumenterte\
+      \ og etterlevd?\nTechnology (Teknologi): Har vi verktøystøtte som fungerer?\n\
+      Information (Informasjon): Er \"innholdet\" (dataene, kunnskapen, veiledningen)\n\
+      \nTogaf om Kapabilitetsplanlegging:\nhttps://pubs.opengroup.org/architecture/togaf9-doc/arch/chap28.html\n"
+    properties:
+      Maturity_Current: 1-5
+      Maturity_Target: 1-5
     folder_path: *id001
   id-30e12f5fdabe414db1430b0d735ed1f4:
     type: CourseOfAction
@@ -194,344 +282,6 @@ elements:
 
       Tiltakslisten (123) fra Digitaliseringsstrategien følges opp, i tillegg til
       andre relavante tiltak som bidrar til målene.'
-    properties: {}
-    folder_path: *id001
-  id-682d96a51e604ed2a00e1f4824023bab:
-    type: Capability
-    name: Strategisk styring
-    documentation: Evnen til å sette retning for nasjonal arkitektur og realisere
-      strategiske mål.
-    properties: {}
-    folder_path: *id001
-  id-ecdde89168314bfb94b6a6ac70a55bc7:
-    type: Capability
-    name: Finansiering
-    documentation: Evne til å utforme, anvende og forvalte finansielle virkemidler
-      for å styre digitalisering i økosystemets i tråd med nasjonale mål
-    properties: {}
-    folder_path: *id001
-  id-299fc063873a4f278a1d3c0ac9480467:
-    type: Capability
-    name: Juridisk samhandling
-    documentation: 'Evne til å etablere, forvalte og formidle et helhetlig juridisk
-      rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.
-
-
-      Dette innebærer:
-
-      Harmonisering: Å identifisere og håndtere motstridende eller overlappende lovverk
-      og forskrifter som hindrer samhandling og datadeling.
-
-      Fortolkning og veiledning: Å tilby felles, autoritative tolkninger av relevant
-      regelverk (f.eks. GDPR, forvaltningsloven, eIDAS, EU lovverk) og utarbeide praktiske
-      veiledere for virksomhetene.
-
-      Regelverksutvikling: Å foreslå og koordinere endringer i regelverket for å tilpasse
-      det til teknologisk utvikling og nye behov i økosystemet.
-
-      Risikovurdering: Å etablere felles metoder og standarder for juridisk risikovurdering
-      knyttet til datadeling og utvikling av nye, tverrgående tjenester.
-
-
-      '
-    properties: {}
-    folder_path: *id001
-  id-896e4c1434604caa891b94bcce964720:
-    type: Capability
-    name: Informasjonsforvaltning
-    documentation: 'Evne til å ha et felles rammeverk og styringsmodell for informasjonsforvaltning,
-      slik at offentlige virksomheter kan utveksle og dele data og beskrivelser. '
-    properties: {}
-    folder_path: *id001
-  id-5c6c20d50b6a4b168524901372f0ca6e:
-    type: Capability
-    name: Informasjonsarkitektur
-    documentation: 'Evne til å strukturere og modellere informasjon på en standardisert
-      måte, slik at data og innhold blir finnbart, forståelig og gjenbrukbart for
-      både mennesker og maskiner på tvers av hele økosystemet.
-
-
-
-      Dette betyr:
-
-      Arkitekturbeskrivelse gjennom et sett av krav, prinsipper og modeller, som er
-      nødvendig for fleksibel deling og utveksling av informasjon for å oppnå endringsdyktighet'
-    properties: {}
-    folder_path: *id001
-  id-48c9873ae59341a49c2dca27379fab55:
-    type: Capability
-    name: Informasjonssikkerhet
-    documentation: "Evne til å ha tilstrekkelig sikkerhet i tjenester og løsninger\
-      \ som benyttes i felles økosystem. \nMerk: Er sterkt knyttet til kapabilitet\
-      \ \"Tillit\""
-    properties: {}
-    folder_path: *id001
-  id-d503cf06faa1417b8acd4b26a5c0741e:
-    type: Capability
-    name: Tillit
-    documentation: Evne å tilby tillitstjenester som muliggjører autentisering og
-      autorisasjon på tvers av tjenestekjeder, og støtte en distribuert arkitektur
-      og føderering mellom ulike domener og tjeneste
-    properties: {}
-    folder_path: *id001
-  id-b2aafe1f4c534db6b92c40b1eef605f2:
-    type: Capability
-    name: Representasjon
-    documentation: "Evne til å kunne opptre eller utføre handlinger digitalt på vegne\
-      \ av andre. \n\nDette innebærer:\nÅ kunne etablere, validere, forvalte og dokumentere\
-      \ representasjonsforhold mellom en representant og en representert, slik at\
-      \ rettigheter og myndighet kan utøves på vegne av andre i henhold til lovverk,\
-      \ fullmakter eller vedtak.\nDet må kunne være sporbart og ha tilstrekkelig oversikt\
-      \ for involverte parter.\n\nRepresentasjon betyr at en person (representanten)\
-      \ har rett til å handle på vegne av en annen person eller en virksomhet (den\
-      \ representerte) på en slik måte at den representerte blir bundet av handlingen.\n\
-      \nRepresentasjon inkluderer bl.a. følgende:\n* Fullmakt (avtaleregulert representasjonsforhold):\
-      \ Innebærer kunne gi en viljeserklæring, der den som gir fullmakt tildeler en\
-      \ person eller en virksomhet (fullmektigen) myndighet til å opptre eller gjøre\
-      \ noe på sine vegne.\n* Vergemål (lovregulert representasjonsforhold)\n* Foreldreansvar\
-      \ (lovregulert representasjonsforhold)\n\n"
-    properties: {}
-    folder_path: *id001
-  id-b440252bc3de42dea8468be54e54b1fa:
-    type: Capability
-    name: Tilgangsstyring
-    documentation: 'Evne til å styre og gi tilgang til hvem som har rettighet til
-      å benytte en ressurs (tjeneste, system, API, opplysning) på vegne av seg selv,
-      andre personer eller virksomheter. Autorisering.
-
-
-      Dette er en overordnet kapabilitet som omfatter hele livssyklusen til en rettighet.
-      I praksis betyr det å ha systemer og prosesser for å:
-
-      Definere roller: Sette opp roller med forhåndsdefinerte sett av rettigheter
-      (f.eks., "regnskapsfører" eller "daglig leder").
-
-      Delegere tilgang: Gi virksomheter og personer mulighet til å tildele disse rollene
-      og enkeltrettigheter til andre, for eksempel en ansatt eller en regnskapsfører.
-
-      Forvalte representasjon: Håndtere hvem som kan handle på vegne av en virksomhet
-      eller en annen person.
-
-      Opprettholde oversikt: Sikre oversikt over hvem som har tilgang til hva, slik
-      at det er mulig å revidere og trekke tilbake tilganger ved behov.'
-    properties: {}
-    folder_path: *id001
-  id-4b66bbf964834654b5f0c61e955b91b1:
-    type: Capability
-    name: Identifisering
-    documentation: 'Evne til entydig å fastslå og registrere identiteter (personer,
-      virksomheter eller systemer) gjennom pålitelige metoder og kilder.
-
-
-      Dette betyr videre at disse identitetene senere kan gjenkjennes og skilles fra
-      andre, uavhengig av kontekst, og som legger til rette for sikker tilgangskontroll,
-      sporbarhet og tillit'
-    properties: {}
-    folder_path: *id001
-  id-809f454dc4024d56ab54079252fdfe29:
-    type: Capability
-    name: Samtykke
-    documentation: 'Evne til å akseptere, godkjenne eller gi tillatelse til at en
-      handling kan foretas på vegne av seg selv eller andre, der det foreligger et
-      representasjonsforhold.
-
-
-      Dette innebærer å kunne innhente, administrere og dokumentere gyldige, frivillige
-      og informerte samtykker fra personer for behandling og deling av deres opplysninger
-      og sikre at samtykker kan gis, spores, og enkelt trekkes tilbake.
-
-      Et samtykke er en aktiv, frivillig og informert viljeserklæring fra en person
-      som gir en annen part tillatelse til å utføre en bestemt handling som berører
-      dem eller deres data.
-
-      Merk at: Samtykke er i utgangspunktet ikke en formell form for representasjon.
-
-
-      Eksempel:
-
-      Samtykke: Jeg gir noen lov til å gjøre noe overfor meg eller med mine data.
-      Handlingen er rettet mot meg selv eller min sfære.
-
-      Eksempel: Jeg gir Altinn (tjenesteyter) lov til å hente mine skattedata. Altinn
-      handler ikke på mine vegne, de utfører en handling jeg har gitt dem tillatelse
-      til.
-
-
-      Det kan oppstå situasjoner der en representant må gi et samtykke på vegne av
-      den de representerer.
-
-      Eksempel: En verge (representant) gir samtykke til en medisinsk behandling for
-      et barn (den representerte).
-
-      I dette tilfellet ser vi hvordan konseptene virker sammen: Vergen utøver sin
-      representasjonsrett til å avgi et samtykke på vegne av barnet. Men selve samtykket
-      og representasjonen er fortsatt to distinkte juridiske handlinger.
-
-      '
-    properties: {}
-    folder_path: *id001
-  id-a8a1eb0181f04006ba7d3b5ab2fa9ca8:
-    type: Capability
-    name: Tilgangskontroll
-    documentation: 'Evne til å kontrollere at en bruker har rettighet til å benytte
-      angitt ressurs eller tjeneste på vegne av andre eller seg selv.
-
-
-      Tilgangskontroll er den operative og tekniske evnen til å verifisere og håndheve
-      en brukers rettigheter i sanntid når de forsøker å utføre en handling.
-
-      Det er den tekniske håndhevelsen av tilgangsstyringen.
-
-
-      Tilgangsstyring er forutsetningen for god tilgangskontroll.'
-    properties: {}
-    folder_path: *id001
-  id-2dfe07b3eae740b9a292e0a4a42d22db:
-    type: Capability
-    name: Sporbarhet og innsyn
-    documentation: Evne til dokumentasjon og logging av oppysninger for bruk i innsyn,
-      forvaltning og kontroll av tillitstjenester.
-    properties: {}
-    folder_path: *id001
-  id-f5214c3db8de4738ab03abb7b7e553ed:
-    type: Capability
-    name: Signering
-    documentation: Evne til juridisk bindende signerering av dokumenter eller transaksjoner
-    properties: {}
-    folder_path: *id001
-  id-a40bf39259434db48f358cc543428c8a:
-    type: Capability
-    name: Oversikt over informasjonsmodeller
-    documentation: Evne til å gi oversikt over informasjonsmodeller for å kunne gi
-      en felles forståelse av datastrukturer, slik at data kan tolkes korrekt og meningsfullt.
-    properties: {}
-    folder_path: *id001
-  id-e5a55d4bacd14740a656bc896d25497a:
-    type: Capability
-    name: Oversikt over hendelser
-    documentation: 'Evne til å få oversikt over hvilke hendelser som utløser eller
-      utløses av en tjeneste.
-
-      '
-    properties: {}
-    folder_path: *id001
-  id-d9374751da7d4b36bb0b3be609ff7d28:
-    type: Capability
-    name: Oversikt over tjenester
-    documentation: Evne til å gi oversikt over og oppdage tjenester som tilbys av
-      eller på vegne av offentlig sektor.
-    properties: {}
-    folder_path: *id001
-  id-718d8e94a9b847a485fc6518b4f2588d:
-    type: Capability
-    name: 'Oversikt over API '
-    documentation: Evne til å datadeling og tjenesteintegrasjon ved å oppdage, forstå
-      og koble seg til tilgjengelige data via en standardisert oversikt over maskinlesbare
-      grensesnitt (API-er).
-    properties: {}
-    folder_path: *id001
-  id-dc38d2667240445db35f7f0f38fc1e15:
-    type: Capability
-    name: Oversikt over begreper
-    documentation: Evne til å etablere en omforent begrepsforståelse ved å definere,
-      dele og gjenbruke begreper på tvers av virksomheter, for å sikre entydig kommunikasjon
-      og semantisk samhandlingsevne
-    properties: {}
-    folder_path: *id001
-  id-c0547226c598467a942dced879d0c18b:
-    type: Capability
-    name: Veiledning
-    documentation: 'Evne til at veiledninger for digital samhandling utarbeides og
-      benyttes i felles økosystem.
-
-
-      Dette innebærer:
-
-      * Beskrivelser av beste praksis
-
-      * Omforente prinsipper, mønstre og standarder for hvordan løsninger skal bygges
-      for å fungere optimalt, sikkert og sammenhengende i det nasjonale økosystemet.
-
-      * Referansearkitekturer
-
-
-      * hva som er god faglig praksis
-
-      * hvordan relevant regelverk skal tolkes
-
-      * hvilke prioriteringer som er i samsvar med vedtatt politikk
-
-
-      Veiledere kan ha ulik grad av styrke:
-
-      * Bør benyttes: en sterk anbefaling/råd som vil gjelde de aller fleste. Denne
-      er så klart faglig forankret at det sjelden er forsvarlig ikke å gjøre som anbefalt
-
-      * Kan eller foreslår: en svak anbefaling/råd der ulike valg kan være riktig.
-
-
-
-      '
-    properties: {}
-    folder_path: *id001
-  id-ad6f81e892a74590840828b6aabb270d:
-    type: Capability
-    name: Datautveksling og integrasjon
-    documentation: 'Evne til å sikkert, effektivt og standardisert utveksle data mellom
-      aktører i økosystemet.
-
-
-
-      Mrk: Lommebok er inkludert i denne'
-    properties: {}
-    folder_path: *id001
-  id-84629318a3b84213ac3a83bdb6a1aad9:
-    type: Capability
-    name: Bruke data fra andre
-    documentation: 'Evne til å gjenbruke data fra andre i egne tjenester og prosesser.
-
-
-      Dette innebærer:
-
-      * At man ikke skal behøve å samle inn den samme informasjonen på nytt.
-
-      * Å bruke grensesnitt basert på API, f.eks REST, GraphQL, eller andre klare,
-      standardiserte og gjenbrukbare grensesnitt.'
-    properties: {}
-    folder_path: *id001
-  id-b503993b59044b83b3c38fb179fa732c:
-    type: Capability
-    name: Meldingsformidling
-    documentation: 'Evnen til å garantere levering og meldingsrekkefølge til rett
-      mottaker.
-
-
-      Meldingsformidling er den evnen vi trenger for å tilby en tekniske infrastruktur
-      og de tjenestene som ligger mellom avsender og mottaker for å sørge for at utvekslingen
-      skjer på en sikker, pålitelig og standardisert måte.
-
-
-      Merk: Meldingsutveksling tilhører kapabiliteten innunder "Datautveksling"'
-    properties: {}
-    folder_path: *id001
-  id-9119e1fb3de64872abb90e122280f4d9:
-    type: Capability
-    name: Veiledning og standardisering (copy)
-    documentation: 'Evne til å veilede, gi råd og utarbeide standarder '
-    properties: {}
-    folder_path: *id001
-  id-64811e71d98647e5a678a0a2e79ae617:
-    type: Capability
-    name: Hendelsesdrevet
-    documentation: "Evne til å publisere og reagere på digitale hendelser og kontinuerlige\
-      \ datastrømmer når de inntreffer.\n\nHendelsesdrevet arkitektur er et designparadigme\
-      \ der en tjeneste kjøres etter å ha mottatt en hendelse. Det gjør det mulig\
-      \ å utveksle informasjon mellom distribuerte løsninger på tvers av virksomheter\
-      \ og sektorer i tilnærmet sanntid uten komplekse og tette integrasjoner.\nDet\
-      \ gjør det mulig å \n* knytte tjenester sammen i tjenestekjeder, uten tette\
-      \ koplinger. \n* monitorere og analysere data, ofte knyttet til «IoT – Internet\
-      \ of things» og datastrømmer.\n* tilby proaktive tjenester basert på analyser\
-      \ og hendelser\n\n\n\n"
     properties: {}
     folder_path: *id001
   id-31be9bc0b80e4be4b2df2d8e0000dc6f:
@@ -551,129 +301,100 @@ elements:
       \ planleggere"
     properties: {}
     folder_path: *id001
-  id-3c6f94ba791a4aa298809ef3f46bdc87:
+  id-a601bb3d7b11478185903149965f7842:
     type: Capability
-    name: Oversikt over datasett
-    documentation: Evne til å systematisk oppdage, vurdere og gjenbruke data på tvers
-      av offentlig sektor gjennom en sentral, standardisert oversikt over tilgjengelige
-      datasett.
-    properties: {}
-    folder_path: *id001
-  id-efe1a2676c124eeab946802af96a1ab7:
-    type: Capability
-    name: Dele data med andre
-    documentation: 'Evne til å tilgjengeliggjøre egne data som veldokumenterte og
-      sikre API-er, slik at andre aktører med lovlig grunnlag enkelt kan oppdage og
-      gjenbruke dem.
+    name: Anvendelse av veiledning
+    documentation: 'Evne til tolke og benytte veiledere i prosjekter og tiltak.
 
 
       Dette innebærer:
 
-
-      Å etablere og forvalte sikre API-er etter nasjonale standarder.
-
-
-      Å publisere og dokumentere dataene i Felles datakatalog, slik at de blir lette
-      å finne og forstå.
-
-
-      Å ha robuste systemer for tilgangsstyring som sikrer at data kun deles med de
-      som har lov til det (f.eks. via Maskinporten).
+      * Faktisk bruk av veiledningsmateriell til å faktisk å forstå og bruke dem i
+      egne prosjekte og tiltak.
 
 
       '
     properties: {}
-    folder_path: *id001
-  id-cd3b6a8989a448a2b4dfbf430a41bad4:
+    folder_path: &id002
+    - Strategy
+    - Kapabiliteter i NA
+  id-dabf94e621f644ffa53ebb44dcc9ff79:
     type: Capability
-    name: Tjenesteutvikling
-    documentation: 'Evne til å utvikle sammenhengende digitale tjenester.
-
-
-      Dette er knyttet til prosess- og kompetanse-kapabilitet. Det innebærer å utvikle
-      tjenester basert på metodikk, design, koding og samarbeid.'
+    name: Arkitekturstyring
+    documentation: "Evne til å etablere, forvalte og styre en helhetlig nasjonal digital\
+      \ arkitektur som et felles, forpliktende rammeverk, for å sikre samhandling,\
+      \ gjenbruk og strategisk retning i et nasjonalt digitalt økosystem\n\nDette\
+      \ innebærer:\n* Å sørger for at \"alle drar i samme retning\". Uten den vil\
+      \ digitaliseringen fortsette å være fragmentert, silobasert og suboptimal, der\
+      \ hver virksomhet optimaliserer for seg selv. Alle de andre kapabilitetene vi\
+      \ har definert – fra datadeling og integrasjon til sammenhengende tjenester\
+      \ – er resultater av at denne styringskapabiliteten fungerer. \n* Å kunne benytte\
+      \ både myke og mer normerende virkemidler for å sikre etterlevelse og tatt i\
+      \ bruk.\n* Å opprettholde en helhetlig og kontinuerlig oversikt over de sentrale\
+      \ byggeklossene, arkitekturproduktene og ressursene i det nasjonale digitale\
+      \ økosystemet.  \nOversikt må omfatte nasjonale fellesløsninger (som ID-porten\
+      \ og Altinn), felles datakilder (grunndata), felles plattformer (som KS sin\
+      \ FIKS-plattform) og kritiske tverrgående dataflyter. \nEn slik oversikt er\
+      \ fundamental for å kunne identifisere muligheter for gjenbruk, unngå kostbar\
+      \ duplisering av funksjonalitet, og styre livssyklusen til felleskomponentene\
+      \ på en strategisk måte. Porteføljeforvaltningen gir beslutningstakere det nødvendige\
+      \ grunnlaget for å vurdere hvilke nye fellesløsninger som bør utvikles og hvilke\
+      \ eksisterende som eventuelt bør fases ut.\n\nEtablering av rammeverk: Å utvikle\
+      \ og forvalte de sentrale komponentene i arkitekturen: Felles prinsipper, referansearkitekturer,\
+      \ obligatoriske standarder og en portefølje av nasjonale fellesløsninger.\n\n\
+      * Å jevnlig og systematisk vurdere modenhetsnivået for de nasjonale samhandlingskapabilitetene.\n\
+      Dette betyr å evaluere nåværende modenhetsnivåer for kapabiliteter og sette\
+      \ realistiske mål for forbedring. Dette kan gjøres gjennom ulike vurderingsmetoder,\
+      \ som selvvurderinger, lederes vurderinger og ekspertvurderinger, for å identifisere\
+      \ gap mellom nåværende og ønsket kapabilitetsnivå. \nEt eksempel på en kjent\
+      \ metode er CMMI (Capability Maturity Model Integration).\nDet innebærer også\
+      \ å kunne vurdere nasjonale ressurser slik at de dekker fremtidens behov og\
+      \ deres egnethet til å realisere ønskede kapabiliteter."
     properties: {}
-    folder_path: *id001
-  id-0aa7eced8c5c460f8bc64b77bd6a16c4:
+    folder_path: *id002
+  id-ec0afaac123d4f9e83889d9022a198c3:
     type: Capability
-    name: Sammenhengende tjenester
-    documentation: 'Evne til å levere en digital brukerorienterte tjenester som fremstår
-      som en logisk og uavbrutt prosess for brukeren, selv når den involverer og koordinerer
-      handlinger og tjenester fra flere, uavhengige virksomheter.
-
-
-      Dette oppleves av brukeren som:
-
-
-      En guidet reise: Brukeren blir ledet steg-for-steg gjennom en prosess fra start
-      til slutt, uten å måtte lete etter neste skritt eller lure på hva som skjer
-      nå. Tjenesten forteller proaktivt hva som er gjort, og hva som er neste steg.
-
-
-      "Kun én gang"-prinsippet: Brukeren oppgir informasjon kun én gang. Denne informasjonen
-      gjenbrukes intelligent i alle senere steg i prosessen, uavhengig av hvilken
-      etat som trenger den.
-
-
-      Ingen "døde ender": Brukeren blir aldri stående fast med beskjeden "Nå må du
-      gå til X-etatens nettsider for å fortsette". Systemet sender brukeren, eller
-      dataene, videre til neste ledd i kjeden på en kontrollert og sømløs måte.
-
-
-      Skjult kompleksitet: Brukeren trenger ikke å kjenne til, eller forholde seg
-      til, hvilke etater eller forvaltningsnivåer (statlig, kommunal) som er involvert.
-      Opplevelsen er at man forholder seg til "Det Offentlige".'
+    name: Autentisering
+    documentation: Evne til å på en sikker og entydig måte verifisere den digitale
+      identiteten til brukere og systemer
     properties: {}
-    folder_path: *id001
-  id-1be148b57796458993c3f7f5f24815ca:
+    folder_path: *id002
+  id-84629318a3b84213ac3a83bdb6a1aad9:
     type: Capability
-    name: Sluttbrukertjenester
-    documentation: 'Evne til å tilby en sammenhengende digital brukeropplevelse gjennom
-      et økosystem av standardiserte og integrerbare tjenester.
-
-      '
-    properties: {}
-    folder_path: *id001
-  id-f696350f5d844a96854deadb83bc3c81:
-    type: Capability
-    name: Gjenbrukbare tjenester
-    documentation: "Evne til å utvikle og benytte tjenester som kan brukes i nye sammenhenger\
-      \ på tvers av offentlig forvaltning og næringsliv. \n\nDette er en forretningsmessig\
-      \ verdi, som betyr at en tjeneste løser et problem som flere har, og at den\
-      \ er utviklet slik at den kan brukes av andre.\n\nMerk at knytningen til \"\
-      Integrerbare\" er at \nDu kan ha et system som er teknisk integrerbart (har\
-      \ et API), men som ikke er gjenbrukbart (fordi forretningslogikken er for spesifikk/låst).\
-      \ Derfor bør de holdes adskilt."
-    properties: {}
-    folder_path: *id001
-  id-60827614648541ef8520df87fa25d100:
-    type: Capability
-    name: Integrerbare tjenester
-    documentation: 'Evne til å designe, utvikle og eksponere data og funksjonalitet
-      som selvstendige, standardiserte og maskinlesbare tjenester (API-er), slik at
-      de enkelt kan oppdages, forstås og integreres i nye, tverrgående prosesser og
-      løsninger.
+    name: Bruke data fra andre
+    documentation: 'Evne til å gjenbruke data fra andre i egne tjenester og prosesser.
 
 
       Dette innebærer:
 
-      "API-først"-metodikk: Å utvikle tjenestene med det maskinlesbare grensesnittet
-      (API-et) som det primære produktet, uavhengig av en spesifikk sluttbruker-applikasjon.
-      API-et er designet for å være en robust og gjenbrukbar byggekloss.
+      * At man ikke skal behøve å samle inn den samme informasjonen på nytt.
 
-      Sikkerhet: Å bygge inn sikkerhet og kontrollert tilgangsstyring som en fundamental
-      del av tjenesten, slik at data kun deles med de som har lovlig grunnlag og legitimt
-      behov.
-
-      Robust livssyklusforvaltning: Å ha klare rutiner for versjonering, vedlikehold
-      og en forutsigbar utfasing av tjenester, slik at de som bruker dem kan stole
-      på at de er stabile over tid.
-
-
-
-      '
+      * Å bruke grensesnitt basert på API, f.eks REST, GraphQL, eller andre klare,
+      standardiserte og gjenbrukbare grensesnitt.'
     properties: {}
-    folder_path: *id001
+    folder_path: *id002
+  id-98df6c2b4df340c7a3a3ad32d99ca37e:
+    type: Capability
+    name: Datadrevet
+    documentation: 'Evne til å systematisk bruke data som en strategisk ressurs for
+      å skape innsikt, informere beslutninger og utvikle bedre, mer treffsikre og
+      effektive tjenester.
+
+
+      Etisk og ansvarlig datautnyttelse: All bruk av data skjer på en sikker, lovlig
+      og etisk forsvarlig måte som ivaretar personvern og rettssikkerhet.
+
+
+      Dette innebærer:
+
+      Forvaltningen systematisk bruker data som en strategisk ressurs i prosesser,
+      beslutningstaking og tjenesteutvikling for å levere bedre og mer effektive tjenester
+      til innbyggere og næringsliv.
+
+      Dette forutsetter åpenhet, deling av data, og evne til å hente ut verdi fra
+      data gjennom blant annet analyse, automatisering og bruk av kunstig intelligens.'
+    properties: {}
+    folder_path: *id002
   id-d7aa97e6319a492d8a1345bcaa8e154a:
     type: Capability
     name: Datakilder
@@ -692,17 +413,30 @@ elements:
 
       '
     properties: {}
-    folder_path: *id001
-  id-825b1ea1217b4eedb6caae165aeb8e41:
+    folder_path: *id002
+  id-5852d070415849fab42749cb488d984a:
     type: Capability
-    name: Tjenestekjeder
-    documentation: 'Evne til å dynamisk sette sammen, koordinere og automatisere flyten
-      av informasjon og prosesser på tvers av uavhengige, integrerbare tjenester for
-      å levere en komplett ende-til-ende-tjeneste for brukeren.
+    name: Datastyring
+    documentation: 'Evne til å sikre enhetlig og ansvarlig forvaltning av dataressurser
+      gjennom felles rammeverk, klar ansvarsplassering og systematisk kvalitetsarbeid.
 
-      '
+
+      Datastyring (Data Governance) er rammeverket av roller, ansvar, prosesser og
+      standarder som sikrer effektiv og forsvarlig forvaltning av data som en strategisk
+      ressurs gjennom hele livssyklusen.'
     properties: {}
-    folder_path: *id001
+    folder_path: *id002
+  id-ad6f81e892a74590840828b6aabb270d:
+    type: Capability
+    name: Datautveksling og integrasjon
+    documentation: 'Evne til å sikkert, effektivt og standardisert utveksle data mellom
+      aktører i økosystemet.
+
+
+
+      Mrk: Lommebok er inkludert i denne'
+    properties: {}
+    folder_path: *id002
   id-fa54a429cbd84db09da1b2b2165fc352:
     type: Capability
     name: Dataanalyse
@@ -768,37 +502,75 @@ elements:
       Det kan for eksempel brukes til å analysere medisinske bilder, overvåke miljøendringer
       via satellittdata eller optimalisere trafikkflyt i en by i sanntid.'
     properties: {}
-    folder_path: *id001
-  id-7e3d1d3396914d65a177c9d5346d6feb:
+    folder_path: *id002
+  id-efe1a2676c124eeab946802af96a1ab7:
     type: Capability
-    name: Sammenstilling av data
-    documentation: Evne til å hente, kombinere og foredle data fra ulike kilder for
-      å skape ny innsikt, et helhetlig beslutningsgrunnlag, eller sammenhengende tjenester
-      for brukeren.
-    properties: {}
-    folder_path: *id001
-  id-98df6c2b4df340c7a3a3ad32d99ca37e:
-    type: Capability
-    name: Datadrevet
-    documentation: 'Evne til å systematisk bruke data som en strategisk ressurs for
-      å skape innsikt, informere beslutninger og utvikle bedre, mer treffsikre og
-      effektive tjenester.
-
-
-      Etisk og ansvarlig datautnyttelse: All bruk av data skjer på en sikker, lovlig
-      og etisk forsvarlig måte som ivaretar personvern og rettssikkerhet.
+    name: Dele data med andre
+    documentation: 'Evne til å tilgjengeliggjøre egne data som veldokumenterte og
+      sikre API-er, slik at andre aktører med lovlig grunnlag enkelt kan oppdage og
+      gjenbruke dem.
 
 
       Dette innebærer:
 
-      Forvaltningen systematisk bruker data som en strategisk ressurs i prosesser,
-      beslutningstaking og tjenesteutvikling for å levere bedre og mer effektive tjenester
-      til innbyggere og næringsliv.
 
-      Dette forutsetter åpenhet, deling av data, og evne til å hente ut verdi fra
-      data gjennom blant annet analyse, automatisering og bruk av kunstig intelligens.'
+      Å etablere og forvalte sikre API-er etter nasjonale standarder.
+
+
+      Å publisere og dokumentere dataene i Felles datakatalog, slik at de blir lette
+      å finne og forstå.
+
+
+      Å ha robuste systemer for tilgangsstyring som sikrer at data kun deles med de
+      som har lov til det (f.eks. via Maskinporten).
+
+
+      '
     properties: {}
-    folder_path: *id001
+    folder_path: *id002
+  id-697145d3768b40d39f9463667b78f749:
+    type: Capability
+    name: EU standarder
+    documentation: 'Evnen til at EU standardene forstås og tas i bruk.
+
+
+      Forklaring:
+
+      '
+    properties: {}
+    folder_path: *id002
+  id-ecdde89168314bfb94b6a6ac70a55bc7:
+    type: Capability
+    name: Finansiering
+    documentation: Evne til å utforme, anvende og forvalte finansielle virkemidler
+      for å styre digitalisering i økosystemets i tråd med nasjonale mål
+    properties: {}
+    folder_path: *id002
+  id-b99fcd8160d24e5f8ea3c17b15072f7a:
+    type: Capability
+    name: Forvaltningsstandarder
+    documentation: 'Evne til å implementere og ta i bruk nasjonale standarder
+
+
+      Dette innebærer:
+
+      * inkluderer også EU harmoniserte standarder, som er vedtatt i norsk forvaltning
+
+      '
+    properties: {}
+    folder_path: *id002
+  id-f696350f5d844a96854deadb83bc3c81:
+    type: Capability
+    name: Gjenbrukbare tjenester
+    documentation: "Evne til å utvikle og benytte tjenester som kan brukes i nye sammenhenger\
+      \ på tvers av offentlig forvaltning og næringsliv. \n\nDette er en forretningsmessig\
+      \ verdi, som betyr at en tjeneste løser et problem som flere har, og at den\
+      \ er utviklet slik at den kan brukes av andre.\n\nMerk at knytningen til \"\
+      Integrerbare\" er at \nDu kan ha et system som er teknisk integrerbart (har\
+      \ et API), men som ikke er gjenbrukbart (fordi forretningslogikken er for spesifikk/låst).\
+      \ Derfor bør de holdes adskilt."
+    properties: {}
+    folder_path: *id002
   id-3dbd3a9115cb4c54876490cbf02b0c58:
     type: Capability
     name: Grunndata
@@ -825,100 +597,206 @@ elements:
 
       Geografiske grunndata: Forvaltes av Kartverket.'
     properties: {}
-    folder_path: *id001
-  id-711390c3ddaa4b67914ccbcc2f1831aa:
+    folder_path: *id002
+  id-64811e71d98647e5a678a0a2e79ae617:
     type: Capability
-    name: Sanntidsdata
-    documentation: 'Evne til å sikkert prosessere og distribuere kontinuerlige datastrømmer
-      for å muliggjøre sanntidsinnsikt, automatisering og umiddelbar respons.
+    name: Hendelsesdrevet
+    documentation: "Evne til å publisere og reagere på digitale hendelser og kontinuerlige\
+      \ datastrømmer når de inntreffer.\n\nHendelsesdrevet arkitektur er et designparadigme\
+      \ der en tjeneste kjøres etter å ha mottatt en hendelse. Det gjør det mulig\
+      \ å utveksle informasjon mellom distribuerte løsninger på tvers av virksomheter\
+      \ og sektorer i tilnærmet sanntid uten komplekse og tette integrasjoner.\nDet\
+      \ gjør det mulig å \n* knytte tjenester sammen i tjenestekjeder, uten tette\
+      \ koplinger. \n* monitorere og analysere data, ofte knyttet til «IoT – Internet\
+      \ of things» og datastrømmer.\n* tilby proaktive tjenester basert på analyser\
+      \ og hendelser\n\n\n\n"
+    properties: {}
+    folder_path: *id002
+  id-4b66bbf964834654b5f0c61e955b91b1:
+    type: Capability
+    name: Identifisering
+    documentation: 'Evne til entydig å fastslå og registrere identiteter (personer,
+      virksomheter eller systemer) gjennom pålitelige metoder og kilder.
+
+
+      Dette betyr videre at disse identitetene senere kan gjenkjennes og skilles fra
+      andre, uavhengig av kontekst, og som legger til rette for sikker tilgangskontroll,
+      sporbarhet og tillit'
+    properties: {}
+    folder_path: *id002
+  id-5c6c20d50b6a4b168524901372f0ca6e:
+    type: Capability
+    name: Informasjonsarkitektur
+    documentation: 'Evne til å strukturere og modellere informasjon på en standardisert
+      måte, slik at data og innhold blir finnbart, forståelig og gjenbrukbart for
+      både mennesker og maskiner på tvers av hele økosystemet.
+
+
+
+      Dette betyr:
+
+      Arkitekturbeskrivelse gjennom et sett av krav, prinsipper og modeller, som er
+      nødvendig for fleksibel deling og utveksling av informasjon for å oppnå endringsdyktighet'
+    properties: {}
+    folder_path: *id002
+  id-896e4c1434604caa891b94bcce964720:
+    type: Capability
+    name: Informasjonsforvaltning
+    documentation: 'Evne til å ha et felles rammeverk og styringsmodell for informasjonsforvaltning,
+      slik at offentlige virksomheter kan utveksle og dele data og beskrivelser. '
+    properties: {}
+    folder_path: *id002
+  id-48c9873ae59341a49c2dca27379fab55:
+    type: Capability
+    name: Informasjonssikkerhet
+    documentation: "Evne til å ha tilstrekkelig sikkerhet i tjenester og løsninger\
+      \ som benyttes i felles økosystem. \nMerk: Er sterkt knyttet til kapabilitet\
+      \ \"Tillit\""
+    properties: {}
+    folder_path: *id002
+  id-60827614648541ef8520df87fa25d100:
+    type: Capability
+    name: Integrerbare tjenester
+    documentation: 'Evne til å designe, utvikle og eksponere data og funksjonalitet
+      som selvstendige, standardiserte og maskinlesbare tjenester (API-er), slik at
+      de enkelt kan oppdages, forstås og integreres i nye, tverrgående prosesser og
+      løsninger.
 
 
       Dette innebærer:
 
-      * Å kunne tilby data fra sensorer, tingenes internett (IoT) og andre hendelseskilder'
-    properties: {}
-    folder_path: *id001
-  id-db4f30a87ae84561a4058d4d264177b1:
-    type: Capability
-    name: Åpne data
-    documentation: 'Evne til å tilgjengeliggjøre åpne data slik at den kan leses og
-      tolkes av både maskiner og mennesker, og som alle kan få tilgang til, bruke
-      og dele.
+      "API-først"-metodikk: Å utvikle tjenestene med det maskinlesbare grensesnittet
+      (API-et) som det primære produktet, uavhengig av en spesifikk sluttbruker-applikasjon.
+      API-et er designet for å være en robust og gjenbrukbar byggekloss.
 
+      Sikkerhet: Å bygge inn sikkerhet og kontrollert tilgangsstyring som en fundamental
+      del av tjenesten, slik at data kun deles med de som har lovlig grunnlag og legitimt
+      behov.
 
-      Begrunnelse for relevans
+      Robust livssyklusforvaltning: Å ha klare rutiner for versjonering, vedlikehold
+      og en forutsigbar utfasing av tjenester, slik at de som bruker dem kan stole
+      på at de er stabile over tid.
 
-      Dette er en kapabilitet som utvider verdien av offentlige data utover forvaltningens
-      egne grenser og gir avkastning i hele samfunnet.
-
-
-      Styrker demokrati og åpenhet: Åpne data gir innbyggere, journalister og interessegrupper
-      mulighet til innsyn i forvaltningens arbeid og beslutningsgrunnlag. Dette øker
-      transparensen og legger til rette for en mer informert offentlig debatt.
-
-
-      Er et råstoff for næringsutvikling og innovasjon: Dette er en av de viktigste
-      begrunnelsene. Offentlige data representerer en enorm, uutnyttet ressurs. Ved
-      å gjøre dem fritt tilgjengelige, gir man næringslivet råmaterialet de trenger
-      for å skape nye produkter, tjenester og arbeidsplasser som det offentlige aldri
-      ville utviklet selv.
-
-
-      Forbedrer forskning og faktabasert politikkutforming: Forskere får tilgang til
-      rike datasett som kan brukes til å analysere samfunnstrender, evaluere politikk
-      og løse komplekse samfunnsutfordringer.
-
-
-      Gode åpne data kjennetegnes ved:
-
-      * at de er godt dokumenterte slik at de er lette å oppdage, vurdere og bruke
-
-      * at de kan linkes til slik at de lett kan deles og diskuteres
-
-      *  at de er tilgjengelige i et maskinleselig, standardisert og strukturert format
-      slik at de enkelt kan bearbeides
-
-      * at de har garantier for tilgjengelighet og pålitelighet over tid, slik at
-      andre kan stole på de
-
-      * at de er sporbare tilbake til hvor de kommer fra, slik at andre kan vurdere
-      pålitelighet'
-    properties: {}
-    folder_path: *id001
-  id-ec0afaac123d4f9e83889d9022a198c3:
-    type: Capability
-    name: Autentisering
-    documentation: Evne til å på en sikker og entydig måte verifisere den digitale
-      identiteten til brukere og systemer
-    properties: {}
-    folder_path: *id001
-  id-c3f87c86b19547359c677a333b16f03b:
-    type: Capability
-    name: Standardisering
-    documentation: 'Evne til å identifisere, vedta, forvalte og fremme bruk av omforente
-      standarder og spesifikasjoner som sikrer interoperabilitet og gjenbruk på tvers
-      av sektorer og landegrenser.
-
-
-      Dette innebærer:
-
-      Harmonisering: Å sikre at nasjonale standarder er i samsvar med internasjonale
-      standarder (som EU-harmoniserte standarder) for å muliggjøre samhandling over
-      landegrensene.
-
-      Livssyklusforvaltning: Å ha prosesser for å vurdere nye standarder, vedlikeholde
-      eksisterende, og fase ut foreldede standarder i takt med teknologisk utvikling.
-
-      Veiledning: Å gjøre standardene tilgjengelige og forståelige, slik at de enkelt
-      kan implementeres i tjenester og løsninger.
-
-      Etterlevelse: Å legge til rette for at fellesløsninger og virksomheter faktisk
-      tar i bruk vedtatte forvaltningsstandarder i sine anskaffelser og utviklingsløp.
 
 
       '
     properties: {}
-    folder_path: *id001
+    folder_path: *id002
+  id-299fc063873a4f278a1d3c0ac9480467:
+    type: Capability
+    name: Juridisk samhandling
+    documentation: 'Evne til å etablere, forvalte og formidle et helhetlig juridisk
+      rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.
+
+
+      Dette innebærer:
+
+      Harmonisering: Å identifisere og håndtere motstridende eller overlappende lovverk
+      og forskrifter som hindrer samhandling og datadeling.
+
+      Fortolkning og veiledning: Å tilby felles, autoritative tolkninger av relevant
+      regelverk (f.eks. GDPR, forvaltningsloven, eIDAS, EU lovverk) og utarbeide praktiske
+      veiledere for virksomhetene.
+
+      Regelverksutvikling: Å foreslå og koordinere endringer i regelverket for å tilpasse
+      det til teknologisk utvikling og nye behov i økosystemet.
+
+      Risikovurdering: Å etablere felles metoder og standarder for juridisk risikovurdering
+      knyttet til datadeling og utvikling av nye, tverrgående tjenester.
+
+
+      '
+    properties: {}
+    folder_path: *id002
+  id-b503993b59044b83b3c38fb179fa732c:
+    type: Capability
+    name: Meldingsformidling
+    documentation: 'Evnen til å garantere levering og meldingsrekkefølge til rett
+      mottaker.
+
+
+      Meldingsformidling er den evnen vi trenger for å tilby en tekniske infrastruktur
+      og de tjenestene som ligger mellom avsender og mottaker for å sørge for at utvekslingen
+      skjer på en sikker, pålitelig og standardisert måte.
+
+
+      Merk: Meldingsutveksling tilhører kapabiliteten innunder "Datautveksling"'
+    properties: {}
+    folder_path: *id002
+  id-ba60560a9ed64b4d87b2fd4fa6b32937:
+    type: Capability
+    name: Nasjonal arkitektur for samhandling
+    documentation: "Evne til å sikre samhandling, gjenbruk og strategisk retning i\
+      \ et nasjonalt digitalt økosystem.\n\n\nFelles økosystem skal bidra til økt\
+      \ deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på\
+      \ en effektiv måte og skaper økte verdier for samfunnet.\nDet betyr at i felles\
+      \ økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til\
+      \ en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer\
+      \ hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker\
+      \ samhandlingen mellom aktørene. \nMed samhandling mener vi evnen til å tilby\
+      \ tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske,\
+      \ semantiske og tekniske aspektene ved dette.\n\n"
+    properties: {}
+    folder_path: *id002
+  id-9ea8fbaeb19243fa971013c57c3e96f9:
+    type: Capability
+    name: Organisatorisk samhandling
+    documentation: "Evnen til å effektivisere forretningsprosesser og verdikjeder\
+      \ på tvers av organisatoriske grenser. \n\nDette er en operativ og strukturell\
+      \ evne.\nDette innebære:\nA kunne utvikle tjenester med utgangspunkt i brukerens\
+      \ behov og livssituasjon uavhengig av organisatoriske grenser og strukturer.\n\
+      Eksempel:\nScenario A: Dere har gode samarbeidsarenaer (møter, fagforum), men\
+      \ arbeidsprosessene (selve samhandlingen) kan fortsatt være manuelle, tungvinte\
+      \ og ikke samkjørte.\n\n\n"
+    properties: {}
+    folder_path: *id002
+  id-718d8e94a9b847a485fc6518b4f2588d:
+    type: Capability
+    name: 'Oversikt over API '
+    documentation: Evne til å datadeling og tjenesteintegrasjon ved å oppdage, forstå
+      og koble seg til tilgjengelige data via en standardisert oversikt over maskinlesbare
+      grensesnitt (API-er).
+    properties: {}
+    folder_path: *id002
+  id-dc38d2667240445db35f7f0f38fc1e15:
+    type: Capability
+    name: Oversikt over begreper
+    documentation: Evne til å etablere en omforent begrepsforståelse ved å definere,
+      dele og gjenbruke begreper på tvers av virksomheter, for å sikre entydig kommunikasjon
+      og semantisk samhandlingsevne
+    properties: {}
+    folder_path: *id002
+  id-3c6f94ba791a4aa298809ef3f46bdc87:
+    type: Capability
+    name: Oversikt over datasett
+    documentation: Evne til å systematisk oppdage, vurdere og gjenbruke data på tvers
+      av offentlig sektor gjennom en sentral, standardisert oversikt over tilgjengelige
+      datasett.
+    properties: {}
+    folder_path: *id002
+  id-e5a55d4bacd14740a656bc896d25497a:
+    type: Capability
+    name: Oversikt over hendelser
+    documentation: 'Evne til å få oversikt over hvilke hendelser som utløser eller
+      utløses av en tjeneste.
+
+      '
+    properties: {}
+    folder_path: *id002
+  id-a40bf39259434db48f358cc543428c8a:
+    type: Capability
+    name: Oversikt over informasjonsmodeller
+    documentation: Evne til å gi oversikt over informasjonsmodeller for å kunne gi
+      en felles forståelse av datastrukturer, slik at data kan tolkes korrekt og meningsfullt.
+    properties: {}
+    folder_path: *id002
+  id-d9374751da7d4b36bb0b3be609ff7d28:
+    type: Capability
+    name: Oversikt over tjenester
+    documentation: Evne til å gi oversikt over og oppdage tjenester som tilbys av
+      eller på vegne av offentlig sektor.
+    properties: {}
+    folder_path: *id002
   id-9bc3012bcd154e27aa094ac36bf391be:
     type: Capability
     name: Proaktive tjenester
@@ -992,125 +870,61 @@ elements:
 
       '
     properties: {}
-    folder_path: *id001
-  id-8914d57f4f1442b1b562252a3630a686:
+    folder_path: *id002
+  id-0209483504444508a40415aa6e3fc39c:
     type: Capability
-    name: Visualisering
-    documentation: "Evne til å omforme komplekse data til visuelle fremstillinger\
-      \ som gjør innsikt lett tilgjengelig, forståelig og anvendbar.\n\nVisualisering\
-      \ er den kapabiliteten som gjør at vi kan \"se\" historien dataene forteller.\
-      \ \n\nDette innebærer:\n* Beslutningsstøtte i sanntid: Å lage oversikter (dashboards)\
-      \ som oppdaterer seg selv, slik at man kan ta valg basert på hvordan situasjonen\
-      \ er akkurat nå.\n* Geografisk fremstilling: Å koble data til kart for å forstå\
-      \ sammenhenger mellom sted og hendelser (for eksempel smittespredning, trafikkflyt\
-      \ eller andre ressursbehov).\n* Datadrevet historiefortelling: Å presentere\
-      \ fakta på en måte som gjør det enkelt å kommunisere et budskap til andre.\n\
-      \n\n\n\n\n"
-    properties: {}
-    folder_path: *id001
-  id-697145d3768b40d39f9463667b78f749:
-    type: Capability
-    name: EU standarder
-    documentation: 'Evnen til at EU standardene forstås og tas i bruk.
-
-
-      Forklaring:
-
-      '
-    properties: {}
-    folder_path: *id001
-  id-b99fcd8160d24e5f8ea3c17b15072f7a:
-    type: Capability
-    name: Forvaltningsstandarder
-    documentation: 'Evne til å implementere og ta i bruk nasjonale standarder
+    name: Regelverkstolkning
+    documentation: 'Evne til å tilby felles, autoritative tolkninger av relevant regelverk.
 
 
       Dette innebærer:
 
-      * inkluderer også EU harmoniserte standarder, som er vedtatt i norsk forvaltning
-
-      '
+      * juridisk risikovurdering: Ved å tilby felles tolkninger, etablerer man også
+      felles risikoforståelse.'
     properties: {}
-    folder_path: *id001
-  id-980043f78fa94eec8ecf46338a5b9c6b:
+    folder_path: *id002
+  id-0119029984674da59dbbfdc3a8ca3e95:
     type: Capability
-    name: Styringssystem
-    documentation: 'Evne til å evaluere, forbedre, fornye styringssystem for informasjonssikkerhet.
+    name: Regelverksutvikling
+    documentation: 'Evne til å foreslå og koordinere endringer i regelverket for å
+      tilpasse det til teknologisk utvikling og nye behov.
 
 
       Dette innebærer:
 
-      Innebærer at en virksomhet systematisk vurderer hvordan deres nåværende sikkerhetsstyringssystem
-      fungerer, identifiserer forbedringsområder, og tilpasser eller oppdaterer systemet
-      for å møte nye trusler, sårbarheter og endringer i virksomhetens behov eller
-      omgivelsene. Dette inkluderer regelmessige risikovurderinger, kontroll av om
-      sikkerhetstiltak er effektive, og implementering av tiltak for å lukke eventuelle
-      sikkerhetsgap'
+      * Å identifisere motstridende regelverk, der hamonisering er nødvendig
+
+      * Foreslå og koordinere endringer for å tilpasse lovverket
+
+
+      '
     properties: {}
-    folder_path: *id001
-  id-34d3d64b3afe4327a29ee6c2f7f74dff:
+    folder_path: *id002
+  id-b2aafe1f4c534db6b92c40b1eef605f2:
     type: Capability
-    name: Sikring av informasjonsflyt og datautveksling
-    documentation: Kapabiliteten omfatter de tekniske og organisatoriske tiltakene
-      som sikrer at informasjon som utveksles mellom virksomheter er beskyttet mot
-      innsyn og manipulering, og at dataflyten er kontrollert.
+    name: Representasjon
+    documentation: "Evne til å kunne opptre eller utføre handlinger digitalt på vegne\
+      \ av andre. \n\nDette innebærer:\nÅ kunne etablere, validere, forvalte og dokumentere\
+      \ representasjonsforhold mellom en representant og en representert, slik at\
+      \ rettigheter og myndighet kan utøves på vegne av andre i henhold til lovverk,\
+      \ fullmakter eller vedtak.\nDet må kunne være sporbart og ha tilstrekkelig oversikt\
+      \ for involverte parter.\n\nRepresentasjon betyr at en person (representanten)\
+      \ har rett til å handle på vegne av en annen person eller en virksomhet (den\
+      \ representerte) på en slik måte at den representerte blir bundet av handlingen.\n\
+      \nRepresentasjon inkluderer bl.a. følgende:\n* Fullmakt (avtaleregulert representasjonsforhold):\
+      \ Innebærer kunne gi en viljeserklæring, der den som gir fullmakt tildeler en\
+      \ person eller en virksomhet (fullmektigen) myndighet til å opptre eller gjøre\
+      \ noe på sine vegne.\n* Vergemål (lovregulert representasjonsforhold)\n* Foreldreansvar\
+      \ (lovregulert representasjonsforhold)\n\n"
     properties: {}
-    folder_path: *id001
+    folder_path: *id002
   id-e67a4f2983ce40f9823ec34ba460055a:
     type: Capability
     name: Samarbeid
     documentation: Evne til å samarbeid og samhandling på tvers av offentlig og privat
       forvaltning.
     properties: {}
-    folder_path: *id001
-  id-3f59d920995e4d488e56f61356dcf97a:
-    type: Capability
-    name: Tjenesteforvaltning
-    documentation: 'Evne til å formalisere samarbeid gjennom tydelig definerte roller,
-      ansvar og avtaler for å sikre forutsigbar og effektiv felles styring mellom
-      samhandlende virksomheter.
-
-      Avtalefesting av ansvar (SLA, governance) i tjenestekjeder.
-
-
-      Når tjenester settes sammen av bidrag fra flere ulike virksomheter, oppstår
-      det nye og komplekse styringsutfordringer. Denne kapabiliteten handler om å
-      designe og implementere styringsmodeller som er tilpasset slike tverrgående
-      tjenestekjeder og digitale økosystemer. Dette innebærer å tydelig definere roller
-      og ansvar for hele kjeden, fra ende-til-ende, og plassere ansvaret for at helheten
-      fungerer. For de prioriterte livshendelsene i digitaliseringsstrategien, vil
-      slike styringsmodeller være avgjørende for å sikre at brukeren opplever en sømløs
-      tjeneste, uavhengig av hvordan forvaltningen er organisert "bak fasaden"
-
-
-      Dette innebærer:
-
-      Etablere klare roller og ansvar: Hver virksomhet må vite nøyaktig hva som forventes
-      av dem i samarbeidet.
-
-      Formalisere samarbeid: Inngåelse av formelle avtaler som samforståelsesmemorandum
-      (MoU) og tjenestenivåavtaler (SLA) for å sikre forpliktelse og forutsigbarhet
-      i leveransene.
-
-      Felles forvaltningsmodeller: Enighet om hvordan felles løsninger og tjenester
-      skal styres, vedlikeholdes og videreutvikles over tid.
-
-
-      '
-    properties: {}
-    folder_path: *id001
-  id-9ea8fbaeb19243fa971013c57c3e96f9:
-    type: Capability
-    name: Organisatorisk samhandling
-    documentation: "Evnen til å effektivisere forretningsprosesser og verdikjeder\
-      \ på tvers av organisatoriske grenser. \n\nDette er en operativ og strukturell\
-      \ evne.\nDette innebære:\nA kunne utvikle tjenester med utgangspunkt i brukerens\
-      \ behov og livssituasjon uavhengig av organisatoriske grenser og strukturer.\n\
-      Eksempel:\nScenario A: Dere har gode samarbeidsarenaer (møter, fagforum), men\
-      \ arbeidsprosessene (selve samhandlingen) kan fortsatt være manuelle, tungvinte\
-      \ og ikke samkjørte.\n\n\n"
-    properties: {}
-    folder_path: *id001
+    folder_path: *id002
   id-b4a86e2e430c472b9f74bedb7f66fd74:
     type: Capability
     name: Samarbeidsarenaer og nettverk
@@ -1131,64 +945,46 @@ elements:
       \ samarbeidsmodeller: Å gi råd og veiledning til virksomheter om egnede modeller\
       \ for samarbeid, som felles prosjekter, partnerskap eller mer uformelle nettverk."
     properties: {}
-    folder_path: *id001
-  id-dabf94e621f644ffa53ebb44dcc9ff79:
+    folder_path: *id002
+  id-0aa7eced8c5c460f8bc64b77bd6a16c4:
     type: Capability
-    name: Arkitekturstyring
-    documentation: "Evne til å etablere, forvalte og styre en helhetlig nasjonal digital\
-      \ arkitektur som et felles, forpliktende rammeverk, for å sikre samhandling,\
-      \ gjenbruk og strategisk retning i et nasjonalt digitalt økosystem\n\nDette\
-      \ innebærer:\n* Å sørger for at \"alle drar i samme retning\". Uten den vil\
-      \ digitaliseringen fortsette å være fragmentert, silobasert og suboptimal, der\
-      \ hver virksomhet optimaliserer for seg selv. Alle de andre kapabilitetene vi\
-      \ har definert – fra datadeling og integrasjon til sammenhengende tjenester\
-      \ – er resultater av at denne styringskapabiliteten fungerer. \n* Å kunne benytte\
-      \ både myke og mer normerende virkemidler for å sikre etterlevelse og tatt i\
-      \ bruk.\n* Å opprettholde en helhetlig og kontinuerlig oversikt over de sentrale\
-      \ byggeklossene, arkitekturproduktene og ressursene i det nasjonale digitale\
-      \ økosystemet.  \nOversikt må omfatte nasjonale fellesløsninger (som ID-porten\
-      \ og Altinn), felles datakilder (grunndata), felles plattformer (som KS sin\
-      \ FIKS-plattform) og kritiske tverrgående dataflyter. \nEn slik oversikt er\
-      \ fundamental for å kunne identifisere muligheter for gjenbruk, unngå kostbar\
-      \ duplisering av funksjonalitet, og styre livssyklusen til felleskomponentene\
-      \ på en strategisk måte. Porteføljeforvaltningen gir beslutningstakere det nødvendige\
-      \ grunnlaget for å vurdere hvilke nye fellesløsninger som bør utvikles og hvilke\
-      \ eksisterende som eventuelt bør fases ut.\n\nEtablering av rammeverk: Å utvikle\
-      \ og forvalte de sentrale komponentene i arkitekturen: Felles prinsipper, referansearkitekturer,\
-      \ obligatoriske standarder og en portefølje av nasjonale fellesløsninger.\n\n\
-      * Å jevnlig og systematisk vurdere modenhetsnivået for de nasjonale samhandlingskapabilitetene.\n\
-      Dette betyr å evaluere nåværende modenhetsnivåer for kapabiliteter og sette\
-      \ realistiske mål for forbedring. Dette kan gjøres gjennom ulike vurderingsmetoder,\
-      \ som selvvurderinger, lederes vurderinger og ekspertvurderinger, for å identifisere\
-      \ gap mellom nåværende og ønsket kapabilitetsnivå. \nEt eksempel på en kjent\
-      \ metode er CMMI (Capability Maturity Model Integration).\nDet innebærer også\
-      \ å kunne vurdere nasjonale ressurser slik at de dekker fremtidens behov og\
-      \ deres egnethet til å realisere ønskede kapabiliteter."
-    properties: {}
-    folder_path: *id001
-  id-5852d070415849fab42749cb488d984a:
-    type: Capability
-    name: Datastyring
-    documentation: 'Evne til å sikre enhetlig og ansvarlig forvaltning av dataressurser
-      gjennom felles rammeverk, klar ansvarsplassering og systematisk kvalitetsarbeid.
+    name: Sammenhengende tjenester
+    documentation: 'Evne til å levere en digital brukerorienterte tjenester som fremstår
+      som en logisk og uavbrutt prosess for brukeren, selv når den involverer og koordinerer
+      handlinger og tjenester fra flere, uavhengige virksomheter.
 
 
-      Datastyring (Data Governance) er rammeverket av roller, ansvar, prosesser og
-      standarder som sikrer effektiv og forsvarlig forvaltning av data som en strategisk
-      ressurs gjennom hele livssyklusen.'
+      Dette oppleves av brukeren som:
+
+
+      En guidet reise: Brukeren blir ledet steg-for-steg gjennom en prosess fra start
+      til slutt, uten å måtte lete etter neste skritt eller lure på hva som skjer
+      nå. Tjenesten forteller proaktivt hva som er gjort, og hva som er neste steg.
+
+
+      "Kun én gang"-prinsippet: Brukeren oppgir informasjon kun én gang. Denne informasjonen
+      gjenbrukes intelligent i alle senere steg i prosessen, uavhengig av hvilken
+      etat som trenger den.
+
+
+      Ingen "døde ender": Brukeren blir aldri stående fast med beskjeden "Nå må du
+      gå til X-etatens nettsider for å fortsette". Systemet sender brukeren, eller
+      dataene, videre til neste ledd i kjeden på en kontrollert og sømløs måte.
+
+
+      Skjult kompleksitet: Brukeren trenger ikke å kjenne til, eller forholde seg
+      til, hvilke etater eller forvaltningsnivåer (statlig, kommunal) som er involvert.
+      Opplevelsen er at man forholder seg til "Det Offentlige".'
     properties: {}
-    folder_path: *id001
-  id-ce84b9b6943f4789bca153c0ed15245a:
+    folder_path: *id002
+  id-7e3d1d3396914d65a177c9d5346d6feb:
     type: Capability
-    name: Utviklings- og kjøretidsmiljø
-    documentation: "Evne til å tilby og forvalte en felles, skalerbar teknisk plattform\
-      \ og en tilhørende verktøykasse med standardiserte byggeklosser, verktøy og\
-      \ utviklingsmiljøe som forenkler og akselererer utviklingen av digitale tjenester.\n\
-      \nDette innebærer:\nTjenesteutvikling foregår i stor grad i sektorene og den\
-      \ enkelte virksomhet. Det vil allikevel være behov for å tilby felles utviklings-\
-      \ og kjøretidsmiljø for hele offentlig sektor eller for enkeltsektorer. \n"
+    name: Sammenstilling av data
+    documentation: Evne til å hente, kombinere og foredle data fra ulike kilder for
+      å skape ny innsikt, et helhetlig beslutningsgrunnlag, eller sammenhengende tjenester
+      for brukeren.
     properties: {}
-    folder_path: *id001
+    folder_path: *id002
   id-034543e002414306a8fbecc8c9d8e496:
     type: Capability
     name: Samordning
@@ -1209,54 +1005,141 @@ elements:
       \ tatt i bruk.\n\tHandlingen: Å velge gjenbrukbare nasjonale løsninger fremfor\
       \ å bygge egne, proprietære løsninger.\n\n\n"
     properties: {}
-    folder_path: *id001
-  id-23598cee556747ef80cab10dbad84e65:
+    folder_path: *id002
+  id-809f454dc4024d56ab54079252fdfe29:
     type: Capability
-    name: Domenekapabilitet
-    documentation: ''
+    name: Samtykke
+    documentation: 'Evne til å akseptere, godkjenne eller gi tillatelse til at en
+      handling kan foretas på vegne av seg selv eller andre, der det foreligger et
+      representasjonsforhold.
+
+
+      Dette innebærer å kunne innhente, administrere og dokumentere gyldige, frivillige
+      og informerte samtykker fra personer for behandling og deling av deres opplysninger
+      og sikre at samtykker kan gis, spores, og enkelt trekkes tilbake.
+
+      Et samtykke er en aktiv, frivillig og informert viljeserklæring fra en person
+      som gir en annen part tillatelse til å utføre en bestemt handling som berører
+      dem eller deres data.
+
+      Merk at: Samtykke er i utgangspunktet ikke en formell form for representasjon.
+
+
+      Eksempel:
+
+      Samtykke: Jeg gir noen lov til å gjøre noe overfor meg eller med mine data.
+      Handlingen er rettet mot meg selv eller min sfære.
+
+      Eksempel: Jeg gir Altinn (tjenesteyter) lov til å hente mine skattedata. Altinn
+      handler ikke på mine vegne, de utfører en handling jeg har gitt dem tillatelse
+      til.
+
+
+      Det kan oppstå situasjoner der en representant må gi et samtykke på vegne av
+      den de representerer.
+
+      Eksempel: En verge (representant) gir samtykke til en medisinsk behandling for
+      et barn (den representerte).
+
+      I dette tilfellet ser vi hvordan konseptene virker sammen: Vergen utøver sin
+      representasjonsrett til å avgi et samtykke på vegne av barnet. Men selve samtykket
+      og representasjonen er fortsatt to distinkte juridiske handlinger.
+
+      '
     properties: {}
-    folder_path: *id001
-  id-ba60560a9ed64b4d87b2fd4fa6b32937:
+    folder_path: *id002
+  id-711390c3ddaa4b67914ccbcc2f1831aa:
     type: Capability
-    name: Nasjonal arkitektur for samhandling
-    documentation: "Evne til å sikre samhandling, gjenbruk og strategisk retning i\
-      \ et nasjonalt digitalt økosystem.\n\n\nFelles økosystem skal bidra til økt\
-      \ deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på\
-      \ en effektiv måte og skaper økte verdier for samfunnet.\nDet betyr at i felles\
-      \ økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til\
-      \ en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer\
-      \ hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker\
-      \ samhandlingen mellom aktørene. \nMed samhandling mener vi evnen til å tilby\
-      \ tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske,\
-      \ semantiske og tekniske aspektene ved dette.\n\n"
-    properties: {}
-    folder_path: *id001
-  id-4157e35b43184dd7bbcb4405e7edea46:
-    type: Resource
-    name: Domeneressurs
-    documentation: ''
-    properties: {}
-    folder_path: *id001
-  id-379e167f7b9c4fbea9c6969425ba7f6c:
-    type: Capability
-    name: Tjenestedesign
-    documentation: 'Evne til å sette brukerens behov, livssituasjon og helhetlige
-      reise som utgangspunkt for utvikling av sammenhengende tjenester.
+    name: Sanntidsdata
+    documentation: 'Evne til å sikkert prosessere og distribuere kontinuerlige datastrømmer
+      for å muliggjøre sanntidsinnsikt, automatisering og umiddelbar respons.
 
 
       Dette innebærer:
 
-      * Å systematisk innhente og bruke kunnskap om brukernes faktiske behov, adferd
-      og utfordringer.
+      * Å kunne tilby data fra sensorer, tingenes internett (IoT) og andre hendelseskilder'
+    properties: {}
+    folder_path: *id002
+  id-f5214c3db8de4738ab03abb7b7e553ed:
+    type: Capability
+    name: Signering
+    documentation: Evne til juridisk bindende signerering av dokumenter eller transaksjoner
+    properties: {}
+    folder_path: *id002
+  id-34d3d64b3afe4327a29ee6c2f7f74dff:
+    type: Capability
+    name: Sikring av informasjonsflyt og datautveksling
+    documentation: Kapabiliteten omfatter de tekniske og organisatoriske tiltakene
+      som sikrer at informasjon som utveksles mellom virksomheter er beskyttet mot
+      innsyn og manipulering, og at dataflyten er kontrollert.
+    properties: {}
+    folder_path: *id002
+  id-1be148b57796458993c3f7f5f24815ca:
+    type: Capability
+    name: Sluttbrukertjenester
+    documentation: 'Evne til å tilby en sammenhengende digital brukeropplevelse gjennom
+      et økosystem av standardiserte og integrerbare tjenester.
 
-      * Å designe tjenester som dekker hele brukerbehovet fra start til slutt, selv
-      når løsningen krever samarbeid tverrsektorielt og ulike forvaltningsnivå.
+      '
+    properties: {}
+    folder_path: *id002
+  id-2dfe07b3eae740b9a292e0a4a42d22db:
+    type: Capability
+    name: Sporbarhet og innsyn
+    documentation: Evne til dokumentasjon og logging av oppysninger for bruk i innsyn,
+      forvaltning og kontroll av tillitstjenester.
+    properties: {}
+    folder_path: *id002
+  id-c3f87c86b19547359c677a333b16f03b:
+    type: Capability
+    name: Standardisering
+    documentation: 'Evne til å identifisere, vedta, forvalte og fremme bruk av omforente
+      standarder og spesifikasjoner som sikrer interoperabilitet og gjenbruk på tvers
+      av sektorer og landegrenser.
 
+
+      Dette innebærer:
+
+      Harmonisering: Å sikre at nasjonale standarder er i samsvar med internasjonale
+      standarder (som EU-harmoniserte standarder) for å muliggjøre samhandling over
+      landegrensene.
+
+      Livssyklusforvaltning: Å ha prosesser for å vurdere nye standarder, vedlikeholde
+      eksisterende, og fase ut foreldede standarder i takt med teknologisk utvikling.
+
+      Veiledning: Å gjøre standardene tilgjengelige og forståelige, slik at de enkelt
+      kan implementeres i tjenester og løsninger.
+
+      Etterlevelse: Å legge til rette for at fellesløsninger og virksomheter faktisk
+      tar i bruk vedtatte forvaltningsstandarder i sine anskaffelser og utviklingsløp.
 
 
       '
     properties: {}
-    folder_path: *id001
+    folder_path: *id002
+  id-682d96a51e604ed2a00e1f4824023bab:
+    type: Capability
+    name: Strategisk styring
+    documentation: Evnen til å sette retning for nasjonal arkitektur og realisere
+      strategiske mål.
+    properties: {}
+    folder_path: *id002
+  id-980043f78fa94eec8ecf46338a5b9c6b:
+    type: Capability
+    name: Styringssystem
+    documentation: 'Evne til å evaluere, forbedre, fornye styringssystem for informasjonssikkerhet.
+
+
+      Dette innebærer:
+
+      Innebærer at en virksomhet systematisk vurderer hvordan deres nåværende sikkerhetsstyringssystem
+      fungerer, identifiserer forbedringsområder, og tilpasser eller oppdaterer systemet
+      for å møte nye trusler, sårbarheter og endringer i virksomhetens behov eller
+      omgivelsene. Dette inkluderer regelmessige risikovurderinger, kontroll av om
+      sikkerhetstiltak er effektive, og implementering av tiltak for å lukke eventuelle
+      sikkerhetsgap'
+    properties: {}
+    folder_path: *id002
   id-68ec332ee94c483e878a3a2ae903863f:
     type: Capability
     name: Testdata
@@ -1305,7 +1188,131 @@ elements:
 
       '
     properties: {}
-    folder_path: *id001
+    folder_path: *id002
+  id-a8a1eb0181f04006ba7d3b5ab2fa9ca8:
+    type: Capability
+    name: Tilgangskontroll
+    documentation: 'Evne til å kontrollere at en bruker har rettighet til å benytte
+      angitt ressurs eller tjeneste på vegne av andre eller seg selv.
+
+
+      Tilgangskontroll er den operative og tekniske evnen til å verifisere og håndheve
+      en brukers rettigheter i sanntid når de forsøker å utføre en handling.
+
+      Det er den tekniske håndhevelsen av tilgangsstyringen.
+
+
+      Tilgangsstyring er forutsetningen for god tilgangskontroll.'
+    properties: {}
+    folder_path: *id002
+  id-b440252bc3de42dea8468be54e54b1fa:
+    type: Capability
+    name: Tilgangsstyring
+    documentation: 'Evne til å styre og gi tilgang til hvem som har rettighet til
+      å benytte en ressurs (tjeneste, system, API, opplysning) på vegne av seg selv,
+      andre personer eller virksomheter. Autorisering.
+
+
+      Dette er en overordnet kapabilitet som omfatter hele livssyklusen til en rettighet.
+      I praksis betyr det å ha systemer og prosesser for å:
+
+      Definere roller: Sette opp roller med forhåndsdefinerte sett av rettigheter
+      (f.eks., "regnskapsfører" eller "daglig leder").
+
+      Delegere tilgang: Gi virksomheter og personer mulighet til å tildele disse rollene
+      og enkeltrettigheter til andre, for eksempel en ansatt eller en regnskapsfører.
+
+      Forvalte representasjon: Håndtere hvem som kan handle på vegne av en virksomhet
+      eller en annen person.
+
+      Opprettholde oversikt: Sikre oversikt over hvem som har tilgang til hva, slik
+      at det er mulig å revidere og trekke tilbake tilganger ved behov.'
+    properties: {}
+    folder_path: *id002
+  id-d503cf06faa1417b8acd4b26a5c0741e:
+    type: Capability
+    name: Tillit
+    documentation: Evne å tilby tillitstjenester som muliggjører autentisering og
+      autorisasjon på tvers av tjenestekjeder, og støtte en distribuert arkitektur
+      og føderering mellom ulike domener og tjeneste
+    properties: {}
+    folder_path: *id002
+  id-379e167f7b9c4fbea9c6969425ba7f6c:
+    type: Capability
+    name: Tjenestedesign
+    documentation: 'Evne til å sette brukerens behov, livssituasjon og helhetlige
+      reise som utgangspunkt for utvikling av sammenhengende tjenester.
+
+
+      Dette innebærer:
+
+      * Å systematisk innhente og bruke kunnskap om brukernes faktiske behov, adferd
+      og utfordringer.
+
+      * Å designe tjenester som dekker hele brukerbehovet fra start til slutt, selv
+      når løsningen krever samarbeid tverrsektorielt og ulike forvaltningsnivå.
+
+
+
+      '
+    properties: {}
+    folder_path: *id002
+  id-3f59d920995e4d488e56f61356dcf97a:
+    type: Capability
+    name: Tjenesteforvaltning
+    documentation: 'Evne til å formalisere samarbeid gjennom tydelig definerte roller,
+      ansvar og avtaler for å sikre forutsigbar og effektiv felles styring mellom
+      samhandlende virksomheter.
+
+      Avtalefesting av ansvar (SLA, governance) i tjenestekjeder.
+
+
+      Når tjenester settes sammen av bidrag fra flere ulike virksomheter, oppstår
+      det nye og komplekse styringsutfordringer. Denne kapabiliteten handler om å
+      designe og implementere styringsmodeller som er tilpasset slike tverrgående
+      tjenestekjeder og digitale økosystemer. Dette innebærer å tydelig definere roller
+      og ansvar for hele kjeden, fra ende-til-ende, og plassere ansvaret for at helheten
+      fungerer. For de prioriterte livshendelsene i digitaliseringsstrategien, vil
+      slike styringsmodeller være avgjørende for å sikre at brukeren opplever en sømløs
+      tjeneste, uavhengig av hvordan forvaltningen er organisert "bak fasaden"
+
+
+      Dette innebærer:
+
+      Etablere klare roller og ansvar: Hver virksomhet må vite nøyaktig hva som forventes
+      av dem i samarbeidet.
+
+      Formalisere samarbeid: Inngåelse av formelle avtaler som samforståelsesmemorandum
+      (MoU) og tjenestenivåavtaler (SLA) for å sikre forpliktelse og forutsigbarhet
+      i leveransene.
+
+      Felles forvaltningsmodeller: Enighet om hvordan felles løsninger og tjenester
+      skal styres, vedlikeholdes og videreutvikles over tid.
+
+
+      '
+    properties: {}
+    folder_path: *id002
+  id-825b1ea1217b4eedb6caae165aeb8e41:
+    type: Capability
+    name: Tjenestekjeder
+    documentation: 'Evne til å dynamisk sette sammen, koordinere og automatisere flyten
+      av informasjon og prosesser på tvers av uavhengige, integrerbare tjenester for
+      å levere en komplett ende-til-ende-tjeneste for brukeren.
+
+      '
+    properties: {}
+    folder_path: *id002
+  id-cd3b6a8989a448a2b4dfbf430a41bad4:
+    type: Capability
+    name: Tjenesteutvikling
+    documentation: 'Evne til å utvikle sammenhengende digitale tjenester.
+
+
+      Dette er knyttet til prosess- og kompetanse-kapabilitet. Det innebærer å utvikle
+      tjenester basert på metodikk, design, koding og samarbeid.'
+    properties: {}
+    folder_path: *id002
   id-08d657e690c046019dbf6d52b1ed4d63:
     type: Capability
     name: Ustrukturerte data
@@ -1323,126 +1330,7 @@ elements:
 
       '
     properties: {}
-    folder_path: *id001
-  id-456429d236544c28b3d7257893b0dec6:
-    type: Resource
-    name: Rammebetingelser
-    documentation: 'Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
-
-
-      Ressurser innenfor:
-
-      * Finansielle virkemidler/Finansieringsordninger
-
-      * Lovhjemler og juridiske virkemidler
-
-      * Samordning
-
-
-
-      '
-    properties: {}
-    folder_path: *id001
-  id-f1f34cea2b2e4b5b8f8a9be88321de42:
-    type: Resource
-    name: Standarder og veiledning
-    documentation: 'Ressurser som setter regler eller gir retning.
-
-
-      Dette kan være:
-
-      Standarder, veiledere, referansearkitekturer, metodikk
-
-      Normeringsgrad kan være knyttet til disse virkemidlene.'
-    properties: {}
-    folder_path: *id001
-  id-a947552722064b7c93181833028cc2f1:
-    type: Resource
-    name: Samhandlingsareneaer og organisering
-    documentation: Organiserte nettverk og styringsorganer for både dialog og strategisk
-      samordning.
-    properties: {}
-    folder_path: *id001
-  id-199ae45b0a6c47b28b3507837647c6c8:
-    type: Resource
-    name: Fellesløsning
-    documentation: "Fellesløsninger er tekniske komponenter eller applikasjoner som\
-      \ leverer funksjonalitet og dekker behov på tvers av eller innenfor sektorer,\
-      \ og/eller forvaltningsnivå. \nTekniske løsninger som utvikles én gang og brukes\
-      \ av mange.\nFellesløsninger er byggeklosser som kan brukes i utviklingen av\
-      \ offentlige digitale tjenester. Noen er obligatoriske å bruke, andre er anbefalte\
-      \ - både for statlige virksomheter og for kommunal sektor.\n\nFellesløsning\
-      \ til forretningstjenester, som er forretningsaktivitet med et spesifisert resultat\
-      \ og som støtter et spesifikt forretningsmål. \nDen er brukersentert og representerer\
-      \ funksjonalitet som leverer verdi til en ekstern bruker. \nBrukerorienterte\
-      \ eller funksjonelle tjenester som leverer verdi, ofte på tvers av løsninger.\n\
-      \nMerk:\nSelv om en tjeneste bruker teknologi, er selve \"tjenesten\" (f.eks.\
-      \ eSignering eller Autentisering) det funksjonelle resultatet av en prosess\
-      \ rettet mot en bruker\n\nStrategiske prinsipper for nasjonale felleskomponenter\
-      \ (gammel - bør ha en felles beskrivelse av felles-\"løsninger\" i stedet)\n\
-      https://www.digdir.no/media/395/download\nhttps://www.regjeringen.no/contentassets/fe3e34b866034b82b9c623c5cec39823/no/pdfs/stm201520160027000dddpdfs.pdf\n\
-      \nFellesløsning vs. felles løsning:\n* Forskjellen er institusjonell. \n* Fellesløsning:\
-      \  referer til nasjonale fellesløsninger, som er spesifikk tekniske komponenter\
-      \ som skal kunne brukes av svært mange i offentlig sektor for å løse generiske\
-      \ behov. \n* Felles løsning: Gjenbrukbar løsnning som kan benyttes av flere\
-      \ og med formåk om samarbeid og stordriftsfordeler, men uten nødvendigvis å\
-      \ ha status som en nasjonal komponent i økosystemet.\n* Fellestjeneste: Den\
-      \ forretningsmessige eller tekniske funksjonaliteten som tilbys.\n\nSluttbrukertjenester:\
-      \ Det innbyggeren eller næringslivet opplever (f.eks. \"Søke om barnehageplass\"\
-      \ eller \"Levere skattemelding\"). \nStøttetjenester: Tekniske tjenester som\
-      \ ikke er synlige for sluttbrukeren, men som er nødvendige for at systemene\
-      \ skal snakke sammen (f.eks. gjennom et API)\n\nDe nasjonale felleskomponentene,\
-      \ slik de er definert i Digital agenda:\n– Har en statlig virksomhet som forvaltningsansvarlig.\n\
-      – Dekker behov på tvers av mange sektorer og/eller forvaltningsnivå.\n– Vil\
-      \ være sentrale komponenter i en rekke digitale tjenester.\n– Er av stor samfunnsøkonomisk\
-      \ betydning som felles mulighetsrom for digital tjenesteutvikling og gevinstrealisering\
-      \ i virksomhetene.\n\n\n\n"
-    properties: {}
-    folder_path: *id001
-  id-0119029984674da59dbbfdc3a8ca3e95:
-    type: Capability
-    name: Regelverksutvikling
-    documentation: 'Evne til å foreslå og koordinere endringer i regelverket for å
-      tilpasse det til teknologisk utvikling og nye behov.
-
-
-      Dette innebærer:
-
-      * Å identifisere motstridende regelverk, der hamonisering er nødvendig
-
-      * Foreslå og koordinere endringer for å tilpasse lovverket
-
-
-      '
-    properties: {}
-    folder_path: *id001
-  id-0209483504444508a40415aa6e3fc39c:
-    type: Capability
-    name: Regelverkstolkning
-    documentation: 'Evne til å tilby felles, autoritative tolkninger av relevant regelverk.
-
-
-      Dette innebærer:
-
-      * juridisk risikovurdering: Ved å tilby felles tolkninger, etablerer man også
-      felles risikoforståelse.'
-    properties: {}
-    folder_path: *id001
-  id-a601bb3d7b11478185903149965f7842:
-    type: Capability
-    name: Anvendelse av veiledning
-    documentation: 'Evne til tolke og benytte veiledere i prosjekter og tiltak.
-
-
-      Dette innebærer:
-
-      * Faktisk bruk av veiledningsmateriell til å faktisk å forstå og bruke dem i
-      egne prosjekte og tiltak.
-
-
-      '
-    properties: {}
-    folder_path: *id001
+    folder_path: *id002
   id-0bfa29018e7144578b2184e70414b7e8:
     type: Capability
     name: Utvikling og formidling av veiledning
@@ -1457,13 +1345,122 @@ elements:
       * F.eks. veiledninger på regelverk, referansearkitekturer, omforente prinsipper,
       standarder, samhandlingsmønstre og beskrivelser av beste praksis.'
     properties: {}
-    folder_path: *id001
+    folder_path: *id002
+  id-ce84b9b6943f4789bca153c0ed15245a:
+    type: Capability
+    name: Utviklings- og kjøretidsmiljø
+    documentation: "Evne til å tilby og forvalte en felles, skalerbar teknisk plattform\
+      \ og en tilhørende verktøykasse med standardiserte byggeklosser, verktøy og\
+      \ utviklingsmiljøe som forenkler og akselererer utviklingen av digitale tjenester.\n\
+      \nDette innebærer:\nTjenesteutvikling foregår i stor grad i sektorene og den\
+      \ enkelte virksomhet. Det vil allikevel være behov for å tilby felles utviklings-\
+      \ og kjøretidsmiljø for hele offentlig sektor eller for enkeltsektorer. \n"
+    properties: {}
+    folder_path: *id002
+  id-c0547226c598467a942dced879d0c18b:
+    type: Capability
+    name: Veiledning
+    documentation: 'Evne til at veiledninger for digital samhandling utarbeides og
+      benyttes i felles økosystem.
+
+
+      Dette innebærer:
+
+      * Beskrivelser av beste praksis
+
+      * Omforente prinsipper, mønstre og standarder for hvordan løsninger skal bygges
+      for å fungere optimalt, sikkert og sammenhengende i det nasjonale økosystemet.
+
+      * Referansearkitekturer
+
+
+      * hva som er god faglig praksis
+
+      * hvordan relevant regelverk skal tolkes
+
+      * hvilke prioriteringer som er i samsvar med vedtatt politikk
+
+
+      Veiledere kan ha ulik grad av styrke:
+
+      * Bør benyttes: en sterk anbefaling/råd som vil gjelde de aller fleste. Denne
+      er så klart faglig forankret at det sjelden er forsvarlig ikke å gjøre som anbefalt
+
+      * Kan eller foreslår: en svak anbefaling/råd der ulike valg kan være riktig.
+
+
+
+      '
+    properties: {}
+    folder_path: *id002
+  id-8914d57f4f1442b1b562252a3630a686:
+    type: Capability
+    name: Visualisering
+    documentation: "Evne til å omforme komplekse data til visuelle fremstillinger\
+      \ som gjør innsikt lett tilgjengelig, forståelig og anvendbar.\n\nVisualisering\
+      \ er den kapabiliteten som gjør at vi kan \"se\" historien dataene forteller.\
+      \ \n\nDette innebærer:\n* Beslutningsstøtte i sanntid: Å lage oversikter (dashboards)\
+      \ som oppdaterer seg selv, slik at man kan ta valg basert på hvordan situasjonen\
+      \ er akkurat nå.\n* Geografisk fremstilling: Å koble data til kart for å forstå\
+      \ sammenhenger mellom sted og hendelser (for eksempel smittespredning, trafikkflyt\
+      \ eller andre ressursbehov).\n* Datadrevet historiefortelling: Å presentere\
+      \ fakta på en måte som gjør det enkelt å kommunisere et budskap til andre.\n\
+      \n\n\n\n\n"
+    properties: {}
+    folder_path: *id002
+  id-db4f30a87ae84561a4058d4d264177b1:
+    type: Capability
+    name: Åpne data
+    documentation: 'Evne til å tilgjengeliggjøre åpne data slik at den kan leses og
+      tolkes av både maskiner og mennesker, og som alle kan få tilgang til, bruke
+      og dele.
+
+
+      Begrunnelse for relevans
+
+      Dette er en kapabilitet som utvider verdien av offentlige data utover forvaltningens
+      egne grenser og gir avkastning i hele samfunnet.
+
+
+      Styrker demokrati og åpenhet: Åpne data gir innbyggere, journalister og interessegrupper
+      mulighet til innsyn i forvaltningens arbeid og beslutningsgrunnlag. Dette øker
+      transparensen og legger til rette for en mer informert offentlig debatt.
+
+
+      Er et råstoff for næringsutvikling og innovasjon: Dette er en av de viktigste
+      begrunnelsene. Offentlige data representerer en enorm, uutnyttet ressurs. Ved
+      å gjøre dem fritt tilgjengelige, gir man næringslivet råmaterialet de trenger
+      for å skape nye produkter, tjenester og arbeidsplasser som det offentlige aldri
+      ville utviklet selv.
+
+
+      Forbedrer forskning og faktabasert politikkutforming: Forskere får tilgang til
+      rike datasett som kan brukes til å analysere samfunnstrender, evaluere politikk
+      og løse komplekse samfunnsutfordringer.
+
+
+      Gode åpne data kjennetegnes ved:
+
+      * at de er godt dokumenterte slik at de er lette å oppdage, vurdere og bruke
+
+      * at de kan linkes til slik at de lett kan deles og diskuteres
+
+      *  at de er tilgjengelige i et maskinleselig, standardisert og strukturert format
+      slik at de enkelt kan bearbeides
+
+      * at de har garantier for tilgjengelighet og pålitelighet over tid, slik at
+      andre kan stole på de
+
+      * at de er sporbare tilbake til hvor de kommer fra, slik at andre kan vurdere
+      pålitelighet'
+    properties: {}
+    folder_path: *id002
   id-1785953dbdda41fbaa0b7dbd4861c31c:
     type: Driver
     name: Andre forhold?
     documentation: ''
     properties: {}
-    folder_path: &id002
+    folder_path: &id003
     - Motivation
     - Drivere og begresninger
   id-2abff1b661b844539a878fbd5c93871d:
@@ -1471,19 +1468,19 @@ elements:
     name: Andre forhold?
     documentation: ''
     properties: {}
-    folder_path: *id002
+    folder_path: *id003
   id-fdd16850a7e14a44aa6eee04e7fb7933:
     type: Driver
     name: Data (tilgang, kvalitet, standardisering)
     documentation: ''
     properties: {}
-    folder_path: *id002
+    folder_path: *id003
   id-f063a8707ed544e19d37cd3202144f95:
     type: Constraint
     name: Data (tilgang, kvalitet, standardisering)
     documentation: ''
     properties: {}
-    folder_path: *id002
+    folder_path: *id003
   id-6ca699ff68db4d6f826a69ff874fd779:
     type: Driver
     name: Juridiske forhold
@@ -1492,240 +1489,74 @@ elements:
       stort behov for bedre samarbeid og samordning på området, for å bedre situasjonen
       for virksomhetene som skal forholde seg til regelverkene, rådene og veiledningen.
     properties: {}
-    folder_path: *id002
+    folder_path: *id003
   id-cdb5a1fd5f594567996f89eb16ebd020:
     type: Constraint
     name: Juridiske forhold
     documentation: ''
     properties: {}
-    folder_path: *id002
+    folder_path: *id003
   id-74c215c488604ce0b6b5f38e82beea37:
     type: Driver
     name: Kapasitet
     documentation: ''
     properties: {}
-    folder_path: *id002
+    folder_path: *id003
   id-24ce59ae322d47ae974cf7b60ab33b45:
     type: Constraint
     name: Kapasitet
     documentation: ''
     properties: {}
-    folder_path: *id002
+    folder_path: *id003
   id-e1cb605054454e0fa20c4ecab1828949:
     type: Driver
     name: Kompetanse
     documentation: Ha riktig kompetanse og sikre samarbeid og samordning er det som
       er avgjørende for dette arbeidet.
     properties: {}
-    folder_path: *id002
+    folder_path: *id003
   id-a1fdbf1b586e49168f5bd345eb8d5ef8:
     type: Constraint
     name: Kompetanse
     documentation: ''
     properties: {}
-    folder_path: *id002
+    folder_path: *id003
   id-6094ffdec736482fb3bb50f0e2448f9d:
     type: Driver
     name: Økonomiske rammer
     documentation: ''
     properties: {}
-    folder_path: *id002
+    folder_path: *id003
   id-b52f7c7b4a5142ec9122bea10a0cab04:
     type: Constraint
     name: Økonomiske rammer
     documentation: ''
     properties: {}
-    folder_path: *id002
+    folder_path: *id003
   id-f1c6e616a4744bdd92bb4618980a9ff5:
     type: Driver
     name: Tekniske løsninger og infrastruktur
     documentation: tekniske løsninger og infrastruktur må være mer samkjørt og produktstrategisk
       i felles retning for et felles økosystem
     properties: {}
-    folder_path: *id002
+    folder_path: *id003
   id-9b0a9570968543b9801adac1a26b9561:
     type: Constraint
     name: Teknologiske løsninger og infrastruktur
     documentation: ''
     properties: {}
-    folder_path: *id002
+    folder_path: *id003
   id-4bd51b22f8894f87b3ce4bf869e2a912:
     type: Driver
     name: Samarbeid og samordning
     documentation: For å lykkes med arbeidet med finansieringsmodeller er samarbeid
       og samordning helt sentralt.
     properties: {}
-    folder_path: *id002
+    folder_path: *id003
   id-f3680e1c37814287acc93c4b4404e7a7:
     type: Constraint
     name: Samarbeid og samordning
     documentation: ''
-    properties: {}
-    folder_path: *id002
-  id-0cf363c3f2ff4fa3a34bda7a610e6f70:
-    type: Outcome
-    name: Effektmål
-    documentation: 'De konkrete resultatene av å bruke kapabilitetene.
-
-      Se på dybdeindikatorene fra nullpunktsmåling:
-
-      https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
-
-      F.eks:
-
-      * https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
-
-      * https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
-
-      '
-    properties: {}
-    folder_path: &id003
-    - Motivation
-  id-534850df1c7b48e2a2e7cc966ece233f:
-    type: Goal
-    name: Strategiske mål
-    documentation: Målene fra Digitaliseringsstrategien.
-    properties: {}
-    folder_path: *id003
-  id-46a97f13294345f89decd549d4269848:
-    type: Principle
-    name: Prinsipper Nasjonal Arkitektur
-    documentation: 'https://www.digdir.no/digital-samhandling/overordnede-arkitekturprinsipper/1065
-
-      '
-    properties: {}
-    folder_path: *id003
-  id-d4632a56bcf04c768517303bf05c2882:
-    type: Goal
-    name: Innovasjon og næringsutviling
-    documentation: ''
-    properties: {}
-    folder_path: *id003
-  id-76a32d89c68c4e5f86e29d261e3d2253:
-    type: Principle
-    name: Kun en gang
-    documentation: ''
-    properties: {}
-    folder_path: *id003
-  id-04fef6c083b449dba91c876ae2e3715f:
-    type: Principle
-    name: Prinsipp
-    documentation: "En overordnet og veiledende regel eller retningslinje som er ment\
-      \ å være varig og styrende for alle relevante beslutninger. \nPrinsipper er\
-      \ generelle regler og retningslinjer, ment å være varige og sjelden endres,\
-      \ som informerer og støtter måten en organisasjon går i gang med å oppfylle\
-      \ sitt oppdrag.\nSe overordnete arkitekturprinsipper: https://www.digdir.no/digital-samhandling/overordnede-arkitekturprinsipper/1065\n\
-      \nEksempel: \"Data skal kun lagres én gang\".\n\nEU ELAP: Det europeiske biblioteket\
-      \ for arkitekturprinsipper (ELAP) etablerer prinsipper og rammeverk for å sikre\
-      \ interoperabilitet på europeisk nivå , inkludert det europeiske interoperabilitetsrammeverket\
-      \ (EIF), EU-lovgivning, tilgjengelighet, «Once Only» og mer. Dette biblioteket\
-      \ er et kvalitetssikringsverktøy som også etablerer krav og forretningsprosesser\
-      \ for å muliggjøre interoperabilitet mellom digitale offentlige tjenester.\n\
-      Se:  https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/elap\n\
-      \nTogaf definisjon og beste-praksis beskrivelse og definisjon av Arkitekturprinsipper:\n\
-      https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap20.html\n"
-    properties: {}
-    folder_path: *id003
-  id-d7a27706ca3240468e16d88afbcd4a3e:
-    type: Assessment
-    name: Nasjonal arkitektur analyse dekningsgrad
-    documentation: "Identifiserer svakheter i dagens arkitektur (ressurser og kapabiliteter).\
-      \ Er en faglig analyse som forklarer hvorfor gapet finnes.\n\nKapabiliteter\
-      \ og grad av nåsituasjon og måloppnåelse \n- målverdi\n- dagens verdi\n= Finner\
-      \ Gap og modenhet:\nRødt (Gap > 2): Kapabiliteter der avstanden mellom nåsituasjon\
-      \ og mål er kritisk stor. Her må Tiltak (Work Packages) prioriteres.\nGult (Gap\
-      \ = 1): Kapabiliteter som er i rute, men krever vedlikehold eller mindre justeringer.\n\
-      Grønt (Gap = 0): Kapabiliteten har nådd sin målverdi.\nEn kapabilitet kan realisere\
-      \ både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer,\
-      \ oppfyller eller tolker hensikten bak prinsippet i praksis.\nModenhetsmodell,\
-      \ som CMMI (Capability Maturity Model Integration:\n* Måling av kapabilitetsmodenhet\
-      \ (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn\
-      \ ved å synliggjøre gapet mellom \"hvor gode vi er\" (As-Is) og \"hvor gode\
-      \ vi må være\" (To-Be).\n* Modenheten til en kapabilitet vurderes basert på\
-      \ tilstanden til de underliggende ressursene.\n\nRessurser og måling:\n* Kan\
-      \ vises som en heatmap med indikatorer for:\n- Dekningsgrad kapabilitet (1-5)\
-      \ for å indikere i hvilken grad en ressurs faktisk er tilgjengelig eller moden\
-      \ nok til å støtte ønsket kapabilitet.\n- egnethet (Funksjonelt egnet)\n- Teknisk\
-      \ egnet\n- Livssyklus status\n\nMan kan også benytte POTI modell som vurdering\
-      \ på tilstanden til ressursene:\n* People (Organisasjon): Roller og kompetanse.\n\
-      * Process (Prosess): Arbeidsflyter og prosedyrer.\n* Technology (Teknologi):\
-      \ IT-systemer og infrastruktur.\n* Information (Informasjon): Datakvalitet og\
-      \ flyt\n\nSe også:\nDe konkrete resultatene av å bruke kapabilitetene.\nSe på\
-      \ dybdeindikatorene fra nullpunktsmåling:\nhttps://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416\n\
-      F.eks:\n* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429\n\
-      * https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428\n\
-      \n\n\n"
-    properties: {}
-    folder_path: *id003
-  id-63eeffd71e92467281f421c58bac305f:
-    type: Driver
-    name: Drivere
-    documentation: "\"Drivere\" er den grunnleggende motivasjonen eller årsaken til\
-      \ at en endring settes i gang.\n\nDrivarar og hindringar må sjåast i samanheng.\
-      \ Dei viktigaste hindringane er økonomiske rammer og kapasitet. \nEi styrking\
-      \ her vil vere blant dei viktigaste drivarane for å oppnå resultat og realisere\
-      \ gevinstar av teknisk infrastruktur og data, knytt til handheving av eit stadig\
-      \ meir omfattande regelverk."
-    properties: {}
-    folder_path: *id003
-  id-87d27b24cab34a089853e52f3512c376:
-    type: Constraint
-    name: Hindringer
-    documentation: 'Hindringer: Hva stopper eller begrenser oss?'
-    properties: {}
-    folder_path: *id003
-  id-707202a7db214363817d403344afb867:
-    type: Principle
-    name: NSM
-    documentation: ''
-    properties: {}
-    folder_path: *id003
-  id-94f7473fb4184e3b94bb92c35186b88f:
-    type: Principle
-    name: 'P1: Ta utgangspunkt i brukernes behov'
-    documentation: ''
-    properties: {}
-    folder_path: *id003
-  id-dbfcb14c3e024a40b6cb71138311abc0:
-    type: Principle
-    name: 'P2: Ta arkitektur-beslutninger på rett nivå'
-    documentation: https://www.digdir.no/digital-samhandling/prinsipp-2-ta-arkitekturbeslutninger-pa-rett-niva/1056
-    properties: {}
-    folder_path: *id003
-  id-7d62a886cdc14d20a5b361cf68da5754:
-    type: Principle
-    name: 'P3: Bidra til digitaliseringsvennlige regelverk'
-    documentation: https://www.digdir.no/digital-samhandling/prinsipp-3-bidra-til-digitaliseringsvennlige-regelverk/1057
-    properties: {}
-    folder_path: *id003
-  id-a27833cb9e324549916a528f31481dce:
-    type: Principle
-    name: 'P4: Del og gjenbruk data'
-    documentation: https://www.digdir.no/digital-samhandling/prinsipp-4-del-og-gjenbruk-data/1061
-    properties: {}
-    folder_path: *id003
-  id-5b6ec861e2d246ce90c99ea282d35610:
-    type: Principle
-    name: 'P7: Sørg for tillit til oppgaveløsningen'
-    documentation: https://www.digdir.no/digital-samhandling/prinsipp-7-sorg-tillit-til-oppgavelosningen/1064
-    properties: {}
-    folder_path: *id003
-  id-7b1079f5439e4f2798fe2f8d31792603:
-    type: Principle
-    name: 'P3: Bidra til digitaliseringsvennlige regelverk (copy)'
-    documentation: ''
-    properties: {}
-    folder_path: *id003
-  id-d0918d8701a4408b93a9ab278ecbb85e:
-    type: Principle
-    name: 'P5: Del og gjenbruk løsninger'
-    documentation: https://www.digdir.no/digital-samhandling/prinsipp-5-del-og-gjenbruk-losninger/1062
-    properties: {}
-    folder_path: *id003
-  id-0007ec16e9a1406d9f6aabd1f975d993:
-    type: Principle
-    name: 'P6: Lag digitale løsninger som støtter samhandling'
-    documentation: https://www.digdir.no/digital-samhandling/prinsipp-6-lag-digitale-losninger-som-stotter-samhandling/1063
     properties: {}
     folder_path: *id003
   id-897fd3d0f5fd4c2891e824a371d5e69b:
@@ -1760,24 +1591,60 @@ elements:
       \ ved å tilby verktøy og prinsipper for beslutninger, tekniske standarder, og\
       \ hjelper til med å balansere arkitektur lokalt, sektorielt og nasjonalt. \n"
     properties: {}
-    folder_path: *id003
-  id-a4062153239a4d13a9fdef8cc205c8e6:
+    folder_path: &id004
+    - Motivation
+    - Relevante mål fra Digitaliseringsstrategien
+  id-9f2593113134463ea6863703c308b251:
     type: Goal
-    name: Sterkere styring og samordning av digitalisering på tvers av sektorer
-    documentation: "Nasjonal arkitektur er et viktig virkemiddel for å skape sterke\
-      \ synergier mellom norsk og europeisk digitaliseringspolitikk. Den skal bygge\
-      \ på føringer fra EU og fungerer som et rammeverk som integrerer EUs regelverk,\
-      \ standarder og referansearkitekturer i norsk digitaliseringsarbeid. EU-forordninger\
-      \ etablerer nasjonale funksjoner og styringsformer som også dekker Norges behov\
-      \ for koordinering og styring av arkitektur. \nVed å implementere felles europeiske\
-      \ standarder, sikrer nasjonal arkitektur at norske digitale tjenester kan samhandle\
-      \ effektivt over landegrensene. Samtidig bør Norge bli bedre på å hente erfaringer\
-      \ fra andre land og bruke internasjonale løsninger som utgangspunkt for egen\
-      \ utvikling, noe som reduserer både kostnader og utviklingstid. Gjennom dette\
-      \ sikrer nasjonal arkitektur en helhetlig og framtidsrettet digitalisering som\
-      \ både møter norske behov og Europas digitale agenda. \n"
+    name: Få på plass en nasjonal infrastruktur for kunstig intelligens (KI)
+    documentation: ''
     properties: {}
-    folder_path: *id003
+    folder_path: *id004
+  id-56e7246019f54eec8093568bd0fb8e22:
+    type: Goal
+    name: Norge skal være ledende på verdiskaping med data og på datadrevet forskning
+      og innovasjon
+    documentation: 'For å få til datadeling må de riktige ressursene i felles økosystem
+      være på plass. Det gjelder standarder, felles formater, rammeverk, åpne API-er,
+      referansearkitekturer, fellesløsninger mv. Rammeverk for EUs dataområder (data
+      spaces) inneholder også referansearkitekturer og standarder. Nasjonal arkitektur
+      (samhandlingsarkitektur) er nødvendig for å få til datadeling.
+
+      Data governance og master data management er nødvendig for at man skal dele
+      data og bruke data, og er viktig for et velfungerende felles økosystem for digital
+      samhandling. Det er pågående arbeid på flere områder innenfor dette målet som
+      bør være koordinert med arbeidet med Nasjonal arkitektur
+
+      '
+    properties: {}
+    folder_path: *id004
+  id-89e255a238d346a4901424f0059e6345:
+    type: Goal
+    name: Næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og
+      digitalisering.
+    documentation: "Evnen til å tilrettelegge for at det nasjonale økosystemet fremmer\
+      \ et omstillingsdyktig og innovativt næringsliv. \n\nDette innebærer:\n* rammebetingelser,\
+      \ insentiver og samarbeidsformer som gjør det attraktivt og forutsigbart for\
+      \ private aktører å bygge tjenester oppå nasjonale fellesløsninger og data\n\
+      \nHvorfor er dette viktig?\n* Offentlige data som råstoff: Åpne og tilgjengelige\
+      \ data er en ressurs som næringslivet trenger for å skape produkter forvaltningen\
+      \ selv ikke ville utviklet.\n* Styrket konkurransekraft: Ved å gjøre offentlige\
+      \ fellesløsninger tilgjengelige for private aktører, økes mulighetene for innovasjon\
+      \ i næringslivet.\nI Digitaliseringsstrategien er det et mål at:\n*  Regjeringen\
+      \ vil frem mot 2030 legge til rette for at næringslivets konkurranseevne styrkes\
+      \ gjennom innovativ bruk av data og digitalisering. Oppstartsbedrifter skal\
+      \ ha gode rammevilkår. Vi skal sørge for at digitalisering og utnyttelse av\
+      \ data forsterker våre fortrinn i viktige bransjer, slik som helse, energi,\
+      \ havbruk og andre maritime næringer."
+    properties: {}
+    folder_path: *id004
+  id-bf3fa917baad486d9865b9627199a2d4:
+    type: Goal
+    name: Næringslivet skal ha gode rammevilkår for å utvikle og bruke KI. Offentlig
+      sektor skal anvende KI for å utvikle bedre tjenester og løse oppgaver mer effektivt
+    documentation: ''
+    properties: {}
+    folder_path: *id004
   id-cbc357e78ede45e8aa565fde3b7380b5:
     type: Goal
     name: 'Vi skal ha en offentlig sektor som tilbyr bedre, mer sammenhengende digitale
@@ -1799,77 +1666,209 @@ elements:
       \ behov, skal vi aktivt prøve å finne løsninger på de arkitekturmessige hindringene.\
       \ \n"
     properties: {}
-    folder_path: *id003
-  id-56e7246019f54eec8093568bd0fb8e22:
-    type: Goal
-    name: Norge skal være ledende på verdiskaping med data og på datadrevet forskning
-      og innovasjon
-    documentation: 'For å få til datadeling må de riktige ressursene i felles økosystem
-      være på plass. Det gjelder standarder, felles formater, rammeverk, åpne API-er,
-      referansearkitekturer, fellesløsninger mv. Rammeverk for EUs dataområder (data
-      spaces) inneholder også referansearkitekturer og standarder. Nasjonal arkitektur
-      (samhandlingsarkitektur) er nødvendig for å få til datadeling.
-
-      Data governance og master data management er nødvendig for at man skal dele
-      data og bruke data, og er viktig for et velfungerende felles økosystem for digital
-      samhandling. Det er pågående arbeid på flere områder innenfor dette målet som
-      bør være koordinert med arbeidet med Nasjonal arkitektur
-
-      '
-    properties: {}
-    folder_path: *id003
+    folder_path: *id004
   id-90ff9c60528d4dfe93d534bd6a7bcfeb:
     type: Goal
     name: Vi skal delta i EUs satsing på dataområder der det er relevant
     documentation: Arbeidet med dataområdene i EU vil komme med referansearkitekturer
       og standarder som må innføres som en del av nasjonal arkitektur.
     properties: {}
-    folder_path: *id003
-  id-9f2593113134463ea6863703c308b251:
-    type: Goal
-    name: Få på plass en nasjonal infrastruktur for kunstig intelligens (KI)
-    documentation: ''
-    properties: {}
-    folder_path: *id003
-  id-bf3fa917baad486d9865b9627199a2d4:
-    type: Goal
-    name: Næringslivet skal ha gode rammevilkår for å utvikle og bruke KI. Offentlig
-      sektor skal anvende KI for å utvikle bedre tjenester og løse oppgaver mer effektivt
-    documentation: ''
-    properties: {}
-    folder_path: *id003
-  id-89e255a238d346a4901424f0059e6345:
-    type: Goal
-    name: Næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og
-      digitalisering.
-    documentation: "Evnen til å tilrettelegge for at det nasjonale økosystemet fremmer\
-      \ et omstillingsdyktig og innovativt næringsliv. \n\nDette innebærer:\n* rammebetingelser,\
-      \ insentiver og samarbeidsformer som gjør det attraktivt og forutsigbart for\
-      \ private aktører å bygge tjenester oppå nasjonale fellesløsninger og data\n\
-      \nHvorfor er dette viktig?\n* Offentlige data som råstoff: Åpne og tilgjengelige\
-      \ data er en ressurs som næringslivet trenger for å skape produkter forvaltningen\
-      \ selv ikke ville utviklet.\n* Styrket konkurransekraft: Ved å gjøre offentlige\
-      \ fellesløsninger tilgjengelige for private aktører, økes mulighetene for innovasjon\
-      \ i næringslivet.\nI Digitaliseringsstrategien er det et mål at:\n*  Regjeringen\
-      \ vil frem mot 2030 legge til rette for at næringslivets konkurranseevne styrkes\
-      \ gjennom innovativ bruk av data og digitalisering. Oppstartsbedrifter skal\
-      \ ha gode rammevilkår. Vi skal sørge for at digitalisering og utnyttelse av\
-      \ data forsterker våre fortrinn i viktige bransjer, slik som helse, energi,\
-      \ havbruk og andre maritime næringer."
-    properties: {}
-    folder_path: *id003
+    folder_path: *id004
   id-9622546accfc43d28a38cebdecf8818a:
     type: Goal
     name: Sørge for at alle har et tilbud om en elektronisk identitet
     documentation: ''
     properties: {}
-    folder_path: *id003
+    folder_path: *id004
+  id-a4062153239a4d13a9fdef8cc205c8e6:
+    type: Goal
+    name: Sterkere styring og samordning av digitalisering på tvers av sektorer
+    documentation: "Nasjonal arkitektur er et viktig virkemiddel for å skape sterke\
+      \ synergier mellom norsk og europeisk digitaliseringspolitikk. Den skal bygge\
+      \ på føringer fra EU og fungerer som et rammeverk som integrerer EUs regelverk,\
+      \ standarder og referansearkitekturer i norsk digitaliseringsarbeid. EU-forordninger\
+      \ etablerer nasjonale funksjoner og styringsformer som også dekker Norges behov\
+      \ for koordinering og styring av arkitektur. \nVed å implementere felles europeiske\
+      \ standarder, sikrer nasjonal arkitektur at norske digitale tjenester kan samhandle\
+      \ effektivt over landegrensene. Samtidig bør Norge bli bedre på å hente erfaringer\
+      \ fra andre land og bruke internasjonale løsninger som utgangspunkt for egen\
+      \ utvikling, noe som reduserer både kostnader og utviklingstid. Gjennom dette\
+      \ sikrer nasjonal arkitektur en helhetlig og framtidsrettet digitalisering som\
+      \ både møter norske behov og Europas digitale agenda. \n"
+    properties: {}
+    folder_path: *id004
+  id-0cf363c3f2ff4fa3a34bda7a610e6f70:
+    type: Outcome
+    name: Effektmål
+    documentation: 'De konkrete resultatene av å bruke kapabilitetene.
+
+      Se på dybdeindikatorene fra nullpunktsmåling:
+
+      https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
+
+      F.eks:
+
+      * https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
+
+      * https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
+
+      '
+    properties: {}
+    folder_path: &id005
+    - Motivation
+  id-534850df1c7b48e2a2e7cc966ece233f:
+    type: Goal
+    name: Strategiske mål
+    documentation: Målene fra Digitaliseringsstrategien.
+    properties: {}
+    folder_path: *id005
+  id-46a97f13294345f89decd549d4269848:
+    type: Principle
+    name: Prinsipper Nasjonal Arkitektur
+    documentation: 'https://www.digdir.no/digital-samhandling/overordnede-arkitekturprinsipper/1065
+
+      '
+    properties: {}
+    folder_path: *id005
+  id-d4632a56bcf04c768517303bf05c2882:
+    type: Goal
+    name: Innovasjon og næringsutviling
+    documentation: ''
+    properties: {}
+    folder_path: *id005
+  id-76a32d89c68c4e5f86e29d261e3d2253:
+    type: Principle
+    name: Kun en gang
+    documentation: ''
+    properties: {}
+    folder_path: *id005
+  id-04fef6c083b449dba91c876ae2e3715f:
+    type: Principle
+    name: Prinsipp
+    documentation: "En overordnet og veiledende regel eller retningslinje som er ment\
+      \ å være varig og styrende for alle relevante beslutninger. \nPrinsipper er\
+      \ generelle regler og retningslinjer, ment å være varige og sjelden endres,\
+      \ som informerer og støtter måten en organisasjon går i gang med å oppfylle\
+      \ sitt oppdrag.\nSe overordnete arkitekturprinsipper: https://www.digdir.no/digital-samhandling/overordnede-arkitekturprinsipper/1065\n\
+      \nEksempel: \"Data skal kun lagres én gang\".\n\nEU ELAP: Det europeiske biblioteket\
+      \ for arkitekturprinsipper (ELAP) etablerer prinsipper og rammeverk for å sikre\
+      \ interoperabilitet på europeisk nivå , inkludert det europeiske interoperabilitetsrammeverket\
+      \ (EIF), EU-lovgivning, tilgjengelighet, «Once Only» og mer. Dette biblioteket\
+      \ er et kvalitetssikringsverktøy som også etablerer krav og forretningsprosesser\
+      \ for å muliggjøre interoperabilitet mellom digitale offentlige tjenester.\n\
+      Se:  https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/elap\n\
+      \nTogaf definisjon og beste-praksis beskrivelse og definisjon av Arkitekturprinsipper:\n\
+      https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap20.html\n"
+    properties: {}
+    folder_path: *id005
+  id-d7a27706ca3240468e16d88afbcd4a3e:
+    type: Assessment
+    name: Nasjonal arkitektur analyse dekningsgrad
+    documentation: "Identifiserer svakheter i dagens arkitektur (ressurser og kapabiliteter).\
+      \ Er en faglig analyse som forklarer hvorfor gapet finnes.\n\nKapabiliteter\
+      \ og grad av nåsituasjon og måloppnåelse \n- målverdi\n- dagens verdi\n= Finner\
+      \ Gap og modenhet:\nRødt (Gap > 2): Kapabiliteter der avstanden mellom nåsituasjon\
+      \ og mål er kritisk stor. Her må Tiltak (Work Packages) prioriteres.\nGult (Gap\
+      \ = 1): Kapabiliteter som er i rute, men krever vedlikehold eller mindre justeringer.\n\
+      Grønt (Gap = 0): Kapabiliteten har nådd sin målverdi.\nEn kapabilitet kan realisere\
+      \ både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer,\
+      \ oppfyller eller tolker hensikten bak prinsippet i praksis.\nModenhetsmodell,\
+      \ som CMMI (Capability Maturity Model Integration:\n* Måling av kapabilitetsmodenhet\
+      \ (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn\
+      \ ved å synliggjøre gapet mellom \"hvor gode vi er\" (As-Is) og \"hvor gode\
+      \ vi må være\" (To-Be).\n* Modenheten til en kapabilitet vurderes basert på\
+      \ tilstanden til de underliggende ressursene.\n\nRessurser og måling:\n* Kan\
+      \ vises som en heatmap med indikatorer for:\n- Dekningsgrad kapabilitet (1-5)\
+      \ for å indikere i hvilken grad en ressurs faktisk er tilgjengelig eller moden\
+      \ nok til å støtte ønsket kapabilitet.\n- egnethet (Funksjonelt egnet)\n- Teknisk\
+      \ egnet\n- Livssyklus status\n\nMan kan også benytte POTI modell som vurdering\
+      \ på tilstanden til ressursene:\n* People (Organisasjon): Roller og kompetanse.\n\
+      * Process (Prosess): Arbeidsflyter og prosedyrer.\n* Technology (Teknologi):\
+      \ IT-systemer og infrastruktur.\n* Information (Informasjon): Datakvalitet og\
+      \ flyt\n\nSe også:\nDe konkrete resultatene av å bruke kapabilitetene.\nSe på\
+      \ dybdeindikatorene fra nullpunktsmåling:\nhttps://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416\n\
+      F.eks:\n* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429\n\
+      * https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428\n\
+      \n\n\n"
+    properties: {}
+    folder_path: *id005
+  id-63eeffd71e92467281f421c58bac305f:
+    type: Driver
+    name: Drivere
+    documentation: "\"Drivere\" er den grunnleggende motivasjonen eller årsaken til\
+      \ at en endring settes i gang.\n\nDrivarar og hindringar må sjåast i samanheng.\
+      \ Dei viktigaste hindringane er økonomiske rammer og kapasitet. \nEi styrking\
+      \ her vil vere blant dei viktigaste drivarane for å oppnå resultat og realisere\
+      \ gevinstar av teknisk infrastruktur og data, knytt til handheving av eit stadig\
+      \ meir omfattande regelverk."
+    properties: {}
+    folder_path: *id005
+  id-87d27b24cab34a089853e52f3512c376:
+    type: Constraint
+    name: Hindringer
+    documentation: 'Hindringer: Hva stopper eller begrenser oss?'
+    properties: {}
+    folder_path: *id005
+  id-707202a7db214363817d403344afb867:
+    type: Principle
+    name: NSM
+    documentation: ''
+    properties: {}
+    folder_path: *id005
+  id-94f7473fb4184e3b94bb92c35186b88f:
+    type: Principle
+    name: 'P1: Ta utgangspunkt i brukernes behov'
+    documentation: ''
+    properties: {}
+    folder_path: *id005
+  id-dbfcb14c3e024a40b6cb71138311abc0:
+    type: Principle
+    name: 'P2: Ta arkitektur-beslutninger på rett nivå'
+    documentation: https://www.digdir.no/digital-samhandling/prinsipp-2-ta-arkitekturbeslutninger-pa-rett-niva/1056
+    properties: {}
+    folder_path: *id005
+  id-7d62a886cdc14d20a5b361cf68da5754:
+    type: Principle
+    name: 'P3: Bidra til digitaliseringsvennlige regelverk'
+    documentation: https://www.digdir.no/digital-samhandling/prinsipp-3-bidra-til-digitaliseringsvennlige-regelverk/1057
+    properties: {}
+    folder_path: *id005
+  id-a27833cb9e324549916a528f31481dce:
+    type: Principle
+    name: 'P4: Del og gjenbruk data'
+    documentation: https://www.digdir.no/digital-samhandling/prinsipp-4-del-og-gjenbruk-data/1061
+    properties: {}
+    folder_path: *id005
+  id-5b6ec861e2d246ce90c99ea282d35610:
+    type: Principle
+    name: 'P7: Sørg for tillit til oppgaveløsningen'
+    documentation: https://www.digdir.no/digital-samhandling/prinsipp-7-sorg-tillit-til-oppgavelosningen/1064
+    properties: {}
+    folder_path: *id005
+  id-7b1079f5439e4f2798fe2f8d31792603:
+    type: Principle
+    name: 'P3: Bidra til digitaliseringsvennlige regelverk (copy)'
+    documentation: ''
+    properties: {}
+    folder_path: *id005
+  id-d0918d8701a4408b93a9ab278ecbb85e:
+    type: Principle
+    name: 'P5: Del og gjenbruk løsninger'
+    documentation: https://www.digdir.no/digital-samhandling/prinsipp-5-del-og-gjenbruk-losninger/1062
+    properties: {}
+    folder_path: *id005
+  id-0007ec16e9a1406d9f6aabd1f975d993:
+    type: Principle
+    name: 'P6: Lag digitale løsninger som støtter samhandling'
+    documentation: https://www.digdir.no/digital-samhandling/prinsipp-6-lag-digitale-losninger-som-stotter-samhandling/1063
+    properties: {}
+    folder_path: *id005
   id-74e15ee821794ae09cd9f7f7a38f32aa:
     type: Principle
     name: FAIR
     documentation: ''
     properties: {}
-    folder_path: *id003
+    folder_path: *id005
   id-6cb4bed065c44e1b8821c60d4515ef28:
     type: WorkPackage
     name: Konkret tiltak
@@ -1879,7 +1878,7 @@ elements:
       Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av
       kapabiliteter som finnes.'
     properties: {}
-    folder_path: &id004
+    folder_path: &id006
     - Implementation & Migration
   id-66f38bffcd9f48d796a041a9a292d6ed:
     type: Gap
@@ -1887,19 +1886,19 @@ elements:
     documentation: Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad
       Nasjonal arkitektur)
     properties: {}
-    folder_path: *id004
+    folder_path: *id006
   id-ac4c391b696f493da64833de20f7df9c:
     type: Plateau
     name: Nåværende situasjon
     documentation: ''
     properties: {}
-    folder_path: *id004
+    folder_path: *id006
   id-0d355bfbd31e4a188766733761ede0ba:
     type: Plateau
     name: Ønsket situasjon
     documentation: ''
     properties: {}
-    folder_path: *id004
+    folder_path: *id006
   id-8810f83ff9fe44c2a3368cdef932526b:
     type: Grouping
     name: Rammeverk for digital samhandling (European Interoperability Framework)
@@ -1924,7 +1923,7 @@ elements:
 
       '
     properties: {}
-    folder_path: &id005
+    folder_path: &id007
     - Other
   id-e236b66b0d574a2bb97dbd79d7d38d47:
     type: Grouping
@@ -1934,7 +1933,7 @@ elements:
       kan utvikle og bruke like tjenester og funksjonalitet må det rettslige grunnlaget
       for samhandling mellom aktørene være på plass.
     properties: {}
-    folder_path: *id005
+    folder_path: *id007
   id-3fd615c0b19e4762953cd34908523dbc:
     type: Grouping
     name: Organisatorisk samhandlingsevne
@@ -1944,7 +1943,7 @@ elements:
       tjenester tilgjengelige og brukerorienterte, samt hvilke samhandlingsmodeller
       og avtaler virksomhetene etablerer knyttet til felles forvaltning.
     properties: {}
-    folder_path: *id005
+    folder_path: *id007
   id-503ab92854754702ab00164afdbf6f70:
     type: Grouping
     name: Semantisk samhandlingsevne
@@ -1955,7 +1954,7 @@ elements:
       parter forstår kommunikasjonen. Syntaktisk aspekt refererer til eksakt format
       og struktur på data som utveksles.
     properties: {}
-    folder_path: *id005
+    folder_path: *id007
   id-6c59a946ea8e4ad8903fbb1a6ffa9219:
     type: Grouping
     name: Teknisk samhandlingsevne
@@ -1964,7 +1963,7 @@ elements:
       av forskrift om IT-standarder i offentlig forvaltning. Området dekker forhold
       knyttet til applikasjon, data, teknologi og sikkerhet.
     properties: {}
-    folder_path: *id005
+    folder_path: *id007
   id-661cb46063c544be82d804511f5ea9f9:
     type: Grouping
     name: Styrings og forvaltning
@@ -1974,7 +1973,7 @@ elements:
       tidlig som mulig i prosessen ved etablering av nye tjenester. I tillegg vil
       det være nødvendig å gå mer i dybden etter hvert.
     properties: {}
-    folder_path: *id005
+    folder_path: *id007
 relationships:
   id-58bceb608d714b8d99e00b4bf49c6255:
     type: AssociationRelationship
@@ -2051,13 +2050,6 @@ relationships:
     name: ''
     source_id: id-d503cf06faa1417b8acd4b26a5c0741e
     target_id: id-f5214c3db8de4738ab03abb7b7e553ed
-    documentation: ''
-    properties: {}
-  id-10d91ff607044e9da6c8ef3750f163b8:
-    type: AggregationRelationship
-    name: ''
-    source_id: id-ad6f81e892a74590840828b6aabb270d
-    target_id: id-9119e1fb3de64872abb90e122280f4d9
     documentation: ''
     properties: {}
   id-bdd7b5946ff24e8d966fdec23ebe54c3:
@@ -3526,15 +3518,6 @@ views:
           y: '261'
           width: '757'
           height: '100'
-      id-20923cf30b4446a7ace20c482b653c7f:
-        type: DiagramObject
-        archimate_element_id: id-9119e1fb3de64872abb90e122280f4d9
-        parent_node_id: id-4b5c46cbbaeb4d52baf61e075bf1c98e
-        bounds:
-          x: '1190'
-          y: '21'
-          width: '120'
-          height: '55'
       id-94b20a5aebde43ab9050d57d7b03aeaa:
         type: DiagramObject
         archimate_element_id: id-efe1a2676c124eeab946802af96a1ab7
@@ -3967,6 +3950,15 @@ views:
           y: '36'
           width: '120'
           height: '55'
+      id-1878725c8ff54026974bda0be7461d2c:
+        type: Note
+        archimate_element_id: ''
+        parent_node_id: null
+        bounds:
+          x: '372'
+          y: '-900'
+          width: '805'
+          height: '46'
     connections:
       id-dac64c458ca44c37b08718c92d7ed0d7:
         type: Connection
@@ -4088,11 +4080,6 @@ views:
         relationship_id: ''
         source_node: id-e87e977abf2b472480b8a3ae48829afc
         target_node: id-80bc121fe4de4eebbd8e293fd4a34d01
-      id-f1fae8bb72974591a65b0b293dfea382:
-        type: Connection
-        relationship_id: ''
-        source_node: id-4b5c46cbbaeb4d52baf61e075bf1c98e
-        target_node: id-20923cf30b4446a7ace20c482b653c7f
       id-2caa06c7a6aa41639af08e70a3fe0d59:
         type: Connection
         relationship_id: ''
@@ -4629,6 +4616,15 @@ views:
           y: '132'
           width: '205'
           height: '55'
+      id-0b4533ee93da44888caf24bade7efcc8:
+        type: Note
+        archimate_element_id: ''
+        parent_node_id: null
+        bounds:
+          x: '500'
+          y: '12'
+          width: '805'
+          height: '46'
     connections:
       id-17d6f5f313ce492681cfdb706ece9fd6:
         type: Connection
@@ -4733,10 +4729,155 @@ views:
   id-9a7719e0479b4ef598a463ab6ca0ec74:
     type: ArchimateDiagramModel
     name: 07-Mål
-    documentation: ''
+    documentation: Mål i Digitaliseringsstrategien og relevans til tiltaket Nasjonal
+      arkitektur
     properties: {}
-    nodes: {}
-    connections: {}
+    nodes:
+      id-31e68bc7ef484a7a89268fe97dcb1c4f:
+        type: DiagramObject
+        archimate_element_id: id-897fd3d0f5fd4c2891e824a371d5e69b
+        parent_node_id: null
+        bounds:
+          x: '456'
+          y: '120'
+          width: '215'
+          height: '89'
+      id-e79a7378cc9f4f3abbc711e0521638fb:
+        type: DiagramObject
+        archimate_element_id: id-9f2593113134463ea6863703c308b251
+        parent_node_id: null
+        bounds:
+          x: '252'
+          y: '96'
+          width: '120'
+          height: '55'
+      id-6319048d813c41309730ce6c1f2374b7:
+        type: DiagramObject
+        archimate_element_id: id-56e7246019f54eec8093568bd0fb8e22
+        parent_node_id: null
+        bounds:
+          x: '588'
+          y: '270'
+          width: '120'
+          height: '55'
+      id-41bfcefda020402a8f98f57e5ed7087b:
+        type: DiagramObject
+        archimate_element_id: id-bf3fa917baad486d9865b9627199a2d4
+        parent_node_id: null
+        bounds:
+          x: '745'
+          y: '96'
+          width: '120'
+          height: '55'
+      id-0c7e5183259a46f4a7118ef15a067355:
+        type: DiagramObject
+        archimate_element_id: id-89e255a238d346a4901424f0059e6345
+        parent_node_id: null
+        bounds:
+          x: '252'
+          y: '180'
+          width: '120'
+          height: '55'
+      id-9ac5713b1b5944828b062ba69a6c4002:
+        type: DiagramObject
+        archimate_element_id: id-a4062153239a4d13a9fdef8cc205c8e6
+        parent_node_id: null
+        bounds:
+          x: '720'
+          y: '270'
+          width: '120'
+          height: '55'
+      id-912e35dd1c204c3b95d46584bebb9e94:
+        type: DiagramObject
+        archimate_element_id: id-9622546accfc43d28a38cebdecf8818a
+        parent_node_id: null
+        bounds:
+          x: '744'
+          y: '180'
+          width: '120'
+          height: '55'
+      id-f351f475744c49db90a52ddd39267b94:
+        type: DiagramObject
+        archimate_element_id: id-90ff9c60528d4dfe93d534bd6a7bcfeb
+        parent_node_id: null
+        bounds:
+          x: '288'
+          y: '270'
+          width: '120'
+          height: '55'
+      id-4941f333c1b24d1db802fc778c053895:
+        type: DiagramObject
+        archimate_element_id: id-cbc357e78ede45e8aa565fde3b7380b5
+        parent_node_id: null
+        bounds:
+          x: '456'
+          y: '270'
+          width: '120'
+          height: '55'
+      id-be21383ecd0f4ebf854d9e2eb48d486c:
+        type: DiagramObject
+        archimate_element_id: id-ba60560a9ed64b4d87b2fd4fa6b32937
+        parent_node_id: null
+        bounds:
+          x: '503'
+          y: '24'
+          width: '120'
+          height: '55'
+      id-042b732b25aa4391a276c6dfc006e0e2:
+        type: Note
+        archimate_element_id: ''
+        parent_node_id: null
+        bounds:
+          x: '245'
+          y: '-36'
+          width: '619'
+          height: '46'
+    connections:
+      id-0f7c6ce213854eb79fee5369b85bb17f:
+        type: Connection
+        relationship_id: ''
+        source_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
+        target_node: id-e79a7378cc9f4f3abbc711e0521638fb
+      id-2ab6887fca864cf3b9b19c0010aece76:
+        type: Connection
+        relationship_id: ''
+        source_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
+        target_node: id-6319048d813c41309730ce6c1f2374b7
+      id-37b4ca0a305049df9bc7ea9fba5b88d2:
+        type: Connection
+        relationship_id: ''
+        source_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
+        target_node: id-41bfcefda020402a8f98f57e5ed7087b
+      id-c9a8b61c86fd4aeb83bccd544015c0bd:
+        type: Connection
+        relationship_id: ''
+        source_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
+        target_node: id-0c7e5183259a46f4a7118ef15a067355
+      id-8795adaa9fab4513b93944007b58ea3b:
+        type: Connection
+        relationship_id: ''
+        source_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
+        target_node: id-9ac5713b1b5944828b062ba69a6c4002
+      id-cbd52c91b08d4b5eab2cd05ce0cbcc9e:
+        type: Connection
+        relationship_id: ''
+        source_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
+        target_node: id-912e35dd1c204c3b95d46584bebb9e94
+      id-9ee7fadec7214ed9b8cd344e3f9fd303:
+        type: Connection
+        relationship_id: ''
+        source_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
+        target_node: id-f351f475744c49db90a52ddd39267b94
+      id-e491f77c70ee40f485b2bc2177b351d5:
+        type: Connection
+        relationship_id: ''
+        source_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
+        target_node: id-4941f333c1b24d1db802fc778c053895
+      id-2a8dc8366b0f48ac96d3f036f4d8db70:
+        type: Connection
+        relationship_id: ''
+        source_node: id-be21383ecd0f4ebf854d9e2eb48d486c
+        target_node: id-31e68bc7ef484a7a89268fe97dcb1c4f
   id-b9bcc8618287449ab162521aa9352413:
     type: ArchimateDiagramModel
     name: 05-EIF lagmodell
@@ -4788,6 +4929,15 @@ views:
           y: '48'
           width: '229'
           height: '608'
+      id-e93b6f0a862a4b4d84bb4e16b8b4d7f0:
+        type: Note
+        archimate_element_id: ''
+        parent_node_id: null
+        bounds:
+          x: '336'
+          y: '-12'
+          width: '700'
+          height: '46'
     connections:
       id-fc280147461746c7bc3dfb3d1bce2565:
         type: Connection
@@ -4995,6 +5145,15 @@ views:
           y: '-528'
           width: '120'
           height: '55'
+      id-22c7f277f10c4c2a8da9796f0ce6704c:
+        type: Note
+        archimate_element_id: ''
+        parent_node_id: null
+        bounds:
+          x: '778'
+          y: '-600'
+          width: '618'
+          height: '46'
     connections:
       id-18d6bdf098514b8a8efd36e3a58d483e:
         type: Connection
@@ -5212,7 +5371,7 @@ views:
         archimate_element_id: id-ba60560a9ed64b4d87b2fd4fa6b32937
         parent_node_id: null
         bounds:
-          x: '84'
+          x: '240'
           y: '120'
           width: '457'
           height: '397'
@@ -5333,6 +5492,15 @@ views:
           y: '36'
           width: '120'
           height: '55'
+      id-2b04c41bf1a847209356a2d19bf93e6c:
+        type: Note
+        archimate_element_id: ''
+        parent_node_id: null
+        bounds:
+          x: '240'
+          y: '48'
+          width: '457'
+          height: '46'
     connections:
       id-062821a1358443c0b2f3416df0e8248c:
         type: Connection

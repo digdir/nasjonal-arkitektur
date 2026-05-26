@@ -4,6 +4,65 @@
 
 ## Elementer i viewet
 
+### Domeneressurs
+**Type:** Resource
+
+---
+
+### Nasjonal arkitektur analyse dekningsgrad
+**Type:** Assessment
+
+Identifiserer svakheter i dagens arkitektur (ressurser og kapabiliteter). Er en faglig analyse som forklarer hvorfor gapet finnes.
+
+Kapabiliteter og grad av nåsituasjon og måloppnåelse 
+- målverdi
+- dagens verdi
+= Finner Gap og modenhet:
+Rødt (Gap > 2): Kapabiliteter der avstanden mellom nåsituasjon og mål er kritisk stor. Her må Tiltak (Work Packages) prioriteres.
+Gult (Gap = 1): Kapabiliteter som er i rute, men krever vedlikehold eller mindre justeringer.
+Grønt (Gap = 0): Kapabiliteten har nådd sin målverdi.
+En kapabilitet kan realisere både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer, oppfyller eller tolker hensikten bak prinsippet i praksis.
+Modenhetsmodell, som CMMI (Capability Maturity Model Integration:
+* Måling av kapabilitetsmodenhet (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn ved å synliggjøre gapet mellom "hvor gode vi er" (As-Is) og "hvor gode vi må være" (To-Be).
+* Modenheten til en kapabilitet vurderes basert på tilstanden til de underliggende ressursene.
+
+Ressurser og måling:
+* Kan vises som en heatmap med indikatorer for:
+- Dekningsgrad kapabilitet (1-5) for å indikere i hvilken grad en ressurs faktisk er tilgjengelig eller moden nok til å støtte ønsket kapabilitet.
+- egnethet (Funksjonelt egnet)
+- Teknisk egnet
+- Livssyklus status
+
+Man kan også benytte POTI modell som vurdering på tilstanden til ressursene:
+* People (Organisasjon): Roller og kompetanse.
+* Process (Prosess): Arbeidsflyter og prosedyrer.
+* Technology (Teknologi): IT-systemer og infrastruktur.
+* Information (Informasjon): Datakvalitet og flyt
+
+Se også:
+De konkrete resultatene av å bruke kapabilitetene.
+Se på dybdeindikatorene fra nullpunktsmåling:
+https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
+F.eks:
+* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
+* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
+
+
+
+
+
+---
+
+### Nåværende situasjon
+**Type:** Plateau
+
+---
+
+### Ønsket situasjon
+**Type:** Plateau
+
+---
+
 ### Ressurs
 **Type:** Resource
 
@@ -72,28 +131,6 @@ Ved å bruke dette rammeverket kan selskaper utvikle et veikart for «nåsituasj
 
 ---
 
-### Rammebetingelser
-**Type:** Resource
-
-Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
-
-Ressurser innenfor:
-* Finansielle virkemidler/Finansieringsordninger
-* Lovhjemler og juridiske virkemidler
-* Samordning
-
-
-
-
----
-
-### Strategiske mål
-**Type:** Goal
-
-Målene fra Digitaliseringsstrategien.
-
----
-
 ### Strategisk kapabilitet (overordnet)
 **Type:** Capability
 
@@ -133,72 +170,6 @@ https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap28.html
 
 ---
 
-### Samhandlingsareneaer og organisering
-**Type:** Resource
-
-Organiserte nettverk og styringsorganer for både dialog og strategisk samordning.
-
----
-
-### Ønsket situasjon
-**Type:** Plateau
-
----
-
-### Domenekapabilitet
-**Type:** Capability
-
----
-
-### Nasjonal arkitektur analyse dekningsgrad
-**Type:** Assessment
-
-Identifiserer svakheter i dagens arkitektur (ressurser og kapabiliteter). Er en faglig analyse som forklarer hvorfor gapet finnes.
-
-Kapabiliteter og grad av nåsituasjon og måloppnåelse 
-- målverdi
-- dagens verdi
-= Finner Gap og modenhet:
-Rødt (Gap > 2): Kapabiliteter der avstanden mellom nåsituasjon og mål er kritisk stor. Her må Tiltak (Work Packages) prioriteres.
-Gult (Gap = 1): Kapabiliteter som er i rute, men krever vedlikehold eller mindre justeringer.
-Grønt (Gap = 0): Kapabiliteten har nådd sin målverdi.
-En kapabilitet kan realisere både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer, oppfyller eller tolker hensikten bak prinsippet i praksis.
-Modenhetsmodell, som CMMI (Capability Maturity Model Integration:
-* Måling av kapabilitetsmodenhet (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn ved å synliggjøre gapet mellom "hvor gode vi er" (As-Is) og "hvor gode vi må være" (To-Be).
-* Modenheten til en kapabilitet vurderes basert på tilstanden til de underliggende ressursene.
-
-Ressurser og måling:
-* Kan vises som en heatmap med indikatorer for:
-- Dekningsgrad kapabilitet (1-5) for å indikere i hvilken grad en ressurs faktisk er tilgjengelig eller moden nok til å støtte ønsket kapabilitet.
-- egnethet (Funksjonelt egnet)
-- Teknisk egnet
-- Livssyklus status
-
-Man kan også benytte POTI modell som vurdering på tilstanden til ressursene:
-* People (Organisasjon): Roller og kompetanse.
-* Process (Prosess): Arbeidsflyter og prosedyrer.
-* Technology (Teknologi): IT-systemer og infrastruktur.
-* Information (Informasjon): Datakvalitet og flyt
-
-Se også:
-De konkrete resultatene av å bruke kapabilitetene.
-Se på dybdeindikatorene fra nullpunktsmåling:
-https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
-F.eks:
-* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
-* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
-
-
-
-
-
----
-
-### Domeneressurs
-**Type:** Resource
-
----
-
 ### Standarder og veiledning
 **Type:** Resource
 
@@ -207,44 +178,6 @@ Ressurser som setter regler eller gir retning.
 Dette kan være:
 Standarder, veiledere, referansearkitekturer, metodikk
 Normeringsgrad kan være knyttet til disse virkemidlene.
-
----
-
-### Nåværende situasjon
-**Type:** Plateau
-
----
-
-### Konkret tiltak
-**Type:** WorkPackage
-
-Realiserer endringer som fjerner gap. Dette er konkrete tiltak som har startet eller er planlagt.
-Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
-
----
-
-### Gap
-**Type:** Gap
-
-Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjonal arkitektur)
-
----
-
-### Effektmål
-**Type:** Outcome
-
-De konkrete resultatene av å bruke kapabilitetene.
-Se på dybdeindikatorene fra nullpunktsmåling:
-https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
-F.eks:
-* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
-* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
-
-
----
-
-### Kapabilitet (Operasjonell)
-**Type:** Capability
 
 ---
 
@@ -284,6 +217,73 @@ De nasjonale felleskomponentene, slik de er definert i Digital agenda:
 
 
 
+
+---
+
+### Konkret tiltak
+**Type:** WorkPackage
+
+Realiserer endringer som fjerner gap. Dette er konkrete tiltak som har startet eller er planlagt.
+Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
+
+---
+
+### Strategiske mål
+**Type:** Goal
+
+Målene fra Digitaliseringsstrategien.
+
+---
+
+### Samhandlingsareneaer og organisering
+**Type:** Resource
+
+Organiserte nettverk og styringsorganer for både dialog og strategisk samordning.
+
+---
+
+### Domenekapabilitet
+**Type:** Capability
+
+---
+
+### Rammebetingelser
+**Type:** Resource
+
+Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
+
+Ressurser innenfor:
+* Finansielle virkemidler/Finansieringsordninger
+* Lovhjemler og juridiske virkemidler
+* Samordning
+
+
+
+
+---
+
+### Effektmål
+**Type:** Outcome
+
+De konkrete resultatene av å bruke kapabilitetene.
+Se på dybdeindikatorene fra nullpunktsmåling:
+https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
+F.eks:
+* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
+* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
+
+
+---
+
+### Kapabilitet (Operasjonell)
+**Type:** Capability
+
+---
+
+### Gap
+**Type:** Gap
+
+Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjonal arkitektur)
 
 ---
 
