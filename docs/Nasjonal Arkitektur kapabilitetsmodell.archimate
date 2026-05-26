@@ -1225,8 +1225,9 @@ De viktigste fellesløsningene kalles nasjonale felleskomponenter: Altinn, Digit
 &#xD;
 I denne oversikten over nasjonale fellesløsninger viser vi også andre fellesløsninger forvaltet av Digitaliseringsdirektoratet, og utvalgte løsninger fra KS (Kommunesektorens organisasjon).</content>
       </child>
+      <documentation>Viser struktur og mer kontekst til rammeverksmodellen.</documentation>
     </element>
-    <element xsi:type="archimate:ArchimateDiagramModel" name="02-Nasjonal Arkitektur Kapabilitetskart" id="id-dea95464961449d88f082fa02cceb50f">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="02-Nasjonal Arkitektur - Kapabilitetskart alle nivåer" id="id-dea95464961449d88f082fa02cceb50f">
       <child xsi:type="archimate:DiagramObject" id="id-69ebf83823574f2fa97704aa3caf2af2" fillColor="#e2e2e2" alpha="115" archimateElement="id-ba60560a9ed64b4d87b2fd4fa6b32937">
         <bounds x="96" y="-840" width="1297" height="997"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-dac64c458ca44c37b08718c92d7ed0d7" source="id-69ebf83823574f2fa97704aa3caf2af2" target="id-097184c9fb104c4486607319c83d7b7b" archimateRelationship="id-76b5fb12b61e4dc9986e26cb5830336c"/>
@@ -1482,6 +1483,7 @@ I denne oversikten over nasjonale fellesløsninger viser vi også andre fellesl�
         <bounds x="372" y="-900" width="805" height="46"/>
         <content>Nasjonal arkitektur kapabilitetskart (detaljert)</content>
       </child>
+      <documentation>Nasjonal arkitektur består av 3 kapabilitetsnivåer.</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="04-Digitaliseringsstrategiens mål og NA" id="id-623c2b878f81427187c41e072b4deff5">
       <child xsi:type="archimate:DiagramObject" id="id-1ffeb371ce6240f48aac41147582af8b" archimateElement="id-ba60560a9ed64b4d87b2fd4fa6b32937">
@@ -1767,7 +1769,7 @@ I denne oversikten over nasjonale fellesløsninger viser vi også andre fellesl�
         <content>EIF lagmodell relasjon til hovedkapabiliteter</content>
       </child>
     </element>
-    <element xsi:type="archimate:ArchimateDiagramModel" name="01-NA Hovedkapabiliteter" id="id-c7f9551d156048389c4a955bfaa5254c">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="01-Nasjonal arkitektur - Hovedkapabiliteter" id="id-c7f9551d156048389c4a955bfaa5254c">
       <child xsi:type="archimate:DiagramObject" id="id-0e7e71bde9d041cea455d34949f55c93" archimateElement="id-ba60560a9ed64b4d87b2fd4fa6b32937">
         <bounds x="240" y="120" width="457" height="397"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-062821a1358443c0b2f3416df0e8248c" source="id-0e7e71bde9d041cea455d34949f55c93" target="id-0fc1bf9be19f43fab6184ae6e9df1073" archimateRelationship="id-1c1c276db27f4281a16eda2af3fce4d0"/>
@@ -1901,6 +1903,7 @@ I denne oversikten over nasjonale fellesløsninger viser vi også andre fellesl�
         <sourceConnection xsi:type="archimate:Connection" id="id-a99b458c5fb64896868ce0d9f7d40637" source="id-7f03797d1e674f24855925ccb2839c5f" target="id-d0529378105044e1b81b2f087ccac006" archimateRelationship="id-1f3c8faf7c4a47f59cafef9cf07dc47e"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-256e2b5538864860b9a7dbfe00a39ef4" source="id-7f03797d1e674f24855925ccb2839c5f" target="id-d0529378105044e1b81b2f087ccac006" archimateRelationship="id-6a9e29e1b72b43c6a2c284ed79013100"/>
       </child>
+      <documentation>Viser struktur og kontekst til rammeverksmodellen.</documentation>
     </element>
   </folder>
 </archimate:model>

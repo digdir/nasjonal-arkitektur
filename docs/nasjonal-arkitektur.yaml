@@ -3022,7 +3022,7 @@ views:
   id-085ba8f9d77e45079724746f67280dbb:
     type: ArchimateDiagramModel
     name: 00-Metamodell kontekst
-    documentation: ''
+    documentation: Viser struktur og mer kontekst til rammeverksmodellen.
     properties: {}
     nodes:
       id-3d3b55ad03984427937540400b67f4b2:
@@ -3379,8 +3379,8 @@ views:
         target_node: id-f38c9ffcb2094254bedb4ea07615d58a
   id-dea95464961449d88f082fa02cceb50f:
     type: ArchimateDiagramModel
-    name: 02-Nasjonal Arkitektur Kapabilitetskart
-    documentation: ''
+    name: 02-Nasjonal Arkitektur - Kapabilitetskart alle nivåer
+    documentation: Nasjonal arkitektur består av 3 kapabilitetsnivåer.
     properties: {}
     nodes:
       id-69ebf83823574f2fa97704aa3caf2af2:
@@ -5219,7 +5219,7 @@ views:
         target_node: id-6de7ec45041447ddb234d680b8a4e866
   id-c7f9551d156048389c4a955bfaa5254c:
     type: ArchimateDiagramModel
-    name: 01-NA Hovedkapabiliteter
+    name: 01-Nasjonal arkitektur - Hovedkapabiliteter
     documentation: ''
     properties: {}
     nodes:
@@ -5422,7 +5422,7 @@ views:
   id-b513e2dbd37e447184ee9f969874a681:
     type: ArchimateDiagramModel
     name: 001-Metamodell kjerne
-    documentation: ''
+    documentation: Viser struktur og kontekst til rammeverksmodellen.
     properties: {}
     nodes:
       id-9e637bc2c34e433c9c899ee74f73835e:
