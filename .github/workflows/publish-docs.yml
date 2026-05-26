@@ -21,16 +21,7 @@ jobs:
         run: |
           pip install -r scripts/requirements.txt
           
-      - name: Convert ArchiMate to YAML
-        run: python scripts/convert_archimate_to_yaml.py "model/Nasjonal Arkitektur kapabilitetsmodell-2026-05-20.archimate" data/nasjonal-arkitektur.yaml
-        
-      - name: Generate Markdown Docs
-        run: python scripts/generate_docs.py
-        
-      - name: Copy raw data files for download
-        run: |
-          cp data/nasjonal-arkitektur.yaml docs/
-          cp "model/Nasjonal Arkitektur kapabilitetsmodell-2026-05-20.archimate" "docs/Nasjonal Arkitektur kapabilitetsmodell.archimate"
+
           
       - name: Configure Git Credentials
         run: |
