@@ -2,6 +2,7 @@ site_name: Nasjonal Arkitektur
 site_description: Dokumentasjon generert fra ArchiMate-modell
 theme:
   name: material
+  logo: images/digdir_logo.svg
   language: nb
   palette:
     primary: indigo
