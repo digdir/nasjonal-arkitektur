@@ -154,6 +154,8 @@ def generate_markdown(yaml_file, docs_dir):
     with open(os.path.join(docs_dir, 'modell.md'), 'w', encoding='utf-8') as f:
         f.write("# Rammeverksmodell for Nasjonal arkitektur\n\n")
         
+        f.write("Denne siden presenterer den tekniske modelleringen av Nasjonal arkitektur, som er utformet i modelleringsverktøyet [Archi](https://www.archimatetool.com/). Denne strukturen fungerer som basis for dyptgående analyse og oversikt. Innholdet her retter seg spesielt mot målgrupper som har behov for innsikt på et mer teknisk og strukturelt nivå – enten målet er å gjenbruke arkitekturkonseptene i egne prosjekter, analysere sammenhenger, eller bygge videre på rammeverket.\n\n")
+        
         f.write("## Last ned filer\n\n")
         f.write("Her kan du laste ned selve arkitekturmodellen i ulike formater:\n\n")
         f.write("- **[ArchiMate-fil](Nasjonal%20Arkitektur%20kapabilitetsmodell.archimate)**: Originalmodellen. Kan åpnes i [Archi](https://www.archimatetool.com/) eller andre verktøy som støtter ArchiMate.\n")

@@ -1,5 +1,7 @@
 # Rammeverksmodell for Nasjonal arkitektur
 
+Denne siden presenterer den tekniske modelleringen av Nasjonal arkitektur, som er utformet i modelleringsverktøyet [Archi](https://www.archimatetool.com/). Denne strukturen fungerer som basis for dyptgående analyse og oversikt. Innholdet her retter seg spesielt mot målgrupper som har behov for innsikt på et mer teknisk og strukturelt nivå – enten målet er å gjenbruke arkitekturkonseptene i egne prosjekter, analysere sammenhenger, eller bygge videre på rammeverket.
+
 ## Last ned filer
 
 Her kan du laste ned selve arkitekturmodellen i ulike formater:
