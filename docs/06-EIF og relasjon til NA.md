@@ -4,6 +4,16 @@
 
 ## Elementer i viewet
 
+### Datautveksling og integrasjon
+**Type:** Capability
+
+Evne til å sikkert, effektivt og standardisert utveksle data mellom aktører i økosystemet.
+
+
+Mrk: Lommebok er inkludert i denne
+
+---
+
 ### Juridisk samhandling
 **Type:** Capability
 
@@ -19,6 +29,34 @@ Risikovurdering: Å etablere felles metoder og standarder for juridisk risikovur
 
 ---
 
+### Samarbeid
+**Type:** Capability
+
+Evne til å samarbeid og samhandling på tvers av offentlig og privat forvaltning.
+
+---
+
+### Organisatorisk samhandlingsevne
+**Type:** Grouping
+
+Organisatorisk samhandling handler om hvordan samhandlende virksomheter tilpasser tjenestekjeder/forretningsprosesser, ansvar og forventninger for å oppnå felles mål og fordeler. Området dekker også forventninger til å gjøre tjenester tilgjengelige og brukerorienterte, samt hvilke samhandlingsmodeller og avtaler virksomhetene etablerer knyttet til felles forvaltning.
+
+---
+
+### Tillit
+**Type:** Capability
+
+Evne å tilby tillitstjenester som muliggjører autentisering og autorisasjon på tvers av tjenestekjeder, og støtte en distribuert arkitektur og føderering mellom ulike domener og tjeneste
+
+---
+
+### Teknisk samhandlingsevne
+**Type:** Grouping
+
+Teknisk samhandlingsevne sikrer at ulike systemer kan integreres. Dette krever teknisk standardisering, noe som i dag blant annet blir understøttet av forskrift om IT-standarder i offentlig forvaltning. Området dekker forhold knyttet til applikasjon, data, teknologi og sikkerhet.
+
+---
+
 ### Semantisk samhandlingsevne
 **Type:** Grouping
 
@@ -26,17 +64,18 @@ Semantisk samhandlingsevne har å gjøre med betydningen av dataelementer, relas
 
 ---
 
-### Strategisk styring
+### Informasjonsforvaltning
 **Type:** Capability
 
-Evnen til å sette retning for nasjonal arkitektur og realisere strategiske mål.
+Evne til å ha et felles rammeverk og styringsmodell for informasjonsforvaltning, slik at offentlige virksomheter kan utveksle og dele data og beskrivelser. 
 
 ---
 
-### Juridisk samhandlingsevne
-**Type:** Grouping
+### Sluttbrukertjenester
+**Type:** Capability
 
-Juridisk samhandling skal sikre at organisasjoner som arbeider under ulik lovgivning kan samhandle. For at organisasjoner på tvers i forvaltningen kan utvikle og bruke like tjenester og funksjonalitet må det rettslige grunnlaget for samhandling mellom aktørene være på plass.
+Evne til å tilby en sammenhengende digital brukeropplevelse gjennom et økosystem av standardiserte og integrerbare tjenester.
+
 
 ---
 
@@ -55,23 +94,17 @@ Etterlevelse: Å legge til rette for at fellesløsninger og virksomheter faktisk
 
 ---
 
-### Datakilder
+### Strategisk styring
 **Type:** Capability
 
-Evne til å tilgjengeliggjøre og forvalte data som en nasjonal fellesressurs, slik at de kan oppdages, forstås og gjenbrukes på en sikker og standardisert måte.
-
-Dette innebærer også:
-Å organisere og styre data innenfor definerte tematiske domener, for å sikre helhetlig forvaltning og strategisk utvikling av dataressurser innenfor kritiske samfunnsområder.
-
-
-
+Evnen til å sette retning for nasjonal arkitektur og realisere strategiske mål.
 
 ---
 
-### Tillit
-**Type:** Capability
+### Juridisk samhandlingsevne
+**Type:** Grouping
 
-Evne å tilby tillitstjenester som muliggjører autentisering og autorisasjon på tvers av tjenestekjeder, og støtte en distribuert arkitektur og føderering mellom ulike domener og tjeneste
+Juridisk samhandling skal sikre at organisasjoner som arbeider under ulik lovgivning kan samhandle. For at organisasjoner på tvers i forvaltningen kan utvikle og bruke like tjenester og funksjonalitet må det rettslige grunnlaget for samhandling mellom aktørene være på plass.
 
 ---
 
@@ -98,10 +131,11 @@ Veiledere kan ha ulik grad av styrke:
 
 ---
 
-### Informasjonsforvaltning
+### Informasjonssikkerhet
 **Type:** Capability
 
-Evne til å ha et felles rammeverk og styringsmodell for informasjonsforvaltning, slik at offentlige virksomheter kan utveksle og dele data og beskrivelser. 
+Evne til å ha tilstrekkelig sikkerhet i tjenester og løsninger som benyttes i felles økosystem. 
+Merk: Er sterkt knyttet til kapabilitet "Tillit"
 
 ---
 
@@ -111,6 +145,33 @@ Evne til å ha et felles rammeverk og styringsmodell for informasjonsforvaltning
 Evne til å utvikle sammenhengende digitale tjenester.
 
 Dette er knyttet til prosess- og kompetanse-kapabilitet. Det innebærer å utvikle tjenester basert på metodikk, design, koding og samarbeid.
+
+---
+
+### Datakilder
+**Type:** Capability
+
+Evne til å tilgjengeliggjøre og forvalte data som en nasjonal fellesressurs, slik at de kan oppdages, forstås og gjenbrukes på en sikker og standardisert måte.
+
+Dette innebærer også:
+Å organisere og styre data innenfor definerte tematiske domener, for å sikre helhetlig forvaltning og strategisk utvikling av dataressurser innenfor kritiske samfunnsområder.
+
+
+
+
+---
+
+### Nasjonal arkitektur for samhandling
+**Type:** Capability
+
+Evne til å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem.
+
+
+Felles økosystem skal bidra til økt deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv måte og skaper økte verdier for samfunnet.
+Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen mellom aktørene. 
+Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette.
+
+
 
 ---
 
@@ -137,20 +198,6 @@ Som et resultat har Norge etablert sitt eget nasjonale rammeverk for interoperab
 
 ---
 
-### Samarbeid
-**Type:** Capability
-
-Evne til å samarbeid og samhandling på tvers av offentlig og privat forvaltning.
-
----
-
-### Teknisk samhandlingsevne
-**Type:** Grouping
-
-Teknisk samhandlingsevne sikrer at ulike systemer kan integreres. Dette krever teknisk standardisering, noe som i dag blant annet blir understøttet av forskrift om IT-standarder i offentlig forvaltning. Området dekker forhold knyttet til applikasjon, data, teknologi og sikkerhet.
-
----
-
 ### Datadrevet
 **Type:** Capability
 
@@ -161,53 +208,6 @@ Etisk og ansvarlig datautnyttelse: All bruk av data skjer på en sikker, lovlig 
 Dette innebærer:
 Forvaltningen systematisk bruker data som en strategisk ressurs i prosesser, beslutningstaking og tjenesteutvikling for å levere bedre og mer effektive tjenester til innbyggere og næringsliv.
 Dette forutsetter åpenhet, deling av data, og evne til å hente ut verdi fra data gjennom blant annet analyse, automatisering og bruk av kunstig intelligens.
-
----
-
-### Informasjonssikkerhet
-**Type:** Capability
-
-Evne til å ha tilstrekkelig sikkerhet i tjenester og løsninger som benyttes i felles økosystem. 
-Merk: Er sterkt knyttet til kapabilitet "Tillit"
-
----
-
-### Organisatorisk samhandlingsevne
-**Type:** Grouping
-
-Organisatorisk samhandling handler om hvordan samhandlende virksomheter tilpasser tjenestekjeder/forretningsprosesser, ansvar og forventninger for å oppnå felles mål og fordeler. Området dekker også forventninger til å gjøre tjenester tilgjengelige og brukerorienterte, samt hvilke samhandlingsmodeller og avtaler virksomhetene etablerer knyttet til felles forvaltning.
-
----
-
-### Sluttbrukertjenester
-**Type:** Capability
-
-Evne til å tilby en sammenhengende digital brukeropplevelse gjennom et økosystem av standardiserte og integrerbare tjenester.
-
-
----
-
-### Datautveksling og integrasjon
-**Type:** Capability
-
-Evne til å sikkert, effektivt og standardisert utveksle data mellom aktører i økosystemet.
-
-
-Mrk: Lommebok er inkludert i denne
-
----
-
-### Nasjonal arkitektur for samhandling
-**Type:** Capability
-
-Evne til å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem.
-
-
-Felles økosystem skal bidra til økt deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv måte og skaper økte verdier for samfunnet.
-Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen mellom aktørene. 
-Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette.
-
-
 
 ---
 

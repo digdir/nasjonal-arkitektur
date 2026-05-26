@@ -4,76 +4,17 @@
 
 ## Elementer i viewet
 
-### Konkret tiltak
-**Type:** WorkPackage
+### Gap
+**Type:** Gap
 
-Realiserer endringer som fjerner gap. Dette er konkrete tiltak som har startet eller er planlagt.
-Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
+Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjonal arkitektur)
 
 ---
 
-### Fellesløsning
+### Samhandlingsareneaer og organisering
 **Type:** Resource
 
-Fellesløsninger er tekniske komponenter eller applikasjoner som leverer funksjonalitet og dekker behov på tvers av eller innenfor sektorer, og/eller forvaltningsnivå. 
-Tekniske løsninger som utvikles én gang og brukes av mange.
-Fellesløsninger er byggeklosser som kan brukes i utviklingen av offentlige digitale tjenester. Noen er obligatoriske å bruke, andre er anbefalte - både for statlige virksomheter og for kommunal sektor.
-
-Fellesløsning til forretningstjenester, som er forretningsaktivitet med et spesifisert resultat og som støtter et spesifikt forretningsmål. 
-Den er brukersentert og representerer funksjonalitet som leverer verdi til en ekstern bruker. 
-Brukerorienterte eller funksjonelle tjenester som leverer verdi, ofte på tvers av løsninger.
-
-Merk:
-Selv om en tjeneste bruker teknologi, er selve "tjenesten" (f.eks. eSignering eller Autentisering) det funksjonelle resultatet av en prosess rettet mot en bruker
-
-Strategiske prinsipper for nasjonale felleskomponenter (gammel - bør ha en felles beskrivelse av felles-"løsninger" i stedet)
-https://www.digdir.no/media/395/download
-https://www.regjeringen.no/contentassets/fe3e34b866034b82b9c623c5cec39823/no/pdfs/stm201520160027000dddpdfs.pdf
-
-Fellesløsning vs. felles løsning:
-* Forskjellen er institusjonell. 
-* Fellesløsning:  referer til nasjonale fellesløsninger, som er spesifikk tekniske komponenter som skal kunne brukes av svært mange i offentlig sektor for å løse generiske behov. 
-* Felles løsning: Gjenbrukbar løsnning som kan benyttes av flere og med formåk om samarbeid og stordriftsfordeler, men uten nødvendigvis å ha status som en nasjonal komponent i økosystemet.
-* Fellestjeneste: Den forretningsmessige eller tekniske funksjonaliteten som tilbys.
-
-Sluttbrukertjenester: Det innbyggeren eller næringslivet opplever (f.eks. "Søke om barnehageplass" eller "Levere skattemelding"). 
-Støttetjenester: Tekniske tjenester som ikke er synlige for sluttbrukeren, men som er nødvendige for at systemene skal snakke sammen (f.eks. gjennom et API)
-
-De nasjonale felleskomponentene, slik de er definert i Digital agenda:
-– Har en statlig virksomhet som forvaltningsansvarlig.
-– Dekker behov på tvers av mange sektorer og/eller forvaltningsnivå.
-– Vil være sentrale komponenter i en rekke digitale tjenester.
-– Er av stor samfunnsøkonomisk betydning som felles mulighetsrom for digital tjenesteutvikling og gevinstrealisering i virksomhetene.
-
-
-
-
-
----
-
-### Standarder og veiledning
-**Type:** Resource
-
-Ressurser som setter regler eller gir retning.
-
-Dette kan være:
-Standarder, veiledere, referansearkitekturer, metodikk
-Normeringsgrad kan være knyttet til disse virkemidlene.
-
----
-
-### Nåværende situasjon
-**Type:** Plateau
-
----
-
-### Domeneressurs
-**Type:** Resource
-
----
-
-### Ønsket situasjon
-**Type:** Plateau
+Organiserte nettverk og styringsorganer for både dialog og strategisk samordning.
 
 ---
 
@@ -152,48 +93,29 @@ Ved å bruke dette rammeverket kan selskaper utvikle et veikart for «nåsituasj
 
 ---
 
-### Effektmål
-**Type:** Outcome
-
-De konkrete resultatene av å bruke kapabilitetene.
-Se på dybdeindikatorene fra nullpunktsmåling:
-https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
-F.eks:
-* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
-* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
-
-
----
-
 ### Domenekapabilitet
 **Type:** Capability
 
 ---
 
-### Rammebetingelser
+### Standarder og veiledning
 **Type:** Resource
 
-Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
+Ressurser som setter regler eller gir retning.
 
-Ressurser innenfor:
-* Finansielle virkemidler/Finansieringsordninger
-* Lovhjemler og juridiske virkemidler
-* Samordning
+Dette kan være:
+Standarder, veiledere, referansearkitekturer, metodikk
+Normeringsgrad kan være knyttet til disse virkemidlene.
 
+---
 
-
+### Domeneressurs
+**Type:** Resource
 
 ---
 
 ### Kapabilitet (Operasjonell)
 **Type:** Capability
-
----
-
-### Samhandlingsareneaer og organisering
-**Type:** Resource
-
-Organiserte nettverk og styringsorganer for både dialog og strategisk samordning.
 
 ---
 
@@ -241,10 +163,88 @@ F.eks:
 
 ---
 
-### Gap
-**Type:** Gap
+### Effektmål
+**Type:** Outcome
 
-Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjonal arkitektur)
+De konkrete resultatene av å bruke kapabilitetene.
+Se på dybdeindikatorene fra nullpunktsmåling:
+https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
+F.eks:
+* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
+* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
+
+
+---
+
+### Nåværende situasjon
+**Type:** Plateau
+
+---
+
+### Ønsket situasjon
+**Type:** Plateau
+
+---
+
+### Fellesløsning
+**Type:** Resource
+
+Fellesløsninger er tekniske komponenter eller applikasjoner som leverer funksjonalitet og dekker behov på tvers av eller innenfor sektorer, og/eller forvaltningsnivå. 
+Tekniske løsninger som utvikles én gang og brukes av mange.
+Fellesløsninger er byggeklosser som kan brukes i utviklingen av offentlige digitale tjenester. Noen er obligatoriske å bruke, andre er anbefalte - både for statlige virksomheter og for kommunal sektor.
+
+Fellesløsning til forretningstjenester, som er forretningsaktivitet med et spesifisert resultat og som støtter et spesifikt forretningsmål. 
+Den er brukersentert og representerer funksjonalitet som leverer verdi til en ekstern bruker. 
+Brukerorienterte eller funksjonelle tjenester som leverer verdi, ofte på tvers av løsninger.
+
+Merk:
+Selv om en tjeneste bruker teknologi, er selve "tjenesten" (f.eks. eSignering eller Autentisering) det funksjonelle resultatet av en prosess rettet mot en bruker
+
+Strategiske prinsipper for nasjonale felleskomponenter (gammel - bør ha en felles beskrivelse av felles-"løsninger" i stedet)
+https://www.digdir.no/media/395/download
+https://www.regjeringen.no/contentassets/fe3e34b866034b82b9c623c5cec39823/no/pdfs/stm201520160027000dddpdfs.pdf
+
+Fellesløsning vs. felles løsning:
+* Forskjellen er institusjonell. 
+* Fellesløsning:  referer til nasjonale fellesløsninger, som er spesifikk tekniske komponenter som skal kunne brukes av svært mange i offentlig sektor for å løse generiske behov. 
+* Felles løsning: Gjenbrukbar løsnning som kan benyttes av flere og med formåk om samarbeid og stordriftsfordeler, men uten nødvendigvis å ha status som en nasjonal komponent i økosystemet.
+* Fellestjeneste: Den forretningsmessige eller tekniske funksjonaliteten som tilbys.
+
+Sluttbrukertjenester: Det innbyggeren eller næringslivet opplever (f.eks. "Søke om barnehageplass" eller "Levere skattemelding"). 
+Støttetjenester: Tekniske tjenester som ikke er synlige for sluttbrukeren, men som er nødvendige for at systemene skal snakke sammen (f.eks. gjennom et API)
+
+De nasjonale felleskomponentene, slik de er definert i Digital agenda:
+– Har en statlig virksomhet som forvaltningsansvarlig.
+– Dekker behov på tvers av mange sektorer og/eller forvaltningsnivå.
+– Vil være sentrale komponenter i en rekke digitale tjenester.
+– Er av stor samfunnsøkonomisk betydning som felles mulighetsrom for digital tjenesteutvikling og gevinstrealisering i virksomhetene.
+
+
+
+
+
+---
+
+### Rammebetingelser
+**Type:** Resource
+
+Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
+
+Ressurser innenfor:
+* Finansielle virkemidler/Finansieringsordninger
+* Lovhjemler og juridiske virkemidler
+* Samordning
+
+
+
+
+---
+
+### Konkret tiltak
+**Type:** WorkPackage
+
+Realiserer endringer som fjerner gap. Dette er konkrete tiltak som har startet eller er planlagt.
+Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
 
 ---
 

@@ -121,6 +121,21 @@ def generate_markdown(yaml_file, docs_dir):
     if os.path.exists(html_export_dir):
         shutil.copytree(html_export_dir, report_dest, dirs_exist_ok=True)
         has_report = True
+        
+        # Inject "Tilbake til forside" link in the HTML report
+        index_html_path = os.path.join(report_dest, 'index.html')
+        if os.path.exists(index_html_path):
+            with open(index_html_path, 'r', encoding='utf-8') as f:
+                html_content = f.read()
+            
+            nav_injection = """<ul class="nav navbar-nav navbar-left">
+					<li><a href="../index.html"><span class="glyphicon glyphicon-home"></span> Tilbake til forside</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">"""
+            html_content = html_content.replace('<ul class="nav navbar-nav navbar-right">', nav_injection)
+            
+            with open(index_html_path, 'w', encoding='utf-8') as f:
+                f.write(html_content)
 
     readme_content = ""
     try:
