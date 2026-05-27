@@ -14,22 +14,31 @@ Det realiserte økosystemet består av konkrete kapabiliteter (hva vi trenger å
 - Samhandlingsarenaer og organisering
 - Økonomiske og juridiske rammer og virkemidler
 
-## Leveranser og arbeid 
+## Leveranser og arbeid fra tiltaket
 
-Her kommer metamodell og kapabilitetsbasert digital arkitektur som gir struktur for utforming av felles løsninger og komponenter. Målet er at dette skal føre til økt deling, gjenbruk og bedre samhandling på tvers av forvaltningsorganene.
+Tiltaket har utviklet en modell som utgangspunkt for å beskrive innholdet og oppbygging av nasjonal arkitektur. Fokuset er på samhandlingsevner i felles økosystem, og arbeidet er basert på Rammeverk for digital samhandling: <https://www.digdir.no/digital-samhandling/rammeverk-digital-samhandling/2148>
 
-**Nasjonal arkitektur kapabilitetskart**
+### Nasjonal arkitektur modell
 
-- Modellert i Archimate, representert i .archimate format
-- 3 nivåer av kapabiliteter inkludert definisjon og dokumentasjon (dokumentasjon er work-in-progress)
-- representert i YAML (for bruk til analyse etc)
-- Python script for konvertering fra .archimate til .yaml
+Modellert i Archimate (verktøy Archi), og representert i .archimate format.
+Modellen er også representert i YAML, for mer effektiv bruk til analyse etc.
+Disse kan lastes ned. 
 
-**Nasjonal arkitektur modell**
+Konvertering fra .archimate til .yaml gjøres i et eget script (Python).
 
-- Modellert i Archimate
+Modellen består av følgende elementer:
+
+- Nasjonal arkitektur kapabilitetskart (3 nivåer totalt)
 - relasjoner til overordnete arkitekturprinsipper for offentlig sektor
 - relasjoner til EIF lagmodell
 - relasjoner til ressurser som realiserer kapabiliteter
 - relasjoner til relevante mål i Digitaliseringsstrategien
-- Metamodell og kontektsuell tmodell
+- EIF lagmodell og relasjon til Nasjonal arkitektur
+- Metamodell og kontektsuell modell
+
+## Nasjonal arkitektur kapabilitetskart
+
+Dette er den "viktigste" delen av modellen, sammen med oversikt og relasjon til de faktiske ressurser som innehar kapabiliteter som trengs for å dekke mål og behov i faktiske digitaliseringstiltak. Det er definert 3 nivåer av kapabiliteter inkludert definisjon og dokumentasjon (dokumentasjon forbedres pågående)
+
+## Oversikt over ressurser
+Det er et pågående arbeid å samle inn og publisere oversikt over felles ressurser. Foreløpig er dette lagt ut på følgende side: <https://suphiro-arch.github.io/NA-kunnskap/>
