@@ -1,6 +1,7 @@
 # Nasjonal arkitektur for et felles digitalt økosystem
 
 ## Innledning
+
 Dette er et tiltak i regjeringens digitaliseringsstrategi. Målet er å sikre et velfungerende felles digitalt økosystem for effektiv samhandling og sammenhengende tjenesteutvikling i offentlig sektor. Tiltaket ledes av Digitaliseringsdirektoratet (Digdir) i tett samarbeid med KS.
 
 Nasjonal arkitektur refererer til de overordnede rammeverkene, standardene, prinsippene og referansearkitekturene som bestemmer hvordan digitale løsninger skal bygges og samhandle på tvers av sektorer og forvaltningsnivåer.  Mens sektorene har egne tilpassede arkitekturer, sørger den nasjonale arkitekturen for at forvaltningen fremstår helhetlig og løser oppgaver effektivt på tvers
@@ -22,7 +23,7 @@ Tiltaket har utviklet en modell som utgangspunkt for å beskrive innholdet og op
 
 Modellert i Archimate (verktøy Archi), og representert i .archimate format.
 Modellen er også representert i YAML, for mer effektiv bruk til analyse etc.
-Disse kan lastes ned. 
+Disse kan lastes ned.
 
 Konvertering fra .archimate til .yaml gjøres i et eget script (Python).
 
@@ -41,5 +42,7 @@ Modellen består av følgende elementer:
 Dette er den "viktigste" delen av modellen, sammen med oversikt og relasjon til de faktiske ressurser som innehar kapabiliteter som trengs for å dekke mål og behov i faktiske digitaliseringstiltak. Det er definert 3 nivåer av kapabiliteter inkludert definisjon og dokumentasjon (dokumentasjon forbedres pågående)
 
 ## Oversikt over ressurser
+
 Det er et pågående arbeid å samle inn og publisere oversikt over felles ressurser. Foreløpig er dette lagt ut på følgende side: <https://suphiro-arch.github.io/NA-kunnskap/>
+
 
