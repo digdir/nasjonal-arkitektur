@@ -4,8 +4,9 @@
     <folder name="Metamodell" id="id-43ed1263370e4591b227b01a248887b3">
       <element xsi:type="archimate:Capability" name="Domenekapabilitet" id="id-23598cee556747ef80cab10dbad84e65"/>
       <element xsi:type="archimate:Resource" name="Domeneressurs" id="id-4157e35b43184dd7bbcb4405e7edea46"/>
-      <element xsi:type="archimate:Resource" name="Fellesløsning" id="id-199ae45b0a6c47b28b3507837647c6c8">
-        <documentation>Fellesløsninger er tekniske komponenter eller applikasjoner som leverer funksjonalitet og dekker behov på tvers av eller innenfor sektorer, og/eller forvaltningsnivå. &#xD;
+      <element xsi:type="archimate:Resource" name="Gjenbrukbar løsning" id="id-199ae45b0a6c47b28b3507837647c6c8">
+        <documentation>Gjenbrukbare løsninger er tekniske komponenter, applikasjoner som leverer funksjonalitet eller dataprodukter og dekker behov på tvers av eller innenfor sektorer, og/eller forvaltningsnivå. &#xD;
+&#xD;
 Tekniske løsninger som utvikles én gang og brukes av mange.&#xD;
 Fellesløsninger er byggeklosser som kan brukes i utviklingen av offentlige digitale tjenester. Noen er obligatoriske å bruke, andre er anbefalte - både for statlige virksomheter og for kommunal sektor.&#xD;
 &#xD;
@@ -113,15 +114,22 @@ Standarder, veiledere, referansearkitekturer, metodikk&#xD;
 Normeringsgrad kan være knyttet til disse virkemidlene.</documentation>
       </element>
       <element xsi:type="archimate:Resource" name="Samhandlingsareneaer og organisering" id="id-a947552722064b7c93181833028cc2f1">
-        <documentation>Organiserte nettverk og styringsorganer for både dialog og strategisk samordning.</documentation>
+        <documentation>Organiserte nettverk og styringsorganer for både dialog og strategisk samarbeid og samordning.&#xD;
+&#xD;
+Eksempler:&#xD;
+* Samstyringsstruktur i kommunal sektor&#xD;
+* Skate&#xD;
+* ASR (Arkitektur- og standardiseringsrådet)&#xD;
+* Faglig arena for datadeling og informasjonsforvaltning&#xD;
+* Datalandsbyen&#xD;
+* Offentlig PAAS - Slack for alle i offentlig sektor</documentation>
       </element>
-      <element xsi:type="archimate:Resource" name="Rammebetingelser" id="id-456429d236544c28b3d7257893b0dec6">
+      <element xsi:type="archimate:Resource" name="Økonomiske og juridiske rammer og virkemidler" id="id-456429d236544c28b3d7257893b0dec6">
         <documentation>Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.&#xD;
 &#xD;
-Ressurser innenfor:&#xD;
-* Finansielle virkemidler/Finansieringsordninger&#xD;
-* Lovhjemler og juridiske virkemidler&#xD;
-* Samordning&#xD;
+Rammer og virkemidler kan være ressurser som er&#xD;
+* Finansielle&#xD;
+* Regulative&#xD;
 &#xD;
 &#xD;
 </documentation>
@@ -900,7 +908,9 @@ Ei styrking her vil vere blant dei viktigaste drivarane for å oppnå resultat o
       <documentation>Hindringer: Hva stopper eller begrenser oss?</documentation>
     </element>
     <element xsi:type="archimate:Principle" name="NSM" id="id-707202a7db214363817d403344afb867"/>
-    <element xsi:type="archimate:Principle" name="P1: Ta utgangspunkt i brukernes behov" id="id-94f7473fb4184e3b94bb92c35186b88f"/>
+    <element xsi:type="archimate:Principle" name="P1: Ta utgangspunkt i brukernes behov" id="id-94f7473fb4184e3b94bb92c35186b88f">
+      <documentation>https://www.digdir.no/digital-samhandling/prinsipp-1-ta-utgangspunkt-i-brukernes-behov/1055</documentation>
+    </element>
     <element xsi:type="archimate:Principle" name="P2: Ta arkitektur-beslutninger på rett nivå" id="id-dbfcb14c3e024a40b6cb71138311abc0">
       <documentation>https://www.digdir.no/digital-samhandling/prinsipp-2-ta-arkitekturbeslutninger-pa-rett-niva/1056</documentation>
     </element>
@@ -913,7 +923,6 @@ Ei styrking her vil vere blant dei viktigaste drivarane for å oppnå resultat o
     <element xsi:type="archimate:Principle" name="P7: Sørg for tillit til oppgaveløsningen" id="id-5b6ec861e2d246ce90c99ea282d35610">
       <documentation>https://www.digdir.no/digital-samhandling/prinsipp-7-sorg-tillit-til-oppgavelosningen/1064</documentation>
     </element>
-    <element xsi:type="archimate:Principle" name="P3: Bidra til digitaliseringsvennlige regelverk (copy)" id="id-7b1079f5439e4f2798fe2f8d31792603"/>
     <element xsi:type="archimate:Principle" name="P5: Del og gjenbruk løsninger" id="id-d0918d8701a4408b93a9ab278ecbb85e">
       <documentation>https://www.digdir.no/digital-samhandling/prinsipp-5-del-og-gjenbruk-losninger/1062</documentation>
     </element>

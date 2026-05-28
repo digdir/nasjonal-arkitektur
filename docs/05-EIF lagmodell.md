@@ -4,13 +4,6 @@
 
 ## Elementer i viewet
 
-### Semantisk samhandlingsevne
-**Type:** Grouping
-
-Semantisk samhandlingsevne har å gjøre med betydningen av dataelementer, relasjonen mellom dem og formatet informasjonen utveksles på. Det deles i syntaktisk og semantisk aspekt. Semantisk aspekt skal sikre dataenes betydningsinnhold og interne relasjon, som også innebærer begrepsavklaringer som sikrer at alle parter forstår kommunikasjonen. Syntaktisk aspekt refererer til eksakt format og struktur på data som utveksles.
-
----
-
 ### Styrings og forvaltning
 **Type:** Grouping
 
@@ -22,6 +15,13 @@ Styring og forvaltning av integrerbare og sammenhengende offentlige tjenester er
 **Type:** Grouping
 
 Organisatorisk samhandling handler om hvordan samhandlende virksomheter tilpasser tjenestekjeder/forretningsprosesser, ansvar og forventninger for å oppnå felles mål og fordeler. Området dekker også forventninger til å gjøre tjenester tilgjengelige og brukerorienterte, samt hvilke samhandlingsmodeller og avtaler virksomhetene etablerer knyttet til felles forvaltning.
+
+---
+
+### Semantisk samhandlingsevne
+**Type:** Grouping
+
+Semantisk samhandlingsevne har å gjøre med betydningen av dataelementer, relasjonen mellom dem og formatet informasjonen utveksles på. Det deles i syntaktisk og semantisk aspekt. Semantisk aspekt skal sikre dataenes betydningsinnhold og interne relasjon, som også innebærer begrepsavklaringer som sikrer at alle parter forstår kommunikasjonen. Syntaktisk aspekt refererer til eksakt format og struktur på data som utveksles.
 
 ---
 

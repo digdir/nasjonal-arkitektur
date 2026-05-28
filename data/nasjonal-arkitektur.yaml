@@ -19,22 +19,22 @@ elements:
     folder_path: *id001
   id-199ae45b0a6c47b28b3507837647c6c8:
     type: Resource
-    name: Fellesløsning
-    documentation: "Fellesløsninger er tekniske komponenter eller applikasjoner som\
-      \ leverer funksjonalitet og dekker behov på tvers av eller innenfor sektorer,\
-      \ og/eller forvaltningsnivå. \nTekniske løsninger som utvikles én gang og brukes\
-      \ av mange.\nFellesløsninger er byggeklosser som kan brukes i utviklingen av\
-      \ offentlige digitale tjenester. Noen er obligatoriske å bruke, andre er anbefalte\
-      \ - både for statlige virksomheter og for kommunal sektor.\n\nFellesløsning\
-      \ til forretningstjenester, som er forretningsaktivitet med et spesifisert resultat\
-      \ og som støtter et spesifikt forretningsmål. \nDen er brukersentert og representerer\
-      \ funksjonalitet som leverer verdi til en ekstern bruker. \nBrukerorienterte\
-      \ eller funksjonelle tjenester som leverer verdi, ofte på tvers av løsninger.\n\
-      \nMerk:\nSelv om en tjeneste bruker teknologi, er selve \"tjenesten\" (f.eks.\
-      \ eSignering eller Autentisering) det funksjonelle resultatet av en prosess\
-      \ rettet mot en bruker\n\nStrategiske prinsipper for nasjonale felleskomponenter\
-      \ (gammel - bør ha en felles beskrivelse av felles-\"løsninger\" i stedet)\n\
-      https://www.digdir.no/media/395/download\nhttps://www.regjeringen.no/contentassets/fe3e34b866034b82b9c623c5cec39823/no/pdfs/stm201520160027000dddpdfs.pdf\n\
+    name: Gjenbrukbar løsning
+    documentation: "Gjenbrukbare løsninger er tekniske komponenter, applikasjoner\
+      \ som leverer funksjonalitet eller dataprodukter og dekker behov på tvers av\
+      \ eller innenfor sektorer, og/eller forvaltningsnivå. \n\nTekniske løsninger\
+      \ som utvikles én gang og brukes av mange.\nFellesløsninger er byggeklosser\
+      \ som kan brukes i utviklingen av offentlige digitale tjenester. Noen er obligatoriske\
+      \ å bruke, andre er anbefalte - både for statlige virksomheter og for kommunal\
+      \ sektor.\n\nFellesløsning til forretningstjenester, som er forretningsaktivitet\
+      \ med et spesifisert resultat og som støtter et spesifikt forretningsmål. \n\
+      Den er brukersentert og representerer funksjonalitet som leverer verdi til en\
+      \ ekstern bruker. \nBrukerorienterte eller funksjonelle tjenester som leverer\
+      \ verdi, ofte på tvers av løsninger.\n\nMerk:\nSelv om en tjeneste bruker teknologi,\
+      \ er selve \"tjenesten\" (f.eks. eSignering eller Autentisering) det funksjonelle\
+      \ resultatet av en prosess rettet mot en bruker\n\nStrategiske prinsipper for\
+      \ nasjonale felleskomponenter (gammel - bør ha en felles beskrivelse av felles-\"\
+      løsninger\" i stedet)\nhttps://www.digdir.no/media/395/download\nhttps://www.regjeringen.no/contentassets/fe3e34b866034b82b9c623c5cec39823/no/pdfs/stm201520160027000dddpdfs.pdf\n\
       \nFellesløsning vs. felles løsning:\n* Forskjellen er institusjonell. \n* Fellesløsning:\
       \  referer til nasjonale fellesløsninger, som er spesifikk tekniske komponenter\
       \ som skal kunne brukes av svært mange i offentlig sektor for å løse generiske\
@@ -217,23 +217,36 @@ elements:
   id-a947552722064b7c93181833028cc2f1:
     type: Resource
     name: Samhandlingsareneaer og organisering
-    documentation: Organiserte nettverk og styringsorganer for både dialog og strategisk
-      samordning.
+    documentation: 'Organiserte nettverk og styringsorganer for både dialog og strategisk
+      samarbeid og samordning.
+
+
+      Eksempler:
+
+      * Samstyringsstruktur i kommunal sektor
+
+      * Skate
+
+      * ASR (Arkitektur- og standardiseringsrådet)
+
+      * Faglig arena for datadeling og informasjonsforvaltning
+
+      * Datalandsbyen
+
+      * Offentlig PAAS - Slack for alle i offentlig sektor'
     properties: {}
     folder_path: *id001
   id-456429d236544c28b3d7257893b0dec6:
     type: Resource
-    name: Rammebetingelser
+    name: Økonomiske og juridiske rammer og virkemidler
     documentation: 'Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
 
 
-      Ressurser innenfor:
+      Rammer og virkemidler kan være ressurser som er
 
-      * Finansielle virkemidler/Finansieringsordninger
+      * Finansielle
 
-      * Lovhjemler og juridiske virkemidler
-
-      * Samordning
+      * Regulative
 
 
 
@@ -1818,7 +1831,7 @@ elements:
   id-94f7473fb4184e3b94bb92c35186b88f:
     type: Principle
     name: 'P1: Ta utgangspunkt i brukernes behov'
-    documentation: ''
+    documentation: https://www.digdir.no/digital-samhandling/prinsipp-1-ta-utgangspunkt-i-brukernes-behov/1055
     properties: {}
     folder_path: *id005
   id-dbfcb14c3e024a40b6cb71138311abc0:
@@ -1843,12 +1856,6 @@ elements:
     type: Principle
     name: 'P7: Sørg for tillit til oppgaveløsningen'
     documentation: https://www.digdir.no/digital-samhandling/prinsipp-7-sorg-tillit-til-oppgavelosningen/1064
-    properties: {}
-    folder_path: *id005
-  id-7b1079f5439e4f2798fe2f8d31792603:
-    type: Principle
-    name: 'P3: Bidra til digitaliseringsvennlige regelverk (copy)'
-    documentation: ''
     properties: {}
     folder_path: *id005
   id-d0918d8701a4408b93a9ab278ecbb85e:
