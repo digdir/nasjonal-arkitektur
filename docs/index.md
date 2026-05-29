@@ -17,7 +17,7 @@ Det realiserte økosystemet består av konkrete kapabiliteter (hva vi trenger å
 
 ## Leveranser og arbeid fra tiltaket
 
-Tiltaket har utviklet en modell som utgangspunkt for å beskrive innholdet og oppbygging av nasjonal arkitektur. Fokuset er på samhandlingsevner i felles økosystem, og arbeidet er basert på Rammeverk for digital samhandling: <https://www.digdir.no/digital-samhandling/rammeverk-digital-samhandling/2148>
+Tiltaket har utviklet en modell som utgangspunkt for å beskrive innholdet og oppbygging av nasjonal arkitektur. Fokuset er på samhandlingsevner i felles økosystem, og arbeidet er basert på [Rammeverk for digital samhandling](https://www.digdir.no/digital-samhandling/rammeverk-digital-samhandling/2148).
 
 ### Nasjonal arkitektur modell
 

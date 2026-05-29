@@ -11,21 +11,28 @@ def main():
         print(f"Feil: Finner ikke modellfilen: {model_path}")
         sys.exit(1)
         
-    print("\n[1/3] Konverterer ArchiMate til YAML...")
+    print("\n[1/4] Konverterer ArchiMate til YAML...")
     result = subprocess.run(["python", "scripts/convert_archimate_to_yaml.py", model_path, "data/nasjonal-arkitektur.yaml"])
     if result.returncode != 0:
         print("Feil under konvertering til YAML.")
         sys.exit(1)
         
-    print("\n[2/3] Genererer Markdown-dokumentasjon...")
+    print("\n[2/4] Konverterer ArchiMate til TTL...")
+    result = subprocess.run(["python", "scripts/archimate2ttl.py", model_path, "data/nasjonal-arkitektur.ttl"])
+    if result.returncode != 0:
+        print("Feil under konvertering til TTL.")
+        sys.exit(1)
+        
+    print("\n[3/4] Genererer Markdown-dokumentasjon...")
     result = subprocess.run(["python", "scripts/generate_docs.py"])
     if result.returncode != 0:
         print("Feil under generering av dokumentasjon.")
         sys.exit(1)
         
-    print("\n[3/3] Kopierer kilde- og datafiler til docs-mappen for nedlasting...")
+    print("\n[4/4] Kopierer kilde- og datafiler til docs-mappen for nedlasting...")
     os.makedirs("docs", exist_ok=True)
     shutil.copy2("data/nasjonal-arkitektur.yaml", "docs/nasjonal-arkitektur.yaml")
+    shutil.copy2("data/nasjonal-arkitektur.ttl", "docs/nasjonal-arkitektur.ttl")
     shutil.copy2(model_path, "docs/Nasjonal Arkitektur kapabilitetsmodell.archimate")
     
     print("\nFerdig! Dokumentasjonen er bygget lokalt i docs-mappen.")

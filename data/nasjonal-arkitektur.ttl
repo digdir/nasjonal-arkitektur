@@ -1,0 +1,2258 @@
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:       <http://purl.org/dc/terms/> .
+@prefix archimate: <https://purl.org/archimate#> .
+@prefix na:        <https://data.digdir.no/nasjonal-arkitektur/> .
+
+### ── Model ─────────────────────────────────────────────────────────────
+
+na:id-91814cfd070848099d96b5a751963e49
+    a archimate:ArchiMate ;
+    archimate:identifier "id-91814cfd070848099d96b5a751963e49" ;
+    archimate:name "Nasjonal Arkitektur"@nb ;
+    owl:versionInfo "5.0.0" .
+
+### ── Elements ──────────────────────────────────────────────────────────
+
+na:id-23598cee556747ef80cab10dbad84e65
+    a archimate:Capability ;
+    archimate:identifier "id-23598cee556747ef80cab10dbad84e65" ;
+    archimate:name "Domenekapabilitet"@nb .
+
+na:id-4157e35b43184dd7bbcb4405e7edea46
+    a archimate:Resource ;
+    archimate:identifier "id-4157e35b43184dd7bbcb4405e7edea46" ;
+    archimate:name "Domeneressurs"@nb .
+
+na:id-199ae45b0a6c47b28b3507837647c6c8
+    a archimate:Resource ;
+    archimate:identifier "id-199ae45b0a6c47b28b3507837647c6c8" ;
+    archimate:name "Gjenbrukbar løsning"@nb ;
+    archimate:documentation """Gjenbrukbare løsninger er tekniske komponenter, applikasjoner som leverer funksjonalitet eller dataprodukter og dekker behov på tvers av eller innenfor sektorer, og/eller forvaltningsnivå. 
+
+Tekniske løsninger som utvikles én gang og brukes av mange.
+Fellesløsninger er byggeklosser som kan brukes i utviklingen av offentlige digitale tjenester. Noen er obligatoriske å bruke, andre er anbefalte - både for statlige virksomheter og for kommunal sektor.
+
+Fellesløsning til forretningstjenester, som er forretningsaktivitet med et spesifisert resultat og som støtter et spesifikt forretningsmål. 
+Den er brukersentert og representerer funksjonalitet som leverer verdi til en ekstern bruker. 
+Brukerorienterte eller funksjonelle tjenester som leverer verdi, ofte på tvers av løsninger.
+
+Merk:
+Selv om en tjeneste bruker teknologi, er selve \"tjenesten\" (f.eks. eSignering eller Autentisering) det funksjonelle resultatet av en prosess rettet mot en bruker
+
+Strategiske prinsipper for nasjonale felleskomponenter (gammel - bør ha en felles beskrivelse av felles-\"løsninger\" i stedet)
+https://www.digdir.no/media/395/download
+https://www.regjeringen.no/contentassets/fe3e34b866034b82b9c623c5cec39823/no/pdfs/stm201520160027000dddpdfs.pdf
+
+Fellesløsning vs. felles løsning:
+* Forskjellen er institusjonell. 
+* Fellesløsning:  referer til nasjonale fellesløsninger, som er spesifikk tekniske komponenter som skal kunne brukes av svært mange i offentlig sektor for å løse generiske behov. 
+* Felles løsning: Gjenbrukbar løsnning som kan benyttes av flere og med formåk om samarbeid og stordriftsfordeler, men uten nødvendigvis å ha status som en nasjonal komponent i økosystemet.
+* Fellestjeneste: Den forretningsmessige eller tekniske funksjonaliteten som tilbys.
+
+Sluttbrukertjenester: Det innbyggeren eller næringslivet opplever (f.eks. \"Søke om barnehageplass\" eller \"Levere skattemelding\"). 
+Støttetjenester: Tekniske tjenester som ikke er synlige for sluttbrukeren, men som er nødvendige for at systemene skal snakke sammen (f.eks. gjennom et API)
+
+De nasjonale felleskomponentene, slik de er definert i Digital agenda:
+– Har en statlig virksomhet som forvaltningsansvarlig.
+– Dekker behov på tvers av mange sektorer og/eller forvaltningsnivå.
+– Vil være sentrale komponenter i en rekke digitale tjenester.
+– Er av stor samfunnsøkonomisk betydning som felles mulighetsrom for digital tjenesteutvikling og gevinstrealisering i virksomhetene."""@nb .
+
+na:id-fa68712eb0924092abd996fa6c511065
+    a archimate:Capability ;
+    archimate:identifier "id-fa68712eb0924092abd996fa6c511065" ;
+    archimate:name "Kapabilitet (Operasjonell)"@nb .
+
+na:id-9860d11ff3fd40a5b541b8f929ed305f
+    a archimate:Resource ;
+    archimate:identifier "id-9860d11ff3fd40a5b541b8f929ed305f" ;
+    archimate:name "Ressurs"@nb ;
+    archimate:documentation """Ressurs (med hva):
+Ressursene er de konkrete byggeklossene som realiserer ønskede kapabiliteter, og løser konkrete behov.
+En ressurs er noe vi har (byggeklossene) som løser et konkret behov eller krav til funksjonalitet, og som bidrar til å realisere en eller flere kapabiliteter.
+
+Mrk: Ved måling av ressurser så kan vi måle hver enkelt ressurs iht POTI-laget den tilhører.
+Ressursene er ulike typer (POTI), og må derfor måles med ulike kriterier
+
+Mrk:
+* En generisk kategorisering med få kategorier, men som knyttes til kapabilitetene for ytterligere kategorisering
+
+Måling av Teknologi (Applikasjoner/Systemer):
+* Teknisk tilstand (Technical Fit): Er koden sunn? Er det teknisk gjeld? Er leverandøren stabil?
+* Forretningsverdi (Functional Fit): Støtter den prosessen godt nok? Er brukerne fornøyde?
+Technical_Fit (Score 1–5): Hvor moderne/stabil er teknologien?
+Functional_Fit (Score 1–5): Hvor godt dekker den behovet?
+Lifecycle_Status: (F.eks. \"Live\", \"Phasing Out\", \"End of Life\").
+
+Måling av Folk (Kompetanse/Kapasitet)
+
+POTI-rammeverket, som står for Prosesser, Organisasjon, Teknologi og Informasjon, er en modell som brukes innen virksomhetsarkitektur for å analysere og beskrive de sentrale elementene i en organisasjon. Rammeverket sikrer en helhetlig tilnærming til endring og utvikling ved å belyse hvordan disse fire områdene henger sammen og påvirker hverandre.
+POTI fungerer som et analytisk verktøy for å forstå både nåværende tilstand (\"as-is\") og en ønsket fremtidig tilstand (\"to-be\") i en virksomhet. Ved å systematisk gå gjennom hvert av de fire elementene, kan arkitekter og beslutningstakre identifisere styrker, svakheter og forbedringsområder. Dette er spesielt nyttig i forbindelse med digital transformasjon, omorganiseringer eller implementering av nye teknologiske løsninger.
+
+* Prosess
+* Organisasjon/Mennesker
+* Teknologi
+* Informasjon
+
+De fire pilarene i POTI
+
+* Prosesser: Dette omfatter arbeidsflyter og prosedyrer som virksomheten benytter for å levere verdi. Analyse av prosesser ser på hvordan oppgaver utføres, rekkefølgen på aktiviteter, og hvordan man kan optimalisere disse for økt effektivitet og kvalitet.
+* Organisasjon: Dette elementet fokuserer på menneskene og strukturen i virksomheten. Det inkluderer roller, ansvar, kompetanse, organisasjonskart og kultur. En analyse vil se på om organisasjonen er rigget for å støtte prosessene og strategiske mål.
+* Teknologi: Her ser man på IT-systemer, applikasjoner, infrastruktur og andre teknologiske verktøy som understøtter prosessene. Vurderingen går på om teknologien er formålstjenlig, moderne, sikker og godt integrert.
+* Informasjon: Dette dekker data og informasjon som virksomheten produserer, bruker og forvalter. Analyse av informasjonsaspektet ser på datakvalitet, tilgjengelighet, sikkerhet og hvordan informasjon flyter mellom prosesser og systemer.
+
+Målet er å sikre at man er rigget for å gjennomføre strategien effektivt.
+
+### Teknologi (Technology)
+Teknologi er en kritisk muliggjører for ytelse og innovasjon. I denne dimensjonen vurderes:
+* Hvilke verktøy og systemer er i bruk?
+* Er de integrerte, brukervennlige og skalerbare?
+* Hvor godt støtter de automatisering, samarbeid eller datadrevne beslutninger?
+
+Evaluering av teknologi bidrar til å avdekke muligheter for digital transformasjon og konkurransefortrinn.
+
+### Informasjon (Information)
+Dette fokuserer på kvaliteten, flyten og bruken av data:
+* Er informasjonen nøyaktig og tilgjengelig?
+* Orden i eget hus (se på modenhetsmodellen?)
+* Hvordan deles og analyseres data på tvers?
+* Datakvalitet
+* Felles datakatalog registrert?
+
+## Hvorfor bruke POTI-analyse?
+
+POTI er spesielt nyttig når en organisasjon:
+* Planlegger en transformasjon eller omstrukturering.
+* Tar i bruk nye teknologier eller systemer.
+* Utvider eller skalerer driften.
+* Søker større effektivitet eller virkning.
+
+Ved å bruke dette rammeverket kan selskaper utvikle et veikart for «nåsituasjon vs. fremtidig situasjon» og prioritere viktige tiltak for å lukke gap."""@nb ;
+    archimate:hasProperty na:prop-id-9860d11ff3fd40a5b541b8f929ed305f-Dekningsgrad .
+
+na:id-f1f34cea2b2e4b5b8f8a9be88321de42
+    a archimate:Resource ;
+    archimate:identifier "id-f1f34cea2b2e4b5b8f8a9be88321de42" ;
+    archimate:name "Standarder og veiledning"@nb ;
+    archimate:documentation """Ressurser som setter regler eller gir retning.
+
+Dette kan være:
+Standarder, veiledere, referansearkitekturer, metodikk
+Normeringsgrad kan være knyttet til disse virkemidlene."""@nb .
+
+na:id-a947552722064b7c93181833028cc2f1
+    a archimate:Resource ;
+    archimate:identifier "id-a947552722064b7c93181833028cc2f1" ;
+    archimate:name "Samhandlingsareneaer og organisering"@nb ;
+    archimate:documentation """Organiserte nettverk og styringsorganer for både dialog og strategisk samarbeid og samordning.
+
+Eksempler:
+* Samstyringsstruktur i kommunal sektor
+* Skate
+* ASR (Arkitektur- og standardiseringsrådet)
+* Faglig arena for datadeling og informasjonsforvaltning
+* Datalandsbyen
+* Offentlig PAAS - Slack for alle i offentlig sektor"""@nb .
+
+na:id-456429d236544c28b3d7257893b0dec6
+    a archimate:Resource ;
+    archimate:identifier "id-456429d236544c28b3d7257893b0dec6" ;
+    archimate:name "Økonomiske og juridiske rammer og virkemidler"@nb ;
+    archimate:documentation """Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
+
+Rammer og virkemidler kan være ressurser som er
+* Finansielle
+* Regulative"""@nb .
+
+na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5
+    a archimate:Capability ;
+    archimate:identifier "id-eb6f01d0d0ef4230b7a5c9c73c3842c5" ;
+    archimate:name "Strategisk kapabilitet (overordnet)"@nb ;
+    archimate:documentation """En kapabilitet beskriver \"hva\" en eller flere aktører må kunne gjøre for å skape verdi, uavhengig av hvordan det gjøres. Dette er den forretningsmessige evnen til å oppnå et mål.
+En kapabilitet er en grunnleggende funksjonell evne i det digitale økosystemet. Den beskriver hva som må være på plass for å oppnå felles nasjonale mål, uavhengig av organisatoriske grenser og tekniske løsninger.
+
+Kapabiliteter er typisk uttrykt med generelle termer og på høyt nivå. For at en kapabilitet skal nås kreves evner i form av ferdigheter gjennom en kombinasjon av ulike ressurser. 
+
+Prosesser, Organisasjon/mennesker, Teknologi, Informasjon (POTI).
+
+Kapabiliteter og grad av måloppnåelse
+- målverdi
+- dagens verdi
+= Finner Gap og modenhet 
+En kapabilitet kan realisere både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer, oppfyller eller tolker hensikten bak prinsippet i praksis.
+Modenhetsmodell, som CMMI (Capability Maturity Model Integration:
+* Måling av kapabilitetsmodenhet (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn ved å synliggjøre gapet mellom \"hvor gode vi er\" (As-Is) og \"hvor gode vi må være\" (To-Be).
+* Modenheten til en kapabilitet vurderes basert på tilstanden til de underliggende ressursene.
+
+Se også:
+De konkrete resultatene av å bruke kapabilitetene.
+Se på dybdeindikatorene fra nullpunktsmåling:
+https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
+F.eks:
+* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
+* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
+
+Hvordan vurdere modenhet? Gjør dette iht POTI
+People (Folk/Organisasjon): Har vi riktig kompetanse og nok hoder?
+Process (Prosess): Er rutinene dokumenterte og etterlevd?
+Technology (Teknologi): Har vi verktøystøtte som fungerer?
+Information (Informasjon): Er \"innholdet\" (dataene, kunnskapen, veiledningen)
+
+Togaf om Kapabilitetsplanlegging:
+https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap28.html"""@nb ;
+    archimate:hasProperty na:prop-id-eb6f01d0d0ef4230b7a5c9c73c3842c5-Maturity-Current ;
+    archimate:hasProperty na:prop-id-eb6f01d0d0ef4230b7a5c9c73c3842c5-Maturity-Target .
+
+na:id-30e12f5fdabe414db1430b0d735ed1f4
+    a archimate:CourseOfAction ;
+    archimate:identifier "id-30e12f5fdabe414db1430b0d735ed1f4" ;
+    archimate:name "Tiltak for å nå fremtidige mål"@nb ;
+    archimate:documentation """Dette er tiltak som realiserer eller gjør endringer på en eller flere kapabiliteter.
+
+Tiltakslisten (123) fra Digitaliseringsstrategien følges opp, i tillegg til andre relavante tiltak som bidrar til målene."""@nb .
+
+na:id-31be9bc0b80e4be4b2df2d8e0000dc6f
+    a archimate:ValueStream ;
+    archimate:identifier "id-31be9bc0b80e4be4b2df2d8e0000dc6f" ;
+    archimate:name "Verdistrømmer og prosesser"@nb ;
+    archimate:documentation """Verdistrøm representerer en sekvens av aktiviteter som skaper et samlet resultat for en kunde, interessent eller sluttbruker.
+
+Nasjonal arkitektur skal være kunnskaps- og datadrevet, og skal inneholde informasjon som skal kunne gjenbrukes i ulike verdistrømmer. Den skal inneholde viktige kapabiliteter og rammer for samhandling i felles økosystem, og den skal inneholde oversikt over hvilke løsninger og ressurser som kan benyttes for å dekke behov.  
+
+Det kan være ulike verdistrømmer for ulike brukergrupper og for ulike behov.
+* Operasjonelle verdistrømmer, der Nasjonal arkitektur inngår som en verktøykasse for daglige oppgaver. F.eks. tjenesteutvikling og produktutvikling.
+Målgruppe: Utførere, planleggere
+* Strategiske verdistrømmer, der Nasjonal arkitektur bidrar til at man tar valg for fremtiden
+Målgruppe: Beslutningstagere, planleggere"""@nb .
+
+na:id-a601bb3d7b11478185903149965f7842
+    a archimate:Capability ;
+    archimate:identifier "id-a601bb3d7b11478185903149965f7842" ;
+    archimate:name "Anvendelse av veiledning"@nb ;
+    archimate:documentation """Evne til tolke og benytte veiledere i prosjekter og tiltak.
+
+Dette innebærer:
+* Faktisk bruk av veiledningsmateriell til å faktisk å forstå og bruke dem i egne prosjekte og tiltak."""@nb .
+
+na:id-dabf94e621f644ffa53ebb44dcc9ff79
+    a archimate:Capability ;
+    archimate:identifier "id-dabf94e621f644ffa53ebb44dcc9ff79" ;
+    archimate:name "Arkitekturstyring"@nb ;
+    archimate:documentation """Evne til å etablere, forvalte og styre en helhetlig nasjonal digital arkitektur som et felles, forpliktende rammeverk, for å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem
+
+Dette innebærer:
+* Å sørger for at \"alle drar i samme retning\". Uten den vil digitaliseringen fortsette å være fragmentert, silobasert og suboptimal, der hver virksomhet optimaliserer for seg selv. Alle de andre kapabilitetene vi har definert – fra datadeling og integrasjon til sammenhengende tjenester – er resultater av at denne styringskapabiliteten fungerer. 
+* Å kunne benytte både myke og mer normerende virkemidler for å sikre etterlevelse og tatt i bruk.
+* Å opprettholde en helhetlig og kontinuerlig oversikt over de sentrale byggeklossene, arkitekturproduktene og ressursene i det nasjonale digitale økosystemet.  
+Oversikt må omfatte nasjonale fellesløsninger (som ID-porten og Altinn), felles datakilder (grunndata), felles plattformer (som KS sin FIKS-plattform) og kritiske tverrgående dataflyter. 
+En slik oversikt er fundamental for å kunne identifisere muligheter for gjenbruk, unngå kostbar duplisering av funksjonalitet, og styre livssyklusen til felleskomponentene på en strategisk måte. Porteføljeforvaltningen gir beslutningstakere det nødvendige grunnlaget for å vurdere hvilke nye fellesløsninger som bør utvikles og hvilke eksisterende som eventuelt bør fases ut.
+
+Etablering av rammeverk: Å utvikle og forvalte de sentrale komponentene i arkitekturen: Felles prinsipper, referansearkitekturer, obligatoriske standarder og en portefølje av nasjonale fellesløsninger.
+
+* Å jevnlig og systematisk vurdere modenhetsnivået for de nasjonale samhandlingskapabilitetene.
+Dette betyr å evaluere nåværende modenhetsnivåer for kapabiliteter og sette realistiske mål for forbedring. Dette kan gjøres gjennom ulike vurderingsmetoder, som selvvurderinger, lederes vurderinger og ekspertvurderinger, for å identifisere gap mellom nåværende og ønsket kapabilitetsnivå. 
+Et eksempel på en kjent metode er CMMI (Capability Maturity Model Integration).
+Det innebærer også å kunne vurdere nasjonale ressurser slik at de dekker fremtidens behov og deres egnethet til å realisere ønskede kapabiliteter."""@nb .
+
+na:id-ec0afaac123d4f9e83889d9022a198c3
+    a archimate:Capability ;
+    archimate:identifier "id-ec0afaac123d4f9e83889d9022a198c3" ;
+    archimate:name "Autentisering"@nb ;
+    archimate:documentation """Evne til å på en sikker og entydig måte verifisere den digitale identiteten til brukere og systemer"""@nb .
+
+na:id-84629318a3b84213ac3a83bdb6a1aad9
+    a archimate:Capability ;
+    archimate:identifier "id-84629318a3b84213ac3a83bdb6a1aad9" ;
+    archimate:name "Bruke data fra andre"@nb ;
+    archimate:documentation """Evne til å gjenbruke data fra andre i egne tjenester og prosesser.
+
+Dette innebærer:
+* At man ikke skal behøve å samle inn den samme informasjonen på nytt.
+* Å bruke grensesnitt basert på API, f.eks REST, GraphQL, eller andre klare, standardiserte og gjenbrukbare grensesnitt."""@nb .
+
+na:id-98df6c2b4df340c7a3a3ad32d99ca37e
+    a archimate:Capability ;
+    archimate:identifier "id-98df6c2b4df340c7a3a3ad32d99ca37e" ;
+    archimate:name "Datadrevet"@nb ;
+    archimate:documentation """Evne til å systematisk bruke data som en strategisk ressurs for å skape innsikt, informere beslutninger og utvikle bedre, mer treffsikre og effektive tjenester.
+
+Etisk og ansvarlig datautnyttelse: All bruk av data skjer på en sikker, lovlig og etisk forsvarlig måte som ivaretar personvern og rettssikkerhet.
+
+Dette innebærer:
+Forvaltningen systematisk bruker data som en strategisk ressurs i prosesser, beslutningstaking og tjenesteutvikling for å levere bedre og mer effektive tjenester til innbyggere og næringsliv.
+Dette forutsetter åpenhet, deling av data, og evne til å hente ut verdi fra data gjennom blant annet analyse, automatisering og bruk av kunstig intelligens."""@nb .
+
+na:id-d7aa97e6319a492d8a1345bcaa8e154a
+    a archimate:Capability ;
+    archimate:identifier "id-d7aa97e6319a492d8a1345bcaa8e154a" ;
+    archimate:name "Datakilder"@nb ;
+    archimate:documentation """Evne til å tilgjengeliggjøre og forvalte data som en nasjonal fellesressurs, slik at de kan oppdages, forstås og gjenbrukes på en sikker og standardisert måte.
+
+Dette innebærer også:
+Å organisere og styre data innenfor definerte tematiske domener, for å sikre helhetlig forvaltning og strategisk utvikling av dataressurser innenfor kritiske samfunnsområder."""@nb .
+
+na:id-5852d070415849fab42749cb488d984a
+    a archimate:Capability ;
+    archimate:identifier "id-5852d070415849fab42749cb488d984a" ;
+    archimate:name "Datastyring"@nb ;
+    archimate:documentation """Evne til å sikre enhetlig og ansvarlig forvaltning av dataressurser gjennom felles rammeverk, klar ansvarsplassering og systematisk kvalitetsarbeid.
+
+Datastyring (Data Governance) er rammeverket av roller, ansvar, prosesser og standarder som sikrer effektiv og forsvarlig forvaltning av data som en strategisk ressurs gjennom hele livssyklusen."""@nb .
+
+na:id-ad6f81e892a74590840828b6aabb270d
+    a archimate:Capability ;
+    archimate:identifier "id-ad6f81e892a74590840828b6aabb270d" ;
+    archimate:name "Datautveksling og integrasjon"@nb ;
+    archimate:documentation """Evne til å sikkert, effektivt og standardisert utveksle data mellom aktører i økosystemet.
+
+
+Mrk: Lommebok er inkludert i denne"""@nb .
+
+na:id-fa54a429cbd84db09da1b2b2165fc352
+    a archimate:Capability ;
+    archimate:identifier "id-fa54a429cbd84db09da1b2b2165fc352" ;
+    archimate:name "Dataanalyse"@nb ;
+    archimate:documentation """Evnen til å transformere rådata til meningsfull innsikt og bygge prediktive modeller.
+
+Herunder ligger bruk av KI-teknikker:
+Dette innebærer:
+
+Utvikling og trening av modeller: Å ha kompetanse og verktøy til å bygge, trene og validere maskinlæringsmodeller for spesifikke formål, som for eksempel klassifisering, prediksjon eller mønstergjenkjenning.
+
+Automatisering av kunnskapsarbeid: Å anvende KI, spesielt språkmodeller (NLP), til å tolke, sortere og hente ut informasjon fra ustrukturert tekst (som søknader, høringsinnspill eller e-poster) for å effektivisere saksbehandling.
+
+Prediksjon og prognoser: Å bruke prediktive modeller til å forutse fremtidige hendelser, behov eller risiko. For eksempel å identifisere hvilke innbyggere som har høyest risiko for å falle utenfor, eller å forutsi vedlikeholdsbehov på infrastruktur.
+
+Etisk og juridisk rammeverk: Å etablere og følge strenge retningslinjer for å sikre at KI-modeller er rettferdige, transparente, forklarbare og ikke-diskriminerende, og at bruken er i tråd med personvernregelverket.
+
+Operasjonalisering og forvaltning (MLOps): Å ha prosesser og systemer for å effektivt kunne produksjonssette, overvåke og kontinuerlig forbedre KI-modeller over tid.
+
+Begrunnelse for relevans
+KI er ikke bare en forlengelse av dataanalyse; det er en kapabilitet som muliggjør helt nye måter å jobbe på.
+
+Radikal effektivisering: KI kan automatisere kognitive oppgaver som tidligere krevde menneskelig vurdering. Dette kan frigjøre enorme ressurser fra rutinemessig saksbehandling til mer komplekse og verdifulle oppgaver.
+
+Mer intelligente og treffsikre tjenester: KI er selve motoren bak avansert personalisering og proaktivitet. En KI-modell kan vurdere et komplekst sett av variabler for å gi en innbygger et skreddersydd råd eller en proaktiv tjeneste som er langt mer treffsikkert enn generelle regler kan klare.
+
+Bedre beslutningsgrunnlag: KI kan analysere komplekse datasett og avdekke innsikter og sammenhenger som er umulige for mennesker å oppdage. Dette gir ledere og beslutningstakere et dypere og mer nøyaktig grunnlag for å utforme politikk og strategi.
+
+Økt innovasjonsevne: KI åpner opp for å løse problemer som tidligere var uløselige. Det kan for eksempel brukes til å analysere medisinske bilder, overvåke miljøendringer via satellittdata eller optimalisere trafikkflyt i en by i sanntid."""@nb .
+
+na:id-efe1a2676c124eeab946802af96a1ab7
+    a archimate:Capability ;
+    archimate:identifier "id-efe1a2676c124eeab946802af96a1ab7" ;
+    archimate:name "Dele data med andre"@nb ;
+    archimate:documentation """Evne til å tilgjengeliggjøre egne data som veldokumenterte og sikre API-er, slik at andre aktører med lovlig grunnlag enkelt kan oppdage og gjenbruke dem.
+
+Dette innebærer:
+
+Å etablere og forvalte sikre API-er etter nasjonale standarder.
+
+Å publisere og dokumentere dataene i Felles datakatalog, slik at de blir lette å finne og forstå.
+
+Å ha robuste systemer for tilgangsstyring som sikrer at data kun deles med de som har lov til det (f.eks. via Maskinporten)."""@nb .
+
+na:id-697145d3768b40d39f9463667b78f749
+    a archimate:Capability ;
+    archimate:identifier "id-697145d3768b40d39f9463667b78f749" ;
+    archimate:name "EU standarder"@nb ;
+    archimate:documentation """Evnen til at EU standardene forstås og tas i bruk.
+
+Forklaring:"""@nb .
+
+na:id-ecdde89168314bfb94b6a6ac70a55bc7
+    a archimate:Capability ;
+    archimate:identifier "id-ecdde89168314bfb94b6a6ac70a55bc7" ;
+    archimate:name "Finansiering"@nb ;
+    archimate:documentation """Evne til å utforme, anvende og forvalte finansielle virkemidler for å styre digitalisering i økosystemets i tråd med nasjonale mål"""@nb .
+
+na:id-b99fcd8160d24e5f8ea3c17b15072f7a
+    a archimate:Capability ;
+    archimate:identifier "id-b99fcd8160d24e5f8ea3c17b15072f7a" ;
+    archimate:name "Forvaltningsstandarder"@nb ;
+    archimate:documentation """Evne til å implementere og ta i bruk nasjonale standarder
+
+Dette innebærer:
+* inkluderer også EU harmoniserte standarder, som er vedtatt i norsk forvaltning"""@nb .
+
+na:id-f696350f5d844a96854deadb83bc3c81
+    a archimate:Capability ;
+    archimate:identifier "id-f696350f5d844a96854deadb83bc3c81" ;
+    archimate:name "Gjenbrukbare tjenester"@nb ;
+    archimate:documentation """Evne til å utvikle og benytte tjenester som kan brukes i nye sammenhenger på tvers av offentlig forvaltning og næringsliv. 
+
+Dette er en forretningsmessig verdi, som betyr at en tjeneste løser et problem som flere har, og at den er utviklet slik at den kan brukes av andre.
+
+Merk at knytningen til \"Integrerbare\" er at 
+Du kan ha et system som er teknisk integrerbart (har et API), men som ikke er gjenbrukbart (fordi forretningslogikken er for spesifikk/låst). Derfor bør de holdes adskilt."""@nb .
+
+na:id-3dbd3a9115cb4c54876490cbf02b0c58
+    a archimate:Capability ;
+    archimate:identifier "id-3dbd3a9115cb4c54876490cbf02b0c58" ;
+    archimate:name "Grunndata"@nb ;
+    archimate:documentation """Evne til å identifisere og formelt anerkjenne autoritative datakilder basert på en systematisk vurdering av deres verdi.
+
+Eksempler på kandidater nasjonale grunndata:
+Nøkkelregistre som er nasjonale grunndata:
+Folkeregisteret: Inneholder autoritative data om alle personer bosatt i Norge (identitet, bosted, familierelasjoner). Forvaltes av Skatteetaten.
+Enhetsregisteret: Inneholder autoritative data om alle norske juridiske enheter (bedrifter, foreninger, offentlige organer). Forvaltes av Brønnøysundregistrene.
+Matrikkelen (Eiendomsregisteret): Norges offisielle register over fast eiendom, bygninger og adresser. Forvaltes av Kartverket.
+Arbeidsgiver- og arbeidstakerregisteret (Aa-registeret): Inneholder data om arbeidsforhold i Norge. Forvaltes av NAV.
+
+Geografiske grunndata: Forvaltes av Kartverket."""@nb .
+
+na:id-64811e71d98647e5a678a0a2e79ae617
+    a archimate:Capability ;
+    archimate:identifier "id-64811e71d98647e5a678a0a2e79ae617" ;
+    archimate:name "Hendelsesdrevet"@nb ;
+    archimate:documentation """Evne til å publisere og reagere på digitale hendelser og kontinuerlige datastrømmer når de inntreffer.
+
+Hendelsesdrevet arkitektur er et designparadigme der en tjeneste kjøres etter å ha mottatt en hendelse. Det gjør det mulig å utveksle informasjon mellom distribuerte løsninger på tvers av virksomheter og sektorer i tilnærmet sanntid uten komplekse og tette integrasjoner.
+Det gjør det mulig å 
+* knytte tjenester sammen i tjenestekjeder, uten tette koplinger. 
+* monitorere og analysere data, ofte knyttet til «IoT – Internet of things» og datastrømmer.
+* tilby proaktive tjenester basert på analyser og hendelser"""@nb .
+
+na:id-4b66bbf964834654b5f0c61e955b91b1
+    a archimate:Capability ;
+    archimate:identifier "id-4b66bbf964834654b5f0c61e955b91b1" ;
+    archimate:name "Identifisering"@nb ;
+    archimate:documentation """Evne til entydig å fastslå og registrere identiteter (personer, virksomheter eller systemer) gjennom pålitelige metoder og kilder.
+
+Dette betyr videre at disse identitetene senere kan gjenkjennes og skilles fra andre, uavhengig av kontekst, og som legger til rette for sikker tilgangskontroll, sporbarhet og tillit"""@nb .
+
+na:id-5c6c20d50b6a4b168524901372f0ca6e
+    a archimate:Capability ;
+    archimate:identifier "id-5c6c20d50b6a4b168524901372f0ca6e" ;
+    archimate:name "Informasjonsarkitektur"@nb ;
+    archimate:documentation """Evne til å strukturere og modellere informasjon på en standardisert måte, slik at data og innhold blir finnbart, forståelig og gjenbrukbart for både mennesker og maskiner på tvers av hele økosystemet.
+
+
+Dette betyr:
+Arkitekturbeskrivelse gjennom et sett av krav, prinsipper og modeller, som er nødvendig for fleksibel deling og utveksling av informasjon for å oppnå endringsdyktighet"""@nb .
+
+na:id-896e4c1434604caa891b94bcce964720
+    a archimate:Capability ;
+    archimate:identifier "id-896e4c1434604caa891b94bcce964720" ;
+    archimate:name "Informasjonsforvaltning"@nb ;
+    archimate:documentation """Evne til å ha et felles rammeverk og styringsmodell for informasjonsforvaltning, slik at offentlige virksomheter kan utveksle og dele data og beskrivelser."""@nb .
+
+na:id-48c9873ae59341a49c2dca27379fab55
+    a archimate:Capability ;
+    archimate:identifier "id-48c9873ae59341a49c2dca27379fab55" ;
+    archimate:name "Informasjonssikkerhet"@nb ;
+    archimate:documentation """Evne til å ha tilstrekkelig sikkerhet i tjenester og løsninger som benyttes i felles økosystem. 
+Merk: Er sterkt knyttet til kapabilitet \"Tillit\""""@nb .
+
+na:id-60827614648541ef8520df87fa25d100
+    a archimate:Capability ;
+    archimate:identifier "id-60827614648541ef8520df87fa25d100" ;
+    archimate:name "Integrerbare tjenester"@nb ;
+    archimate:documentation """Evne til å designe, utvikle og eksponere data og funksjonalitet som selvstendige, standardiserte og maskinlesbare tjenester (API-er), slik at de enkelt kan oppdages, forstås og integreres i nye, tverrgående prosesser og løsninger.
+
+Dette innebærer:
+\"API-først\"-metodikk: Å utvikle tjenestene med det maskinlesbare grensesnittet (API-et) som det primære produktet, uavhengig av en spesifikk sluttbruker-applikasjon. API-et er designet for å være en robust og gjenbrukbar byggekloss.
+Sikkerhet: Å bygge inn sikkerhet og kontrollert tilgangsstyring som en fundamental del av tjenesten, slik at data kun deles med de som har lovlig grunnlag og legitimt behov.
+Robust livssyklusforvaltning: Å ha klare rutiner for versjonering, vedlikehold og en forutsigbar utfasing av tjenester, slik at de som bruker dem kan stole på at de er stabile over tid."""@nb .
+
+na:id-299fc063873a4f278a1d3c0ac9480467
+    a archimate:Capability ;
+    archimate:identifier "id-299fc063873a4f278a1d3c0ac9480467" ;
+    archimate:name "Juridisk samhandling"@nb ;
+    archimate:documentation """Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.
+
+Dette innebærer:
+Harmonisering: Å identifisere og håndtere motstridende eller overlappende lovverk og forskrifter som hindrer samhandling og datadeling.
+Fortolkning og veiledning: Å tilby felles, autoritative tolkninger av relevant regelverk (f.eks. GDPR, forvaltningsloven, eIDAS, EU lovverk) og utarbeide praktiske veiledere for virksomhetene.
+Regelverksutvikling: Å foreslå og koordinere endringer i regelverket for å tilpasse det til teknologisk utvikling og nye behov i økosystemet.
+Risikovurdering: Å etablere felles metoder og standarder for juridisk risikovurdering knyttet til datadeling og utvikling av nye, tverrgående tjenester."""@nb .
+
+na:id-b503993b59044b83b3c38fb179fa732c
+    a archimate:Capability ;
+    archimate:identifier "id-b503993b59044b83b3c38fb179fa732c" ;
+    archimate:name "Meldingsformidling"@nb ;
+    archimate:documentation """Evnen til å garantere levering og meldingsrekkefølge til rett mottaker.
+
+Meldingsformidling er den evnen vi trenger for å tilby en tekniske infrastruktur og de tjenestene som ligger mellom avsender og mottaker for å sørge for at utvekslingen skjer på en sikker, pålitelig og standardisert måte.
+
+Merk: Meldingsutveksling tilhører kapabiliteten innunder \"Datautveksling\""""@nb .
+
+na:id-ba60560a9ed64b4d87b2fd4fa6b32937
+    a archimate:Capability ;
+    archimate:identifier "id-ba60560a9ed64b4d87b2fd4fa6b32937" ;
+    archimate:name "Nasjonal arkitektur for samhandling"@nb ;
+    archimate:documentation """Evne til å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem.
+
+
+Felles økosystem skal bidra til økt deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv måte og skaper økte verdier for samfunnet.
+Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen mellom aktørene. 
+Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette."""@nb .
+
+na:id-9ea8fbaeb19243fa971013c57c3e96f9
+    a archimate:Capability ;
+    archimate:identifier "id-9ea8fbaeb19243fa971013c57c3e96f9" ;
+    archimate:name "Organisatorisk samhandling"@nb ;
+    archimate:documentation """Evnen til å effektivisere forretningsprosesser og verdikjeder på tvers av organisatoriske grenser. 
+
+Dette er en operativ og strukturell evne.
+Dette innebære:
+A kunne utvikle tjenester med utgangspunkt i brukerens behov og livssituasjon uavhengig av organisatoriske grenser og strukturer.
+Eksempel:
+Scenario A: Dere har gode samarbeidsarenaer (møter, fagforum), men arbeidsprosessene (selve samhandlingen) kan fortsatt være manuelle, tungvinte og ikke samkjørte."""@nb .
+
+na:id-718d8e94a9b847a485fc6518b4f2588d
+    a archimate:Capability ;
+    archimate:identifier "id-718d8e94a9b847a485fc6518b4f2588d" ;
+    archimate:name "Oversikt over API "@nb ;
+    archimate:documentation """Evne til å datadeling og tjenesteintegrasjon ved å oppdage, forstå og koble seg til tilgjengelige data via en standardisert oversikt over maskinlesbare grensesnitt (API-er)."""@nb .
+
+na:id-dc38d2667240445db35f7f0f38fc1e15
+    a archimate:Capability ;
+    archimate:identifier "id-dc38d2667240445db35f7f0f38fc1e15" ;
+    archimate:name "Oversikt over begreper"@nb ;
+    archimate:documentation """Evne til å etablere en omforent begrepsforståelse ved å definere, dele og gjenbruke begreper på tvers av virksomheter, for å sikre entydig kommunikasjon og semantisk samhandlingsevne"""@nb .
+
+na:id-3c6f94ba791a4aa298809ef3f46bdc87
+    a archimate:Capability ;
+    archimate:identifier "id-3c6f94ba791a4aa298809ef3f46bdc87" ;
+    archimate:name "Oversikt over datasett"@nb ;
+    archimate:documentation """Evne til å systematisk oppdage, vurdere og gjenbruke data på tvers av offentlig sektor gjennom en sentral, standardisert oversikt over tilgjengelige datasett."""@nb .
+
+na:id-e5a55d4bacd14740a656bc896d25497a
+    a archimate:Capability ;
+    archimate:identifier "id-e5a55d4bacd14740a656bc896d25497a" ;
+    archimate:name "Oversikt over hendelser"@nb ;
+    archimate:documentation """Evne til å få oversikt over hvilke hendelser som utløser eller utløses av en tjeneste."""@nb .
+
+na:id-a40bf39259434db48f358cc543428c8a
+    a archimate:Capability ;
+    archimate:identifier "id-a40bf39259434db48f358cc543428c8a" ;
+    archimate:name "Oversikt over informasjonsmodeller"@nb ;
+    archimate:documentation """Evne til å gi oversikt over informasjonsmodeller for å kunne gi en felles forståelse av datastrukturer, slik at data kan tolkes korrekt og meningsfullt."""@nb .
+
+na:id-d9374751da7d4b36bb0b3be609ff7d28
+    a archimate:Capability ;
+    archimate:identifier "id-d9374751da7d4b36bb0b3be609ff7d28" ;
+    archimate:name "Oversikt over tjenester"@nb ;
+    archimate:documentation """Evne til å gi oversikt over og oppdage tjenester som tilbys av eller på vegne av offentlig sektor."""@nb .
+
+na:id-9bc3012bcd154e27aa094ac36bf391be
+    a archimate:Capability ;
+    archimate:identifier "id-9bc3012bcd154e27aa094ac36bf391be" ;
+    archimate:name "Proaktive tjenester"@nb ;
+    archimate:documentation """Evne til å, basert på registrerte hendelser og delte data, automatisk identifisere en brukers behov for offentlige tjenester og proaktivt tilby relevant informasjon, veiledning eller starte en tjenesteprosess på vegne av brukeren.
+
+Brukeren blir varslet om rettigheter, plikter eller muligheter de har, før de selv har etterspurt det.
+Dette kan innebære:
+Hendelsesdrevet arkitektur (\"Event-driven\"): Å ha teknisk evne til å \"lytte\" etter endringer i autoritative datakilder (f.eks. Folkeregisteret, Enhetsregisteret) som signaliserer at en viktig livshendelse har inntruffet (f.eks. fødsel, dødsfall, flytting, fylt 18 år, registrert arbeidsledighet).
+
+Regelverk og logikk for relevans: Å etablere og forvalte et sett med forretningsregler som kobler spesifikke hendelser til et sett av rettigheter, plikter og relevante tjenester. For eksempel: HVIS fødsel er registrert OG mor er bosatt i kommune X, SÅ informer om foreldrepenger, barnetrygd og søknad om barnehageplass.
+
+Personalisert og kanal-uavhengig varsling: Å kunne sende ut et personalisert, relevant og betimelig varsel til brukeren gjennom deres foretrukne, sikre digitale kanal
+
+Initiering av forhåndsutfylte tjenester: Å ikke bare informere, men også aktivt hjelpe brukeren i gang. For eksempel ved å sende en lenke til et ferdig utfylt søknadsskjema basert på informasjonen systemet allerede har.
+
+Begrunnelse for relevans
+Denne kapabiliteten representerer et paradigmeskifte i offentlig tjenesteyting.
+
+Sikrer at innbyggere får sine rettigheter: Mange kjenner ikke til alle støtteordninger eller tjenester de har krav på. Proaktivitet er det mest effektive verktøyet for å sikre at velferdsstatens goder når frem til de som trenger dem, og reduserer sosial ulikhet skapt av informasjonskløfter.
+
+Forenkler etterlevelse av plikter: Ved å varsle i forkant om frister og plikter (f.eks. fornyelse av en tillatelse, innsending av en rapport), blir det enklere for innbyggere og næringsliv å gjøre ting riktig. Dette reduserer antall forglemmelser, feil og unødvendig bruk av sanksjoner.
+
+Bygger dyp tillit og en følelse av partnerskap: En proaktiv forvaltning oppleves som en partner som hjelper og støtter, snarere enn en byråkratisk motpart man må kjempe mot. Dette er ekstremt verdifullt for å bygge og opprettholde tilliten til samfunnsinstitusjonene.
+
+Reduserer unødvendig kontakt og saksbehandling: Ved å svare på brukernes spørsmål før de stiller dem, og ved å veilede dem riktig fra start, kan man dramatisk redusere henvendelser til kontaktsentre og saksbehandlere. Ressursene kan dermed frigjøres til å håndtere mer komplekse og krevende saker.
+
+Uten proaktivitet forblir selv de beste digitale tjenestene passive verktøy som krever at brukeren selv har kunnskapen, initiativet og overskuddet til å finne frem. Proaktivitet snur dette på hodet og gjør forvaltningen til en reell, hjelpende hånd i innbyggernes liv."""@nb .
+
+na:id-0209483504444508a40415aa6e3fc39c
+    a archimate:Capability ;
+    archimate:identifier "id-0209483504444508a40415aa6e3fc39c" ;
+    archimate:name "Regelverkstolkning"@nb ;
+    archimate:documentation """Evne til å tilby felles, autoritative tolkninger av relevant regelverk.
+
+Dette innebærer:
+* juridisk risikovurdering: Ved å tilby felles tolkninger, etablerer man også felles risikoforståelse."""@nb .
+
+na:id-0119029984674da59dbbfdc3a8ca3e95
+    a archimate:Capability ;
+    archimate:identifier "id-0119029984674da59dbbfdc3a8ca3e95" ;
+    archimate:name "Regelverksutvikling"@nb ;
+    archimate:documentation """Evne til å foreslå og koordinere endringer i regelverket for å tilpasse det til teknologisk utvikling og nye behov.
+
+Dette innebærer:
+* Å identifisere motstridende regelverk, der hamonisering er nødvendig
+* Foreslå og koordinere endringer for å tilpasse lovverket"""@nb .
+
+na:id-b2aafe1f4c534db6b92c40b1eef605f2
+    a archimate:Capability ;
+    archimate:identifier "id-b2aafe1f4c534db6b92c40b1eef605f2" ;
+    archimate:name "Representasjon"@nb ;
+    archimate:documentation """Evne til å kunne opptre eller utføre handlinger digitalt på vegne av andre. 
+
+Dette innebærer:
+Å kunne etablere, validere, forvalte og dokumentere representasjonsforhold mellom en representant og en representert, slik at rettigheter og myndighet kan utøves på vegne av andre i henhold til lovverk, fullmakter eller vedtak.
+Det må kunne være sporbart og ha tilstrekkelig oversikt for involverte parter.
+
+Representasjon betyr at en person (representanten) har rett til å handle på vegne av en annen person eller en virksomhet (den representerte) på en slik måte at den representerte blir bundet av handlingen.
+
+Representasjon inkluderer bl.a. følgende:
+* Fullmakt (avtaleregulert representasjonsforhold): Innebærer kunne gi en viljeserklæring, der den som gir fullmakt tildeler en person eller en virksomhet (fullmektigen) myndighet til å opptre eller gjøre noe på sine vegne.
+* Vergemål (lovregulert representasjonsforhold)
+* Foreldreansvar (lovregulert representasjonsforhold)"""@nb .
+
+na:id-e67a4f2983ce40f9823ec34ba460055a
+    a archimate:Capability ;
+    archimate:identifier "id-e67a4f2983ce40f9823ec34ba460055a" ;
+    archimate:name "Samarbeid"@nb ;
+    archimate:documentation """Evne til å samarbeid og samhandling på tvers av offentlig og privat forvaltning."""@nb .
+
+na:id-b4a86e2e430c472b9f74bedb7f66fd74
+    a archimate:Capability ;
+    archimate:identifier "id-b4a86e2e430c472b9f74bedb7f66fd74" ;
+    archimate:name "Samarbeidsarenaer og nettverk"@nb ;
+    archimate:documentation """Evne til å effektivisere, etablere, forvalte og fasilitere arenaer, nettverk og prosesser som fremmer kunnskapsdeling, dialog og samordning på tvers av virksomheter i økosystemet.
+
+Dette innebærer:
+Etablering av samhandlingsarenaer: Å skape og drifte møteplasser, både fysiske og digitale (f.eks. fagforum, workshops, partnersamlinger), hvor aktører kan utveksle erfaringer, diskutere felles utfordringer, utforske samarbeidsmuligheter og være rådgivende. 
+
+Nettverksbygging: Å aktivt koble sammen fagpersoner, prosjekter og virksomheter som har felles interesser eller overlappende behov, for å stimulere til nye samarbeidskonstellasjoner.
+
+Systematisk kunnskapsdeling: Å etablere kanaler og rutiner for å dele innsikt, \"beste praksis\", veiledere og lærdom fra vellykkede og mislykkede initiativer, slik at hele økosystemet lærer og utvikler seg raskere.
+
+Fasilitering og prosessledelse: Å tilby nøytral møte- og prosessledelse for å hjelpe grupper med å oppnå felles forståelse, bygge konsensus og utvikle felles løsninger, uten å ha formell beslutningsmyndighet.
+
+Rådgivning om samarbeidsmodeller: Å gi råd og veiledning til virksomheter om egnede modeller for samarbeid, som felles prosjekter, partnerskap eller mer uformelle nettverk."""@nb .
+
+na:id-0aa7eced8c5c460f8bc64b77bd6a16c4
+    a archimate:Capability ;
+    archimate:identifier "id-0aa7eced8c5c460f8bc64b77bd6a16c4" ;
+    archimate:name "Sammenhengende tjenester"@nb ;
+    archimate:documentation """Evne til å levere en digital brukerorienterte tjenester som fremstår som en logisk og uavbrutt prosess for brukeren, selv når den involverer og koordinerer handlinger og tjenester fra flere, uavhengige virksomheter.
+
+Dette oppleves av brukeren som:
+
+En guidet reise: Brukeren blir ledet steg-for-steg gjennom en prosess fra start til slutt, uten å måtte lete etter neste skritt eller lure på hva som skjer nå. Tjenesten forteller proaktivt hva som er gjort, og hva som er neste steg.
+
+\"Kun én gang\"-prinsippet: Brukeren oppgir informasjon kun én gang. Denne informasjonen gjenbrukes intelligent i alle senere steg i prosessen, uavhengig av hvilken etat som trenger den.
+
+Ingen \"døde ender\": Brukeren blir aldri stående fast med beskjeden \"Nå må du gå til X-etatens nettsider for å fortsette\". Systemet sender brukeren, eller dataene, videre til neste ledd i kjeden på en kontrollert og sømløs måte.
+
+Skjult kompleksitet: Brukeren trenger ikke å kjenne til, eller forholde seg til, hvilke etater eller forvaltningsnivåer (statlig, kommunal) som er involvert. Opplevelsen er at man forholder seg til \"Det Offentlige\"."""@nb .
+
+na:id-7e3d1d3396914d65a177c9d5346d6feb
+    a archimate:Capability ;
+    archimate:identifier "id-7e3d1d3396914d65a177c9d5346d6feb" ;
+    archimate:name "Sammenstilling av data"@nb ;
+    archimate:documentation """Evne til å hente, kombinere og foredle data fra ulike kilder for å skape ny innsikt, et helhetlig beslutningsgrunnlag, eller sammenhengende tjenester for brukeren."""@nb .
+
+na:id-034543e002414306a8fbecc8c9d8e496
+    a archimate:Capability ;
+    archimate:identifier "id-034543e002414306a8fbecc8c9d8e496" ;
+    archimate:name "Samordning"@nb ;
+    archimate:documentation """Evnen til å harmonisere og koordinere strategisk retning, beslutninger og ressursbruk på tvers av virksomheter, for å realisere felles samfunnsmål og sammenhengende tjenester.
+
+Dette innebærer:
+En tydelig styring eller mandat som krever at aktørene tilpasser hverandre. 
+
+Samordning på ulike nivåer (Juridisk, Organisatorisk Semantisk, Teknisk):
+* Juridisk samordning: Å sørge for at juss og forvaltningspraksis i ulike virksomheter er kompatible.
+	Eksempel: At Skatteetaten og NAV tolker \"inntekt\" likt nok til at data kan flyte automatisk, eller at hjemmelsgrunnlaget for deling er på plass.
+* Organisatorisk samordning: Å sørge for felles arbeidsprosesser og ansvarsfordeling.
+	Eksempel: Hvem \"eier\" brukeren i livshendelsen \"Få barn\"? Er det sykehuset, Folkeregisteret eller NAV? Å samordne betyr å definere denne stafetten.
+* Semantisk samordning: Å sørge for at felles forståelse på hva dataene betyr.
+	Eksempel: At begrepet \"ansatt\" betyr det samme i to systemer, slik at maskiner kan forstå hverandre.
+* Teknisk samordning: Å sørge for at felles standarder og fellesløsninger blir tatt i bruk.
+	Handlingen: Å velge gjenbrukbare nasjonale løsninger fremfor å bygge egne, proprietære løsninger."""@nb .
+
+na:id-809f454dc4024d56ab54079252fdfe29
+    a archimate:Capability ;
+    archimate:identifier "id-809f454dc4024d56ab54079252fdfe29" ;
+    archimate:name "Samtykke"@nb ;
+    archimate:documentation """Evne til å akseptere, godkjenne eller gi tillatelse til at en handling kan foretas på vegne av seg selv eller andre, der det foreligger et representasjonsforhold.
+
+Dette innebærer å kunne innhente, administrere og dokumentere gyldige, frivillige og informerte samtykker fra personer for behandling og deling av deres opplysninger og sikre at samtykker kan gis, spores, og enkelt trekkes tilbake.
+Et samtykke er en aktiv, frivillig og informert viljeserklæring fra en person som gir en annen part tillatelse til å utføre en bestemt handling som berører dem eller deres data.
+Merk at: Samtykke er i utgangspunktet ikke en formell form for representasjon.
+
+Eksempel:
+Samtykke: Jeg gir noen lov til å gjøre noe overfor meg eller med mine data. Handlingen er rettet mot meg selv eller min sfære.
+Eksempel: Jeg gir Altinn (tjenesteyter) lov til å hente mine skattedata. Altinn handler ikke på mine vegne, de utfører en handling jeg har gitt dem tillatelse til.
+
+Det kan oppstå situasjoner der en representant må gi et samtykke på vegne av den de representerer.
+Eksempel: En verge (representant) gir samtykke til en medisinsk behandling for et barn (den representerte).
+I dette tilfellet ser vi hvordan konseptene virker sammen: Vergen utøver sin representasjonsrett til å avgi et samtykke på vegne av barnet. Men selve samtykket og representasjonen er fortsatt to distinkte juridiske handlinger."""@nb .
+
+na:id-711390c3ddaa4b67914ccbcc2f1831aa
+    a archimate:Capability ;
+    archimate:identifier "id-711390c3ddaa4b67914ccbcc2f1831aa" ;
+    archimate:name "Sanntidsdata"@nb ;
+    archimate:documentation """Evne til å sikkert prosessere og distribuere kontinuerlige datastrømmer for å muliggjøre sanntidsinnsikt, automatisering og umiddelbar respons.
+
+Dette innebærer:
+* Å kunne tilby data fra sensorer, tingenes internett (IoT) og andre hendelseskilder"""@nb .
+
+na:id-f5214c3db8de4738ab03abb7b7e553ed
+    a archimate:Capability ;
+    archimate:identifier "id-f5214c3db8de4738ab03abb7b7e553ed" ;
+    archimate:name "Signering"@nb ;
+    archimate:documentation """Evne til juridisk bindende signerering av dokumenter eller transaksjoner"""@nb .
+
+na:id-34d3d64b3afe4327a29ee6c2f7f74dff
+    a archimate:Capability ;
+    archimate:identifier "id-34d3d64b3afe4327a29ee6c2f7f74dff" ;
+    archimate:name "Sikring av informasjonsflyt og datautveksling"@nb ;
+    archimate:documentation """Kapabiliteten omfatter de tekniske og organisatoriske tiltakene som sikrer at informasjon som utveksles mellom virksomheter er beskyttet mot innsyn og manipulering, og at dataflyten er kontrollert."""@nb .
+
+na:id-1be148b57796458993c3f7f5f24815ca
+    a archimate:Capability ;
+    archimate:identifier "id-1be148b57796458993c3f7f5f24815ca" ;
+    archimate:name "Sluttbrukertjenester"@nb ;
+    archimate:documentation """Evne til å tilby en sammenhengende digital brukeropplevelse gjennom et økosystem av standardiserte og integrerbare tjenester."""@nb .
+
+na:id-2dfe07b3eae740b9a292e0a4a42d22db
+    a archimate:Capability ;
+    archimate:identifier "id-2dfe07b3eae740b9a292e0a4a42d22db" ;
+    archimate:name "Sporbarhet og innsyn"@nb ;
+    archimate:documentation """Evne til dokumentasjon og logging av oppysninger for bruk i innsyn, forvaltning og kontroll av tillitstjenester."""@nb .
+
+na:id-c3f87c86b19547359c677a333b16f03b
+    a archimate:Capability ;
+    archimate:identifier "id-c3f87c86b19547359c677a333b16f03b" ;
+    archimate:name "Standardisering"@nb ;
+    archimate:documentation """Evne til å identifisere, vedta, forvalte og fremme bruk av omforente standarder og spesifikasjoner som sikrer interoperabilitet og gjenbruk på tvers av sektorer og landegrenser.
+
+Dette innebærer:
+Harmonisering: Å sikre at nasjonale standarder er i samsvar med internasjonale standarder (som EU-harmoniserte standarder) for å muliggjøre samhandling over landegrensene.
+Livssyklusforvaltning: Å ha prosesser for å vurdere nye standarder, vedlikeholde eksisterende, og fase ut foreldede standarder i takt med teknologisk utvikling.
+Veiledning: Å gjøre standardene tilgjengelige og forståelige, slik at de enkelt kan implementeres i tjenester og løsninger.
+Etterlevelse: Å legge til rette for at fellesløsninger og virksomheter faktisk tar i bruk vedtatte forvaltningsstandarder i sine anskaffelser og utviklingsløp."""@nb .
+
+na:id-682d96a51e604ed2a00e1f4824023bab
+    a archimate:Capability ;
+    archimate:identifier "id-682d96a51e604ed2a00e1f4824023bab" ;
+    archimate:name "Strategisk styring"@nb ;
+    archimate:documentation """Evnen til å sette retning for nasjonal arkitektur og realisere strategiske mål."""@nb .
+
+na:id-980043f78fa94eec8ecf46338a5b9c6b
+    a archimate:Capability ;
+    archimate:identifier "id-980043f78fa94eec8ecf46338a5b9c6b" ;
+    archimate:name "Styringssystem"@nb ;
+    archimate:documentation """Evne til å evaluere, forbedre, fornye styringssystem for informasjonssikkerhet.
+
+Dette innebærer:
+Innebærer at en virksomhet systematisk vurderer hvordan deres nåværende sikkerhetsstyringssystem fungerer, identifiserer forbedringsområder, og tilpasser eller oppdaterer systemet for å møte nye trusler, sårbarheter og endringer i virksomhetens behov eller omgivelsene. Dette inkluderer regelmessige risikovurderinger, kontroll av om sikkerhetstiltak er effektive, og implementering av tiltak for å lukke eventuelle sikkerhetsgap"""@nb .
+
+na:id-68ec332ee94c483e878a3a2ae903863f
+    a archimate:Capability ;
+    archimate:identifier "id-68ec332ee94c483e878a3a2ae903863f" ;
+    archimate:name "Testdata"@nb ;
+    archimate:documentation """Evne til å generere og tilgjengeliggjøre representative og personvernsikre datasett.
+
+
+Dette innebærer:
+* At dataene kan benyttes til analyse- og testformål uten behov for strenge sikkerhetsklareringer.
+* At dataene er helt uten kobling til virkelige personer eller virksomheter.
+* Inkluderer ulike type test- og analysedata, feks. syntetiske data og anonymiserte data
+
+Denne kapabiliteten sikrer at virksomheten kan operere med datasett som speiler kompleksiteten og de statistiske egenskapene til reelle produksjonsdata, uten at dette medfører risiko for personvernet eller krav om omfattende sikkerhetsklareringer.
+Dette muliggjør effektiv systemutvikling, kvalitetssikring og innsiktsarbeid i lukkede miljøer.
+
+I en nasjonal sammenheng er denne kapabiliteten kritisk for å kunne drive tverrsektoriell tjenesteutvikling. Når ulike virksomheter skal samhandle, er tilgang på gode testdata ofte den største flaskehalsen. Ved å mestre denne kapabiliteten kan man teste sammenhengende tjenester uten å utveksle faktiske data mellom systemer i testfasen.
+
+Inkluderer ulike teknikker som:
+* Syntetiske data: Data generert fra bunnen av basert på statistiske modeller.
+* Anonymiserte data: Reelle data som er ugjenkallelig endret slik at identifisering ikke lenger er mulig.
+* Pseudonymiserte/maskerte data: Identifiserende opplysninger som er ersattet slik at de ikke kan identfisere en fysisk person uten bruk av tilleggsopplysninger"""@nb .
+
+na:id-a8a1eb0181f04006ba7d3b5ab2fa9ca8
+    a archimate:Capability ;
+    archimate:identifier "id-a8a1eb0181f04006ba7d3b5ab2fa9ca8" ;
+    archimate:name "Tilgangskontroll"@nb ;
+    archimate:documentation """Evne til å kontrollere at en bruker har rettighet til å benytte angitt ressurs eller tjeneste på vegne av andre eller seg selv.
+
+Tilgangskontroll er den operative og tekniske evnen til å verifisere og håndheve en brukers rettigheter i sanntid når de forsøker å utføre en handling.
+Det er den tekniske håndhevelsen av tilgangsstyringen.
+
+Tilgangsstyring er forutsetningen for god tilgangskontroll."""@nb .
+
+na:id-b440252bc3de42dea8468be54e54b1fa
+    a archimate:Capability ;
+    archimate:identifier "id-b440252bc3de42dea8468be54e54b1fa" ;
+    archimate:name "Tilgangsstyring"@nb ;
+    archimate:documentation """Evne til å styre og gi tilgang til hvem som har rettighet til å benytte en ressurs (tjeneste, system, API, opplysning) på vegne av seg selv, andre personer eller virksomheter. Autorisering.
+
+Dette er en overordnet kapabilitet som omfatter hele livssyklusen til en rettighet. I praksis betyr det å ha systemer og prosesser for å:
+Definere roller: Sette opp roller med forhåndsdefinerte sett av rettigheter (f.eks., \"regnskapsfører\" eller \"daglig leder\").
+Delegere tilgang: Gi virksomheter og personer mulighet til å tildele disse rollene og enkeltrettigheter til andre, for eksempel en ansatt eller en regnskapsfører.
+Forvalte representasjon: Håndtere hvem som kan handle på vegne av en virksomhet eller en annen person.
+Opprettholde oversikt: Sikre oversikt over hvem som har tilgang til hva, slik at det er mulig å revidere og trekke tilbake tilganger ved behov."""@nb .
+
+na:id-d503cf06faa1417b8acd4b26a5c0741e
+    a archimate:Capability ;
+    archimate:identifier "id-d503cf06faa1417b8acd4b26a5c0741e" ;
+    archimate:name "Tillit"@nb ;
+    archimate:documentation """Evne å tilby tillitstjenester som muliggjører autentisering og autorisasjon på tvers av tjenestekjeder, og støtte en distribuert arkitektur og føderering mellom ulike domener og tjeneste"""@nb .
+
+na:id-379e167f7b9c4fbea9c6969425ba7f6c
+    a archimate:Capability ;
+    archimate:identifier "id-379e167f7b9c4fbea9c6969425ba7f6c" ;
+    archimate:name "Tjenestedesign"@nb ;
+    archimate:documentation """Evne til å sette brukerens behov, livssituasjon og helhetlige reise som utgangspunkt for utvikling av sammenhengende tjenester.
+
+Dette innebærer:
+* Å systematisk innhente og bruke kunnskap om brukernes faktiske behov, adferd og utfordringer.
+* Å designe tjenester som dekker hele brukerbehovet fra start til slutt, selv når løsningen krever samarbeid tverrsektorielt og ulike forvaltningsnivå."""@nb .
+
+na:id-3f59d920995e4d488e56f61356dcf97a
+    a archimate:Capability ;
+    archimate:identifier "id-3f59d920995e4d488e56f61356dcf97a" ;
+    archimate:name "Tjenesteforvaltning"@nb ;
+    archimate:documentation """Evne til å formalisere samarbeid gjennom tydelig definerte roller, ansvar og avtaler for å sikre forutsigbar og effektiv felles styring mellom samhandlende virksomheter.
+Avtalefesting av ansvar (SLA, governance) i tjenestekjeder.
+
+Når tjenester settes sammen av bidrag fra flere ulike virksomheter, oppstår det nye og komplekse styringsutfordringer. Denne kapabiliteten handler om å designe og implementere styringsmodeller som er tilpasset slike tverrgående tjenestekjeder og digitale økosystemer. Dette innebærer å tydelig definere roller og ansvar for hele kjeden, fra ende-til-ende, og plassere ansvaret for at helheten fungerer. For de prioriterte livshendelsene i digitaliseringsstrategien, vil slike styringsmodeller være avgjørende for å sikre at brukeren opplever en sømløs tjeneste, uavhengig av hvordan forvaltningen er organisert \"bak fasaden\"
+
+Dette innebærer:
+Etablere klare roller og ansvar: Hver virksomhet må vite nøyaktig hva som forventes av dem i samarbeidet.
+Formalisere samarbeid: Inngåelse av formelle avtaler som samforståelsesmemorandum (MoU) og tjenestenivåavtaler (SLA) for å sikre forpliktelse og forutsigbarhet i leveransene.
+Felles forvaltningsmodeller: Enighet om hvordan felles løsninger og tjenester skal styres, vedlikeholdes og videreutvikles over tid."""@nb .
+
+na:id-825b1ea1217b4eedb6caae165aeb8e41
+    a archimate:Capability ;
+    archimate:identifier "id-825b1ea1217b4eedb6caae165aeb8e41" ;
+    archimate:name "Tjenestekjeder"@nb ;
+    archimate:documentation """Evne til å dynamisk sette sammen, koordinere og automatisere flyten av informasjon og prosesser på tvers av uavhengige, integrerbare tjenester for å levere en komplett ende-til-ende-tjeneste for brukeren."""@nb .
+
+na:id-cd3b6a8989a448a2b4dfbf430a41bad4
+    a archimate:Capability ;
+    archimate:identifier "id-cd3b6a8989a448a2b4dfbf430a41bad4" ;
+    archimate:name "Tjenesteutvikling"@nb ;
+    archimate:documentation """Evne til å utvikle sammenhengende digitale tjenester.
+
+Dette er knyttet til prosess- og kompetanse-kapabilitet. Det innebærer å utvikle tjenester basert på metodikk, design, koding og samarbeid."""@nb .
+
+na:id-08d657e690c046019dbf6d52b1ed4d63
+    a archimate:Capability ;
+    archimate:identifier "id-08d657e690c046019dbf6d52b1ed4d63" ;
+    archimate:name "Ustrukturerte data"@nb ;
+    archimate:documentation """Evne til å tilgjengeliggjøre og forvalte data som ikke er påført en forhåndsdefinert struktur.
+
+
+Dette innebærer:
+* Kapasitet til å lagre og organisere data som ikke passer i tradisjonelle strukturer, slik som fritekst-dokumenter, e-poster, bilder, lydopptak, video og råe loggfiler.
+* Dataene er ofte i sin opprinnelige form."""@nb .
+
+na:id-0bfa29018e7144578b2184e70414b7e8
+    a archimate:Capability ;
+    archimate:identifier "id-0bfa29018e7144578b2184e70414b7e8" ;
+    archimate:name "Utvikling og formidling av veiledning"@nb ;
+    archimate:documentation """Evne til å utarbeide, kvalitetssikre og tilgjengeliggjøre veiledning.
+
+Denne innebærer:
+* Å kunne omsette politikk, juss og teknologisk beste praksis til forståelige og distribuerte verktøy (prinsipper, referansearkitekturer osv.).
+* F.eks. veiledninger på regelverk, referansearkitekturer, omforente prinsipper, standarder, samhandlingsmønstre og beskrivelser av beste praksis."""@nb .
+
+na:id-ce84b9b6943f4789bca153c0ed15245a
+    a archimate:Capability ;
+    archimate:identifier "id-ce84b9b6943f4789bca153c0ed15245a" ;
+    archimate:name "Utviklings- og kjøretidsmiljø"@nb ;
+    archimate:documentation """Evne til å tilby og forvalte en felles, skalerbar teknisk plattform og en tilhørende verktøykasse med standardiserte byggeklosser, verktøy og utviklingsmiljøe som forenkler og akselererer utviklingen av digitale tjenester.
+
+Dette innebærer:
+Tjenesteutvikling foregår i stor grad i sektorene og den enkelte virksomhet. Det vil allikevel være behov for å tilby felles utviklings- og kjøretidsmiljø for hele offentlig sektor eller for enkeltsektorer."""@nb .
+
+na:id-c0547226c598467a942dced879d0c18b
+    a archimate:Capability ;
+    archimate:identifier "id-c0547226c598467a942dced879d0c18b" ;
+    archimate:name "Veiledning"@nb ;
+    archimate:documentation """Evne til at veiledninger for digital samhandling utarbeides og benyttes i felles økosystem.
+
+Dette innebærer:
+* Beskrivelser av beste praksis
+* Omforente prinsipper, mønstre og standarder for hvordan løsninger skal bygges for å fungere optimalt, sikkert og sammenhengende i det nasjonale økosystemet.
+* Referansearkitekturer
+
+* hva som er god faglig praksis
+* hvordan relevant regelverk skal tolkes
+* hvilke prioriteringer som er i samsvar med vedtatt politikk
+
+Veiledere kan ha ulik grad av styrke:
+* Bør benyttes: en sterk anbefaling/råd som vil gjelde de aller fleste. Denne er så klart faglig forankret at det sjelden er forsvarlig ikke å gjøre som anbefalt
+* Kan eller foreslår: en svak anbefaling/råd der ulike valg kan være riktig."""@nb .
+
+na:id-8914d57f4f1442b1b562252a3630a686
+    a archimate:Capability ;
+    archimate:identifier "id-8914d57f4f1442b1b562252a3630a686" ;
+    archimate:name "Visualisering"@nb ;
+    archimate:documentation """Evne til å omforme komplekse data til visuelle fremstillinger som gjør innsikt lett tilgjengelig, forståelig og anvendbar.
+
+Visualisering er den kapabiliteten som gjør at vi kan \"se\" historien dataene forteller. 
+
+Dette innebærer:
+* Beslutningsstøtte i sanntid: Å lage oversikter (dashboards) som oppdaterer seg selv, slik at man kan ta valg basert på hvordan situasjonen er akkurat nå.
+* Geografisk fremstilling: Å koble data til kart for å forstå sammenhenger mellom sted og hendelser (for eksempel smittespredning, trafikkflyt eller andre ressursbehov).
+* Datadrevet historiefortelling: Å presentere fakta på en måte som gjør det enkelt å kommunisere et budskap til andre."""@nb .
+
+na:id-db4f30a87ae84561a4058d4d264177b1
+    a archimate:Capability ;
+    archimate:identifier "id-db4f30a87ae84561a4058d4d264177b1" ;
+    archimate:name "Åpne data"@nb ;
+    archimate:documentation """Evne til å tilgjengeliggjøre åpne data slik at den kan leses og tolkes av både maskiner og mennesker, og som alle kan få tilgang til, bruke og dele.
+
+Begrunnelse for relevans
+Dette er en kapabilitet som utvider verdien av offentlige data utover forvaltningens egne grenser og gir avkastning i hele samfunnet.
+
+Styrker demokrati og åpenhet: Åpne data gir innbyggere, journalister og interessegrupper mulighet til innsyn i forvaltningens arbeid og beslutningsgrunnlag. Dette øker transparensen og legger til rette for en mer informert offentlig debatt.
+
+Er et råstoff for næringsutvikling og innovasjon: Dette er en av de viktigste begrunnelsene. Offentlige data representerer en enorm, uutnyttet ressurs. Ved å gjøre dem fritt tilgjengelige, gir man næringslivet råmaterialet de trenger for å skape nye produkter, tjenester og arbeidsplasser som det offentlige aldri ville utviklet selv.
+
+Forbedrer forskning og faktabasert politikkutforming: Forskere får tilgang til rike datasett som kan brukes til å analysere samfunnstrender, evaluere politikk og løse komplekse samfunnsutfordringer.
+
+Gode åpne data kjennetegnes ved:
+* at de er godt dokumenterte slik at de er lette å oppdage, vurdere og bruke
+* at de kan linkes til slik at de lett kan deles og diskuteres
+*  at de er tilgjengelige i et maskinleselig, standardisert og strukturert format slik at de enkelt kan bearbeides
+* at de har garantier for tilgjengelighet og pålitelighet over tid, slik at andre kan stole på de
+* at de er sporbare tilbake til hvor de kommer fra, slik at andre kan vurdere pålitelighet"""@nb .
+
+na:id-1785953dbdda41fbaa0b7dbd4861c31c
+    a archimate:Driver ;
+    archimate:identifier "id-1785953dbdda41fbaa0b7dbd4861c31c" ;
+    archimate:name "Andre forhold?"@nb .
+
+na:id-2abff1b661b844539a878fbd5c93871d
+    a archimate:Constraint ;
+    archimate:identifier "id-2abff1b661b844539a878fbd5c93871d" ;
+    archimate:name "Andre forhold?"@nb .
+
+na:id-fdd16850a7e14a44aa6eee04e7fb7933
+    a archimate:Driver ;
+    archimate:identifier "id-fdd16850a7e14a44aa6eee04e7fb7933" ;
+    archimate:name "Data (tilgang, kvalitet, standardisering)"@nb .
+
+na:id-f063a8707ed544e19d37cd3202144f95
+    a archimate:Constraint ;
+    archimate:identifier "id-f063a8707ed544e19d37cd3202144f95" ;
+    archimate:name "Data (tilgang, kvalitet, standardisering)"@nb .
+
+na:id-6ca699ff68db4d6f826a69ff874fd779
+    a archimate:Driver ;
+    archimate:identifier "id-6ca699ff68db4d6f826a69ff874fd779" ;
+    archimate:name "Juridiske forhold"@nb ;
+    archimate:documentation """Et fragmentert og komplisert regelverk knyttet til digital sikkerhet gjør at det er mange aktører som gir råd og veiledning på området. Det er et stort behov for bedre samarbeid og samordning på området, for å bedre situasjonen for virksomhetene som skal forholde seg til regelverkene, rådene og veiledningen."""@nb .
+
+na:id-cdb5a1fd5f594567996f89eb16ebd020
+    a archimate:Constraint ;
+    archimate:identifier "id-cdb5a1fd5f594567996f89eb16ebd020" ;
+    archimate:name "Juridiske forhold"@nb .
+
+na:id-74c215c488604ce0b6b5f38e82beea37
+    a archimate:Driver ;
+    archimate:identifier "id-74c215c488604ce0b6b5f38e82beea37" ;
+    archimate:name "Kapasitet"@nb .
+
+na:id-24ce59ae322d47ae974cf7b60ab33b45
+    a archimate:Constraint ;
+    archimate:identifier "id-24ce59ae322d47ae974cf7b60ab33b45" ;
+    archimate:name "Kapasitet"@nb .
+
+na:id-e1cb605054454e0fa20c4ecab1828949
+    a archimate:Driver ;
+    archimate:identifier "id-e1cb605054454e0fa20c4ecab1828949" ;
+    archimate:name "Kompetanse"@nb ;
+    archimate:documentation """Ha riktig kompetanse og sikre samarbeid og samordning er det som er avgjørende for dette arbeidet."""@nb .
+
+na:id-a1fdbf1b586e49168f5bd345eb8d5ef8
+    a archimate:Constraint ;
+    archimate:identifier "id-a1fdbf1b586e49168f5bd345eb8d5ef8" ;
+    archimate:name "Kompetanse"@nb .
+
+na:id-6094ffdec736482fb3bb50f0e2448f9d
+    a archimate:Driver ;
+    archimate:identifier "id-6094ffdec736482fb3bb50f0e2448f9d" ;
+    archimate:name "Økonomiske rammer"@nb .
+
+na:id-b52f7c7b4a5142ec9122bea10a0cab04
+    a archimate:Constraint ;
+    archimate:identifier "id-b52f7c7b4a5142ec9122bea10a0cab04" ;
+    archimate:name "Økonomiske rammer"@nb .
+
+na:id-f1c6e616a4744bdd92bb4618980a9ff5
+    a archimate:Driver ;
+    archimate:identifier "id-f1c6e616a4744bdd92bb4618980a9ff5" ;
+    archimate:name "Tekniske løsninger og infrastruktur"@nb ;
+    archimate:documentation """tekniske løsninger og infrastruktur må være mer samkjørt og produktstrategisk i felles retning for et felles økosystem"""@nb .
+
+na:id-9b0a9570968543b9801adac1a26b9561
+    a archimate:Constraint ;
+    archimate:identifier "id-9b0a9570968543b9801adac1a26b9561" ;
+    archimate:name "Teknologiske løsninger og infrastruktur"@nb .
+
+na:id-4bd51b22f8894f87b3ce4bf869e2a912
+    a archimate:Driver ;
+    archimate:identifier "id-4bd51b22f8894f87b3ce4bf869e2a912" ;
+    archimate:name "Samarbeid og samordning"@nb ;
+    archimate:documentation """For å lykkes med arbeidet med finansieringsmodeller er samarbeid og samordning helt sentralt."""@nb .
+
+na:id-f3680e1c37814287acc93c4b4404e7a7
+    a archimate:Constraint ;
+    archimate:identifier "id-f3680e1c37814287acc93c4b4404e7a7" ;
+    archimate:name "Samarbeid og samordning"@nb .
+
+na:id-897fd3d0f5fd4c2891e824a371d5e69b
+    a archimate:Goal ;
+    archimate:identifier "id-897fd3d0f5fd4c2891e824a371d5e69b" ;
+    archimate:name "Et velfungerende felles digitalt økosystem for samhandling og tjenesteutvikling i offentlig sektor"@nb ;
+    archimate:documentation """Offentlig sektor må øke digitaliseringstakten. Skal vi kunne utnytte de mulighetene teknologien gir, og bidra til en mer effektiv og bærekraftig digital utvikling, trenger vi en nasjonal arkitektur for samhandling. Arkitekturen bør beskrive nødvendige ressurser for samhandling, som fellesløsninger, infrastruktur for deling av data og standarder, og standardiserte grensesnitt (API-er). Gjennom en nasjonal arkitektur tydeliggjøres sammenhenger og ansvar, og det blir enklere å identifisere behov for tiltak.
+
+Regjeringen vil sikre sterkere styring og samordning av digitaliseringen på tvers av sektorer og forvaltningsnivåer. Nasjonal arkitektur er et av flere viktige virkemidler for å realisere målet og beskriver blant annet nødvendige ressurser for digital samhandling - inkludert fellesløsninger, infrastruktur for datautveksling og felles standarder. Ved å tydeliggjøre sammenhenger, ansvar og tiltak blir det enklere å identifisere behov og koordinere innsatsen på tvers av sektorer og forvaltningsnivåer. Utvikling, forvaltning og prioritering av nasjonal arkitektur bidrar til å gjøre digitaliseringen robust, skalerbar og målrettet, samtidig som det reduserer unødvendig dobbeltarbeid og forenkler brukeropplevelsen. 
+Sammen med teamet som jobber med Nasjonalt veikart vil vi aktivt bidra opp under målet ved at vi styrker nasjonal arkitekturstyring og lager kunnskapsgrunnlag for felles prioritering. Vi vil i tillegg samarbeide med andre team som arbeider med organisatoriske, økonomiske og juridiske virkemidler som styrker styring og samordning på tvers. Det er derfor relevant å ha dialog rundt arbeid om for eksempel Digitaliseringsrundskrivet, medfinansieringsordningen, livshendelser og sektorovergripende prosjekter. 
+Nasjonal arkitektur har en viktig rolle fordi den legger til rette for at digitaliseringsarbeidet ikke skal skje fragmentert, men som en integrert og koordinert helhet. Den underbygger styringsmekanismene ved å tilby verktøy og prinsipper for beslutninger, tekniske standarder, og hjelper til med å balansere arkitektur lokalt, sektorielt og nasjonalt."""@nb .
+
+na:id-9f2593113134463ea6863703c308b251
+    a archimate:Goal ;
+    archimate:identifier "id-9f2593113134463ea6863703c308b251" ;
+    archimate:name "Få på plass en nasjonal infrastruktur for kunstig intelligens (KI)"@nb .
+
+na:id-56e7246019f54eec8093568bd0fb8e22
+    a archimate:Goal ;
+    archimate:identifier "id-56e7246019f54eec8093568bd0fb8e22" ;
+    archimate:name "Norge skal være ledende på verdiskaping med data og på datadrevet forskning og innovasjon"@nb ;
+    archimate:documentation """For å få til datadeling må de riktige ressursene i felles økosystem være på plass. Det gjelder standarder, felles formater, rammeverk, åpne API-er, referansearkitekturer, fellesløsninger mv. Rammeverk for EUs dataområder (data spaces) inneholder også referansearkitekturer og standarder. Nasjonal arkitektur (samhandlingsarkitektur) er nødvendig for å få til datadeling.
+Data governance og master data management er nødvendig for at man skal dele data og bruke data, og er viktig for et velfungerende felles økosystem for digital samhandling. Det er pågående arbeid på flere områder innenfor dette målet som bør være koordinert med arbeidet med Nasjonal arkitektur"""@nb .
+
+na:id-89e255a238d346a4901424f0059e6345
+    a archimate:Goal ;
+    archimate:identifier "id-89e255a238d346a4901424f0059e6345" ;
+    archimate:name "Næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering."@nb ;
+    archimate:documentation """Evnen til å tilrettelegge for at det nasjonale økosystemet fremmer et omstillingsdyktig og innovativt næringsliv. 
+
+Dette innebærer:
+* rammebetingelser, insentiver og samarbeidsformer som gjør det attraktivt og forutsigbart for private aktører å bygge tjenester oppå nasjonale fellesløsninger og data
+
+Hvorfor er dette viktig?
+* Offentlige data som råstoff: Åpne og tilgjengelige data er en ressurs som næringslivet trenger for å skape produkter forvaltningen selv ikke ville utviklet.
+* Styrket konkurransekraft: Ved å gjøre offentlige fellesløsninger tilgjengelige for private aktører, økes mulighetene for innovasjon i næringslivet.
+I Digitaliseringsstrategien er det et mål at:
+*  Regjeringen vil frem mot 2030 legge til rette for at næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering. Oppstartsbedrifter skal ha gode rammevilkår. Vi skal sørge for at digitalisering og utnyttelse av data forsterker våre fortrinn i viktige bransjer, slik som helse, energi, havbruk og andre maritime næringer."""@nb .
+
+na:id-bf3fa917baad486d9865b9627199a2d4
+    a archimate:Goal ;
+    archimate:identifier "id-bf3fa917baad486d9865b9627199a2d4" ;
+    archimate:name "Næringslivet skal ha gode rammevilkår for å utvikle og bruke KI. Offentlig sektor skal anvende KI for å utvikle bedre tjenester og løse oppgaver mer effektivt"@nb .
+
+na:id-cbc357e78ede45e8aa565fde3b7380b5
+    a archimate:Goal ;
+    archimate:identifier "id-cbc357e78ede45e8aa565fde3b7380b5" ;
+    archimate:name "Vi skal ha en offentlig sektor som tilbyr bedre, mer sammenhengende digitale tjenester til innbyggere og næringsliv  "@nb ;
+    archimate:documentation """Målet om sammenhengende tjenester til beste for bruker stiller krav til nasjonal arkitektur.
+Nasjonal arkitektur er nødvendig for å få til samhandling og sammenhengende tjenester. Felles økosystem tilbyr ressurser for samhandling og sammenhengende tjenester. Vi skal både tilby ressurser som muliggjør dette, men også sette rammer som styrer offentlig sektor i retning av sammenhengende digitale tjenester. 
+Nasjonal arkitektur kan også bidra til å balansere styrkeforholdet mellom store offentlige etater og mindre statlig/kommunale. Gjennom felles standarder, arkitekturer og retningslinjer kan vi bidra til at det blir lettere å dele og bruke data og få til bedre samhandling.
+Nasjonal arkitektur bør bidra til utforskning av nye måter å skape sammenheng og forenkling for innbygger og næringsliv. Sammenhengende tjenester introduserer også noen nye utfordringer som bør avklares og nasjonal arkitektur bør foreslå hvordan disse utfordringene adresseres. Ved å samarbeide tett med avdelingen for «Sammenhengende tjenester og livshendelser» og jobbe behovsdrevet med ekte problemer og ekte behov, skal vi aktivt prøve å finne løsninger på de arkitekturmessige hindringene."""@nb .
+
+na:id-90ff9c60528d4dfe93d534bd6a7bcfeb
+    a archimate:Goal ;
+    archimate:identifier "id-90ff9c60528d4dfe93d534bd6a7bcfeb" ;
+    archimate:name "Vi skal delta i EUs satsing på dataområder der det er relevant"@nb ;
+    archimate:documentation """Arbeidet med dataområdene i EU vil komme med referansearkitekturer og standarder som må innføres som en del av nasjonal arkitektur."""@nb .
+
+na:id-9622546accfc43d28a38cebdecf8818a
+    a archimate:Goal ;
+    archimate:identifier "id-9622546accfc43d28a38cebdecf8818a" ;
+    archimate:name "Sørge for at alle har et tilbud om en elektronisk identitet"@nb .
+
+na:id-a4062153239a4d13a9fdef8cc205c8e6
+    a archimate:Goal ;
+    archimate:identifier "id-a4062153239a4d13a9fdef8cc205c8e6" ;
+    archimate:name "Sterkere styring og samordning av digitalisering på tvers av sektorer"@nb ;
+    archimate:documentation """Nasjonal arkitektur er et viktig virkemiddel for å skape sterke synergier mellom norsk og europeisk digitaliseringspolitikk. Den skal bygge på føringer fra EU og fungerer som et rammeverk som integrerer EUs regelverk, standarder og referansearkitekturer i norsk digitaliseringsarbeid. EU-forordninger etablerer nasjonale funksjoner og styringsformer som også dekker Norges behov for koordinering og styring av arkitektur. 
+Ved å implementere felles europeiske standarder, sikrer nasjonal arkitektur at norske digitale tjenester kan samhandle effektivt over landegrensene. Samtidig bør Norge bli bedre på å hente erfaringer fra andre land og bruke internasjonale løsninger som utgangspunkt for egen utvikling, noe som reduserer både kostnader og utviklingstid. Gjennom dette sikrer nasjonal arkitektur en helhetlig og framtidsrettet digitalisering som både møter norske behov og Europas digitale agenda."""@nb .
+
+na:id-0cf363c3f2ff4fa3a34bda7a610e6f70
+    a archimate:Outcome ;
+    archimate:identifier "id-0cf363c3f2ff4fa3a34bda7a610e6f70" ;
+    archimate:name "Effektmål"@nb ;
+    archimate:documentation """De konkrete resultatene av å bruke kapabilitetene.
+Se på dybdeindikatorene fra nullpunktsmåling:
+https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
+F.eks:
+* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
+* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428"""@nb .
+
+na:id-534850df1c7b48e2a2e7cc966ece233f
+    a archimate:Goal ;
+    archimate:identifier "id-534850df1c7b48e2a2e7cc966ece233f" ;
+    archimate:name "Strategiske mål"@nb ;
+    archimate:documentation """Målene fra Digitaliseringsstrategien."""@nb .
+
+na:id-46a97f13294345f89decd549d4269848
+    a archimate:Principle ;
+    archimate:identifier "id-46a97f13294345f89decd549d4269848" ;
+    archimate:name "Prinsipper Nasjonal Arkitektur"@nb ;
+    archimate:documentation """https://www.digdir.no/digital-samhandling/overordnede-arkitekturprinsipper/1065"""@nb .
+
+na:id-d4632a56bcf04c768517303bf05c2882
+    a archimate:Goal ;
+    archimate:identifier "id-d4632a56bcf04c768517303bf05c2882" ;
+    archimate:name "Innovasjon og næringsutviling"@nb .
+
+na:id-76a32d89c68c4e5f86e29d261e3d2253
+    a archimate:Principle ;
+    archimate:identifier "id-76a32d89c68c4e5f86e29d261e3d2253" ;
+    archimate:name "Kun en gang"@nb .
+
+na:id-04fef6c083b449dba91c876ae2e3715f
+    a archimate:Principle ;
+    archimate:identifier "id-04fef6c083b449dba91c876ae2e3715f" ;
+    archimate:name "Prinsipp"@nb ;
+    archimate:documentation """En overordnet og veiledende regel eller retningslinje som er ment å være varig og styrende for alle relevante beslutninger. 
+Prinsipper er generelle regler og retningslinjer, ment å være varige og sjelden endres, som informerer og støtter måten en organisasjon går i gang med å oppfylle sitt oppdrag.
+Se overordnete arkitekturprinsipper: https://www.digdir.no/digital-samhandling/overordnede-arkitekturprinsipper/1065
+
+Eksempel: \"Data skal kun lagres én gang\".
+
+EU ELAP: Det europeiske biblioteket for arkitekturprinsipper (ELAP) etablerer prinsipper og rammeverk for å sikre interoperabilitet på europeisk nivå , inkludert det europeiske interoperabilitetsrammeverket (EIF), EU-lovgivning, tilgjengelighet, «Once Only» og mer. Dette biblioteket er et kvalitetssikringsverktøy som også etablerer krav og forretningsprosesser for å muliggjøre interoperabilitet mellom digitale offentlige tjenester.
+Se:  https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/elap
+
+Togaf definisjon og beste-praksis beskrivelse og definisjon av Arkitekturprinsipper:
+https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap20.html"""@nb .
+
+na:id-d7a27706ca3240468e16d88afbcd4a3e
+    a archimate:Assessment ;
+    archimate:identifier "id-d7a27706ca3240468e16d88afbcd4a3e" ;
+    archimate:name "Nasjonal arkitektur analyse dekningsgrad"@nb ;
+    archimate:documentation """Identifiserer svakheter i dagens arkitektur (ressurser og kapabiliteter). Er en faglig analyse som forklarer hvorfor gapet finnes.
+
+Kapabiliteter og grad av nåsituasjon og måloppnåelse 
+- målverdi
+- dagens verdi
+= Finner Gap og modenhet:
+Rødt (Gap > 2): Kapabiliteter der avstanden mellom nåsituasjon og mål er kritisk stor. Her må Tiltak (Work Packages) prioriteres.
+Gult (Gap = 1): Kapabiliteter som er i rute, men krever vedlikehold eller mindre justeringer.
+Grønt (Gap = 0): Kapabiliteten har nådd sin målverdi.
+En kapabilitet kan realisere både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer, oppfyller eller tolker hensikten bak prinsippet i praksis.
+Modenhetsmodell, som CMMI (Capability Maturity Model Integration:
+* Måling av kapabilitetsmodenhet (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn ved å synliggjøre gapet mellom \"hvor gode vi er\" (As-Is) og \"hvor gode vi må være\" (To-Be).
+* Modenheten til en kapabilitet vurderes basert på tilstanden til de underliggende ressursene.
+
+Ressurser og måling:
+* Kan vises som en heatmap med indikatorer for:
+- Dekningsgrad kapabilitet (1-5) for å indikere i hvilken grad en ressurs faktisk er tilgjengelig eller moden nok til å støtte ønsket kapabilitet.
+- egnethet (Funksjonelt egnet)
+- Teknisk egnet
+- Livssyklus status
+
+Man kan også benytte POTI modell som vurdering på tilstanden til ressursene:
+* People (Organisasjon): Roller og kompetanse.
+* Process (Prosess): Arbeidsflyter og prosedyrer.
+* Technology (Teknologi): IT-systemer og infrastruktur.
+* Information (Informasjon): Datakvalitet og flyt
+
+Se også:
+De konkrete resultatene av å bruke kapabilitetene.
+Se på dybdeindikatorene fra nullpunktsmåling:
+https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
+F.eks:
+* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
+* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428"""@nb .
+
+na:id-63eeffd71e92467281f421c58bac305f
+    a archimate:Driver ;
+    archimate:identifier "id-63eeffd71e92467281f421c58bac305f" ;
+    archimate:name "Drivere"@nb ;
+    archimate:documentation """\"Drivere\" er den grunnleggende motivasjonen eller årsaken til at en endring settes i gang.
+
+Drivarar og hindringar må sjåast i samanheng. Dei viktigaste hindringane er økonomiske rammer og kapasitet. 
+Ei styrking her vil vere blant dei viktigaste drivarane for å oppnå resultat og realisere gevinstar av teknisk infrastruktur og data, knytt til handheving av eit stadig meir omfattande regelverk."""@nb .
+
+na:id-87d27b24cab34a089853e52f3512c376
+    a archimate:Constraint ;
+    archimate:identifier "id-87d27b24cab34a089853e52f3512c376" ;
+    archimate:name "Hindringer"@nb ;
+    archimate:documentation """Hindringer: Hva stopper eller begrenser oss?"""@nb .
+
+na:id-707202a7db214363817d403344afb867
+    a archimate:Principle ;
+    archimate:identifier "id-707202a7db214363817d403344afb867" ;
+    archimate:name "NSM"@nb .
+
+na:id-94f7473fb4184e3b94bb92c35186b88f
+    a archimate:Principle ;
+    archimate:identifier "id-94f7473fb4184e3b94bb92c35186b88f" ;
+    archimate:name "P1: Ta utgangspunkt i brukernes behov"@nb ;
+    archimate:documentation """https://www.digdir.no/digital-samhandling/prinsipp-1-ta-utgangspunkt-i-brukernes-behov/1055"""@nb .
+
+na:id-dbfcb14c3e024a40b6cb71138311abc0
+    a archimate:Principle ;
+    archimate:identifier "id-dbfcb14c3e024a40b6cb71138311abc0" ;
+    archimate:name "P2: Ta arkitektur-beslutninger på rett nivå"@nb ;
+    archimate:documentation """https://www.digdir.no/digital-samhandling/prinsipp-2-ta-arkitekturbeslutninger-pa-rett-niva/1056"""@nb .
+
+na:id-7d62a886cdc14d20a5b361cf68da5754
+    a archimate:Principle ;
+    archimate:identifier "id-7d62a886cdc14d20a5b361cf68da5754" ;
+    archimate:name "P3: Bidra til digitaliseringsvennlige regelverk"@nb ;
+    archimate:documentation """https://www.digdir.no/digital-samhandling/prinsipp-3-bidra-til-digitaliseringsvennlige-regelverk/1057"""@nb .
+
+na:id-a27833cb9e324549916a528f31481dce
+    a archimate:Principle ;
+    archimate:identifier "id-a27833cb9e324549916a528f31481dce" ;
+    archimate:name "P4: Del og gjenbruk data"@nb ;
+    archimate:documentation """https://www.digdir.no/digital-samhandling/prinsipp-4-del-og-gjenbruk-data/1061"""@nb .
+
+na:id-5b6ec861e2d246ce90c99ea282d35610
+    a archimate:Principle ;
+    archimate:identifier "id-5b6ec861e2d246ce90c99ea282d35610" ;
+    archimate:name "P7: Sørg for tillit til oppgaveløsningen"@nb ;
+    archimate:documentation """https://www.digdir.no/digital-samhandling/prinsipp-7-sorg-tillit-til-oppgavelosningen/1064"""@nb .
+
+na:id-d0918d8701a4408b93a9ab278ecbb85e
+    a archimate:Principle ;
+    archimate:identifier "id-d0918d8701a4408b93a9ab278ecbb85e" ;
+    archimate:name "P5: Del og gjenbruk løsninger"@nb ;
+    archimate:documentation """https://www.digdir.no/digital-samhandling/prinsipp-5-del-og-gjenbruk-losninger/1062"""@nb .
+
+na:id-0007ec16e9a1406d9f6aabd1f975d993
+    a archimate:Principle ;
+    archimate:identifier "id-0007ec16e9a1406d9f6aabd1f975d993" ;
+    archimate:name "P6: Lag digitale løsninger som støtter samhandling"@nb ;
+    archimate:documentation """https://www.digdir.no/digital-samhandling/prinsipp-6-lag-digitale-losninger-som-stotter-samhandling/1063"""@nb .
+
+na:id-74e15ee821794ae09cd9f7f7a38f32aa
+    a archimate:Principle ;
+    archimate:identifier "id-74e15ee821794ae09cd9f7f7a38f32aa" ;
+    archimate:name "FAIR"@nb .
+
+na:id-6cb4bed065c44e1b8821c60d4515ef28
+    a archimate:WorkPackage ;
+    archimate:identifier "id-6cb4bed065c44e1b8821c60d4515ef28" ;
+    archimate:name "Konkret tiltak"@nb ;
+    archimate:documentation """Realiserer endringer som fjerner gap. Dette er konkrete tiltak som har startet eller er planlagt.
+Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes."""@nb .
+
+na:id-66f38bffcd9f48d796a041a9a292d6ed
+    a archimate:Gap ;
+    archimate:identifier "id-66f38bffcd9f48d796a041a9a292d6ed" ;
+    archimate:name "Gap"@nb ;
+    archimate:documentation """Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjonal arkitektur)"""@nb .
+
+na:id-ac4c391b696f493da64833de20f7df9c
+    a archimate:Plateau ;
+    archimate:identifier "id-ac4c391b696f493da64833de20f7df9c" ;
+    archimate:name "Nåværende situasjon"@nb .
+
+na:id-0d355bfbd31e4a188766733761ede0ba
+    a archimate:Plateau ;
+    archimate:identifier "id-0d355bfbd31e4a188766733761ede0ba" ;
+    archimate:name "Ønsket situasjon"@nb .
+
+na:id-8810f83ff9fe44c2a3368cdef932526b
+    a archimate:Grouping ;
+    archimate:identifier "id-8810f83ff9fe44c2a3368cdef932526b" ;
+    archimate:name "Rammeverk for digital samhandling (European Interoperability Framework)"@nb ;
+    archimate:documentation """Rammeverk for digital samhandling.
+https://www.digdir.no/digital-samhandling/rammeverk-digital-samhandling/2148
+
+Bakgrunnsinformasjon og opprinnelse:
+EU har utviklet European Interoperability Framework (EIF), et felles rammeverk for digital samhandling. Målet er å fremme digital samhandling på tvers av landegrenser og innenfor hvert enkelt land. Norge forpliktet seg til å implementere EIF da vi undertegnet Tallinn-erklæringen i 2017, sammen med EU og andre EFTA-land.
+
+Som et resultat har Norge etablert sitt eget nasjonale rammeverk for interoperabilitet (NIF- National Interoperability Framework), som i dag heter \"Rammeverk for digital samhandling\". Den første versjonen ble utarbeidet som et Skate-tiltak i 2018."""@nb .
+
+na:id-e236b66b0d574a2bb97dbd79d7d38d47
+    a archimate:Grouping ;
+    archimate:identifier "id-e236b66b0d574a2bb97dbd79d7d38d47" ;
+    archimate:name "Juridisk samhandlingsevne"@nb ;
+    archimate:documentation """Juridisk samhandling skal sikre at organisasjoner som arbeider under ulik lovgivning kan samhandle. For at organisasjoner på tvers i forvaltningen kan utvikle og bruke like tjenester og funksjonalitet må det rettslige grunnlaget for samhandling mellom aktørene være på plass."""@nb .
+
+na:id-3fd615c0b19e4762953cd34908523dbc
+    a archimate:Grouping ;
+    archimate:identifier "id-3fd615c0b19e4762953cd34908523dbc" ;
+    archimate:name "Organisatorisk samhandlingsevne"@nb ;
+    archimate:documentation """Organisatorisk samhandling handler om hvordan samhandlende virksomheter tilpasser tjenestekjeder/forretningsprosesser, ansvar og forventninger for å oppnå felles mål og fordeler. Området dekker også forventninger til å gjøre tjenester tilgjengelige og brukerorienterte, samt hvilke samhandlingsmodeller og avtaler virksomhetene etablerer knyttet til felles forvaltning."""@nb .
+
+na:id-503ab92854754702ab00164afdbf6f70
+    a archimate:Grouping ;
+    archimate:identifier "id-503ab92854754702ab00164afdbf6f70" ;
+    archimate:name "Semantisk samhandlingsevne"@nb ;
+    archimate:documentation """Semantisk samhandlingsevne har å gjøre med betydningen av dataelementer, relasjonen mellom dem og formatet informasjonen utveksles på. Det deles i syntaktisk og semantisk aspekt. Semantisk aspekt skal sikre dataenes betydningsinnhold og interne relasjon, som også innebærer begrepsavklaringer som sikrer at alle parter forstår kommunikasjonen. Syntaktisk aspekt refererer til eksakt format og struktur på data som utveksles."""@nb .
+
+na:id-6c59a946ea8e4ad8903fbb1a6ffa9219
+    a archimate:Grouping ;
+    archimate:identifier "id-6c59a946ea8e4ad8903fbb1a6ffa9219" ;
+    archimate:name "Teknisk samhandlingsevne"@nb ;
+    archimate:documentation """Teknisk samhandlingsevne sikrer at ulike systemer kan integreres. Dette krever teknisk standardisering, noe som i dag blant annet blir understøttet av forskrift om IT-standarder i offentlig forvaltning. Området dekker forhold knyttet til applikasjon, data, teknologi og sikkerhet."""@nb .
+
+na:id-661cb46063c544be82d804511f5ea9f9
+    a archimate:Grouping ;
+    archimate:identifier "id-661cb46063c544be82d804511f5ea9f9" ;
+    archimate:name "Styrings og forvaltning"@nb ;
+    archimate:documentation """Styring og forvaltning av integrerbare og sammenhengende offentlige tjenester er det femte området, og løper på tvers av de andre samhandlingsområdene. Det er viktig å komme i gang med avklaringer rundt styring og forvaltning så tidlig som mulig i prosessen ved etablering av nye tjenester. I tillegg vil det være nødvendig å gå mer i dybden etter hvert."""@nb .
+
+na:id-085ba8f9d77e45079724746f67280dbb
+    a archimate:ArchimateDiagramModel ;
+    archimate:identifier "id-085ba8f9d77e45079724746f67280dbb" ;
+    archimate:name "00-Metamodell kontekst"@nb ;
+    archimate:documentation """Viser struktur og mer kontekst til rammeverksmodellen."""@nb .
+
+na:id-dea95464961449d88f082fa02cceb50f
+    a archimate:ArchimateDiagramModel ;
+    archimate:identifier "id-dea95464961449d88f082fa02cceb50f" ;
+    archimate:name "02-Nasjonal Arkitektur - Kapabilitetskart alle nivåer"@nb ;
+    archimate:documentation """Nasjonal arkitektur består av 3 kapabilitetsnivåer."""@nb .
+
+na:id-623c2b878f81427187c41e072b4deff5
+    a archimate:ArchimateDiagramModel ;
+    archimate:identifier "id-623c2b878f81427187c41e072b4deff5" ;
+    archimate:name "04-Digitaliseringsstrategiens mål og NA"@nb .
+
+na:id-661971276dac4903b1d75fa62987873b
+    a archimate:ArchimateDiagramModel ;
+    archimate:identifier "id-661971276dac4903b1d75fa62987873b" ;
+    archimate:name "03-Arkitekturprinsipper og NA"@nb ;
+    archimate:documentation """https://www.digdir.no/digital-samhandling/prinsipp-1-ta-utgangspunkt-i-brukernes-behov/1055"""@nb .
+
+na:id-b9bcc8618287449ab162521aa9352413
+    a archimate:ArchimateDiagramModel ;
+    archimate:identifier "id-b9bcc8618287449ab162521aa9352413" ;
+    archimate:name "05-EIF lagmodell"@nb .
+
+na:id-3664090f36dc49feb47d246e00fffaae
+    a archimate:ArchimateDiagramModel ;
+    archimate:identifier "id-3664090f36dc49feb47d246e00fffaae" ;
+    archimate:name "06-EIF og relasjon til NA"@nb .
+
+na:id-c7f9551d156048389c4a955bfaa5254c
+    a archimate:ArchimateDiagramModel ;
+    archimate:identifier "id-c7f9551d156048389c4a955bfaa5254c" ;
+    archimate:name "01-Nasjonal arkitektur - Hovedkapabiliteter"@nb .
+
+na:id-b513e2dbd37e447184ee9f969874a681
+    a archimate:ArchimateDiagramModel ;
+    archimate:identifier "id-b513e2dbd37e447184ee9f969874a681" ;
+    archimate:name "001-Metamodell kjerne"@nb ;
+    archimate:documentation """Viser struktur og kontekst til rammeverksmodellen."""@nb .
+
+### ── Relationships ─────────────────────────────────────────────────────
+
+na:id-58bceb608d714b8d99e00b4bf49c6255
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-58bceb608d714b8d99e00b4bf49c6255" ;
+    archimate:source na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5 ;
+    archimate:target na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 .
+
+na:id-1f3c8faf7c4a47f59cafef9cf07dc47e
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-1f3c8faf7c4a47f59cafef9cf07dc47e" ;
+    archimate:source na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 ;
+    archimate:target na:id-534850df1c7b48e2a2e7cc966ece233f .
+
+na:id-fb26fa3c9d7d4095b3d1e294c479caff
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-fb26fa3c9d7d4095b3d1e294c479caff" ;
+    archimate:name "dekningsgrad"@nb ;
+    archimate:source na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5 ;
+    archimate:target na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 .
+
+na:id-c98b43adfa0b4b0489837039fc66ce03
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-c98b43adfa0b4b0489837039fc66ce03" ;
+    archimate:source na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5 ;
+    archimate:target na:id-fa68712eb0924092abd996fa6c511065 .
+
+na:id-04af3154430f46a38e08f4078c1ef8bc
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-04af3154430f46a38e08f4078c1ef8bc" ;
+    archimate:source na:id-896e4c1434604caa891b94bcce964720 ;
+    archimate:target na:id-5c6c20d50b6a4b168524901372f0ca6e .
+
+na:id-1ce95e45c16c49e98a1ceae6e85c9749
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-1ce95e45c16c49e98a1ceae6e85c9749" ;
+    archimate:source na:id-d503cf06faa1417b8acd4b26a5c0741e ;
+    archimate:target na:id-4b66bbf964834654b5f0c61e955b91b1 .
+
+na:id-699354d9136142a79a7f06779eb1d31e
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-699354d9136142a79a7f06779eb1d31e" ;
+    archimate:source na:id-d503cf06faa1417b8acd4b26a5c0741e ;
+    archimate:target na:id-b440252bc3de42dea8468be54e54b1fa .
+
+na:id-500b56c6b8464463af9260380fb310b2
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-500b56c6b8464463af9260380fb310b2" ;
+    archimate:source na:id-d503cf06faa1417b8acd4b26a5c0741e ;
+    archimate:target na:id-b2aafe1f4c534db6b92c40b1eef605f2 .
+
+na:id-bb8bb1377c7b4cb9892b3544b27fd987
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-bb8bb1377c7b4cb9892b3544b27fd987" ;
+    archimate:source na:id-d503cf06faa1417b8acd4b26a5c0741e ;
+    archimate:target na:id-2dfe07b3eae740b9a292e0a4a42d22db .
+
+na:id-a0778b3ca1cc446d9e45335d119dc343
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-a0778b3ca1cc446d9e45335d119dc343" ;
+    archimate:source na:id-d503cf06faa1417b8acd4b26a5c0741e ;
+    archimate:target na:id-a8a1eb0181f04006ba7d3b5ab2fa9ca8 .
+
+na:id-5c9d4f96d8ed4f209a13d6341bcd0a3a
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-5c9d4f96d8ed4f209a13d6341bcd0a3a" ;
+    archimate:source na:id-d503cf06faa1417b8acd4b26a5c0741e ;
+    archimate:target na:id-f5214c3db8de4738ab03abb7b7e553ed .
+
+na:id-bdd7b5946ff24e8d966fdec23ebe54c3
+    a archimate:ServingRelationship, archimate:Relationship ;
+    archimate:identifier "id-bdd7b5946ff24e8d966fdec23ebe54c3" ;
+    archimate:name "benyttes i"@nb ;
+    archimate:source na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5 ;
+    archimate:target na:id-31be9bc0b80e4be4b2df2d8e0000dc6f .
+
+na:id-3608c7db061346b7974df54281fbf632
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-3608c7db061346b7974df54281fbf632" ;
+    archimate:source na:id-1be148b57796458993c3f7f5f24815ca ;
+    archimate:target na:id-0aa7eced8c5c460f8bc64b77bd6a16c4 .
+
+na:id-96a5057cb2ea446bac5fb7b29e98eb19
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-96a5057cb2ea446bac5fb7b29e98eb19" ;
+    archimate:source na:id-1be148b57796458993c3f7f5f24815ca ;
+    archimate:target na:id-825b1ea1217b4eedb6caae165aeb8e41 .
+
+na:id-da09cf52eca04c4a8b87eade458ac0f6
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-da09cf52eca04c4a8b87eade458ac0f6" ;
+    archimate:source na:id-98df6c2b4df340c7a3a3ad32d99ca37e ;
+    archimate:target na:id-fa54a429cbd84db09da1b2b2165fc352 .
+
+na:id-2407873800ee440aa542f6288d673e22
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-2407873800ee440aa542f6288d673e22" ;
+    archimate:source na:id-98df6c2b4df340c7a3a3ad32d99ca37e ;
+    archimate:target na:id-7e3d1d3396914d65a177c9d5346d6feb .
+
+na:id-2ab5200e71bf4f368b88c9d904fcc66e
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-2ab5200e71bf4f368b88c9d904fcc66e" ;
+    archimate:source na:id-d7aa97e6319a492d8a1345bcaa8e154a ;
+    archimate:target na:id-3dbd3a9115cb4c54876490cbf02b0c58 .
+
+na:id-4231a607835a4dabafe399a98d591cd1
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-4231a607835a4dabafe399a98d591cd1" ;
+    archimate:source na:id-d7aa97e6319a492d8a1345bcaa8e154a ;
+    archimate:target na:id-711390c3ddaa4b67914ccbcc2f1831aa .
+
+na:id-4c3edd52cc43461e9394179e04743588
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-4c3edd52cc43461e9394179e04743588" ;
+    archimate:source na:id-d7aa97e6319a492d8a1345bcaa8e154a ;
+    archimate:target na:id-db4f30a87ae84561a4058d4d264177b1 .
+
+na:id-5ff74afdf1ad44dc986dd4b3a1e44b94
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-5ff74afdf1ad44dc986dd4b3a1e44b94" ;
+    archimate:source na:id-d503cf06faa1417b8acd4b26a5c0741e ;
+    archimate:target na:id-809f454dc4024d56ab54079252fdfe29 .
+
+na:id-113878832da54897ab1e43fc62529c29
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-113878832da54897ab1e43fc62529c29" ;
+    archimate:source na:id-d503cf06faa1417b8acd4b26a5c0741e ;
+    archimate:target na:id-ec0afaac123d4f9e83889d9022a198c3 .
+
+na:id-2678441f9f4d4d5c8c83707681fe42e9
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-2678441f9f4d4d5c8c83707681fe42e9" ;
+    archimate:source na:id-1be148b57796458993c3f7f5f24815ca ;
+    archimate:target na:id-9bc3012bcd154e27aa094ac36bf391be .
+
+na:id-e7e663347e1f4da497b5064d6ea3e872
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-e7e663347e1f4da497b5064d6ea3e872" ;
+    archimate:source na:id-98df6c2b4df340c7a3a3ad32d99ca37e ;
+    archimate:target na:id-8914d57f4f1442b1b562252a3630a686 .
+
+na:id-8ed29df017624d0a8e2cc73aea3146c5
+    a archimate:InfluenceRelationship, archimate:Relationship ;
+    archimate:identifier "id-8ed29df017624d0a8e2cc73aea3146c5" ;
+    archimate:source na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5 ;
+    archimate:target na:id-d7a27706ca3240468e16d88afbcd4a3e .
+
+na:id-b4146a9af3734cd2b37854b3424a2aac
+    a archimate:InfluenceRelationship, archimate:Relationship ;
+    archimate:identifier "id-b4146a9af3734cd2b37854b3424a2aac" ;
+    archimate:source na:id-9860d11ff3fd40a5b541b8f929ed305f ;
+    archimate:target na:id-d7a27706ca3240468e16d88afbcd4a3e .
+
+na:id-4242da0d4a5f47a6a793c3a5f0c21836
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-4242da0d4a5f47a6a793c3a5f0c21836" ;
+    archimate:source na:id-896e4c1434604caa891b94bcce964720 ;
+    archimate:target na:id-a40bf39259434db48f358cc543428c8a .
+
+na:id-e8fbe06592ed4fd5a066e56788d588a9
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-e8fbe06592ed4fd5a066e56788d588a9" ;
+    archimate:source na:id-896e4c1434604caa891b94bcce964720 ;
+    archimate:target na:id-3c6f94ba791a4aa298809ef3f46bdc87 .
+
+na:id-15e4df0298d24adab8231ca87547f78c
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-15e4df0298d24adab8231ca87547f78c" ;
+    archimate:source na:id-896e4c1434604caa891b94bcce964720 ;
+    archimate:target na:id-e5a55d4bacd14740a656bc896d25497a .
+
+na:id-a64ebdbc137a44f89e4d658dc01aae96
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-a64ebdbc137a44f89e4d658dc01aae96" ;
+    archimate:source na:id-896e4c1434604caa891b94bcce964720 ;
+    archimate:target na:id-718d8e94a9b847a485fc6518b4f2588d .
+
+na:id-1c842d6e295c4d09baf62a5e9b7756d1
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-1c842d6e295c4d09baf62a5e9b7756d1" ;
+    archimate:source na:id-896e4c1434604caa891b94bcce964720 ;
+    archimate:target na:id-dc38d2667240445db35f7f0f38fc1e15 .
+
+na:id-a22668ac833c4bdcb6722568af205ed6
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-a22668ac833c4bdcb6722568af205ed6" ;
+    archimate:source na:id-896e4c1434604caa891b94bcce964720 ;
+    archimate:target na:id-d9374751da7d4b36bb0b3be609ff7d28 .
+
+na:id-d35196fb218d443ea732e8dbb40fabeb
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-d35196fb218d443ea732e8dbb40fabeb" ;
+    archimate:source na:id-c3f87c86b19547359c677a333b16f03b ;
+    archimate:target na:id-697145d3768b40d39f9463667b78f749 .
+
+na:id-f98dbf20e04f4dc6b22bc183047e9bbd
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-f98dbf20e04f4dc6b22bc183047e9bbd" ;
+    archimate:source na:id-c3f87c86b19547359c677a333b16f03b ;
+    archimate:target na:id-b99fcd8160d24e5f8ea3c17b15072f7a .
+
+na:id-2f11f7b9fe694cf78d34be16846afb3b
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-2f11f7b9fe694cf78d34be16846afb3b" ;
+    archimate:source na:id-48c9873ae59341a49c2dca27379fab55 ;
+    archimate:target na:id-980043f78fa94eec8ecf46338a5b9c6b .
+
+na:id-8def763723434e5ab2630d7bdf29f5e2
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-8def763723434e5ab2630d7bdf29f5e2" ;
+    archimate:source na:id-48c9873ae59341a49c2dca27379fab55 ;
+    archimate:target na:id-34d3d64b3afe4327a29ee6c2f7f74dff .
+
+na:id-d6964a1537034eaa843f23b9d12bd3e0
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-d6964a1537034eaa843f23b9d12bd3e0" ;
+    archimate:source na:id-ad6f81e892a74590840828b6aabb270d ;
+    archimate:target na:id-efe1a2676c124eeab946802af96a1ab7 .
+
+na:id-fb015a60e782415fa90a2ef6e38c376b
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-fb015a60e782415fa90a2ef6e38c376b" ;
+    archimate:source na:id-ad6f81e892a74590840828b6aabb270d ;
+    archimate:target na:id-84629318a3b84213ac3a83bdb6a1aad9 .
+
+na:id-f8a72e9a3e4f41e08bf84e39e324131d
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-f8a72e9a3e4f41e08bf84e39e324131d" ;
+    archimate:source na:id-682d96a51e604ed2a00e1f4824023bab ;
+    archimate:target na:id-ecdde89168314bfb94b6a6ac70a55bc7 .
+
+na:id-9a404eb3099d4839ae057b05d87e61af
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-9a404eb3099d4839ae057b05d87e61af" ;
+    archimate:source na:id-e67a4f2983ce40f9823ec34ba460055a ;
+    archimate:target na:id-9ea8fbaeb19243fa971013c57c3e96f9 .
+
+na:id-3354fd979bc04b9fbc8f95ad9007f5f6
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-3354fd979bc04b9fbc8f95ad9007f5f6" ;
+    archimate:source na:id-e67a4f2983ce40f9823ec34ba460055a ;
+    archimate:target na:id-b4a86e2e430c472b9f74bedb7f66fd74 .
+
+na:id-c39e5a6763d34eb0a418376306268036
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-c39e5a6763d34eb0a418376306268036" ;
+    archimate:source na:id-e67a4f2983ce40f9823ec34ba460055a ;
+    archimate:target na:id-3f59d920995e4d488e56f61356dcf97a .
+
+na:id-ed531b874d564508b5c0791aa48b06a8
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-ed531b874d564508b5c0791aa48b06a8" ;
+    archimate:source na:id-682d96a51e604ed2a00e1f4824023bab ;
+    archimate:target na:id-dabf94e621f644ffa53ebb44dcc9ff79 .
+
+na:id-3afed1b42f87476d8712d28e7a338bad
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-3afed1b42f87476d8712d28e7a338bad" ;
+    archimate:source na:id-cd3b6a8989a448a2b4dfbf430a41bad4 ;
+    archimate:target na:id-ce84b9b6943f4789bca153c0ed15245a .
+
+na:id-240d7f5a4926493aac97a00c8a6850f0
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-240d7f5a4926493aac97a00c8a6850f0" ;
+    archimate:source na:id-896e4c1434604caa891b94bcce964720 ;
+    archimate:target na:id-5852d070415849fab42749cb488d984a .
+
+na:id-54060855558c4293a42f3c03ca23c467
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-54060855558c4293a42f3c03ca23c467" ;
+    archimate:source na:id-682d96a51e604ed2a00e1f4824023bab ;
+    archimate:target na:id-034543e002414306a8fbecc8c9d8e496 .
+
+na:id-f1aa9ab1f0854f20ba77f2983bf09b1a
+    a archimate:SpecializationRelationship, archimate:Relationship ;
+    archimate:identifier "id-f1aa9ab1f0854f20ba77f2983bf09b1a" ;
+    archimate:source na:id-23598cee556747ef80cab10dbad84e65 ;
+    archimate:target na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5 .
+
+na:id-51ddcf51d43845e5be4571ce7d5d6de7
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-51ddcf51d43845e5be4571ce7d5d6de7" ;
+    archimate:source na:id-1be148b57796458993c3f7f5f24815ca ;
+    archimate:target na:id-94f7473fb4184e3b94bb92c35186b88f .
+
+na:id-ca035da9f23945e98b3ab94ac7fd0e73
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-ca035da9f23945e98b3ab94ac7fd0e73" ;
+    archimate:source na:id-cd3b6a8989a448a2b4dfbf430a41bad4 ;
+    archimate:target na:id-94f7473fb4184e3b94bb92c35186b88f .
+
+na:id-91feb34123364ee3886817428b41c2b8
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-91feb34123364ee3886817428b41c2b8" ;
+    archimate:source na:id-682d96a51e604ed2a00e1f4824023bab ;
+    archimate:target na:id-dbfcb14c3e024a40b6cb71138311abc0 .
+
+na:id-943a2b26870746c88fcd686f5be81f0f
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-943a2b26870746c88fcd686f5be81f0f" ;
+    archimate:source na:id-e67a4f2983ce40f9823ec34ba460055a ;
+    archimate:target na:id-dbfcb14c3e024a40b6cb71138311abc0 .
+
+na:id-ee332cb030944bd9bbae55e9f4416b3b
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-ee332cb030944bd9bbae55e9f4416b3b" ;
+    archimate:source na:id-299fc063873a4f278a1d3c0ac9480467 ;
+    archimate:target na:id-7d62a886cdc14d20a5b361cf68da5754 .
+
+na:id-b04c5fdac5474f69a52e83da1de813b5
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-b04c5fdac5474f69a52e83da1de813b5" ;
+    archimate:source na:id-d7aa97e6319a492d8a1345bcaa8e154a ;
+    archimate:target na:id-a27833cb9e324549916a528f31481dce .
+
+na:id-7d073402bca5483db9367277686f1704
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-7d073402bca5483db9367277686f1704" ;
+    archimate:source na:id-ad6f81e892a74590840828b6aabb270d ;
+    archimate:target na:id-a27833cb9e324549916a528f31481dce .
+
+na:id-b564abff977a40aab67389c44b080805
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-b564abff977a40aab67389c44b080805" ;
+    archimate:source na:id-98df6c2b4df340c7a3a3ad32d99ca37e ;
+    archimate:target na:id-a27833cb9e324549916a528f31481dce .
+
+na:id-9ee23600ae524a5e98962a28dcab7ef9
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-9ee23600ae524a5e98962a28dcab7ef9" ;
+    archimate:source na:id-1be148b57796458993c3f7f5f24815ca ;
+    archimate:target na:id-d0918d8701a4408b93a9ab278ecbb85e .
+
+na:id-2ff2758133c04007a9f3e4cc6ce381da
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-2ff2758133c04007a9f3e4cc6ce381da" ;
+    archimate:source na:id-cd3b6a8989a448a2b4dfbf430a41bad4 ;
+    archimate:target na:id-d0918d8701a4408b93a9ab278ecbb85e .
+
+na:id-c56846e4143d401fbfc404bab48787ab
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-c56846e4143d401fbfc404bab48787ab" ;
+    archimate:source na:id-896e4c1434604caa891b94bcce964720 ;
+    archimate:target na:id-0007ec16e9a1406d9f6aabd1f975d993 .
+
+na:id-8c74774007b346988e20bba0cb4dc91c
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-8c74774007b346988e20bba0cb4dc91c" ;
+    archimate:source na:id-c3f87c86b19547359c677a333b16f03b ;
+    archimate:target na:id-0007ec16e9a1406d9f6aabd1f975d993 .
+
+na:id-2be358d142724d008abc177c042b4f81
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-2be358d142724d008abc177c042b4f81" ;
+    archimate:source na:id-d503cf06faa1417b8acd4b26a5c0741e ;
+    archimate:target na:id-5b6ec861e2d246ce90c99ea282d35610 .
+
+na:id-7e7fa483fe7c43ceaba5120c218024b1
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-7e7fa483fe7c43ceaba5120c218024b1" ;
+    archimate:source na:id-48c9873ae59341a49c2dca27379fab55 ;
+    archimate:target na:id-5b6ec861e2d246ce90c99ea282d35610 .
+
+na:id-1988004672634849875899b7b6c56892
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-1988004672634849875899b7b6c56892" ;
+    archimate:source na:id-299fc063873a4f278a1d3c0ac9480467 ;
+    archimate:target na:id-5b6ec861e2d246ce90c99ea282d35610 .
+
+na:id-e262c7924540457ea4eec2d6cc47de44
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-e262c7924540457ea4eec2d6cc47de44" ;
+    archimate:source na:id-e67a4f2983ce40f9823ec34ba460055a ;
+    archimate:target na:id-0007ec16e9a1406d9f6aabd1f975d993 .
+
+na:id-5e939c7f112f4183995f4d86bab55b93
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-5e939c7f112f4183995f4d86bab55b93" ;
+    archimate:source na:id-c0547226c598467a942dced879d0c18b ;
+    archimate:target na:id-0007ec16e9a1406d9f6aabd1f975d993 .
+
+na:id-1c1c276db27f4281a16eda2af3fce4d0
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-1c1c276db27f4281a16eda2af3fce4d0" ;
+    archimate:source na:id-ba60560a9ed64b4d87b2fd4fa6b32937 ;
+    archimate:target na:id-1be148b57796458993c3f7f5f24815ca .
+
+na:id-76b5fb12b61e4dc9986e26cb5830336c
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-76b5fb12b61e4dc9986e26cb5830336c" ;
+    archimate:source na:id-ba60560a9ed64b4d87b2fd4fa6b32937 ;
+    archimate:target na:id-e67a4f2983ce40f9823ec34ba460055a .
+
+na:id-96d1bb4634c9476e8f1d69d572df5b89
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-96d1bb4634c9476e8f1d69d572df5b89" ;
+    archimate:source na:id-ba60560a9ed64b4d87b2fd4fa6b32937 ;
+    archimate:target na:id-d7aa97e6319a492d8a1345bcaa8e154a .
+
+na:id-78c0cacbc5454aa2ae8a7e0617ea492d
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-78c0cacbc5454aa2ae8a7e0617ea492d" ;
+    archimate:source na:id-ba60560a9ed64b4d87b2fd4fa6b32937 ;
+    archimate:target na:id-d503cf06faa1417b8acd4b26a5c0741e .
+
+na:id-05fe0f5c257d4012b1a45ff9d6618ca9
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-05fe0f5c257d4012b1a45ff9d6618ca9" ;
+    archimate:source na:id-ba60560a9ed64b4d87b2fd4fa6b32937 ;
+    archimate:target na:id-98df6c2b4df340c7a3a3ad32d99ca37e .
+
+na:id-c54b12ef21eb4c099b4b088a5ba51df9
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-c54b12ef21eb4c099b4b088a5ba51df9" ;
+    archimate:source na:id-ba60560a9ed64b4d87b2fd4fa6b32937 ;
+    archimate:target na:id-48c9873ae59341a49c2dca27379fab55 .
+
+na:id-2d512e4348324677b33a0f8d599b63e7
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-2d512e4348324677b33a0f8d599b63e7" ;
+    archimate:source na:id-ba60560a9ed64b4d87b2fd4fa6b32937 ;
+    archimate:target na:id-cd3b6a8989a448a2b4dfbf430a41bad4 .
+
+na:id-748ff2bb174041898c115fc8304ce748
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-748ff2bb174041898c115fc8304ce748" ;
+    archimate:source na:id-ba60560a9ed64b4d87b2fd4fa6b32937 ;
+    archimate:target na:id-896e4c1434604caa891b94bcce964720 .
+
+na:id-15cbb52920fb4b2eb460497824b8dc10
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-15cbb52920fb4b2eb460497824b8dc10" ;
+    archimate:source na:id-ba60560a9ed64b4d87b2fd4fa6b32937 ;
+    archimate:target na:id-ad6f81e892a74590840828b6aabb270d .
+
+na:id-93c99ffb6c6f4cb3b2caaffbd27f534c
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-93c99ffb6c6f4cb3b2caaffbd27f534c" ;
+    archimate:source na:id-ba60560a9ed64b4d87b2fd4fa6b32937 ;
+    archimate:target na:id-c3f87c86b19547359c677a333b16f03b .
+
+na:id-3984560851fc4112afa742c81fe56888
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-3984560851fc4112afa742c81fe56888" ;
+    archimate:source na:id-ba60560a9ed64b4d87b2fd4fa6b32937 ;
+    archimate:target na:id-682d96a51e604ed2a00e1f4824023bab .
+
+na:id-6a9e29e1b72b43c6a2c284ed79013100
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-6a9e29e1b72b43c6a2c284ed79013100" ;
+    archimate:source na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 ;
+    archimate:target na:id-534850df1c7b48e2a2e7cc966ece233f .
+
+na:id-42af8b36568c49019b31840ec5178115
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-42af8b36568c49019b31840ec5178115" ;
+    archimate:source na:id-30e12f5fdabe414db1430b0d735ed1f4 ;
+    archimate:target na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 .
+
+na:id-24b3a80613b7424da16872dbf7b35544
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-24b3a80613b7424da16872dbf7b35544" ;
+    archimate:source na:id-cd3b6a8989a448a2b4dfbf430a41bad4 ;
+    archimate:target na:id-60827614648541ef8520df87fa25d100 .
+
+na:id-1a2037c92fac4f69a42fe9f9d4f59d8c
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-1a2037c92fac4f69a42fe9f9d4f59d8c" ;
+    archimate:source na:id-cd3b6a8989a448a2b4dfbf430a41bad4 ;
+    archimate:target na:id-f696350f5d844a96854deadb83bc3c81 .
+
+na:id-751d25e243bd494883bf441aa900468a
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-751d25e243bd494883bf441aa900468a" ;
+    archimate:source na:id-ad6f81e892a74590840828b6aabb270d ;
+    archimate:target na:id-b503993b59044b83b3c38fb179fa732c .
+
+na:id-ec6325c3b0784545b202fcb2e7be8a5f
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-ec6325c3b0784545b202fcb2e7be8a5f" ;
+    archimate:source na:id-ad6f81e892a74590840828b6aabb270d ;
+    archimate:target na:id-64811e71d98647e5a678a0a2e79ae617 .
+
+na:id-d23f13df2b914f51867c3e0749a1aa9b
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-d23f13df2b914f51867c3e0749a1aa9b" ;
+    archimate:source na:id-ba60560a9ed64b4d87b2fd4fa6b32937 ;
+    archimate:target na:id-897fd3d0f5fd4c2891e824a371d5e69b .
+
+na:id-b3ddd68251534c77bd8e522558f5b03d
+    a archimate:InfluenceRelationship, archimate:Relationship ;
+    archimate:identifier "id-b3ddd68251534c77bd8e522558f5b03d" ;
+    archimate:source na:id-897fd3d0f5fd4c2891e824a371d5e69b ;
+    archimate:target na:id-a4062153239a4d13a9fdef8cc205c8e6 .
+
+na:id-a4523b3547904a5face599b51ab78b1e
+    a archimate:InfluenceRelationship, archimate:Relationship ;
+    archimate:identifier "id-a4523b3547904a5face599b51ab78b1e" ;
+    archimate:source na:id-897fd3d0f5fd4c2891e824a371d5e69b ;
+    archimate:target na:id-cbc357e78ede45e8aa565fde3b7380b5 .
+
+na:id-3da7121a0c43480cb36a26cd7bfa215f
+    a archimate:InfluenceRelationship, archimate:Relationship ;
+    archimate:identifier "id-3da7121a0c43480cb36a26cd7bfa215f" ;
+    archimate:source na:id-897fd3d0f5fd4c2891e824a371d5e69b ;
+    archimate:target na:id-56e7246019f54eec8093568bd0fb8e22 .
+
+na:id-2e38953b12614d9285677c6097fb3d36
+    a archimate:InfluenceRelationship, archimate:Relationship ;
+    archimate:identifier "id-2e38953b12614d9285677c6097fb3d36" ;
+    archimate:source na:id-897fd3d0f5fd4c2891e824a371d5e69b ;
+    archimate:target na:id-90ff9c60528d4dfe93d534bd6a7bcfeb .
+
+na:id-fdbbf5895f2b427b8aa6d322ab9c9677
+    a archimate:InfluenceRelationship, archimate:Relationship ;
+    archimate:identifier "id-fdbbf5895f2b427b8aa6d322ab9c9677" ;
+    archimate:source na:id-897fd3d0f5fd4c2891e824a371d5e69b ;
+    archimate:target na:id-9f2593113134463ea6863703c308b251 .
+
+na:id-34c9b05c7c5b453bab9d2e84c53fb8b2
+    a archimate:InfluenceRelationship, archimate:Relationship ;
+    archimate:identifier "id-34c9b05c7c5b453bab9d2e84c53fb8b2" ;
+    archimate:source na:id-897fd3d0f5fd4c2891e824a371d5e69b ;
+    archimate:target na:id-bf3fa917baad486d9865b9627199a2d4 .
+
+na:id-213914132281446daf1723a04242dec6
+    a archimate:InfluenceRelationship, archimate:Relationship ;
+    archimate:identifier "id-213914132281446daf1723a04242dec6" ;
+    archimate:source na:id-897fd3d0f5fd4c2891e824a371d5e69b ;
+    archimate:target na:id-9622546accfc43d28a38cebdecf8818a .
+
+na:id-8d9c225e7458449f82439c0276e88b30
+    a archimate:InfluenceRelationship, archimate:Relationship ;
+    archimate:identifier "id-8d9c225e7458449f82439c0276e88b30" ;
+    archimate:source na:id-897fd3d0f5fd4c2891e824a371d5e69b ;
+    archimate:target na:id-89e255a238d346a4901424f0059e6345 .
+
+na:id-a87ec8f88d3b4c53bc089deb54062c24
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-a87ec8f88d3b4c53bc089deb54062c24" ;
+    archimate:source na:id-ba60560a9ed64b4d87b2fd4fa6b32937 ;
+    archimate:target na:id-299fc063873a4f278a1d3c0ac9480467 .
+
+na:id-985e3bfcdf3d4e62ae385c41eb3306f1
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-985e3bfcdf3d4e62ae385c41eb3306f1" ;
+    archimate:source na:id-cd3b6a8989a448a2b4dfbf430a41bad4 ;
+    archimate:target na:id-379e167f7b9c4fbea9c6969425ba7f6c .
+
+na:id-d8f4cab32bdd4bb3bda216ed67057495
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-d8f4cab32bdd4bb3bda216ed67057495" ;
+    archimate:source na:id-d7aa97e6319a492d8a1345bcaa8e154a ;
+    archimate:target na:id-68ec332ee94c483e878a3a2ae903863f .
+
+na:id-eb92e66a28574473b01a184f551cd9cc
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-eb92e66a28574473b01a184f551cd9cc" ;
+    archimate:source na:id-d7aa97e6319a492d8a1345bcaa8e154a ;
+    archimate:target na:id-08d657e690c046019dbf6d52b1ed4d63 .
+
+na:id-64e7578a9d604b75bb2e77416d6857b4
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-64e7578a9d604b75bb2e77416d6857b4" ;
+    archimate:source na:id-ad6f81e892a74590840828b6aabb270d ;
+    archimate:target na:id-0007ec16e9a1406d9f6aabd1f975d993 .
+
+na:id-ddbd63e6f45843efa7d485e153d07308
+    a archimate:SpecializationRelationship, archimate:Relationship ;
+    archimate:identifier "id-ddbd63e6f45843efa7d485e153d07308" ;
+    archimate:source na:id-456429d236544c28b3d7257893b0dec6 ;
+    archimate:target na:id-9860d11ff3fd40a5b541b8f929ed305f .
+
+na:id-95656bacc9844fb7b78db2e5718c7017
+    a archimate:SpecializationRelationship, archimate:Relationship ;
+    archimate:identifier "id-95656bacc9844fb7b78db2e5718c7017" ;
+    archimate:source na:id-f1f34cea2b2e4b5b8f8a9be88321de42 ;
+    archimate:target na:id-9860d11ff3fd40a5b541b8f929ed305f .
+
+na:id-13aab2de03464e51a48871a3acb4e03a
+    a archimate:SpecializationRelationship, archimate:Relationship ;
+    archimate:identifier "id-13aab2de03464e51a48871a3acb4e03a" ;
+    archimate:source na:id-a947552722064b7c93181833028cc2f1 ;
+    archimate:target na:id-9860d11ff3fd40a5b541b8f929ed305f .
+
+na:id-66819bd3297049fb84bcbe80f5c623b7
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-66819bd3297049fb84bcbe80f5c623b7" ;
+    archimate:source na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5 ;
+    archimate:target na:id-04fef6c083b449dba91c876ae2e3715f .
+
+na:id-3215a93c074448ce93161485d92540b7
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-3215a93c074448ce93161485d92540b7" ;
+    archimate:source na:id-d7a27706ca3240468e16d88afbcd4a3e ;
+    archimate:target na:id-66f38bffcd9f48d796a041a9a292d6ed .
+
+na:id-805c7b63bb4a40f4a3c373d2a9d40736
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-805c7b63bb4a40f4a3c373d2a9d40736" ;
+    archimate:source na:id-ac4c391b696f493da64833de20f7df9c ;
+    archimate:target na:id-66f38bffcd9f48d796a041a9a292d6ed .
+
+na:id-eec92cd1834c4d53bfa4567ab65d4a57
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-eec92cd1834c4d53bfa4567ab65d4a57" ;
+    archimate:source na:id-0d355bfbd31e4a188766733761ede0ba ;
+    archimate:target na:id-66f38bffcd9f48d796a041a9a292d6ed .
+
+na:id-1cd80ce835b048629d8710b64d92491d
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-1cd80ce835b048629d8710b64d92491d" ;
+    archimate:name "basert på"@nb ;
+    archimate:source na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5 ;
+    archimate:target na:id-8810f83ff9fe44c2a3368cdef932526b .
+
+na:id-4e6aac60c9b84c98a872233d88c85211
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-4e6aac60c9b84c98a872233d88c85211" ;
+    archimate:source na:id-661cb46063c544be82d804511f5ea9f9 ;
+    archimate:target na:id-e236b66b0d574a2bb97dbd79d7d38d47 .
+
+na:id-c2f61540e86d4ee881d5d62a40ea94d0
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-c2f61540e86d4ee881d5d62a40ea94d0" ;
+    archimate:source na:id-661cb46063c544be82d804511f5ea9f9 ;
+    archimate:target na:id-3fd615c0b19e4762953cd34908523dbc .
+
+na:id-df58ca19471f4ea8a055a6c11396a5e4
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-df58ca19471f4ea8a055a6c11396a5e4" ;
+    archimate:source na:id-661cb46063c544be82d804511f5ea9f9 ;
+    archimate:target na:id-503ab92854754702ab00164afdbf6f70 .
+
+na:id-4caf809f8a3a4f5f9780517fd0ef62c3
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-4caf809f8a3a4f5f9780517fd0ef62c3" ;
+    archimate:source na:id-661cb46063c544be82d804511f5ea9f9 ;
+    archimate:target na:id-6c59a946ea8e4ad8903fbb1a6ffa9219 .
+
+na:id-84968014f5284cb49321355eca8ca3a2
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-84968014f5284cb49321355eca8ca3a2" ;
+    archimate:source na:id-ba60560a9ed64b4d87b2fd4fa6b32937 ;
+    archimate:target na:id-46a97f13294345f89decd549d4269848 .
+
+na:id-b63f5da05bf4410299bc709cc3ea631b
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-b63f5da05bf4410299bc709cc3ea631b" ;
+    archimate:source na:id-299fc063873a4f278a1d3c0ac9480467 ;
+    archimate:target na:id-e236b66b0d574a2bb97dbd79d7d38d47 .
+
+na:id-14c022dfc25f4d77a90fdc6619998f56
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-14c022dfc25f4d77a90fdc6619998f56" ;
+    archimate:source na:id-682d96a51e604ed2a00e1f4824023bab ;
+    archimate:target na:id-661cb46063c544be82d804511f5ea9f9 .
+
+na:id-f679f3cf707e4af98ae1f28c30ca9087
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-f679f3cf707e4af98ae1f28c30ca9087" ;
+    archimate:source na:id-e67a4f2983ce40f9823ec34ba460055a ;
+    archimate:target na:id-3fd615c0b19e4762953cd34908523dbc .
+
+na:id-4d23f636395046f292082e5c4bbf2cad
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-4d23f636395046f292082e5c4bbf2cad" ;
+    archimate:source na:id-896e4c1434604caa891b94bcce964720 ;
+    archimate:target na:id-503ab92854754702ab00164afdbf6f70 .
+
+na:id-ae81d7862ebb40ac837596ed9bd9a9f4
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-ae81d7862ebb40ac837596ed9bd9a9f4" ;
+    archimate:source na:id-896e4c1434604caa891b94bcce964720 ;
+    archimate:target na:id-6c59a946ea8e4ad8903fbb1a6ffa9219 .
+
+na:id-321a9910504540b2bb9934ad13245d50
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-321a9910504540b2bb9934ad13245d50" ;
+    archimate:source na:id-d503cf06faa1417b8acd4b26a5c0741e ;
+    archimate:target na:id-e236b66b0d574a2bb97dbd79d7d38d47 .
+
+na:id-9898dbefc39b4ed096db80db2f0b60f2
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-9898dbefc39b4ed096db80db2f0b60f2" ;
+    archimate:source na:id-d503cf06faa1417b8acd4b26a5c0741e ;
+    archimate:target na:id-6c59a946ea8e4ad8903fbb1a6ffa9219 .
+
+na:id-768954f3e4af4154b108986ec36ac24a
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-768954f3e4af4154b108986ec36ac24a" ;
+    archimate:source na:id-cd3b6a8989a448a2b4dfbf430a41bad4 ;
+    archimate:target na:id-3fd615c0b19e4762953cd34908523dbc .
+
+na:id-91eb40769a354e578cd401ae23454459
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-91eb40769a354e578cd401ae23454459" ;
+    archimate:source na:id-cd3b6a8989a448a2b4dfbf430a41bad4 ;
+    archimate:target na:id-6c59a946ea8e4ad8903fbb1a6ffa9219 .
+
+na:id-d07de7240002488297f1c1645bd2494f
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-d07de7240002488297f1c1645bd2494f" ;
+    archimate:source na:id-1be148b57796458993c3f7f5f24815ca ;
+    archimate:target na:id-3fd615c0b19e4762953cd34908523dbc .
+
+na:id-52c2e5bfa5c14a239350f40c00b7371b
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-52c2e5bfa5c14a239350f40c00b7371b" ;
+    archimate:source na:id-1be148b57796458993c3f7f5f24815ca ;
+    archimate:target na:id-6c59a946ea8e4ad8903fbb1a6ffa9219 .
+
+na:id-a2dffa10f5974ba283ffd54bdf39da12
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-a2dffa10f5974ba283ffd54bdf39da12" ;
+    archimate:source na:id-ad6f81e892a74590840828b6aabb270d ;
+    archimate:target na:id-6c59a946ea8e4ad8903fbb1a6ffa9219 .
+
+na:id-c95274fd02da4acbb7256670181f4c28
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-c95274fd02da4acbb7256670181f4c28" ;
+    archimate:source na:id-ad6f81e892a74590840828b6aabb270d ;
+    archimate:target na:id-e236b66b0d574a2bb97dbd79d7d38d47 .
+
+na:id-49b1d260e91943ecbf46b2b40c4ee951
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-49b1d260e91943ecbf46b2b40c4ee951" ;
+    archimate:source na:id-d7aa97e6319a492d8a1345bcaa8e154a ;
+    archimate:target na:id-503ab92854754702ab00164afdbf6f70 .
+
+na:id-b1d80c6f02154bad9bfba989de485f58
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-b1d80c6f02154bad9bfba989de485f58" ;
+    archimate:source na:id-d7aa97e6319a492d8a1345bcaa8e154a ;
+    archimate:target na:id-e236b66b0d574a2bb97dbd79d7d38d47 .
+
+na:id-44da0c51e16d40339cd69fb68109c308
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-44da0c51e16d40339cd69fb68109c308" ;
+    archimate:source na:id-d7aa97e6319a492d8a1345bcaa8e154a ;
+    archimate:target na:id-6c59a946ea8e4ad8903fbb1a6ffa9219 .
+
+na:id-b7d92e406640483495496dcb2b55c4ba
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-b7d92e406640483495496dcb2b55c4ba" ;
+    archimate:source na:id-98df6c2b4df340c7a3a3ad32d99ca37e ;
+    archimate:target na:id-e236b66b0d574a2bb97dbd79d7d38d47 .
+
+na:id-efa6f483300d44fbbfb5d70a8e0bfd4f
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-efa6f483300d44fbbfb5d70a8e0bfd4f" ;
+    archimate:source na:id-98df6c2b4df340c7a3a3ad32d99ca37e ;
+    archimate:target na:id-3fd615c0b19e4762953cd34908523dbc .
+
+na:id-7863dd1cc8f845138f56ffe1e1302e55
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-7863dd1cc8f845138f56ffe1e1302e55" ;
+    archimate:source na:id-98df6c2b4df340c7a3a3ad32d99ca37e ;
+    archimate:target na:id-503ab92854754702ab00164afdbf6f70 .
+
+na:id-3afb4e03ee0244be91b992cda637620f
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-3afb4e03ee0244be91b992cda637620f" ;
+    archimate:source na:id-98df6c2b4df340c7a3a3ad32d99ca37e ;
+    archimate:target na:id-6c59a946ea8e4ad8903fbb1a6ffa9219 .
+
+na:id-756b7db23bbd4b528d57b1e8cbe54b73
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-756b7db23bbd4b528d57b1e8cbe54b73" ;
+    archimate:source na:id-48c9873ae59341a49c2dca27379fab55 ;
+    archimate:target na:id-6c59a946ea8e4ad8903fbb1a6ffa9219 .
+
+na:id-bc65c01a7f2c46bd9f8f8d7e9cfb2ef1
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-bc65c01a7f2c46bd9f8f8d7e9cfb2ef1" ;
+    archimate:source na:id-48c9873ae59341a49c2dca27379fab55 ;
+    archimate:target na:id-3fd615c0b19e4762953cd34908523dbc .
+
+na:id-405f076fc4e444f99939e905315d76e8
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-405f076fc4e444f99939e905315d76e8" ;
+    archimate:source na:id-c3f87c86b19547359c677a333b16f03b ;
+    archimate:target na:id-661cb46063c544be82d804511f5ea9f9 .
+
+na:id-31901472ea0349129a45f045114bf54e
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-31901472ea0349129a45f045114bf54e" ;
+    archimate:source na:id-c0547226c598467a942dced879d0c18b ;
+    archimate:target na:id-661cb46063c544be82d804511f5ea9f9 .
+
+na:id-f6fcdfb945004e2f8c66445bbd789bea
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-f6fcdfb945004e2f8c66445bbd789bea" ;
+    archimate:source na:id-ba60560a9ed64b4d87b2fd4fa6b32937 ;
+    archimate:target na:id-8810f83ff9fe44c2a3368cdef932526b .
+
+na:id-f0b083099f6d469984f08dbf38a9b213
+    a archimate:ServingRelationship, archimate:Relationship ;
+    archimate:identifier "id-f0b083099f6d469984f08dbf38a9b213" ;
+    archimate:name "realiserer"@nb ;
+    archimate:source na:id-9860d11ff3fd40a5b541b8f929ed305f ;
+    archimate:target na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5 .
+
+na:id-2cc89b2f962f4183a6beb4191ece7ef6
+    a archimate:SpecializationRelationship, archimate:Relationship ;
+    archimate:identifier "id-2cc89b2f962f4183a6beb4191ece7ef6" ;
+    archimate:source na:id-199ae45b0a6c47b28b3507837647c6c8 ;
+    archimate:target na:id-9860d11ff3fd40a5b541b8f929ed305f .
+
+na:id-1a3cd1a136bd44ca82b526fad88746c2
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-1a3cd1a136bd44ca82b526fad88746c2" ;
+    archimate:source na:id-1be148b57796458993c3f7f5f24815ca ;
+    archimate:target na:id-0007ec16e9a1406d9f6aabd1f975d993 .
+
+na:id-60f5b70a00c54834988ff75f1923dae4
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-60f5b70a00c54834988ff75f1923dae4" ;
+    archimate:source na:id-299fc063873a4f278a1d3c0ac9480467 ;
+    archimate:target na:id-0119029984674da59dbbfdc3a8ca3e95 .
+
+na:id-cfd377754abe42e388f14c5315ab8959
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-cfd377754abe42e388f14c5315ab8959" ;
+    archimate:source na:id-299fc063873a4f278a1d3c0ac9480467 ;
+    archimate:target na:id-0209483504444508a40415aa6e3fc39c .
+
+na:id-187b4c2db4c84f97a7bebe52abe5c6df
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-187b4c2db4c84f97a7bebe52abe5c6df" ;
+    archimate:source na:id-ba60560a9ed64b4d87b2fd4fa6b32937 ;
+    archimate:target na:id-c0547226c598467a942dced879d0c18b .
+
+na:id-0f8d8f67f938453294c68ed665a39129
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-0f8d8f67f938453294c68ed665a39129" ;
+    archimate:source na:id-c0547226c598467a942dced879d0c18b ;
+    archimate:target na:id-a601bb3d7b11478185903149965f7842 .
+
+na:id-8467d093b03043d78e50503ab29584a2
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-8467d093b03043d78e50503ab29584a2" ;
+    archimate:source na:id-c0547226c598467a942dced879d0c18b ;
+    archimate:target na:id-0bfa29018e7144578b2184e70414b7e8 .
+
+na:id-d2db3d06e0cb4a28bf0609a1e93f9a05
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-d2db3d06e0cb4a28bf0609a1e93f9a05" ;
+    archimate:source na:id-6cb4bed065c44e1b8821c60d4515ef28 ;
+    archimate:target na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 .
+
+na:id-b41dc2536c3448babbf3a7ac3b47ef58
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-b41dc2536c3448babbf3a7ac3b47ef58" ;
+    archimate:name "dekningsgrad"@nb ;
+    archimate:source na:id-23598cee556747ef80cab10dbad84e65 ;
+    archimate:target na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 .
+
+na:id-ac32845d657e4dee923712ffc6766bee
+    a archimate:ServingRelationship, archimate:Relationship ;
+    archimate:identifier "id-ac32845d657e4dee923712ffc6766bee" ;
+    archimate:name "benyttes i"@nb ;
+    archimate:source na:id-23598cee556747ef80cab10dbad84e65 ;
+    archimate:target na:id-31be9bc0b80e4be4b2df2d8e0000dc6f .
+
+na:id-0412277f637b4aaabd07f09dac5fe102
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-0412277f637b4aaabd07f09dac5fe102" ;
+    archimate:source na:id-0d355bfbd31e4a188766733761ede0ba ;
+    archimate:target na:id-30e12f5fdabe414db1430b0d735ed1f4 .
+
+na:id-ddfd40b6fd8d434d8388970444b41f34
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-ddfd40b6fd8d434d8388970444b41f34" ;
+    archimate:source na:id-31be9bc0b80e4be4b2df2d8e0000dc6f ;
+    archimate:target na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 .
+
+na:id-c81878106bef449c8fbcebb7a7861f44
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-c81878106bef449c8fbcebb7a7861f44" ;
+    archimate:source na:id-04fef6c083b449dba91c876ae2e3715f ;
+    archimate:target na:id-8810f83ff9fe44c2a3368cdef932526b .
+
+na:id-35336d033b864cc1b129d6e5e627f0c1
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-35336d033b864cc1b129d6e5e627f0c1" ;
+    archimate:source na:id-04fef6c083b449dba91c876ae2e3715f ;
+    archimate:target na:id-8810f83ff9fe44c2a3368cdef932526b .
+
+na:id-453bd99e2a77430eb83264b623d70ab9
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-453bd99e2a77430eb83264b623d70ab9" ;
+    archimate:name "forbedrer eller benytter"@nb ;
+    archimate:source na:id-6cb4bed065c44e1b8821c60d4515ef28 ;
+    archimate:target na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5 .
+
+na:id-eb5ea45fb81343aa850be6613dfe1c28
+    a archimate:ServingRelationship, archimate:Relationship ;
+    archimate:identifier "id-eb5ea45fb81343aa850be6613dfe1c28" ;
+    archimate:name "realiserer"@nb ;
+    archimate:source na:id-4157e35b43184dd7bbcb4405e7edea46 ;
+    archimate:target na:id-23598cee556747ef80cab10dbad84e65 .
+
+### ── Properties (archimate:Property individuals) ────────────────────────
+
+na:prop-id-9860d11ff3fd40a5b541b8f929ed305f-Dekningsgrad
+    a archimate:Property ;
+    archimate:propertyKey "Dekningsgrad" ;
+    archimate:propertyValue "1-5" .
+
+na:prop-id-eb6f01d0d0ef4230b7a5c9c73c3842c5-Maturity-Current
+    a archimate:Property ;
+    archimate:propertyKey "Maturity_Current" ;
+    archimate:propertyValue "1-5" .
+
+na:prop-id-eb6f01d0d0ef4230b7a5c9c73c3842c5-Maturity-Target
+    a archimate:Property ;
+    archimate:propertyKey "Maturity_Target" ;
+    archimate:propertyValue "1-5" .

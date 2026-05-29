@@ -4,10 +4,42 @@
 
 ## Elementer i viewet
 
+### Juridisk samhandlingsevne
+**Type:** Grouping
+
+Juridisk samhandling skal sikre at organisasjoner som arbeider under ulik lovgivning kan samhandle. For at organisasjoner på tvers i forvaltningen kan utvikle og bruke like tjenester og funksjonalitet må det rettslige grunnlaget for samhandling mellom aktørene være på plass.
+
+---
+
+### Styrings og forvaltning
+**Type:** Grouping
+
+Styring og forvaltning av integrerbare og sammenhengende offentlige tjenester er det femte området, og løper på tvers av de andre samhandlingsområdene. Det er viktig å komme i gang med avklaringer rundt styring og forvaltning så tidlig som mulig i prosessen ved etablering av nye tjenester. I tillegg vil det være nødvendig å gå mer i dybden etter hvert.
+
+---
+
 ### Organisatorisk samhandlingsevne
 **Type:** Grouping
 
 Organisatorisk samhandling handler om hvordan samhandlende virksomheter tilpasser tjenestekjeder/forretningsprosesser, ansvar og forventninger for å oppnå felles mål og fordeler. Området dekker også forventninger til å gjøre tjenester tilgjengelige og brukerorienterte, samt hvilke samhandlingsmodeller og avtaler virksomhetene etablerer knyttet til felles forvaltning.
+
+---
+
+### Datautveksling og integrasjon
+**Type:** Capability
+
+Evne til å sikkert, effektivt og standardisert utveksle data mellom aktører i økosystemet.
+
+
+Mrk: Lommebok er inkludert i denne
+
+---
+
+### Informasjonssikkerhet
+**Type:** Capability
+
+Evne til å ha tilstrekkelig sikkerhet i tjenester og løsninger som benyttes i felles økosystem. 
+Merk: Er sterkt knyttet til kapabilitet "Tillit"
 
 ---
 
@@ -21,30 +53,6 @@ Etisk og ansvarlig datautnyttelse: All bruk av data skjer på en sikker, lovlig 
 Dette innebærer:
 Forvaltningen systematisk bruker data som en strategisk ressurs i prosesser, beslutningstaking og tjenesteutvikling for å levere bedre og mer effektive tjenester til innbyggere og næringsliv.
 Dette forutsetter åpenhet, deling av data, og evne til å hente ut verdi fra data gjennom blant annet analyse, automatisering og bruk av kunstig intelligens.
-
----
-
-### Tjenesteutvikling
-**Type:** Capability
-
-Evne til å utvikle sammenhengende digitale tjenester.
-
-Dette er knyttet til prosess- og kompetanse-kapabilitet. Det innebærer å utvikle tjenester basert på metodikk, design, koding og samarbeid.
-
----
-
-### Juridisk samhandling
-**Type:** Capability
-
-Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.
-
-Dette innebærer:
-Harmonisering: Å identifisere og håndtere motstridende eller overlappende lovverk og forskrifter som hindrer samhandling og datadeling.
-Fortolkning og veiledning: Å tilby felles, autoritative tolkninger av relevant regelverk (f.eks. GDPR, forvaltningsloven, eIDAS, EU lovverk) og utarbeide praktiske veiledere for virksomhetene.
-Regelverksutvikling: Å foreslå og koordinere endringer i regelverket for å tilpasse det til teknologisk utvikling og nye behov i økosystemet.
-Risikovurdering: Å etablere felles metoder og standarder for juridisk risikovurdering knyttet til datadeling og utvikling av nye, tverrgående tjenester.
-
-
 
 ---
 
@@ -71,33 +79,53 @@ Evne til å tilby en sammenhengende digital brukeropplevelse gjennom et økosyst
 
 ---
 
-### Strategisk styring
+### Juridisk samhandling
 **Type:** Capability
 
-Evnen til å sette retning for nasjonal arkitektur og realisere strategiske mål.
+Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.
+
+Dette innebærer:
+Harmonisering: Å identifisere og håndtere motstridende eller overlappende lovverk og forskrifter som hindrer samhandling og datadeling.
+Fortolkning og veiledning: Å tilby felles, autoritative tolkninger av relevant regelverk (f.eks. GDPR, forvaltningsloven, eIDAS, EU lovverk) og utarbeide praktiske veiledere for virksomhetene.
+Regelverksutvikling: Å foreslå og koordinere endringer i regelverket for å tilpasse det til teknologisk utvikling og nye behov i økosystemet.
+Risikovurdering: Å etablere felles metoder og standarder for juridisk risikovurdering knyttet til datadeling og utvikling av nye, tverrgående tjenester.
+
+
 
 ---
 
-### Veiledning
+### Tillit
 **Type:** Capability
 
-Evne til at veiledninger for digital samhandling utarbeides og benyttes i felles økosystem.
+Evne å tilby tillitstjenester som muliggjører autentisering og autorisasjon på tvers av tjenestekjeder, og støtte en distribuert arkitektur og føderering mellom ulike domener og tjeneste
 
-Dette innebærer:
-* Beskrivelser av beste praksis
-* Omforente prinsipper, mønstre og standarder for hvordan løsninger skal bygges for å fungere optimalt, sikkert og sammenhengende i det nasjonale økosystemet.
-* Referansearkitekturer
+---
 
-* hva som er god faglig praksis
-* hvordan relevant regelverk skal tolkes
-* hvilke prioriteringer som er i samsvar med vedtatt politikk
+### Informasjonsforvaltning
+**Type:** Capability
 
-Veiledere kan ha ulik grad av styrke:
-* Bør benyttes: en sterk anbefaling/råd som vil gjelde de aller fleste. Denne er så klart faglig forankret at det sjelden er forsvarlig ikke å gjøre som anbefalt
-* Kan eller foreslår: en svak anbefaling/råd der ulike valg kan være riktig.
+Evne til å ha et felles rammeverk og styringsmodell for informasjonsforvaltning, slik at offentlige virksomheter kan utveksle og dele data og beskrivelser. 
+
+---
+
+### Nasjonal arkitektur for samhandling
+**Type:** Capability
+
+Evne til å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem.
+
+
+Felles økosystem skal bidra til økt deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv måte og skaper økte verdier for samfunnet.
+Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen mellom aktørene. 
+Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette.
 
 
 
+---
+
+### Samarbeid
+**Type:** Capability
+
+Evne til å samarbeid og samhandling på tvers av offentlig og privat forvaltning.
 
 ---
 
@@ -111,52 +139,6 @@ Dette innebærer også:
 
 
 
-
----
-
-### Informasjonssikkerhet
-**Type:** Capability
-
-Evne til å ha tilstrekkelig sikkerhet i tjenester og løsninger som benyttes i felles økosystem. 
-Merk: Er sterkt knyttet til kapabilitet "Tillit"
-
----
-
-### Styrings og forvaltning
-**Type:** Grouping
-
-Styring og forvaltning av integrerbare og sammenhengende offentlige tjenester er det femte området, og løper på tvers av de andre samhandlingsområdene. Det er viktig å komme i gang med avklaringer rundt styring og forvaltning så tidlig som mulig i prosessen ved etablering av nye tjenester. I tillegg vil det være nødvendig å gå mer i dybden etter hvert.
-
----
-
-### Tillit
-**Type:** Capability
-
-Evne å tilby tillitstjenester som muliggjører autentisering og autorisasjon på tvers av tjenestekjeder, og støtte en distribuert arkitektur og føderering mellom ulike domener og tjeneste
-
----
-
-### Datautveksling og integrasjon
-**Type:** Capability
-
-Evne til å sikkert, effektivt og standardisert utveksle data mellom aktører i økosystemet.
-
-
-Mrk: Lommebok er inkludert i denne
-
----
-
-### Teknisk samhandlingsevne
-**Type:** Grouping
-
-Teknisk samhandlingsevne sikrer at ulike systemer kan integreres. Dette krever teknisk standardisering, noe som i dag blant annet blir understøttet av forskrift om IT-standarder i offentlig forvaltning. Området dekker forhold knyttet til applikasjon, data, teknologi og sikkerhet.
-
----
-
-### Samarbeid
-**Type:** Capability
-
-Evne til å samarbeid og samhandling på tvers av offentlig og privat forvaltning.
 
 ---
 
@@ -183,31 +165,49 @@ Som et resultat har Norge etablert sitt eget nasjonale rammeverk for interoperab
 
 ---
 
-### Informasjonsforvaltning
-**Type:** Capability
-
-Evne til å ha et felles rammeverk og styringsmodell for informasjonsforvaltning, slik at offentlige virksomheter kan utveksle og dele data og beskrivelser. 
-
----
-
-### Nasjonal arkitektur for samhandling
-**Type:** Capability
-
-Evne til å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem.
-
-
-Felles økosystem skal bidra til økt deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv måte og skaper økte verdier for samfunnet.
-Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen mellom aktørene. 
-Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette.
-
-
-
----
-
-### Juridisk samhandlingsevne
+### Teknisk samhandlingsevne
 **Type:** Grouping
 
-Juridisk samhandling skal sikre at organisasjoner som arbeider under ulik lovgivning kan samhandle. For at organisasjoner på tvers i forvaltningen kan utvikle og bruke like tjenester og funksjonalitet må det rettslige grunnlaget for samhandling mellom aktørene være på plass.
+Teknisk samhandlingsevne sikrer at ulike systemer kan integreres. Dette krever teknisk standardisering, noe som i dag blant annet blir understøttet av forskrift om IT-standarder i offentlig forvaltning. Området dekker forhold knyttet til applikasjon, data, teknologi og sikkerhet.
+
+---
+
+### Tjenesteutvikling
+**Type:** Capability
+
+Evne til å utvikle sammenhengende digitale tjenester.
+
+Dette er knyttet til prosess- og kompetanse-kapabilitet. Det innebærer å utvikle tjenester basert på metodikk, design, koding og samarbeid.
+
+---
+
+### Veiledning
+**Type:** Capability
+
+Evne til at veiledninger for digital samhandling utarbeides og benyttes i felles økosystem.
+
+Dette innebærer:
+* Beskrivelser av beste praksis
+* Omforente prinsipper, mønstre og standarder for hvordan løsninger skal bygges for å fungere optimalt, sikkert og sammenhengende i det nasjonale økosystemet.
+* Referansearkitekturer
+
+* hva som er god faglig praksis
+* hvordan relevant regelverk skal tolkes
+* hvilke prioriteringer som er i samsvar med vedtatt politikk
+
+Veiledere kan ha ulik grad av styrke:
+* Bør benyttes: en sterk anbefaling/råd som vil gjelde de aller fleste. Denne er så klart faglig forankret at det sjelden er forsvarlig ikke å gjøre som anbefalt
+* Kan eller foreslår: en svak anbefaling/råd der ulike valg kan være riktig.
+
+
+
+
+---
+
+### Strategisk styring
+**Type:** Capability
+
+Evnen til å sette retning for nasjonal arkitektur og realisere strategiske mål.
 
 ---
 
