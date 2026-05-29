@@ -28,6 +28,7 @@ For å se resultatet lokalt, kan du kjøre (krever at MkDocs er installert):
 
 ```bash
 mkdocs serve
+(eller: python -m mkdocs serve)
 ```
 
 ## Maler og innhold
