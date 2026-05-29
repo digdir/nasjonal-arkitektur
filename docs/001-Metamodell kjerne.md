@@ -15,57 +15,6 @@ Normeringsgrad kan være knyttet til disse virkemidlene.
 
 ---
 
-### Domenekapabilitet
-**Type:** Capability
-
----
-
-### Økonomiske og juridiske rammer og virkemidler
-**Type:** Resource
-
-Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
-
-Rammer og virkemidler kan være ressurser som er
-* Finansielle
-* Regulative
-
-
-
-
----
-
-### Konkret tiltak
-**Type:** WorkPackage
-
-Realiserer endringer som fjerner gap. Dette er konkrete tiltak som har startet eller er planlagt.
-Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
-
----
-
-### Nåværende situasjon
-**Type:** Plateau
-
----
-
-### Gap
-**Type:** Gap
-
-Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjonal arkitektur)
-
----
-
-### Strategiske mål
-**Type:** Goal
-
-Målene fra Digitaliseringsstrategien.
-
----
-
-### Domeneressurs
-**Type:** Resource
-
----
-
 ### Effektmål
 **Type:** Outcome
 
@@ -79,28 +28,15 @@ F.eks:
 
 ---
 
-### Kapabilitet (Operasjonell)
-**Type:** Capability
-
----
-
-### Samhandlingsareneaer og organisering
-**Type:** Resource
-
-Organiserte nettverk og styringsorganer for både dialog og strategisk samarbeid og samordning.
-
-Eksempler:
-* Samstyringsstruktur i kommunal sektor
-* Skate
-* ASR (Arkitektur- og standardiseringsrådet)
-* Faglig arena for datadeling og informasjonsforvaltning
-* Datalandsbyen
-* Offentlig PAAS - Slack for alle i offentlig sektor
-
----
-
 ### Ønsket situasjon
 **Type:** Plateau
+
+---
+
+### Gap
+**Type:** Gap
+
+Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjonal arkitektur)
 
 ---
 
@@ -211,6 +147,65 @@ https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap28.html
 
 ---
 
+### Samhandlingsareneaer og organisering
+**Type:** Resource
+
+Organiserte nettverk og styringsorganer for både dialog og strategisk samarbeid og samordning.
+
+Eksempler:
+* Samstyringsstruktur i kommunal sektor
+* Skate
+* ASR (Arkitektur- og standardiseringsrådet)
+* Faglig arena for datadeling og informasjonsforvaltning
+* Datalandsbyen
+* Offentlig PAAS - Slack for alle i offentlig sektor
+
+---
+
+### Domeneressurs
+**Type:** Resource
+
+---
+
+### Økonomiske og juridiske rammer og virkemidler
+**Type:** Resource
+
+Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
+
+Rammer og virkemidler kan være ressurser som er
+* Finansielle
+* Regulative
+
+
+
+
+---
+
+### Domenekapabilitet
+**Type:** Capability
+
+---
+
+### Nåværende situasjon
+**Type:** Plateau
+
+---
+
+### Strategiske mål
+**Type:** Goal
+
+Målene fra Digitaliseringsstrategien.
+
+---
+
+### Konkret tiltak
+**Type:** WorkPackage
+
+Realiserer endringer som fjerner gap. Dette er konkrete tiltak som har startet eller er planlagt.
+Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
+
+---
+
 ### Nasjonal arkitektur analyse dekningsgrad
 **Type:** Assessment
 
@@ -292,6 +287,11 @@ De nasjonale felleskomponentene, slik de er definert i Digital agenda:
 
 
 
+
+---
+
+### Kapabilitet (Operasjonell)
+**Type:** Capability
 
 ---
 

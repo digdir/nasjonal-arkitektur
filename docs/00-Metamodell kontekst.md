@@ -4,92 +4,8 @@
 
 ## Elementer i viewet
 
-### Domenekapabilitet
-**Type:** Capability
-
----
-
-### Gap
-**Type:** Gap
-
-Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjonal arkitektur)
-
----
-
-### Strategiske mål
-**Type:** Goal
-
-Målene fra Digitaliseringsstrategien.
-
----
-
-### Samhandlingsareneaer og organisering
-**Type:** Resource
-
-Organiserte nettverk og styringsorganer for både dialog og strategisk samarbeid og samordning.
-
-Eksempler:
-* Samstyringsstruktur i kommunal sektor
-* Skate
-* ASR (Arkitektur- og standardiseringsrådet)
-* Faglig arena for datadeling og informasjonsforvaltning
-* Datalandsbyen
-* Offentlig PAAS - Slack for alle i offentlig sektor
-
----
-
-### Drivere
-**Type:** Driver
-
-"Drivere" er den grunnleggende motivasjonen eller årsaken til at en endring settes i gang.
-
-Drivarar og hindringar må sjåast i samanheng. Dei viktigaste hindringane er økonomiske rammer og kapasitet. 
-Ei styrking her vil vere blant dei viktigaste drivarane for å oppnå resultat og realisere gevinstar av teknisk infrastruktur og data, knytt til handheving av eit stadig meir omfattande regelverk.
-
----
-
 ### Ønsket situasjon
 **Type:** Plateau
-
----
-
-### Økonomiske og juridiske rammer og virkemidler
-**Type:** Resource
-
-Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
-
-Rammer og virkemidler kan være ressurser som er
-* Finansielle
-* Regulative
-
-
-
-
----
-
-### Standarder og veiledning
-**Type:** Resource
-
-Ressurser som setter regler eller gir retning.
-
-Dette kan være:
-Standarder, veiledere, referansearkitekturer, metodikk
-Normeringsgrad kan være knyttet til disse virkemidlene.
-
----
-
-### Verdistrømmer og prosesser
-**Type:** ValueStream
-
-Verdistrøm representerer en sekvens av aktiviteter som skaper et samlet resultat for en kunde, interessent eller sluttbruker.
-
-Nasjonal arkitektur skal være kunnskaps- og datadrevet, og skal inneholde informasjon som skal kunne gjenbrukes i ulike verdistrømmer. Den skal inneholde viktige kapabiliteter og rammer for samhandling i felles økosystem, og den skal inneholde oversikt over hvilke løsninger og ressurser som kan benyttes for å dekke behov.  
-
-Det kan være ulike verdistrømmer for ulike brukergrupper og for ulike behov.
-* Operasjonelle verdistrømmer, der Nasjonal arkitektur inngår som en verktøykasse for daglige oppgaver. F.eks. tjenesteutvikling og produktutvikling.
-Målgruppe: Utførere, planleggere
-* Strategiske verdistrømmer, der Nasjonal arkitektur bidrar til at man tar valg for fremtiden
-Målgruppe: Beslutningstagere, planleggere
 
 ---
 
@@ -161,6 +77,41 @@ Ved å bruke dette rammeverket kan selskaper utvikle et veikart for «nåsituasj
 
 ---
 
+### Samhandlingsareneaer og organisering
+**Type:** Resource
+
+Organiserte nettverk og styringsorganer for både dialog og strategisk samarbeid og samordning.
+
+Eksempler:
+* Samstyringsstruktur i kommunal sektor
+* Skate
+* ASR (Arkitektur- og standardiseringsrådet)
+* Faglig arena for datadeling og informasjonsforvaltning
+* Datalandsbyen
+* Offentlig PAAS - Slack for alle i offentlig sektor
+
+---
+
+### Tiltak for å nå fremtidige mål
+**Type:** CourseOfAction
+
+Dette er tiltak som realiserer eller gjør endringer på en eller flere kapabiliteter.
+
+Tiltakslisten (123) fra Digitaliseringsstrategien følges opp, i tillegg til andre relavante tiltak som bidrar til målene.
+
+---
+
+### Standarder og veiledning
+**Type:** Resource
+
+Ressurser som setter regler eller gir retning.
+
+Dette kan være:
+Standarder, veiledere, referansearkitekturer, metodikk
+Normeringsgrad kan være knyttet til disse virkemidlene.
+
+---
+
 ### Strategisk kapabilitet (overordnet)
 **Type:** Capability
 
@@ -200,59 +151,29 @@ https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap28.html
 
 ---
 
-### Konkret tiltak
-**Type:** WorkPackage
+### Rammeverk for digital samhandling (European Interoperability Framework)
+**Type:** Grouping
 
-Realiserer endringer som fjerner gap. Dette er konkrete tiltak som har startet eller er planlagt.
-Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
+Rammeverk for digital samhandling.
+https://www.digdir.no/digital-samhandling/rammeverk-digital-samhandling/2148
 
----
+Bakgrunnsinformasjon og opprinnelse:
+EU har utviklet European Interoperability Framework (EIF), et felles rammeverk for digital samhandling. Målet er å fremme digital samhandling på tvers av landegrenser og innenfor hvert enkelt land. Norge forpliktet seg til å implementere EIF da vi undertegnet Tallinn-erklæringen i 2017, sammen med EU og andre EFTA-land.
 
-### Nåværende situasjon
-**Type:** Plateau
+Som et resultat har Norge etablert sitt eget nasjonale rammeverk for interoperabilitet (NIF- National Interoperability Framework), som i dag heter "Rammeverk for digital samhandling". Den første versjonen ble utarbeidet som et Skate-tiltak i 2018.
 
----
 
-### Prinsipp
-**Type:** Principle
-
-En overordnet og veiledende regel eller retningslinje som er ment å være varig og styrende for alle relevante beslutninger. 
-Prinsipper er generelle regler og retningslinjer, ment å være varige og sjelden endres, som informerer og støtter måten en organisasjon går i gang med å oppfylle sitt oppdrag.
-Se overordnete arkitekturprinsipper: https://www.digdir.no/digital-samhandling/overordnede-arkitekturprinsipper/1065
-
-Eksempel: "Data skal kun lagres én gang".
-
-EU ELAP: Det europeiske biblioteket for arkitekturprinsipper (ELAP) etablerer prinsipper og rammeverk for å sikre interoperabilitet på europeisk nivå , inkludert det europeiske interoperabilitetsrammeverket (EIF), EU-lovgivning, tilgjengelighet, «Once Only» og mer. Dette biblioteket er et kvalitetssikringsverktøy som også etablerer krav og forretningsprosesser for å muliggjøre interoperabilitet mellom digitale offentlige tjenester.
-Se:  https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/elap
-
-Togaf definisjon og beste-praksis beskrivelse og definisjon av Arkitekturprinsipper:
-https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap20.html
 
 
 ---
 
-### Effektmål
-**Type:** Outcome
+### Drivere
+**Type:** Driver
 
-De konkrete resultatene av å bruke kapabilitetene.
-Se på dybdeindikatorene fra nullpunktsmåling:
-https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
-F.eks:
-* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
-* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
+"Drivere" er den grunnleggende motivasjonen eller årsaken til at en endring settes i gang.
 
-
----
-
-### Domeneressurs
-**Type:** Resource
-
----
-
-### Hindringer
-**Type:** Constraint
-
-Hindringer: Hva stopper eller begrenser oss?
+Drivarar og hindringar må sjåast i samanheng. Dei viktigaste hindringane er økonomiske rammer og kapasitet. 
+Ei styrking her vil vere blant dei viktigaste drivarane for å oppnå resultat og realisere gevinstar av teknisk infrastruktur og data, knytt til handheving av eit stadig meir omfattande regelverk.
 
 ---
 
@@ -296,33 +217,107 @@ De nasjonale felleskomponentene, slik de er definert i Digital agenda:
 
 ---
 
-### Rammeverk for digital samhandling (European Interoperability Framework)
-**Type:** Grouping
+### Hindringer
+**Type:** Constraint
 
-Rammeverk for digital samhandling.
-https://www.digdir.no/digital-samhandling/rammeverk-digital-samhandling/2148
+Hindringer: Hva stopper eller begrenser oss?
 
-Bakgrunnsinformasjon og opprinnelse:
-EU har utviklet European Interoperability Framework (EIF), et felles rammeverk for digital samhandling. Målet er å fremme digital samhandling på tvers av landegrenser og innenfor hvert enkelt land. Norge forpliktet seg til å implementere EIF da vi undertegnet Tallinn-erklæringen i 2017, sammen med EU og andre EFTA-land.
+---
 
-Som et resultat har Norge etablert sitt eget nasjonale rammeverk for interoperabilitet (NIF- National Interoperability Framework), som i dag heter "Rammeverk for digital samhandling". Den første versjonen ble utarbeidet som et Skate-tiltak i 2018.
+### Effektmål
+**Type:** Outcome
+
+De konkrete resultatene av å bruke kapabilitetene.
+Se på dybdeindikatorene fra nullpunktsmåling:
+https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
+F.eks:
+* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
+* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
+
+
+---
+
+### Gap
+**Type:** Gap
+
+Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjonal arkitektur)
+
+---
+
+### Prinsipp
+**Type:** Principle
+
+En overordnet og veiledende regel eller retningslinje som er ment å være varig og styrende for alle relevante beslutninger. 
+Prinsipper er generelle regler og retningslinjer, ment å være varige og sjelden endres, som informerer og støtter måten en organisasjon går i gang med å oppfylle sitt oppdrag.
+Se overordnete arkitekturprinsipper: https://www.digdir.no/digital-samhandling/overordnede-arkitekturprinsipper/1065
+
+Eksempel: "Data skal kun lagres én gang".
+
+EU ELAP: Det europeiske biblioteket for arkitekturprinsipper (ELAP) etablerer prinsipper og rammeverk for å sikre interoperabilitet på europeisk nivå , inkludert det europeiske interoperabilitetsrammeverket (EIF), EU-lovgivning, tilgjengelighet, «Once Only» og mer. Dette biblioteket er et kvalitetssikringsverktøy som også etablerer krav og forretningsprosesser for å muliggjøre interoperabilitet mellom digitale offentlige tjenester.
+Se:  https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/elap
+
+Togaf definisjon og beste-praksis beskrivelse og definisjon av Arkitekturprinsipper:
+https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap20.html
+
+
+---
+
+### Konkret tiltak
+**Type:** WorkPackage
+
+Realiserer endringer som fjerner gap. Dette er konkrete tiltak som har startet eller er planlagt.
+Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
+
+---
+
+### Domeneressurs
+**Type:** Resource
+
+---
+
+### Nåværende situasjon
+**Type:** Plateau
+
+---
+
+### Økonomiske og juridiske rammer og virkemidler
+**Type:** Resource
+
+Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
+
+Rammer og virkemidler kan være ressurser som er
+* Finansielle
+* Regulative
 
 
 
 
 ---
 
-### Kapabilitet (Operasjonell)
+### Domenekapabilitet
 **Type:** Capability
 
 ---
 
-### Tiltak for å nå fremtidige mål
-**Type:** CourseOfAction
+### Strategiske mål
+**Type:** Goal
 
-Dette er tiltak som realiserer eller gjør endringer på en eller flere kapabiliteter.
+Målene fra Digitaliseringsstrategien.
 
-Tiltakslisten (123) fra Digitaliseringsstrategien følges opp, i tillegg til andre relavante tiltak som bidrar til målene.
+---
+
+### Verdistrømmer og prosesser
+**Type:** ValueStream
+
+Verdistrøm representerer en sekvens av aktiviteter som skaper et samlet resultat for en kunde, interessent eller sluttbruker.
+
+Nasjonal arkitektur skal være kunnskaps- og datadrevet, og skal inneholde informasjon som skal kunne gjenbrukes i ulike verdistrømmer. Den skal inneholde viktige kapabiliteter og rammer for samhandling i felles økosystem, og den skal inneholde oversikt over hvilke løsninger og ressurser som kan benyttes for å dekke behov.  
+
+Det kan være ulike verdistrømmer for ulike brukergrupper og for ulike behov.
+* Operasjonelle verdistrømmer, der Nasjonal arkitektur inngår som en verktøykasse for daglige oppgaver. F.eks. tjenesteutvikling og produktutvikling.
+Målgruppe: Utførere, planleggere
+* Strategiske verdistrømmer, der Nasjonal arkitektur bidrar til at man tar valg for fremtiden
+Målgruppe: Beslutningstagere, planleggere
 
 ---
 
@@ -367,6 +362,11 @@ F.eks:
 
 
 
+
+---
+
+### Kapabilitet (Operasjonell)
+**Type:** Capability
 
 ---
 
