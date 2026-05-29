@@ -1,46 +1,33 @@
 # Nasjonal arkitektur for et felles digitalt økosystem
 
-## Innledning
+Dette er kildekoden og byggemiljøet for dokumentasjonen av [Nasjonal arkitektur](https://digdir.no/nasjonal-arkitektur).
 
-Dette er et tiltak i regjeringens digitaliseringsstrategi. Målet er å sikre et velfungerende felles digitalt økosystem for effektiv samhandling og sammenhengende tjenesteutvikling i offentlig sektor. Tiltaket ledes av Digitaliseringsdirektoratet (Digdir) i tett samarbeid med KS.
+## Om prosjektet
 
-Nasjonal arkitektur refererer til de overordnede rammeverkene, standardene, prinsippene og referansearkitekturene som bestemmer hvordan digitale løsninger skal bygges og samhandle på tvers av sektorer og forvaltningsnivåer.  Mens sektorene har egne tilpassede arkitekturer, sørger den nasjonale arkitekturen for at forvaltningen fremstår helhetlig og løser oppgaver effektivt på tvers
+Dette repositoryet inneholder skript, konfigurasjon og kildedata (som eksporterte ArchiMate- og YAML-filer) som brukes til å bygge og publisere dokumentasjonen for rammeverksmodellen.
 
-## Hva består det felles økosystemet av?
+Dokumentasjonen publiseres ved hjelp av **MkDocs** (Material for MkDocs).
+Selve dokumentasjonen finner du publisert på GitHub Pages for dette prosjektet.
 
-Det realiserte økosystemet består av konkrete kapabiliteter (hva vi trenger å kunne) som realiseres og dekkes av felles ressurser som gjenbrukes av aktørene. Ressurser er:
+## Hvordan bygge dokumentasjonen lokalt
 
-- Gjenbrukbare løsninger
-- Standarder og veiledninger
-- Samhandlingsarenaer og organisering
-- Økonomiske og juridiske rammer og virkemidler
+For å generere Markdown-filene og bygge siden, kan du bruke Python-skriptet som ligger i rotmappen:
 
-## Leveranser og arbeid fra tiltaket
+```bash
+python bygg_lokalt.py
+```
 
-Tiltaket har utviklet en modell som utgangspunkt for å beskrive innholdet og oppbygging av nasjonal arkitektur. Fokuset er på samhandlingsevner i felles økosystem, og arbeidet er basert på [Rammeverk for digital samhandling](https://www.digdir.no/digital-samhandling/rammeverk-digital-samhandling/2148).
+Dette vil:
+1. Konvertere ArchiMate-modellen til YAML.
+2. Konvertere modellen til Turtle (TTL).
+3. Generere Markdown-dokumentasjon basert på YAML-filen og tekstmaler i `templates/`-mappen.
+4. Kopiere nødvendige filer inn i `docs/`-mappen slik at MkDocs kan bruke dem.
 
-### Nasjonal arkitektur modell
+For å se resultatet lokalt, kan du kjøre (krever at MkDocs er installert):
+```bash
+mkdocs serve
+```
 
-Modellert i Archimate (verktøy Archi), og representert i .archimate format.
-Modellen er også representert i YAML, for mer effektiv bruk til analyse etc.
-Disse kan lastes ned.
+## Maler og innhold
 
-Konvertering fra .archimate til .yaml gjøres i et eget script (Python).
-
-Modellen består av følgende elementer:
-
-- Nasjonal arkitektur kapabilitetskart (3 nivåer totalt)
-- relasjoner til overordnete arkitekturprinsipper for offentlig sektor
-- relasjoner til EIF lagmodell
-- relasjoner til ressurser som realiserer kapabiliteter
-- relasjoner til relevante mål i Digitaliseringsstrategien
-- EIF lagmodell og relasjon til Nasjonal arkitektur
-- Metamodell og kontektsuell modell
-
-## Nasjonal arkitektur kapabilitetskart
-
-Dette er den "viktigste" delen av modellen, sammen med oversikt og relasjon til de faktiske ressurser som innehar kapabiliteter som trengs for å dekke mål og behov i faktiske digitaliseringstiltak. Det er definert 3 nivåer av kapabiliteter inkludert definisjon og dokumentasjon (dokumentasjon forbedres pågående)
-
-## Oversikt over ressurser
-
-Det er et pågående arbeid å samle inn og publisere oversikt over felles ressurser. Foreløpig er dette lagt ut på følgende side: <https://suphiro-arch.github.io/NA-kunnskap/>
+Hvis du vil endre den statiske teksten på for eksempel forsiden eller introduksjonen til modell-siden, gjør du dette ved å endre Markdown-filene som ligger under mappen `templates/`. Endringer derfra vil automatisk bli bakt inn i dokumentasjonen neste gang den bygges.
