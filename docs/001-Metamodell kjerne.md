@@ -4,17 +4,6 @@
 
 ## Elementer i viewet
 
-### Standarder og veiledning
-**Type:** Resource
-
-Ressurser som setter regler eller gir retning.
-
-Dette kan være:
-Standarder, veiledere, referansearkitekturer, metodikk
-Normeringsgrad kan være knyttet til disse virkemidlene.
-
----
-
 ### Effektmål
 **Type:** Outcome
 
@@ -28,8 +17,48 @@ F.eks:
 
 ---
 
-### Ønsket situasjon
+### Nåværende situasjon
 **Type:** Plateau
+
+---
+
+### Gjenbrukbar løsning
+**Type:** Resource
+
+Gjenbrukbare løsninger er tekniske komponenter, applikasjoner som leverer funksjonalitet eller dataprodukter og dekker behov på tvers av eller innenfor sektorer, og/eller forvaltningsnivå. 
+
+Tekniske løsninger som utvikles én gang og brukes av mange.
+Fellesløsninger er byggeklosser som kan brukes i utviklingen av offentlige digitale tjenester. Noen er obligatoriske å bruke, andre er anbefalte - både for statlige virksomheter og for kommunal sektor.
+
+Fellesløsning til forretningstjenester, som er forretningsaktivitet med et spesifisert resultat og som støtter et spesifikt forretningsmål. 
+Den er brukersentert og representerer funksjonalitet som leverer verdi til en ekstern bruker. 
+Brukerorienterte eller funksjonelle tjenester som leverer verdi, ofte på tvers av løsninger.
+
+Merk:
+Selv om en tjeneste bruker teknologi, er selve "tjenesten" (f.eks. eSignering eller Autentisering) det funksjonelle resultatet av en prosess rettet mot en bruker
+
+Strategiske prinsipper for nasjonale felleskomponenter (gammel - bør ha en felles beskrivelse av felles-"løsninger" i stedet)
+https://www.digdir.no/media/395/download
+https://www.regjeringen.no/contentassets/fe3e34b866034b82b9c623c5cec39823/no/pdfs/stm201520160027000dddpdfs.pdf
+
+Fellesløsning vs. felles løsning:
+* Forskjellen er institusjonell. 
+* Fellesløsning:  referer til nasjonale fellesløsninger, som er spesifikk tekniske komponenter som skal kunne brukes av svært mange i offentlig sektor for å løse generiske behov. 
+* Felles løsning: Gjenbrukbar løsnning som kan benyttes av flere og med formåk om samarbeid og stordriftsfordeler, men uten nødvendigvis å ha status som en nasjonal komponent i økosystemet.
+* Fellestjeneste: Den forretningsmessige eller tekniske funksjonaliteten som tilbys.
+
+Sluttbrukertjenester: Det innbyggeren eller næringslivet opplever (f.eks. "Søke om barnehageplass" eller "Levere skattemelding"). 
+Støttetjenester: Tekniske tjenester som ikke er synlige for sluttbrukeren, men som er nødvendige for at systemene skal snakke sammen (f.eks. gjennom et API)
+
+De nasjonale felleskomponentene, slik de er definert i Digital agenda:
+– Har en statlig virksomhet som forvaltningsansvarlig.
+– Dekker behov på tvers av mange sektorer og/eller forvaltningsnivå.
+– Vil være sentrale komponenter i en rekke digitale tjenester.
+– Er av stor samfunnsøkonomisk betydning som felles mulighetsrom for digital tjenesteutvikling og gevinstrealisering i virksomhetene.
+
+
+
+
 
 ---
 
@@ -37,6 +66,55 @@ F.eks:
 **Type:** Gap
 
 Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjonal arkitektur)
+
+---
+
+### Domeneressurs
+**Type:** Resource
+
+---
+
+### Nasjonal arkitektur analyse dekningsgrad
+**Type:** Assessment
+
+Identifiserer svakheter i dagens arkitektur (ressurser og kapabiliteter). Er en faglig analyse som forklarer hvorfor gapet finnes.
+
+Kapabiliteter og grad av nåsituasjon og måloppnåelse 
+- målverdi
+- dagens verdi
+= Finner Gap og modenhet:
+Rødt (Gap > 2): Kapabiliteter der avstanden mellom nåsituasjon og mål er kritisk stor. Her må Tiltak (Work Packages) prioriteres.
+Gult (Gap = 1): Kapabiliteter som er i rute, men krever vedlikehold eller mindre justeringer.
+Grønt (Gap = 0): Kapabiliteten har nådd sin målverdi.
+En kapabilitet kan realisere både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer, oppfyller eller tolker hensikten bak prinsippet i praksis.
+Modenhetsmodell, som CMMI (Capability Maturity Model Integration:
+* Måling av kapabilitetsmodenhet (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn ved å synliggjøre gapet mellom "hvor gode vi er" (As-Is) og "hvor gode vi må være" (To-Be).
+* Modenheten til en kapabilitet vurderes basert på tilstanden til de underliggende ressursene.
+
+Ressurser og måling:
+* Kan vises som en heatmap med indikatorer for:
+- Dekningsgrad kapabilitet (1-5) for å indikere i hvilken grad en ressurs faktisk er tilgjengelig eller moden nok til å støtte ønsket kapabilitet.
+- egnethet (Funksjonelt egnet)
+- Teknisk egnet
+- Livssyklus status
+
+Man kan også benytte POTI modell som vurdering på tilstanden til ressursene:
+* People (Organisasjon): Roller og kompetanse.
+* Process (Prosess): Arbeidsflyter og prosedyrer.
+* Technology (Teknologi): IT-systemer og infrastruktur.
+* Information (Informasjon): Datakvalitet og flyt
+
+Se også:
+De konkrete resultatene av å bruke kapabilitetene.
+Se på dybdeindikatorene fra nullpunktsmåling:
+https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
+F.eks:
+* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
+* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
+
+
+
+
 
 ---
 
@@ -108,6 +186,29 @@ Ved å bruke dette rammeverket kan selskaper utvikle et veikart for «nåsituasj
 
 ---
 
+### Konkret tiltak
+**Type:** WorkPackage
+
+Realiserer endringer som fjerner gap. Dette er konkrete tiltak som har startet eller er planlagt.
+Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
+
+---
+
+### Samhandlingsareneaer og organisering
+**Type:** Resource
+
+Organiserte nettverk og styringsorganer for både dialog og strategisk samarbeid og samordning.
+
+Eksempler:
+* Samstyringsstruktur i kommunal sektor
+* Skate
+* ASR (Arkitektur- og standardiseringsrådet)
+* Faglig arena for datadeling og informasjonsforvaltning
+* Datalandsbyen
+* Offentlig PAAS - Slack for alle i offentlig sektor
+
+---
+
 ### Strategisk kapabilitet (overordnet)
 **Type:** Capability
 
@@ -147,23 +248,15 @@ https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap28.html
 
 ---
 
-### Samhandlingsareneaer og organisering
-**Type:** Resource
-
-Organiserte nettverk og styringsorganer for både dialog og strategisk samarbeid og samordning.
-
-Eksempler:
-* Samstyringsstruktur i kommunal sektor
-* Skate
-* ASR (Arkitektur- og standardiseringsrådet)
-* Faglig arena for datadeling og informasjonsforvaltning
-* Datalandsbyen
-* Offentlig PAAS - Slack for alle i offentlig sektor
+### Kapabilitet (Operasjonell)
+**Type:** Capability
 
 ---
 
-### Domeneressurs
-**Type:** Resource
+### Strategiske mål
+**Type:** Goal
+
+Målene fra Digitaliseringsstrategien.
 
 ---
 
@@ -181,117 +274,24 @@ Rammer og virkemidler kan være ressurser som er
 
 ---
 
+### Standarder og veiledning
+**Type:** Resource
+
+Ressurser som setter regler eller gir retning.
+
+Dette kan være:
+Standarder, veiledere, referansearkitekturer, metodikk
+Normeringsgrad kan være knyttet til disse virkemidlene.
+
+---
+
 ### Domenekapabilitet
 **Type:** Capability
 
 ---
 
-### Nåværende situasjon
+### Ønsket situasjon
 **Type:** Plateau
-
----
-
-### Strategiske mål
-**Type:** Goal
-
-Målene fra Digitaliseringsstrategien.
-
----
-
-### Konkret tiltak
-**Type:** WorkPackage
-
-Realiserer endringer som fjerner gap. Dette er konkrete tiltak som har startet eller er planlagt.
-Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
-
----
-
-### Nasjonal arkitektur analyse dekningsgrad
-**Type:** Assessment
-
-Identifiserer svakheter i dagens arkitektur (ressurser og kapabiliteter). Er en faglig analyse som forklarer hvorfor gapet finnes.
-
-Kapabiliteter og grad av nåsituasjon og måloppnåelse 
-- målverdi
-- dagens verdi
-= Finner Gap og modenhet:
-Rødt (Gap > 2): Kapabiliteter der avstanden mellom nåsituasjon og mål er kritisk stor. Her må Tiltak (Work Packages) prioriteres.
-Gult (Gap = 1): Kapabiliteter som er i rute, men krever vedlikehold eller mindre justeringer.
-Grønt (Gap = 0): Kapabiliteten har nådd sin målverdi.
-En kapabilitet kan realisere både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer, oppfyller eller tolker hensikten bak prinsippet i praksis.
-Modenhetsmodell, som CMMI (Capability Maturity Model Integration:
-* Måling av kapabilitetsmodenhet (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn ved å synliggjøre gapet mellom "hvor gode vi er" (As-Is) og "hvor gode vi må være" (To-Be).
-* Modenheten til en kapabilitet vurderes basert på tilstanden til de underliggende ressursene.
-
-Ressurser og måling:
-* Kan vises som en heatmap med indikatorer for:
-- Dekningsgrad kapabilitet (1-5) for å indikere i hvilken grad en ressurs faktisk er tilgjengelig eller moden nok til å støtte ønsket kapabilitet.
-- egnethet (Funksjonelt egnet)
-- Teknisk egnet
-- Livssyklus status
-
-Man kan også benytte POTI modell som vurdering på tilstanden til ressursene:
-* People (Organisasjon): Roller og kompetanse.
-* Process (Prosess): Arbeidsflyter og prosedyrer.
-* Technology (Teknologi): IT-systemer og infrastruktur.
-* Information (Informasjon): Datakvalitet og flyt
-
-Se også:
-De konkrete resultatene av å bruke kapabilitetene.
-Se på dybdeindikatorene fra nullpunktsmåling:
-https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
-F.eks:
-* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
-* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
-
-
-
-
-
----
-
-### Gjenbrukbar løsning
-**Type:** Resource
-
-Gjenbrukbare løsninger er tekniske komponenter, applikasjoner som leverer funksjonalitet eller dataprodukter og dekker behov på tvers av eller innenfor sektorer, og/eller forvaltningsnivå. 
-
-Tekniske løsninger som utvikles én gang og brukes av mange.
-Fellesløsninger er byggeklosser som kan brukes i utviklingen av offentlige digitale tjenester. Noen er obligatoriske å bruke, andre er anbefalte - både for statlige virksomheter og for kommunal sektor.
-
-Fellesløsning til forretningstjenester, som er forretningsaktivitet med et spesifisert resultat og som støtter et spesifikt forretningsmål. 
-Den er brukersentert og representerer funksjonalitet som leverer verdi til en ekstern bruker. 
-Brukerorienterte eller funksjonelle tjenester som leverer verdi, ofte på tvers av løsninger.
-
-Merk:
-Selv om en tjeneste bruker teknologi, er selve "tjenesten" (f.eks. eSignering eller Autentisering) det funksjonelle resultatet av en prosess rettet mot en bruker
-
-Strategiske prinsipper for nasjonale felleskomponenter (gammel - bør ha en felles beskrivelse av felles-"løsninger" i stedet)
-https://www.digdir.no/media/395/download
-https://www.regjeringen.no/contentassets/fe3e34b866034b82b9c623c5cec39823/no/pdfs/stm201520160027000dddpdfs.pdf
-
-Fellesløsning vs. felles løsning:
-* Forskjellen er institusjonell. 
-* Fellesløsning:  referer til nasjonale fellesløsninger, som er spesifikk tekniske komponenter som skal kunne brukes av svært mange i offentlig sektor for å løse generiske behov. 
-* Felles løsning: Gjenbrukbar løsnning som kan benyttes av flere og med formåk om samarbeid og stordriftsfordeler, men uten nødvendigvis å ha status som en nasjonal komponent i økosystemet.
-* Fellestjeneste: Den forretningsmessige eller tekniske funksjonaliteten som tilbys.
-
-Sluttbrukertjenester: Det innbyggeren eller næringslivet opplever (f.eks. "Søke om barnehageplass" eller "Levere skattemelding"). 
-Støttetjenester: Tekniske tjenester som ikke er synlige for sluttbrukeren, men som er nødvendige for at systemene skal snakke sammen (f.eks. gjennom et API)
-
-De nasjonale felleskomponentene, slik de er definert i Digital agenda:
-– Har en statlig virksomhet som forvaltningsansvarlig.
-– Dekker behov på tvers av mange sektorer og/eller forvaltningsnivå.
-– Vil være sentrale komponenter i en rekke digitale tjenester.
-– Er av stor samfunnsøkonomisk betydning som felles mulighetsrom for digital tjenesteutvikling og gevinstrealisering i virksomhetene.
-
-
-
-
-
----
-
-### Kapabilitet (Operasjonell)
-**Type:** Capability
 
 ---
 

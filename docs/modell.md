@@ -8,7 +8,7 @@ Her kan du laste ned selve arkitekturmodellen i ulike formater:
 
 - **[ArchiMate-fil](Nasjonal%20Arkitektur%20kapabilitetsmodell.archimate)**: Originalmodellen. Kan åpnes i [Archi](https://www.archimatetool.com/) eller andre verktøy som støtter ArchiMate.
 - **[YAML-fil](nasjonal-arkitektur.yaml)**: En strukturert data-representasjon av modellen, ypperlig for analyse, maskinell lesing og KI-agenter.
-- **[Turtle-fil](nasjonal-arkitektur.ttl)**: Turtle-representasjon av modellen (Archi-xml til RDF Turtle), basert på [archimate-RDF-vocabular](https://raw.githubusercontent.com/AlbertoDMendoza/archimate_ontology/refs/heads/main/ontology/archimate.ttl). En strukturert representasjon av modellen i RDF Turtle (lenkede data), egnet for resonnering, analyse, maskinell lesing og KI-agenter.
+- **[Turtle-fil](nasjonal-arkitektur.ttl)**: Turtle-representasjon av modellen (Archi-xml til RDF Turtle), basert på [archimate-RDF-vocabular](https://htmlpreview.github.io/?https://github.com/AlbertoDMendoza/archimate_ontology/blob/main/archimate.html). En strukturert representasjon av modellen i RDF Turtle (lenkede data), egnet for resonnering, analyse, maskinell lesing og KI-agenter.
 
 ## Utforsk modell
 
