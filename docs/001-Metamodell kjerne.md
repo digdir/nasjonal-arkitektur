@@ -4,18 +4,109 @@
 
 ## Elementer i viewet
 
-### Samhandlingsareneaer og organisering
+### Standarder og veiledning
 **Type:** Resource
 
-Organiserte nettverk og styringsorganer for både dialog og strategisk samarbeid og samordning.
+Ressurser som setter regler eller gir retning.
 
-Eksempler:
-* Samstyringsstruktur i kommunal sektor
-* Skate
-* ASR (Arkitektur- og standardiseringsrådet)
-* Faglig arena for datadeling og informasjonsforvaltning
-* Datalandsbyen
-* Offentlig PAAS - Slack for alle i offentlig sektor
+Dette kan være:
+Standarder, veiledere, referansearkitekturer, metodikk
+Normeringsgrad kan være knyttet til disse virkemidlene.
+
+---
+
+### Konkret tiltak
+**Type:** WorkPackage
+
+Realiserer endringer som fjerner gap. Dette er konkrete tiltak som har startet eller er planlagt.
+Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
+
+---
+
+### Domenekapabilitet
+**Type:** Capability
+
+---
+
+### Økonomiske og juridiske rammer og virkemidler
+**Type:** Resource
+
+Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
+
+Rammer og virkemidler kan være ressurser som er
+* Finansielle
+* Regulative
+
+
+
+
+---
+
+### Ressurs
+**Type:** Resource
+
+Ressurs (med hva):
+Ressursene er de konkrete byggeklossene som realiserer ønskede kapabiliteter, og løser konkrete behov.
+En ressurs er noe vi har (byggeklossene) som løser et konkret behov eller krav til funksjonalitet, og som bidrar til å realisere en eller flere kapabiliteter.
+
+Mrk: Ved måling av ressurser så kan vi måle hver enkelt ressurs iht POTI-laget den tilhører.
+Ressursene er ulike typer (POTI), og må derfor måles med ulike kriterier
+
+Mrk:
+* En generisk kategorisering med få kategorier, men som knyttes til kapabilitetene for ytterligere kategorisering
+
+Måling av Teknologi (Applikasjoner/Systemer):
+* Teknisk tilstand (Technical Fit): Er koden sunn? Er det teknisk gjeld? Er leverandøren stabil?
+* Forretningsverdi (Functional Fit): Støtter den prosessen godt nok? Er brukerne fornøyde?
+Technical_Fit (Score 1–5): Hvor moderne/stabil er teknologien?
+Functional_Fit (Score 1–5): Hvor godt dekker den behovet?
+Lifecycle_Status: (F.eks. "Live", "Phasing Out", "End of Life").
+
+Måling av Folk (Kompetanse/Kapasitet)
+
+POTI-rammeverket, som står for Prosesser, Organisasjon, Teknologi og Informasjon, er en modell som brukes innen virksomhetsarkitektur for å analysere og beskrive de sentrale elementene i en organisasjon. Rammeverket sikrer en helhetlig tilnærming til endring og utvikling ved å belyse hvordan disse fire områdene henger sammen og påvirker hverandre.
+POTI fungerer som et analytisk verktøy for å forstå både nåværende tilstand ("as-is") og en ønsket fremtidig tilstand ("to-be") i en virksomhet. Ved å systematisk gå gjennom hvert av de fire elementene, kan arkitekter og beslutningstakre identifisere styrker, svakheter og forbedringsområder. Dette er spesielt nyttig i forbindelse med digital transformasjon, omorganiseringer eller implementering av nye teknologiske løsninger.
+
+* Prosess
+* Organisasjon/Mennesker
+* Teknologi
+* Informasjon
+
+De fire pilarene i POTI
+
+* Prosesser: Dette omfatter arbeidsflyter og prosedyrer som virksomheten benytter for å levere verdi. Analyse av prosesser ser på hvordan oppgaver utføres, rekkefølgen på aktiviteter, og hvordan man kan optimalisere disse for økt effektivitet og kvalitet.
+* Organisasjon: Dette elementet fokuserer på menneskene og strukturen i virksomheten. Det inkluderer roller, ansvar, kompetanse, organisasjonskart og kultur. En analyse vil se på om organisasjonen er rigget for å støtte prosessene og strategiske mål.
+* Teknologi: Her ser man på IT-systemer, applikasjoner, infrastruktur og andre teknologiske verktøy som understøtter prosessene. Vurderingen går på om teknologien er formålstjenlig, moderne, sikker og godt integrert.
+* Informasjon: Dette dekker data og informasjon som virksomheten produserer, bruker og forvalter. Analyse av informasjonsaspektet ser på datakvalitet, tilgjengelighet, sikkerhet og hvordan informasjon flyter mellom prosesser og systemer.
+
+Målet er å sikre at man er rigget for å gjennomføre strategien effektivt.
+
+### Teknologi (Technology)
+Teknologi er en kritisk muliggjører for ytelse og innovasjon. I denne dimensjonen vurderes:
+* Hvilke verktøy og systemer er i bruk?
+* Er de integrerte, brukervennlige og skalerbare?
+* Hvor godt støtter de automatisering, samarbeid eller datadrevne beslutninger?
+
+Evaluering av teknologi bidrar til å avdekke muligheter for digital transformasjon og konkurransefortrinn.
+
+### Informasjon (Information)
+Dette fokuserer på kvaliteten, flyten og bruken av data:
+* Er informasjonen nøyaktig og tilgjengelig?
+* Orden i eget hus (se på modenhetsmodellen?)
+* Hvordan deles og analyseres data på tvers?
+* Datakvalitet
+* Felles datakatalog registrert?
+
+## Hvorfor bruke POTI-analyse?
+
+POTI er spesielt nyttig når en organisasjon:
+* Planlegger en transformasjon eller omstrukturering.
+* Tar i bruk nye teknologier eller systemer.
+* Utvider eller skalerer driften.
+* Søker større effektivitet eller virkning.
+
+Ved å bruke dette rammeverket kan selskaper utvikle et veikart for «nåsituasjon vs. fremtidig situasjon» og prioritere viktige tiltak for å lukke gap.
+
 
 ---
 
@@ -102,7 +193,29 @@ F.eks:
 
 ---
 
+### Gap
+**Type:** Gap
+
+Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjonal arkitektur)
+
+---
+
+### Domeneressurs
+**Type:** Resource
+
+---
+
+### Kapabilitet (Operasjonell)
+**Type:** Capability
+
+---
+
 ### Nåværende situasjon
+**Type:** Plateau
+
+---
+
+### Ønsket situasjon
 **Type:** Plateau
 
 ---
@@ -114,105 +227,18 @@ Målene fra Digitaliseringsstrategien.
 
 ---
 
-### Domeneressurs
+### Samhandlingsareneaer og organisering
 **Type:** Resource
 
----
+Organiserte nettverk og styringsorganer for både dialog og strategisk samarbeid og samordning.
 
-### Ressurs
-**Type:** Resource
-
-Ressurs (med hva):
-Ressursene er de konkrete byggeklossene som realiserer ønskede kapabiliteter, og løser konkrete behov.
-En ressurs er noe vi har (byggeklossene) som løser et konkret behov eller krav til funksjonalitet, og som bidrar til å realisere en eller flere kapabiliteter.
-
-Mrk: Ved måling av ressurser så kan vi måle hver enkelt ressurs iht POTI-laget den tilhører.
-Ressursene er ulike typer (POTI), og må derfor måles med ulike kriterier
-
-Mrk:
-* En generisk kategorisering med få kategorier, men som knyttes til kapabilitetene for ytterligere kategorisering
-
-Måling av Teknologi (Applikasjoner/Systemer):
-* Teknisk tilstand (Technical Fit): Er koden sunn? Er det teknisk gjeld? Er leverandøren stabil?
-* Forretningsverdi (Functional Fit): Støtter den prosessen godt nok? Er brukerne fornøyde?
-Technical_Fit (Score 1–5): Hvor moderne/stabil er teknologien?
-Functional_Fit (Score 1–5): Hvor godt dekker den behovet?
-Lifecycle_Status: (F.eks. "Live", "Phasing Out", "End of Life").
-
-Måling av Folk (Kompetanse/Kapasitet)
-
-POTI-rammeverket, som står for Prosesser, Organisasjon, Teknologi og Informasjon, er en modell som brukes innen virksomhetsarkitektur for å analysere og beskrive de sentrale elementene i en organisasjon. Rammeverket sikrer en helhetlig tilnærming til endring og utvikling ved å belyse hvordan disse fire områdene henger sammen og påvirker hverandre.
-POTI fungerer som et analytisk verktøy for å forstå både nåværende tilstand ("as-is") og en ønsket fremtidig tilstand ("to-be") i en virksomhet. Ved å systematisk gå gjennom hvert av de fire elementene, kan arkitekter og beslutningstakre identifisere styrker, svakheter og forbedringsområder. Dette er spesielt nyttig i forbindelse med digital transformasjon, omorganiseringer eller implementering av nye teknologiske løsninger.
-
-* Prosess
-* Organisasjon/Mennesker
-* Teknologi
-* Informasjon
-
-De fire pilarene i POTI
-
-* Prosesser: Dette omfatter arbeidsflyter og prosedyrer som virksomheten benytter for å levere verdi. Analyse av prosesser ser på hvordan oppgaver utføres, rekkefølgen på aktiviteter, og hvordan man kan optimalisere disse for økt effektivitet og kvalitet.
-* Organisasjon: Dette elementet fokuserer på menneskene og strukturen i virksomheten. Det inkluderer roller, ansvar, kompetanse, organisasjonskart og kultur. En analyse vil se på om organisasjonen er rigget for å støtte prosessene og strategiske mål.
-* Teknologi: Her ser man på IT-systemer, applikasjoner, infrastruktur og andre teknologiske verktøy som understøtter prosessene. Vurderingen går på om teknologien er formålstjenlig, moderne, sikker og godt integrert.
-* Informasjon: Dette dekker data og informasjon som virksomheten produserer, bruker og forvalter. Analyse av informasjonsaspektet ser på datakvalitet, tilgjengelighet, sikkerhet og hvordan informasjon flyter mellom prosesser og systemer.
-
-Målet er å sikre at man er rigget for å gjennomføre strategien effektivt.
-
-### Teknologi (Technology)
-Teknologi er en kritisk muliggjører for ytelse og innovasjon. I denne dimensjonen vurderes:
-* Hvilke verktøy og systemer er i bruk?
-* Er de integrerte, brukervennlige og skalerbare?
-* Hvor godt støtter de automatisering, samarbeid eller datadrevne beslutninger?
-
-Evaluering av teknologi bidrar til å avdekke muligheter for digital transformasjon og konkurransefortrinn.
-
-### Informasjon (Information)
-Dette fokuserer på kvaliteten, flyten og bruken av data:
-* Er informasjonen nøyaktig og tilgjengelig?
-* Orden i eget hus (se på modenhetsmodellen?)
-* Hvordan deles og analyseres data på tvers?
-* Datakvalitet
-* Felles datakatalog registrert?
-
-## Hvorfor bruke POTI-analyse?
-
-POTI er spesielt nyttig når en organisasjon:
-* Planlegger en transformasjon eller omstrukturering.
-* Tar i bruk nye teknologier eller systemer.
-* Utvider eller skalerer driften.
-* Søker større effektivitet eller virkning.
-
-Ved å bruke dette rammeverket kan selskaper utvikle et veikart for «nåsituasjon vs. fremtidig situasjon» og prioritere viktige tiltak for å lukke gap.
-
-
----
-
-### Effektmål
-**Type:** Outcome
-
-De konkrete resultatene av å bruke kapabilitetene.
-Se på dybdeindikatorene fra nullpunktsmåling:
-https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
-F.eks:
-* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
-* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
-
-
----
-
-### Standarder og veiledning
-**Type:** Resource
-
-Ressurser som setter regler eller gir retning.
-
-Dette kan være:
-Standarder, veiledere, referansearkitekturer, metodikk
-Normeringsgrad kan være knyttet til disse virkemidlene.
-
----
-
-### Kapabilitet (Operasjonell)
-**Type:** Capability
+Eksempler:
+* Samstyringsstruktur i kommunal sektor
+* Skate
+* ASR (Arkitektur- og standardiseringsrådet)
+* Faglig arena for datadeling og informasjonsforvaltning
+* Datalandsbyen
+* Offentlig PAAS - Slack for alle i offentlig sektor
 
 ---
 
@@ -256,42 +282,16 @@ De nasjonale felleskomponentene, slik de er definert i Digital agenda:
 
 ---
 
-### Domenekapabilitet
-**Type:** Capability
+### Effektmål
+**Type:** Outcome
 
----
+De konkrete resultatene av å bruke kapabilitetene.
+Se på dybdeindikatorene fra nullpunktsmåling:
+https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
+F.eks:
+* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
+* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
 
-### Konkret tiltak
-**Type:** WorkPackage
-
-Realiserer endringer som fjerner gap. Dette er konkrete tiltak som har startet eller er planlagt.
-Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
-
----
-
-### Ønsket situasjon
-**Type:** Plateau
-
----
-
-### Økonomiske og juridiske rammer og virkemidler
-**Type:** Resource
-
-Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
-
-Rammer og virkemidler kan være ressurser som er
-* Finansielle
-* Regulative
-
-
-
-
----
-
-### Gap
-**Type:** Gap
-
-Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjonal arkitektur)
 
 ---
 

@@ -4,15 +4,16 @@
 
 ## Elementer i viewet
 
-### Nasjonal arkitektur for samhandling
+### Juridisk samhandling
 **Type:** Capability
 
-Evne til å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem.
+Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.
 
-
-Felles økosystem skal bidra til økt deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv måte og skaper økte verdier for samfunnet.
-Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen mellom aktørene. 
-Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette.
+Dette innebærer:
+Harmonisering: Å identifisere og håndtere motstridende eller overlappende lovverk og forskrifter som hindrer samhandling og datadeling.
+Fortolkning og veiledning: Å tilby felles, autoritative tolkninger av relevant regelverk (f.eks. GDPR, forvaltningsloven, eIDAS, EU lovverk) og utarbeide praktiske veiledere for virksomhetene.
+Regelverksutvikling: Å foreslå og koordinere endringer i regelverket for å tilpasse det til teknologisk utvikling og nye behov i økosystemet.
+Risikovurdering: Å etablere felles metoder og standarder for juridisk risikovurdering knyttet til datadeling og utvikling av nye, tverrgående tjenester.
 
 
 
@@ -25,22 +26,6 @@ Evne til å sikkert, effektivt og standardisert utveksle data mellom aktører i 
 
 
 Mrk: Lommebok er inkludert i denne
-
----
-
-### Tjenesteutvikling
-**Type:** Capability
-
-Evne til å utvikle sammenhengende digitale tjenester.
-
-Dette er knyttet til prosess- og kompetanse-kapabilitet. Det innebærer å utvikle tjenester basert på metodikk, design, koding og samarbeid.
-
----
-
-### Informasjonsforvaltning
-**Type:** Capability
-
-Evne til å ha et felles rammeverk og styringsmodell for informasjonsforvaltning, slik at offentlige virksomheter kan utveksle og dele data og beskrivelser. 
 
 ---
 
@@ -57,46 +42,25 @@ Dette innebærer også:
 
 ---
 
-### Samarbeid
+### Tillit
 **Type:** Capability
 
-Evne til å samarbeid og samhandling på tvers av offentlig og privat forvaltning.
+Evne å tilby tillitstjenester som muliggjører autentisering og autorisasjon på tvers av tjenestekjeder, og støtte en distribuert arkitektur og føderering mellom ulike domener og tjeneste
 
 ---
 
-### Juridisk samhandlingsevne
+### Informasjonssikkerhet
+**Type:** Capability
+
+Evne til å ha tilstrekkelig sikkerhet i tjenester og løsninger som benyttes i felles økosystem. 
+Merk: Er sterkt knyttet til kapabilitet "Tillit"
+
+---
+
+### Styrings og forvaltning
 **Type:** Grouping
 
-Juridisk samhandling skal sikre at organisasjoner som arbeider under ulik lovgivning kan samhandle. For at organisasjoner på tvers i forvaltningen kan utvikle og bruke like tjenester og funksjonalitet må det rettslige grunnlaget for samhandling mellom aktørene være på plass.
-
----
-
-### Organisatorisk samhandlingsevne
-**Type:** Grouping
-
-Organisatorisk samhandling handler om hvordan samhandlende virksomheter tilpasser tjenestekjeder/forretningsprosesser, ansvar og forventninger for å oppnå felles mål og fordeler. Området dekker også forventninger til å gjøre tjenester tilgjengelige og brukerorienterte, samt hvilke samhandlingsmodeller og avtaler virksomhetene etablerer knyttet til felles forvaltning.
-
----
-
-### Strategisk styring
-**Type:** Capability
-
-Evnen til å sette retning for nasjonal arkitektur og realisere strategiske mål.
-
----
-
-### Juridisk samhandling
-**Type:** Capability
-
-Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.
-
-Dette innebærer:
-Harmonisering: Å identifisere og håndtere motstridende eller overlappende lovverk og forskrifter som hindrer samhandling og datadeling.
-Fortolkning og veiledning: Å tilby felles, autoritative tolkninger av relevant regelverk (f.eks. GDPR, forvaltningsloven, eIDAS, EU lovverk) og utarbeide praktiske veiledere for virksomhetene.
-Regelverksutvikling: Å foreslå og koordinere endringer i regelverket for å tilpasse det til teknologisk utvikling og nye behov i økosystemet.
-Risikovurdering: Å etablere felles metoder og standarder for juridisk risikovurdering knyttet til datadeling og utvikling av nye, tverrgående tjenester.
-
-
+Styring og forvaltning av integrerbare og sammenhengende offentlige tjenester er det femte området, og løper på tvers av de andre samhandlingsområdene. Det er viktig å komme i gang med avklaringer rundt styring og forvaltning så tidlig som mulig i prosessen ved etablering av nye tjenester. I tillegg vil det være nødvendig å gå mer i dybden etter hvert.
 
 ---
 
@@ -123,26 +87,24 @@ Veiledere kan ha ulik grad av styrke:
 
 ---
 
-### Rammeverk for digital samhandling (European Interoperability Framework)
+### Organisatorisk samhandlingsevne
 **Type:** Grouping
 
-Rammeverk for digital samhandling.
-https://www.digdir.no/digital-samhandling/rammeverk-digital-samhandling/2148
-
-Bakgrunnsinformasjon og opprinnelse:
-EU har utviklet European Interoperability Framework (EIF), et felles rammeverk for digital samhandling. Målet er å fremme digital samhandling på tvers av landegrenser og innenfor hvert enkelt land. Norge forpliktet seg til å implementere EIF da vi undertegnet Tallinn-erklæringen i 2017, sammen med EU og andre EFTA-land.
-
-Som et resultat har Norge etablert sitt eget nasjonale rammeverk for interoperabilitet (NIF- National Interoperability Framework), som i dag heter "Rammeverk for digital samhandling". Den første versjonen ble utarbeidet som et Skate-tiltak i 2018.
-
-
-
+Organisatorisk samhandling handler om hvordan samhandlende virksomheter tilpasser tjenestekjeder/forretningsprosesser, ansvar og forventninger for å oppnå felles mål og fordeler. Området dekker også forventninger til å gjøre tjenester tilgjengelige og brukerorienterte, samt hvilke samhandlingsmodeller og avtaler virksomhetene etablerer knyttet til felles forvaltning.
 
 ---
 
-### Teknisk samhandlingsevne
+### Samarbeid
+**Type:** Capability
+
+Evne til å samarbeid og samhandling på tvers av offentlig og privat forvaltning.
+
+---
+
+### Semantisk samhandlingsevne
 **Type:** Grouping
 
-Teknisk samhandlingsevne sikrer at ulike systemer kan integreres. Dette krever teknisk standardisering, noe som i dag blant annet blir understøttet av forskrift om IT-standarder i offentlig forvaltning. Området dekker forhold knyttet til applikasjon, data, teknologi og sikkerhet.
+Semantisk samhandlingsevne har å gjøre med betydningen av dataelementer, relasjonen mellom dem og formatet informasjonen utveksles på. Det deles i syntaktisk og semantisk aspekt. Semantisk aspekt skal sikre dataenes betydningsinnhold og interne relasjon, som også innebærer begrepsavklaringer som sikrer at alle parter forstår kommunikasjonen. Syntaktisk aspekt refererer til eksakt format og struktur på data som utveksles.
 
 ---
 
@@ -159,25 +121,35 @@ Dette forutsetter åpenhet, deling av data, og evne til å hente ut verdi fra da
 
 ---
 
-### Informasjonssikkerhet
+### Informasjonsforvaltning
 **Type:** Capability
 
-Evne til å ha tilstrekkelig sikkerhet i tjenester og løsninger som benyttes i felles økosystem. 
-Merk: Er sterkt knyttet til kapabilitet "Tillit"
+Evne til å ha et felles rammeverk og styringsmodell for informasjonsforvaltning, slik at offentlige virksomheter kan utveksle og dele data og beskrivelser. 
 
 ---
 
-### Semantisk samhandlingsevne
+### Tjenesteutvikling
+**Type:** Capability
+
+Evne til å utvikle sammenhengende digitale tjenester.
+
+Dette er knyttet til prosess- og kompetanse-kapabilitet. Det innebærer å utvikle tjenester basert på metodikk, design, koding og samarbeid.
+
+---
+
+### Rammeverk for digital samhandling (European Interoperability Framework)
 **Type:** Grouping
 
-Semantisk samhandlingsevne har å gjøre med betydningen av dataelementer, relasjonen mellom dem og formatet informasjonen utveksles på. Det deles i syntaktisk og semantisk aspekt. Semantisk aspekt skal sikre dataenes betydningsinnhold og interne relasjon, som også innebærer begrepsavklaringer som sikrer at alle parter forstår kommunikasjonen. Syntaktisk aspekt refererer til eksakt format og struktur på data som utveksles.
+Rammeverk for digital samhandling.
+https://www.digdir.no/digital-samhandling/rammeverk-digital-samhandling/2148
 
----
+Bakgrunnsinformasjon og opprinnelse:
+EU har utviklet European Interoperability Framework (EIF), et felles rammeverk for digital samhandling. Målet er å fremme digital samhandling på tvers av landegrenser og innenfor hvert enkelt land. Norge forpliktet seg til å implementere EIF da vi undertegnet Tallinn-erklæringen i 2017, sammen med EU og andre EFTA-land.
 
-### Tillit
-**Type:** Capability
+Som et resultat har Norge etablert sitt eget nasjonale rammeverk for interoperabilitet (NIF- National Interoperability Framework), som i dag heter "Rammeverk for digital samhandling". Den første versjonen ble utarbeidet som et Skate-tiltak i 2018.
 
-Evne å tilby tillitstjenester som muliggjører autentisering og autorisasjon på tvers av tjenestekjeder, og støtte en distribuert arkitektur og føderering mellom ulike domener og tjeneste
+
+
 
 ---
 
@@ -186,6 +158,13 @@ Evne å tilby tillitstjenester som muliggjører autentisering og autorisasjon p�
 
 Evne til å tilby en sammenhengende digital brukeropplevelse gjennom et økosystem av standardiserte og integrerbare tjenester.
 
+
+---
+
+### Strategisk styring
+**Type:** Capability
+
+Evnen til å sette retning for nasjonal arkitektur og realisere strategiske mål.
 
 ---
 
@@ -204,10 +183,31 @@ Etterlevelse: Å legge til rette for at fellesløsninger og virksomheter faktisk
 
 ---
 
-### Styrings og forvaltning
+### Teknisk samhandlingsevne
 **Type:** Grouping
 
-Styring og forvaltning av integrerbare og sammenhengende offentlige tjenester er det femte området, og løper på tvers av de andre samhandlingsområdene. Det er viktig å komme i gang med avklaringer rundt styring og forvaltning så tidlig som mulig i prosessen ved etablering av nye tjenester. I tillegg vil det være nødvendig å gå mer i dybden etter hvert.
+Teknisk samhandlingsevne sikrer at ulike systemer kan integreres. Dette krever teknisk standardisering, noe som i dag blant annet blir understøttet av forskrift om IT-standarder i offentlig forvaltning. Området dekker forhold knyttet til applikasjon, data, teknologi og sikkerhet.
+
+---
+
+### Nasjonal arkitektur for samhandling
+**Type:** Capability
+
+Evne til å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem.
+
+
+Felles økosystem skal bidra til økt deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv måte og skaper økte verdier for samfunnet.
+Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen mellom aktørene. 
+Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette.
+
+
+
+---
+
+### Juridisk samhandlingsevne
+**Type:** Grouping
+
+Juridisk samhandling skal sikre at organisasjoner som arbeider under ulik lovgivning kan samhandle. For at organisasjoner på tvers i forvaltningen kan utvikle og bruke like tjenester og funksjonalitet må det rettslige grunnlaget for samhandling mellom aktørene være på plass.
 
 ---
 

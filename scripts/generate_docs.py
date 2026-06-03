@@ -175,6 +175,11 @@ def generate_markdown(yaml_file, docs_dir):
         for v_name, v_file in view_files:
             f.write(f"- [{v_name}]({v_file})\n")
 
+    try:
+        shutil.copy2('templates/kunnskapsgraf-maal.md', os.path.join(docs_dir, 'kunnskapsgraf-maal.md'))
+    except FileNotFoundError:
+        pass
+
     print(f"Generated {len(view_files)} view documents with HTML-exported PNGs in {docs_dir}")
 
 if __name__ == '__main__':

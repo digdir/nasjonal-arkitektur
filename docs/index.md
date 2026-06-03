@@ -1,4 +1,4 @@
-# Nasjonal arkitektur for et felles digitalt økosystem
+# Nasjonal arkitektur
 
 ## Innledning
 
