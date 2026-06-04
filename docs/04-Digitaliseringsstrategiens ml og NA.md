@@ -4,17 +4,40 @@
 
 ## Elementer i viewet
 
-### Sterkere styring og samordning av digitalisering på tvers av sektorer
+### Vi skal delta i EUs satsing på dataområder der det er relevant
 **Type:** Goal
 
-Nasjonal arkitektur er et viktig virkemiddel for å skape sterke synergier mellom norsk og europeisk digitaliseringspolitikk. Den skal bygge på føringer fra EU og fungerer som et rammeverk som integrerer EUs regelverk, standarder og referansearkitekturer i norsk digitaliseringsarbeid. EU-forordninger etablerer nasjonale funksjoner og styringsformer som også dekker Norges behov for koordinering og styring av arkitektur. 
-Ved å implementere felles europeiske standarder, sikrer nasjonal arkitektur at norske digitale tjenester kan samhandle effektivt over landegrensene. Samtidig bør Norge bli bedre på å hente erfaringer fra andre land og bruke internasjonale løsninger som utgangspunkt for egen utvikling, noe som reduserer både kostnader og utviklingstid. Gjennom dette sikrer nasjonal arkitektur en helhetlig og framtidsrettet digitalisering som både møter norske behov og Europas digitale agenda. 
+Arbeidet med dataområdene i EU vil komme med referansearkitekturer og standarder som må innføres som en del av nasjonal arkitektur.
+
+---
+
+### Norge skal være ledende på verdiskaping med data og på datadrevet forskning og innovasjon
+**Type:** Goal
+
+For å få til datadeling må de riktige ressursene i felles økosystem være på plass. Det gjelder standarder, felles formater, rammeverk, åpne API-er, referansearkitekturer, fellesløsninger mv. Rammeverk for EUs dataområder (data spaces) inneholder også referansearkitekturer og standarder. Nasjonal arkitektur (samhandlingsarkitektur) er nødvendig for å få til datadeling.
+Data governance og master data management er nødvendig for at man skal dele data og bruke data, og er viktig for et velfungerende felles økosystem for digital samhandling. Det er pågående arbeid på flere områder innenfor dette målet som bør være koordinert med arbeidet med Nasjonal arkitektur
 
 
 ---
 
 ### Få på plass en nasjonal infrastruktur for kunstig intelligens (KI)
 **Type:** Goal
+
+---
+
+### Næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering.
+**Type:** Goal
+
+Evnen til å tilrettelegge for at det nasjonale økosystemet fremmer et omstillingsdyktig og innovativt næringsliv. 
+
+Dette innebærer:
+* rammebetingelser, insentiver og samarbeidsformer som gjør det attraktivt og forutsigbart for private aktører å bygge tjenester oppå nasjonale fellesløsninger og data
+
+Hvorfor er dette viktig?
+* Offentlige data som råstoff: Åpne og tilgjengelige data er en ressurs som næringslivet trenger for å skape produkter forvaltningen selv ikke ville utviklet.
+* Styrket konkurransekraft: Ved å gjøre offentlige fellesløsninger tilgjengelige for private aktører, økes mulighetene for innovasjon i næringslivet.
+I Digitaliseringsstrategien er det et mål at:
+*  Regjeringen vil frem mot 2030 legge til rette for at næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering. Oppstartsbedrifter skal ha gode rammevilkår. Vi skal sørge for at digitalisering og utnyttelse av data forsterker våre fortrinn i viktige bransjer, slik som helse, energi, havbruk og andre maritime næringer.
 
 ---
 
@@ -25,29 +48,6 @@ Målet om sammenhengende tjenester til beste for bruker stiller krav til nasjona
 Nasjonal arkitektur er nødvendig for å få til samhandling og sammenhengende tjenester. Felles økosystem tilbyr ressurser for samhandling og sammenhengende tjenester. Vi skal både tilby ressurser som muliggjør dette, men også sette rammer som styrer offentlig sektor i retning av sammenhengende digitale tjenester. 
 Nasjonal arkitektur kan også bidra til å balansere styrkeforholdet mellom store offentlige etater og mindre statlig/kommunale. Gjennom felles standarder, arkitekturer og retningslinjer kan vi bidra til at det blir lettere å dele og bruke data og få til bedre samhandling.
 Nasjonal arkitektur bør bidra til utforskning av nye måter å skape sammenheng og forenkling for innbygger og næringsliv. Sammenhengende tjenester introduserer også noen nye utfordringer som bør avklares og nasjonal arkitektur bør foreslå hvordan disse utfordringene adresseres. Ved å samarbeide tett med avdelingen for «Sammenhengende tjenester og livshendelser» og jobbe behovsdrevet med ekte problemer og ekte behov, skal vi aktivt prøve å finne løsninger på de arkitekturmessige hindringene. 
-
-
----
-
-### Nasjonal arkitektur for samhandling
-**Type:** Capability
-
-Evne til å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem.
-
-
-Felles økosystem skal bidra til økt deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv måte og skaper økte verdier for samfunnet.
-Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen mellom aktørene. 
-Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette.
-
-
-
----
-
-### Norge skal være ledende på verdiskaping med data og på datadrevet forskning og innovasjon
-**Type:** Goal
-
-For å få til datadeling må de riktige ressursene i felles økosystem være på plass. Det gjelder standarder, felles formater, rammeverk, åpne API-er, referansearkitekturer, fellesløsninger mv. Rammeverk for EUs dataområder (data spaces) inneholder også referansearkitekturer og standarder. Nasjonal arkitektur (samhandlingsarkitektur) er nødvendig for å få til datadeling.
-Data governance og master data management er nødvendig for at man skal dele data og bruke data, og er viktig for et velfungerende felles økosystem for digital samhandling. Det er pågående arbeid på flere områder innenfor dette målet som bør være koordinert med arbeidet med Nasjonal arkitektur
 
 
 ---
@@ -69,19 +69,17 @@ Nasjonal arkitektur har en viktig rolle fordi den legger til rette for at digita
 
 ---
 
-### Næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering.
-**Type:** Goal
+### Nasjonal arkitektur for samhandling
+**Type:** Capability
 
-Evnen til å tilrettelegge for at det nasjonale økosystemet fremmer et omstillingsdyktig og innovativt næringsliv. 
+Evne til å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem.
 
-Dette innebærer:
-* rammebetingelser, insentiver og samarbeidsformer som gjør det attraktivt og forutsigbart for private aktører å bygge tjenester oppå nasjonale fellesløsninger og data
 
-Hvorfor er dette viktig?
-* Offentlige data som råstoff: Åpne og tilgjengelige data er en ressurs som næringslivet trenger for å skape produkter forvaltningen selv ikke ville utviklet.
-* Styrket konkurransekraft: Ved å gjøre offentlige fellesløsninger tilgjengelige for private aktører, økes mulighetene for innovasjon i næringslivet.
-I Digitaliseringsstrategien er det et mål at:
-*  Regjeringen vil frem mot 2030 legge til rette for at næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering. Oppstartsbedrifter skal ha gode rammevilkår. Vi skal sørge for at digitalisering og utnyttelse av data forsterker våre fortrinn i viktige bransjer, slik som helse, energi, havbruk og andre maritime næringer.
+Felles økosystem skal bidra til økt deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv måte og skaper økte verdier for samfunnet.
+Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen mellom aktørene. 
+Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette.
+
+
 
 ---
 
@@ -90,10 +88,12 @@ I Digitaliseringsstrategien er det et mål at:
 
 ---
 
-### Vi skal delta i EUs satsing på dataområder der det er relevant
+### Sterkere styring og samordning av digitalisering på tvers av sektorer
 **Type:** Goal
 
-Arbeidet med dataområdene i EU vil komme med referansearkitekturer og standarder som må innføres som en del av nasjonal arkitektur.
+Nasjonal arkitektur er et viktig virkemiddel for å skape sterke synergier mellom norsk og europeisk digitaliseringspolitikk. Den skal bygge på føringer fra EU og fungerer som et rammeverk som integrerer EUs regelverk, standarder og referansearkitekturer i norsk digitaliseringsarbeid. EU-forordninger etablerer nasjonale funksjoner og styringsformer som også dekker Norges behov for koordinering og styring av arkitektur. 
+Ved å implementere felles europeiske standarder, sikrer nasjonal arkitektur at norske digitale tjenester kan samhandle effektivt over landegrensene. Samtidig bør Norge bli bedre på å hente erfaringer fra andre land og bruke internasjonale løsninger som utgangspunkt for egen utvikling, noe som reduserer både kostnader og utviklingstid. Gjennom dette sikrer nasjonal arkitektur en helhetlig og framtidsrettet digitalisering som både møter norske behov og Europas digitale agenda. 
+
 
 ---
 

@@ -4,7 +4,7 @@
 
 Denne siden presenterer den tekniske modelleringen av Nasjonal arkitektur, som er utformet i modelleringsverktøyet [Archi](https://www.archimatetool.com/). Denne strukturen fungerer som basis for dyptgående analyse og oversikt. Innholdet her retter seg spesielt mot målgrupper som har behov for innsikt på et mer teknisk og strukturelt nivå – enten målet er å gjenbruke arkitekturkonseptene i egne prosjekter, analysere sammenhenger, eller bygge videre på rammeverket.
 
-For at Nasjonal arkitektur skal være et levende, maskinlesbart og strategisk verktøy, er målet å etablere den som en Kunnskapsgraf (Knowledge Graph), les mer om dette her:
+Nasjonal arkitektur skal være et levende, maskinlesbart og strategisk verktøy, og skal kunne knyttes til andre relevante datakilder. I den sammenheng er det viktig at datagrunnlaget kan benyttes for ulike analyser ved hjelp av KI. Det er ulike måter å dekke et slikt behov, men vi ønsker å etablere den som en Kunnskapsgraf (Knowledge Graph), les mer om dette her:
 
 - [Målbilde for Kunnskapsgraf](kunnskapsgraf-maal.md)
 
