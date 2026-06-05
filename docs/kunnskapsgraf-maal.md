@@ -6,32 +6,32 @@ Dette dokumentet beskriver det strategiske grunnlaget for hvordan vi skal koble 
 
 ---
 
-## 1. Hvorfor beholde ArchiMate som Master?
+## 1. Hvorfor beholde ArchiMate som "master"?
 
 Selv om vi bygger en avansert datadrevet kunnskapsgraf for konsum og KI-analyse, er det en stor fordel å opprettholde selve **ArchiMate-modellen som master**.
 
 * **Menneskelig samhandling og visuell modellering:** Virksomhetsarkitektur (EA) krever dype diskusjoner, planlegging og konsensus blant arkitekter, ledere og domeneeksperter. ArchiMate er den internasjonale de facto-standarden for dette, og verktøyene (f.eks. Archi) gir nødvendige visuelle "views" for å forstå komplekse sammenhenger. Det er urealistisk å be mennesker modellere komplekse grafstrukturer direkte i kode.
 * **Kvalitetssikret Single Source of Truth:** Ved å la ArchiMate-filen være kilden til sannhet, sikrer vi en stram og validert struktur. Modellen fungerer som det autoritative utgangspunktet før informasjonen berikes og tilgjengeliggjøres.
-* **Skille mellom "produksjon" og "konsum":** Arkitektene produserer og forvalter modellen i sitt naturlige domenespråk (ArchiMate). Deretter brukes automatiserte pipelines til å konvertere denne modellen over til et distribusjonsformat (YAML-LD) tilrettelagt for maskinkonsum og kunstig intelligens.
+* **Skille mellom "produksjon" og "konsum":** Arkitektene produserer og forvalter modellen i sitt naturlige domenespråk (ArchiMate). Deretter brukes automatiserte pipelines til å konvertere denne modellen over til et distribusjonsformat (YAML-LD/JSON-LD) som er mer tilrettelagt for maskinkonsum og kunstig intelligens.
 
 ---
 
 ## 2. Overgangen fra modell til maskinlesbar graf
 
-For å få dataene ut av ArchiMate (XML) og inn i en kunnskapsgraf eller gi dem til KI-agenter, trenger vi et dataformat som brobygger mellom menneskelig lesbarhet og maskinell semantikk. Det er her **YAML-LD** og **JSON-LD** kommer inn.
+For å få dataene ut av ArchiMate (XML) og inn i en kunnskapsgraf eller gi dem til KI-agenter, trenger vi et dataformat som brobygger mellom menneskelig lesbarhet og maskinell semantikk. Vi ønsker å utforske og teste lenkede data til dette. RDF er egnet til dette med en rekke ulike muligheter for serialisering, f.eks.  Json-ld (W3C Recommendation), Yaml-ld (W3C Working Draft), Turtle (W3C Recommendation)
 
 ### Sammenhengen mellom JSON-LD og YAML-LD
 
-[JSON-LD](https://json-ld.org/) (JavaScript Object Notation for Linked Data) er W3C-standarden for å bygge strukturerte data og kunnskapsgrafer på weben. Det lar oss utvide vanlig JSON med en `@context` (som definerer hva ordene betyr) og `@id` (som gir elementene globale unike lenker). Alt som er JSON-LD kan konverteres direkte til RDF (grunnlaget for grafdatabaser og semantisk web).
+[JSON-LD](https://json-ld.org/) (JavaScript Object Notation for Linked Data) er en W3C-standard for å bygge strukturerte data og kunnskapsgrafer på weben. Det lar oss utvide vanlig JSON med en `@context` (som definerer hva ordene betyr) og `@id` (som gir elementene globale unike lenker). Alt som er JSON-LD kan konverteres direkte til RDF (grunnlaget for grafdatabaser og semantisk web).
 
 [YAML-LD](https://www.w3.org/TR/yaml-ld-10/) er nøyaktig det samme som JSON-LD, men skrevet i **YAML-syntaks**. Konseptuelt er de identiske og kan konverteres sømløst til hverandre, men de har ulike bruksområder i arbeidsflyten.
 
-### Hvorfor velge YAML-LD?
+### Hvorfor benytte YAML/JSON-LD?
 
-Fordelene med å bruke YAML-LD som formatet som genereres ut av ArchiMate-pipelinen er mange:
+Fordelene med å bruke disse formatene ut av ArchiMate-pipelinen er flere:
 
-1. **Menneskelig lesbarhet og versjonskontroll:** YAML har ingen parenteser eller anførselstegn som støyer. Dette gjør filene ekstremt lette å lese for mennesker. Det gjør det også mye enklere å spore endringer i Git (diffs) sammenlignet med JSON eller XML.
-2. **Eksplisitt formell semantikk:** I motsetning til standard YAML, hvor `type: Capability` bare er tekst, vil YAML-LD knytte ordet "Capability" til en formell, global ArchiMate-ontologi (via `@context`). Dette fjerner all tvil for maskiner om hva dataene representerer.
+1. **Menneskelig lesbarhet og versjonskontroll:** Filene er lette å lese for mennesker. Det gjør det også mye enklere å spore endringer i Git (diffs) sammenlignet med andre formater. YAML-LD har ingen parenteser eller anførselstegn som støyer
+2. **Eksplisitt formell semantikk:** I motsetning til standard YAML eller JSON, hvor `type: Capability` bare er tekst, vil YAML/JSON-LD knytte ordet "Capability" til en formell, global ArchiMate-ontologi (via `@context`). Dette fjerner all tvil for maskiner om hva dataene representerer.
 3. **Ekte grafer ("Linked Data"):** Relasjoner mellom objekter (f.eks. at Tjeneste A realiserer Kapabilitet B) lagres som graflenker (edges) i stedet for bare tilfeldige tekst-IDer. Modellen slutter å være et isolert dokument, og blir en del av en utvidbar kunnskapsgraf.
 4. **Sammenkobling med andre nasjonale kataloger:** Ved å bruke Linked Data (YAML/JSON-LD) kan Nasjonal arkitektur enkelt lenkes direkte til eksterne grafer, for eksempel Felles Datakatalog (DCAT-AP-NO) eller nasjonale begrepskataloger (SKOS).
 
@@ -39,15 +39,15 @@ Fordelene med å bruke YAML-LD som formatet som genereres ut av ArchiMate-pipeli
 
 ## 3. Tilrettelegging for fremtidens Kunstige Intelligens (KI)
 
-Valget av en Kunnskapsgraf og YAML-LD legger fundamentet for å bruke avansert KI i arkitekturarbeidet:
+Valget av en Kunnskapsgraf og YAML/JSON-LD som representasjon av ArchiMate-modellen legger fundamentet for å bruke avansert KI i arkitekturarbeidet:
 
 * **Sikker og deterministisk AI-analyse:** Rene språkmodeller (LLMs) kan "hallusinere" hvis de må gjette seg frem til relasjoner basert på vanlig tekst. Hvis arkitekturen eksisterer som en JSON-LD/YAML-LD-drevet kunnskapsgraf, kan KI-en (gjennom såkalt *Graph RAG* - Retrieval-Augmented Generation) kjøre presise, strukturerte spørringer (som SPARQL) mot grafen.
 * **Besvarelse av komplekse spørsmål:** KI-systemer vil med 100 % nøyaktighet kunne besvare spørsmål som: *"Hvilke underliggende databaser og tjenester må moderniseres dersom vi ønsker å styrke den strategiske kapabiliteten X, og hvilke aktører påvirkes?"*
-* **Kompakt for LLM-prompts:** Om KI-en skal lese rådataene direkte (utenom en grafdatabase), er YAML-LD ideelt. Den kompakte YAML-strukturen sparer verdifulle "tokens", mens den påklistrede `@context`-semantikken sikrer at språkmodellen har den nøyaktige meningsbærende konteksten den trenger for å unngå feiltolkninger.
+* **Kompakt for LLM-prompts:** Om KI-en skal lese rådataene direkte (utenom en grafdatabase), er YAML/JSON-LD ideelt. Den kompakte strukturen sparer verdifulle "tokens" (spesielt YAML-LD), mens den påklistrede `@context`-semantikken sikrer at språkmodellen har den nøyaktige meningsbærende konteksten den trenger for å unngå feiltolkninger.
 
 ## Oppsummering av dataflyt for fremtiden
 
 1. **Modellering (Master):** Arkitekter jobber i ArchiMate.
-2. **Eksport (Git-pipeline):** Script trekker ut dataene og lagrer dem som **YAML-LD** for menneskevennlig versjonskontroll i GitHub.
-3. **Konsum & Distribusjon:** YAML-LD konverteres sømløst til **JSON-LD / RDF** og lastes inn i en felles grafdatabase.
+2. **Eksport (Git-pipeline):** Script trekker ut dataene og lagrer dem som **YAML/JSON-LD**.
+3. **Konsum & Distribusjon:** YAML/JSON-LD (kan) lastes inn i en felles grafdatabase.
 4. **Bruk:** Applikasjoner, KI-agenter (Graph RAG), og utviklere kan spørre grafen for sanntids, semantisk korrekt innsikt i Nasjonal arkitektur.
