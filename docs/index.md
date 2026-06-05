@@ -1,4 +1,4 @@
-# Nasjonal arkitektur for et felles digitalt økosystem
+# Nasjonal arkitektur for felles digitalt økosystem
 
 ## Innledning
 
@@ -43,6 +43,12 @@ Dette er den "viktigste" delen av modellen, sammen med oversikt og relasjon til 
 
 ## Oversikt over ressurser
 
-Det er et pågående arbeid å samle inn og publisere oversikt over felles ressurser. Foreløpig er dette lagt ut på følgende side: <https://suphiro-arch.github.io/NA-kunnskap/>
+Det er et pågående arbeid å samle inn og publisere oversikt over felles ressurser. Foreløpig er dette lagt ut på følgende side (prototype):
+
+- [Oversikt over felles ressurser](https://suphiro-arch.github.io/NA-kunnskap)
+
+***
+
+**Kontakt**: [Nasjonal arkitektur](mailto:nasjonalarkitektur@digdir.no)
 
 
