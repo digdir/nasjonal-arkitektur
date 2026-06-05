@@ -30,7 +30,7 @@ For å få dataene ut av ArchiMate (XML) og inn i en kunnskapsgraf eller gi dem 
 
 Fordelene med å bruke disse formatene ut av ArchiMate-pipelinen er flere:
 
-1. **Menneskelig lesbarhet og versjonskontroll:** Filene er lette å lese for mennesker. Det gjør det også mye enklere å spore endringer i Git (diffs) sammenlignet med andre formater. YAML-LD har ingen parenteser eller anførselstegn som støyer
+1. **Menneskelig lesbarhet og versjonskontroll:** Filene er lette å lese for mennesker. Det gjør det også mye enklere å spore endringer i Git (diffs) sammenlignet med andre formater. YAML-LD har ingen parenteser eller anførselstegn som støyer.
 2. **Eksplisitt formell semantikk:** I motsetning til standard YAML eller JSON, hvor `type: Capability` bare er tekst, vil YAML/JSON-LD knytte ordet "Capability" til en formell, global ArchiMate-ontologi (via `@context`). Dette fjerner all tvil for maskiner om hva dataene representerer.
 3. **Ekte grafer ("Linked Data"):** Relasjoner mellom objekter (f.eks. at Tjeneste A realiserer Kapabilitet B) lagres som graflenker (edges) i stedet for bare tilfeldige tekst-IDer. Modellen slutter å være et isolert dokument, og blir en del av en utvidbar kunnskapsgraf.
 4. **Sammenkobling med andre nasjonale kataloger:** Ved å bruke Linked Data (YAML/JSON-LD) kan Nasjonal arkitektur enkelt lenkes direkte til eksterne grafer, for eksempel Felles Datakatalog (DCAT-AP-NO) eller nasjonale begrepskataloger (SKOS).
