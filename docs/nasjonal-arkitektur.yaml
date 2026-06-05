@@ -268,7 +268,7 @@ elements:
       - målverdi\n- dagens verdi\n= Finner Gap og modenhet \nEn kapabilitet kan realisere\
       \ både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer,\
       \ oppfyller eller tolker hensikten bak prinsippet i praksis.\nModenhetsmodell,\
-      \ som CMMI (Capability Maturity Model Integration:\n* Måling av kapabilitetsmodenhet\
+      \ som CMMI (Capability Maturity Model Integration):\n* Måling av kapabilitetsmodenhet\
       \ (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn\
       \ ved å synliggjøre gapet mellom \"hvor gode vi er\" (As-Is) og \"hvor gode\
       \ vi må være\" (To-Be).\n* Modenheten til en kapabilitet vurderes basert på\
@@ -1786,7 +1786,7 @@ elements:
       Grønt (Gap = 0): Kapabiliteten har nådd sin målverdi.\nEn kapabilitet kan realisere\
       \ både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer,\
       \ oppfyller eller tolker hensikten bak prinsippet i praksis.\nModenhetsmodell,\
-      \ som CMMI (Capability Maturity Model Integration:\n* Måling av kapabilitetsmodenhet\
+      \ som CMMI (Capability Maturity Model Integration):\n* Måling av kapabilitetsmodenhet\
       \ (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn\
       \ ved å synliggjøre gapet mellom \"hvor gode vi er\" (As-Is) og \"hvor gode\
       \ vi må være\" (To-Be).\n* Modenheten til en kapabilitet vurderes basert på\
@@ -3028,7 +3028,7 @@ relationships:
 views:
   id-085ba8f9d77e45079724746f67280dbb:
     type: ArchimateDiagramModel
-    name: 00-Metamodell kontekst
+    name: 002-Metamodell kontekst
     documentation: Viser struktur og mer kontekst til rammeverksmodellen.
     properties: {}
     nodes:
@@ -3696,6 +3696,15 @@ views:
           y: '24'
           width: '144'
           height: '72'
+      id-eadc3df541dd4eac8d2e1bfc7b0ee46c:
+        type: Note
+        archimate_element_id: ''
+        parent_node_id: id-2d34e59bf6ee4cedb21c3c0b592cceb0
+        bounds:
+          x: null
+          y: '48'
+          width: '185'
+          height: '80'
       id-e0de5fff7f9f48d89cc0327a8ebfd25d:
         type: DiagramObject
         archimate_element_id: id-896e4c1434604caa891b94bcce964720
@@ -3957,6 +3966,15 @@ views:
           y: '36'
           width: '120'
           height: '55'
+      id-8e78a0a802854242872711b2e21d6650:
+        type: Note
+        archimate_element_id: ''
+        parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
+        bounds:
+          x: '960'
+          y: '828'
+          width: '241'
+          height: '109'
       id-1878725c8ff54026974bda0be7461d2c:
         type: Note
         archimate_element_id: ''

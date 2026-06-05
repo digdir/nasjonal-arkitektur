@@ -183,7 +183,7 @@ Kapabiliteter og grad av måloppnåelse
 - dagens verdi
 = Finner Gap og modenhet 
 En kapabilitet kan realisere både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer, oppfyller eller tolker hensikten bak prinsippet i praksis.
-Modenhetsmodell, som CMMI (Capability Maturity Model Integration:
+Modenhetsmodell, som CMMI (Capability Maturity Model Integration):
 * Måling av kapabilitetsmodenhet (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn ved å synliggjøre gapet mellom \"hvor gode vi er\" (As-Is) og \"hvor gode vi må være\" (To-Be).
 * Modenheten til en kapabilitet vurderes basert på tilstanden til de underliggende ressursene.
 
@@ -1135,7 +1135,7 @@ Rødt (Gap > 2): Kapabiliteter der avstanden mellom nåsituasjon og mål er krit
 Gult (Gap = 1): Kapabiliteter som er i rute, men krever vedlikehold eller mindre justeringer.
 Grønt (Gap = 0): Kapabiliteten har nådd sin målverdi.
 En kapabilitet kan realisere både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer, oppfyller eller tolker hensikten bak prinsippet i praksis.
-Modenhetsmodell, som CMMI (Capability Maturity Model Integration:
+Modenhetsmodell, som CMMI (Capability Maturity Model Integration):
 * Måling av kapabilitetsmodenhet (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn ved å synliggjøre gapet mellom \"hvor gode vi er\" (As-Is) og \"hvor gode vi må være\" (To-Be).
 * Modenheten til en kapabilitet vurderes basert på tilstanden til de underliggende ressursene.
 
@@ -1295,7 +1295,7 @@ na:id-661cb46063c544be82d804511f5ea9f9
 na:id-085ba8f9d77e45079724746f67280dbb
     a archimate:ArchimateDiagramModel ;
     archimate:identifier "id-085ba8f9d77e45079724746f67280dbb" ;
-    archimate:name "00-Metamodell kontekst"@nb ;
+    archimate:name "002-Metamodell kontekst"@nb ;
     archimate:documentation """Viser struktur og mer kontekst til rammeverksmodellen."""@nb .
 
 na:id-dea95464961449d88f082fa02cceb50f

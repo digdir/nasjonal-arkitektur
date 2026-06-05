@@ -147,7 +147,7 @@ Kapabiliteter og grad av måloppnåelse&#xD;
 - dagens verdi&#xD;
 = Finner Gap og modenhet &#xD;
 En kapabilitet kan realisere både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer, oppfyller eller tolker hensikten bak prinsippet i praksis.&#xD;
-Modenhetsmodell, som CMMI (Capability Maturity Model Integration:&#xD;
+Modenhetsmodell, som CMMI (Capability Maturity Model Integration):&#xD;
 * Måling av kapabilitetsmodenhet (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn ved å synliggjøre gapet mellom &quot;hvor gode vi er&quot; (As-Is) og &quot;hvor gode vi må være&quot; (To-Be).&#xD;
 * Modenheten til en kapabilitet vurderes basert på tilstanden til de underliggende ressursene.&#xD;
 &#xD;
@@ -869,7 +869,7 @@ Rødt (Gap > 2): Kapabiliteter der avstanden mellom nåsituasjon og mål er krit
 Gult (Gap = 1): Kapabiliteter som er i rute, men krever vedlikehold eller mindre justeringer.&#xD;
 Grønt (Gap = 0): Kapabiliteten har nådd sin målverdi.&#xD;
 En kapabilitet kan realisere både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer, oppfyller eller tolker hensikten bak prinsippet i praksis.&#xD;
-Modenhetsmodell, som CMMI (Capability Maturity Model Integration:&#xD;
+Modenhetsmodell, som CMMI (Capability Maturity Model Integration):&#xD;
 * Måling av kapabilitetsmodenhet (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn ved å synliggjøre gapet mellom &quot;hvor gode vi er&quot; (As-Is) og &quot;hvor gode vi må være&quot; (To-Be).&#xD;
 * Modenheten til en kapabilitet vurderes basert på tilstanden til de underliggende ressursene.&#xD;
 &#xD;
@@ -1125,7 +1125,7 @@ Som et resultat har Norge etablert sitt eget nasjonale rammeverk for interoperab
     <element xsi:type="archimate:ServingRelationship" name="realiserer" id="id-eb5ea45fb81343aa850be6613dfe1c28" source="id-4157e35b43184dd7bbcb4405e7edea46" target="id-23598cee556747ef80cab10dbad84e65"/>
   </folder>
   <folder name="Views" id="id-5679cf3053774428814603b36ddf6767" type="diagrams">
-    <element xsi:type="archimate:ArchimateDiagramModel" name="00-Metamodell kontekst" id="id-085ba8f9d77e45079724746f67280dbb" connectionRouterType="2">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="002-Metamodell kontekst" id="id-085ba8f9d77e45079724746f67280dbb" connectionRouterType="2">
       <child xsi:type="archimate:DiagramObject" id="id-3d3b55ad03984427937540400b67f4b2" targetConnections="id-ec9c5e504e2f4d2cbdd04f879287bdbe id-1f34c3e279ad471598102a488abd04fe id-83a12fb44b094281bcf5001d33de5cd4" archimateElement="id-eb6f01d0d0ef4230b7a5c9c73c3842c5">
         <bounds x="840" y="324" width="349" height="145"/>
         <feature name="labelExpression" value="${name}&#xD;&#xA;(Nå-verdi: ${property:Maturity_Current} / Mål-verdi: ${property:Maturity_Target})&#xD;&#xA;"/>
@@ -1375,6 +1375,10 @@ I denne oversikten over nasjonale fellesløsninger viser vi også andre fellesl�
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-2d34e59bf6ee4cedb21c3c0b592cceb0" targetConnections="id-363fe06329c24a4e84fda95778179d74" archimateElement="id-34d3d64b3afe4327a29ee6c2f7f74dff">
             <bounds x="48" y="24" width="144" height="72"/>
+            <child xsi:type="archimate:Note" id="id-eadc3df541dd4eac8d2e1bfc7b0ee46c" textAlignment="1">
+              <bounds y="48" width="185" height="80"/>
+              <content>Fix definisjon</content>
+            </child>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-e0de5fff7f9f48d89cc0327a8ebfd25d" targetConnections="id-07eec545a69d4239beb1c439405a1cc6" archimateElement="id-896e4c1434604caa891b94bcce964720">
@@ -1486,6 +1490,14 @@ I denne oversikten over nasjonale fellesløsninger viser vi også andre fellesl�
           <child xsi:type="archimate:DiagramObject" id="id-a28546521a6446df904b97c96d8118e2" targetConnections="id-3e417669fa3a454782d8d310ffee942d" archimateElement="id-0bfa29018e7144578b2184e70414b7e8">
             <bounds x="36" y="36" width="120" height="55"/>
           </child>
+        </child>
+        <child xsi:type="archimate:Note" id="id-8e78a0a802854242872711b2e21d6650" textAlignment="1">
+          <bounds x="960" y="828" width="241" height="109"/>
+          <content>Tidsstempel for når et dokument er signert. Signeringsnært. Logging. Hendelser, transaksjoner. Er definert i EIDAS regelverket. Etterprøvbarhet. &#xD;
+https://bankid.no/bedrift/vilkaar-for-kvalifisert-tidsstempling&#xD;
+&#xD;
+&#xD;
+</content>
         </child>
       </child>
       <child xsi:type="archimate:Note" id="id-1878725c8ff54026974bda0be7461d2c" font="1|Segoe UI|18.0|0|WINDOWS|1|-30|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#e2e2e2">
