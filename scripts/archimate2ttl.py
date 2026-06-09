@@ -21,7 +21,13 @@ if len(sys.argv) > 2:
     SRC = sys.argv[1]
     DST = sys.argv[2]
 else:
-    SRC = "Nasjonal Arkitektur kapabilitetsmodell-2026-05-28.archimate"
+    import glob
+    archimate_files = glob.glob("model/*.archimate")
+    if archimate_files:
+        archimate_files.sort()
+        SRC = archimate_files[-1]
+    else:
+        SRC = "model/Nasjonal Arkitektur kapabilitetsmodell.archimate"
     DST = "nasjonal-arkitektur.ttl"
 
 BASE  = "https://data.digdir.no/nasjonal-arkitektur/"

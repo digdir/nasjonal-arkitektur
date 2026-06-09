@@ -6,11 +6,17 @@ import sys
 def main():
     print("Starter lokal bygging av dokumentasjon...")
     
-    model_path = "model/Nasjonal Arkitektur kapabilitetsmodell-2026-05-20.archimate"
-    if not os.path.exists(model_path):
-        print(f"Feil: Finner ikke modellfilen: {model_path}")
+    import glob
+    
+    archimate_files = glob.glob("model/*.archimate")
+    if not archimate_files:
+        print("Feil: Finner ingen .archimate-filer i model/-mappen.")
         sys.exit(1)
         
+    # Sorterer filene alfabetisk (noe som fungerer perfekt for YYYY-MM-DD datoformatet)
+    archimate_files.sort()
+    model_path = archimate_files[-1]
+    print(f"Fant nyeste modell: {model_path}")
     print("\n[1/4] Konverterer ArchiMate til YAML...")
     result = subprocess.run(["python", "scripts/convert_archimate_to_yaml.py", model_path, "data/nasjonal-arkitektur.yaml"])
     if result.returncode != 0:
