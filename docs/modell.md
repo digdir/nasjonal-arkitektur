@@ -6,7 +6,7 @@ Denne siden presenterer den tekniske modelleringen av Nasjonal arkitektur, som e
 
 Nasjonal arkitektur skal være et levende, maskinlesbart og strategisk verktøy, og skal kunne knyttes til andre relevante datakilder. I den sammenheng er det viktig at datagrunnlaget kan benyttes og tilrettelegges for ulike analyser ved hjelp av KI. Det er ulike måter å dekke et slikt behov, men vi ønsker å etablere den som en Kunnskapsgraf (Knowledge Graph), les mer om dette her:
 
-- [Målbilde for Kunnskapsgraf](kunnskapsgraf-maal.md)
+- [Nasjonal arkitektur som Kunnskapsgraf](kunnskapsgraf-maal.md)
 
 ## Last ned filer
 

@@ -11,7 +11,7 @@ markdown_extensions:
   - toc:
       title: "Innhold på denne siden"
 nav:
-  - Forside: index.md
+  - Innledning: index.md
   - Rammeverksmodell for Nasjonal arkitektur:
     - Innledning: modell.md
-    - Målbilde for Kunnskapsgraf: kunnskapsgraf-maal.md
+    - Nasjonal arkitektur som Kunnskapsgraf: kunnskapsgraf-maal.md

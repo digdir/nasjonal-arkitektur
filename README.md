@@ -1,6 +1,6 @@
 # Nasjonal arkitektur for et felles digitalt økosystem
 
-Dette er kildekoden og byggemiljøet for dokumentasjonen av [Nasjonal arkitektur](https://digdir.no/nasjonal-arkitektur).
+Dette er kildekoden og byggemiljøet for dokumentasjonen av [Nasjonal arkitektur](https://digdir.github.io/nasjonal-arkitektur/).
 
 ## Om prosjektet
 
