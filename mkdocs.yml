@@ -10,8 +10,14 @@ theme:
 markdown_extensions:
   - toc:
       title: "Innhold på denne siden"
+      toc_depth: 2-6
 nav:
   - Innledning: index.md
   - Rammeverksmodell for Nasjonal arkitektur:
     - Innledning: modell.md
-    - Nasjonal arkitektur som Kunnskapsgraf: kunnskapsgraf-maal.md
+    - Interaktiv modell i Archi: interaktiv-modell.md
+    - Dypdykk og konsepter:
+      - Nasjonal arkitektur som Kunnskapsgraf: kunnskapsgraf-maal.md
+
+extra_javascript:
+  - javascripts/custom.js

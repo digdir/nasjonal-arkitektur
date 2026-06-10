@@ -12,15 +12,23 @@ Nasjonal arkitektur skal være et levende, maskinlesbart og strategisk verktøy,
 
 Her kan du laste ned selve arkitekturmodellen i ulike formater:
 
-- **[ArchiMate-fil](Nasjonal%20Arkitektur%20kapabilitetsmodell.archimate)**: Originalmodellen. Kan åpnes i [Archi](https://www.archimatetool.com/) eller andre verktøy som støtter ArchiMate.
-- **[YAML-fil](nasjonal-arkitektur.yaml)**: En strukturert data-representasjon av modellen, egnet for analyse, maskinell lesing og KI-agenter.
-- **[Turtle-fil](nasjonal-arkitektur.ttl)**: Turtle-representasjon av modellen (Archi-xml til RDF Turtle), basert på [archimate-RDF-vocabular](https://htmlpreview.github.io/?https://github.com/AlbertoDMendoza/archimate_ontology/blob/main/archimate.html). En strukturert representasjon av modellen i RDF Turtle (lenkede data), egnet for resonnering, analyse, maskinell lesing og KI-agenter.
+<style>
+  .md-typeset table th, .md-typeset table td {
+    border: 1px solid var(--md-typeset-table-color, #e0e0e0);
+  }
+</style>
+
+| Filformat                                                             | Beskrivelse                                                                                                                                                                                                                                                                          |
+| :-------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[ArchiMate](Nasjonal%20Arkitektur%20kapabilitetsmodell.archimate)** | Originalmodellen. Kan åpnes i [Archi](https://www.archimatetool.com/) eller andre verktøy som støtter ArchiMate. |
+| **[YAML](nasjonal-arkitektur.yaml)**                                  | En strukturert data-representasjon av modellen, egnet for analyse, maskinell lesing og KI-agenter.                                                                                                                                                                                   |
+| **[Turtle](nasjonal-arkitektur.ttl)**                                 | Turtle-representasjon av modellen (Archi-xml til RDF Turtle), basert på [archimate-RDF-vocabular](https://htmlpreview.github.io/?https://github.com/AlbertoDMendoza/archimate_ontology/blob/main/archimate.html). En strukturert representasjon av modellen i RDF Turtle (lenkede data), egnet for resonnering, analyse, maskinell lesing og KI-agenter. |
 
 ## Utforsk modell
 
 
-Du kan se HTML-rapporten generert fra ArchiMate her:
-- **[Åpne interaktiv ArchiMate-rapport](archimate-report/index.html)**
+Du kan se HTML-rapporten generert fra Archi her:
+- **[Åpne interaktiv Archi-rapport](interaktiv-modell.md)**
 
 Arkitekturen er beskrevet gjennom følgende visuelle views:
 

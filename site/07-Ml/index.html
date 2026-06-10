@@ -1,0 +1,647 @@
+
+<!doctype html>
+<html lang="nb" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Dokumentasjon generert fra ArchiMate-modell">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>07-Mål - Nasjonal arkitektur for et felles digitalt økosystem</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#elementer-i-viewet" class="md-skip">
+          Gå til innhold
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Nasjonal arkitektur for et felles digitalt økosystem" class="md-header__button md-logo" aria-label="Nasjonal arkitektur for et felles digitalt økosystem" data-md-component="logo">
+      
+  <img src="../images/digdir_logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nasjonal arkitektur for et felles digitalt økosystem
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              07-Mål
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Søk" placeholder="Søk" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Søk">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Nullstill" aria-label="Nullstill" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Starter søk
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasjon" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Nasjonal arkitektur for et felles digitalt økosystem" class="md-nav__button md-logo" aria-label="Nasjonal arkitektur for et felles digitalt økosystem" data-md-component="logo">
+      
+  <img src="../images/digdir_logo.svg" alt="logo">
+
+    </a>
+    Nasjonal arkitektur for et felles digitalt økosystem
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Innledning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rammeverksmodell for Nasjonal arkitektur
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Rammeverksmodell for Nasjonal arkitektur
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Innledning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kunnskapsgraf-maal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nasjonal arkitektur som Kunnskapsgraf
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interaktiv-modell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interaktiv modell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Innhold på denne siden">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innhold på denne siden
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#elementer-i-viewet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elementer i viewet
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Elementer i viewet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srge-for-at-alle-har-et-tilbud-om-en-elektronisk-identitet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sørge for at alle har et tilbud om en elektronisk identitet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nringslivet-skal-ha-gode-rammevilkar-for-a-utvikle-og-bruke-ki-offentlig-sektor-skal-anvende-ki-for-a-utvikle-bedre-tjenester-og-lse-oppgaver-mer-effektivt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Næringslivet skal ha gode rammevilkår for å utvikle og bruke KI. Offentlig sektor skal anvende KI for å utvikle bedre tjenester og løse oppgaver mer effektivt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nasjonal-arkitektur-for-samhandling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nasjonal arkitektur for samhandling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#norge-skal-vre-ledende-pa-verdiskaping-med-data-og-pa-datadrevet-forskning-og-innovasjon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Norge skal være ledende på verdiskaping med data og på datadrevet forskning og innovasjon
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nringslivets-konkurranseevne-styrkes-gjennom-innovativ-bruk-av-data-og-digitalisering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vi-skal-delta-i-eus-satsing-pa-dataomrader-der-det-er-relevant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vi skal delta i EUs satsing på dataområder der det er relevant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sterkere-styring-og-samordning-av-digitalisering-pa-tvers-av-sektorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sterkere styring og samordning av digitalisering på tvers av sektorer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fa-pa-plass-en-nasjonal-infrastruktur-for-kunstig-intelligens-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Få på plass en nasjonal infrastruktur for kunstig intelligens (KI)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#et-velfungerende-felles-digitalt-kosystem-for-samhandling-og-tjenesteutvikling-i-offentlig-sektor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Et velfungerende felles digitalt økosystem for samhandling og tjenesteutvikling i offentlig sektor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vi-skal-ha-en-offentlig-sektor-som-tilbyr-bedre-mer-sammenhengende-digitale-tjenester-til-innbyggere-og-nringsliv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vi skal ha en offentlig sektor som tilbyr bedre, mer sammenhengende digitale tjenester til innbyggere og næringsliv
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="07-mal">07-Mål</h1>
+<p><img alt="07-Mål" src="../images/07-Ml.png" /></p>
+<h2 id="elementer-i-viewet">Elementer i viewet</h2>
+<h3 id="srge-for-at-alle-har-et-tilbud-om-en-elektronisk-identitet">Sørge for at alle har et tilbud om en elektronisk identitet</h3>
+<p><strong>Type:</strong> Goal</p>
+<hr />
+<h3 id="nringslivet-skal-ha-gode-rammevilkar-for-a-utvikle-og-bruke-ki-offentlig-sektor-skal-anvende-ki-for-a-utvikle-bedre-tjenester-og-lse-oppgaver-mer-effektivt">Næringslivet skal ha gode rammevilkår for å utvikle og bruke KI. Offentlig sektor skal anvende KI for å utvikle bedre tjenester og løse oppgaver mer effektivt</h3>
+<p><strong>Type:</strong> Goal</p>
+<hr />
+<h3 id="nasjonal-arkitektur-for-samhandling">Nasjonal arkitektur for samhandling</h3>
+<p><strong>Type:</strong> Capability</p>
+<p>Evne til å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem.</p>
+<p>Felles økosystem skal bidra til økt deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv måte og skaper økte verdier for samfunnet.
+Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen mellom aktørene. 
+Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette.</p>
+<hr />
+<h3 id="norge-skal-vre-ledende-pa-verdiskaping-med-data-og-pa-datadrevet-forskning-og-innovasjon">Norge skal være ledende på verdiskaping med data og på datadrevet forskning og innovasjon</h3>
+<p><strong>Type:</strong> Goal</p>
+<p>For å få til datadeling må de riktige ressursene i felles økosystem være på plass. Det gjelder standarder, felles formater, rammeverk, åpne API-er, referansearkitekturer, fellesløsninger mv. Rammeverk for EUs dataområder (data spaces) inneholder også referansearkitekturer og standarder. Nasjonal arkitektur (samhandlingsarkitektur) er nødvendig for å få til datadeling.
+Data governance og master data management er nødvendig for at man skal dele data og bruke data, og er viktig for et velfungerende felles økosystem for digital samhandling. Det er pågående arbeid på flere områder innenfor dette målet som bør være koordinert med arbeidet med Nasjonal arkitektur</p>
+<hr />
+<h3 id="nringslivets-konkurranseevne-styrkes-gjennom-innovativ-bruk-av-data-og-digitalisering">Næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering.</h3>
+<p><strong>Type:</strong> Goal</p>
+<p>Evnen til å tilrettelegge for at det nasjonale økosystemet fremmer et omstillingsdyktig og innovativt næringsliv. </p>
+<p>Dette innebærer:
+* rammebetingelser, insentiver og samarbeidsformer som gjør det attraktivt og forutsigbart for private aktører å bygge tjenester oppå nasjonale fellesløsninger og data</p>
+<p>Hvorfor er dette viktig?
+* Offentlige data som råstoff: Åpne og tilgjengelige data er en ressurs som næringslivet trenger for å skape produkter forvaltningen selv ikke ville utviklet.
+* Styrket konkurransekraft: Ved å gjøre offentlige fellesløsninger tilgjengelige for private aktører, økes mulighetene for innovasjon i næringslivet.
+I Digitaliseringsstrategien er det et mål at:
+*  Regjeringen vil frem mot 2030 legge til rette for at næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering. Oppstartsbedrifter skal ha gode rammevilkår. Vi skal sørge for at digitalisering og utnyttelse av data forsterker våre fortrinn i viktige bransjer, slik som helse, energi, havbruk og andre maritime næringer.</p>
+<hr />
+<h3 id="vi-skal-delta-i-eus-satsing-pa-dataomrader-der-det-er-relevant">Vi skal delta i EUs satsing på dataområder der det er relevant</h3>
+<p><strong>Type:</strong> Goal</p>
+<p>Arbeidet med dataområdene i EU vil komme med referansearkitekturer og standarder som må innføres som en del av nasjonal arkitektur.</p>
+<hr />
+<h3 id="sterkere-styring-og-samordning-av-digitalisering-pa-tvers-av-sektorer">Sterkere styring og samordning av digitalisering på tvers av sektorer</h3>
+<p><strong>Type:</strong> Goal</p>
+<p>Nasjonal arkitektur er et viktig virkemiddel for å skape sterke synergier mellom norsk og europeisk digitaliseringspolitikk. Den skal bygge på føringer fra EU og fungerer som et rammeverk som integrerer EUs regelverk, standarder og referansearkitekturer i norsk digitaliseringsarbeid. EU-forordninger etablerer nasjonale funksjoner og styringsformer som også dekker Norges behov for koordinering og styring av arkitektur. 
+Ved å implementere felles europeiske standarder, sikrer nasjonal arkitektur at norske digitale tjenester kan samhandle effektivt over landegrensene. Samtidig bør Norge bli bedre på å hente erfaringer fra andre land og bruke internasjonale løsninger som utgangspunkt for egen utvikling, noe som reduserer både kostnader og utviklingstid. Gjennom dette sikrer nasjonal arkitektur en helhetlig og framtidsrettet digitalisering som både møter norske behov og Europas digitale agenda. </p>
+<hr />
+<h3 id="fa-pa-plass-en-nasjonal-infrastruktur-for-kunstig-intelligens-ki">Få på plass en nasjonal infrastruktur for kunstig intelligens (KI)</h3>
+<p><strong>Type:</strong> Goal</p>
+<hr />
+<h3 id="et-velfungerende-felles-digitalt-kosystem-for-samhandling-og-tjenesteutvikling-i-offentlig-sektor">Et velfungerende felles digitalt økosystem for samhandling og tjenesteutvikling i offentlig sektor</h3>
+<p><strong>Type:</strong> Goal</p>
+<p>Offentlig sektor må øke digitaliseringstakten. Skal vi kunne utnytte de mulighetene teknologien gir, og bidra til en mer effektiv og bærekraftig digital utvikling, trenger vi en nasjonal arkitektur for samhandling. Arkitekturen bør beskrive nødvendige ressurser for samhandling, som fellesløsninger, infrastruktur for deling av data og standarder, og standardiserte grensesnitt (API-er). Gjennom en nasjonal arkitektur tydeliggjøres sammenhenger og ansvar, og det blir enklere å identifisere behov for tiltak.</p>
+<p>Regjeringen vil sikre sterkere styring og samordning av digitaliseringen på tvers av sektorer og forvaltningsnivåer. Nasjonal arkitektur er et av flere viktige virkemidler for å realisere målet og beskriver blant annet nødvendige ressurser for digital samhandling - inkludert fellesløsninger, infrastruktur for datautveksling og felles standarder. Ved å tydeliggjøre sammenhenger, ansvar og tiltak blir det enklere å identifisere behov og koordinere innsatsen på tvers av sektorer og forvaltningsnivåer. Utvikling, forvaltning og prioritering av nasjonal arkitektur bidrar til å gjøre digitaliseringen robust, skalerbar og målrettet, samtidig som det reduserer unødvendig dobbeltarbeid og forenkler brukeropplevelsen. 
+Sammen med teamet som jobber med Nasjonalt veikart vil vi aktivt bidra opp under målet ved at vi styrker nasjonal arkitekturstyring og lager kunnskapsgrunnlag for felles prioritering. Vi vil i tillegg samarbeide med andre team som arbeider med organisatoriske, økonomiske og juridiske virkemidler som styrker styring og samordning på tvers. Det er derfor relevant å ha dialog rundt arbeid om for eksempel Digitaliseringsrundskrivet, medfinansieringsordningen, livshendelser og sektorovergripende prosjekter. 
+Nasjonal arkitektur har en viktig rolle fordi den legger til rette for at digitaliseringsarbeidet ikke skal skje fragmentert, men som en integrert og koordinert helhet. Den underbygger styringsmekanismene ved å tilby verktøy og prinsipper for beslutninger, tekniske standarder, og hjelper til med å balansere arkitektur lokalt, sektorielt og nasjonalt. </p>
+<hr />
+<h3 id="vi-skal-ha-en-offentlig-sektor-som-tilbyr-bedre-mer-sammenhengende-digitale-tjenester-til-innbyggere-og-nringsliv">Vi skal ha en offentlig sektor som tilbyr bedre, mer sammenhengende digitale tjenester til innbyggere og næringsliv</h3>
+<p><strong>Type:</strong> Goal</p>
+<p>Målet om sammenhengende tjenester til beste for bruker stiller krav til nasjonal arkitektur.
+Nasjonal arkitektur er nødvendig for å få til samhandling og sammenhengende tjenester. Felles økosystem tilbyr ressurser for samhandling og sammenhengende tjenester. Vi skal både tilby ressurser som muliggjør dette, men også sette rammer som styrer offentlig sektor i retning av sammenhengende digitale tjenester. 
+Nasjonal arkitektur kan også bidra til å balansere styrkeforholdet mellom store offentlige etater og mindre statlig/kommunale. Gjennom felles standarder, arkitekturer og retningslinjer kan vi bidra til at det blir lettere å dele og bruke data og få til bedre samhandling.
+Nasjonal arkitektur bør bidra til utforskning av nye måter å skape sammenheng og forenkling for innbygger og næringsliv. Sammenhengende tjenester introduserer også noen nye utfordringer som bør avklares og nasjonal arkitektur bør foreslå hvordan disse utfordringene adresseres. Ved å samarbeide tett med avdelingen for «Sammenhengende tjenester og livshendelser» og jobbe behovsdrevet med ekte problemer og ekte behov, skal vi aktivt prøve å finne løsninger på de arkitekturmessige hindringene. </p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Kopiert til utklippstavlen", "clipboard.copy": "Kopier til utklippstavlen", "search.result.more.one": "1 til p\u00e5 denne siden", "search.result.more.other": "# flere p\u00e5 denne siden", "search.result.none": "Ingen treff", "search.result.one": "1 treff", "search.result.other": "# treff", "search.result.placeholder": "Skriv s\u00f8keord", "search.result.term.missing": "Mangler", "select.version": "Velg versjon"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../javascripts/custom.js"></script>
+      
+    
+  </body>
+</html>
