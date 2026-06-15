@@ -4,13 +4,6 @@
 
 ## Elementer i viewet
 
-### Juridisk samhandlingsevne
-**Type:** Grouping
-
-Juridisk samhandling skal sikre at organisasjoner som arbeider under ulik lovgivning kan samhandle. For at organisasjoner på tvers i forvaltningen kan utvikle og bruke like tjenester og funksjonalitet må det rettslige grunnlaget for samhandling mellom aktørene være på plass.
-
----
-
 ### Organisatorisk samhandlingsevne
 **Type:** Grouping
 
@@ -29,6 +22,13 @@ Teknisk samhandlingsevne sikrer at ulike systemer kan integreres. Dette krever t
 **Type:** Grouping
 
 Styring og forvaltning av integrerbare og sammenhengende offentlige tjenester er det femte området, og løper på tvers av de andre samhandlingsområdene. Det er viktig å komme i gang med avklaringer rundt styring og forvaltning så tidlig som mulig i prosessen ved etablering av nye tjenester. I tillegg vil det være nødvendig å gå mer i dybden etter hvert.
+
+---
+
+### Juridisk samhandlingsevne
+**Type:** Grouping
+
+Juridisk samhandling skal sikre at organisasjoner som arbeider under ulik lovgivning kan samhandle. For at organisasjoner på tvers i forvaltningen kan utvikle og bruke like tjenester og funksjonalitet må det rettslige grunnlaget for samhandling mellom aktørene være på plass.
 
 ---
 

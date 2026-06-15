@@ -50,5 +50,6 @@ Det er et pågående arbeid å samle inn og publisere oversikt over felles ressu
 ***
 
 **Kontakt**: [Nasjonal arkitektur](mailto:nasjonalarkitektur@digdir.no)
+**Til GitHub**: [Nasjonal arkitektur på GitHub](https://github.com/digdir/nasjonal-arkitektur)
 
 
