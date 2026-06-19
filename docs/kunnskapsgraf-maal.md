@@ -47,6 +47,8 @@ Valget av en Kunnskapsgraf og YAML/JSON-LD som representasjon av ArchiMate-model
 
 <figure>
   <img src="../images/KI-agentisk.png" alt="Bruk av KI" />
+  <br><br>
+  <img src="../images/Graf-eks.png" alt="Eksempel på Graf" />
   <figcaption>Bruk av KI - Datadrevet kunnskap på tvers: Gjør arkitekturen umiddelbart operativ for ulike brukere og ulike behov</figcaption>
 </figure>
 
