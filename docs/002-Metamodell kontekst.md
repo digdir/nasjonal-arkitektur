@@ -4,39 +4,6 @@
 
 ## Elementer i viewet
 
-### Domeneressurs
-**Type:** Resource
-
----
-
-### Verdistrømmer og prosesser
-**Type:** ValueStream
-
-Verdistrøm representerer en sekvens av aktiviteter som skaper et samlet resultat for en kunde, interessent eller sluttbruker.
-
-Nasjonal arkitektur skal være kunnskaps- og datadrevet, og skal inneholde informasjon som skal kunne gjenbrukes i ulike verdistrømmer. Den skal inneholde viktige kapabiliteter og rammer for samhandling i felles økosystem, og den skal inneholde oversikt over hvilke løsninger og ressurser som kan benyttes for å dekke behov.  
-
-Det kan være ulike verdistrømmer for ulike brukergrupper og for ulike behov.
-* Operasjonelle verdistrømmer, der Nasjonal arkitektur inngår som en verktøykasse for daglige oppgaver. F.eks. tjenesteutvikling og produktutvikling.
-Målgruppe: Utførere, planleggere
-* Strategiske verdistrømmer, der Nasjonal arkitektur bidrar til at man tar valg for fremtiden
-Målgruppe: Beslutningstagere, planleggere
-
----
-
-### Effektmål
-**Type:** Outcome
-
-De konkrete resultatene av å bruke kapabilitetene.
-Se på dybdeindikatorene fra nullpunktsmåling:
-https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
-F.eks:
-* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
-* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
-
-
----
-
 ### Prinsipp
 **Type:** Principle
 
@@ -51,6 +18,60 @@ Se:  https://joinup.ec.europa.eu/collection/common-assessment-method-standards-a
 
 Togaf definisjon og beste-praksis beskrivelse og definisjon av Arkitekturprinsipper:
 https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap20.html
+
+
+---
+
+### Drivere
+**Type:** Driver
+
+"Drivere" er den grunnleggende motivasjonen eller årsaken til at en endring settes i gang.
+
+Drivarar og hindringar må sjåast i samanheng. Dei viktigaste hindringane er økonomiske rammer og kapasitet. 
+Ei styrking her vil vere blant dei viktigaste drivarane for å oppnå resultat og realisere gevinstar av teknisk infrastruktur og data, knytt til handheving av eit stadig meir omfattande regelverk.
+
+---
+
+### Nasjonal arkitektur analyse dekningsgrad
+**Type:** Assessment
+
+Identifiserer svakheter i dagens arkitektur (ressurser og kapabiliteter). Er en faglig analyse som forklarer hvorfor gapet finnes.
+
+Kapabiliteter og grad av nåsituasjon og måloppnåelse 
+- målverdi
+- dagens verdi
+= Finner Gap og modenhet:
+Rødt (Gap > 2): Kapabiliteter der avstanden mellom nåsituasjon og mål er kritisk stor. Her må Tiltak (Work Packages) prioriteres.
+Gult (Gap = 1): Kapabiliteter som er i rute, men krever vedlikehold eller mindre justeringer.
+Grønt (Gap = 0): Kapabiliteten har nådd sin målverdi.
+En kapabilitet kan realisere både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer, oppfyller eller tolker hensikten bak prinsippet i praksis.
+Modenhetsmodell, som CMMI (Capability Maturity Model Integration):
+* Måling av kapabilitetsmodenhet (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn ved å synliggjøre gapet mellom "hvor gode vi er" (As-Is) og "hvor gode vi må være" (To-Be).
+* Modenheten til en kapabilitet vurderes basert på tilstanden til de underliggende ressursene.
+
+Ressurser og måling:
+* Kan vises som en heatmap med indikatorer for:
+- Dekningsgrad kapabilitet (1-5) for å indikere i hvilken grad en ressurs faktisk er tilgjengelig eller moden nok til å støtte ønsket kapabilitet.
+- egnethet (Funksjonelt egnet)
+- Teknisk egnet
+- Livssyklus status
+
+Man kan også benytte POTI modell som vurdering på tilstanden til ressursene:
+* People (Organisasjon): Roller og kompetanse.
+* Process (Prosess): Arbeidsflyter og prosedyrer.
+* Technology (Teknologi): IT-systemer og infrastruktur.
+* Information (Informasjon): Datakvalitet og flyt
+
+Se også:
+De konkrete resultatene av å bruke kapabilitetene.
+Se på dybdeindikatorene fra nullpunktsmåling:
+https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
+F.eks:
+* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
+* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
+
+
+
 
 
 ---
@@ -94,29 +115,6 @@ https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap28.html
 
 ---
 
-### Hindringer
-**Type:** Constraint
-
-Hindringer: Hva stopper eller begrenser oss?
-
----
-
-### Standarder og veiledning
-**Type:** Resource
-
-Ressurser som setter regler eller gir retning.
-
-Dette kan være:
-Standarder, veiledere, referansearkitekturer, metodikk
-Normeringsgrad kan være knyttet til disse virkemidlene.
-
----
-
-### Domenekapabilitet
-**Type:** Capability
-
----
-
 ### Rammeverk for digital samhandling (European Interoperability Framework)
 **Type:** Grouping
 
@@ -133,13 +131,33 @@ Som et resultat har Norge etablert sitt eget nasjonale rammeverk for interoperab
 
 ---
 
-### Drivere
-**Type:** Driver
+### Hindringer
+**Type:** Constraint
 
-"Drivere" er den grunnleggende motivasjonen eller årsaken til at en endring settes i gang.
+Hindringer: Hva stopper eller begrenser oss?
 
-Drivarar og hindringar må sjåast i samanheng. Dei viktigaste hindringane er økonomiske rammer og kapasitet. 
-Ei styrking her vil vere blant dei viktigaste drivarane for å oppnå resultat og realisere gevinstar av teknisk infrastruktur og data, knytt til handheving av eit stadig meir omfattande regelverk.
+---
+
+### Økonomiske og juridiske rammer og virkemidler
+**Type:** Resource
+
+Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
+
+Rammer og virkemidler kan være ressurser som er
+* Finansielle
+* Regulative
+
+
+
+
+---
+
+### Tiltak for å nå fremtidige mål
+**Type:** CourseOfAction
+
+Dette er tiltak som realiserer eller gjør endringer på en eller flere kapabiliteter.
+
+Tiltakslisten (123) fra Digitaliseringsstrategien følges opp, i tillegg til andre relavante tiltak som bidrar til målene.
 
 ---
 
@@ -148,11 +166,6 @@ Ei styrking her vil vere blant dei viktigaste drivarane for å oppnå resultat o
 
 Realiserer endringer som fjerner gap. Dette er konkrete tiltak som har startet eller er planlagt.
 Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
-
----
-
-### Kapabilitet (Operasjonell)
-**Type:** Capability
 
 ---
 
@@ -224,7 +237,7 @@ Ved å bruke dette rammeverket kan selskaper utvikle et veikart for «nåsituasj
 
 ---
 
-### Ønsket situasjon
+### Nåværende situasjon
 **Type:** Plateau
 
 ---
@@ -236,12 +249,61 @@ Målene fra Digitaliseringsstrategien.
 
 ---
 
-### Tiltak for å nå fremtidige mål
-**Type:** CourseOfAction
+### Domeneressurs
+**Type:** Resource
 
-Dette er tiltak som realiserer eller gjør endringer på en eller flere kapabiliteter.
+---
 
-Tiltakslisten (123) fra Digitaliseringsstrategien følges opp, i tillegg til andre relavante tiltak som bidrar til målene.
+### Standarder og veiledning
+**Type:** Resource
+
+Ressurser som setter regler eller gir retning.
+
+Dette kan være:
+Standarder, veiledere, referansearkitekturer, metodikk
+Normeringsgrad kan være knyttet til disse virkemidlene.
+
+---
+
+### Kapabilitet (Operasjonell)
+**Type:** Capability
+
+---
+
+### Samhandlingsareneaer og organisering
+**Type:** Resource
+
+Organiserte nettverk og styringsorganer for både dialog og strategisk samarbeid og samordning.
+
+Eksempler:
+* Samstyringsstruktur i kommunal sektor
+* Skate
+* ASR (Arkitektur- og standardiseringsrådet)
+* Faglig arena for datadeling og informasjonsforvaltning
+* Datalandsbyen
+* Offentlig PAAS - Slack for alle i offentlig sektor
+
+---
+
+### Verdistrømmer og prosesser
+**Type:** ValueStream
+
+Verdistrøm representerer en sekvens av aktiviteter som skaper et samlet resultat for en kunde, interessent eller sluttbruker.
+
+Nasjonal arkitektur skal være kunnskaps- og datadrevet, og skal inneholde informasjon som skal kunne gjenbrukes i ulike verdistrømmer. Den skal inneholde viktige kapabiliteter og rammer for samhandling i felles økosystem, og den skal inneholde oversikt over hvilke løsninger og ressurser som kan benyttes for å dekke behov.  
+
+Det kan være ulike verdistrømmer for ulike brukergrupper og for ulike behov.
+* Operasjonelle verdistrømmer, der Nasjonal arkitektur inngår som en verktøykasse for daglige oppgaver. F.eks. tjenesteutvikling og produktutvikling.
+Målgruppe: Utførere, planleggere
+* Strategiske verdistrømmer, der Nasjonal arkitektur bidrar til at man tar valg for fremtiden
+Målgruppe: Beslutningstagere, planleggere
+
+---
+
+### Gap
+**Type:** Gap
+
+Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjonal arkitektur)
 
 ---
 
@@ -285,87 +347,25 @@ De nasjonale felleskomponentene, slik de er definert i Digital agenda:
 
 ---
 
-### Gap
-**Type:** Gap
-
-Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjonal arkitektur)
+### Domenekapabilitet
+**Type:** Capability
 
 ---
 
-### Nasjonal arkitektur analyse dekningsgrad
-**Type:** Assessment
+### Ønsket situasjon
+**Type:** Plateau
 
-Identifiserer svakheter i dagens arkitektur (ressurser og kapabiliteter). Er en faglig analyse som forklarer hvorfor gapet finnes.
+---
 
-Kapabiliteter og grad av nåsituasjon og måloppnåelse 
-- målverdi
-- dagens verdi
-= Finner Gap og modenhet:
-Rødt (Gap > 2): Kapabiliteter der avstanden mellom nåsituasjon og mål er kritisk stor. Her må Tiltak (Work Packages) prioriteres.
-Gult (Gap = 1): Kapabiliteter som er i rute, men krever vedlikehold eller mindre justeringer.
-Grønt (Gap = 0): Kapabiliteten har nådd sin målverdi.
-En kapabilitet kan realisere både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer, oppfyller eller tolker hensikten bak prinsippet i praksis.
-Modenhetsmodell, som CMMI (Capability Maturity Model Integration):
-* Måling av kapabilitetsmodenhet (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn ved å synliggjøre gapet mellom "hvor gode vi er" (As-Is) og "hvor gode vi må være" (To-Be).
-* Modenheten til en kapabilitet vurderes basert på tilstanden til de underliggende ressursene.
+### Effektmål
+**Type:** Outcome
 
-Ressurser og måling:
-* Kan vises som en heatmap med indikatorer for:
-- Dekningsgrad kapabilitet (1-5) for å indikere i hvilken grad en ressurs faktisk er tilgjengelig eller moden nok til å støtte ønsket kapabilitet.
-- egnethet (Funksjonelt egnet)
-- Teknisk egnet
-- Livssyklus status
-
-Man kan også benytte POTI modell som vurdering på tilstanden til ressursene:
-* People (Organisasjon): Roller og kompetanse.
-* Process (Prosess): Arbeidsflyter og prosedyrer.
-* Technology (Teknologi): IT-systemer og infrastruktur.
-* Information (Informasjon): Datakvalitet og flyt
-
-Se også:
 De konkrete resultatene av å bruke kapabilitetene.
 Se på dybdeindikatorene fra nullpunktsmåling:
 https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
 F.eks:
 * https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
 * https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
-
-
-
-
-
----
-
-### Samhandlingsareneaer og organisering
-**Type:** Resource
-
-Organiserte nettverk og styringsorganer for både dialog og strategisk samarbeid og samordning.
-
-Eksempler:
-* Samstyringsstruktur i kommunal sektor
-* Skate
-* ASR (Arkitektur- og standardiseringsrådet)
-* Faglig arena for datadeling og informasjonsforvaltning
-* Datalandsbyen
-* Offentlig PAAS - Slack for alle i offentlig sektor
-
----
-
-### Nåværende situasjon
-**Type:** Plateau
-
----
-
-### Økonomiske og juridiske rammer og virkemidler
-**Type:** Resource
-
-Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
-
-Rammer og virkemidler kan være ressurser som er
-* Finansielle
-* Regulative
-
-
 
 
 ---

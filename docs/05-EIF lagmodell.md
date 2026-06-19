@@ -4,6 +4,13 @@
 
 ## Elementer i viewet
 
+### Juridisk samhandlingsevne
+**Type:** Grouping
+
+Juridisk samhandling skal sikre at organisasjoner som arbeider under ulik lovgivning kan samhandle. For at organisasjoner på tvers i forvaltningen kan utvikle og bruke like tjenester og funksjonalitet må det rettslige grunnlaget for samhandling mellom aktørene være på plass.
+
+---
+
 ### Teknisk samhandlingsevne
 **Type:** Grouping
 
@@ -18,24 +25,17 @@ Semantisk samhandlingsevne har å gjøre med betydningen av dataelementer, relas
 
 ---
 
-### Styrings og forvaltning
-**Type:** Grouping
-
-Styring og forvaltning av integrerbare og sammenhengende offentlige tjenester er det femte området, og løper på tvers av de andre samhandlingsområdene. Det er viktig å komme i gang med avklaringer rundt styring og forvaltning så tidlig som mulig i prosessen ved etablering av nye tjenester. I tillegg vil det være nødvendig å gå mer i dybden etter hvert.
-
----
-
-### Juridisk samhandlingsevne
-**Type:** Grouping
-
-Juridisk samhandling skal sikre at organisasjoner som arbeider under ulik lovgivning kan samhandle. For at organisasjoner på tvers i forvaltningen kan utvikle og bruke like tjenester og funksjonalitet må det rettslige grunnlaget for samhandling mellom aktørene være på plass.
-
----
-
 ### Organisatorisk samhandlingsevne
 **Type:** Grouping
 
 Organisatorisk samhandling handler om hvordan samhandlende virksomheter tilpasser tjenestekjeder/forretningsprosesser, ansvar og forventninger for å oppnå felles mål og fordeler. Området dekker også forventninger til å gjøre tjenester tilgjengelige og brukerorienterte, samt hvilke samhandlingsmodeller og avtaler virksomhetene etablerer knyttet til felles forvaltning.
+
+---
+
+### Styrings og forvaltning
+**Type:** Grouping
+
+Styring og forvaltning av integrerbare og sammenhengende offentlige tjenester er det femte området, og løper på tvers av de andre samhandlingsområdene. Det er viktig å komme i gang med avklaringer rundt styring og forvaltning så tidlig som mulig i prosessen ved etablering av nye tjenester. I tillegg vil det være nødvendig å gå mer i dybden etter hvert.
 
 ---
 
