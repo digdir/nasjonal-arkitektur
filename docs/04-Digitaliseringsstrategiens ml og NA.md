@@ -22,6 +22,11 @@ Ved å implementere felles europeiske standarder, sikrer nasjonal arkitektur at 
 
 ---
 
+### Sørge for at alle har et tilbud om en elektronisk identitet
+**Type:** Goal
+
+---
+
 ### Et velfungerende felles digitalt økosystem for samhandling og tjenesteutvikling i offentlig sektor
 **Type:** Goal
 
@@ -31,22 +36,6 @@ Regjeringen vil sikre sterkere styring og samordning av digitaliseringen på tve
 Sammen med teamet som jobber med Nasjonalt veikart vil vi aktivt bidra opp under målet ved at vi styrker nasjonal arkitekturstyring og lager kunnskapsgrunnlag for felles prioritering. Vi vil i tillegg samarbeide med andre team som arbeider med organisatoriske, økonomiske og juridiske virkemidler som styrker styring og samordning på tvers. Det er derfor relevant å ha dialog rundt arbeid om for eksempel Digitaliseringsrundskrivet, medfinansieringsordningen, livshendelser og sektorovergripende prosjekter. 
 Nasjonal arkitektur har en viktig rolle fordi den legger til rette for at digitaliseringsarbeidet ikke skal skje fragmentert, men som en integrert og koordinert helhet. Den underbygger styringsmekanismene ved å tilby verktøy og prinsipper for beslutninger, tekniske standarder, og hjelper til med å balansere arkitektur lokalt, sektorielt og nasjonalt. 
 
-
----
-
-### Næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering.
-**Type:** Goal
-
-Evnen til å tilrettelegge for at det nasjonale økosystemet fremmer et omstillingsdyktig og innovativt næringsliv. 
-
-Dette innebærer:
-* rammebetingelser, insentiver og samarbeidsformer som gjør det attraktivt og forutsigbart for private aktører å bygge tjenester oppå nasjonale fellesløsninger og data
-
-Hvorfor er dette viktig?
-* Offentlige data som råstoff: Åpne og tilgjengelige data er en ressurs som næringslivet trenger for å skape produkter forvaltningen selv ikke ville utviklet.
-* Styrket konkurransekraft: Ved å gjøre offentlige fellesløsninger tilgjengelige for private aktører, økes mulighetene for innovasjon i næringslivet.
-I Digitaliseringsstrategien er det et mål at:
-*  Regjeringen vil frem mot 2030 legge til rette for at næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering. Oppstartsbedrifter skal ha gode rammevilkår. Vi skal sørge for at digitalisering og utnyttelse av data forsterker våre fortrinn i viktige bransjer, slik som helse, energi, havbruk og andre maritime næringer.
 
 ---
 
@@ -64,11 +53,6 @@ Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og i
 
 ---
 
-### Sørge for at alle har et tilbud om en elektronisk identitet
-**Type:** Goal
-
----
-
 ### Vi skal delta i EUs satsing på dataområder der det er relevant
 **Type:** Goal
 
@@ -81,11 +65,6 @@ Arbeidet med dataområdene i EU vil komme med referansearkitekturer og standarde
 
 ---
 
-### Næringslivet skal ha gode rammevilkår for å utvikle og bruke KI. Offentlig sektor skal anvende KI for å utvikle bedre tjenester og løse oppgaver mer effektivt
-**Type:** Goal
-
----
-
 ### Vi skal ha en offentlig sektor som tilbyr bedre, mer sammenhengende digitale tjenester til innbyggere og næringsliv  
 **Type:** Goal
 
@@ -94,6 +73,27 @@ Nasjonal arkitektur er nødvendig for å få til samhandling og sammenhengende t
 Nasjonal arkitektur kan også bidra til å balansere styrkeforholdet mellom store offentlige etater og mindre statlig/kommunale. Gjennom felles standarder, arkitekturer og retningslinjer kan vi bidra til at det blir lettere å dele og bruke data og få til bedre samhandling.
 Nasjonal arkitektur bør bidra til utforskning av nye måter å skape sammenheng og forenkling for innbygger og næringsliv. Sammenhengende tjenester introduserer også noen nye utfordringer som bør avklares og nasjonal arkitektur bør foreslå hvordan disse utfordringene adresseres. Ved å samarbeide tett med avdelingen for «Sammenhengende tjenester og livshendelser» og jobbe behovsdrevet med ekte problemer og ekte behov, skal vi aktivt prøve å finne løsninger på de arkitekturmessige hindringene. 
 
+
+---
+
+### Næringslivet skal ha gode rammevilkår for å utvikle og bruke KI. Offentlig sektor skal anvende KI for å utvikle bedre tjenester og løse oppgaver mer effektivt
+**Type:** Goal
+
+---
+
+### Næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering.
+**Type:** Goal
+
+Evnen til å tilrettelegge for at det nasjonale økosystemet fremmer et omstillingsdyktig og innovativt næringsliv. 
+
+Dette innebærer:
+* rammebetingelser, insentiver og samarbeidsformer som gjør det attraktivt og forutsigbart for private aktører å bygge tjenester oppå nasjonale fellesløsninger og data
+
+Hvorfor er dette viktig?
+* Offentlige data som råstoff: Åpne og tilgjengelige data er en ressurs som næringslivet trenger for å skape produkter forvaltningen selv ikke ville utviklet.
+* Styrket konkurransekraft: Ved å gjøre offentlige fellesløsninger tilgjengelige for private aktører, økes mulighetene for innovasjon i næringslivet.
+I Digitaliseringsstrategien er det et mål at:
+*  Regjeringen vil frem mot 2030 legge til rette for at næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering. Oppstartsbedrifter skal ha gode rammevilkår. Vi skal sørge for at digitalisering og utnyttelse av data forsterker våre fortrinn i viktige bransjer, slik som helse, energi, havbruk og andre maritime næringer.
 
 ---
 
