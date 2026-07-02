@@ -45,14 +45,21 @@ def generate_markdown(yaml_file, docs_dir):
         img_rel_path = copy_view_image(view_id, safe_name, docs_dir)
         
         md_path = os.path.join(docs_dir, f"{safe_name}.md")
-        view_files.append((v_name, f"{safe_name}.md"))
+        v_doc = view_data.get('documentation', '')
+        view_files.append((v_name, f"{safe_name}.md", v_doc))
         
         with open(md_path, 'w', encoding='utf-8') as f:
             f.write(f"# {v_name}\n\n")
+            
+            f.write("> **Merk:** Denne dokumentasjonen skal forbedres! Inntil videre kan du få tilgang til all dokumentasjon ved å **[Åpne interaktiv Archi-rapport](interaktiv-modell.md)**.\n\n")
+            
             if img_rel_path:
                 f.write(f"![{v_name}]({img_rel_path})\n\n")
             else:
                 f.write(f"> *Kunne ikke finne bildet for viewet i HTML-eksporten.*\n\n")
+                
+            if v_doc:
+                f.write(f"## Beskrivelse\n\n{v_doc}\n\n")
                 
             if v_name.startswith("01") or v_name.startswith("02"):
                 f.write("## Kapabiliteter\n\n")
@@ -163,11 +170,16 @@ def generate_markdown(yaml_file, docs_dir):
             f.write("Du kan se HTML-rapporten generert fra Archi her:\n")
             f.write("- **[Åpne interaktiv Archi-rapport](interaktiv-modell.md)**\n\n")
 
+        f.write("> **Merk:** Denne dokumentasjonen skal forbedres! Inntil videre kan du få tilgang til all dokumentasjon ved å **[Åpne interaktiv Archi-rapport](interaktiv-modell.md)**.\n\n")
         f.write("Arkitekturen er beskrevet gjennom følgende visuelle views:\n\n")
         
         view_files.sort(key=lambda x: x[0])
-        for v_name, v_file in view_files:
-            f.write(f"- [{v_name}]({v_file})\n")
+        for v_name, v_file, v_doc in view_files:
+            f.write(f"### [{v_name}]({v_file})\n\n")
+            if v_doc:
+                # Add a brief summary (first line/paragraph) if it exists
+                summary = v_doc.split('\n')[0]
+                f.write(f"{summary}\n\n")
 
     try:
         shutil.copy2('templates/kunnskapsgraf-maal.md', os.path.join(docs_dir, 'kunnskapsgraf-maal.md'))

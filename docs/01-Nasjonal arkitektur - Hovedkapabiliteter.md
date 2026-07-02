@@ -1,6 +1,16 @@
 # 01-Nasjonal arkitektur - Hovedkapabiliteter
 
+> **Merk:** Denne dokumentasjonen skal forbedres! Inntil videre kan du få tilgang til all dokumentasjon ved å **[Åpne interaktiv Archi-rapport](interaktiv-modell.md)**.
+
 ![01-Nasjonal arkitektur - Hovedkapabiliteter](images/01-Nasjonal arkitektur - Hovedkapabiliteter.png)
+
+## Beskrivelse
+
+Denne viser Nivå 1 til Nivå 2 av kapabiliteter i Nasjonal arkitektur:
+
+- **Nivå 1: Overordnet kapabilitet** beskriver den samlede evnen Nasjonal arkitektur skal bidra til i felles økosystem.
+- **Nivå 2: Hovedkapabilitet** beskriver brede, strategiske kapabilitetsområder som strukturerer modellen.
+
 
 ## Kapabiliteter
 

@@ -1,6 +1,19 @@
 # 02-Nasjonal Arkitektur - Kapabilitetskart alle nivåer
 
+> **Merk:** Denne dokumentasjonen skal forbedres! Inntil videre kan du få tilgang til all dokumentasjon ved å **[Åpne interaktiv Archi-rapport](interaktiv-modell.md)**.
+
 ![02-Nasjonal Arkitektur - Kapabilitetskart alle nivåer](images/02-Nasjonal Arkitektur - Kapabilitetskart alle niver.png)
+
+## Beskrivelse
+
+Den konkrete kapabilitetsmodellen for Nasjonal arkitektur er organisert i tre nivåer, denne viser alle nivåene:
+
+- **Nivå 1: Overordnet kapabilitet** beskriver den samlede evnen Nasjonal arkitektur skal bidra til i felles økosystem.
+- **Nivå 2: Hovedkapabilitet** beskriver brede, strategiske kapabilitetsområder som strukturerer modellen.
+- **Nivå 3: Underkapabilitet** beskriver mer konkrete og operasjonelle evner som kan vurderes, forbedres og kobles til ressurser, tiltak, gap og effektmål.
+
+Nasjonal Arkitektur-modellen er tverrgående og abstrakt – den skal passe for alle sektorer (helse, samferdsel, justis osv.), og er basert på Rammeverk for samhandling.
+
 
 ## Kapabiliteter
 
