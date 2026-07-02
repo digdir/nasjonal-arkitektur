@@ -13,10 +13,10 @@ markdown_extensions:
       toc_depth: 2-6
 nav:
   - Innledning: index.md
-  - Rammeverksmodell for Nasjonal arkitektur:
+  - Dokumentasjon av modell for Nasjonal arkitektur:
     - Innledning: modell.md
     - Interaktiv modell i Archi: interaktiv-modell.md
-    - Dypdykk og konsepter:
+  - Dypdykk og konsepter:
       - Nasjonal arkitektur som Kunnskapsgraf: kunnskapsgraf-maal.md
   - Oversikt over ressurser i felles økosystem: ressurser.md
 
