@@ -602,7 +602,6 @@ na:id-ba60560a9ed64b4d87b2fd4fa6b32937
     archimate:name "Nasjonal arkitektur for samhandling"@nb ;
     archimate:documentation """Evne til å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem.
 
-
 Felles økosystem skal bidra til økt deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv måte og skaper økte verdier for samfunnet.
 Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen mellom aktørene. 
 Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette."""@nb .
@@ -1513,13 +1512,14 @@ na:id-89e255a238d346a4901424f0059e6345
     archimate:documentation """Evnen til å tilrettelegge for at det nasjonale økosystemet fremmer et omstillingsdyktig og innovativt næringsliv. 
 
 Dette innebærer:
-* rammebetingelser, insentiver og samarbeidsformer som gjør det attraktivt og forutsigbart for private aktører å bygge tjenester oppå nasjonale fellesløsninger og data
+- rammebetingelser, insentiver og samarbeidsformer som gjør det attraktivt og forutsigbart for private aktører å bygge tjenester oppå nasjonale fellesløsninger og data
 
 Hvorfor er dette viktig?
-* Offentlige data som råstoff: Åpne og tilgjengelige data er en ressurs som næringslivet trenger for å skape produkter forvaltningen selv ikke ville utviklet.
-* Styrket konkurransekraft: Ved å gjøre offentlige fellesløsninger tilgjengelige for private aktører, økes mulighetene for innovasjon i næringslivet.
+- Offentlige data som råstoff: Åpne og tilgjengelige data er en ressurs som næringslivet trenger for å skape produkter forvaltningen selv ikke ville utviklet.
+- Styrket konkurransekraft: Ved å gjøre offentlige fellesløsninger tilgjengelige for private aktører, økes mulighetene for innovasjon i næringslivet.
+
 I Digitaliseringsstrategien er det et mål at:
-*  Regjeringen vil frem mot 2030 legge til rette for at næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering. Oppstartsbedrifter skal ha gode rammevilkår. Vi skal sørge for at digitalisering og utnyttelse av data forsterker våre fortrinn i viktige bransjer, slik som helse, energi, havbruk og andre maritime næringer."""@nb .
+-  Regjeringen vil frem mot 2030 legge til rette for at næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og digitalisering. Oppstartsbedrifter skal ha gode rammevilkår. Vi skal sørge for at digitalisering og utnyttelse av data forsterker våre fortrinn i viktige bransjer, slik som helse, energi, havbruk og andre maritime næringer."""@nb .
 
 na:id-bf3fa917baad486d9865b9627199a2d4
     a archimate:Goal ;
@@ -2636,18 +2636,6 @@ na:id-ddfd40b6fd8d434d8388970444b41f34
     archimate:source na:id-31be9bc0b80e4be4b2df2d8e0000dc6f ;
     archimate:target na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 .
 
-na:id-c81878106bef449c8fbcebb7a7861f44
-    a archimate:AssociationRelationship, archimate:Relationship ;
-    archimate:identifier "id-c81878106bef449c8fbcebb7a7861f44" ;
-    archimate:source na:id-04fef6c083b449dba91c876ae2e3715f ;
-    archimate:target na:id-8810f83ff9fe44c2a3368cdef932526b .
-
-na:id-35336d033b864cc1b129d6e5e627f0c1
-    a archimate:AggregationRelationship, archimate:Relationship ;
-    archimate:identifier "id-35336d033b864cc1b129d6e5e627f0c1" ;
-    archimate:source na:id-04fef6c083b449dba91c876ae2e3715f ;
-    archimate:target na:id-8810f83ff9fe44c2a3368cdef932526b .
-
 na:id-eb5ea45fb81343aa850be6613dfe1c28
     a archimate:ServingRelationship, archimate:Relationship ;
     archimate:identifier "id-eb5ea45fb81343aa850be6613dfe1c28" ;
@@ -2704,6 +2692,12 @@ na:id-deba9c82669841f1ab38247c7e7aff20
     archimate:identifier "id-deba9c82669841f1ab38247c7e7aff20" ;
     archimate:source na:id-ed6c7d640e81477780c82285ae079706 ;
     archimate:target na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 .
+
+na:id-ab2ca39ba14a405497cfdedfb2d875f7
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-ab2ca39ba14a405497cfdedfb2d875f7" ;
+    archimate:source na:id-8810f83ff9fe44c2a3368cdef932526b ;
+    archimate:target na:id-04fef6c083b449dba91c876ae2e3715f .
 
 ### ── Properties (archimate:Property individuals) ────────────────────────
 

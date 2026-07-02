@@ -1310,15 +1310,15 @@ elements:
     type: Capability
     name: Nasjonal arkitektur for samhandling
     documentation: "Evne til å sikre samhandling, gjenbruk og strategisk retning i\
-      \ et nasjonalt digitalt økosystem.\n\n\nFelles økosystem skal bidra til økt\
-      \ deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på\
-      \ en effektiv måte og skaper økte verdier for samfunnet.\nDet betyr at i felles\
-      \ økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til\
-      \ en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer\
-      \ hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker\
-      \ samhandlingen mellom aktørene. \nMed samhandling mener vi evnen til å tilby\
-      \ tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske,\
-      \ semantiske og tekniske aspektene ved dette.\n\n"
+      \ et nasjonalt digitalt økosystem.\n\nFelles økosystem skal bidra til økt deling\
+      \ av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv\
+      \ måte og skaper økte verdier for samfunnet.\nDet betyr at i felles økosystem\
+      \ samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv\
+      \ forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi\
+      \ styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen\
+      \ mellom aktørene. \nMed samhandling mener vi evnen til å tilby tjenester, utveksle\
+      \ informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske\
+      \ aspektene ved dette.\n\n"
     properties: {}
     folder_path: *id002
   id-9ea8fbaeb19243fa971013c57c3e96f9:
@@ -3411,14 +3411,14 @@ elements:
     name: Næringslivets konkurranseevne styrkes gjennom innovativ bruk av data og
       digitalisering.
     documentation: "Evnen til å tilrettelegge for at det nasjonale økosystemet fremmer\
-      \ et omstillingsdyktig og innovativt næringsliv. \n\nDette innebærer:\n* rammebetingelser,\
+      \ et omstillingsdyktig og innovativt næringsliv. \n\nDette innebærer:\n- rammebetingelser,\
       \ insentiver og samarbeidsformer som gjør det attraktivt og forutsigbart for\
       \ private aktører å bygge tjenester oppå nasjonale fellesløsninger og data\n\
-      \nHvorfor er dette viktig?\n* Offentlige data som råstoff: Åpne og tilgjengelige\
+      \nHvorfor er dette viktig?\n- Offentlige data som råstoff: Åpne og tilgjengelige\
       \ data er en ressurs som næringslivet trenger for å skape produkter forvaltningen\
-      \ selv ikke ville utviklet.\n* Styrket konkurransekraft: Ved å gjøre offentlige\
+      \ selv ikke ville utviklet.\n- Styrket konkurransekraft: Ved å gjøre offentlige\
       \ fellesløsninger tilgjengelige for private aktører, økes mulighetene for innovasjon\
-      \ i næringslivet.\nI Digitaliseringsstrategien er det et mål at:\n*  Regjeringen\
+      \ i næringslivet.\n\nI Digitaliseringsstrategien er det et mål at:\n-  Regjeringen\
       \ vil frem mot 2030 legge til rette for at næringslivets konkurranseevne styrkes\
       \ gjennom innovativ bruk av data og digitalisering. Oppstartsbedrifter skal\
       \ ha gode rammevilkår. Vi skal sørge for at digitalisering og utnyttelse av\
@@ -4807,20 +4807,6 @@ relationships:
     target_id: id-0cf363c3f2ff4fa3a34bda7a610e6f70
     documentation: ''
     properties: {}
-  id-c81878106bef449c8fbcebb7a7861f44:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-04fef6c083b449dba91c876ae2e3715f
-    target_id: id-8810f83ff9fe44c2a3368cdef932526b
-    documentation: ''
-    properties: {}
-  id-35336d033b864cc1b129d6e5e627f0c1:
-    type: AggregationRelationship
-    name: ''
-    source_id: id-04fef6c083b449dba91c876ae2e3715f
-    target_id: id-8810f83ff9fe44c2a3368cdef932526b
-    documentation: ''
-    properties: {}
   id-eb5ea45fb81343aa850be6613dfe1c28:
     type: ServingRelationship
     name: realiserer
@@ -4882,6 +4868,13 @@ relationships:
     name: ''
     source_id: id-ed6c7d640e81477780c82285ae079706
     target_id: id-0cf363c3f2ff4fa3a34bda7a610e6f70
+    documentation: ''
+    properties: {}
+  id-ab2ca39ba14a405497cfdedfb2d875f7:
+    type: AggregationRelationship
+    name: ''
+    source_id: id-8810f83ff9fe44c2a3368cdef932526b
+    target_id: id-04fef6c083b449dba91c876ae2e3715f
     documentation: ''
     properties: {}
 views:
@@ -5044,15 +5037,6 @@ views:
           y: '261'
           width: '757'
           height: '100'
-      id-94b20a5aebde43ab9050d57d7b03aeaa:
-        type: DiagramObject
-        archimate_element_id: id-efe1a2676c124eeab946802af96a1ab7
-        parent_node_id: id-4b5c46cbbaeb4d52baf61e075bf1c98e
-        bounds:
-          x: '612'
-          y: '24'
-          width: '120'
-          height: '55'
       id-207638d177b841e3adabcd2e34688539:
         type: DiagramObject
         archimate_element_id: id-84629318a3b84213ac3a83bdb6a1aad9
@@ -5078,6 +5062,15 @@ views:
         bounds:
           x: '144'
           y: '21'
+          width: '120'
+          height: '55'
+      id-94b20a5aebde43ab9050d57d7b03aeaa:
+        type: DiagramObject
+        archimate_element_id: id-efe1a2676c124eeab946802af96a1ab7
+        parent_node_id: id-4b5c46cbbaeb4d52baf61e075bf1c98e
+        bounds:
+          x: '612'
+          y: '24'
           width: '120'
           height: '55'
       id-3532290d41434552b6ca8e2a9571dedf:
@@ -5422,33 +5415,6 @@ views:
           y: '30'
           width: '120'
           height: '55'
-      id-9173d9539afb4044a1789ecf9c6ed2c3:
-        type: DiagramObject
-        archimate_element_id: id-299fc063873a4f278a1d3c0ac9480467
-        parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
-        bounds:
-          x: '1012'
-          y: '36'
-          width: '225'
-          height: '93'
-      id-0029e2c3b6884b3fb9ffd03adf64c5c4:
-        type: DiagramObject
-        archimate_element_id: id-0119029984674da59dbbfdc3a8ca3e95
-        parent_node_id: id-9173d9539afb4044a1789ecf9c6ed2c3
-        bounds:
-          x: '12'
-          y: '24'
-          width: '85'
-          height: '55'
-      id-be9fb55bedb34ac090d70312fbae8702:
-        type: DiagramObject
-        archimate_element_id: id-0209483504444508a40415aa6e3fc39c
-        parent_node_id: id-9173d9539afb4044a1789ecf9c6ed2c3
-        bounds:
-          x: '108'
-          y: '24'
-          width: '96'
-          height: '55'
       id-267bf994416341c09e218571c79f2c40:
         type: DiagramObject
         archimate_element_id: id-c0547226c598467a942dced879d0c18b
@@ -5476,14 +5442,41 @@ views:
           y: '36'
           width: '120'
           height: '55'
+      id-9173d9539afb4044a1789ecf9c6ed2c3:
+        type: DiagramObject
+        archimate_element_id: id-299fc063873a4f278a1d3c0ac9480467
+        parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
+        bounds:
+          x: '1012'
+          y: '36'
+          width: '225'
+          height: '93'
+      id-0029e2c3b6884b3fb9ffd03adf64c5c4:
+        type: DiagramObject
+        archimate_element_id: id-0119029984674da59dbbfdc3a8ca3e95
+        parent_node_id: id-9173d9539afb4044a1789ecf9c6ed2c3
+        bounds:
+          x: '12'
+          y: '24'
+          width: '85'
+          height: '55'
+      id-be9fb55bedb34ac090d70312fbae8702:
+        type: DiagramObject
+        archimate_element_id: id-0209483504444508a40415aa6e3fc39c
+        parent_node_id: id-9173d9539afb4044a1789ecf9c6ed2c3
+        bounds:
+          x: '108'
+          y: '24'
+          width: '96'
+          height: '55'
       id-1878725c8ff54026974bda0be7461d2c:
         type: Note
         archimate_element_id: ''
         parent_node_id: null
         bounds:
-          x: '372'
+          x: '96'
           y: '-900'
-          width: '805'
+          width: '1297'
           height: '46'
     connections:
       id-dac64c458ca44c37b08718c92d7ed0d7:
@@ -5776,16 +5769,6 @@ views:
         relationship_id: ''
         source_node: id-097184c9fb104c4486607319c83d7b7b
         target_node: id-3c4c1b94e63f4a799acb1b47fd58fac6
-      id-503465f22b4241d7b45086ae527fbee8:
-        type: Connection
-        relationship_id: ''
-        source_node: id-9173d9539afb4044a1789ecf9c6ed2c3
-        target_node: id-0029e2c3b6884b3fb9ffd03adf64c5c4
-      id-1911d8ff4fa8469d8c9cd542c507f770:
-        type: Connection
-        relationship_id: ''
-        source_node: id-9173d9539afb4044a1789ecf9c6ed2c3
-        target_node: id-be9fb55bedb34ac090d70312fbae8702
       id-b5943f6868fa4e338831874176971c18:
         type: Connection
         relationship_id: ''
@@ -5796,6 +5779,16 @@ views:
         relationship_id: ''
         source_node: id-267bf994416341c09e218571c79f2c40
         target_node: id-a28546521a6446df904b97c96d8118e2
+      id-503465f22b4241d7b45086ae527fbee8:
+        type: Connection
+        relationship_id: ''
+        source_node: id-9173d9539afb4044a1789ecf9c6ed2c3
+        target_node: id-0029e2c3b6884b3fb9ffd03adf64c5c4
+      id-1911d8ff4fa8469d8c9cd542c507f770:
+        type: Connection
+        relationship_id: ''
+        source_node: id-9173d9539afb4044a1789ecf9c6ed2c3
+        target_node: id-be9fb55bedb34ac090d70312fbae8702
   id-623c2b878f81427187c41e072b4deff5:
     type: ArchimateDiagramModel
     name: 04-Digitaliseringsstrategiens mål og NA
@@ -6159,9 +6152,9 @@ views:
         archimate_element_id: ''
         parent_node_id: null
         bounds:
-          x: '500'
+          x: '516'
           y: '12'
-          width: '805'
+          width: '789'
           height: '46'
     connections:
       id-17d6f5f313ce492681cfdb706ece9fd6:
@@ -6917,13 +6910,8 @@ views:
         relationship_id: ''
         source_node: id-56304407cecd48f8a67ad8c8d5ca583c
         target_node: id-7f03797d1e674f24855925ccb2839c5f
-      id-bb479240a65848d4b10ba36d870f7050:
+      id-a6f201ad7a754b9a918cd6bdfb9ef59e:
         type: Connection
         relationship_id: ''
-        source_node: id-1df279d8c7a54331b573b8fc645fc346
-        target_node: id-282eb12e4847411089513c6f8fd17399
-      id-b2d71b1f4f074c308c7dbb3d5015587a:
-        type: Connection
-        relationship_id: ''
-        source_node: id-1df279d8c7a54331b573b8fc645fc346
-        target_node: id-282eb12e4847411089513c6f8fd17399
+        source_node: id-282eb12e4847411089513c6f8fd17399
+        target_node: id-1df279d8c7a54331b573b8fc645fc346

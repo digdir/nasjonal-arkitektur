@@ -32,10 +32,10 @@ Nasjonal Arkitektur-modellen er tverrgående og abstrakt – den skal passe for 
     - **Tjenestekjeder** - *Evne til å dynamisk sette sammen, koordinere og automatisere flyten av informasjon og prosesser på tvers av uavhengige, integrerbare tjenester for å levere en komplett ende-til-ende-tjeneste for brukeren.*
     - **Proaktive tjenester** - *Evne til å, basert på registrerte hendelser og delte data, automatisk identifisere en brukers behov for offentlige tjenester og proaktivt tilby relevant informasjon, veiledning eller starte en tjenesteprosess på vegne av brukeren.*
   - **Datautveksling og integrasjon** - *Evne til å sikkert, effektivt og standardisert utveksle data mellom aktører i økosystemet.*
-    - **Dele data med andre** - *Evne til å tilgjengeliggjøre egne data som veldokumenterte og sikre API-er, slik at andre aktører med lovlig grunnlag enkelt kan oppdage og gjenbruke dem.*
     - **Bruke data fra andre** - *Evne til å gjenbruke data fra andre i egne tjenester og prosesser.*
     - **Hendelsesdrevet** - *Evne til å publisere og reagere på digitale hendelser og kontinuerlige datastrømmer når de inntreffer.*
     - **Meldingsutveksling** - *Evne til å utveksle strukturert informasjon som meldinger mellom aktører, basert på avtalte prosesser, standarder, informasjonsmodeller, sikkerhetskrav og kvitterings-/avviksmekanismer.*
+    - **Dele data med andre** - *Evne til å tilgjengeliggjøre egne data som veldokumenterte og sikre API-er, slik at andre aktører med lovlig grunnlag enkelt kan oppdage og gjenbruke dem.*
   - **Standardisering** - *Evne til å identifisere, vedta, forvalte og fremme bruk av omforente standarder og spesifikasjoner som sikrer interoperabilitet og gjenbruk på tvers av sektorer og landegrenser.*
     - **EU standarder** - *Evne til å forstå og ta i bruk EU-standarder i økosystemet*
     - **Forvaltningsstandarder** - *Evne til å implementere og ta i bruk nasjonale standarder.*
@@ -74,9 +74,9 @@ Nasjonal Arkitektur-modellen er tverrgående og abstrakt – den skal passe for 
     - **Organisatorisk samhandling** - *Evne til å effektivisere forretningsprosesser og verdikjeder på tvers av organisatoriske grenser.*
     - **Samarbeidsarenaer og nettverk** - *Evne til å effektivisere, etablere, forvalte og fasilitere arenaer, nettverk og prosesser som fremmer kunnskapsdeling, dialog og samordning på tvers av virksomheter i økosystemet.*
     - **Tjenesteforvaltning** - *Evne til å formalisere samarbeid gjennom tydelig definerte roller, ansvar og avtaler for å sikre forutsigbar og effektiv felles styring mellom samhandlende virksomheter.*
-  - **Juridisk samhandling** - *Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.*
-    - **Regelverksutvikling** - *Evne til å foreslå og koordinere endringer i regelverket for å tilpasse det til teknologisk utvikling og nye behov.*
-    - **Regelverkstolkning** - *Evne til å tilby felles, autoritative tolkninger av relevant regelverk.*
   - **Veiledning** - *Evne til å sikre at veiledninger for digital samhandling utarbeides, formidles og benyttes.*
     - **Utvikling og formidling av veiledning** - *Evne til å utarbeide, kvalitetssikre og tilgjengeliggjøre veiledning.*
     - **Anvendelse av veiledning** - *Evne til å tolke og benytte veiledere i prosjekter og tiltak.*
+  - **Juridisk samhandling** - *Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.*
+    - **Regelverksutvikling** - *Evne til å foreslå og koordinere endringer i regelverket for å tilpasse det til teknologisk utvikling og nye behov.*
+    - **Regelverkstolkning** - *Evne til å tilby felles, autoritative tolkninger av relevant regelverk.*
