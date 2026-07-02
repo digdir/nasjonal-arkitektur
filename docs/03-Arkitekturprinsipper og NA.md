@@ -4,6 +4,118 @@
 
 ## Elementer i viewet
 
+### Tillit
+**Type:** Capability
+
+Evne å tilby tillitstjenester som muliggjører autentisering og autorisasjon på tvers av tjenestekjeder, og støtte en distribuert arkitektur og føderering mellom ulike domener og tjeneste.
+
+### Begrunnelse (Hvorfor)
+Kapabiliteten gir et felles tillitsgrunnlag for digital samhandling på tvers av virksomheter, domener og tjenestekjeder. Den fungerer som en strategisk paraply for identifisering, autentisering, tilgangsstyring, tilgangskontroll, representasjon, samtykke, signering, sporbarhet og innsyn.
+
+Uten felles tillitstjenester må hver virksomhet etablere egne mekanismer for identitet, autorisasjon og sporbarhet. Det gir fragmenterte løsninger, svakere sikkerhet, lavere gjenbruk og mer krevende integrasjon mellom tjenester.
+
+### Hva det innebærer (Omfang)
+- **Juridisk (Høy vekt):** Overordnede rettslige rammer for eID, autorisasjon, representasjon, samtykke, signering, personvern og digitale tillitstjenester må sikre at samhandling kan skje lovlig og etterprøvbart.
+- **Organisatorisk (Høy vekt):** Felles forvaltningsmodeller, roller, ansvar og avtaler må sikre at tillitstjenester kan brukes og videreutvikles på tvers av virksomheter og sektorer.
+- **Semantisk (Middels vekt):** Felles begreper for identitet, rettighet, representasjon, samtykke, tillitsnivå, autentisering og autorisasjon må sikre lik forståelse i økosystemet.
+- **Teknisk (Svært høy vekt):** Fødererte tillitstjenester, felles autentiserings- og autorisasjonsmekanismer, tokenforvaltning, logging, signering og sporbarhet må gjøre det mulig å etablere tillit på tvers av distribuerte tjenester.
+
+### Bidrag til sammenhengende tjenester og felles økosystem
+Tillit gjør det mulig å koble tjenester sammen på tvers av virksomheter uten at hver aktør må etablere egne løsninger for identitet, tilgang, representasjon og sporbarhet. Når tillitstjenester fungerer på tvers, kan brukere og systemer bevege seg tryggere gjennom en tjenestekjede der rettigheter, fullmakter og handlinger kan verifiseres.
+
+Kapabiliteten styrker det felles økosystemet ved å gi felles mekanismer for sikker samhandling, juridisk etterprøvbarhet og teknisk føderering mellom domener. For sluttbrukeren betyr dette mer sømløse, sikre og tillitvekkende tjenester der offentlige og private aktører kan samhandle uten at brukeren må håndtere kompleksiteten bak.
+
+
+
+---
+
+### Informasjonssikkerhet
+**Type:** Capability
+
+Evne til å ha tilstrekkelig sikkerhet i tjenester og løsninger som benyttes i felles økosystem. 
+
+### Begrunnelse (Hvorfor)
+Kapabiliteten sikrer at tjenester og løsninger i felles økosystem har et tilstrekkelig sikkerhetsnivå til å beskytte informasjon, opprettholde tillit og muliggjøre trygg digital samhandling. Den er sterkt knyttet til kapabiliteten "Tillit", fordi sikkerhet er en grunnleggende forutsetning for autentisering, autorisasjon, datadeling, sporbarhet og sammenhengende tjenester.
+
+### Hva det innebærer (Omfang)
+- **Juridisk (Høy vekt):** Overordnede krav til informasjonssikkerhet, personvern, taushetsplikt, internkontroll og risikostyring må sikre at tjenester og løsninger etterlever gjeldende regelverk.
+- **Organisatorisk (Høy vekt):** Felles styring, roller, ansvar, risikovurderinger og sikkerhetsprosesser må sikre at aktørene i økosystemet håndterer sikkerhet på en koordinert og etterprøvbar måte.
+- **Semantisk (Middels vekt):** Felles begreper for risiko, sikkerhetsnivå, beskyttelsesbehov, trusler, sårbarheter og sikkerhetstiltak må sikre lik forståelse på tvers av virksomheter.
+- **Teknisk (Høy vekt):** Felles sikkerhetsarkitektur, tilgangsmekanismer, kryptering, logging, overvåking, hendelseshåndtering og tekniske sikkerhetstiltak må beskytte tjenester og løsninger i økosystemet.
+
+### Bidrag til sammenhengende tjenester og felles økosystem
+Informasjonssikkerhet gjør det mulig å koble tjenester, data og løsninger sammen uten å svekke konfidensialitet, integritet eller tilgjengelighet. Når aktørene har tillit til at informasjon håndteres sikkert, blir det enklere å dele data, bruke fellesløsninger og bygge tjenestekjeder på tvers av virksomheter.
+
+Kapabiliteten styrker det felles økosystemet ved å redusere risiko, øke robusthet og etablere et felles sikkerhetsnivå for digital samhandling. For sluttbrukeren betyr dette tryggere og mer stabile tjenester, der opplysninger kan brukes på tvers uten at sikkerhet og tillit svekkes.
+
+---
+
+### Samarbeid
+**Type:** Capability
+
+Evne til å samarbeid og samhandling på tvers av offentlig og privat forvaltning.
+
+### Begrunnelse (Hvorfor)
+Sammenhengende tjenester kan ikke bygges i isolasjon. Aktørene i økosystemet må fungere som ett lag for å løse felles utfordringer, unngå dobbeltarbeid og bryte ned silotenking. Denne overordnede pilaren eksisterer for å sikre helhetlig samfunnsverdi og felles strategisk retning. Den løser problemet med at virksomheter prioriterer interne oppgaver fremfor tverrgående brukerreiser.
+
+### Hva det innebærer (Omfang)
+- **Organisatorisk (Svært høy vekt):** Overordnede styringsmodeller, samstyring og finansiering koordinerer samhandlingsmodeller og avtaler for å tilpasse tjenestekjeder og prosesser.
+
+### Bidrag til sammenhengende tjenester og felles økosystem
+Kapabiliteten bygger bro mellom organisatoriske siloer og sikrer overordnet strategisk koordinering. Når man er enige om prioriteringer, økonomi og spilleregler på forhånd, sikres et tydelig mandat for samarbeid. Dette gir de operative teamene fundamentet de trenger for å binde tjenester sammen til en uavbrutt og guidet reise, slik at sluttbrukeren opplever forvaltningen som én samordnet aktør.
+
+
+
+
+---
+
+### Datautveksling og integrasjon
+**Type:** Capability
+
+Evne til å sikkert, effektivt og standardisert utveksle data mellom aktører i økosystemet.
+
+### Begrunnelse (Hvorfor)
+Kapabiliteten gjør det mulig for aktører i økosystemet å utveksle data på en sikker, effektiv og standardisert måte. Den fungerer som en strategisk paraply for deling, gjenbruk, integrasjon, meldingsutveksling, hendelsesdrevet samhandling og digital lommebok. Uten denne kapabiliteten blir tjenester avhengige av manuelle prosesser, særskilte punkt-til-punkt-integrasjoner og gjentatt innsamling av informasjon.
+
+### Hva det innebærer (Omfang)
+- **Juridisk (Middels vekt):** Overordnede rettslige rammer må sikre behandlingsgrunnlag, ansvar, tilgang og etterlevelse ved datautveksling mellom selvstendige aktører.
+- **Organisatorisk (Høy vekt):** Felles samhandlingsmodeller, avtaler, roller og forvaltningsprosesser må sikre at aktørene kan dele og bruke data på en forutsigbar måte.
+- **Semantisk (Høy vekt):** Felles begreper, informasjonsmodeller, metadata og standardiserte beskrivelser må sikre at data forstås likt på tvers av virksomheter.
+- **Teknisk (Svært høy vekt):** Standardiserte API-er, meldingsutveksling, hendelsesstrømmer, sikkerhetsmekanismer og felles infrastruktur må gjøre systemer i stand til å utveksle data kontrollert og skalerbart.
+
+### Bidrag til sammenhengende tjenester og felles økosystem
+Kapabiliteten gjør at data kan flyte sikkert og strukturert mellom virksomheter i en tjenestekjede. Den reduserer behovet for at brukeren selv må hente, dokumentere eller formidle informasjon mellom offentlige aktører. Når datautveksling og integrasjon skjer etter felles rammer, blir det enklere å utvikle sammenhengende tjenester, gjenbruke eksisterende data og koble uavhengige løsninger sammen i et mer effektivt felles økosystem.
+
+---
+
+### P2: Ta arkitektur-beslutninger på rett nivå
+**Type:** Principle
+
+https://www.digdir.no/digital-samhandling/prinsipp-2-ta-arkitekturbeslutninger-pa-rett-niva/1056
+
+---
+
+### P4: Del og gjenbruk data
+**Type:** Principle
+
+https://www.digdir.no/digital-samhandling/prinsipp-4-del-og-gjenbruk-data/1061
+
+---
+
+### Nasjonal arkitektur for samhandling
+**Type:** Capability
+
+Evne til å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem.
+
+
+Felles økosystem skal bidra til økt deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv måte og skaper økte verdier for samfunnet.
+Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen mellom aktørene. 
+Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette.
+
+
+
+---
+
 ### Datadrevet
 **Type:** Capability
 
@@ -46,42 +158,10 @@ Veiledere kan ha ulik grad av styrke:
 
 ---
 
-### Tjenesteutvikling
-**Type:** Capability
-
-Evne til å utvikle sammenhengende digitale tjenester.
-
-### Begrunnelse (Hvorfor)
-Offentlig og privat sektor må øke digitaliseringstakten for å løse felles samfunnsutfordringer og unngå fragmenterte løsninger. Denne hovedkapabiliteten eksisterer som en strategisk paraply for å styrke den felles prosess- og kompetanseevnen på tvers av økosystemet. Den løser problemet med silobasert og isolert systemutvikling ved å samordne innsatsen rundt helhetlig metodikk, design, koding og samarbeid.
-
-### Hva det innebærer (Omfang)
-- **Organisatorisk (Svært høy vekt):** Felles smidige metodikker, brukerorienterte designdrevne prosesser og tverrgående samarbeidsmodeller sikrer helhetlig produktutvikling.
-- **Semantisk (Middels vekt):** Nasjonale referansemodeller og omforent begrepsforståelse legges systematisk til grunn under modellering av nye tjenestegrensesnitt.
-- **Teknisk (Høy vekt):** Overordnede plattformstrategier for standardiserte byggeklosser, integrerbare API-er og felles kjøretidsmiljøer sikrer teknologisk samsvar.
-
-### Bidrag til sammenhengende tjenester og felles økosystem
-Hovedkapabiliteten gir det strategiske fundamentet som kreves for at uavhengige virksomheter skal kunne bygge løsninger som fungerer sømløst sammen. Ved å harmonisere kompetansen innen design, koding og gjenbruk på et overordnet nivå, elimineres metodiske ulikheter før utviklingen starter. For sluttbrukeren betyr dette at nye tverrgående tjenestekjeder kan etableres raskere, slik at de oppleves helhetlig og uavbrutt.
-
----
-
-### P5: Del og gjenbruk løsninger
+### P3: Bidra til digitaliseringsvennlige regelverk
 **Type:** Principle
 
-https://www.digdir.no/digital-samhandling/prinsipp-5-del-og-gjenbruk-losninger/1062
-
----
-
-### Nasjonal arkitektur for samhandling
-**Type:** Capability
-
-Evne til å sikre samhandling, gjenbruk og strategisk retning i et nasjonalt digitalt økosystem.
-
-
-Felles økosystem skal bidra til økt deling av data og gjenbruk av løsninger, slik at vi utnytter ressursene på en effektiv måte og skaper økte verdier for samfunnet.
-Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsninger som bidrar til en effektiv forvaltning med gode brukervennlige tjenester. Dette inkluderer hvordan vi styrer og forvalter løsninger og tjenester, samt hvordan vi øker samhandlingen mellom aktørene. 
-Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette.
-
-
+https://www.digdir.no/digital-samhandling/prinsipp-3-bidra-til-digitaliseringsvennlige-regelverk/1057
 
 ---
 
@@ -104,11 +184,78 @@ Kapabiliteten samordner strategiske beslutninger og ressursbruk på tvers av uav
 
 ---
 
+### Juridisk samhandling
+**Type:** Capability
+
+Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.
+
+### 1. Begrunnelse (Hvorfor)
+Digital samhandling og datadeling på tvers av uavhengige virksomheter krever en trygg og felles juridisk grunnmur. Uten denne kapabiliteten vil uklarheter rundt lovlighet, personvern og deling av opplysninger skape usikkerhet, føre til unødig lange utredningsprosesser og i verste fall stanse utviklingen av tverrgående digitale tjenester fordi aktørene ikke har avklart om de har lov til å samhandle.
+
+### 2. Hva det innebærer (Omfang)
+- **Juridisk (Svært høy vekt):** Dette utgjør selve kjernen i kapabiliteten. Det innebærer å foreslå, koordinere og harmonisere endringer i regelverket (regelverksutvikling) samt å tilby felles, autoritative tolkninger av eksisterende regelverk (regelverkstolkning). Det sikrer at det rettslige hjemmelsgrunnlaget for deling av data er på plass og i tråd med nasjonale lover og europeiske forordninger (som GDPR og eIDAS).
+- **Organisatorisk (Høy vekt):** Etablere tverrgående samarbeidsarenaer og nettverk mellom jurister, departementer og etater for å samordne forvaltningspraksis. Dette sikrer en koordinert tilnærming til rettslige problemstillinger og fjerner silobaserte tolkninger som hindrer samhandling.
+- **Semantisk (Middels vekt):** Oversette komplekse juridiske begreper, vilkår og lovtekster til en omforent forståelse, slik at lovens intensjon tolkes likt av saksbehandlere og virksomheter i hele økosystemet.
+- **Teknisk (Lav vekt):** Underbygge prinsippet om digitaliseringsvennlig regelverk, der lover og forskrifter utformes med tanke på at rettslige regler, plikter og rettigheter senere skal kunne omsettes til maskinlesbar logikk og automatiserte saksbehandlingsprosesser.
+
+### 3. Bidrag til sammenhengende tjenester og felles økosystem
+Kapabiliteten rydder bort juridiske gråsoner og hindringer bak fasaden, slik at data lovlig kan flyte mellom uavhengige aktører i en tjenestekjede. For sluttbrukeren betyr dette en sømløs opplevelse der det offentlige kan samhandle på tvers av etater uten at brukeren selv må fungere som budbringer av attester, vedtak eller dokumentasjon.
+
+
+---
+
+### P5: Del og gjenbruk løsninger
+**Type:** Principle
+
+https://www.digdir.no/digital-samhandling/prinsipp-5-del-og-gjenbruk-losninger/1062
+
+---
+
+### P6: Lag digitale løsninger som støtter samhandling
+**Type:** Principle
+
+https://www.digdir.no/digital-samhandling/prinsipp-6-lag-digitale-losninger-som-stotter-samhandling/1063
+
+---
+
+### Sluttbrukertjenester
+**Type:** Capability
+
+Evne til å tilby en sammenhengende digital brukeropplevelse gjennom et økosystem av standardiserte og integrerbare tjenester.
+
+### Begrunnelse (Hvorfor)
+Kapabiliteten sikrer at innbyggere, næringsliv og andre sluttbrukere møter offentlige digitale tjenester som en helhetlig brukeropplevelse, selv om tjenestene leveres av flere uavhengige virksomheter. Den fungerer som en strategisk paraply for brukerorienterte, sammenhengende og proaktive tjenester som bygger på felles data, integrerbare tjenester og standardiserte samhandlingsmønstre.
+
+### Hva det innebærer (Omfang)
+- **Juridisk (Middels vekt):** Overordnede rammer for rettigheter, plikter, personvern, universell utforming og digital kommunikasjon må sikre at sluttbrukertjenester kan tilbys trygt og lovlig på tvers av virksomheter.
+- **Organisatorisk (Svært høy vekt):** Felles styring, tjenesteeierskap, brukerorienterte arbeidsprosesser og tverrgående ansvar må sikre at tjenestene oppleves helhetlige fra brukerens ståsted.
+- **Semantisk (Høy vekt):** Felles begreper, tjenestebeskrivelser, informasjonsmodeller og brukerrettet språk må sikre at innhold og veiledning forstås likt på tvers av tjenestene.
+- **Teknisk (Høy vekt):** Standardiserte og integrerbare tjenester, API-er, fellesløsninger og sikre digitale kanaler må gjøre det mulig å bygge en sammenhengende brukeropplevelse på tvers av systemer.
+
+### Bidrag til sammenhengende tjenester og felles økosystem
+Kapabiliteten gjør sluttbrukerens behov til utgangspunktet for hvordan tjenester settes sammen i økosystemet. Når offentlige tjenester bygger på standardiserte og integrerbare byggeklosser, kan brukeren få en mer sømløs reise der informasjon, veiledning og handlinger henger sammen på tvers av virksomheter. Dette styrker det felles økosystemet ved å fremme gjenbruk, redusere fragmentering og gjøre det enklere å utvikle tjenester som oppleves som én samlet offentlig sektor.
+
+---
+
+### P7: Sørg for tillit til oppgaveløsningen
+**Type:** Principle
+
+https://www.digdir.no/digital-samhandling/prinsipp-7-sorg-tillit-til-oppgavelosningen/1064
+
+---
+
 ### Prinsipper Nasjonal Arkitektur
 **Type:** Principle
 
 https://www.digdir.no/digital-samhandling/overordnede-arkitekturprinsipper/1065
 
+
+---
+
+### P1: Ta utgangspunkt i brukernes behov
+**Type:** Principle
+
+https://www.digdir.no/digital-samhandling/prinsipp-1-ta-utgangspunkt-i-brukernes-behov/1055
 
 ---
 
@@ -133,57 +280,21 @@ Kapabiliteten styrker det felles økosystemet ved å legge til rette for etterle
 
 ---
 
-### P7: Sørg for tillit til oppgaveløsningen
-**Type:** Principle
-
-https://www.digdir.no/digital-samhandling/prinsipp-7-sorg-tillit-til-oppgavelosningen/1064
-
----
-
-### Informasjonsforvaltning
+### Tjenesteutvikling
 **Type:** Capability
 
-Evne til å ha et felles rammeverk og styringsmodell for informasjonsforvaltning, slik at offentlige virksomheter kan utveksle og dele data og beskrivelser. 
+Evne til å utvikle sammenhengende digitale tjenester.
 
 ### Begrunnelse (Hvorfor)
-Kapabiliteten sikrer at offentlige virksomheter kan utveksle og dele data og beskrivelser innenfor et felles rammeverk og en felles styringsmodell. Den løser behovet for enhetlig praksis for hvordan informasjon beskrives, forvaltes, kvalitetssikres og gjøres tilgjengelig på tvers av virksomheter.
+Offentlig og privat sektor må øke digitaliseringstakten for å løse felles samfunnsutfordringer og unngå fragmenterte løsninger. Denne hovedkapabiliteten eksisterer som en strategisk paraply for å styrke den felles prosess- og kompetanseevnen på tvers av økosystemet. Den løser problemet med silobasert og isolert systemutvikling ved å samordne innsatsen rundt helhetlig metodikk, design, koding og samarbeid.
 
 ### Hva det innebærer (Omfang)
-- **Juridisk (Middels vekt):** Informasjonsforvaltningen må støtte etterlevelse av krav til personvern, taushetsplikt, arkivering, innsyn, behandlingsgrunnlag og lovlig deling av data.
-- **Organisatorisk (Svært høy vekt):** Etablere felles rammeverk, styringsmodell, roller, ansvar og prosesser for forvaltning av data, begreper, informasjonsmodeller og metadata.
-- **Semantisk (Svært høy vekt):** Sikre felles beskrivelser, begreper, metadata, informasjonsmodeller og kvalitetskrav, slik at data og beskrivelser kan forstås og gjenbrukes på tvers.
-- **Teknisk (Høy vekt):** Bruke kataloger, modellverktøy, dataplattformer, API-beskrivelser og maskinlesbare metadata som gjør informasjon finnbart, delbart og teknisk tilgjengelig.
+- **Organisatorisk (Svært høy vekt):** Felles smidige metodikker, brukerorienterte designdrevne prosesser og tverrgående samarbeidsmodeller sikrer helhetlig produktutvikling.
+- **Semantisk (Middels vekt):** Nasjonale referansemodeller og omforent begrepsforståelse legges systematisk til grunn under modellering av nye tjenestegrensesnitt.
+- **Teknisk (Høy vekt):** Overordnede plattformstrategier for standardiserte byggeklosser, integrerbare API-er og felles kjøretidsmiljøer sikrer teknologisk samsvar.
 
 ### Bidrag til sammenhengende tjenester og felles økosystem
-Informasjonsforvaltning gir grunnlaget for at virksomheter kan dele og bruke data med felles forståelse av innhold, kvalitet og ansvar. Når data, begreper og beskrivelser forvaltes etter felles rammer, blir det enklere å bygge tjenester som henger sammen på tvers av virksomheter.
-
-Kapabiliteten styrker det felles økosystemet ved å gjøre informasjon mer finnbart, forståelig, pålitelig og gjenbrukbart. For sluttbrukeren betyr dette mindre behov for å oppgi samme informasjon flere ganger, færre feil og mer helhetlige digitale tjenester.
-
----
-
-### Sluttbrukertjenester
-**Type:** Capability
-
-Evne til å tilby en sammenhengende digital brukeropplevelse gjennom et økosystem av standardiserte og integrerbare tjenester.
-
-### Begrunnelse (Hvorfor)
-Kapabiliteten sikrer at innbyggere, næringsliv og andre sluttbrukere møter offentlige digitale tjenester som en helhetlig brukeropplevelse, selv om tjenestene leveres av flere uavhengige virksomheter. Den fungerer som en strategisk paraply for brukerorienterte, sammenhengende og proaktive tjenester som bygger på felles data, integrerbare tjenester og standardiserte samhandlingsmønstre.
-
-### Hva det innebærer (Omfang)
-- **Juridisk (Middels vekt):** Overordnede rammer for rettigheter, plikter, personvern, universell utforming og digital kommunikasjon må sikre at sluttbrukertjenester kan tilbys trygt og lovlig på tvers av virksomheter.
-- **Organisatorisk (Svært høy vekt):** Felles styring, tjenesteeierskap, brukerorienterte arbeidsprosesser og tverrgående ansvar må sikre at tjenestene oppleves helhetlige fra brukerens ståsted.
-- **Semantisk (Høy vekt):** Felles begreper, tjenestebeskrivelser, informasjonsmodeller og brukerrettet språk må sikre at innhold og veiledning forstås likt på tvers av tjenestene.
-- **Teknisk (Høy vekt):** Standardiserte og integrerbare tjenester, API-er, fellesløsninger og sikre digitale kanaler må gjøre det mulig å bygge en sammenhengende brukeropplevelse på tvers av systemer.
-
-### Bidrag til sammenhengende tjenester og felles økosystem
-Kapabiliteten gjør sluttbrukerens behov til utgangspunktet for hvordan tjenester settes sammen i økosystemet. Når offentlige tjenester bygger på standardiserte og integrerbare byggeklosser, kan brukeren få en mer sømløs reise der informasjon, veiledning og handlinger henger sammen på tvers av virksomheter. Dette styrker det felles økosystemet ved å fremme gjenbruk, redusere fragmentering og gjøre det enklere å utvikle tjenester som oppleves som én samlet offentlig sektor.
-
----
-
-### P2: Ta arkitektur-beslutninger på rett nivå
-**Type:** Principle
-
-https://www.digdir.no/digital-samhandling/prinsipp-2-ta-arkitekturbeslutninger-pa-rett-niva/1056
+Hovedkapabiliteten gir det strategiske fundamentet som kreves for at uavhengige virksomheter skal kunne bygge løsninger som fungerer sømløst sammen. Ved å harmonisere kompetansen innen design, koding og gjenbruk på et overordnet nivå, elimineres metodiske ulikheter før utviklingen starter. For sluttbrukeren betyr dette at nye tverrgående tjenestekjeder kan etableres raskere, slik at de oppleves helhetlig og uavbrutt.
 
 ---
 
@@ -213,135 +324,24 @@ Kapabiliteten styrker det felles økosystemet ved å gjøre data til en felles r
 
 ---
 
-### P1: Ta utgangspunkt i brukernes behov
-**Type:** Principle
-
-https://www.digdir.no/digital-samhandling/prinsipp-1-ta-utgangspunkt-i-brukernes-behov/1055
-
----
-
-### Tillit
+### Informasjonsforvaltning
 **Type:** Capability
 
-Evne å tilby tillitstjenester som muliggjører autentisering og autorisasjon på tvers av tjenestekjeder, og støtte en distribuert arkitektur og føderering mellom ulike domener og tjeneste.
+Evne til å ha et felles rammeverk og styringsmodell for informasjonsforvaltning, slik at offentlige virksomheter kan utveksle og dele data og beskrivelser. 
 
 ### Begrunnelse (Hvorfor)
-Kapabiliteten gir et felles tillitsgrunnlag for digital samhandling på tvers av virksomheter, domener og tjenestekjeder. Den fungerer som en strategisk paraply for identifisering, autentisering, tilgangsstyring, tilgangskontroll, representasjon, samtykke, signering, sporbarhet og innsyn.
-
-Uten felles tillitstjenester må hver virksomhet etablere egne mekanismer for identitet, autorisasjon og sporbarhet. Det gir fragmenterte løsninger, svakere sikkerhet, lavere gjenbruk og mer krevende integrasjon mellom tjenester.
+Kapabiliteten sikrer at offentlige virksomheter kan utveksle og dele data og beskrivelser innenfor et felles rammeverk og en felles styringsmodell. Den løser behovet for enhetlig praksis for hvordan informasjon beskrives, forvaltes, kvalitetssikres og gjøres tilgjengelig på tvers av virksomheter.
 
 ### Hva det innebærer (Omfang)
-- **Juridisk (Høy vekt):** Overordnede rettslige rammer for eID, autorisasjon, representasjon, samtykke, signering, personvern og digitale tillitstjenester må sikre at samhandling kan skje lovlig og etterprøvbart.
-- **Organisatorisk (Høy vekt):** Felles forvaltningsmodeller, roller, ansvar og avtaler må sikre at tillitstjenester kan brukes og videreutvikles på tvers av virksomheter og sektorer.
-- **Semantisk (Middels vekt):** Felles begreper for identitet, rettighet, representasjon, samtykke, tillitsnivå, autentisering og autorisasjon må sikre lik forståelse i økosystemet.
-- **Teknisk (Svært høy vekt):** Fødererte tillitstjenester, felles autentiserings- og autorisasjonsmekanismer, tokenforvaltning, logging, signering og sporbarhet må gjøre det mulig å etablere tillit på tvers av distribuerte tjenester.
+- **Juridisk (Middels vekt):** Informasjonsforvaltningen må støtte etterlevelse av krav til personvern, taushetsplikt, arkivering, innsyn, behandlingsgrunnlag og lovlig deling av data.
+- **Organisatorisk (Svært høy vekt):** Etablere felles rammeverk, styringsmodell, roller, ansvar og prosesser for forvaltning av data, begreper, informasjonsmodeller og metadata.
+- **Semantisk (Svært høy vekt):** Sikre felles beskrivelser, begreper, metadata, informasjonsmodeller og kvalitetskrav, slik at data og beskrivelser kan forstås og gjenbrukes på tvers.
+- **Teknisk (Høy vekt):** Bruke kataloger, modellverktøy, dataplattformer, API-beskrivelser og maskinlesbare metadata som gjør informasjon finnbart, delbart og teknisk tilgjengelig.
 
 ### Bidrag til sammenhengende tjenester og felles økosystem
-Tillit gjør det mulig å koble tjenester sammen på tvers av virksomheter uten at hver aktør må etablere egne løsninger for identitet, tilgang, representasjon og sporbarhet. Når tillitstjenester fungerer på tvers, kan brukere og systemer bevege seg tryggere gjennom en tjenestekjede der rettigheter, fullmakter og handlinger kan verifiseres.
+Informasjonsforvaltning gir grunnlaget for at virksomheter kan dele og bruke data med felles forståelse av innhold, kvalitet og ansvar. Når data, begreper og beskrivelser forvaltes etter felles rammer, blir det enklere å bygge tjenester som henger sammen på tvers av virksomheter.
 
-Kapabiliteten styrker det felles økosystemet ved å gi felles mekanismer for sikker samhandling, juridisk etterprøvbarhet og teknisk føderering mellom domener. For sluttbrukeren betyr dette mer sømløse, sikre og tillitvekkende tjenester der offentlige og private aktører kan samhandle uten at brukeren må håndtere kompleksiteten bak.
-
-
-
----
-
-### P6: Lag digitale løsninger som støtter samhandling
-**Type:** Principle
-
-https://www.digdir.no/digital-samhandling/prinsipp-6-lag-digitale-losninger-som-stotter-samhandling/1063
-
----
-
-### Samarbeid
-**Type:** Capability
-
-Evne til å samarbeid og samhandling på tvers av offentlig og privat forvaltning.
-
-### Begrunnelse (Hvorfor)
-Sammenhengende tjenester kan ikke bygges i isolasjon. Aktørene i økosystemet må fungere som ett lag for å løse felles utfordringer, unngå dobbeltarbeid og bryte ned silotenking. Denne overordnede pilaren eksisterer for å sikre helhetlig samfunnsverdi og felles strategisk retning. Den løser problemet med at virksomheter prioriterer interne oppgaver fremfor tverrgående brukerreiser.
-
-### Hva det innebærer (Omfang)
-- **Organisatorisk (Svært høy vekt):** Overordnede styringsmodeller, samstyring og finansiering koordinerer samhandlingsmodeller og avtaler for å tilpasse tjenestekjeder og prosesser.
-
-### Bidrag til sammenhengende tjenester og felles økosystem
-Kapabiliteten bygger bro mellom organisatoriske siloer og sikrer overordnet strategisk koordinering. Når man er enige om prioriteringer, økonomi og spilleregler på forhånd, sikres et tydelig mandat for samarbeid. Dette gir de operative teamene fundamentet de trenger for å binde tjenester sammen til en uavbrutt og guidet reise, slik at sluttbrukeren opplever forvaltningen som én samordnet aktør.
-
-
-
-
----
-
-### Juridisk samhandling
-**Type:** Capability
-
-Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.
-
-### 1. Begrunnelse (Hvorfor)
-Digital samhandling og datadeling på tvers av uavhengige virksomheter krever en trygg og felles juridisk grunnmur. Uten denne kapabiliteten vil uklarheter rundt lovlighet, personvern og deling av opplysninger skape usikkerhet, føre til unødig lange utredningsprosesser og i verste fall stanse utviklingen av tverrgående digitale tjenester fordi aktørene ikke har avklart om de har lov til å samhandle.
-
-### 2. Hva det innebærer (Omfang)
-- **Juridisk (Svært høy vekt):** Dette utgjør selve kjernen i kapabiliteten. Det innebærer å foreslå, koordinere og harmonisere endringer i regelverket (regelverksutvikling) samt å tilby felles, autoritative tolkninger av eksisterende regelverk (regelverkstolkning). Det sikrer at det rettslige hjemmelsgrunnlaget for deling av data er på plass og i tråd med nasjonale lover og europeiske forordninger (som GDPR og eIDAS).
-- **Organisatorisk (Høy vekt):** Etablere tverrgående samarbeidsarenaer og nettverk mellom jurister, departementer og etater for å samordne forvaltningspraksis. Dette sikrer en koordinert tilnærming til rettslige problemstillinger og fjerner silobaserte tolkninger som hindrer samhandling.
-- **Semantisk (Middels vekt):** Oversette komplekse juridiske begreper, vilkår og lovtekster til en omforent forståelse, slik at lovens intensjon tolkes likt av saksbehandlere og virksomheter i hele økosystemet.
-- **Teknisk (Lav vekt):** Underbygge prinsippet om digitaliseringsvennlig regelverk, der lover og forskrifter utformes med tanke på at rettslige regler, plikter og rettigheter senere skal kunne omsettes til maskinlesbar logikk og automatiserte saksbehandlingsprosesser.
-
-### 3. Bidrag til sammenhengende tjenester og felles økosystem
-Kapabiliteten rydder bort juridiske gråsoner og hindringer bak fasaden, slik at data lovlig kan flyte mellom uavhengige aktører i en tjenestekjede. For sluttbrukeren betyr dette en sømløs opplevelse der det offentlige kan samhandle på tvers av etater uten at brukeren selv må fungere som budbringer av attester, vedtak eller dokumentasjon.
-
-
----
-
-### P4: Del og gjenbruk data
-**Type:** Principle
-
-https://www.digdir.no/digital-samhandling/prinsipp-4-del-og-gjenbruk-data/1061
-
----
-
-### Datautveksling og integrasjon
-**Type:** Capability
-
-Evne til å sikkert, effektivt og standardisert utveksle data mellom aktører i økosystemet.
-
-### Begrunnelse (Hvorfor)
-Kapabiliteten gjør det mulig for aktører i økosystemet å utveksle data på en sikker, effektiv og standardisert måte. Den fungerer som en strategisk paraply for deling, gjenbruk, integrasjon, meldingsutveksling, hendelsesdrevet samhandling og digital lommebok. Uten denne kapabiliteten blir tjenester avhengige av manuelle prosesser, særskilte punkt-til-punkt-integrasjoner og gjentatt innsamling av informasjon.
-
-### Hva det innebærer (Omfang)
-- **Juridisk (Middels vekt):** Overordnede rettslige rammer må sikre behandlingsgrunnlag, ansvar, tilgang og etterlevelse ved datautveksling mellom selvstendige aktører.
-- **Organisatorisk (Høy vekt):** Felles samhandlingsmodeller, avtaler, roller og forvaltningsprosesser må sikre at aktørene kan dele og bruke data på en forutsigbar måte.
-- **Semantisk (Høy vekt):** Felles begreper, informasjonsmodeller, metadata og standardiserte beskrivelser må sikre at data forstås likt på tvers av virksomheter.
-- **Teknisk (Svært høy vekt):** Standardiserte API-er, meldingsutveksling, hendelsesstrømmer, sikkerhetsmekanismer og felles infrastruktur må gjøre systemer i stand til å utveksle data kontrollert og skalerbart.
-
-### Bidrag til sammenhengende tjenester og felles økosystem
-Kapabiliteten gjør at data kan flyte sikkert og strukturert mellom virksomheter i en tjenestekjede. Den reduserer behovet for at brukeren selv må hente, dokumentere eller formidle informasjon mellom offentlige aktører. Når datautveksling og integrasjon skjer etter felles rammer, blir det enklere å utvikle sammenhengende tjenester, gjenbruke eksisterende data og koble uavhengige løsninger sammen i et mer effektivt felles økosystem.
-
----
-
-### Informasjonssikkerhet
-**Type:** Capability
-
-Evne til å ha tilstrekkelig sikkerhet i tjenester og løsninger som benyttes i felles økosystem. 
-
-### Begrunnelse (Hvorfor)
-Kapabiliteten sikrer at tjenester og løsninger i felles økosystem har et tilstrekkelig sikkerhetsnivå til å beskytte informasjon, opprettholde tillit og muliggjøre trygg digital samhandling. Den er sterkt knyttet til kapabiliteten "Tillit", fordi sikkerhet er en grunnleggende forutsetning for autentisering, autorisasjon, datadeling, sporbarhet og sammenhengende tjenester.
-
-### Hva det innebærer (Omfang)
-- **Juridisk (Høy vekt):** Overordnede krav til informasjonssikkerhet, personvern, taushetsplikt, internkontroll og risikostyring må sikre at tjenester og løsninger etterlever gjeldende regelverk.
-- **Organisatorisk (Høy vekt):** Felles styring, roller, ansvar, risikovurderinger og sikkerhetsprosesser må sikre at aktørene i økosystemet håndterer sikkerhet på en koordinert og etterprøvbar måte.
-- **Semantisk (Middels vekt):** Felles begreper for risiko, sikkerhetsnivå, beskyttelsesbehov, trusler, sårbarheter og sikkerhetstiltak må sikre lik forståelse på tvers av virksomheter.
-- **Teknisk (Høy vekt):** Felles sikkerhetsarkitektur, tilgangsmekanismer, kryptering, logging, overvåking, hendelseshåndtering og tekniske sikkerhetstiltak må beskytte tjenester og løsninger i økosystemet.
-
-### Bidrag til sammenhengende tjenester og felles økosystem
-Informasjonssikkerhet gjør det mulig å koble tjenester, data og løsninger sammen uten å svekke konfidensialitet, integritet eller tilgjengelighet. Når aktørene har tillit til at informasjon håndteres sikkert, blir det enklere å dele data, bruke fellesløsninger og bygge tjenestekjeder på tvers av virksomheter.
-
-Kapabiliteten styrker det felles økosystemet ved å redusere risiko, øke robusthet og etablere et felles sikkerhetsnivå for digital samhandling. For sluttbrukeren betyr dette tryggere og mer stabile tjenester, der opplysninger kan brukes på tvers uten at sikkerhet og tillit svekkes.
-
----
-
-### P3: Bidra til digitaliseringsvennlige regelverk
-**Type:** Principle
-
-https://www.digdir.no/digital-samhandling/prinsipp-3-bidra-til-digitaliseringsvennlige-regelverk/1057
+Kapabiliteten styrker det felles økosystemet ved å gjøre informasjon mer finnbart, forståelig, pålitelig og gjenbrukbart. For sluttbrukeren betyr dette mindre behov for å oppgi samme informasjon flere ganger, færre feil og mer helhetlige digitale tjenester.
 
 ---
 

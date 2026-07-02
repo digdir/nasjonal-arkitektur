@@ -116,12 +116,7 @@ na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5
     archimate:identifier "id-eb6f01d0d0ef4230b7a5c9c73c3842c5" ;
     archimate:name "Kapabilitet"@nb ;
     archimate:documentation """En kapabilitet beskriver \"hva\" en eller flere aktører må kunne gjøre for å skape verdi, uavhengig av hvordan det gjøres. Dette er den forretningsmessige evnen til å oppnå et mål.
-En kapabilitet er en grunnleggende funksjonell evne i det digitale økosystemet. Den beskriver hva som må være på plass for å oppnå felles nasjonale mål, uavhengig av organisatoriske grenser og tekniske løsninger.
-
-Kapabiliteter er typisk uttrykt med generelle termer og på høyt nivå. For at en kapabilitet skal nås kreves evner i form av ferdigheter gjennom en kombinasjon av ulike ressurser. 
-
--------
-En kapabilitet beskriver hva én eller flere aktører må kunne gjøre for å skape verdi, uavhengig av hvordan det gjøres.
+En kapabilitet er en grunnleggende funksjonell evne i det digitale økosystemet. Den beskriver hva som må være på plass for å oppnå ønskede mål, uavhengig av organisatoriske grenser og tekniske løsninger.
 
 I Nasjonal arkitektur brukes kapabiliteter til å beskrive hvilke evner som må være til stede i felles økosystem for å oppnå mål, effektmål, samhandling og sammenhengende tjenester. En kapabilitet beskriver behovet på et stabilt og løsningsuavhengig nivå, og skal ikke forveksles med konkrete systemer, prosjekter, tiltak eller organisatoriske enheter.
 
@@ -131,9 +126,7 @@ Den konkrete kapabilitetsmodellen for Nasjonal arkitektur er organisert i tre ni
 - **Nivå 2: Hovedkapabilitet** beskriver brede, strategiske kapabilitetsområder som strukturerer modellen.
 - **Nivå 3: Underkapabilitet** beskriver mer konkrete og operasjonelle evner som kan vurderes, forbedres og kobles til ressurser, tiltak, gap og effektmål.
 
-Alle nivåene modelleres som ArchiMate `Capability`. Nivåene uttrykker abstraksjonsnivå og struktur i modellen, ikke ulike metamodellelementer.
-
-Kapabiliteter kan brytes ned i underliggende kapabiliteter ved hjelp av komposisjon eller aggregering.
+Alle nivåene modelleres som ArchiMate 'Capability'. Nivåene uttrykker abstraksjonsnivå og struktur i modellen, ikke ulike metamodellelementer.
 Kapabiliteter er knyttet til ressurser som realiserer eller understøtter dem. Forvaltning av kapabilitetene er en kontinuerlig strategisk prosess som gjøres i dekningsgradsvurderinger opp mot strategiske mål."""@nb .
 
 na:id-31be9bc0b80e4be4b2df2d8e0000dc6f
