@@ -18,8 +18,23 @@ Nasjonal arkitektur gir felles rammer for samhandling og beskriver det generelle
 
 ## Elementer i viewet
 
-### Ønsket situasjon
-**Type:** Plateau
+### Standarder og veiledning
+**Type:** Resource
+
+Ressurser som setter regler eller gir retning.
+
+Dette kan være:
+Standarder, veiledere, referansearkitekturer, metodikk
+Normeringsgrad kan være knyttet til disse virkemidlene.
+
+---
+
+### Nasjonal arkitektur
+**Type:** Grouping
+
+Nasjonal arkitektur beskriver det generiske og tverrgående nivået i felles økosystem for digital samhandling.
+
+Gruppen viser hvilke begreper som hører til Nasjonal arkitektur som felles rammeverk.
 
 ---
 
@@ -44,31 +59,67 @@ Kapabiliteter er knyttet til ressurser som realiserer eller understøtter dem. F
 
 ---
 
-### Standarder og veiledning
-**Type:** Resource
+### Domene
+**Type:** Grouping
 
-Ressurser som setter regler eller gir retning.
+Et domene kan være en sektor, en virksomhet, kommunal sektor, et fagområde, et EU data space eller et annet europeisk område. Domenet kan beskrive egne spesialiseringer, behov, kapabiliteter, ressurser, tiltak og mål, men bør koble disse til relevante generiske kapabiliteter og ressurser i Nasjonal arkitektur. På den måten kan lokale og domenespesifikke arkitekturer utvikles videre uten at Nasjonal arkitektur må modellere alle detaljer. Et domene knytter seg til Nasjonal arkitektur og konkretiserer den i egen kontekst.
 
-Dette kan være:
-Standarder, veiledere, referansearkitekturer, metodikk
-Normeringsgrad kan være knyttet til disse virkemidlene.
+Knytningen til Nasjonal arkitektur går primært via domenekapabilitet til nasjonal kapabilitet.
 
 ---
 
-### Tiltak
-**Type:** CourseOfAction
+### Ønsket situasjon
+**Type:** Plateau
 
-Konkrete tiltak er endringer, initiativer eller leveranser som forbedrer eller benytter kapabiliteter. Et tiltak kan virke på kapabiliteter i Nasjonal arkitektur, på kapabiliteter i et domene, eller på begge nivåer samtidig.
-Om tiltaket er nasjonalt, domenespesifikt eller tverrgående fremgår av hvilke kapabiliteter, gap, mål eller effektmål tiltaket knyttes til.
-Dette gjør det mulig å vise hvordan samme tiltak kan bidra til nasjonale mål, lukke gap i et domene og samtidig bygge på felles kapabiliteter og ressurser i Nasjonal arkitektur.
-Tiltak kan være pågående eller planlagt.
-Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
+---
 
-- Tiltak forbedrer kapabiliteter slik at effektmål oppnås
-- Tiltak benytter kapabiliteter (og ressurser) slik at effekten oppnås
-- Tiltak reduserer gap.
-- Tiltak bidrar til effektmål for å vise hvilken ønsket virkning tiltaket skal bidra til
+### Domenekapabilitet
+**Type:** Capability
 
+Domenekapabilitet er en konkret eller spesialisert kapabilitet innenfor et bestemt domene.
+
+En domenekapabilitet beskriver hva et domene må kunne gjøre for å realisere egne mål, effektmål, tjenester eller samhandlingsbehov. Domenet kan være en sektor, virksomhet, kommunal sektor, fagområde, EU data space eller annet avgrenset område.
+
+Domenekapabiliteter brukes til å konkretisere Nasjonal arkitektur i en bestemt kontekst. De kan knyttes til relevante generiske kapabiliteter i Nasjonal arkitektur for å vise sporbarhet, sammenheng og gjenbruk av felles rammer. Dette gjør det mulig å sammenligne behov og gap på tvers av domener, uten at Nasjonal arkitektur må beskrive alle domenespesifikke detaljer.
+
+En domenekapabilitet kan realiseres eller understøttes av én eller flere domeneressurser.
+
+---
+
+### Økonomiske og juridiske rammer og virkemidler
+**Type:** Resource
+
+Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
+
+Rammer og virkemidler kan være ressurser som er
+* Finansielle
+* Regulative
+
+
+
+
+---
+
+### Rammeverk for digital samhandling (European Interoperability Framework)
+**Type:** Grouping
+
+Rammeverk for digital samhandling.
+https://www.digdir.no/digital-samhandling/rammeverk-digital-samhandling/2148
+
+Bakgrunnsinformasjon og opprinnelse:
+EU har utviklet European Interoperability Framework (EIF), et felles rammeverk for digital samhandling. Målet er å fremme digital samhandling på tvers av landegrenser og innenfor hvert enkelt land. Norge forpliktet seg til å implementere EIF da vi undertegnet Tallinn-erklæringen i 2017, sammen med EU og andre EFTA-land.
+
+Som et resultat har Norge etablert sitt eget nasjonale rammeverk for interoperabilitet (NIF- National Interoperability Framework), som i dag heter "Rammeverk for digital samhandling". Den første versjonen ble utarbeidet som et Skate-tiltak i 2018.
+
+
+
+
+---
+
+### Gap
+**Type:** Gap
+
+Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjonal arkitektur)
 
 ---
 
@@ -211,6 +262,96 @@ Eksempler:
 
 ---
 
+### Strategiske mål
+**Type:** Goal
+
+Målene fra Digitaliseringsstrategien.
+
+---
+
+### Prinsipp
+**Type:** Principle
+
+En overordnet og veiledende regel eller retningslinje som er ment å være varig og styrende for alle relevante beslutninger. 
+Prinsipper er generelle regler og retningslinjer, ment å være varige og sjelden endres, som informerer og støtter måten en organisasjon går i gang med å oppfylle sitt oppdrag.
+Se overordnete arkitekturprinsipper: https://www.digdir.no/digital-samhandling/overordnede-arkitekturprinsipper/1065
+
+Eksempel: "Data skal kun lagres én gang".
+
+EU ELAP: Det europeiske biblioteket for arkitekturprinsipper (ELAP) etablerer prinsipper og rammeverk for å sikre interoperabilitet på europeisk nivå , inkludert det europeiske interoperabilitetsrammeverket (EIF), EU-lovgivning, tilgjengelighet, «Once Only» og mer. Dette biblioteket er et kvalitetssikringsverktøy som også etablerer krav og forretningsprosesser for å muliggjøre interoperabilitet mellom digitale offentlige tjenester.
+Se:  https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/elap
+
+Togaf definisjon og beste-praksis beskrivelse og definisjon av Arkitekturprinsipper:
+https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap20.html
+
+
+---
+
+### Samhandlingsareneaer og organisering
+**Type:** Resource
+
+Organiserte nettverk og styringsorganer for både dialog og strategisk samarbeid og samordning.
+
+Eksempler:
+* Samstyringsstruktur i kommunal sektor
+* Skate
+* ASR (Arkitektur- og standardiseringsrådet)
+* Faglig arena for datadeling og informasjonsforvaltning
+* Datalandsbyen
+* Offentlig PAAS - Slack for alle i offentlig sektor
+
+---
+
+### Domeneressurs
+**Type:** Resource
+
+Domeneressurs er en konkret ressurs som finnes, forvaltes eller benyttes innenfor et bestemt domene.
+
+En domeneressurs kan være en løsning, tjeneste, standard, datasett, informasjonsmodell, kompetansemiljø, prosess, avtale, infrastruktur eller annen byggekloss som domenet bruker for å realisere egne kapabiliteter.
+
+Domeneressurser knyttes til domenekapabiliteter for å vise hvordan domenets evner faktisk understøttes i praksis. En domeneressurs skal ikke forstås som en spesialisering av en ressurs i Nasjonal arkitektur. Knytningen til Nasjonal arkitektur skjer på kapabilitetsnivå, ved at domenekapabiliteter knyttes til generiske kapabiliteter i Nasjonal arkitektur.
+
+Dette gjør at hvert domene kan beskrive sine egne konkrete ressurser uten at Nasjonal arkitektur må eie, klassifisere eller modellere alle ressurser i detalj. Nasjonal arkitektur gir det felles rammeverket, mens domenet beskriver hvilke ressurser som faktisk finnes og brukes i egen kontekst.
+
+---
+
+### Tiltak
+**Type:** CourseOfAction
+
+Konkrete tiltak er endringer, initiativer eller leveranser som forbedrer eller benytter kapabiliteter. Et tiltak kan virke på kapabiliteter i Nasjonal arkitektur, på kapabiliteter i et domene, eller på begge nivåer samtidig.
+Om tiltaket er nasjonalt, domenespesifikt eller tverrgående fremgår av hvilke kapabiliteter, gap, mål eller effektmål tiltaket knyttes til.
+Dette gjør det mulig å vise hvordan samme tiltak kan bidra til nasjonale mål, lukke gap i et domene og samtidig bygge på felles kapabiliteter og ressurser i Nasjonal arkitektur.
+Tiltak kan være pågående eller planlagt.
+Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
+
+- Tiltak forbedrer kapabiliteter slik at effektmål oppnås
+- Tiltak benytter kapabiliteter (og ressurser) slik at effekten oppnås
+- Tiltak reduserer gap.
+- Tiltak bidrar til effektmål for å vise hvilken ønsket virkning tiltaket skal bidra til
+
+
+---
+
+### Nåværende situasjon
+**Type:** Plateau
+
+---
+
+### Effektmål
+**Type:** Outcome
+
+De konkrete resultatene av å bruke kapabilitetene. Kapabiliteter beskriver hva økosystemet må kunne gjøre for å oppnå effekter.
+Tiltak bidrar positivt til å nå effektmål.
+
+Se på dybdeindikatorene fra nullpunktsmåling:
+https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
+F.eks:
+* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
+* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
+
+
+---
+
 ### Gjenbrukbar løsning
 **Type:** Resource
 
@@ -237,147 +378,6 @@ De nasjonale felleskomponentene, slik de er definert i Digital agenda:
 – Vil være sentrale komponenter i en rekke digitale tjenester.
 – Er av stor samfunnsøkonomisk betydning som felles mulighetsrom for digital tjenesteutvikling og gevinstrealisering i virksomhetene.
 
-
-
----
-
-### Domene
-**Type:** Grouping
-
-Et domene kan være en sektor, en virksomhet, kommunal sektor, et fagområde, et EU data space eller et annet europeisk område. Domenet kan beskrive egne spesialiseringer, behov, kapabiliteter, ressurser, tiltak og mål, men bør koble disse til relevante generiske kapabiliteter og ressurser i Nasjonal arkitektur. På den måten kan lokale og domenespesifikke arkitekturer utvikles videre uten at Nasjonal arkitektur må modellere alle detaljer. Et domene knytter seg til Nasjonal arkitektur og konkretiserer den i egen kontekst.
-
-Knytningen til Nasjonal arkitektur går primært via domenekapabilitet til nasjonal kapabilitet.
-
----
-
-### Nåværende situasjon
-**Type:** Plateau
-
----
-
-### Domeneressurs
-**Type:** Resource
-
-Domeneressurs er en konkret ressurs som finnes, forvaltes eller benyttes innenfor et bestemt domene.
-
-En domeneressurs kan være en løsning, tjeneste, standard, datasett, informasjonsmodell, kompetansemiljø, prosess, avtale, infrastruktur eller annen byggekloss som domenet bruker for å realisere egne kapabiliteter.
-
-Domeneressurser knyttes til domenekapabiliteter for å vise hvordan domenets evner faktisk understøttes i praksis. En domeneressurs skal ikke forstås som en spesialisering av en ressurs i Nasjonal arkitektur. Knytningen til Nasjonal arkitektur skjer på kapabilitetsnivå, ved at domenekapabiliteter knyttes til generiske kapabiliteter i Nasjonal arkitektur.
-
-Dette gjør at hvert domene kan beskrive sine egne konkrete ressurser uten at Nasjonal arkitektur må eie, klassifisere eller modellere alle ressurser i detalj. Nasjonal arkitektur gir det felles rammeverket, mens domenet beskriver hvilke ressurser som faktisk finnes og brukes i egen kontekst.
-
----
-
-### Gap
-**Type:** Gap
-
-Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjonal arkitektur)
-
----
-
-### Domenekapabilitet
-**Type:** Capability
-
-Domenekapabilitet er en konkret eller spesialisert kapabilitet innenfor et bestemt domene.
-
-En domenekapabilitet beskriver hva et domene må kunne gjøre for å realisere egne mål, effektmål, tjenester eller samhandlingsbehov. Domenet kan være en sektor, virksomhet, kommunal sektor, fagområde, EU data space eller annet avgrenset område.
-
-Domenekapabiliteter brukes til å konkretisere Nasjonal arkitektur i en bestemt kontekst. De kan knyttes til relevante generiske kapabiliteter i Nasjonal arkitektur for å vise sporbarhet, sammenheng og gjenbruk av felles rammer. Dette gjør det mulig å sammenligne behov og gap på tvers av domener, uten at Nasjonal arkitektur må beskrive alle domenespesifikke detaljer.
-
-En domenekapabilitet kan realiseres eller understøttes av én eller flere domeneressurser.
-
----
-
-### Økonomiske og juridiske rammer og virkemidler
-**Type:** Resource
-
-Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.
-
-Rammer og virkemidler kan være ressurser som er
-* Finansielle
-* Regulative
-
-
-
-
----
-
-### Strategiske mål
-**Type:** Goal
-
-Målene fra Digitaliseringsstrategien.
-
----
-
-### Rammeverk for digital samhandling (European Interoperability Framework)
-**Type:** Grouping
-
-Rammeverk for digital samhandling.
-https://www.digdir.no/digital-samhandling/rammeverk-digital-samhandling/2148
-
-Bakgrunnsinformasjon og opprinnelse:
-EU har utviklet European Interoperability Framework (EIF), et felles rammeverk for digital samhandling. Målet er å fremme digital samhandling på tvers av landegrenser og innenfor hvert enkelt land. Norge forpliktet seg til å implementere EIF da vi undertegnet Tallinn-erklæringen i 2017, sammen med EU og andre EFTA-land.
-
-Som et resultat har Norge etablert sitt eget nasjonale rammeverk for interoperabilitet (NIF- National Interoperability Framework), som i dag heter "Rammeverk for digital samhandling". Den første versjonen ble utarbeidet som et Skate-tiltak i 2018.
-
-
-
-
----
-
-### Samhandlingsareneaer og organisering
-**Type:** Resource
-
-Organiserte nettverk og styringsorganer for både dialog og strategisk samarbeid og samordning.
-
-Eksempler:
-* Samstyringsstruktur i kommunal sektor
-* Skate
-* ASR (Arkitektur- og standardiseringsrådet)
-* Faglig arena for datadeling og informasjonsforvaltning
-* Datalandsbyen
-* Offentlig PAAS - Slack for alle i offentlig sektor
-
----
-
-### Effektmål
-**Type:** Outcome
-
-De konkrete resultatene av å bruke kapabilitetene. Kapabiliteter beskriver hva økosystemet må kunne gjøre for å oppnå effekter.
-Tiltak bidrar positivt til å nå effektmål.
-
-Se på dybdeindikatorene fra nullpunktsmåling:
-https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
-F.eks:
-* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
-* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
-
-
----
-
-### Nasjonal arkitektur
-**Type:** Grouping
-
-Nasjonal arkitektur beskriver det generiske og tverrgående nivået i felles økosystem for digital samhandling.
-
-Gruppen viser hvilke begreper som hører til Nasjonal arkitektur som felles rammeverk.
-
----
-
-### Prinsipp
-**Type:** Principle
-
-En overordnet og veiledende regel eller retningslinje som er ment å være varig og styrende for alle relevante beslutninger. 
-Prinsipper er generelle regler og retningslinjer, ment å være varige og sjelden endres, som informerer og støtter måten en organisasjon går i gang med å oppfylle sitt oppdrag.
-Se overordnete arkitekturprinsipper: https://www.digdir.no/digital-samhandling/overordnede-arkitekturprinsipper/1065
-
-Eksempel: "Data skal kun lagres én gang".
-
-EU ELAP: Det europeiske biblioteket for arkitekturprinsipper (ELAP) etablerer prinsipper og rammeverk for å sikre interoperabilitet på europeisk nivå , inkludert det europeiske interoperabilitetsrammeverket (EIF), EU-lovgivning, tilgjengelighet, «Once Only» og mer. Dette biblioteket er et kvalitetssikringsverktøy som også etablerer krav og forretningsprosesser for å muliggjøre interoperabilitet mellom digitale offentlige tjenester.
-Se:  https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/elap
-
-Togaf definisjon og beste-praksis beskrivelse og definisjon av Arkitekturprinsipper:
-https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap20.html
 
 
 ---

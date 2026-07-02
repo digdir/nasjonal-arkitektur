@@ -185,6 +185,11 @@ def generate_markdown(yaml_file, docs_dir):
         shutil.copy2('templates/kunnskapsgraf-maal.md', os.path.join(docs_dir, 'kunnskapsgraf-maal.md'))
     except FileNotFoundError:
         pass
+        
+    try:
+        shutil.copy2('templates/ressurser.md', os.path.join(docs_dir, 'ressurser.md'))
+    except FileNotFoundError:
+        pass
 
     print(f"Generated {len(view_files)} view documents with HTML-exported PNGs in {docs_dir}")
 

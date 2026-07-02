@@ -1,4 +1,4 @@
-# Rammeverksmodell for Nasjonal arkitektur
+# Dokumentasjon av Nasjonal arkitektur modell
 
 ## Innledning
 
