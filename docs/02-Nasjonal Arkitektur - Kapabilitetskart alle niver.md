@@ -65,5 +65,5 @@
     - **Regelverksutvikling** - *Evne til å foreslå og koordinere endringer i regelverket for å tilpasse det til teknologisk utvikling og nye behov.*
     - **Regelverkstolkning** - *Evne til å tilby felles, autoritative tolkninger av relevant regelverk.*
   - **Veiledning** - *Evne til å sikre at veiledninger for digital samhandling utarbeides, formidles og benyttes.*
-    - **Anvendelse av veiledning** - *Evne til å tolke og benytte veiledere i prosjekter og tiltak.*
     - **Utvikling og formidling av veiledning** - *Evne til å utarbeide, kvalitetssikre og tilgjengeliggjøre veiledning.*
+    - **Anvendelse av veiledning** - *Evne til å tolke og benytte veiledere i prosjekter og tiltak.*

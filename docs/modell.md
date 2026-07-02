@@ -32,11 +32,9 @@ Du kan se HTML-rapporten generert fra Archi her:
 
 Arkitekturen er beskrevet gjennom følgende visuelle views:
 
-- [001-Metamodell kjerne](001-Metamodell kjerne.md)
-- [002-Metamodell kontekst](002-Metamodell kontekst.md)
+- [001-Metamodell](001-Metamodell.md)
 - [01-Nasjonal arkitektur - Hovedkapabiliteter](01-Nasjonal arkitektur - Hovedkapabiliteter.md)
 - [02-Nasjonal Arkitektur - Kapabilitetskart alle nivåer](02-Nasjonal Arkitektur - Kapabilitetskart alle niver.md)
 - [03-Arkitekturprinsipper og NA](03-Arkitekturprinsipper og NA.md)
 - [04-Digitaliseringsstrategiens mål og NA](04-Digitaliseringsstrategiens ml og NA.md)
 - [05-EIF lagmodell](05-EIF lagmodell.md)
-- [06-EIF og relasjon til NA](06-EIF og relasjon til NA.md)

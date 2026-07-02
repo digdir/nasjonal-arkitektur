@@ -2,7 +2,7 @@
 <html class="frame" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<title>Nasjonal arkitektur analyse dekningsgrad</title>
+	<title>Dekningsgradsvurdering</title>
 
 	<!-- JQUERY -->
 	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
@@ -21,7 +21,7 @@
 
 		<div class="panel-heading root-panel-heading">
             <!-- Name -->
-               <b>Nasjonal arkitektur analyse dekningsgrad</b>
+               <b>Dekningsgradsvurdering</b>
 
             <!-- If a View with Viewpoint -->
 			   (<span class="i18n-elementtype-Assessment"></span>)
@@ -48,44 +48,139 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">Identifiserer svakheter i dagens arkitektur (ressurser og kapabiliteter). Er en faglig analyse som forklarer hvorfor gapet finnes.
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Identifiserer svakheter og dekningsgrad i dagens arkitektur, vurdert opp mot m&#229;l, effektm&#229;l, behov og &#248;nsket situasjon.
 
-Kapabiliteter og grad av n&#229;situasjon og m&#229;loppn&#229;else 
+Assessment brukes til &#229; dokumentere hvor godt kapabiliteter og ressurser dekker et bestemt behov, et bestemt effektm&#229;l eller en &#248;nsket fremtidig tilstand. Vurderingen gir grunnlag for &#229; identifisere gap, prioritere tiltak og vurdere om &#248;kosystemet har n&#248;dvendige evner og byggeklosser for &#229; n&#229; &#248;nskede effekter.
+
+### Hva som vurderes
+
+En assessment kan brukes til &#229; vurdere b&#229;de kapabiliteter og ressurser.
+
+For kapabiliteter vurderes hvor godt evnen er dekket i dagens situasjon sammenlignet med &#248;nsket niv&#229;. Dette kan for eksempel uttrykkes som:
+
 - m&#229;lverdi
 - dagens verdi
-= Finner Gap og modenhet:
-R&#248;dt (Gap &gt; 2): Kapabiliteter der avstanden mellom n&#229;situasjon og m&#229;l er kritisk stor. Her m&#229; Tiltak (Work Packages) prioriteres.
-Gult (Gap = 1): Kapabiliteter som er i rute, men krever vedlikehold eller mindre justeringer.
-Gr&#248;nt (Gap = 0): Kapabiliteten har n&#229;dd sin m&#229;lverdi.
-En kapabilitet kan realisere b&#229;de m&#229;l og prinsipper, alts&#229; beskrive hvordan organisasjonen faktisk implementerer, oppfyller eller tolker hensikten bak prinsippet i praksis.
-Modenhetsmodell, som CMMI (Capability Maturity Model Integration):
-* M&#229;ling av kapabilitetsmodenhet (Capability Maturity) hjelper deg &#229; prioritere hvor innsatsen b&#248;r settes inn ved &#229; synliggj&#248;re gapet mellom "hvor gode vi er" (As-Is) og "hvor gode vi m&#229; v&#230;re" (To-Be).
-* Modenheten til en kapabilitet vurderes basert p&#229; tilstanden til de underliggende ressursene.
+- gap mellom dagens verdi og m&#229;lverdi
+- modenhet
+- begrunnelse for vurderingen
 
-Ressurser og m&#229;ling:
-* Kan vises som en heatmap med indikatorer for:
-- Dekningsgrad kapabilitet (1-5) for &#229; indikere i hvilken grad en ressurs faktisk er tilgjengelig eller moden nok til &#229; st&#248;tte &#248;nsket kapabilitet.
-- egnethet (Funksjonelt egnet)
-- Teknisk egnet
-- Livssyklus status
+For ressurser vurderes hvor godt en konkret ressurs realiserer eller underst&#248;tter &#233;n eller flere kapabiliteter, behov eller effektm&#229;l. Dekningsgrad b&#248;r derfor vurderes i kontekst, ikke som &#233;n global score for ressursen.
 
-Man kan ogs&#229; benytte POTI modell som vurdering p&#229; tilstanden til ressursene:
-* People (Organisasjon): Roller og kompetanse.
-* Process (Prosess): Arbeidsflyter og prosedyrer.
-* Technology (Teknologi): IT-systemer og infrastruktur.
-* Information (Informasjon): Datakvalitet og flyt
+Eksempel: Fellesl&#248;sningen `Maskinporten` kan ha ulik dekningsgrad avhengig av hvilken kapabilitet eller hvilket effektm&#229;l den vurderes mot:
 
-Se ogs&#229;:
-De konkrete resultatene av &#229; bruke kapabilitetene.
+- Dekningsgrad for kapabilitet `Tilgangsstyring`: `[1-5]`
+- Dekningsgrad for kapabilitet `Representasjon`: `[1-5]`
+- Dekningsgrad for effektm&#229;l `S&#248;ml&#248;s system-til-system-samhandling`: `[1-5]`
+
+Dette gj&#248;r det mulig &#229; vise at samme ressurs kan v&#230;re godt egnet for ett behov, men ha lavere dekningsgrad for et annet.
+
+### Gap og modenhet
+
+Gap beregnes som avstanden mellom dagens verdi og &#248;nsket m&#229;lverdi.
+
+- **R&#248;dt (Gap &gt; 2):** Kapabiliteter eller ressurser der avstanden mellom n&#229;situasjon og m&#229;l er kritisk stor. Her b&#248;r tiltak prioriteres.
+- **Gult (Gap = 1):** Kapabiliteter eller ressurser som er p&#229; vei mot &#248;nsket niv&#229;, men som krever vedlikehold, oppf&#248;lging eller mindre forbedringer.
+- **Gr&#248;nt (Gap = 0):** Kapabiliteten eller ressursen har n&#229;dd &#248;nsket m&#229;lverdi.
+
+M&#229;ling av kapabilitetsmodenhet hjelper med &#229; synliggj&#248;re gapet mellom n&#229;situasjon (`as-is`) og &#248;nsket fremtidig situasjon (`to-be`). Dette gir grunnlag for &#229; prioritere hvor innsatsen b&#248;r settes inn.
+
+Modenheten til en kapabilitet vurderes blant annet basert p&#229; tilstanden til de underliggende ressursene som realiserer eller underst&#248;tter kapabiliteten.
+
+### Ressurser og m&#229;ling
+
+Ressurser kan vurderes med indikatorer som viser hvor godt de underst&#248;tter kapabiliteter og effektm&#229;l.
+
+Aktuelle indikatorer kan v&#230;re:
+
+- **Dekningsgrad (1-5):** I hvilken grad ressursen faktisk er tilgjengelig, moden og egnet til &#229; st&#248;tte en bestemt kapabilitet, et behov eller et effektm&#229;l.
+- **Funksjonell egnethet (Functional Fit):** Hvor godt ressursen st&#248;tter behovet, prosessen eller tjenesten den skal bidra til.
+- **Teknisk egnethet (Technical Fit):** Hvor moderne, stabil, sikker og teknisk egnet ressursen er.
+- **Livssyklusstatus:** Om ressursen er i aktiv bruk, under innf&#248;ring, under utfasing eller ved slutten av livsl&#248;pet.
+
+Eksempler p&#229; livssyklusstatus:
+
+- `Live`
+- `Phasing Out`
+- `End of Life`
+
+Assessment kan ogs&#229; brukes til &#229; lage heatmaps som viser dekningsgrad, egnethet, modenhet og gap p&#229; tvers av kapabiliteter, ressurser, domener eller effektm&#229;l.
+
+### POTI-basert ressursvurdering
+
+POTI kan brukes som analysemodell for &#229; vurdere ressursenes rolle og tilstand.
+
+POTI st&#229;r for:
+
+- **Prosess:** Arbeidsflyter, rutiner og prosedyrer som ressursen underst&#248;tter eller p&#229;virker.
+- **Organisasjon:** Roller, ansvar, kompetanse, styring, samhandling og kapasitet knyttet til ressursen.
+- **Teknologi:** Systemer, applikasjoner, infrastruktur, grensesnitt og tekniske l&#248;sninger som ressursen best&#229;r av eller bygger p&#229;.
+- **Informasjon:** Data, metadata, informasjonsmodeller, datakvalitet, tilgjengelighet og informasjonsflyt som ressursen forvalter eller gj&#248;r mulig.
+
+POTI brukes ikke som erstatning for ressurskategoriene i Nasjonal arkitektur. Ressurser kan fortsatt kategoriseres som for eksempel gjenbrukbare l&#248;sninger, standarder og veiledning, samhandlingsarenaer og organisering, eller &#248;konomiske og juridiske rammer og virkemidler.
+
+POTI brukes som et analyseperspektiv p&#229; tvers av disse kategoriene. En ressurs kan vurderes ut fra om den prim&#230;rt p&#229;virker prosesser, organisering, teknologi eller informasjon. Mange ressurser vil ber&#248;re flere POTI-dimensjoner samtidig.
+
+### Hvorfor bruke POTI i vurderingen
+
+POTI gj&#248;r det mulig &#229; analysere om ressursene samlet sett er tilstrekkelige for &#229; realisere en kapabilitet.
+
+En kapabilitet kan for eksempel ha god teknologist&#248;tte, men likevel lav samlet dekningsgrad dersom prosesser, organisering, kompetanse eller informasjonsgrunnlag mangler. P&#229; samme m&#229;te kan en ressurs v&#230;re teknisk moden, men ha lav funksjonell egnethet dersom den ikke st&#248;tter arbeidsprosessene eller behovene godt nok.
+
+POTI er s&#230;rlig nyttig n&#229;r man skal:
+
+- forst&#229; n&#229;situasjon og &#248;nsket fremtidig situasjon
+- identifisere styrker, svakheter og forbedringsomr&#229;der
+- vurdere om organisasjonen er rigget for &#229; gjennomf&#248;re strategien
+- prioritere tiltak for &#229; lukke gap
+- analysere konsekvenser av digital transformasjon, omorganisering eller innf&#248;ring av nye teknologiske l&#248;sninger
+
+### Eksempler p&#229; vurderingssp&#248;rsm&#229;l
+
+For **prosess** kan vurderingen stille sp&#248;rsm&#229;l som:
+
+- Hvilke arbeidsflyter, rutiner og prosedyrer underst&#248;ttes av ressursen?
+- Er prosessene dokumenterte og etterlevd?
+- Bidrar ressursen til mer effektiv og sammenhengende oppgavel&#248;sning?
+
+For **organisasjon** kan vurderingen stille sp&#248;rsm&#229;l som:
+
+- Er roller og ansvar tydelig definert?
+- Finnes n&#248;dvendig kompetanse og kapasitet?
+- Er organisasjonen rigget for &#229; forvalte og bruke ressursen?
+
+For **teknologi** kan vurderingen stille sp&#248;rsm&#229;l som:
+
+- Hvilke verkt&#248;y, systemer eller tekniske l&#248;sninger er i bruk?
+- Er l&#248;sningene integrerte, brukervennlige, sikre og skalerbare?
+- Hvor godt st&#248;tter teknologien automatisering, samarbeid eller datadrevne beslutninger?
+- Finnes det teknisk gjeld eller avhengigheter som p&#229;virker egnetheten?
+
+For **informasjon** kan vurderingen stille sp&#248;rsm&#229;l som:
+
+- Er informasjonen n&#248;yaktig, tilgjengelig og forst&#229;elig?
+- Hvordan deles, gjenbrukes og analyseres data p&#229; tvers?
+- Er datakvaliteten tilstrekkelig?
+- Er datasett, begreper, informasjonsmodeller eller API-er registrert i relevante kataloger, for eksempel Felles datakatalog?
+- Er virksomheten i tilstrekkelig grad i orden i eget hus?
+
+### Sammenheng med m&#229;l, prinsipper og tiltak
+
+En kapabilitet kan bidra til &#229; realisere b&#229;de m&#229;l, effektm&#229;l og prinsipper. Den viser hvordan en organisasjon, et domene eller det nasjonale &#248;kosystemet faktisk implementerer, oppfyller eller tolker hensikten bak et m&#229;l eller prinsipp i praksis.
+
+Assessment gj&#248;r det mulig &#229; vurdere om kapabilitetene og ressursene har tilstrekkelig dekningsgrad til &#229; n&#229; &#248;nskede effekter. Dersom vurderingen avdekker gap, kan konkrete tiltak prioriteres for &#229; styrke kapabiliteter, forbedre ressurser eller redusere avstanden mellom dagens situasjon og &#248;nsket situasjon.
+
+### Se ogs&#229;
+
+De konkrete resultatene av &#229; bruke kapabilitetene kan vurderes i sammenheng med indikatorer og dybdem&#229;linger fra Digitaliseringsstrategien.
+
 Se p&#229; dybdeindikatorene fra nullpunktsm&#229;ling:
+
 https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
-F.eks:
-* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
-* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428
 
+Eksempler:
 
-
-</div>
+- https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
+- https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
@@ -109,11 +204,8 @@ F.eks:
 								</tr>
 							</thead>
 							<tbody>
-								<tr id="used-in-views-id-085ba8f9d77e45079724746f67280dbb">
-																	<td><a href="../views/id-085ba8f9d77e45079724746f67280dbb.html" target="view" title="002-Metamodell kontekst"> 002-Metamodell kontekst </a></td>
-																	<td><span class="i18n-viewpoint-" /></td>
-																</tr><tr id="used-in-views-id-b513e2dbd37e447184ee9f969874a681">
-																	<td><a href="../views/id-b513e2dbd37e447184ee9f969874a681.html" target="view" title="001-Metamodell kjerne"> 001-Metamodell kjerne </a></td>
+								<tr id="used-in-views-id-b513e2dbd37e447184ee9f969874a681">
+																	<td><a href="../views/id-b513e2dbd37e447184ee9f969874a681.html" target="view" title="001-Metamodell"> 001-Metamodell </a></td>
 																	<td><span class="i18n-viewpoint-" /></td>
 																</tr>
 							</tbody>
@@ -132,19 +224,19 @@ F.eks:
 									<tr>
 											<td><a href="../elements/id-3215a93c074448ce93161485d92540b7.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-AssociationRelationship" /></td>
-											<td><a href="../elements/id-d7a27706ca3240468e16d88afbcd4a3e.html" target="element"> Nasjonal arkitektur analyse dekningsgrad</a></td>
+											<td><a href="../elements/id-d7a27706ca3240468e16d88afbcd4a3e.html" target="element"> Dekningsgradsvurdering</a></td>
 											<td><a href="../elements/id-66f38bffcd9f48d796a041a9a292d6ed.html" target="element"> Gap</a></td>
 										</tr>
 									<tr>
 											<td><a href="../elements/id-8ed29df017624d0a8e2cc73aea3146c5.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-InfluenceRelationship" /></td>
-											<td><a href="../elements/id-eb6f01d0d0ef4230b7a5c9c73c3842c5.html" target="element"> Strategisk kapabilitet (overordnet)</a></td>
-											<td><a href="../elements/id-d7a27706ca3240468e16d88afbcd4a3e.html" target="element"> Nasjonal arkitektur analyse dekningsgrad</a></td>
+											<td><a href="../elements/id-eb6f01d0d0ef4230b7a5c9c73c3842c5.html" target="element"> Kapabilitet</a></td>
+											<td><a href="../elements/id-d7a27706ca3240468e16d88afbcd4a3e.html" target="element"> Dekningsgradsvurdering</a></td>
 										</tr><tr>
 											<td><a href="../elements/id-b4146a9af3734cd2b37854b3424a2aac.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-InfluenceRelationship" /></td>
 											<td><a href="../elements/id-9860d11ff3fd40a5b541b8f929ed305f.html" target="element"> Ressurs</a></td>
-											<td><a href="../elements/id-d7a27706ca3240468e16d88afbcd4a3e.html" target="element"> Nasjonal arkitektur analyse dekningsgrad</a></td>
+											<td><a href="../elements/id-d7a27706ca3240468e16d88afbcd4a3e.html" target="element"> Dekningsgradsvurdering</a></td>
 										</tr>
 							</tbody>
 						</table>

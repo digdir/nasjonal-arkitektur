@@ -6,7 +6,24 @@ elements:
   id-23598cee556747ef80cab10dbad84e65:
     type: Capability
     name: Domenekapabilitet
-    documentation: ''
+    documentation: 'Domenekapabilitet er en konkret eller spesialisert kapabilitet
+      innenfor et bestemt domene.
+
+
+      En domenekapabilitet beskriver hva et domene må kunne gjøre for å realisere
+      egne mål, effektmål, tjenester eller samhandlingsbehov. Domenet kan være en
+      sektor, virksomhet, kommunal sektor, fagområde, EU data space eller annet avgrenset
+      område.
+
+
+      Domenekapabiliteter brukes til å konkretisere Nasjonal arkitektur i en bestemt
+      kontekst. De kan knyttes til relevante generiske kapabiliteter i Nasjonal arkitektur
+      for å vise sporbarhet, sammenheng og gjenbruk av felles rammer. Dette gjør det
+      mulig å sammenligne behov og gap på tvers av domener, uten at Nasjonal arkitektur
+      må beskrive alle domenespesifikke detaljer.
+
+
+      En domenekapabilitet kan realiseres eller understøttes av én eller flere domeneressurser.'
     properties: {}
     folder_path: &id001
     - Strategy
@@ -14,7 +31,26 @@ elements:
   id-4157e35b43184dd7bbcb4405e7edea46:
     type: Resource
     name: Domeneressurs
-    documentation: ''
+    documentation: 'Domeneressurs er en konkret ressurs som finnes, forvaltes eller
+      benyttes innenfor et bestemt domene.
+
+
+      En domeneressurs kan være en løsning, tjeneste, standard, datasett, informasjonsmodell,
+      kompetansemiljø, prosess, avtale, infrastruktur eller annen byggekloss som domenet
+      bruker for å realisere egne kapabiliteter.
+
+
+      Domeneressurser knyttes til domenekapabiliteter for å vise hvordan domenets
+      evner faktisk understøttes i praksis. En domeneressurs skal ikke forstås som
+      en spesialisering av en ressurs i Nasjonal arkitektur. Knytningen til Nasjonal
+      arkitektur skjer på kapabilitetsnivå, ved at domenekapabiliteter knyttes til
+      generiske kapabiliteter i Nasjonal arkitektur.
+
+
+      Dette gjør at hvert domene kan beskrive sine egne konkrete ressurser uten at
+      Nasjonal arkitektur må eie, klassifisere eller modellere alle ressurser i detalj.
+      Nasjonal arkitektur gir det felles rammeverket, mens domenet beskriver hvilke
+      ressurser som faktisk finnes og brukes i egen kontekst.'
     properties: {}
     folder_path: *id001
   id-199ae45b0a6c47b28b3507837647c6c8:
@@ -22,25 +58,21 @@ elements:
     name: Gjenbrukbar løsning
     documentation: "Gjenbrukbare løsninger er tekniske komponenter, applikasjoner\
       \ som leverer funksjonalitet eller dataprodukter og dekker behov på tvers av\
-      \ eller innenfor sektorer, og/eller forvaltningsnivå. \n\nTekniske løsninger\
-      \ som utvikles én gang og brukes av mange.\nFellesløsninger er byggeklosser\
-      \ som kan brukes i utviklingen av offentlige digitale tjenester. Noen er obligatoriske\
-      \ å bruke, andre er anbefalte - både for statlige virksomheter og for kommunal\
-      \ sektor.\n\nFellesløsning til forretningstjenester, som er forretningsaktivitet\
-      \ med et spesifisert resultat og som støtter et spesifikt forretningsmål. \n\
-      Den er brukersentert og representerer funksjonalitet som leverer verdi til en\
-      \ ekstern bruker. \nBrukerorienterte eller funksjonelle tjenester som leverer\
-      \ verdi, ofte på tvers av løsninger.\n\nMerk:\nSelv om en tjeneste bruker teknologi,\
-      \ er selve \"tjenesten\" (f.eks. eSignering eller Autentisering) det funksjonelle\
-      \ resultatet av en prosess rettet mot en bruker\n\nStrategiske prinsipper for\
-      \ nasjonale felleskomponenter (gammel - bør ha en felles beskrivelse av felles-\"\
-      løsninger\" i stedet)\nhttps://www.digdir.no/media/395/download\nhttps://www.regjeringen.no/contentassets/fe3e34b866034b82b9c623c5cec39823/no/pdfs/stm201520160027000dddpdfs.pdf\n\
-      \nFellesløsning vs. felles løsning:\n* Forskjellen er institusjonell. \n* Fellesløsning:\
-      \  referer til nasjonale fellesløsninger, som er spesifikk tekniske komponenter\
-      \ som skal kunne brukes av svært mange i offentlig sektor for å løse generiske\
-      \ behov. \n* Felles løsning: Gjenbrukbar løsnning som kan benyttes av flere\
-      \ og med formåk om samarbeid og stordriftsfordeler, men uten nødvendigvis å\
-      \ ha status som en nasjonal komponent i økosystemet.\n* Fellestjeneste: Den\
+      \ eller innenfor sektorer, og/eller forvaltningsnivå. \nEn nasjonal fellesløsning\
+      \ er en byggekloss som offentlige virksomheter kan dra nytte av i sine digitale\
+      \ tjenester. Løsningene utvikles én gang og kan deretter brukes av mange.\n\
+      De viktigste fellesløsningene kalles nasjonale felleskomponenter: Altinn, Digital\
+      \ postkasse til innbyggere, Enhetsregisteret, Folkeregisteret, ID-porten, Kontakt-\
+      \ og reservasjonsregisteret og Matrikkelen. Noen er obligatoriske å bruke, andre\
+      \ er anbefalte - både for statlige virksomheter og for kommunal sektor.\n\n\
+      Strategiske prinsipper for nasjonale felleskomponenter (gammel))\nhttps://www.digdir.no/media/395/download\n\
+      https://www.regjeringen.no/contentassets/fe3e34b866034b82b9c623c5cec39823/no/pdfs/stm201520160027000dddpdfs.pdf\n\
+      \nFellesløsning eller felles løsning:\n* Forskjellen er institusjonell. \n*\
+      \ Fellesløsning:  referer til nasjonale fellesløsninger, som er spesifikk tekniske\
+      \ komponenter som skal kunne brukes av svært mange i offentlig sektor for å\
+      \ løse generiske behov. \n* Felles løsning: Gjenbrukbar løsnning som kan benyttes\
+      \ av flere og med formåk om samarbeid og stordriftsfordeler, men uten nødvendigvis\
+      \ å ha status som en nasjonal komponent i økosystemet.\n* Fellestjeneste: Den\
       \ forretningsmessige eller tekniske funksjonaliteten som tilbys.\n\nSluttbrukertjenester:\
       \ Det innbyggeren eller næringslivet opplever (f.eks. \"Søke om barnehageplass\"\
       \ eller \"Levere skattemelding\"). \nStøttetjenester: Tekniske tjenester som\
@@ -50,152 +82,27 @@ elements:
       – Dekker behov på tvers av mange sektorer og/eller forvaltningsnivå.\n– Vil\
       \ være sentrale komponenter i en rekke digitale tjenester.\n– Er av stor samfunnsøkonomisk\
       \ betydning som felles mulighetsrom for digital tjenesteutvikling og gevinstrealisering\
-      \ i virksomhetene.\n\n\n\n"
-    properties: {}
-    folder_path: *id001
-  id-fa68712eb0924092abd996fa6c511065:
-    type: Capability
-    name: Kapabilitet (Operasjonell)
-    documentation: ''
+      \ i virksomhetene.\n\n"
     properties: {}
     folder_path: *id001
   id-9860d11ff3fd40a5b541b8f929ed305f:
     type: Resource
     name: Ressurs
-    documentation: 'Ressurs (med hva):
-
-      Ressursene er de konkrete byggeklossene som realiserer ønskede kapabiliteter,
+    documentation: 'Ressurser er konkrete byggeklosser som realiserer ønskede kapabiliteter
       og løser konkrete behov.
 
-      En ressurs er noe vi har (byggeklossene) som løser et konkret behov eller krav
-      til funksjonalitet, og som bidrar til å realisere en eller flere kapabiliteter.
+      En ressurs er noe økosystemet har eller kan bruke for å understøtte én eller
+      flere kapabiliteter. Det kan være tekniske løsninger, standarder, veiledning,
+      informasjonsmodeller, datasett, organisatoriske arenaer, kompetansemiljøer,
+      avtaler, finansielle virkemidler eller juridiske rammer.
 
 
-      Mrk: Ved måling av ressurser så kan vi måle hver enkelt ressurs iht POTI-laget
-      den tilhører.
-
-      Ressursene er ulike typer (POTI), og må derfor måles med ulike kriterier
-
-
-      Mrk:
-
-      * En generisk kategorisering med få kategorier, men som knyttes til kapabilitetene
-      for ytterligere kategorisering
+      Ressurser kategoriseres etter hva slags type byggekloss de er. I Nasjonal arkitektur
+      kan dette for eksempel være gjenbrukbare løsninger, standarder og veiledning,
+      samhandlingsarenaer og organisering, eller økonomiske og juridiske rammer og
+      virkemidler.
 
 
-      Måling av Teknologi (Applikasjoner/Systemer):
-
-      * Teknisk tilstand (Technical Fit): Er koden sunn? Er det teknisk gjeld? Er
-      leverandøren stabil?
-
-      * Forretningsverdi (Functional Fit): Støtter den prosessen godt nok? Er brukerne
-      fornøyde?
-
-      Technical_Fit (Score 1–5): Hvor moderne/stabil er teknologien?
-
-      Functional_Fit (Score 1–5): Hvor godt dekker den behovet?
-
-      Lifecycle_Status: (F.eks. "Live", "Phasing Out", "End of Life").
-
-
-      Måling av Folk (Kompetanse/Kapasitet)
-
-
-      POTI-rammeverket, som står for Prosesser, Organisasjon, Teknologi og Informasjon,
-      er en modell som brukes innen virksomhetsarkitektur for å analysere og beskrive
-      de sentrale elementene i en organisasjon. Rammeverket sikrer en helhetlig tilnærming
-      til endring og utvikling ved å belyse hvordan disse fire områdene henger sammen
-      og påvirker hverandre.
-
-      POTI fungerer som et analytisk verktøy for å forstå både nåværende tilstand
-      ("as-is") og en ønsket fremtidig tilstand ("to-be") i en virksomhet. Ved å systematisk
-      gå gjennom hvert av de fire elementene, kan arkitekter og beslutningstakre identifisere
-      styrker, svakheter og forbedringsområder. Dette er spesielt nyttig i forbindelse
-      med digital transformasjon, omorganiseringer eller implementering av nye teknologiske
-      løsninger.
-
-
-      * Prosess
-
-      * Organisasjon/Mennesker
-
-      * Teknologi
-
-      * Informasjon
-
-
-      De fire pilarene i POTI
-
-
-      * Prosesser: Dette omfatter arbeidsflyter og prosedyrer som virksomheten benytter
-      for å levere verdi. Analyse av prosesser ser på hvordan oppgaver utføres, rekkefølgen
-      på aktiviteter, og hvordan man kan optimalisere disse for økt effektivitet og
-      kvalitet.
-
-      * Organisasjon: Dette elementet fokuserer på menneskene og strukturen i virksomheten.
-      Det inkluderer roller, ansvar, kompetanse, organisasjonskart og kultur. En analyse
-      vil se på om organisasjonen er rigget for å støtte prosessene og strategiske
-      mål.
-
-      * Teknologi: Her ser man på IT-systemer, applikasjoner, infrastruktur og andre
-      teknologiske verktøy som understøtter prosessene. Vurderingen går på om teknologien
-      er formålstjenlig, moderne, sikker og godt integrert.
-
-      * Informasjon: Dette dekker data og informasjon som virksomheten produserer,
-      bruker og forvalter. Analyse av informasjonsaspektet ser på datakvalitet, tilgjengelighet,
-      sikkerhet og hvordan informasjon flyter mellom prosesser og systemer.
-
-
-      Målet er å sikre at man er rigget for å gjennomføre strategien effektivt.
-
-
-      ### Teknologi (Technology)
-
-      Teknologi er en kritisk muliggjører for ytelse og innovasjon. I denne dimensjonen
-      vurderes:
-
-      * Hvilke verktøy og systemer er i bruk?
-
-      * Er de integrerte, brukervennlige og skalerbare?
-
-      * Hvor godt støtter de automatisering, samarbeid eller datadrevne beslutninger?
-
-
-      Evaluering av teknologi bidrar til å avdekke muligheter for digital transformasjon
-      og konkurransefortrinn.
-
-
-      ### Informasjon (Information)
-
-      Dette fokuserer på kvaliteten, flyten og bruken av data:
-
-      * Er informasjonen nøyaktig og tilgjengelig?
-
-      * Orden i eget hus (se på modenhetsmodellen?)
-
-      * Hvordan deles og analyseres data på tvers?
-
-      * Datakvalitet
-
-      * Felles datakatalog registrert?
-
-
-      ## Hvorfor bruke POTI-analyse?
-
-
-      POTI er spesielt nyttig når en organisasjon:
-
-      * Planlegger en transformasjon eller omstrukturering.
-
-      * Tar i bruk nye teknologier eller systemer.
-
-      * Utvider eller skalerer driften.
-
-      * Søker større effektivitet eller virkning.
-
-
-      Ved å bruke dette rammeverket kan selskaper utvikle et veikart for «nåsituasjon
-      vs. fremtidig situasjon» og prioritere viktige tiltak for å lukke gap.
 
       '
     properties:
@@ -255,7 +162,7 @@ elements:
     folder_path: *id001
   id-eb6f01d0d0ef4230b7a5c9c73c3842c5:
     type: Capability
-    name: Strategisk kapabilitet (overordnet)
+    name: Kapabilitet
     documentation: "En kapabilitet beskriver \"hva\" en eller flere aktører må kunne\
       \ gjøre for å skape verdi, uavhengig av hvordan det gjøres. Dette er den forretningsmessige\
       \ evnen til å oppnå et mål.\nEn kapabilitet er en grunnleggende funksjonell\
@@ -263,55 +170,75 @@ elements:
       \ å oppnå felles nasjonale mål, uavhengig av organisatoriske grenser og tekniske\
       \ løsninger.\n\nKapabiliteter er typisk uttrykt med generelle termer og på høyt\
       \ nivå. For at en kapabilitet skal nås kreves evner i form av ferdigheter gjennom\
-      \ en kombinasjon av ulike ressurser. \n\nProsesser, Organisasjon/mennesker,\
-      \ Teknologi, Informasjon (POTI).\n\nKapabiliteter og grad av måloppnåelse\n\
-      - målverdi\n- dagens verdi\n= Finner Gap og modenhet \nEn kapabilitet kan realisere\
-      \ både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer,\
-      \ oppfyller eller tolker hensikten bak prinsippet i praksis.\nModenhetsmodell,\
-      \ som CMMI (Capability Maturity Model Integration):\n* Måling av kapabilitetsmodenhet\
-      \ (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn\
-      \ ved å synliggjøre gapet mellom \"hvor gode vi er\" (As-Is) og \"hvor gode\
-      \ vi må være\" (To-Be).\n* Modenheten til en kapabilitet vurderes basert på\
-      \ tilstanden til de underliggende ressursene.\n\nSe også:\nDe konkrete resultatene\
-      \ av å bruke kapabilitetene.\nSe på dybdeindikatorene fra nullpunktsmåling:\n\
-      https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416\n\
-      F.eks:\n* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429\n\
-      * https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428\n\
-      \nHvordan vurdere modenhet? Gjør dette iht POTI\nPeople (Folk/Organisasjon):\
-      \ Har vi riktig kompetanse og nok hoder?\nProcess (Prosess): Er rutinene dokumenterte\
-      \ og etterlevd?\nTechnology (Teknologi): Har vi verktøystøtte som fungerer?\n\
-      Information (Informasjon): Er \"innholdet\" (dataene, kunnskapen, veiledningen)\n\
-      \nTogaf om Kapabilitetsplanlegging:\nhttps://pubs.opengroup.org/architecture/togaf9-doc/arch/chap28.html\n"
-    properties:
-      Maturity_Current: 1-5
-      Maturity_Target: 1-5
-    folder_path: *id001
-  id-30e12f5fdabe414db1430b0d735ed1f4:
-    type: CourseOfAction
-    name: Tiltak for å nå fremtidige mål
-    documentation: 'Dette er tiltak som realiserer eller gjør endringer på en eller
-      flere kapabiliteter.
-
-
-      Tiltakslisten (123) fra Digitaliseringsstrategien følges opp, i tillegg til
-      andre relavante tiltak som bidrar til målene.'
+      \ en kombinasjon av ulike ressurser. \n\n-------\nEn kapabilitet beskriver hva\
+      \ én eller flere aktører må kunne gjøre for å skape verdi, uavhengig av hvordan\
+      \ det gjøres.\n\nI Nasjonal arkitektur brukes kapabiliteter til å beskrive hvilke\
+      \ evner som må være til stede i felles økosystem for å oppnå mål, effektmål,\
+      \ samhandling og sammenhengende tjenester. En kapabilitet beskriver behovet\
+      \ på et stabilt og løsningsuavhengig nivå, og skal ikke forveksles med konkrete\
+      \ systemer, prosjekter, tiltak eller organisatoriske enheter.\n\nDen konkrete\
+      \ kapabilitetsmodellen for Nasjonal arkitektur er organisert i tre nivåer:\n\
+      \n- **Nivå 1: Overordnet kapabilitet** beskriver den samlede evnen Nasjonal\
+      \ arkitektur skal bidra til i felles økosystem.\n- **Nivå 2: Hovedkapabilitet**\
+      \ beskriver brede, strategiske kapabilitetsområder som strukturerer modellen.\n\
+      - **Nivå 3: Underkapabilitet** beskriver mer konkrete og operasjonelle evner\
+      \ som kan vurderes, forbedres og kobles til ressurser, tiltak, gap og effektmål.\n\
+      \nAlle nivåene modelleres som ArchiMate `Capability`. Nivåene uttrykker abstraksjonsnivå\
+      \ og struktur i modellen, ikke ulike metamodellelementer.\n\nKapabiliteter kan\
+      \ brytes ned i underliggende kapabiliteter ved hjelp av komposisjon eller aggregering.\n\
+      Kapabiliteter er knyttet til ressurser som realiserer eller understøtter dem.\
+      \ Forvaltning av kapabilitetene er en kontinuerlig strategisk prosess som gjøres\
+      \ i dekningsgradsvurderinger opp mot strategiske mål.\n\n"
     properties: {}
     folder_path: *id001
   id-31be9bc0b80e4be4b2df2d8e0000dc6f:
     type: ValueStream
     name: Verdistrømmer og prosesser
-    documentation: "Verdistrøm representerer en sekvens av aktiviteter som skaper\
-      \ et samlet resultat for en kunde, interessent eller sluttbruker.\n\nNasjonal\
-      \ arkitektur skal være kunnskaps- og datadrevet, og skal inneholde informasjon\
-      \ som skal kunne gjenbrukes i ulike verdistrømmer. Den skal inneholde viktige\
-      \ kapabiliteter og rammer for samhandling i felles økosystem, og den skal inneholde\
-      \ oversikt over hvilke løsninger og ressurser som kan benyttes for å dekke behov.\
-      \  \n\nDet kan være ulike verdistrømmer for ulike brukergrupper og for ulike\
-      \ behov.\n* Operasjonelle verdistrømmer, der Nasjonal arkitektur inngår som\
-      \ en verktøykasse for daglige oppgaver. F.eks. tjenesteutvikling og produktutvikling.\n\
-      Målgruppe: Utførere, planleggere\n* Strategiske verdistrømmer, der Nasjonal\
-      \ arkitektur bidrar til at man tar valg for fremtiden\nMålgruppe: Beslutningstagere,\
-      \ planleggere"
+    documentation: 'Verdistrømmer og prosesser beskriver hvordan Nasjonal arkitektur
+      brukes i ulike arbeidsflyter, beslutningsprosesser og utviklingsløp.
+
+
+      Nasjonal arkitektur skal være et kunnskapsgrunnlag og en verktøykasse som kan
+      gjenbrukes i både strategiske og operative sammenhenger. Strategiske verdistrømmer
+      kan handle om å sette retning, prioritere tiltak, vurdere gap og beslutte felles
+      utvikling. Operasjonelle verdistrømmer kan handle om tjenesteutvikling, produktutvikling,
+      arkitekturarbeid, analyse av kapabiliteter og vurdering av relevante ressurser.
+
+
+      Verdistrømmer og prosesser er derfor ikke en del av kjernemetamodellen, men
+      viser hvordan modellen anvendes.'
+    properties: {}
+    folder_path: *id001
+  id-ed6c7d640e81477780c82285ae079706:
+    type: CourseOfAction
+    name: Tiltak
+    documentation: 'Konkrete tiltak er endringer, initiativer eller leveranser som
+      forbedrer eller benytter kapabiliteter. Et tiltak kan virke på kapabiliteter
+      i Nasjonal arkitektur, på kapabiliteter i et domene, eller på begge nivåer samtidig.
+
+      Om tiltaket er nasjonalt, domenespesifikt eller tverrgående fremgår av hvilke
+      kapabiliteter, gap, mål eller effektmål tiltaket knyttes til.
+
+      Dette gjør det mulig å vise hvordan samme tiltak kan bidra til nasjonale mål,
+      lukke gap i et domene og samtidig bygge på felles kapabiliteter og ressurser
+      i Nasjonal arkitektur.
+
+      Tiltak kan være pågående eller planlagt.
+
+      Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av
+      kapabiliteter som finnes.
+
+
+      - Tiltak forbedrer kapabiliteter slik at effektmål oppnås
+
+      - Tiltak benytter kapabiliteter (og ressurser) slik at effekten oppnås
+
+      - Tiltak reduserer gap.
+
+      - Tiltak bidrar til effektmål for å vise hvilken ønsket virkning tiltaket skal
+      bidra til
+
+      '
     properties: {}
     folder_path: *id001
   id-a601bb3d7b11478185903149965f7842:
@@ -3302,8 +3229,7 @@ elements:
 
       '
     properties: {}
-    folder_path:
-    - Strategy
+    folder_path: *id002
   id-1785953dbdda41fbaa0b7dbd4861c31c:
     type: Driver
     name: Andre forhold?
@@ -3549,7 +3475,11 @@ elements:
   id-0cf363c3f2ff4fa3a34bda7a610e6f70:
     type: Outcome
     name: Effektmål
-    documentation: 'De konkrete resultatene av å bruke kapabilitetene.
+    documentation: 'De konkrete resultatene av å bruke kapabilitetene. Kapabiliteter
+      beskriver hva økosystemet må kunne gjøre for å oppnå effekter.
+
+      Tiltak bidrar positivt til å nå effektmål.
+
 
       Se på dybdeindikatorene fra nullpunktsmåling:
 
@@ -3612,33 +3542,264 @@ elements:
     folder_path: *id005
   id-d7a27706ca3240468e16d88afbcd4a3e:
     type: Assessment
-    name: Nasjonal arkitektur analyse dekningsgrad
-    documentation: "Identifiserer svakheter i dagens arkitektur (ressurser og kapabiliteter).\
-      \ Er en faglig analyse som forklarer hvorfor gapet finnes.\n\nKapabiliteter\
-      \ og grad av nåsituasjon og måloppnåelse \n- målverdi\n- dagens verdi\n= Finner\
-      \ Gap og modenhet:\nRødt (Gap > 2): Kapabiliteter der avstanden mellom nåsituasjon\
-      \ og mål er kritisk stor. Her må Tiltak (Work Packages) prioriteres.\nGult (Gap\
-      \ = 1): Kapabiliteter som er i rute, men krever vedlikehold eller mindre justeringer.\n\
-      Grønt (Gap = 0): Kapabiliteten har nådd sin målverdi.\nEn kapabilitet kan realisere\
-      \ både mål og prinsipper, altså beskrive hvordan organisasjonen faktisk implementerer,\
-      \ oppfyller eller tolker hensikten bak prinsippet i praksis.\nModenhetsmodell,\
-      \ som CMMI (Capability Maturity Model Integration):\n* Måling av kapabilitetsmodenhet\
-      \ (Capability Maturity) hjelper deg å prioritere hvor innsatsen bør settes inn\
-      \ ved å synliggjøre gapet mellom \"hvor gode vi er\" (As-Is) og \"hvor gode\
-      \ vi må være\" (To-Be).\n* Modenheten til en kapabilitet vurderes basert på\
-      \ tilstanden til de underliggende ressursene.\n\nRessurser og måling:\n* Kan\
-      \ vises som en heatmap med indikatorer for:\n- Dekningsgrad kapabilitet (1-5)\
-      \ for å indikere i hvilken grad en ressurs faktisk er tilgjengelig eller moden\
-      \ nok til å støtte ønsket kapabilitet.\n- egnethet (Funksjonelt egnet)\n- Teknisk\
-      \ egnet\n- Livssyklus status\n\nMan kan også benytte POTI modell som vurdering\
-      \ på tilstanden til ressursene:\n* People (Organisasjon): Roller og kompetanse.\n\
-      * Process (Prosess): Arbeidsflyter og prosedyrer.\n* Technology (Teknologi):\
-      \ IT-systemer og infrastruktur.\n* Information (Informasjon): Datakvalitet og\
-      \ flyt\n\nSe også:\nDe konkrete resultatene av å bruke kapabilitetene.\nSe på\
-      \ dybdeindikatorene fra nullpunktsmåling:\nhttps://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416\n\
-      F.eks:\n* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429\n\
-      * https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428\n\
-      \n\n\n"
+    name: Dekningsgradsvurdering
+    documentation: 'Identifiserer svakheter og dekningsgrad i dagens arkitektur, vurdert
+      opp mot mål, effektmål, behov og ønsket situasjon.
+
+
+      Assessment brukes til å dokumentere hvor godt kapabiliteter og ressurser dekker
+      et bestemt behov, et bestemt effektmål eller en ønsket fremtidig tilstand. Vurderingen
+      gir grunnlag for å identifisere gap, prioritere tiltak og vurdere om økosystemet
+      har nødvendige evner og byggeklosser for å nå ønskede effekter.
+
+
+      ### Hva som vurderes
+
+
+      En assessment kan brukes til å vurdere både kapabiliteter og ressurser.
+
+
+      For kapabiliteter vurderes hvor godt evnen er dekket i dagens situasjon sammenlignet
+      med ønsket nivå. Dette kan for eksempel uttrykkes som:
+
+
+      - målverdi
+
+      - dagens verdi
+
+      - gap mellom dagens verdi og målverdi
+
+      - modenhet
+
+      - begrunnelse for vurderingen
+
+
+      For ressurser vurderes hvor godt en konkret ressurs realiserer eller understøtter
+      én eller flere kapabiliteter, behov eller effektmål. Dekningsgrad bør derfor
+      vurderes i kontekst, ikke som én global score for ressursen.
+
+
+      Eksempel: Fellesløsningen `Maskinporten` kan ha ulik dekningsgrad avhengig av
+      hvilken kapabilitet eller hvilket effektmål den vurderes mot:
+
+
+      - Dekningsgrad for kapabilitet `Tilgangsstyring`: `[1-5]`
+
+      - Dekningsgrad for kapabilitet `Representasjon`: `[1-5]`
+
+      - Dekningsgrad for effektmål `Sømløs system-til-system-samhandling`: `[1-5]`
+
+
+      Dette gjør det mulig å vise at samme ressurs kan være godt egnet for ett behov,
+      men ha lavere dekningsgrad for et annet.
+
+
+      ### Gap og modenhet
+
+
+      Gap beregnes som avstanden mellom dagens verdi og ønsket målverdi.
+
+
+      - **Rødt (Gap > 2):** Kapabiliteter eller ressurser der avstanden mellom nåsituasjon
+      og mål er kritisk stor. Her bør tiltak prioriteres.
+
+      - **Gult (Gap = 1):** Kapabiliteter eller ressurser som er på vei mot ønsket
+      nivå, men som krever vedlikehold, oppfølging eller mindre forbedringer.
+
+      - **Grønt (Gap = 0):** Kapabiliteten eller ressursen har nådd ønsket målverdi.
+
+
+      Måling av kapabilitetsmodenhet hjelper med å synliggjøre gapet mellom nåsituasjon
+      (`as-is`) og ønsket fremtidig situasjon (`to-be`). Dette gir grunnlag for å
+      prioritere hvor innsatsen bør settes inn.
+
+
+      Modenheten til en kapabilitet vurderes blant annet basert på tilstanden til
+      de underliggende ressursene som realiserer eller understøtter kapabiliteten.
+
+
+      ### Ressurser og måling
+
+
+      Ressurser kan vurderes med indikatorer som viser hvor godt de understøtter kapabiliteter
+      og effektmål.
+
+
+      Aktuelle indikatorer kan være:
+
+
+      - **Dekningsgrad (1-5):** I hvilken grad ressursen faktisk er tilgjengelig,
+      moden og egnet til å støtte en bestemt kapabilitet, et behov eller et effektmål.
+
+      - **Funksjonell egnethet (Functional Fit):** Hvor godt ressursen støtter behovet,
+      prosessen eller tjenesten den skal bidra til.
+
+      - **Teknisk egnethet (Technical Fit):** Hvor moderne, stabil, sikker og teknisk
+      egnet ressursen er.
+
+      - **Livssyklusstatus:** Om ressursen er i aktiv bruk, under innføring, under
+      utfasing eller ved slutten av livsløpet.
+
+
+      Eksempler på livssyklusstatus:
+
+
+      - `Live`
+
+      - `Phasing Out`
+
+      - `End of Life`
+
+
+      Assessment kan også brukes til å lage heatmaps som viser dekningsgrad, egnethet,
+      modenhet og gap på tvers av kapabiliteter, ressurser, domener eller effektmål.
+
+
+      ### POTI-basert ressursvurdering
+
+
+      POTI kan brukes som analysemodell for å vurdere ressursenes rolle og tilstand.
+
+
+      POTI står for:
+
+
+      - **Prosess:** Arbeidsflyter, rutiner og prosedyrer som ressursen understøtter
+      eller påvirker.
+
+      - **Organisasjon:** Roller, ansvar, kompetanse, styring, samhandling og kapasitet
+      knyttet til ressursen.
+
+      - **Teknologi:** Systemer, applikasjoner, infrastruktur, grensesnitt og tekniske
+      løsninger som ressursen består av eller bygger på.
+
+      - **Informasjon:** Data, metadata, informasjonsmodeller, datakvalitet, tilgjengelighet
+      og informasjonsflyt som ressursen forvalter eller gjør mulig.
+
+
+      POTI brukes ikke som erstatning for ressurskategoriene i Nasjonal arkitektur.
+      Ressurser kan fortsatt kategoriseres som for eksempel gjenbrukbare løsninger,
+      standarder og veiledning, samhandlingsarenaer og organisering, eller økonomiske
+      og juridiske rammer og virkemidler.
+
+
+      POTI brukes som et analyseperspektiv på tvers av disse kategoriene. En ressurs
+      kan vurderes ut fra om den primært påvirker prosesser, organisering, teknologi
+      eller informasjon. Mange ressurser vil berøre flere POTI-dimensjoner samtidig.
+
+
+      ### Hvorfor bruke POTI i vurderingen
+
+
+      POTI gjør det mulig å analysere om ressursene samlet sett er tilstrekkelige
+      for å realisere en kapabilitet.
+
+
+      En kapabilitet kan for eksempel ha god teknologistøtte, men likevel lav samlet
+      dekningsgrad dersom prosesser, organisering, kompetanse eller informasjonsgrunnlag
+      mangler. På samme måte kan en ressurs være teknisk moden, men ha lav funksjonell
+      egnethet dersom den ikke støtter arbeidsprosessene eller behovene godt nok.
+
+
+      POTI er særlig nyttig når man skal:
+
+
+      - forstå nåsituasjon og ønsket fremtidig situasjon
+
+      - identifisere styrker, svakheter og forbedringsområder
+
+      - vurdere om organisasjonen er rigget for å gjennomføre strategien
+
+      - prioritere tiltak for å lukke gap
+
+      - analysere konsekvenser av digital transformasjon, omorganisering eller innføring
+      av nye teknologiske løsninger
+
+
+      ### Eksempler på vurderingsspørsmål
+
+
+      For **prosess** kan vurderingen stille spørsmål som:
+
+
+      - Hvilke arbeidsflyter, rutiner og prosedyrer understøttes av ressursen?
+
+      - Er prosessene dokumenterte og etterlevd?
+
+      - Bidrar ressursen til mer effektiv og sammenhengende oppgaveløsning?
+
+
+      For **organisasjon** kan vurderingen stille spørsmål som:
+
+
+      - Er roller og ansvar tydelig definert?
+
+      - Finnes nødvendig kompetanse og kapasitet?
+
+      - Er organisasjonen rigget for å forvalte og bruke ressursen?
+
+
+      For **teknologi** kan vurderingen stille spørsmål som:
+
+
+      - Hvilke verktøy, systemer eller tekniske løsninger er i bruk?
+
+      - Er løsningene integrerte, brukervennlige, sikre og skalerbare?
+
+      - Hvor godt støtter teknologien automatisering, samarbeid eller datadrevne beslutninger?
+
+      - Finnes det teknisk gjeld eller avhengigheter som påvirker egnetheten?
+
+
+      For **informasjon** kan vurderingen stille spørsmål som:
+
+
+      - Er informasjonen nøyaktig, tilgjengelig og forståelig?
+
+      - Hvordan deles, gjenbrukes og analyseres data på tvers?
+
+      - Er datakvaliteten tilstrekkelig?
+
+      - Er datasett, begreper, informasjonsmodeller eller API-er registrert i relevante
+      kataloger, for eksempel Felles datakatalog?
+
+      - Er virksomheten i tilstrekkelig grad i orden i eget hus?
+
+
+      ### Sammenheng med mål, prinsipper og tiltak
+
+
+      En kapabilitet kan bidra til å realisere både mål, effektmål og prinsipper.
+      Den viser hvordan en organisasjon, et domene eller det nasjonale økosystemet
+      faktisk implementerer, oppfyller eller tolker hensikten bak et mål eller prinsipp
+      i praksis.
+
+
+      Assessment gjør det mulig å vurdere om kapabilitetene og ressursene har tilstrekkelig
+      dekningsgrad til å nå ønskede effekter. Dersom vurderingen avdekker gap, kan
+      konkrete tiltak prioriteres for å styrke kapabiliteter, forbedre ressurser eller
+      redusere avstanden mellom dagens situasjon og ønsket situasjon.
+
+
+      ### Se også
+
+
+      De konkrete resultatene av å bruke kapabilitetene kan vurderes i sammenheng
+      med indikatorer og dybdemålinger fra Digitaliseringsstrategien.
+
+
+      Se på dybdeindikatorene fra nullpunktsmåling:
+
+
+      https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
+
+
+      Eksempler:
+
+
+      - https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
+
+      - https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428'
     properties: {}
     folder_path: *id005
   id-63eeffd71e92467281f421c58bac305f:
@@ -3712,24 +3873,14 @@ elements:
     documentation: ''
     properties: {}
     folder_path: *id005
-  id-6cb4bed065c44e1b8821c60d4515ef28:
-    type: WorkPackage
-    name: Konkret tiltak
-    documentation: 'Realiserer endringer som fjerner gap. Dette er konkrete tiltak
-      som har startet eller er planlagt.
-
-      Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av
-      kapabiliteter som finnes.'
-    properties: {}
-    folder_path: &id006
-    - Implementation & Migration
   id-66f38bffcd9f48d796a041a9a292d6ed:
     type: Gap
     name: Gap
     documentation: Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad
       Nasjonal arkitektur)
     properties: {}
-    folder_path: *id006
+    folder_path: &id006
+    - Implementation & Migration
   id-ac4c391b696f493da64833de20f7df9c:
     type: Plateau
     name: Nåværende situasjon
@@ -3817,14 +3968,33 @@ elements:
       det være nødvendig å gå mer i dybden etter hvert.
     properties: {}
     folder_path: *id007
-relationships:
-  id-58bceb608d714b8d99e00b4bf49c6255:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-eb6f01d0d0ef4230b7a5c9c73c3842c5
-    target_id: id-0cf363c3f2ff4fa3a34bda7a610e6f70
-    documentation: ''
+  id-374db9b5a8cf46ddb5e7f4e6672460d6:
+    type: Grouping
+    name: Domene
+    documentation: 'Et domene kan være en sektor, en virksomhet, kommunal sektor,
+      et fagområde, et EU data space eller et annet europeisk område. Domenet kan
+      beskrive egne spesialiseringer, behov, kapabiliteter, ressurser, tiltak og mål,
+      men bør koble disse til relevante generiske kapabiliteter og ressurser i Nasjonal
+      arkitektur. På den måten kan lokale og domenespesifikke arkitekturer utvikles
+      videre uten at Nasjonal arkitektur må modellere alle detaljer. Et domene knytter
+      seg til Nasjonal arkitektur og konkretiserer den i egen kontekst.
+
+
+      Knytningen til Nasjonal arkitektur går primært via domenekapabilitet til nasjonal
+      kapabilitet.'
     properties: {}
+    folder_path: *id007
+  id-3c14c3595df64671b23817284cc1ff02:
+    type: Grouping
+    name: Nasjonal arkitektur
+    documentation: 'Nasjonal arkitektur beskriver det generiske og tverrgående nivået
+      i felles økosystem for digital samhandling.
+
+
+      Gruppen viser hvilke begreper som hører til Nasjonal arkitektur som felles rammeverk.'
+    properties: {}
+    folder_path: *id007
+relationships:
   id-1f3c8faf7c4a47f59cafef9cf07dc47e:
     type: AssociationRelationship
     name: ''
@@ -3837,13 +4007,6 @@ relationships:
     name: dekningsgrad
     source_id: id-eb6f01d0d0ef4230b7a5c9c73c3842c5
     target_id: id-0cf363c3f2ff4fa3a34bda7a610e6f70
-    documentation: ''
-    properties: {}
-  id-c98b43adfa0b4b0489837039fc66ce03:
-    type: AggregationRelationship
-    name: ''
-    source_id: id-eb6f01d0d0ef4230b7a5c9c73c3842c5
-    target_id: id-fa68712eb0924092abd996fa6c511065
     documentation: ''
     properties: {}
   id-04af3154430f46a38e08f4078c1ef8bc:
@@ -4138,7 +4301,8 @@ relationships:
     name: ''
     source_id: id-23598cee556747ef80cab10dbad84e65
     target_id: id-eb6f01d0d0ef4230b7a5c9c73c3842c5
-    documentation: ''
+    documentation: Domenekapabilitet konkretiserer eller spesialiserer en relevant
+      kapabilitet i Nasjonal arkitektur
     properties: {}
   id-51ddcf51d43845e5be4571ce7d5d6de7:
     type: RealizationRelationship
@@ -4343,13 +4507,6 @@ relationships:
     target_id: id-534850df1c7b48e2a2e7cc966ece233f
     documentation: ''
     properties: {}
-  id-42af8b36568c49019b31840ec5178115:
-    type: RealizationRelationship
-    name: ''
-    source_id: id-30e12f5fdabe414db1430b0d735ed1f4
-    target_id: id-0cf363c3f2ff4fa3a34bda7a610e6f70
-    documentation: ''
-    properties: {}
   id-24b3a80613b7424da16872dbf7b35544:
     type: AggregationRelationship
     name: ''
@@ -4518,13 +4675,6 @@ relationships:
     target_id: id-66f38bffcd9f48d796a041a9a292d6ed
     documentation: ''
     properties: {}
-  id-1cd80ce835b048629d8710b64d92491d:
-    type: AssociationRelationship
-    name: basert på
-    source_id: id-eb6f01d0d0ef4230b7a5c9c73c3842c5
-    target_id: id-8810f83ff9fe44c2a3368cdef932526b
-    documentation: ''
-    properties: {}
   id-4e6aac60c9b84c98a872233d88c85211:
     type: AssociationRelationship
     name: ''
@@ -4558,174 +4708,6 @@ relationships:
     name: ''
     source_id: id-ba60560a9ed64b4d87b2fd4fa6b32937
     target_id: id-46a97f13294345f89decd549d4269848
-    documentation: ''
-    properties: {}
-  id-b63f5da05bf4410299bc709cc3ea631b:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-299fc063873a4f278a1d3c0ac9480467
-    target_id: id-e236b66b0d574a2bb97dbd79d7d38d47
-    documentation: ''
-    properties: {}
-  id-14c022dfc25f4d77a90fdc6619998f56:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-682d96a51e604ed2a00e1f4824023bab
-    target_id: id-661cb46063c544be82d804511f5ea9f9
-    documentation: ''
-    properties: {}
-  id-f679f3cf707e4af98ae1f28c30ca9087:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-e67a4f2983ce40f9823ec34ba460055a
-    target_id: id-3fd615c0b19e4762953cd34908523dbc
-    documentation: ''
-    properties: {}
-  id-4d23f636395046f292082e5c4bbf2cad:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-896e4c1434604caa891b94bcce964720
-    target_id: id-503ab92854754702ab00164afdbf6f70
-    documentation: ''
-    properties: {}
-  id-ae81d7862ebb40ac837596ed9bd9a9f4:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-896e4c1434604caa891b94bcce964720
-    target_id: id-6c59a946ea8e4ad8903fbb1a6ffa9219
-    documentation: ''
-    properties: {}
-  id-321a9910504540b2bb9934ad13245d50:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-d503cf06faa1417b8acd4b26a5c0741e
-    target_id: id-e236b66b0d574a2bb97dbd79d7d38d47
-    documentation: ''
-    properties: {}
-  id-9898dbefc39b4ed096db80db2f0b60f2:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-d503cf06faa1417b8acd4b26a5c0741e
-    target_id: id-6c59a946ea8e4ad8903fbb1a6ffa9219
-    documentation: ''
-    properties: {}
-  id-768954f3e4af4154b108986ec36ac24a:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-cd3b6a8989a448a2b4dfbf430a41bad4
-    target_id: id-3fd615c0b19e4762953cd34908523dbc
-    documentation: ''
-    properties: {}
-  id-91eb40769a354e578cd401ae23454459:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-cd3b6a8989a448a2b4dfbf430a41bad4
-    target_id: id-6c59a946ea8e4ad8903fbb1a6ffa9219
-    documentation: ''
-    properties: {}
-  id-d07de7240002488297f1c1645bd2494f:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-1be148b57796458993c3f7f5f24815ca
-    target_id: id-3fd615c0b19e4762953cd34908523dbc
-    documentation: ''
-    properties: {}
-  id-52c2e5bfa5c14a239350f40c00b7371b:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-1be148b57796458993c3f7f5f24815ca
-    target_id: id-6c59a946ea8e4ad8903fbb1a6ffa9219
-    documentation: ''
-    properties: {}
-  id-a2dffa10f5974ba283ffd54bdf39da12:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-ad6f81e892a74590840828b6aabb270d
-    target_id: id-6c59a946ea8e4ad8903fbb1a6ffa9219
-    documentation: ''
-    properties: {}
-  id-c95274fd02da4acbb7256670181f4c28:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-ad6f81e892a74590840828b6aabb270d
-    target_id: id-e236b66b0d574a2bb97dbd79d7d38d47
-    documentation: ''
-    properties: {}
-  id-49b1d260e91943ecbf46b2b40c4ee951:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-d7aa97e6319a492d8a1345bcaa8e154a
-    target_id: id-503ab92854754702ab00164afdbf6f70
-    documentation: ''
-    properties: {}
-  id-b1d80c6f02154bad9bfba989de485f58:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-d7aa97e6319a492d8a1345bcaa8e154a
-    target_id: id-e236b66b0d574a2bb97dbd79d7d38d47
-    documentation: ''
-    properties: {}
-  id-44da0c51e16d40339cd69fb68109c308:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-d7aa97e6319a492d8a1345bcaa8e154a
-    target_id: id-6c59a946ea8e4ad8903fbb1a6ffa9219
-    documentation: ''
-    properties: {}
-  id-b7d92e406640483495496dcb2b55c4ba:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-98df6c2b4df340c7a3a3ad32d99ca37e
-    target_id: id-e236b66b0d574a2bb97dbd79d7d38d47
-    documentation: ''
-    properties: {}
-  id-efa6f483300d44fbbfb5d70a8e0bfd4f:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-98df6c2b4df340c7a3a3ad32d99ca37e
-    target_id: id-3fd615c0b19e4762953cd34908523dbc
-    documentation: ''
-    properties: {}
-  id-7863dd1cc8f845138f56ffe1e1302e55:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-98df6c2b4df340c7a3a3ad32d99ca37e
-    target_id: id-503ab92854754702ab00164afdbf6f70
-    documentation: ''
-    properties: {}
-  id-3afb4e03ee0244be91b992cda637620f:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-98df6c2b4df340c7a3a3ad32d99ca37e
-    target_id: id-6c59a946ea8e4ad8903fbb1a6ffa9219
-    documentation: ''
-    properties: {}
-  id-756b7db23bbd4b528d57b1e8cbe54b73:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-48c9873ae59341a49c2dca27379fab55
-    target_id: id-6c59a946ea8e4ad8903fbb1a6ffa9219
-    documentation: ''
-    properties: {}
-  id-bc65c01a7f2c46bd9f8f8d7e9cfb2ef1:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-48c9873ae59341a49c2dca27379fab55
-    target_id: id-3fd615c0b19e4762953cd34908523dbc
-    documentation: ''
-    properties: {}
-  id-405f076fc4e444f99939e905315d76e8:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-c3f87c86b19547359c677a333b16f03b
-    target_id: id-661cb46063c544be82d804511f5ea9f9
-    documentation: ''
-    properties: {}
-  id-31901472ea0349129a45f045114bf54e:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-c0547226c598467a942dced879d0c18b
-    target_id: id-661cb46063c544be82d804511f5ea9f9
     documentation: ''
     properties: {}
   id-f6fcdfb945004e2f8c66445bbd789bea:
@@ -4791,13 +4773,6 @@ relationships:
     target_id: id-0bfa29018e7144578b2184e70414b7e8
     documentation: ''
     properties: {}
-  id-d2db3d06e0cb4a28bf0609a1e93f9a05:
-    type: RealizationRelationship
-    name: ''
-    source_id: id-6cb4bed065c44e1b8821c60d4515ef28
-    target_id: id-0cf363c3f2ff4fa3a34bda7a610e6f70
-    documentation: ''
-    properties: {}
   id-b41dc2536c3448babbf3a7ac3b47ef58:
     type: RealizationRelationship
     name: dekningsgrad
@@ -4810,13 +4785,6 @@ relationships:
     name: benyttes i
     source_id: id-23598cee556747ef80cab10dbad84e65
     target_id: id-31be9bc0b80e4be4b2df2d8e0000dc6f
-    documentation: ''
-    properties: {}
-  id-0412277f637b4aaabd07f09dac5fe102:
-    type: AggregationRelationship
-    name: ''
-    source_id: id-0d355bfbd31e4a188766733761ede0ba
-    target_id: id-30e12f5fdabe414db1430b0d735ed1f4
     documentation: ''
     properties: {}
   id-ddfd40b6fd8d434d8388970444b41f34:
@@ -4840,19 +4808,12 @@ relationships:
     target_id: id-8810f83ff9fe44c2a3368cdef932526b
     documentation: ''
     properties: {}
-  id-453bd99e2a77430eb83264b623d70ab9:
-    type: AssociationRelationship
-    name: forbedrer eller benytter
-    source_id: id-6cb4bed065c44e1b8821c60d4515ef28
-    target_id: id-eb6f01d0d0ef4230b7a5c9c73c3842c5
-    documentation: Konkrete tiltak øker modenhet til kapabilitetene.
-    properties: {}
   id-eb5ea45fb81343aa850be6613dfe1c28:
     type: ServingRelationship
     name: realiserer
     source_id: id-4157e35b43184dd7bbcb4405e7edea46
     target_id: id-23598cee556747ef80cab10dbad84e65
-    documentation: ''
+    documentation: Domeneressurs realiserer eller understøtter domenekapabilitet
     properties: {}
   id-04a0838bc4d645529d2367f156ad5088:
     type: AggregationRelationship
@@ -4861,369 +4822,71 @@ relationships:
     target_id: id-c447ce23ba0c49a9bf0f8c8820c29234
     documentation: ''
     properties: {}
-views:
-  id-085ba8f9d77e45079724746f67280dbb:
-    type: ArchimateDiagramModel
-    name: 002-Metamodell kontekst
-    documentation: Viser struktur og mer kontekst til rammeverksmodellen.
+  id-2838f5b4086c496db2838772079d585e:
+    type: CompositionRelationship
+    name: ''
+    source_id: id-374db9b5a8cf46ddb5e7f4e6672460d6
+    target_id: id-23598cee556747ef80cab10dbad84e65
+    documentation: ''
     properties: {}
-    nodes:
-      id-3d3b55ad03984427937540400b67f4b2:
-        type: DiagramObject
-        archimate_element_id: id-eb6f01d0d0ef4230b7a5c9c73c3842c5
-        parent_node_id: null
-        bounds:
-          x: '840'
-          y: '324'
-          width: '349'
-          height: '145'
-      id-64362d5d704a4628a929e3805cf48ff8:
-        type: DiagramObject
-        archimate_element_id: id-fa68712eb0924092abd996fa6c511065
-        parent_node_id: id-3d3b55ad03984427937540400b67f4b2
-        bounds:
-          x: '48'
-          y: '48'
-          width: '264'
-          height: '61'
-      id-adb79fea3a0a4b08b199a9d991ad6434:
-        type: DiagramObject
-        archimate_element_id: id-9860d11ff3fd40a5b541b8f929ed305f
-        parent_node_id: null
-        bounds:
-          x: '840'
-          y: '540'
-          width: '349'
-          height: '241'
-      id-93b5dfc389b04bbfbab41fff539299ee:
-        type: DiagramObject
-        archimate_element_id: id-456429d236544c28b3d7257893b0dec6
-        parent_node_id: id-adb79fea3a0a4b08b199a9d991ad6434
-        bounds:
-          x: '24'
-          y: '168'
-          width: '288'
-          height: '55'
-      id-2cf0586e276d4287b45b74674fd70bad:
-        type: DiagramObject
-        archimate_element_id: id-f1f34cea2b2e4b5b8f8a9be88321de42
-        parent_node_id: id-adb79fea3a0a4b08b199a9d991ad6434
-        bounds:
-          x: '24'
-          y: '96'
-          width: '144'
-          height: '55'
-      id-4ad01c11468f4d2cbc86b8a25c0ca384:
-        type: DiagramObject
-        archimate_element_id: id-a947552722064b7c93181833028cc2f1
-        parent_node_id: id-adb79fea3a0a4b08b199a9d991ad6434
-        bounds:
-          x: '192'
-          y: '96'
-          width: '120'
-          height: '55'
-      id-10943b6f66fb4c1b99a6b61335adc431:
-        type: DiagramObject
-        archimate_element_id: id-199ae45b0a6c47b28b3507837647c6c8
-        parent_node_id: id-adb79fea3a0a4b08b199a9d991ad6434
-        bounds:
-          x: '24'
-          y: '24'
-          width: '288'
-          height: '55'
-      id-b42d1c247f644f8893e0f95683287147:
-        type: DiagramObject
-        archimate_element_id: id-0cf363c3f2ff4fa3a34bda7a610e6f70
-        parent_node_id: null
-        bounds:
-          x: '928'
-          y: '132'
-          width: '120'
-          height: '55'
-      id-4df9f0578822490ca12307a4fde4214f:
-        type: DiagramObject
-        archimate_element_id: id-534850df1c7b48e2a2e7cc966ece233f
-        parent_node_id: null
-        bounds:
-          x: '928'
-          y: '48'
-          width: '120'
-          height: '55'
-      id-f38c9ffcb2094254bedb4ea07615d58a:
-        type: DiagramObject
-        archimate_element_id: id-30e12f5fdabe414db1430b0d735ed1f4
-        parent_node_id: null
-        bounds:
-          x: '660'
-          y: '132'
-          width: '133'
-          height: '55'
-      id-893d747b928b4d969cee81009d5ac7b5:
-        type: Note
-        archimate_element_id: ''
-        parent_node_id: null
-        bounds:
-          x: '636'
-          y: '-24'
-          width: '805'
-          height: '46'
-      id-b79597e7a3d74266bd7c526bdc8dc3d2:
-        type: DiagramObject
-        archimate_element_id: id-31be9bc0b80e4be4b2df2d8e0000dc6f
-        parent_node_id: null
-        bounds:
-          x: '1272'
-          y: '132'
-          width: '145'
-          height: '55'
-      id-559aac7f70244271af0cdda8066d997f:
-        type: DiagramObject
-        archimate_element_id: id-04fef6c083b449dba91c876ae2e3715f
-        parent_node_id: null
-        bounds:
-          x: '623'
-          y: '402'
-          width: '120'
-          height: '55'
-      id-df479b6fbf9147efb756e02cfba5445e:
-        type: DiagramObject
-        archimate_element_id: id-d7a27706ca3240468e16d88afbcd4a3e
-        parent_node_id: null
-        bounds:
-          x: '372'
-          y: '456'
-          width: '120'
-          height: '67'
-      id-7609ed2be16c43d4baa6016a6043979c:
-        type: DiagramObject
-        archimate_element_id: id-63eeffd71e92467281f421c58bac305f
-        parent_node_id: null
-        bounds:
-          x: '660'
-          y: '48'
-          width: '120'
-          height: '55'
-      id-ab72ef4e68d2411fa4709cbc3ad8863b:
-        type: DiagramObject
-        archimate_element_id: id-87d27b24cab34a089853e52f3512c376
-        parent_node_id: null
-        bounds:
-          x: '791'
-          y: '48'
-          width: '120'
-          height: '55'
-      id-cede42366b3d4e40a599079dc05b3f2c:
-        type: DiagramObject
-        archimate_element_id: id-23598cee556747ef80cab10dbad84e65
-        parent_node_id: null
-        bounds:
-          x: '1248'
-          y: '324'
-          width: '216'
-          height: '144'
-      id-54df8645b90148f49dca3767084840a2:
-        type: DiagramObject
-        archimate_element_id: id-4157e35b43184dd7bbcb4405e7edea46
-        parent_node_id: null
-        bounds:
-          x: '1248'
-          y: '540'
-          width: '210'
-          height: '79'
-      id-3d82aa2d010549939e2d165315929b1d:
-        type: DiagramObject
-        archimate_element_id: id-6cb4bed065c44e1b8821c60d4515ef28
-        parent_node_id: null
-        bounds:
-          x: '804'
-          y: '204'
-          width: '84'
-          height: '55'
-      id-75a8862df21f49c2a2cc9c1bacd6a2da:
-        type: DiagramObject
-        archimate_element_id: id-66f38bffcd9f48d796a041a9a292d6ed
-        parent_node_id: null
-        bounds:
-          x: '372'
-          y: '228'
-          width: '120'
-          height: '55'
-      id-504ab324adf1463b8515fec03c8f5154:
-        type: DiagramObject
-        archimate_element_id: id-ac4c391b696f493da64833de20f7df9c
-        parent_node_id: null
-        bounds:
-          x: '288'
-          y: '156'
-          width: '120'
-          height: '55'
-      id-4a3ea8d25e8246e499313ad237cf619a:
-        type: DiagramObject
-        archimate_element_id: id-0d355bfbd31e4a188766733761ede0ba
-        parent_node_id: null
-        bounds:
-          x: '457'
-          y: '156'
-          width: '120'
-          height: '55'
-      id-9e961a0cf2fd4ade8cab59f1a5016849:
-        type: DiagramObject
-        archimate_element_id: id-8810f83ff9fe44c2a3368cdef932526b
-        parent_node_id: null
-        bounds:
-          x: '564'
-          y: '312'
-          width: '193'
-          height: '58'
-      id-1e256084ffb246ae8414ad2000ecba01:
-        type: Note
-        archimate_element_id: ''
-        parent_node_id: null
-        bounds:
-          x: '180'
-          y: '600'
-          width: '637'
-          height: '169'
-    connections:
-      id-08b22c479e90411e8ac3b6125ef8f626:
-        type: Connection
-        relationship_id: ''
-        source_node: id-3d3b55ad03984427937540400b67f4b2
-        target_node: id-b42d1c247f644f8893e0f95683287147
-      id-cf690924556d49b3a6d2c29e71ebd225:
-        type: Connection
-        relationship_id: ''
-        source_node: id-3d3b55ad03984427937540400b67f4b2
-        target_node: id-64362d5d704a4628a929e3805cf48ff8
-      id-5a2dd9df93d8463e817dfc6c7c94322f:
-        type: Connection
-        relationship_id: ''
-        source_node: id-3d3b55ad03984427937540400b67f4b2
-        target_node: id-b79597e7a3d74266bd7c526bdc8dc3d2
-      id-7861e6fbfa224de9b545d473f5673182:
-        type: Connection
-        relationship_id: ''
-        source_node: id-3d3b55ad03984427937540400b67f4b2
-        target_node: id-df479b6fbf9147efb756e02cfba5445e
-      id-d20a16a42e1d4bd3a89cac104895454b:
-        type: Connection
-        relationship_id: ''
-        source_node: id-3d3b55ad03984427937540400b67f4b2
-        target_node: id-559aac7f70244271af0cdda8066d997f
-      id-ace49fbb1f5745e88afe8766ee61e3f2:
-        type: Connection
-        relationship_id: ''
-        source_node: id-3d3b55ad03984427937540400b67f4b2
-        target_node: id-9e961a0cf2fd4ade8cab59f1a5016849
-      id-bd5ddd04cbc243dca5184896be1baee4:
-        type: Connection
-        relationship_id: ''
-        source_node: id-adb79fea3a0a4b08b199a9d991ad6434
-        target_node: id-df479b6fbf9147efb756e02cfba5445e
-      id-83a12fb44b094281bcf5001d33de5cd4:
-        type: Connection
-        relationship_id: ''
-        source_node: id-adb79fea3a0a4b08b199a9d991ad6434
-        target_node: id-3d3b55ad03984427937540400b67f4b2
-      id-3d9a05b2b89744bca9a857f0b1d72b72:
-        type: Connection
-        relationship_id: ''
-        source_node: id-93b5dfc389b04bbfbab41fff539299ee
-        target_node: id-adb79fea3a0a4b08b199a9d991ad6434
-      id-06157ac5b5bb4bfa9f1cb06dc95d65de:
-        type: Connection
-        relationship_id: ''
-        source_node: id-2cf0586e276d4287b45b74674fd70bad
-        target_node: id-adb79fea3a0a4b08b199a9d991ad6434
-      id-d361fc495d844876ad6713b00be60a54:
-        type: Connection
-        relationship_id: ''
-        source_node: id-4ad01c11468f4d2cbc86b8a25c0ca384
-        target_node: id-adb79fea3a0a4b08b199a9d991ad6434
-      id-e5f94e613d9b448cbe28705fdeb92fdd:
-        type: Connection
-        relationship_id: ''
-        source_node: id-10943b6f66fb4c1b99a6b61335adc431
-        target_node: id-adb79fea3a0a4b08b199a9d991ad6434
-      id-37cf2118f73c493b8f3237f028aafd5b:
-        type: Connection
-        relationship_id: ''
-        source_node: id-b42d1c247f644f8893e0f95683287147
-        target_node: id-4df9f0578822490ca12307a4fde4214f
-      id-cae0ff8f467a471bb30db850f55d750e:
-        type: Connection
-        relationship_id: ''
-        source_node: id-f38c9ffcb2094254bedb4ea07615d58a
-        target_node: id-b42d1c247f644f8893e0f95683287147
-      id-bcfb16abd6424545bae170f53018a68d:
-        type: Connection
-        relationship_id: ''
-        source_node: id-b79597e7a3d74266bd7c526bdc8dc3d2
-        target_node: id-b42d1c247f644f8893e0f95683287147
-      id-9631e48ddbe846c6b3f40798afbc8509:
-        type: Connection
-        relationship_id: ''
-        source_node: id-559aac7f70244271af0cdda8066d997f
-        target_node: id-9e961a0cf2fd4ade8cab59f1a5016849
-      id-e790d7d368ae4ea99a65efd94837863a:
-        type: Connection
-        relationship_id: ''
-        source_node: id-559aac7f70244271af0cdda8066d997f
-        target_node: id-9e961a0cf2fd4ade8cab59f1a5016849
-      id-3465a80cdefd4280b0d3de6d746713b4:
-        type: Connection
-        relationship_id: ''
-        source_node: id-df479b6fbf9147efb756e02cfba5445e
-        target_node: id-75a8862df21f49c2a2cc9c1bacd6a2da
-      id-ec9c5e504e2f4d2cbdd04f879287bdbe:
-        type: Connection
-        relationship_id: ''
-        source_node: id-cede42366b3d4e40a599079dc05b3f2c
-        target_node: id-3d3b55ad03984427937540400b67f4b2
-      id-23b6755430b34434868cf6f2e3c39c50:
-        type: Connection
-        relationship_id: ''
-        source_node: id-cede42366b3d4e40a599079dc05b3f2c
-        target_node: id-b42d1c247f644f8893e0f95683287147
-      id-318884639b9e4e40abbfa4e8cd25578c:
-        type: Connection
-        relationship_id: ''
-        source_node: id-cede42366b3d4e40a599079dc05b3f2c
-        target_node: id-b79597e7a3d74266bd7c526bdc8dc3d2
-      id-8c5b74c99b1448edb0e48049dab9256e:
-        type: Connection
-        relationship_id: ''
-        source_node: id-54df8645b90148f49dca3767084840a2
-        target_node: id-cede42366b3d4e40a599079dc05b3f2c
-      id-1f34c3e279ad471598102a488abd04fe:
-        type: Connection
-        relationship_id: ''
-        source_node: id-3d82aa2d010549939e2d165315929b1d
-        target_node: id-3d3b55ad03984427937540400b67f4b2
-      id-70dfd69a904b45a58678603c97046dc3:
-        type: Connection
-        relationship_id: ''
-        source_node: id-3d82aa2d010549939e2d165315929b1d
-        target_node: id-b42d1c247f644f8893e0f95683287147
-      id-9ff21ac45357445bb7e1c31d336a5d1f:
-        type: Connection
-        relationship_id: ''
-        source_node: id-504ab324adf1463b8515fec03c8f5154
-        target_node: id-75a8862df21f49c2a2cc9c1bacd6a2da
-      id-81d0c3d6c8f248c39e2b14123e4ad2af:
-        type: Connection
-        relationship_id: ''
-        source_node: id-4a3ea8d25e8246e499313ad237cf619a
-        target_node: id-75a8862df21f49c2a2cc9c1bacd6a2da
-      id-0814d37f0e714f38a52e331319a92843:
-        type: Connection
-        relationship_id: ''
-        source_node: id-4a3ea8d25e8246e499313ad237cf619a
-        target_node: id-f38c9ffcb2094254bedb4ea07615d58a
+  id-3725988292674697b9f570acb22cdf36:
+    type: CompositionRelationship
+    name: ''
+    source_id: id-374db9b5a8cf46ddb5e7f4e6672460d6
+    target_id: id-4157e35b43184dd7bbcb4405e7edea46
+    documentation: ''
+    properties: {}
+  id-1bab890b90c7416cb2bb7782c4daa115:
+    type: CompositionRelationship
+    name: ''
+    source_id: id-3c14c3595df64671b23817284cc1ff02
+    target_id: id-eb6f01d0d0ef4230b7a5c9c73c3842c5
+    documentation: ''
+    properties: {}
+  id-531881e00d7d487a84d53f6693474ce8:
+    type: CompositionRelationship
+    name: ''
+    source_id: id-3c14c3595df64671b23817284cc1ff02
+    target_id: id-9860d11ff3fd40a5b541b8f929ed305f
+    documentation: ''
+    properties: {}
+  id-2bc8ee7e35c04ac4815ab8a2d649df03:
+    type: AssociationRelationship
+    name: konkretiserer
+    source_id: id-374db9b5a8cf46ddb5e7f4e6672460d6
+    target_id: id-3c14c3595df64671b23817284cc1ff02
+    documentation: ''
+    properties: {}
+  id-5a850b6aaf4a46bd85747ca3a95ebf5a:
+    type: AssociationRelationship
+    name: forbedrer eller benytter
+    source_id: id-ed6c7d640e81477780c82285ae079706
+    target_id: id-eb6f01d0d0ef4230b7a5c9c73c3842c5
+    documentation: ''
+    properties: {}
+  id-deba9c82669841f1ab38247c7e7aff20:
+    type: RealizationRelationship
+    name: ''
+    source_id: id-ed6c7d640e81477780c82285ae079706
+    target_id: id-0cf363c3f2ff4fa3a34bda7a610e6f70
+    documentation: ''
+    properties: {}
+views:
   id-dea95464961449d88f082fa02cceb50f:
     type: ArchimateDiagramModel
     name: 02-Nasjonal Arkitektur - Kapabilitetskart alle nivåer
-    documentation: 'Nasjonal arkitektur består av 3 kapabilitetsnivåer.
+    documentation: 'Den konkrete kapabilitetsmodellen for Nasjonal arkitektur er organisert
+      i tre nivåer, denne viser alle nivåene:
+
+
+      - **Nivå 1: Overordnet kapabilitet** beskriver den samlede evnen Nasjonal arkitektur
+      skal bidra til i felles økosystem.
+
+      - **Nivå 2: Hovedkapabilitet** beskriver brede, strategiske kapabilitetsområder
+      som strukturerer modellen.
+
+      - **Nivå 3: Underkapabilitet** beskriver mer konkrete og operasjonelle evner
+      som kan vurderes, forbedres og kobles til ressurser, tiltak, gap og effektmål.
 
 
       Nasjonal Arkitektur-modellen er tverrgående og abstrakt – den skal passe for
@@ -5782,21 +5445,21 @@ views:
           y: '828'
           width: '337'
           height: '109'
-      id-8d21839b044849e3bdfef610824d2867:
-        type: DiagramObject
-        archimate_element_id: id-a601bb3d7b11478185903149965f7842
-        parent_node_id: id-267bf994416341c09e218571c79f2c40
-        bounds:
-          x: '180'
-          y: '36'
-          width: '120'
-          height: '55'
       id-a28546521a6446df904b97c96d8118e2:
         type: DiagramObject
         archimate_element_id: id-0bfa29018e7144578b2184e70414b7e8
         parent_node_id: id-267bf994416341c09e218571c79f2c40
         bounds:
-          x: '36'
+          x: '24'
+          y: '36'
+          width: '120'
+          height: '55'
+      id-8d21839b044849e3bdfef610824d2867:
+        type: DiagramObject
+        archimate_element_id: id-a601bb3d7b11478185903149965f7842
+        parent_node_id: id-267bf994416341c09e218571c79f2c40
+        bounds:
+          x: '168'
           y: '36'
           width: '120'
           height: '55'
@@ -6123,7 +5786,7 @@ views:
   id-623c2b878f81427187c41e072b4deff5:
     type: ArchimateDiagramModel
     name: 04-Digitaliseringsstrategiens mål og NA
-    documentation: ''
+    documentation: 'Digitaliseringsstrategiens mest relevante mål for Nasjonal arkitektur '
     properties: {}
     nodes:
       id-1ffeb371ce6240f48aac41147582af8b:
@@ -6274,7 +5937,10 @@ views:
   id-661971276dac4903b1d75fa62987873b:
     type: ArchimateDiagramModel
     name: 03-Arkitekturprinsipper og NA
-    documentation: https://www.digdir.no/digital-samhandling/prinsipp-1-ta-utgangspunkt-i-brukernes-behov/1055
+    documentation: 'Denne viser (grovt) relasjonene mellom nasjonale arkitekturprinsipper
+      og Nasjonal arkitektur hovedkapabiliteter (Nivå 2)
+
+      https://www.digdir.no/digital-samhandling/prinsipp-1-ta-utgangspunkt-i-brukernes-behov/1055'
     properties: {}
     nodes:
       id-eda656d8cf9d4e46bc80318e053b1921:
@@ -6588,7 +6254,25 @@ views:
   id-b9bcc8618287449ab162521aa9352413:
     type: ArchimateDiagramModel
     name: 05-EIF lagmodell
-    documentation: ''
+    documentation: 'EIF lagmodell fra EU, rammeverk for digital samhandling.
+
+      https://www.digdir.no/digital-samhandling/rammeverk-digital-samhandling/2148
+
+
+      Bakgrunnsinformasjon og opprinnelse:
+
+      EU har utviklet European Interoperability Framework (EIF), et felles rammeverk
+      for digital samhandling. Målet er å fremme digital samhandling på tvers av landegrenser
+      og innenfor hvert enkelt land. Norge forpliktet seg til å implementere EIF da
+      vi undertegnet Tallinn-erklæringen i 2017, sammen med EU og andre EFTA-land.
+
+
+      Som et resultat har Norge etablert sitt eget nasjonale rammeverk for interoperabilitet
+      (NIF- National Interoperability Framework), som i dag heter "Rammeverk for digital
+      samhandling". Den første versjonen ble utarbeidet som et Skate-tiltak i 2018.
+
+
+      Nasjonal arkitektur er avledet fra EIF, og inngår i rammeverk for digital samhandling.'
     properties: {}
     nodes:
       id-ad40ba6f30eb470180f457ef91323d84:
@@ -6666,411 +6350,19 @@ views:
         relationship_id: ''
         source_node: id-ad7abf2b74cf45bca40df40724e335a6
         target_node: id-6fceb7f3ba4d40ac92057bc0f21eb433
-  id-3664090f36dc49feb47d246e00fffaae:
-    type: ArchimateDiagramModel
-    name: 06-EIF og relasjon til NA
-    documentation: ''
-    properties: {}
-    nodes:
-      id-6de7ec45041447ddb234d680b8a4e866:
-        type: DiagramObject
-        archimate_element_id: id-8810f83ff9fe44c2a3368cdef932526b
-        parent_node_id: null
-        bounds:
-          x: '660'
-          y: '-528'
-          width: '853'
-          height: '37'
-      id-684847cb5c8a4035a67c8b69d83ce8a5:
-        type: DiagramObject
-        archimate_element_id: id-3fd615c0b19e4762953cd34908523dbc
-        parent_node_id: null
-        bounds:
-          x: '936'
-          y: '-312'
-          width: '192'
-          height: '79'
-      id-9c6cfcc1db4a442db23dee688fbd2131:
-        type: DiagramObject
-        archimate_element_id: id-503ab92854754702ab00164afdbf6f70
-        parent_node_id: null
-        bounds:
-          x: '936'
-          y: '-216'
-          width: '192'
-          height: '96'
-      id-dc02e659c7584ad8a6e46e7e9cef062c:
-        type: DiagramObject
-        archimate_element_id: id-6c59a946ea8e4ad8903fbb1a6ffa9219
-        parent_node_id: null
-        bounds:
-          x: '939'
-          y: '-107'
-          width: '193'
-          height: '92'
-      id-3de611bc9ef0411e99c193d865e02949:
-        type: DiagramObject
-        archimate_element_id: id-e236b66b0d574a2bb97dbd79d7d38d47
-        parent_node_id: null
-        bounds:
-          x: '940'
-          y: '-408'
-          width: '192'
-          height: '85'
-      id-95d2df6aadb54fb29c02915e19c2381a:
-        type: DiagramObject
-        archimate_element_id: id-661cb46063c544be82d804511f5ea9f9
-        parent_node_id: null
-        bounds:
-          x: '1164'
-          y: '-412'
-          width: '181'
-          height: '397'
-      id-cefdb7d7c4ac476abc83c5cfe24e9f07:
-        type: DiagramObject
-        archimate_element_id: id-682d96a51e604ed2a00e1f4824023bab
-        parent_node_id: null
-        bounds:
-          x: '1356'
-          y: '-412'
-          width: '133'
-          height: '35'
-      id-f901ca98b0884a2d9a9f753c341182c9:
-        type: DiagramObject
-        archimate_element_id: id-299fc063873a4f278a1d3c0ac9480467
-        parent_node_id: null
-        bounds:
-          x: '996'
-          y: '-468'
-          width: '120'
-          height: '43'
-      id-981c9c7ee94141339315d51fb65df540:
-        type: DiagramObject
-        archimate_element_id: id-cd3b6a8989a448a2b4dfbf430a41bad4
-        parent_node_id: null
-        bounds:
-          x: '408'
-          y: '-360'
-          width: '193'
-          height: '37'
-      id-3133bd16dadd49989902d4f855af9a61:
-        type: DiagramObject
-        archimate_element_id: id-1be148b57796458993c3f7f5f24815ca
-        parent_node_id: null
-        bounds:
-          x: '355'
-          y: '-312'
-          width: '186'
-          height: '37'
-      id-6d586372f271404ab803a39b6ad20dbe:
-        type: DiagramObject
-        archimate_element_id: id-98df6c2b4df340c7a3a3ad32d99ca37e
-        parent_node_id: null
-        bounds:
-          x: '648'
-          y: '-457'
-          width: '134'
-          height: '37'
-      id-4ac04d8f6cf84189aa31275e300c807f:
-        type: DiagramObject
-        archimate_element_id: id-d7aa97e6319a492d8a1345bcaa8e154a
-        parent_node_id: null
-        bounds:
-          x: '681'
-          y: null
-          width: '190'
-          height: '37'
-      id-945e05ddc288495fa7d76de490acbfbd:
-        type: DiagramObject
-        archimate_element_id: id-ad6f81e892a74590840828b6aabb270d
-        parent_node_id: null
-        bounds:
-          x: '348'
-          y: '-187'
-          width: '177'
-          height: '37'
-      id-41cb75ef32084940b277463702cf6170:
-        type: DiagramObject
-        archimate_element_id: id-896e4c1434604caa891b94bcce964720
-        parent_node_id: null
-        bounds:
-          x: '288'
-          y: '-252'
-          width: '260'
-          height: '37'
-      id-2ccc8531c4bb4add91d7525c8131ba7b:
-        type: DiagramObject
-        archimate_element_id: id-d503cf06faa1417b8acd4b26a5c0741e
-        parent_node_id: null
-        bounds:
-          x: '425'
-          y: '-120'
-          width: '188'
-          height: '37'
-      id-7ecb8d38869a4d04a69736762aadf82e:
-        type: DiagramObject
-        archimate_element_id: id-48c9873ae59341a49c2dca27379fab55
-        parent_node_id: null
-        bounds:
-          x: '530'
-          y: '-52'
-          width: '186'
-          height: '37'
-      id-ce94117f2e0f4a118d827c5ae4c22d18:
-        type: DiagramObject
-        archimate_element_id: id-c3f87c86b19547359c677a333b16f03b
-        parent_node_id: null
-        bounds:
-          x: '1356'
-          y: '-360'
-          width: '133'
-          height: '37'
-      id-947b0c0f2e6a461b880bb5c47e8719fc:
-        type: DiagramObject
-        archimate_element_id: id-c0547226c598467a942dced879d0c18b
-        parent_node_id: null
-        bounds:
-          x: '1356'
-          y: '-312'
-          width: '133'
-          height: '37'
-      id-7e5a6e5fa8c14d15909f40495a0f80f6:
-        type: DiagramObject
-        archimate_element_id: id-e67a4f2983ce40f9823ec34ba460055a
-        parent_node_id: null
-        bounds:
-          x: '564'
-          y: '-408'
-          width: '118'
-          height: '31'
-      id-25852b62d5074e1f907082ae08bd5ff2:
-        type: DiagramObject
-        archimate_element_id: id-ba60560a9ed64b4d87b2fd4fa6b32937
-        parent_node_id: null
-        bounds:
-          x: '236'
-          y: '-528'
-          width: '120'
-          height: '55'
-      id-22c7f277f10c4c2a8da9796f0ce6704c:
-        type: Note
-        archimate_element_id: ''
-        parent_node_id: null
-        bounds:
-          x: '778'
-          y: '-600'
-          width: '618'
-          height: '46'
-    connections:
-      id-18d6bdf098514b8a8efd36e3a58d483e:
-        type: Connection
-        relationship_id: ''
-        source_node: id-95d2df6aadb54fb29c02915e19c2381a
-        target_node: id-684847cb5c8a4035a67c8b69d83ce8a5
-      id-c66f29d48339402888374a0899d31deb:
-        type: Connection
-        relationship_id: ''
-        source_node: id-95d2df6aadb54fb29c02915e19c2381a
-        target_node: id-dc02e659c7584ad8a6e46e7e9cef062c
-      id-9dd66b40eefa4c6ab44bc1e0dcc48cb0:
-        type: Connection
-        relationship_id: ''
-        source_node: id-95d2df6aadb54fb29c02915e19c2381a
-        target_node: id-3de611bc9ef0411e99c193d865e02949
-      id-a82d0a5415cf4f2a8ffb2b9211204ac9:
-        type: Connection
-        relationship_id: ''
-        source_node: id-95d2df6aadb54fb29c02915e19c2381a
-        target_node: id-9c6cfcc1db4a442db23dee688fbd2131
-      id-a6b4bb95b5f94fd48a5b1f5fb7ebe547:
-        type: Connection
-        relationship_id: ''
-        source_node: id-cefdb7d7c4ac476abc83c5cfe24e9f07
-        target_node: id-95d2df6aadb54fb29c02915e19c2381a
-      id-c68a4b1890b34d9c960904dbfd3c8d5e:
-        type: Connection
-        relationship_id: ''
-        source_node: id-f901ca98b0884a2d9a9f753c341182c9
-        target_node: id-3de611bc9ef0411e99c193d865e02949
-      id-dd201f4f79f24e9a85a75fb8f21cb0da:
-        type: Connection
-        relationship_id: ''
-        source_node: id-981c9c7ee94141339315d51fb65df540
-        target_node: id-684847cb5c8a4035a67c8b69d83ce8a5
-      id-91f21d9036d74ed7b6f03e648867b2aa:
-        type: Connection
-        relationship_id: ''
-        source_node: id-981c9c7ee94141339315d51fb65df540
-        target_node: id-dc02e659c7584ad8a6e46e7e9cef062c
-      id-68c765e851964738bb79e8239d2fba4d:
-        type: Connection
-        relationship_id: ''
-        source_node: id-3133bd16dadd49989902d4f855af9a61
-        target_node: id-684847cb5c8a4035a67c8b69d83ce8a5
-      id-68214a70644c4250a4f5c59ab5c15b00:
-        type: Connection
-        relationship_id: ''
-        source_node: id-3133bd16dadd49989902d4f855af9a61
-        target_node: id-dc02e659c7584ad8a6e46e7e9cef062c
-      id-2a74876d939d4e979069e94496c3d28b:
-        type: Connection
-        relationship_id: ''
-        source_node: id-6d586372f271404ab803a39b6ad20dbe
-        target_node: id-3de611bc9ef0411e99c193d865e02949
-      id-460257555cde490fbf82af912883c471:
-        type: Connection
-        relationship_id: ''
-        source_node: id-6d586372f271404ab803a39b6ad20dbe
-        target_node: id-684847cb5c8a4035a67c8b69d83ce8a5
-      id-0ece4651e74247e99692bc60e2fb97a4:
-        type: Connection
-        relationship_id: ''
-        source_node: id-6d586372f271404ab803a39b6ad20dbe
-        target_node: id-9c6cfcc1db4a442db23dee688fbd2131
-      id-6959c36d57d744c6ac2974556e760472:
-        type: Connection
-        relationship_id: ''
-        source_node: id-6d586372f271404ab803a39b6ad20dbe
-        target_node: id-dc02e659c7584ad8a6e46e7e9cef062c
-      id-f0024ee970da49fc81d62438898b9bed:
-        type: Connection
-        relationship_id: ''
-        source_node: id-4ac04d8f6cf84189aa31275e300c807f
-        target_node: id-9c6cfcc1db4a442db23dee688fbd2131
-      id-1dce105ffd8d456dabe5ee6b0b9659bb:
-        type: Connection
-        relationship_id: ''
-        source_node: id-4ac04d8f6cf84189aa31275e300c807f
-        target_node: id-3de611bc9ef0411e99c193d865e02949
-      id-88d690ec6b9046aea4dfbdc640e5bac8:
-        type: Connection
-        relationship_id: ''
-        source_node: id-4ac04d8f6cf84189aa31275e300c807f
-        target_node: id-dc02e659c7584ad8a6e46e7e9cef062c
-      id-d5bae2e268a74618a1571de4c47396a2:
-        type: Connection
-        relationship_id: ''
-        source_node: id-945e05ddc288495fa7d76de490acbfbd
-        target_node: id-dc02e659c7584ad8a6e46e7e9cef062c
-      id-55e85b4f855b4da1ba5071c2d41ac916:
-        type: Connection
-        relationship_id: ''
-        source_node: id-945e05ddc288495fa7d76de490acbfbd
-        target_node: id-3de611bc9ef0411e99c193d865e02949
-      id-7e88a32842c6475c8c2db2d5ba3c207e:
-        type: Connection
-        relationship_id: ''
-        source_node: id-41cb75ef32084940b277463702cf6170
-        target_node: id-9c6cfcc1db4a442db23dee688fbd2131
-      id-05edea7b59634181967989dfc371a185:
-        type: Connection
-        relationship_id: ''
-        source_node: id-41cb75ef32084940b277463702cf6170
-        target_node: id-dc02e659c7584ad8a6e46e7e9cef062c
-      id-88511f1045e54b79a89fa3be2ccfcddd:
-        type: Connection
-        relationship_id: ''
-        source_node: id-2ccc8531c4bb4add91d7525c8131ba7b
-        target_node: id-3de611bc9ef0411e99c193d865e02949
-      id-34bb5d28e35f4fe1b645a20df98945b1:
-        type: Connection
-        relationship_id: ''
-        source_node: id-2ccc8531c4bb4add91d7525c8131ba7b
-        target_node: id-dc02e659c7584ad8a6e46e7e9cef062c
-      id-d2aab76e8a9844c7af06cd88e14309d7:
-        type: Connection
-        relationship_id: ''
-        source_node: id-7ecb8d38869a4d04a69736762aadf82e
-        target_node: id-dc02e659c7584ad8a6e46e7e9cef062c
-      id-40c196385b1f49b9950f316e0dbdfd90:
-        type: Connection
-        relationship_id: ''
-        source_node: id-7ecb8d38869a4d04a69736762aadf82e
-        target_node: id-684847cb5c8a4035a67c8b69d83ce8a5
-      id-2e42edd20b214c0d8b7b450d8c463504:
-        type: Connection
-        relationship_id: ''
-        source_node: id-ce94117f2e0f4a118d827c5ae4c22d18
-        target_node: id-95d2df6aadb54fb29c02915e19c2381a
-      id-6c7c833885af4a878896f63821703db5:
-        type: Connection
-        relationship_id: ''
-        source_node: id-947b0c0f2e6a461b880bb5c47e8719fc
-        target_node: id-95d2df6aadb54fb29c02915e19c2381a
-      id-8cd9498cc18d4f578176e431ec5bae2a:
-        type: Connection
-        relationship_id: ''
-        source_node: id-7e5a6e5fa8c14d15909f40495a0f80f6
-        target_node: id-684847cb5c8a4035a67c8b69d83ce8a5
-      id-ec41bfa0403a43459b91187b0a9d948a:
-        type: Connection
-        relationship_id: ''
-        source_node: id-25852b62d5074e1f907082ae08bd5ff2
-        target_node: id-945e05ddc288495fa7d76de490acbfbd
-      id-8e085e3c26ba4f6690538a5ae5afbb54:
-        type: Connection
-        relationship_id: ''
-        source_node: id-25852b62d5074e1f907082ae08bd5ff2
-        target_node: id-3133bd16dadd49989902d4f855af9a61
-      id-a72248b374eb49f89325dc66cf4ebd32:
-        type: Connection
-        relationship_id: ''
-        source_node: id-25852b62d5074e1f907082ae08bd5ff2
-        target_node: id-ce94117f2e0f4a118d827c5ae4c22d18
-      id-f974be51e39a436e90244c13642694a3:
-        type: Connection
-        relationship_id: ''
-        source_node: id-25852b62d5074e1f907082ae08bd5ff2
-        target_node: id-4ac04d8f6cf84189aa31275e300c807f
-      id-beabc0195a014727817546835d56414a:
-        type: Connection
-        relationship_id: ''
-        source_node: id-25852b62d5074e1f907082ae08bd5ff2
-        target_node: id-f901ca98b0884a2d9a9f753c341182c9
-      id-fac68edf45c0416ca37ac912b00c537c:
-        type: Connection
-        relationship_id: ''
-        source_node: id-25852b62d5074e1f907082ae08bd5ff2
-        target_node: id-7e5a6e5fa8c14d15909f40495a0f80f6
-      id-39ec33b884dc4b009c1bdd0431c5848b:
-        type: Connection
-        relationship_id: ''
-        source_node: id-25852b62d5074e1f907082ae08bd5ff2
-        target_node: id-41cb75ef32084940b277463702cf6170
-      id-78f47db12fd54e1986c06ffd7b0e4e5c:
-        type: Connection
-        relationship_id: ''
-        source_node: id-25852b62d5074e1f907082ae08bd5ff2
-        target_node: id-7ecb8d38869a4d04a69736762aadf82e
-      id-ace159acd04c4a9ba17fde312b72fd88:
-        type: Connection
-        relationship_id: ''
-        source_node: id-25852b62d5074e1f907082ae08bd5ff2
-        target_node: id-981c9c7ee94141339315d51fb65df540
-      id-3f32311b6ec84300a5e5d34bb37161d1:
-        type: Connection
-        relationship_id: ''
-        source_node: id-25852b62d5074e1f907082ae08bd5ff2
-        target_node: id-6d586372f271404ab803a39b6ad20dbe
-      id-5fd68dc2b4d7454f9c1a135188e82201:
-        type: Connection
-        relationship_id: ''
-        source_node: id-25852b62d5074e1f907082ae08bd5ff2
-        target_node: id-cefdb7d7c4ac476abc83c5cfe24e9f07
-      id-050398c41efa456e886610de1bde10f6:
-        type: Connection
-        relationship_id: ''
-        source_node: id-25852b62d5074e1f907082ae08bd5ff2
-        target_node: id-2ccc8531c4bb4add91d7525c8131ba7b
-      id-3271e3cd498149448a5f62a38be69d43:
-        type: Connection
-        relationship_id: ''
-        source_node: id-25852b62d5074e1f907082ae08bd5ff2
-        target_node: id-6de7ec45041447ddb234d680b8a4e866
   id-c7f9551d156048389c4a955bfaa5254c:
     type: ArchimateDiagramModel
     name: 01-Nasjonal arkitektur - Hovedkapabiliteter
-    documentation: ''
+    documentation: 'Denne viser Nivå 1 til Nivå 2 av kapabiliteter i Nasjonal arkitektur:
+
+
+      - **Nivå 1: Overordnet kapabilitet** beskriver den samlede evnen Nasjonal arkitektur
+      skal bidra til i felles økosystem.
+
+      - **Nivå 2: Hovedkapabilitet** beskriver brede, strategiske kapabilitetsområder
+      som strukturerer modellen.
+
+      '
     properties: {}
     nodes:
       id-0e7e71bde9d041cea455d34949f55c93:
@@ -7082,15 +6374,6 @@ views:
           y: '120'
           width: '457'
           height: '397'
-      id-6cb52dc0ab77441b9a2c4bd57630698f:
-        type: DiagramObject
-        archimate_element_id: id-c0547226c598467a942dced879d0c18b
-        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
-        bounds:
-          x: '231'
-          y: '336'
-          width: '186'
-          height: '37'
       id-0fc1bf9be19f43fab6184ae6e9df1073:
         type: DiagramObject
         archimate_element_id: id-1be148b57796458993c3f7f5f24815ca
@@ -7172,15 +6455,6 @@ views:
           y: '192'
           width: '177'
           height: '37'
-      id-c923dc542a474638820475f3e78a0d85:
-        type: DiagramObject
-        archimate_element_id: id-c3f87c86b19547359c677a333b16f03b
-        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
-        bounds:
-          x: '28'
-          y: '336'
-          width: '188'
-          height: '37'
       id-16afd8a2e18142dcbed616fd0c67431c:
         type: DiagramObject
         archimate_element_id: id-682d96a51e604ed2a00e1f4824023bab
@@ -7199,6 +6473,24 @@ views:
           y: '36'
           width: '120'
           height: '55'
+      id-c923dc542a474638820475f3e78a0d85:
+        type: DiagramObject
+        archimate_element_id: id-c3f87c86b19547359c677a333b16f03b
+        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
+        bounds:
+          x: '28'
+          y: '336'
+          width: '188'
+          height: '37'
+      id-6cb52dc0ab77441b9a2c4bd57630698f:
+        type: DiagramObject
+        archimate_element_id: id-c0547226c598467a942dced879d0c18b
+        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
+        bounds:
+          x: '231'
+          y: '336'
+          width: '186'
+          height: '37'
       id-2b04c41bf1a847209356a2d19bf93e6c:
         type: Note
         archimate_element_id: ''
@@ -7269,37 +6561,73 @@ views:
         relationship_id: ''
         source_node: id-0e7e71bde9d041cea455d34949f55c93
         target_node: id-3105c19b44884ca7a3ac3061f9a71e3d
+      id-49ae1cbc74584231bdb359200f0f83b5:
+        type: Connection
+        relationship_id: ''
+        source_node: id-0e7e71bde9d041cea455d34949f55c93
+        target_node: id-6cb52dc0ab77441b9a2c4bd57630698f
   id-b513e2dbd37e447184ee9f969874a681:
     type: ArchimateDiagramModel
-    name: 001-Metamodell kjerne
-    documentation: Viser struktur og kontekst til rammeverksmodellen.
+    name: 001-Metamodell
+    documentation: 'Modellen for Nasjonal arkitektur viser kjernebegrepene i metamodellen
+      for Nasjonal arkitektur og hvordan kapabiliteter, ressurser, tiltak, gap, mål
+      og effektmål henger sammen.
+
+      Den forklarer den grunnleggende strukturen som brukes for å beskrive hva økosystemet
+      må kunne gjøre (kapabiliteter), hvilke ressurser som realiserer kapabilitetene,
+      og hvordan tiltak kan brukes til å lukke gap mellom nåsituasjon og ønsket situasjon.
+
+
+      Nasjonal arkitektur beskriver det generelle og tverrgående nivået i felles økosystem.
+      Den skal ikke beskrive alle detaljer i alle sektorer, virksomheter, fagområder
+      eller europeiske initiativer. I stedet gir den et felles språk, en felles struktur
+      og et felles sett av kapabiliteter og ressurstyper som andre domener kan knytte
+      seg til.
+
+
+      Et domene kan være en sektor, en virksomhet, kommunal sektor, et fagområde,
+      et EU data space eller et annet europeisk område. Domenet kan beskrive egne
+      spesialiseringer, behov, kapabiliteter, ressurser, tiltak og mål, men bør koble
+      disse til relevante generiske kapabiliteter og ressurser i Nasjonal arkitektur.
+      På den måten kan lokale og domenespesifikke arkitekturer utvikles videre uten
+      at Nasjonal arkitektur må modellere alle detaljer.
+
+
+      Relasjonen mellom Nasjonal arkitektur og domener viser derfor både gjenbruk
+      og spesialisering.
+
+      Nasjonal arkitektur gir felles rammer for samhandling og beskriver det generelle,
+      tverrgående og normerende nivåe, mens domenene konkretiserer hvordan rammene
+      realiseres i sin kontekst. Dette gjør det mulig å sammenligne behov, avdekke
+      gap, prioritere tiltak og vurdere modenhet på tvers av domener, samtidig som
+      hvert domene beholder nødvendig handlingsrom.'
     properties: {}
     nodes:
+      id-50564a5708fd40088512d194654c5be8:
+        type: DiagramObject
+        archimate_element_id: id-3c14c3595df64671b23817284cc1ff02
+        parent_node_id: null
+        bounds:
+          x: '636'
+          y: '360'
+          width: '456'
+          height: '421'
       id-9e637bc2c34e433c9c899ee74f73835e:
         type: DiagramObject
         archimate_element_id: id-eb6f01d0d0ef4230b7a5c9c73c3842c5
-        parent_node_id: null
-        bounds:
-          x: '672'
-          y: '324'
-          width: '349'
-          height: '145'
-      id-7fabbfad4f8d43548a8dcec747e85e21:
-        type: DiagramObject
-        archimate_element_id: id-fa68712eb0924092abd996fa6c511065
-        parent_node_id: id-9e637bc2c34e433c9c899ee74f73835e
+        parent_node_id: id-50564a5708fd40088512d194654c5be8
         bounds:
           x: '48'
-          y: '48'
-          width: '264'
-          height: '61'
+          y: '24'
+          width: '349'
+          height: '85'
       id-42c8ee19a2b34f0ea8ef493a3edc7f56:
         type: DiagramObject
         archimate_element_id: id-9860d11ff3fd40a5b541b8f929ed305f
-        parent_node_id: null
+        parent_node_id: id-50564a5708fd40088512d194654c5be8
         bounds:
-          x: '672'
-          y: '516'
+          x: '48'
+          y: '144'
           width: '349'
           height: '265'
       id-99e7f597f2cc4639a9e2dd3d9fb7b895:
@@ -7343,44 +6671,26 @@ views:
         archimate_element_id: ''
         parent_node_id: null
         bounds:
-          x: '538'
-          y: '-24'
-          width: '618'
+          x: '372'
+          y: '60'
+          width: '1092'
           height: '46'
       id-35fdb9b62dd7437c8fba6c90e9b7fb6c:
         type: DiagramObject
         archimate_element_id: id-d7a27706ca3240468e16d88afbcd4a3e
         parent_node_id: null
         bounds:
-          x: '492'
+          x: '420'
           y: '432'
-          width: '120'
-          height: '67'
-      id-fe9034234f6040fd94ce500efe9c6eb6:
-        type: DiagramObject
-        archimate_element_id: id-23598cee556747ef80cab10dbad84e65
-        parent_node_id: null
-        bounds:
-          x: '1062'
-          y: '324'
-          width: '222'
-          height: '97'
-      id-fe0346e6f2f74a0e9502d4e9a1353cc3:
-        type: DiagramObject
-        archimate_element_id: id-4157e35b43184dd7bbcb4405e7edea46
-        parent_node_id: null
-        bounds:
-          x: '1068'
-          y: '516'
-          width: '210'
-          height: '121'
+          width: '192'
+          height: '37'
       id-b8c8de25c41643c39930d2080c90e2e3:
         type: DiagramObject
         archimate_element_id: id-66f38bffcd9f48d796a041a9a292d6ed
         parent_node_id: null
         bounds:
-          x: '348'
-          y: '438'
+          x: '456'
+          y: '528'
           width: '120'
           height: '55'
       id-f0f2ef114f37409ca6ef5299614be842:
@@ -7388,8 +6698,8 @@ views:
         archimate_element_id: id-ac4c391b696f493da64833de20f7df9c
         parent_node_id: null
         bounds:
-          x: '288'
-          y: '504'
+          x: '372'
+          y: '600'
           width: '120'
           height: '55'
       id-bdad134aceda47c1a2c7f0069067c506:
@@ -7397,17 +6707,8 @@ views:
         archimate_element_id: id-0d355bfbd31e4a188766733761ede0ba
         parent_node_id: null
         bounds:
-          x: '419'
-          y: '504'
-          width: '120'
-          height: '55'
-      id-6c7b3649011849fa9624025c5e9b04c6:
-        type: DiagramObject
-        archimate_element_id: id-6cb4bed065c44e1b8821c60d4515ef28
-        parent_node_id: null
-        bounds:
-          x: '576'
-          y: '216'
+          x: '504'
+          y: '600'
           width: '120'
           height: '55'
       id-d0529378105044e1b81b2f087ccac006:
@@ -7415,8 +6716,8 @@ views:
         archimate_element_id: id-534850df1c7b48e2a2e7cc966ece233f
         parent_node_id: null
         bounds:
-          x: '744'
-          y: '36'
+          x: '792'
+          y: '126'
           width: '120'
           height: '55'
       id-7f03797d1e674f24855925ccb2839c5f:
@@ -7424,16 +6725,75 @@ views:
         archimate_element_id: id-0cf363c3f2ff4fa3a34bda7a610e6f70
         parent_node_id: null
         bounds:
-          x: '744'
-          y: '120'
+          x: '792'
+          y: '204'
           width: '120'
           height: '55'
+      id-6a8c57b3d3b64d9dafc1b73bb452d343:
+        type: DiagramObject
+        archimate_element_id: id-374db9b5a8cf46ddb5e7f4e6672460d6
+        parent_node_id: null
+        bounds:
+          x: '1200'
+          y: '360'
+          width: '265'
+          height: '421'
+      id-fe9034234f6040fd94ce500efe9c6eb6:
+        type: DiagramObject
+        archimate_element_id: id-23598cee556747ef80cab10dbad84e65
+        parent_node_id: id-6a8c57b3d3b64d9dafc1b73bb452d343
+        bounds:
+          x: '24'
+          y: '35'
+          width: '222'
+          height: '78'
+      id-fe0346e6f2f74a0e9502d4e9a1353cc3:
+        type: DiagramObject
+        archimate_element_id: id-4157e35b43184dd7bbcb4405e7edea46
+        parent_node_id: id-6a8c57b3d3b64d9dafc1b73bb452d343
+        bounds:
+          x: '36'
+          y: '220'
+          width: '210'
+          height: '121'
+      id-56304407cecd48f8a67ad8c8d5ca583c:
+        type: DiagramObject
+        archimate_element_id: id-ed6c7d640e81477780c82285ae079706
+        parent_node_id: null
+        bounds:
+          x: '1008'
+          y: '168'
+          width: '120'
+          height: '55'
+      id-1df279d8c7a54331b573b8fc645fc346:
+        type: DiagramObject
+        archimate_element_id: id-04fef6c083b449dba91c876ae2e3715f
+        parent_node_id: null
+        bounds:
+          x: '456'
+          y: '384'
+          width: '120'
+          height: '31'
+      id-282eb12e4847411089513c6f8fd17399:
+        type: DiagramObject
+        archimate_element_id: id-8810f83ff9fe44c2a3368cdef932526b
+        parent_node_id: null
+        bounds:
+          x: '372'
+          y: '123'
+          width: '294'
+          height: '61'
     connections:
-      id-353075461c074636b78bad6263261f16:
+      id-01ee78c3116e4224b7f6e2eedb3f8c4e:
         type: Connection
         relationship_id: ''
-        source_node: id-9e637bc2c34e433c9c899ee74f73835e
-        target_node: id-7fabbfad4f8d43548a8dcec747e85e21
+        source_node: id-50564a5708fd40088512d194654c5be8
+        target_node: id-9e637bc2c34e433c9c899ee74f73835e
+      id-1ccf00b87ce54bcfb4577deec21e4fd0:
+        type: Connection
+        relationship_id: ''
+        source_node: id-50564a5708fd40088512d194654c5be8
+        target_node: id-42c8ee19a2b34f0ea8ef493a3edc7f56
       id-5bf0f2e37e7b4761a7eb22cd4c42c6ee:
         type: Connection
         relationship_id: ''
@@ -7444,11 +6804,11 @@ views:
         relationship_id: ''
         source_node: id-9e637bc2c34e433c9c899ee74f73835e
         target_node: id-7f03797d1e674f24855925ccb2839c5f
-      id-288e1f15073c4ad7860e832c8e2af149:
+      id-43ccb7466b4d416e9282f2f3bdb96208:
         type: Connection
         relationship_id: ''
         source_node: id-9e637bc2c34e433c9c899ee74f73835e
-        target_node: id-7f03797d1e674f24855925ccb2839c5f
+        target_node: id-1df279d8c7a54331b573b8fc645fc346
       id-e44e51886e3f4ce190e909c1ada3717e:
         type: Connection
         relationship_id: ''
@@ -7484,6 +6844,41 @@ views:
         relationship_id: ''
         source_node: id-35fdb9b62dd7437c8fba6c90e9b7fb6c
         target_node: id-b8c8de25c41643c39930d2080c90e2e3
+      id-51c661a7746f434a9a91d12f5424d38b:
+        type: Connection
+        relationship_id: ''
+        source_node: id-f0f2ef114f37409ca6ef5299614be842
+        target_node: id-b8c8de25c41643c39930d2080c90e2e3
+      id-7d6e5d5711f24fe3b975510722e39e94:
+        type: Connection
+        relationship_id: ''
+        source_node: id-bdad134aceda47c1a2c7f0069067c506
+        target_node: id-b8c8de25c41643c39930d2080c90e2e3
+      id-a99b458c5fb64896868ce0d9f7d40637:
+        type: Connection
+        relationship_id: ''
+        source_node: id-7f03797d1e674f24855925ccb2839c5f
+        target_node: id-d0529378105044e1b81b2f087ccac006
+      id-256e2b5538864860b9a7dbfe00a39ef4:
+        type: Connection
+        relationship_id: ''
+        source_node: id-7f03797d1e674f24855925ccb2839c5f
+        target_node: id-d0529378105044e1b81b2f087ccac006
+      id-30351eaf0e6745c1923e671d1dfc95b7:
+        type: Connection
+        relationship_id: ''
+        source_node: id-6a8c57b3d3b64d9dafc1b73bb452d343
+        target_node: id-fe9034234f6040fd94ce500efe9c6eb6
+      id-9720cb9e02e94201a5b875422f098433:
+        type: Connection
+        relationship_id: ''
+        source_node: id-6a8c57b3d3b64d9dafc1b73bb452d343
+        target_node: id-fe0346e6f2f74a0e9502d4e9a1353cc3
+      id-b807f3de0efe42898f3294b2707edac0:
+        type: Connection
+        relationship_id: ''
+        source_node: id-6a8c57b3d3b64d9dafc1b73bb452d343
+        target_node: id-50564a5708fd40088512d194654c5be8
       id-cef2bda16419413887491a5def23c72a:
         type: Connection
         relationship_id: ''
@@ -7499,33 +6894,23 @@ views:
         relationship_id: ''
         source_node: id-fe0346e6f2f74a0e9502d4e9a1353cc3
         target_node: id-fe9034234f6040fd94ce500efe9c6eb6
-      id-51c661a7746f434a9a91d12f5424d38b:
+      id-0c9375e41b4343c28ddfec6aa32f94fc:
         type: Connection
         relationship_id: ''
-        source_node: id-f0f2ef114f37409ca6ef5299614be842
-        target_node: id-b8c8de25c41643c39930d2080c90e2e3
-      id-7d6e5d5711f24fe3b975510722e39e94:
-        type: Connection
-        relationship_id: ''
-        source_node: id-bdad134aceda47c1a2c7f0069067c506
-        target_node: id-b8c8de25c41643c39930d2080c90e2e3
-      id-0322024a942048ecbc86a01ca1b3790a:
-        type: Connection
-        relationship_id: ''
-        source_node: id-6c7b3649011849fa9624025c5e9b04c6
+        source_node: id-56304407cecd48f8a67ad8c8d5ca583c
         target_node: id-9e637bc2c34e433c9c899ee74f73835e
-      id-3efc9fc0b77d417d9e8975190fe8740e:
+      id-702f220b08b64006ac2f05f36e3f8e50:
         type: Connection
         relationship_id: ''
-        source_node: id-6c7b3649011849fa9624025c5e9b04c6
+        source_node: id-56304407cecd48f8a67ad8c8d5ca583c
         target_node: id-7f03797d1e674f24855925ccb2839c5f
-      id-a99b458c5fb64896868ce0d9f7d40637:
+      id-bb479240a65848d4b10ba36d870f7050:
         type: Connection
         relationship_id: ''
-        source_node: id-7f03797d1e674f24855925ccb2839c5f
-        target_node: id-d0529378105044e1b81b2f087ccac006
-      id-256e2b5538864860b9a7dbfe00a39ef4:
+        source_node: id-1df279d8c7a54331b573b8fc645fc346
+        target_node: id-282eb12e4847411089513c6f8fd17399
+      id-b2d71b1f4f074c308c7dbb3d5015587a:
         type: Connection
         relationship_id: ''
-        source_node: id-7f03797d1e674f24855925ccb2839c5f
-        target_node: id-d0529378105044e1b81b2f087ccac006
+        source_node: id-1df279d8c7a54331b573b8fc645fc346
+        target_node: id-282eb12e4847411089513c6f8fd17399
