@@ -4,3 +4,6 @@ Det er et pågående arbeid i tiltaket å samle inn og publisere oversikt over f
 Foreløpig er dette lagt ut på følgende side (prototype):
 
 - [Oversikt over felles ressurser](https://suphiro-arch.github.io/NA-kunnskap)
+
+
+<small>Sist oppdatert: 3. juli 2026</small>

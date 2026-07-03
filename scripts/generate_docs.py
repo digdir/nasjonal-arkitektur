@@ -191,6 +191,17 @@ def generate_markdown(yaml_file, docs_dir):
     except FileNotFoundError:
         pass
 
+    # Legg til "Sist oppdatert" nederst i alle genererte markdown-filer
+    import datetime
+    months = ["januar", "februar", "mars", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "desember"]
+    now = datetime.datetime.now()
+    date_str = f"{now.day}. {months[now.month - 1]} {now.year}"
+    footer = f"\n\n<small>Sist oppdatert: {date_str}</small>\n"
+    
+    for md_file in glob.glob(os.path.join(docs_dir, '*.md')):
+        with open(md_file, 'a', encoding='utf-8') as f:
+            f.write(footer)
+
     print(f"Generated {len(view_files)} view documents with HTML-exported PNGs in {docs_dir}")
 
 if __name__ == '__main__':

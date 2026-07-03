@@ -67,3 +67,6 @@
   - **Veiledning** - *Evne til at veiledninger for digital samhandling utarbeides og benyttes i felles økosystem.*
     - **Anvendelse av veiledning** - *Evne til tolke og benytte veiledere i prosjekter og tiltak.*
     - **Utvikling og formidling av veiledning** - *Evne til å utarbeide, kvalitetssikre og tilgjengeliggjøre veiledning.*
+
+
+<small>Sist oppdatert: 3. juli 2026</small>

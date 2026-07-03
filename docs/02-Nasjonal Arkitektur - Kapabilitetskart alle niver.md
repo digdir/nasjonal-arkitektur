@@ -80,3 +80,6 @@ Nasjonal Arkitektur-modellen er tverrgående og abstrakt – den skal passe for 
   - **Juridisk samhandling** - *Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.*
     - **Regelverksutvikling** - *Evne til å foreslå og koordinere endringer i regelverket for å tilpasse det til teknologisk utvikling og nye behov.*
     - **Regelverkstolkning** - *Evne til å tilby felles, autoritative tolkninger av relevant regelverk.*
+
+
+<small>Sist oppdatert: 3. juli 2026</small>

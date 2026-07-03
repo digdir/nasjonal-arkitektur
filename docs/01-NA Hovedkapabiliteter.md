@@ -18,3 +18,6 @@
   - **Standardisering** - *Evne til å identifisere, vedta, forvalte og fremme bruk av omforente standarder og spesifikasjoner som sikrer interoperabilitet og gjenbruk på tvers av sektorer og landegrenser.*
   - **Strategisk styring** - *Evnen til å sette retning for nasjonal arkitektur og realisere strategiske mål.*
   - **Juridisk samhandling** - *Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.*
+
+
+<small>Sist oppdatert: 3. juli 2026</small>

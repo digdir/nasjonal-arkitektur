@@ -88,3 +88,6 @@ Når strukturen er etablert og vi ser at informasjonen flyter godt, modner vi mo
 * **Gjenbruk av standardiserte ontologier**: Siden ArchiMate er en internasjonal standard, vil vi oppdatere vår `@context` til å peke på eksisterende, publiserte RDF-vokabularer (for eksempel fra The Open Group). Dermed forstår systemer over hele verden våre basisbegreper (som *Business Capability* eller *Serving Relationship*).
 * **Definere lokale utvidelser**: Egenskaper og attributter som er unike for vårt domene (for eksempel særnorske lovhjemler, sikkerhetsnivåer eller spesifikke tags), definerer vi i en egen, formell ontologi som utvider standarden.
 * **Sømløs systemintegrasjon**: Med en formell ontologi på plass vil systemet vårt automatisk og maskinelt kunne utveksle data med andre nasjonale fellesløsninger, referansearkitekturer og kataloger. Selve datafilene trenger minimal endring; det er hovedsakelig `@context`-definisjonen i toppen av filene som oppgraderes.
+
+
+<small>Sist oppdatert: 3. juli 2026</small>

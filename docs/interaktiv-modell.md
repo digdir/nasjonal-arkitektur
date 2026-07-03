@@ -23,3 +23,6 @@ hide:
 </style>
 
 <iframe class="archi-report" src="../archimate-report/index.html"></iframe>
+
+
+<small>Sist oppdatert: 3. juli 2026</small>

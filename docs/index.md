@@ -82,3 +82,6 @@ Dette er den "viktigste" delen av modellen, sammen med oversikt og relasjon til 
 **Til GitHub**: [Nasjonal arkitektur på GitHub](https://github.com/digdir/nasjonal-arkitektur)
 
 
+
+
+<small>Sist oppdatert: 3. juli 2026</small>

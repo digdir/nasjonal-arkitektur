@@ -370,3 +370,6 @@ Hindringer: Hva stopper eller begrenser oss?
 
 ---
 
+
+
+<small>Sist oppdatert: 3. juli 2026</small>
