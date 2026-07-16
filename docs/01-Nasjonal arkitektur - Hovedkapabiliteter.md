@@ -30,4 +30,4 @@ Denne viser Nivå 1 til Nivå 2 av kapabiliteter i Nasjonal arkitektur:
   - **Veiledning** - *Evne til å sikre at veiledninger for digital samhandling utarbeides, formidles og benyttes.*
 
 
-<small>Sist oppdatert: 3. juli 2026</small>
+<small>Sist oppdatert: 16. juli 2026</small>

@@ -32,17 +32,17 @@ Styring og forvaltning av integrerbare og sammenhengende offentlige tjenester er
 
 ---
 
-### Teknisk samhandlingsevne
-**Type:** Grouping
-
-Teknisk samhandlingsevne sikrer at ulike systemer kan integreres. Dette krever teknisk standardisering, noe som i dag blant annet blir understøttet av forskrift om IT-standarder i offentlig forvaltning. Området dekker forhold knyttet til applikasjon, data, teknologi og sikkerhet.
-
----
-
 ### Juridisk samhandlingsevne
 **Type:** Grouping
 
 Juridisk samhandling skal sikre at organisasjoner som arbeider under ulik lovgivning kan samhandle. For at organisasjoner på tvers i forvaltningen kan utvikle og bruke like tjenester og funksjonalitet må det rettslige grunnlaget for samhandling mellom aktørene være på plass.
+
+---
+
+### Teknisk samhandlingsevne
+**Type:** Grouping
+
+Teknisk samhandlingsevne sikrer at ulike systemer kan integreres. Dette krever teknisk standardisering, noe som i dag blant annet blir understøttet av forskrift om IT-standarder i offentlig forvaltning. Området dekker forhold knyttet til applikasjon, data, teknologi og sikkerhet.
 
 ---
 
@@ -55,4 +55,4 @@ Semantisk samhandlingsevne har å gjøre med betydningen av dataelementer, relas
 
 
 
-<small>Sist oppdatert: 3. juli 2026</small>
+<small>Sist oppdatert: 16. juli 2026</small>

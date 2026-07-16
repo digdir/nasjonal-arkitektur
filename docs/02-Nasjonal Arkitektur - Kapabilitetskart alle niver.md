@@ -82,4 +82,4 @@ Nasjonal Arkitektur-modellen er tverrgående og abstrakt – den skal passe for 
     - **Regelverkstolkning** - *Evne til å tilby felles, autoritative tolkninger av relevant regelverk.*
 
 
-<small>Sist oppdatert: 3. juli 2026</small>
+<small>Sist oppdatert: 16. juli 2026</small>

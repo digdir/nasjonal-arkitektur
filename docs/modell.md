@@ -60,4 +60,4 @@ EIF lagmodell fra EU, rammeverk for digital samhandling.
 
 
 
-<small>Sist oppdatert: 3. juli 2026</small>
+<small>Sist oppdatert: 16. juli 2026</small>

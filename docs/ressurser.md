@@ -6,4 +6,4 @@ Foreløpig er dette lagt ut på følgende side (prototype):
 - [Oversikt over felles ressurser](https://suphiro-arch.github.io/NA-kunnskap)
 
 
-<small>Sist oppdatert: 3. juli 2026</small>
+<small>Sist oppdatert: 16. juli 2026</small>
