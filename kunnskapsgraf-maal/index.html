@@ -1,0 +1,929 @@
+
+<!doctype html>
+<html lang="nb" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Dokumentasjon generert fra ArchiMate-modell">
+      
+      
+      
+      
+        <link rel="prev" href="../interaktiv-modell/">
+      
+      
+        <link rel="next" href="../ressurser/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Nasjonal arkitektur som Kunnskapsgraf - Nasjonal arkitektur for et felles digitalt økosystem</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-hvorfor-beholde-archimate-som-master" class="md-skip">
+          Gå til innhold
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Nasjonal arkitektur for et felles digitalt økosystem" class="md-header__button md-logo" aria-label="Nasjonal arkitektur for et felles digitalt økosystem" data-md-component="logo">
+      
+  <img src="../images/digdir_logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nasjonal arkitektur for et felles digitalt økosystem
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Nasjonal arkitektur som Kunnskapsgraf
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Søk" placeholder="Søk" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Søk">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Nullstill" aria-label="Nullstill" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Starter søk
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasjon" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Nasjonal arkitektur for et felles digitalt økosystem" class="md-nav__button md-logo" aria-label="Nasjonal arkitektur for et felles digitalt økosystem" data-md-component="logo">
+      
+  <img src="../images/digdir_logo.svg" alt="logo">
+
+    </a>
+    Nasjonal arkitektur for et felles digitalt økosystem
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Innledning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dokumentasjon av modell for Nasjonal arkitektur
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dokumentasjon av modell for Nasjonal arkitektur
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Innledning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interaktiv-modell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interaktiv modell i Archi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dypdykk og konsepter
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dypdykk og konsepter
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nasjonal arkitektur som Kunnskapsgraf
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nasjonal arkitektur som Kunnskapsgraf
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Innhold på denne siden">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innhold på denne siden
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-hvorfor-beholde-archimate-som-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Hvorfor beholde ArchiMate som "master"?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-overgangen-fra-modell-til-maskinlesbar-graf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Overgangen fra modell til maskinlesbar graf
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Overgangen fra modell til maskinlesbar graf">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sammenhengen-mellom-json-ld-og-yaml-ld" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sammenhengen mellom JSON-LD og YAML-LD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hvorfor-benytte-yamljson-ld" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hvorfor benytte YAML/JSON-LD?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-tilrettelegging-for-fremtidens-kunstige-intelligens-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Tilrettelegging for fremtidens Kunstige Intelligens (KI)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oppsummering-av-dataflyt-for-fremtiden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Oppsummering av dataflyt for fremtiden
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#representasjon-av-archimate-modeller-i-jsonyaml-ld" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Representasjon av ArchiMate-modeller i JSON/YAML-LD
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Representasjon av ArchiMate-modeller i JSON/YAML-LD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hvorfor-jsonyaml-ld" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hvorfor JSON/YAML-LD?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utfordringen-med-relasjoner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utfordringen med relasjoner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-1-kortsiktig-plan-pragmatisk-tilnrming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 1: Kortsiktig plan (Pragmatisk tilnærming)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-2-langsiktig-plan-semantisk-interoperabilitet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 2: Langsiktig plan (Semantisk interoperabilitet)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ressurser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oversikt over ressurser i felles økosystem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Innhold på denne siden">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innhold på denne siden
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-hvorfor-beholde-archimate-som-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Hvorfor beholde ArchiMate som "master"?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-overgangen-fra-modell-til-maskinlesbar-graf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Overgangen fra modell til maskinlesbar graf
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Overgangen fra modell til maskinlesbar graf">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sammenhengen-mellom-json-ld-og-yaml-ld" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sammenhengen mellom JSON-LD og YAML-LD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hvorfor-benytte-yamljson-ld" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hvorfor benytte YAML/JSON-LD?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-tilrettelegging-for-fremtidens-kunstige-intelligens-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Tilrettelegging for fremtidens Kunstige Intelligens (KI)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oppsummering-av-dataflyt-for-fremtiden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Oppsummering av dataflyt for fremtiden
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#representasjon-av-archimate-modeller-i-jsonyaml-ld" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Representasjon av ArchiMate-modeller i JSON/YAML-LD
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Representasjon av ArchiMate-modeller i JSON/YAML-LD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hvorfor-jsonyaml-ld" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hvorfor JSON/YAML-LD?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utfordringen-med-relasjoner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utfordringen med relasjoner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-1-kortsiktig-plan-pragmatisk-tilnrming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 1: Kortsiktig plan (Pragmatisk tilnærming)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-2-langsiktig-plan-semantisk-interoperabilitet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 2: Langsiktig plan (Semantisk interoperabilitet)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="nasjonal-arkitektur-som-en-kunnskapsgraf">Nasjonal arkitektur som en kunnskapsgraf</h1>
+<p>For at Nasjonal arkitektur skal være et levende, maskinlesbart og strategisk verktøy, er målet å etablere den som en <strong>Kunnskapsgraf (Knowledge Graph)</strong>. En kunnskapsgraf gjør arkitekturen til mer enn bare statiske dokumenter eller flate lister; den skaper et nettverk av data hvor sammenhenger (for eksempel mellom en strategisk kapabilitet, et felles API og et underliggende datasett) er formelt definert og maskinelt sporbare.</p>
+<p>Dette dokumentet beskriver det strategiske grunnlaget for hvordan vi skal koble den menneskesentrerte arkitekturmodelleringen sammen med en fremtidsrettet, maskinlesbar kunnskapsgraf ved hjelp av ArchiMate og YAML-LD/JSON-LD.</p>
+<hr />
+<h2 id="1-hvorfor-beholde-archimate-som-master">1. Hvorfor beholde ArchiMate som "master"?</h2>
+<p>Selv om vi bygger en avansert datadrevet kunnskapsgraf for konsum og KI-analyse, er det en stor fordel å opprettholde selve <strong>ArchiMate-modellen som master</strong>.</p>
+<ul>
+<li><strong>Menneskelig samhandling og visuell modellering:</strong> Virksomhetsarkitektur (EA) krever dype diskusjoner, planlegging og konsensus blant arkitekter, ledere og domeneeksperter. ArchiMate er den internasjonale de facto-standarden for dette, og verktøyene (f.eks. Archi) gir nødvendige visuelle "views" for å forstå komplekse sammenhenger. Det er urealistisk å be mennesker modellere komplekse grafstrukturer direkte i kode.</li>
+<li><strong>Kvalitetssikret Single Source of Truth:</strong> Ved å la ArchiMate-filen være kilden til sannhet, sikrer vi en stram og validert struktur. Modellen fungerer som det autoritative utgangspunktet før informasjonen berikes og tilgjengeliggjøres.</li>
+<li><strong>Skille mellom "produksjon" og "konsum":</strong> Arkitektene produserer og forvalter modellen i sitt naturlige domenespråk (ArchiMate). Deretter brukes automatiserte pipelines til å konvertere denne modellen over til et distribusjonsformat (YAML-LD/JSON-LD) som er mer tilrettelagt for maskinkonsum og kunstig intelligens.</li>
+</ul>
+<hr />
+<h2 id="2-overgangen-fra-modell-til-maskinlesbar-graf">2. Overgangen fra modell til maskinlesbar graf</h2>
+<p>For å få dataene ut av ArchiMate (XML) og inn i en kunnskapsgraf eller gi dem til KI-agenter, trenger vi et dataformat som brobygger mellom menneskelig lesbarhet og maskinell semantikk. Vi ønsker å utforske og teste lenkede data til dette. RDF er egnet til dette med en rekke ulike muligheter for serialisering, f.eks. Json-ld (W3C Recommendation), Yaml-ld (W3C Working Draft), Turtle (W3C Recommendation).</p>
+<h3 id="sammenhengen-mellom-json-ld-og-yaml-ld">Sammenhengen mellom JSON-LD og YAML-LD</h3>
+<p>JSON-LD (JavaScript Object Notation for Linked Data) er en W3C-standard for å bygge strukturerte data og kunnskapsgrafer på weben. Det lar oss utvide vanlig JSON med en <code>@context</code> (som definerer hva ordene betyr) og <code>@id</code> (som gir elementene globale unike lenker). Alt som er JSON-LD kan konverteres direkte til RDF (grunnlaget for grafdatabaser og semantisk web).</p>
+<p>YAML-LD er nøyaktig det samme som JSON-LD, men skrevet i <strong>YAML-syntaks</strong>. Konseptuelt er de identiske og kan konverteres sømløst til hverandre, men de har ulike bruksområder i arbeidsflyten.</p>
+<h3 id="hvorfor-benytte-yamljson-ld">Hvorfor benytte YAML/JSON-LD?</h3>
+<p>Fordelene med å bruke disse formatene ut av ArchiMate-pipelinen er flere:</p>
+<ol>
+<li><strong>Menneskelig lesbarhet og versjonskontroll:</strong> Filene er lette å lese for mennesker. Det gjør det også mye enklere å spore endringer i Git (diffs) sammenlignet med andre formater. YAML-LD har ingen parenteser eller anførselstegn som støyer.</li>
+<li><strong>Eksplisitt formell semantikk:</strong> I motsetning til standard YAML eller JSON, hvor <code>type: Capability</code> bare er tekst, vil YAML/JSON-LD knytte ordet "Capability" til en formell, global ArchiMate-ontologi (via <code>@context</code>). Dette fjerner all tvil for maskiner om hva dataene representerer.</li>
+<li><strong>Ekte grafer ("Linked Data"):</strong> Relasjoner mellom objekter (f.eks. at Tjeneste A realiserer Kapabilitet B) lagres som graflenker (edges) i stedet for bare tilfeldige tekst-IDer. Modellen slutter å være et isolert dokument, og blir en del av en utvidbar kunnskapsgraf.</li>
+<li><strong>Sammenkobling med andre nasjonale kataloger:</strong> Ved å bruke Linked Data (YAML/JSON-LD) kan Nasjonal arkitektur enkelt lenkes direkte til eksterne grafer, for eksempel Felles Datakatalog (DCAT-AP-NO) eller nasjonale begrepskataloger (SKOS).</li>
+</ol>
+<hr />
+<h2 id="3-tilrettelegging-for-fremtidens-kunstige-intelligens-ki">3. Tilrettelegging for fremtidens Kunstige Intelligens (KI)</h2>
+<p>Valget av en Kunnskapsgraf og YAML/JSON-LD som representasjon av ArchiMate-modellen legger fundamentet for å bruke avansert KI i arkitekturarbeidet:</p>
+<ul>
+<li><strong>Sikker og deterministisk AI-analyse (kunnskapsanalyse og sammenhenger):</strong> Rene språkmodeller (LLMs) kan "hallusinere" hvis de må gjette seg frem til relasjoner basert på vanlig tekst. Hvis arkitekturen eksisterer som en JSON-LD/YAML-LD-drevet kunnskapsgraf, kan KI-en (gjennom såkalt <em>Graph RAG</em> - Retrieval-Augmented Generation) kjøre presise, strukturerte spørringer (som SPARQL) mot grafen.</li>
+<li><strong>Besvarelse av komplekse spørsmål:</strong> KI-systemer vil med 100 % nøyaktighet kunne besvare spørsmål som: <em>"Hvilke underliggende databaser og tjenester må moderniseres dersom vi ønsker å styrke den strategiske kapabiliteten X, og hvilke aktører påvirkes?"</em></li>
+<li><strong>Kompakt for LLM-prompts:</strong> Om KI-en skal lese rådataene direkte (utenom en grafdatabase), er YAML/JSON-LD ideelt. Den kompakte strukturen sparer verdifulle "tokens" (spesielt YAML-LD), mens den påklistrede <code>@context</code>-semantikken sikrer at språkmodellen har den nøyaktige meningsbærende konteksten den trenger for å unngå feiltolkninger.</li>
+</ul>
+<figure>
+  <img src="../images/KI-agentisk.png" alt="Bruk av KI" />
+  <br><br>
+  <img src="../images/Graf-eks.png" alt="Eksempel på Graf" />
+  <figcaption>Bruk av KI - Datadrevet kunnskap på tvers: Gjør arkitekturen umiddelbart operativ for ulike brukere og ulike behov</figcaption>
+</figure>
+
+<h2 id="oppsummering-av-dataflyt-for-fremtiden">Oppsummering av dataflyt for fremtiden</h2>
+<ol>
+<li><strong>Modellering (Master):</strong> Arkitekter jobber i ArchiMate.</li>
+<li><strong>Eksport (Git-pipeline):</strong> Script trekker ut dataene og lagrer dem som <strong>YAML/JSON-LD</strong>.</li>
+<li><strong>Konsum &amp; Distribusjon:</strong> YAML/JSON-LD (kan) lastes inn i en felles grafdatabase.</li>
+<li><strong>Bruk:</strong> Applikasjoner, KI-agenter (Graph RAG), og utviklere kan spørre grafen for sanntids, semantisk korrekt innsikt i Nasjonal arkitektur.</li>
+</ol>
+<h2 id="representasjon-av-archimate-modeller-i-jsonyaml-ld">Representasjon av ArchiMate-modeller i JSON/YAML-LD</h2>
+<p>Dette dokumentet oppsummerer vår tilnærming for å hente ut, representere og analysere innholdet fra våre ArchiMate-modeller. Målet er å gå vekk fra den komplekse XML-strukturen og over til maskinlesbar, semantisk data ved hjelp av <strong>JSON/YAML-LD</strong> (Linked Data).</p>
+<h3 id="hvorfor-jsonyaml-ld">Hvorfor JSON/YAML-LD?</h3>
+<p>Tradisjonell eksport til vanlig JSON eller YAML fungerer godt for enkle uttrekk. Imidlertid gir JSON/YAML-LD oss muligheten til å representere modellen som en graf (basert på RDF-prinsipper), noe som kobler dataene våre til det semantiske nettet. Dette gjør informasjonen langt mer kraftfull for både intern analyse, maskinell tolkning (inkludert KI) og fremtidig datadeling (for eksempel mot Felles Datakatalog).</p>
+<h3 id="utfordringen-med-relasjoner">Utfordringen med relasjoner</h3>
+<p>En utbredt misforståelse er at RDF-baserte formater er dårlige til å håndtere de komplekse relasjonene vi finner i ArchiMate. Dette stemmer ikke. Grafmodeller er skreddersydd for komplekse relasjoner.</p>
+<p>I ArchiMate er relasjoner mer enn bare en usynlig strek mellom to bokser; de har ofte egne navn, dokumentasjon og egenskaper. For å ivareta dette i JSON/YAML-LD modelleres relasjonene som egne, selvstendige objekter (noder) med en egen unik ID (<code>@id</code>). På denne måten bevares absolutt alt innhold og all struktur – inkludert hierarki og dokumentasjon på selve relasjonen – på en ryddig måte.</p>
+<h3 id="fase-1-kortsiktig-plan-pragmatisk-tilnrming">Fase 1: Kortsiktig plan (Pragmatisk tilnærming)</h3>
+<p>På kort sikt er målet å tilgjengeliggjøre dataene for lokal analyse, scripts og KI-verktøy.</p>
+<ul>
+<li><strong>Enkel og lokal <code>@context</code></strong>: Vi starter med å bygge JSON/YAML-LD-filer der vokabularet (<code>@context</code>) er relativt enkelt. Vi mapper nøkkelordene våre til en midlertidig og lokal adresse (URI), i stedet for å bruke tid på å bygge en feilfri, globalt anerkjent ontologi fra dag én.</li>
+<li><strong>Full tolkningsevne</strong>: Selv med en lokal og midlertidig <code>@context</code>, vil KI-assistenter og lokale skript fungere optimalt. Strukturen og grafen i JSON/YAML-LD-filen er konsekvent. Modeller og KI vil enkelt kunne traversere hierarkier, se sammenhenger mellom kapabiliteter og tjenester, og trekke ut tilhørende dokumentasjon.</li>
+<li><strong>Verdi fra dag én</strong>: Vi kan umiddelbart begynne å gjøre tekstanalyse, søk og kvalitetssikring av innholdet uavhengig av Archi-verktøyet.</li>
+</ul>
+<h3 id="fase-2-langsiktig-plan-semantisk-interoperabilitet">Fase 2: Langsiktig plan (Semantisk interoperabilitet)</h3>
+<p>Når strukturen er etablert og vi ser at informasjonen flyter godt, modner vi modellen for deling med omverdenen.</p>
+<ul>
+<li><strong>Gjenbruk av standardiserte ontologier</strong>: Siden ArchiMate er en internasjonal standard, vil vi oppdatere vår <code>@context</code> til å peke på eksisterende, publiserte RDF-vokabularer (for eksempel fra The Open Group). Dermed forstår systemer over hele verden våre basisbegreper (som <em>Business Capability</em> eller <em>Serving Relationship</em>).</li>
+<li><strong>Definere lokale utvidelser</strong>: Egenskaper og attributter som er unike for vårt domene (for eksempel særnorske lovhjemler, sikkerhetsnivåer eller spesifikke tags), definerer vi i en egen, formell ontologi som utvider standarden.</li>
+<li><strong>Sømløs systemintegrasjon</strong>: Med en formell ontologi på plass vil systemet vårt automatisk og maskinelt kunne utveksle data med andre nasjonale fellesløsninger, referansearkitekturer og kataloger. Selve datafilene trenger minimal endring; det er hovedsakelig <code>@context</code>-definisjonen i toppen av filene som oppgraderes.</li>
+</ul>
+<p><small>Sist oppdatert: 16. juli 2026</small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Kopiert til utklippstavlen", "clipboard.copy": "Kopier til utklippstavlen", "search.result.more.one": "1 til p\u00e5 denne siden", "search.result.more.other": "# flere p\u00e5 denne siden", "search.result.none": "Ingen treff", "search.result.one": "1 treff", "search.result.other": "# treff", "search.result.placeholder": "Skriv s\u00f8keord", "search.result.term.missing": "Mangler", "select.version": "Velg versjon"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/custom.js"></script>
+      
+    
+  </body>
+</html>

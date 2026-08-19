@@ -1,0 +1,1139 @@
+
+<!doctype html>
+<html lang="nb" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Dokumentasjon generert fra ArchiMate-modell">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>001-Metamodell - Nasjonal arkitektur for et felles digitalt økosystem</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#beskrivelse" class="md-skip">
+          Gå til innhold
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Nasjonal arkitektur for et felles digitalt økosystem" class="md-header__button md-logo" aria-label="Nasjonal arkitektur for et felles digitalt økosystem" data-md-component="logo">
+      
+  <img src="../images/digdir_logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nasjonal arkitektur for et felles digitalt økosystem
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              001-Metamodell
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Søk" placeholder="Søk" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Søk">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Nullstill" aria-label="Nullstill" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Starter søk
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasjon" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Nasjonal arkitektur for et felles digitalt økosystem" class="md-nav__button md-logo" aria-label="Nasjonal arkitektur for et felles digitalt økosystem" data-md-component="logo">
+      
+  <img src="../images/digdir_logo.svg" alt="logo">
+
+    </a>
+    Nasjonal arkitektur for et felles digitalt økosystem
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Innledning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dokumentasjon av modell for Nasjonal arkitektur
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dokumentasjon av modell for Nasjonal arkitektur
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Innledning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interaktiv-modell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interaktiv modell i Archi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dypdykk og konsepter
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dypdykk og konsepter
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kunnskapsgraf-maal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nasjonal arkitektur som Kunnskapsgraf
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ressurser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oversikt over ressurser i felles økosystem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Innhold på denne siden">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innhold på denne siden
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#beskrivelse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beskrivelse
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elementer-i-viewet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elementer i viewet
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Elementer i viewet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tiltak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tiltak
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standarder-og-veiledning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standarder og veiledning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nsket-situasjon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ønsket situasjon
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kapabilitet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kapabilitet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prinsipp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prinsipp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dekningsgradsvurdering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dekningsgradsvurdering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hva-som-vurderes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hva som vurderes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gap-og-modenhet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gap og modenhet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ressurser-og-maling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ressurser og måling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poti-basert-ressursvurdering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        POTI-basert ressursvurdering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hvorfor-bruke-poti-i-vurderingen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hvorfor bruke POTI i vurderingen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eksempler-pa-vurderingssprsmal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eksempler på vurderingsspørsmål
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sammenheng-med-mal-prinsipper-og-tiltak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sammenheng med mål, prinsipper og tiltak
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#se-ogsa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Se også
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domeneressurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Domeneressurs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gjenbrukbar-lsning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gjenbrukbar løsning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effektmal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effektmål
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domenekapabilitet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Domenekapabilitet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navrende-situasjon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nåværende situasjon
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strategiske-mal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strategiske mål
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rammeverk-for-digital-samhandling-european-interoperability-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rammeverk for digital samhandling (European Interoperability Framework)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gap
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domene" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Domene
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nasjonal-arkitektur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nasjonal arkitektur
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#samhandlingsareneaer-og-organisering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Samhandlingsareneaer og organisering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konomiske-og-juridiske-rammer-og-virkemidler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Økonomiske og juridiske rammer og virkemidler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ressurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ressurs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="001-metamodell">001-Metamodell</h1>
+<blockquote>
+<p><strong>Merk:</strong> Denne dokumentasjonen skal forbedres! Inntil videre kan du få tilgang til all dokumentasjon ved å <strong><a href="../interaktiv-modell/">Åpne interaktiv Archi-rapport</a></strong>.</p>
+</blockquote>
+<p><img alt="001-Metamodell" src="../images/001-Metamodell.png" /></p>
+<h2 id="beskrivelse">Beskrivelse</h2>
+<p>Modellen for Nasjonal arkitektur viser kjernebegrepene i metamodellen for Nasjonal arkitektur og hvordan kapabiliteter, ressurser, tiltak, gap, mål og effektmål henger sammen.
+Den forklarer den grunnleggende strukturen som brukes for å beskrive hva økosystemet må kunne gjøre (kapabiliteter), hvilke ressurser som realiserer kapabilitetene, og hvordan tiltak kan brukes til å lukke gap mellom nåsituasjon og ønsket situasjon.</p>
+<p>Nasjonal arkitektur beskriver det generelle og tverrgående nivået i felles økosystem. Den skal ikke beskrive alle detaljer i alle sektorer, virksomheter, fagområder eller europeiske initiativer. I stedet gir den et felles språk, en felles struktur og et felles sett av kapabiliteter og ressurstyper som andre domener kan knytte seg til.</p>
+<p>Et domene kan være en sektor, en virksomhet, kommunal sektor, et fagområde, et EU data space eller et annet europeisk område. Domenet kan beskrive egne spesialiseringer, behov, kapabiliteter, ressurser, tiltak og mål, men bør koble disse til relevante generiske kapabiliteter og ressurser i Nasjonal arkitektur. På den måten kan lokale og domenespesifikke arkitekturer utvikles videre uten at Nasjonal arkitektur må modellere alle detaljer.</p>
+<p>Relasjonen mellom Nasjonal arkitektur og domener viser derfor både gjenbruk og spesialisering.
+Nasjonal arkitektur gir felles rammer for samhandling og beskriver det generelle, tverrgående og normerende nivåe, mens domenene konkretiserer hvordan rammene realiseres i sin kontekst. Dette gjør det mulig å sammenligne behov, avdekke gap, prioritere tiltak og vurdere modenhet på tvers av domener, samtidig som hvert domene beholder nødvendig handlingsrom.</p>
+<h2 id="elementer-i-viewet">Elementer i viewet</h2>
+<h3 id="tiltak">Tiltak</h3>
+<p><strong>Type:</strong> CourseOfAction</p>
+<p>Konkrete tiltak er endringer, initiativer eller leveranser som forbedrer eller benytter kapabiliteter. Et tiltak kan virke på kapabiliteter i Nasjonal arkitektur, på kapabiliteter i et domene, eller på begge nivåer samtidig.
+Om tiltaket er nasjonalt, domenespesifikt eller tverrgående fremgår av hvilke kapabiliteter, gap, mål eller effektmål tiltaket knyttes til.
+Dette gjør det mulig å vise hvordan samme tiltak kan bidra til nasjonale mål, lukke gap i et domene og samtidig bygge på felles kapabiliteter og ressurser i Nasjonal arkitektur.
+Tiltak kan være pågående eller planlagt.
+Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.</p>
+<ul>
+<li>Tiltak forbedrer kapabiliteter slik at effektmål oppnås</li>
+<li>Tiltak benytter kapabiliteter (og ressurser) slik at effekten oppnås</li>
+<li>Tiltak reduserer gap.</li>
+<li>Tiltak bidrar til effektmål for å vise hvilken ønsket virkning tiltaket skal bidra til</li>
+</ul>
+<hr />
+<h3 id="standarder-og-veiledning">Standarder og veiledning</h3>
+<p><strong>Type:</strong> Resource</p>
+<p>Ressurser som setter regler eller gir retning.</p>
+<p>Dette kan være:
+Standarder, veiledere, referansearkitekturer, metodikk
+Normeringsgrad kan være knyttet til disse virkemidlene.</p>
+<hr />
+<h3 id="nsket-situasjon">Ønsket situasjon</h3>
+<p><strong>Type:</strong> Plateau</p>
+<hr />
+<h3 id="kapabilitet">Kapabilitet</h3>
+<p><strong>Type:</strong> Capability</p>
+<p>En kapabilitet beskriver "hva" en eller flere aktører må kunne gjøre for å skape verdi, uavhengig av hvordan det gjøres. Dette er den forretningsmessige evnen til å oppnå et mål.
+En kapabilitet er en grunnleggende funksjonell evne i det digitale økosystemet. Den beskriver hva som må være på plass for å oppnå ønskede mål, uavhengig av organisatoriske grenser og tekniske løsninger.</p>
+<p>I Nasjonal arkitektur brukes kapabiliteter til å beskrive hvilke evner som må være til stede i felles økosystem for å oppnå mål, effektmål, samhandling og sammenhengende tjenester. En kapabilitet beskriver behovet på et stabilt og løsningsuavhengig nivå, og skal ikke forveksles med konkrete systemer, prosjekter, tiltak eller organisatoriske enheter.</p>
+<p>Den konkrete kapabilitetsmodellen for Nasjonal arkitektur er organisert i tre nivåer:</p>
+<ul>
+<li><strong>Nivå 1: Overordnet kapabilitet</strong> beskriver den samlede evnen Nasjonal arkitektur skal bidra til i felles økosystem.</li>
+<li><strong>Nivå 2: Hovedkapabilitet</strong> beskriver brede, strategiske kapabilitetsområder som strukturerer modellen.</li>
+<li><strong>Nivå 3: Underkapabilitet</strong> beskriver mer konkrete og operasjonelle evner som kan vurderes, forbedres og kobles til ressurser, tiltak, gap og effektmål.</li>
+</ul>
+<p>Alle nivåene modelleres som ArchiMate 'Capability'. Nivåene uttrykker abstraksjonsnivå og struktur i modellen, ikke ulike metamodellelementer.
+Kapabiliteter er knyttet til ressurser som realiserer eller understøtter dem. Forvaltning av kapabilitetene er en kontinuerlig strategisk prosess som gjøres i dekningsgradsvurderinger opp mot strategiske mål.</p>
+<hr />
+<h3 id="prinsipp">Prinsipp</h3>
+<p><strong>Type:</strong> Principle</p>
+<p>En overordnet og veiledende regel eller retningslinje som er ment å være varig og styrende for alle relevante beslutninger. 
+Prinsipper er generelle regler og retningslinjer, ment å være varige og sjelden endres, som informerer og støtter måten en organisasjon går i gang med å oppfylle sitt oppdrag.
+Se overordnete arkitekturprinsipper: https://www.digdir.no/digital-samhandling/overordnede-arkitekturprinsipper/1065</p>
+<p>Eksempel: "Data skal kun lagres én gang".</p>
+<p>EU ELAP: Det europeiske biblioteket for arkitekturprinsipper (ELAP) etablerer prinsipper og rammeverk for å sikre interoperabilitet på europeisk nivå , inkludert det europeiske interoperabilitetsrammeverket (EIF), EU-lovgivning, tilgjengelighet, «Once Only» og mer. Dette biblioteket er et kvalitetssikringsverktøy som også etablerer krav og forretningsprosesser for å muliggjøre interoperabilitet mellom digitale offentlige tjenester.
+Se:  https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/elap</p>
+<p>Togaf definisjon og beste-praksis beskrivelse og definisjon av Arkitekturprinsipper:
+https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap20.html</p>
+<hr />
+<h3 id="dekningsgradsvurdering">Dekningsgradsvurdering</h3>
+<p><strong>Type:</strong> Assessment</p>
+<p>Identifiserer svakheter og dekningsgrad i dagens arkitektur, vurdert opp mot mål, effektmål, behov og ønsket situasjon.</p>
+<p>Assessment brukes til å dokumentere hvor godt kapabiliteter og ressurser dekker et bestemt behov, et bestemt effektmål eller en ønsket fremtidig tilstand. Vurderingen gir grunnlag for å identifisere gap, prioritere tiltak og vurdere om økosystemet har nødvendige evner og byggeklosser for å nå ønskede effekter.</p>
+<h3 id="hva-som-vurderes">Hva som vurderes</h3>
+<p>En assessment kan brukes til å vurdere både kapabiliteter og ressurser.</p>
+<p>For kapabiliteter vurderes hvor godt evnen er dekket i dagens situasjon sammenlignet med ønsket nivå. Dette kan for eksempel uttrykkes som:</p>
+<ul>
+<li>målverdi</li>
+<li>dagens verdi</li>
+<li>gap mellom dagens verdi og målverdi</li>
+<li>modenhet</li>
+<li>begrunnelse for vurderingen</li>
+</ul>
+<p>For ressurser vurderes hvor godt en konkret ressurs realiserer eller understøtter én eller flere kapabiliteter, behov eller effektmål. Dekningsgrad bør derfor vurderes i kontekst, ikke som én global score for ressursen.</p>
+<p>Eksempel: Fellesløsningen <code>Maskinporten</code> kan ha ulik dekningsgrad avhengig av hvilken kapabilitet eller hvilket effektmål den vurderes mot:</p>
+<ul>
+<li>Dekningsgrad for kapabilitet <code>Tilgangsstyring</code>: <code>[1-5]</code></li>
+<li>Dekningsgrad for kapabilitet <code>Representasjon</code>: <code>[1-5]</code></li>
+<li>Dekningsgrad for effektmål <code>Sømløs system-til-system-samhandling</code>: <code>[1-5]</code></li>
+</ul>
+<p>Dette gjør det mulig å vise at samme ressurs kan være godt egnet for ett behov, men ha lavere dekningsgrad for et annet.</p>
+<h3 id="gap-og-modenhet">Gap og modenhet</h3>
+<p>Gap beregnes som avstanden mellom dagens verdi og ønsket målverdi.</p>
+<ul>
+<li><strong>Rødt (Gap &gt; 2):</strong> Kapabiliteter eller ressurser der avstanden mellom nåsituasjon og mål er kritisk stor. Her bør tiltak prioriteres.</li>
+<li><strong>Gult (Gap = 1):</strong> Kapabiliteter eller ressurser som er på vei mot ønsket nivå, men som krever vedlikehold, oppfølging eller mindre forbedringer.</li>
+<li><strong>Grønt (Gap = 0):</strong> Kapabiliteten eller ressursen har nådd ønsket målverdi.</li>
+</ul>
+<p>Måling av kapabilitetsmodenhet hjelper med å synliggjøre gapet mellom nåsituasjon (<code>as-is</code>) og ønsket fremtidig situasjon (<code>to-be</code>). Dette gir grunnlag for å prioritere hvor innsatsen bør settes inn.</p>
+<p>Modenheten til en kapabilitet vurderes blant annet basert på tilstanden til de underliggende ressursene som realiserer eller understøtter kapabiliteten.</p>
+<h3 id="ressurser-og-maling">Ressurser og måling</h3>
+<p>Ressurser kan vurderes med indikatorer som viser hvor godt de understøtter kapabiliteter og effektmål.</p>
+<p>Aktuelle indikatorer kan være:</p>
+<ul>
+<li><strong>Dekningsgrad (1-5):</strong> I hvilken grad ressursen faktisk er tilgjengelig, moden og egnet til å støtte en bestemt kapabilitet, et behov eller et effektmål.</li>
+<li><strong>Funksjonell egnethet (Functional Fit):</strong> Hvor godt ressursen støtter behovet, prosessen eller tjenesten den skal bidra til.</li>
+<li><strong>Teknisk egnethet (Technical Fit):</strong> Hvor moderne, stabil, sikker og teknisk egnet ressursen er.</li>
+<li><strong>Livssyklusstatus:</strong> Om ressursen er i aktiv bruk, under innføring, under utfasing eller ved slutten av livsløpet.</li>
+</ul>
+<p>Eksempler på livssyklusstatus:</p>
+<ul>
+<li><code>Live</code></li>
+<li><code>Phasing Out</code></li>
+<li><code>End of Life</code></li>
+</ul>
+<p>Assessment kan også brukes til å lage heatmaps som viser dekningsgrad, egnethet, modenhet og gap på tvers av kapabiliteter, ressurser, domener eller effektmål.</p>
+<h3 id="poti-basert-ressursvurdering">POTI-basert ressursvurdering</h3>
+<p>POTI kan brukes som analysemodell for å vurdere ressursenes rolle og tilstand.</p>
+<p>POTI står for:</p>
+<ul>
+<li><strong>Prosess:</strong> Arbeidsflyter, rutiner og prosedyrer som ressursen understøtter eller påvirker.</li>
+<li><strong>Organisasjon:</strong> Roller, ansvar, kompetanse, styring, samhandling og kapasitet knyttet til ressursen.</li>
+<li><strong>Teknologi:</strong> Systemer, applikasjoner, infrastruktur, grensesnitt og tekniske løsninger som ressursen består av eller bygger på.</li>
+<li><strong>Informasjon:</strong> Data, metadata, informasjonsmodeller, datakvalitet, tilgjengelighet og informasjonsflyt som ressursen forvalter eller gjør mulig.</li>
+</ul>
+<p>POTI brukes ikke som erstatning for ressurskategoriene i Nasjonal arkitektur. Ressurser kan fortsatt kategoriseres som for eksempel gjenbrukbare løsninger, standarder og veiledning, samhandlingsarenaer og organisering, eller økonomiske og juridiske rammer og virkemidler.</p>
+<p>POTI brukes som et analyseperspektiv på tvers av disse kategoriene. En ressurs kan vurderes ut fra om den primært påvirker prosesser, organisering, teknologi eller informasjon. Mange ressurser vil berøre flere POTI-dimensjoner samtidig.</p>
+<h3 id="hvorfor-bruke-poti-i-vurderingen">Hvorfor bruke POTI i vurderingen</h3>
+<p>POTI gjør det mulig å analysere om ressursene samlet sett er tilstrekkelige for å realisere en kapabilitet.</p>
+<p>En kapabilitet kan for eksempel ha god teknologistøtte, men likevel lav samlet dekningsgrad dersom prosesser, organisering, kompetanse eller informasjonsgrunnlag mangler. På samme måte kan en ressurs være teknisk moden, men ha lav funksjonell egnethet dersom den ikke støtter arbeidsprosessene eller behovene godt nok.</p>
+<p>POTI er særlig nyttig når man skal:</p>
+<ul>
+<li>forstå nåsituasjon og ønsket fremtidig situasjon</li>
+<li>identifisere styrker, svakheter og forbedringsområder</li>
+<li>vurdere om organisasjonen er rigget for å gjennomføre strategien</li>
+<li>prioritere tiltak for å lukke gap</li>
+<li>analysere konsekvenser av digital transformasjon, omorganisering eller innføring av nye teknologiske løsninger</li>
+</ul>
+<h3 id="eksempler-pa-vurderingssprsmal">Eksempler på vurderingsspørsmål</h3>
+<p>For <strong>prosess</strong> kan vurderingen stille spørsmål som:</p>
+<ul>
+<li>Hvilke arbeidsflyter, rutiner og prosedyrer understøttes av ressursen?</li>
+<li>Er prosessene dokumenterte og etterlevd?</li>
+<li>Bidrar ressursen til mer effektiv og sammenhengende oppgaveløsning?</li>
+</ul>
+<p>For <strong>organisasjon</strong> kan vurderingen stille spørsmål som:</p>
+<ul>
+<li>Er roller og ansvar tydelig definert?</li>
+<li>Finnes nødvendig kompetanse og kapasitet?</li>
+<li>Er organisasjonen rigget for å forvalte og bruke ressursen?</li>
+</ul>
+<p>For <strong>teknologi</strong> kan vurderingen stille spørsmål som:</p>
+<ul>
+<li>Hvilke verktøy, systemer eller tekniske løsninger er i bruk?</li>
+<li>Er løsningene integrerte, brukervennlige, sikre og skalerbare?</li>
+<li>Hvor godt støtter teknologien automatisering, samarbeid eller datadrevne beslutninger?</li>
+<li>Finnes det teknisk gjeld eller avhengigheter som påvirker egnetheten?</li>
+</ul>
+<p>For <strong>informasjon</strong> kan vurderingen stille spørsmål som:</p>
+<ul>
+<li>Er informasjonen nøyaktig, tilgjengelig og forståelig?</li>
+<li>Hvordan deles, gjenbrukes og analyseres data på tvers?</li>
+<li>Er datakvaliteten tilstrekkelig?</li>
+<li>Er datasett, begreper, informasjonsmodeller eller API-er registrert i relevante kataloger, for eksempel Felles datakatalog?</li>
+<li>Er virksomheten i tilstrekkelig grad i orden i eget hus?</li>
+</ul>
+<h3 id="sammenheng-med-mal-prinsipper-og-tiltak">Sammenheng med mål, prinsipper og tiltak</h3>
+<p>En kapabilitet kan bidra til å realisere både mål, effektmål og prinsipper. Den viser hvordan en organisasjon, et domene eller det nasjonale økosystemet faktisk implementerer, oppfyller eller tolker hensikten bak et mål eller prinsipp i praksis.</p>
+<p>Assessment gjør det mulig å vurdere om kapabilitetene og ressursene har tilstrekkelig dekningsgrad til å nå ønskede effekter. Dersom vurderingen avdekker gap, kan konkrete tiltak prioriteres for å styrke kapabiliteter, forbedre ressurser eller redusere avstanden mellom dagens situasjon og ønsket situasjon.</p>
+<h3 id="se-ogsa">Se også</h3>
+<p>De konkrete resultatene av å bruke kapabilitetene kan vurderes i sammenheng med indikatorer og dybdemålinger fra Digitaliseringsstrategien.</p>
+<p>Se på dybdeindikatorene fra nullpunktsmåling:</p>
+<p>https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416</p>
+<p>Eksempler:</p>
+<ul>
+<li>https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429</li>
+<li>https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428</li>
+</ul>
+<hr />
+<h3 id="domeneressurs">Domeneressurs</h3>
+<p><strong>Type:</strong> Resource</p>
+<p>Domeneressurs er en konkret ressurs som finnes, forvaltes eller benyttes innenfor et bestemt domene.</p>
+<p>En domeneressurs kan være en løsning, tjeneste, standard, datasett, informasjonsmodell, kompetansemiljø, prosess, avtale, infrastruktur eller annen byggekloss som domenet bruker for å realisere egne kapabiliteter.</p>
+<p>Domeneressurser knyttes til domenekapabiliteter for å vise hvordan domenets evner faktisk understøttes i praksis. En domeneressurs skal ikke forstås som en spesialisering av en ressurs i Nasjonal arkitektur. Knytningen til Nasjonal arkitektur skjer på kapabilitetsnivå, ved at domenekapabiliteter knyttes til generiske kapabiliteter i Nasjonal arkitektur.</p>
+<p>Dette gjør at hvert domene kan beskrive sine egne konkrete ressurser uten at Nasjonal arkitektur må eie, klassifisere eller modellere alle ressurser i detalj. Nasjonal arkitektur gir det felles rammeverket, mens domenet beskriver hvilke ressurser som faktisk finnes og brukes i egen kontekst.</p>
+<hr />
+<h3 id="gjenbrukbar-lsning">Gjenbrukbar løsning</h3>
+<p><strong>Type:</strong> Resource</p>
+<p>Gjenbrukbare løsninger er tekniske komponenter, applikasjoner som leverer funksjonalitet eller dataprodukter og dekker behov på tvers av eller innenfor sektorer, og/eller forvaltningsnivå. 
+En nasjonal fellesløsning er en byggekloss som offentlige virksomheter kan dra nytte av i sine digitale tjenester. Løsningene utvikles én gang og kan deretter brukes av mange.
+De viktigste fellesløsningene kalles nasjonale felleskomponenter: Altinn, Digital postkasse til innbyggere, Enhetsregisteret, Folkeregisteret, ID-porten, Kontakt- og reservasjonsregisteret og Matrikkelen. Noen er obligatoriske å bruke, andre er anbefalte - både for statlige virksomheter og for kommunal sektor.</p>
+<p>Strategiske prinsipper for nasjonale felleskomponenter (gammel))
+https://www.digdir.no/media/395/download
+https://www.regjeringen.no/contentassets/fe3e34b866034b82b9c623c5cec39823/no/pdfs/stm201520160027000dddpdfs.pdf</p>
+<p>Fellesløsning eller felles løsning:
+* Forskjellen er institusjonell. 
+* Fellesløsning:  referer til nasjonale fellesløsninger, som er spesifikk tekniske komponenter som skal kunne brukes av svært mange i offentlig sektor for å løse generiske behov. 
+* Felles løsning: Gjenbrukbar løsnning som kan benyttes av flere og med formåk om samarbeid og stordriftsfordeler, men uten nødvendigvis å ha status som en nasjonal komponent i økosystemet.
+* Fellestjeneste: Den forretningsmessige eller tekniske funksjonaliteten som tilbys.</p>
+<p>Sluttbrukertjenester: Det innbyggeren eller næringslivet opplever (f.eks. "Søke om barnehageplass" eller "Levere skattemelding"). 
+Støttetjenester: Tekniske tjenester som ikke er synlige for sluttbrukeren, men som er nødvendige for at systemene skal snakke sammen (f.eks. gjennom et API)</p>
+<p>De nasjonale felleskomponentene, slik de er definert i Digital agenda:
+– Har en statlig virksomhet som forvaltningsansvarlig.
+– Dekker behov på tvers av mange sektorer og/eller forvaltningsnivå.
+– Vil være sentrale komponenter i en rekke digitale tjenester.
+– Er av stor samfunnsøkonomisk betydning som felles mulighetsrom for digital tjenesteutvikling og gevinstrealisering i virksomhetene.</p>
+<hr />
+<h3 id="effektmal">Effektmål</h3>
+<p><strong>Type:</strong> Outcome</p>
+<p>De konkrete resultatene av å bruke kapabilitetene. Kapabiliteter beskriver hva økosystemet må kunne gjøre for å oppnå effekter.
+Tiltak bidrar positivt til å nå effektmål.</p>
+<p>Se på dybdeindikatorene fra nullpunktsmåling:
+https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
+F.eks:
+* https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
+* https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428</p>
+<hr />
+<h3 id="domenekapabilitet">Domenekapabilitet</h3>
+<p><strong>Type:</strong> Capability</p>
+<p>Domenekapabilitet er en konkret eller spesialisert kapabilitet innenfor et bestemt domene.</p>
+<p>En domenekapabilitet beskriver hva et domene må kunne gjøre for å realisere egne mål, effektmål, tjenester eller samhandlingsbehov. Domenet kan være en sektor, virksomhet, kommunal sektor, fagområde, EU data space eller annet avgrenset område.</p>
+<p>Domenekapabiliteter brukes til å konkretisere Nasjonal arkitektur i en bestemt kontekst. De kan knyttes til relevante generiske kapabiliteter i Nasjonal arkitektur for å vise sporbarhet, sammenheng og gjenbruk av felles rammer. Dette gjør det mulig å sammenligne behov og gap på tvers av domener, uten at Nasjonal arkitektur må beskrive alle domenespesifikke detaljer.</p>
+<p>En domenekapabilitet kan realiseres eller understøttes av én eller flere domeneressurser.</p>
+<hr />
+<h3 id="navrende-situasjon">Nåværende situasjon</h3>
+<p><strong>Type:</strong> Plateau</p>
+<hr />
+<h3 id="strategiske-mal">Strategiske mål</h3>
+<p><strong>Type:</strong> Goal</p>
+<p>Målene fra Digitaliseringsstrategien.</p>
+<hr />
+<h3 id="rammeverk-for-digital-samhandling-european-interoperability-framework">Rammeverk for digital samhandling (European Interoperability Framework)</h3>
+<p><strong>Type:</strong> Grouping</p>
+<p>Rammeverk for digital samhandling.
+https://www.digdir.no/digital-samhandling/rammeverk-digital-samhandling/2148</p>
+<p>Bakgrunnsinformasjon og opprinnelse:
+EU har utviklet European Interoperability Framework (EIF), et felles rammeverk for digital samhandling. Målet er å fremme digital samhandling på tvers av landegrenser og innenfor hvert enkelt land. Norge forpliktet seg til å implementere EIF da vi undertegnet Tallinn-erklæringen i 2017, sammen med EU og andre EFTA-land.</p>
+<p>Som et resultat har Norge etablert sitt eget nasjonale rammeverk for interoperabilitet (NIF- National Interoperability Framework), som i dag heter "Rammeverk for digital samhandling". Den første versjonen ble utarbeidet som et Skate-tiltak i 2018.</p>
+<hr />
+<h3 id="gap">Gap</h3>
+<p><strong>Type:</strong> Gap</p>
+<p>Definerer den spesifikke mangelen (assosiert med analyse av dekningsgrad Nasjonal arkitektur)</p>
+<hr />
+<h3 id="domene">Domene</h3>
+<p><strong>Type:</strong> Grouping</p>
+<p>Et domene kan være en sektor, en virksomhet, kommunal sektor, et fagområde, et EU data space eller et annet europeisk område. Domenet kan beskrive egne spesialiseringer, behov, kapabiliteter, ressurser, tiltak og mål, men bør koble disse til relevante generiske kapabiliteter og ressurser i Nasjonal arkitektur. På den måten kan lokale og domenespesifikke arkitekturer utvikles videre uten at Nasjonal arkitektur må modellere alle detaljer. Et domene knytter seg til Nasjonal arkitektur og konkretiserer den i egen kontekst.</p>
+<p>Knytningen til Nasjonal arkitektur går primært via domenekapabilitet til nasjonal kapabilitet.</p>
+<hr />
+<h3 id="nasjonal-arkitektur">Nasjonal arkitektur</h3>
+<p><strong>Type:</strong> Grouping</p>
+<p>Nasjonal arkitektur beskriver det generiske og tverrgående nivået i felles økosystem for digital samhandling.</p>
+<p>Gruppen viser hvilke begreper som hører til Nasjonal arkitektur som felles rammeverk.</p>
+<hr />
+<h3 id="samhandlingsareneaer-og-organisering">Samhandlingsareneaer og organisering</h3>
+<p><strong>Type:</strong> Resource</p>
+<p>Organiserte nettverk og styringsorganer for både dialog og strategisk samarbeid og samordning.</p>
+<p>Eksempler:
+* Samstyringsstruktur i kommunal sektor
+* Skate
+* ASR (Arkitektur- og standardiseringsrådet)
+* Faglig arena for datadeling og informasjonsforvaltning
+* Datalandsbyen
+* Offentlig PAAS - Slack for alle i offentlig sektor</p>
+<hr />
+<h3 id="konomiske-og-juridiske-rammer-og-virkemidler">Økonomiske og juridiske rammer og virkemidler</h3>
+<p><strong>Type:</strong> Resource</p>
+<p>Dette er økonomiske og juridiske virkemidler som muliggjør gjennomføring.</p>
+<p>Rammer og virkemidler kan være ressurser som er
+* Finansielle
+* Regulative</p>
+<hr />
+<h3 id="ressurs">Ressurs</h3>
+<p><strong>Type:</strong> Resource</p>
+<p>Ressurser er konkrete byggeklosser som realiserer ønskede kapabiliteter og løser konkrete behov.
+En ressurs er noe økosystemet har eller kan bruke for å understøtte én eller flere kapabiliteter. Det kan være tekniske løsninger, standarder, veiledning, informasjonsmodeller, datasett, organisatoriske arenaer, kompetansemiljøer, avtaler, finansielle virkemidler eller juridiske rammer.</p>
+<p>Ressurser kategoriseres etter hva slags type byggekloss de er. I Nasjonal arkitektur kan dette for eksempel være gjenbrukbare løsninger, standarder og veiledning, samhandlingsarenaer og organisering, eller økonomiske og juridiske rammer og virkemidler.</p>
+<hr />
+<p><small>Sist oppdatert: 16. juli 2026</small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Kopiert til utklippstavlen", "clipboard.copy": "Kopier til utklippstavlen", "search.result.more.one": "1 til p\u00e5 denne siden", "search.result.more.other": "# flere p\u00e5 denne siden", "search.result.none": "Ingen treff", "search.result.one": "1 treff", "search.result.other": "# treff", "search.result.placeholder": "Skriv s\u00f8keord", "search.result.term.missing": "Mangler", "select.version": "Velg versjon"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/custom.js"></script>
+      
+    
+  </body>
+</html>
