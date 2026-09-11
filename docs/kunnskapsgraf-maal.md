@@ -41,7 +41,7 @@ Fordelene med å bruke disse formatene ut av ArchiMate-pipelinen er flere:
 
 Valget av en Kunnskapsgraf og YAML/JSON-LD som representasjon av ArchiMate-modellen legger fundamentet for å bruke avansert KI i arkitekturarbeidet:
 
-* **Sikker og deterministisk AI-analyse (kunnskapsanalyse og sammenhenger):** Rene språkmodeller (LLMs) kan "hallusinere" hvis de må gjette seg frem til relasjoner basert på vanlig tekst. Hvis arkitekturen eksisterer som en JSON-LD/YAML-LD-drevet kunnskapsgraf, kan KI-en (gjennom såkalt *Graph RAG* - Retrieval-Augmented Generation) kjøre presise, strukturerte spørringer (som SPARQL) mot grafen.
+* **Sikker og deterministisk KI-analyse (kunnskapsanalyse og sammenhenger):** Rene språkmodeller (LLMs) kan "hallusinere" hvis de må gjette seg frem til relasjoner basert på vanlig tekst. Hvis arkitekturen eksisterer som en JSON-LD/YAML-LD-drevet kunnskapsgraf, kan KI-en (gjennom såkalt *Graph RAG* - Retrieval-Augmented Generation) kjøre presise, strukturerte spørringer (som SPARQL) mot grafen.
 * **Besvarelse av komplekse spørsmål:** KI-systemer vil med 100 % nøyaktighet kunne besvare spørsmål som: *"Hvilke underliggende databaser og tjenester må moderniseres dersom vi ønsker å styrke den strategiske kapabiliteten X, og hvilke aktører påvirkes?"*
 * **Kompakt for LLM-prompts:** Om KI-en skal lese rådataene direkte (utenom en grafdatabase), er YAML/JSON-LD ideelt. Den kompakte strukturen sparer verdifulle "tokens" (spesielt YAML-LD), mens den påklistrede `@context`-semantikken sikrer at språkmodellen har den nøyaktige meningsbærende konteksten den trenger for å unngå feiltolkninger.
 
@@ -90,4 +90,4 @@ Når strukturen er etablert og vi ser at informasjonen flyter godt, modner vi mo
 * **Sømløs systemintegrasjon**: Med en formell ontologi på plass vil systemet vårt automatisk og maskinelt kunne utveksle data med andre nasjonale fellesløsninger, referansearkitekturer og kataloger. Selve datafilene trenger minimal endring; det er hovedsakelig `@context`-definisjonen i toppen av filene som oppgraderes.
 
 
-<small>Sist oppdatert: 16. juli 2026</small>
+<small>Sist oppdatert: 11. september 2026</small>

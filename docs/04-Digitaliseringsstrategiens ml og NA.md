@@ -10,10 +10,14 @@ Digitaliseringsstrategiens mest relevante mål for Nasjonal arkitektur
 
 ## Elementer i viewet
 
-### Vi skal delta i EUs satsing på dataområder der det er relevant
+### Vi skal ha en offentlig sektor som tilbyr bedre, mer sammenhengende digitale tjenester til innbyggere og næringsliv  
 **Type:** Goal
 
-Arbeidet med dataområdene i EU vil komme med referansearkitekturer og standarder som må innføres som en del av nasjonal arkitektur.
+Målet om sammenhengende tjenester til beste for bruker stiller krav til nasjonal arkitektur.
+Nasjonal arkitektur er nødvendig for å få til samhandling og sammenhengende tjenester. Felles økosystem tilbyr ressurser for samhandling og sammenhengende tjenester. Vi skal både tilby ressurser som muliggjør dette, men også sette rammer som styrer offentlig sektor i retning av sammenhengende digitale tjenester. 
+Nasjonal arkitektur kan også bidra til å balansere styrkeforholdet mellom store offentlige etater og mindre statlig/kommunale. Gjennom felles standarder, arkitekturer og retningslinjer kan vi bidra til at det blir lettere å dele og bruke data og få til bedre samhandling.
+Nasjonal arkitektur bør bidra til utforskning av nye måter å skape sammenheng og forenkling for innbygger og næringsliv. Sammenhengende tjenester introduserer også noen nye utfordringer som bør avklares og nasjonal arkitektur bør foreslå hvordan disse utfordringene adresseres. Ved å samarbeide tett med avdelingen for «Sammenhengende tjenester og livshendelser» og jobbe behovsdrevet med ekte problemer og ekte behov, skal vi aktivt prøve å finne løsninger på de arkitekturmessige hindringene. 
+
 
 ---
 
@@ -34,11 +38,6 @@ I Digitaliseringsstrategien er det et mål at:
 
 ---
 
-### Få på plass en nasjonal infrastruktur for kunstig intelligens (KI)
-**Type:** Goal
-
----
-
 ### Nasjonal arkitektur for samhandling
 **Type:** Capability
 
@@ -49,34 +48,6 @@ Det betyr at i felles økosystem samarbeider aktørene om å utvikle fellesløsn
 Med samhandling mener vi evnen til å tilby tjenester, utveksle informasjon og ivareta både de organisatoriske, juridiske, semantiske og tekniske aspektene ved dette.
 
 
-
----
-
-### Norge skal være ledende på verdiskaping med data og på datadrevet forskning og innovasjon
-**Type:** Goal
-
-For å få til datadeling må de riktige ressursene i felles økosystem være på plass. Det gjelder standarder, felles formater, rammeverk, åpne API-er, referansearkitekturer, fellesløsninger mv. Rammeverk for EUs dataområder (data spaces) inneholder også referansearkitekturer og standarder. Nasjonal arkitektur (samhandlingsarkitektur) er nødvendig for å få til datadeling.
-Data governance og master data management er nødvendig for at man skal dele data og bruke data, og er viktig for et velfungerende felles økosystem for digital samhandling. Det er pågående arbeid på flere områder innenfor dette målet som bør være koordinert med arbeidet med Nasjonal arkitektur
-
-
----
-
-### Sørge for at alle har et tilbud om en elektronisk identitet
-**Type:** Goal
-
----
-
-### Sterkere styring og samordning av digitalisering på tvers av sektorer
-**Type:** Goal
-
-Nasjonal arkitektur er et viktig virkemiddel for å skape sterke synergier mellom norsk og europeisk digitaliseringspolitikk. Den skal bygge på føringer fra EU og fungerer som et rammeverk som integrerer EUs regelverk, standarder og referansearkitekturer i norsk digitaliseringsarbeid. EU-forordninger etablerer nasjonale funksjoner og styringsformer som også dekker Norges behov for koordinering og styring av arkitektur. 
-Ved å implementere felles europeiske standarder, sikrer nasjonal arkitektur at norske digitale tjenester kan samhandle effektivt over landegrensene. Samtidig bør Norge bli bedre på å hente erfaringer fra andre land og bruke internasjonale løsninger som utgangspunkt for egen utvikling, noe som reduserer både kostnader og utviklingstid. Gjennom dette sikrer nasjonal arkitektur en helhetlig og framtidsrettet digitalisering som både møter norske behov og Europas digitale agenda. 
-
-
----
-
-### Næringslivet skal ha gode rammevilkår for å utvikle og bruke KI. Offentlig sektor skal anvende KI for å utvikle bedre tjenester og løse oppgaver mer effektivt
-**Type:** Goal
 
 ---
 
@@ -92,17 +63,46 @@ Nasjonal arkitektur har en viktig rolle fordi den legger til rette for at digita
 
 ---
 
-### Vi skal ha en offentlig sektor som tilbyr bedre, mer sammenhengende digitale tjenester til innbyggere og næringsliv  
+### Sørge for at alle har et tilbud om en elektronisk identitet
 **Type:** Goal
 
-Målet om sammenhengende tjenester til beste for bruker stiller krav til nasjonal arkitektur.
-Nasjonal arkitektur er nødvendig for å få til samhandling og sammenhengende tjenester. Felles økosystem tilbyr ressurser for samhandling og sammenhengende tjenester. Vi skal både tilby ressurser som muliggjør dette, men også sette rammer som styrer offentlig sektor i retning av sammenhengende digitale tjenester. 
-Nasjonal arkitektur kan også bidra til å balansere styrkeforholdet mellom store offentlige etater og mindre statlig/kommunale. Gjennom felles standarder, arkitekturer og retningslinjer kan vi bidra til at det blir lettere å dele og bruke data og få til bedre samhandling.
-Nasjonal arkitektur bør bidra til utforskning av nye måter å skape sammenheng og forenkling for innbygger og næringsliv. Sammenhengende tjenester introduserer også noen nye utfordringer som bør avklares og nasjonal arkitektur bør foreslå hvordan disse utfordringene adresseres. Ved å samarbeide tett med avdelingen for «Sammenhengende tjenester og livshendelser» og jobbe behovsdrevet med ekte problemer og ekte behov, skal vi aktivt prøve å finne løsninger på de arkitekturmessige hindringene. 
+---
 
+### Næringslivet skal ha gode rammevilkår for å utvikle og bruke KI. Offentlig sektor skal anvende KI for å utvikle bedre tjenester og løse oppgaver mer effektivt
+**Type:** Goal
+
+---
+
+### Sterkere styring og samordning av digitalisering på tvers av sektorer
+**Type:** Goal
+
+Nasjonal arkitektur er et viktig virkemiddel for å skape sterke synergier mellom norsk og europeisk digitaliseringspolitikk. Den skal bygge på føringer fra EU og fungerer som et rammeverk som integrerer EUs regelverk, standarder og referansearkitekturer i norsk digitaliseringsarbeid. EU-forordninger etablerer nasjonale funksjoner og styringsformer som også dekker Norges behov for koordinering og styring av arkitektur. 
+Ved å implementere felles europeiske standarder, sikrer nasjonal arkitektur at norske digitale tjenester kan samhandle effektivt over landegrensene. Samtidig bør Norge bli bedre på å hente erfaringer fra andre land og bruke internasjonale løsninger som utgangspunkt for egen utvikling, noe som reduserer både kostnader og utviklingstid. Gjennom dette sikrer nasjonal arkitektur en helhetlig og framtidsrettet digitalisering som både møter norske behov og Europas digitale agenda. 
+
+
+---
+
+### Norge skal være ledende på verdiskaping med data og på datadrevet forskning og innovasjon
+**Type:** Goal
+
+For å få til datadeling må de riktige ressursene i felles økosystem være på plass. Det gjelder standarder, felles formater, rammeverk, åpne API-er, referansearkitekturer, fellesløsninger mv. Rammeverk for EUs dataområder (data spaces) inneholder også referansearkitekturer og standarder. Nasjonal arkitektur (samhandlingsarkitektur) er nødvendig for å få til datadeling.
+Data governance og master data management er nødvendig for at man skal dele data og bruke data, og er viktig for et velfungerende felles økosystem for digital samhandling. Det er pågående arbeid på flere områder innenfor dette målet som bør være koordinert med arbeidet med Nasjonal arkitektur
+
+
+---
+
+### Vi skal delta i EUs satsing på dataområder der det er relevant
+**Type:** Goal
+
+Arbeidet med dataområdene i EU vil komme med referansearkitekturer og standarder som må innføres som en del av nasjonal arkitektur.
+
+---
+
+### Få på plass en nasjonal infrastruktur for kunstig intelligens (KI)
+**Type:** Goal
 
 ---
 
 
 
-<small>Sist oppdatert: 16. juli 2026</small>
+<small>Sist oppdatert: 11. september 2026</small>

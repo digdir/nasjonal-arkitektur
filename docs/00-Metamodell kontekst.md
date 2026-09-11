@@ -376,3 +376,6 @@ Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av k
 
 
 <small>Sist oppdatert: 16. juli 2026</small>
+
+
+<small>Sist oppdatert: 11. september 2026</small>

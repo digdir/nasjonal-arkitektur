@@ -28,6 +28,10 @@ Denne viser Nivå 1 til Nivå 2 av kapabiliteter i Nasjonal arkitektur:
   - **Juridisk samhandling** - *Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.*
   - **Standardisering** - *Evne til å identifisere, vedta, forvalte og fremme bruk av omforente standarder og spesifikasjoner som sikrer interoperabilitet og gjenbruk på tvers av sektorer og landegrenser.*
   - **Veiledning** - *Evne til å sikre at veiledninger for digital samhandling utarbeides, formidles og benyttes.*
+- **Retning og rammer**
+- **Data og interoperabilitet**
+- **Tillit og trygghet**
+- **Utvikling og brukeropplevelse**
 
 
-<small>Sist oppdatert: 16. juli 2026</small>
+<small>Sist oppdatert: 11. september 2026</small>

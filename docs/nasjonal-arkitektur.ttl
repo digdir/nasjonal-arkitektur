@@ -90,7 +90,7 @@ Normeringsgrad kan være knyttet til disse virkemidlene."""@nb .
 na:id-a947552722064b7c93181833028cc2f1
     a archimate:Resource ;
     archimate:identifier "id-a947552722064b7c93181833028cc2f1" ;
-    archimate:name "Samhandlingsareneaer og organisering"@nb ;
+    archimate:name "Samhandlingsarenaer og organisering"@nb ;
     archimate:documentation """Organiserte nettverk og styringsorganer for både dialog og strategisk samarbeid og samordning.
 
 Eksempler:
@@ -368,7 +368,7 @@ na:id-697145d3768b40d39f9463667b78f749
 Kapabiliteten sikrer at nasjonal arkitektur kan bygge på relevante europeiske standarder, spesifikasjoner og referansearkitekturer. Den løser behovet for at norske digitale tjenester kan samhandle bedre med europeiske løsninger, regelverk og dataområder, og at nasjonale valg ikke utvikles isolert fra europeisk digitaliseringspolitikk.
 
 ### Hva det innebærer (Omfang)
-- **Juridisk (Middels vekt):** Avklare hvilke EU-standarder, forordninger og harmoniserte krav som er relevante for norsk forvaltning og hvordan de skal innarbeides i nasjonale rammer.
+- **Juridisk (Høy vekt):** Avklare hvilke EU-standarder, forordninger og harmoniserte krav som er relevante for norsk forvaltning og hvordan de skal innarbeides i nasjonale rammer. NB! Harmoniserte standarder fra EU er sterkt knyttet til regulatoriske støtteverktøy.
 - **Organisatorisk (Høy vekt):** Etablere prosesser for å følge med på, vurdere, prioritere og ta i bruk relevante EU-standarder i nasjonale tiltak, veiledning og arkitekturstyring.
 - **Semantisk (Høy vekt):** Sikre at europeiske begreper, informasjonsmodeller, metadata og klassifikasjoner forstås og mappes riktig til norske begreper og nasjonale modeller.
 - **Teknisk (Høy vekt):** Ta i bruk tekniske spesifikasjoner, referansearkitekturer, API-standarder, sikkerhetskrav og interoperabilitetsprofiler fra EU der de er relevante for norske fellesløsninger og digital samhandling.
@@ -869,7 +869,7 @@ Når digitale tjenester er splittet opp mellom ulike uavhengige etater, blir bru
 - **Teknisk (Høy vekt):** Teknisk integrasjon via standardiserte grensesnitt (API-er) og fellesløsninger sikrer at data deles og gjenbrukes.
 
 ### Bidrag til sammenhengende tjenester og felles økosystem
-Kapabiliteten er selve nøkkelen til at innbyggere og næringsliv skal oppleve forvaltningen som én samordnet aktør. Ved å binde uavhengige tjenester sammen til flytende kjeder, elimineres behovet for at brukeren må gjenta informasjon eller lete etter neste saksbehandlingssteg. Dette reduserer tidsbruk og feil, noe som gir et vesentlig mer ressurseffektivt felles økosystem."""@nb .
+Kapabiliteten er selve nøkkelen til at innbyggere og næringsliv skal oppleve forvaltningen som én samordnet aktør. Ved å binde uavhengige tjenester sammen til flytende kjeder, fjernes behovet for at brukeren må gjenta informasjon eller lete etter neste steg. Dette reduserer tidsbruk og feil, noe som gir et mer ressurseffektivt felles økosystem."""@nb .
 
 na:id-7e3d1d3396914d65a177c9d5346d6feb
     a archimate:Capability ;
@@ -1612,12 +1612,16 @@ na:id-d7a27706ca3240468e16d88afbcd4a3e
 
 Assessment brukes til å dokumentere hvor godt kapabiliteter og ressurser dekker et bestemt behov, et bestemt effektmål eller en ønsket fremtidig tilstand. Vurderingen gir grunnlag for å identifisere gap, prioritere tiltak og vurdere om økosystemet har nødvendige evner og byggeklosser for å nå ønskede effekter.
 
+Vurderingsegenskaper kan være forskjellig utifra hva man skal måle opp mot, f.eks. ulike behov eller mål:
+- realiseringsgrad: [1-5]
+- begrunnelse:[...]
+- dato: [...]
+- vurdertAv: [...] 
+- vurderingskontekst: [...]. f.eks. \"Nasjonal vurdering\", \"prosjekt A\",...
+
 ### Hva som vurderes
-
 En assessment kan brukes til å vurdere både kapabiliteter og ressurser.
-
 For kapabiliteter vurderes hvor godt evnen er dekket i dagens situasjon sammenlignet med ønsket nivå. Dette kan for eksempel uttrykkes som:
-
 - målverdi
 - dagens verdi
 - gap mellom dagens verdi og målverdi
@@ -1625,7 +1629,6 @@ For kapabiliteter vurderes hvor godt evnen er dekket i dagens situasjon sammenli
 - begrunnelse for vurderingen
 
 For ressurser vurderes hvor godt en konkret ressurs realiserer eller understøtter én eller flere kapabiliteter, behov eller effektmål. Dekningsgrad bør derfor vurderes i kontekst, ikke som én global score for ressursen.
-
 Eksempel: Fellesløsningen `Maskinporten` kan ha ulik dekningsgrad avhengig av hvilken kapabilitet eller hvilket effektmål den vurderes mot:
 
 - Dekningsgrad for kapabilitet `Tilgangsstyring`: `[1-5]`
@@ -1635,9 +1638,7 @@ Eksempel: Fellesløsningen `Maskinporten` kan ha ulik dekningsgrad avhengig av h
 Dette gjør det mulig å vise at samme ressurs kan være godt egnet for ett behov, men ha lavere dekningsgrad for et annet.
 
 ### Gap og modenhet
-
 Gap beregnes som avstanden mellom dagens verdi og ønsket målverdi.
-
 - **Rødt (Gap > 2):** Kapabiliteter eller ressurser der avstanden mellom nåsituasjon og mål er kritisk stor. Her bør tiltak prioriteres.
 - **Gult (Gap = 1):** Kapabiliteter eller ressurser som er på vei mot ønsket nivå, men som krever vedlikehold, oppfølging eller mindre forbedringer.
 - **Grønt (Gap = 0):** Kapabiliteten eller ressursen har nådd ønsket målverdi.
@@ -1647,30 +1648,24 @@ Måling av kapabilitetsmodenhet hjelper med å synliggjøre gapet mellom nåsitu
 Modenheten til en kapabilitet vurderes blant annet basert på tilstanden til de underliggende ressursene som realiserer eller understøtter kapabiliteten.
 
 ### Ressurser og måling
-
 Ressurser kan vurderes med indikatorer som viser hvor godt de understøtter kapabiliteter og effektmål.
-
 Aktuelle indikatorer kan være:
-
 - **Dekningsgrad (1-5):** I hvilken grad ressursen faktisk er tilgjengelig, moden og egnet til å støtte en bestemt kapabilitet, et behov eller et effektmål.
 - **Funksjonell egnethet (Functional Fit):** Hvor godt ressursen støtter behovet, prosessen eller tjenesten den skal bidra til.
 - **Teknisk egnethet (Technical Fit):** Hvor moderne, stabil, sikker og teknisk egnet ressursen er.
 - **Livssyklusstatus:** Om ressursen er i aktiv bruk, under innføring, under utfasing eller ved slutten av livsløpet.
 
 Eksempler på livssyklusstatus:
-
-- `Live`
-- `Phasing Out`
-- `End of Life`
+- 'Operativ'
+- 'Utfasing'
+- 'Avsluttet'
 
 Assessment kan også brukes til å lage heatmaps som viser dekningsgrad, egnethet, modenhet og gap på tvers av kapabiliteter, ressurser, domener eller effektmål.
 
-### POTI-basert ressursvurdering
-
+### POTI-basert ressursvurdering metode
 POTI kan brukes som analysemodell for å vurdere ressursenes rolle og tilstand.
 
 POTI står for:
-
 - **Prosess:** Arbeidsflyter, rutiner og prosedyrer som ressursen understøtter eller påvirker.
 - **Organisasjon:** Roller, ansvar, kompetanse, styring, samhandling og kapasitet knyttet til ressursen.
 - **Teknologi:** Systemer, applikasjoner, infrastruktur, grensesnitt og tekniske løsninger som ressursen består av eller bygger på.
@@ -1681,13 +1676,10 @@ POTI brukes ikke som erstatning for ressurskategoriene i Nasjonal arkitektur. Re
 POTI brukes som et analyseperspektiv på tvers av disse kategoriene. En ressurs kan vurderes ut fra om den primært påvirker prosesser, organisering, teknologi eller informasjon. Mange ressurser vil berøre flere POTI-dimensjoner samtidig.
 
 ### Hvorfor bruke POTI i vurderingen
-
 POTI gjør det mulig å analysere om ressursene samlet sett er tilstrekkelige for å realisere en kapabilitet.
-
 En kapabilitet kan for eksempel ha god teknologistøtte, men likevel lav samlet dekningsgrad dersom prosesser, organisering, kompetanse eller informasjonsgrunnlag mangler. På samme måte kan en ressurs være teknisk moden, men ha lav funksjonell egnethet dersom den ikke støtter arbeidsprosessene eller behovene godt nok.
 
 POTI er særlig nyttig når man skal:
-
 - forstå nåsituasjon og ønsket fremtidig situasjon
 - identifisere styrker, svakheter og forbedringsområder
 - vurdere om organisasjonen er rigget for å gjennomføre strategien
@@ -1695,28 +1687,23 @@ POTI er særlig nyttig når man skal:
 - analysere konsekvenser av digital transformasjon, omorganisering eller innføring av nye teknologiske løsninger
 
 ### Eksempler på vurderingsspørsmål
-
 For **prosess** kan vurderingen stille spørsmål som:
-
 - Hvilke arbeidsflyter, rutiner og prosedyrer understøttes av ressursen?
 - Er prosessene dokumenterte og etterlevd?
 - Bidrar ressursen til mer effektiv og sammenhengende oppgaveløsning?
 
 For **organisasjon** kan vurderingen stille spørsmål som:
-
 - Er roller og ansvar tydelig definert?
 - Finnes nødvendig kompetanse og kapasitet?
 - Er organisasjonen rigget for å forvalte og bruke ressursen?
 
 For **teknologi** kan vurderingen stille spørsmål som:
-
 - Hvilke verktøy, systemer eller tekniske løsninger er i bruk?
 - Er løsningene integrerte, brukervennlige, sikre og skalerbare?
 - Hvor godt støtter teknologien automatisering, samarbeid eller datadrevne beslutninger?
 - Finnes det teknisk gjeld eller avhengigheter som påvirker egnetheten?
 
 For **informasjon** kan vurderingen stille spørsmål som:
-
 - Er informasjonen nøyaktig, tilgjengelig og forståelig?
 - Hvordan deles, gjenbrukes og analyseres data på tvers?
 - Er datakvaliteten tilstrekkelig?
@@ -1724,21 +1711,17 @@ For **informasjon** kan vurderingen stille spørsmål som:
 - Er virksomheten i tilstrekkelig grad i orden i eget hus?
 
 ### Sammenheng med mål, prinsipper og tiltak
-
 En kapabilitet kan bidra til å realisere både mål, effektmål og prinsipper. Den viser hvordan en organisasjon, et domene eller det nasjonale økosystemet faktisk implementerer, oppfyller eller tolker hensikten bak et mål eller prinsipp i praksis.
 
 Assessment gjør det mulig å vurdere om kapabilitetene og ressursene har tilstrekkelig dekningsgrad til å nå ønskede effekter. Dersom vurderingen avdekker gap, kan konkrete tiltak prioriteres for å styrke kapabiliteter, forbedre ressurser eller redusere avstanden mellom dagens situasjon og ønsket situasjon.
 
 ### Se også
-
 De konkrete resultatene av å bruke kapabilitetene kan vurderes i sammenheng med indikatorer og dybdemålinger fra Digitaliseringsstrategien.
 
-Se på dybdeindikatorene fra nullpunktsmåling:
-
+Se evt. på dybdeindikatorene fra nullpunktsmåling:
 https://www.digdir.no/rikets-digitale-tilstand/nullpunktmaling-digitaliseringsstrategien-fremtidens-digitale-norge/7416
 
 Eksempler:
-
 - https://www.digdir.no/rikets-digitale-tilstand/sorge-en-sikker-og-fremtidsrettet-digital-infrastruktur-kap-32/7429
 - https://www.digdir.no/rikets-digitale-tilstand/forsterke-styring-og-samordning-i-offentlig-sektor-kap-31/7428"""@nb .
 
@@ -1871,9 +1854,21 @@ na:id-374db9b5a8cf46ddb5e7f4e6672460d6
     a archimate:Grouping ;
     archimate:identifier "id-374db9b5a8cf46ddb5e7f4e6672460d6" ;
     archimate:name "Domene"@nb ;
-    archimate:documentation """Et domene kan være en sektor, en virksomhet, kommunal sektor, et fagområde, et EU data space eller et annet europeisk område. Domenet kan beskrive egne spesialiseringer, behov, kapabiliteter, ressurser, tiltak og mål, men bør koble disse til relevante generiske kapabiliteter og ressurser i Nasjonal arkitektur. På den måten kan lokale og domenespesifikke arkitekturer utvikles videre uten at Nasjonal arkitektur må modellere alle detaljer. Et domene knytter seg til Nasjonal arkitektur og konkretiserer den i egen kontekst.
+    archimate:documentation """Et domene er et avgrenset område i felles økosystem der flere aktører, behov, regler, data, prosesser, kapabiliteter og ressurser henger sammen rundt et felles formål.
 
-Knytningen til Nasjonal arkitektur går primært via domenekapabilitet til nasjonal kapabilitet."""@nb .
+Et domene kan være en sektor, virksomhet, kommunal sektor, livshendelse, fagområde, samhandlingsområde, EU-initiativ eller et datarom.
+
+Domenet kan beskrive egne spesialiseringer, behov, kapabiliteter, ressurser, tiltak og mål, som kan kobles til relevante generiske kapabiliteter og konkrete ressurser i Nasjonal arkitektur. På den måten kan lokale og domenespesifikke arkitekturer utvikles videre uten at Nasjonal arkitektur må modellere alle detaljer. Et domene knytter seg til Nasjonal arkitektur og konkretiserer den i egen kontekst og anvendelse. 
+
+Knytningen til Nasjonal arkitektur går primært via domenekapabilitet til nasjonal kapabilitet.
+
+Et domene kan være:
+
+- en sektor, for eksempel helse, transport, justis eller utdanning
+- en virksomhet, for eksempel NAV, Skatteetaten eller Brønnøysundregistrene
+- kommunal sektor, for eksempel KS Digital / kommunalt økosystem
+- et fagområde, for eksempel informasjonsforvaltning eller informasjonssikkerhet
+- en livshendelse eller tjenestekjede"""@nb .
 
 na:id-3c14c3595df64671b23817284cc1ff02
     a archimate:Grouping ;
@@ -1882,6 +1877,39 @@ na:id-3c14c3595df64671b23817284cc1ff02
     archimate:documentation """Nasjonal arkitektur beskriver det generiske og tverrgående nivået i felles økosystem for digital samhandling.
 
 Gruppen viser hvilke begreper som hører til Nasjonal arkitektur som felles rammeverk."""@nb .
+
+na:id-e3f6bfa044574121a50a0df37751dd32
+    a archimate:Grouping ;
+    archimate:identifier "id-e3f6bfa044574121a50a0df37751dd32" ;
+    archimate:name "Retning og rammer"@nb ;
+    archimate:documentation """Strategisk styring
+Samarbeid
+Standardisering
+Veiledning
+Juridisk samhandling"""@nb .
+
+na:id-cc737b0bd6ef4f3d8ca332a5aacb6c81
+    a archimate:Grouping ;
+    archimate:identifier "id-cc737b0bd6ef4f3d8ca332a5aacb6c81" ;
+    archimate:name "Data og interoperabilitet"@nb ;
+    archimate:documentation """Informasjonsforvaltning
+Datakilder
+Datautveksling og integrasjon
+Datadrevet"""@nb .
+
+na:id-09bad257f69747f9808ad42219d70a6f
+    a archimate:Grouping ;
+    archimate:identifier "id-09bad257f69747f9808ad42219d70a6f" ;
+    archimate:name "Tillit og trygghet"@nb ;
+    archimate:documentation """Tillit
+Informasjonssikkerhet"""@nb .
+
+na:id-5e0047d4179840aead479f6f223b2cc7
+    a archimate:Grouping ;
+    archimate:identifier "id-5e0047d4179840aead479f6f223b2cc7" ;
+    archimate:name "Utvikling og brukeropplevelse"@nb ;
+    archimate:documentation """Tjenesteutvikling
+Sluttbrukertjenester"""@nb .
 
 na:id-dea95464961449d88f082fa02cceb50f
     a archimate:ArchimateDiagramModel ;
@@ -2074,18 +2102,6 @@ na:id-e7e663347e1f4da497b5064d6ea3e872
     archimate:identifier "id-e7e663347e1f4da497b5064d6ea3e872" ;
     archimate:source na:id-98df6c2b4df340c7a3a3ad32d99ca37e ;
     archimate:target na:id-8914d57f4f1442b1b562252a3630a686 .
-
-na:id-8ed29df017624d0a8e2cc73aea3146c5
-    a archimate:InfluenceRelationship, archimate:Relationship ;
-    archimate:identifier "id-8ed29df017624d0a8e2cc73aea3146c5" ;
-    archimate:source na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5 ;
-    archimate:target na:id-d7a27706ca3240468e16d88afbcd4a3e .
-
-na:id-b4146a9af3734cd2b37854b3424a2aac
-    a archimate:InfluenceRelationship, archimate:Relationship ;
-    archimate:identifier "id-b4146a9af3734cd2b37854b3424a2aac" ;
-    archimate:source na:id-9860d11ff3fd40a5b541b8f929ed305f ;
-    archimate:target na:id-d7a27706ca3240468e16d88afbcd4a3e .
 
 na:id-4242da0d4a5f47a6a793c3a5f0c21836
     a archimate:AggregationRelationship, archimate:Relationship ;
@@ -2570,7 +2586,7 @@ na:id-f6fcdfb945004e2f8c66445bbd789bea
 na:id-f0b083099f6d469984f08dbf38a9b213
     a archimate:ServingRelationship, archimate:Relationship ;
     archimate:identifier "id-f0b083099f6d469984f08dbf38a9b213" ;
-    archimate:name "realiserer"@nb ;
+    archimate:name "realiserer og bidrar til"@nb ;
     archimate:source na:id-9860d11ff3fd40a5b541b8f929ed305f ;
     archimate:target na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5 .
 
@@ -2698,6 +2714,25 @@ na:id-ab2ca39ba14a405497cfdedfb2d875f7
     archimate:identifier "id-ab2ca39ba14a405497cfdedfb2d875f7" ;
     archimate:source na:id-8810f83ff9fe44c2a3368cdef932526b ;
     archimate:target na:id-04fef6c083b449dba91c876ae2e3715f .
+
+na:id-d5318309384e4320a3cd32747322e52c
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-d5318309384e4320a3cd32747322e52c" ;
+    archimate:source na:id-d7a27706ca3240468e16d88afbcd4a3e ;
+    archimate:target na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5 .
+
+na:id-67e68e7696db4c889d9f5f526a9d1294
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-67e68e7696db4c889d9f5f526a9d1294" ;
+    archimate:source na:id-d7a27706ca3240468e16d88afbcd4a3e ;
+    archimate:target na:id-9860d11ff3fd40a5b541b8f929ed305f .
+
+na:id-50b30a1d44894f87b31f472b277ff4b1
+    a archimate:InfluenceRelationship, archimate:Relationship ;
+    archimate:identifier "id-50b30a1d44894f87b31f472b277ff4b1" ;
+    archimate:name "påvirker"@nb ;
+    archimate:source na:id-d7a27706ca3240468e16d88afbcd4a3e ;
+    archimate:target na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 .
 
 ### ── Properties (archimate:Property individuals) ────────────────────────
 
