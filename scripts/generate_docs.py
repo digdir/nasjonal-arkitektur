@@ -199,8 +199,14 @@ def generate_markdown(yaml_file, docs_dir):
     footer = f"\n\n<small>Sist oppdatert: {date_str}</small>\n"
     
     for md_file in glob.glob(os.path.join(docs_dir, '*.md')):
-        with open(md_file, 'a', encoding='utf-8') as f:
-            f.write(footer)
+        with open(md_file, 'r', encoding='utf-8') as f:
+            content = f.read()
+            
+        # Fjern tidligere "Sist oppdatert"-tagger
+        content = re.sub(r'\n*<small>Sist oppdatert:.*?</small>\n*', '', content)
+        
+        with open(md_file, 'w', encoding='utf-8') as f:
+            f.write(content + footer)
 
     print(f"Generated {len(view_files)} view documents with HTML-exported PNGs in {docs_dir}")
 
