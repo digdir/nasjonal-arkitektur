@@ -57,6 +57,32 @@
 <li><strong>Nivå 3: Underkapabilitet</strong> beskriver mer konkrete og operasjonelle evner som kan vurderes, forbedres og kobles til ressurser, tiltak, gap og effektmål.</li>
 </ul>
 <p>Alle nivåene modelleres som ArchiMate 'Capability'. Nivåene uttrykker abstraksjonsnivå og struktur i modellen, ikke ulike metamodellelementer.<br/>Kapabiliteter er knyttet til ressurser som realiserer eller understøtter dem. Forvaltning av kapabilitetene er en kontinuerlig strategisk prosess som gjøres i dekningsgradsvurderinger opp mot strategiske mål.</p>
+<h2>Vekting av EIF-lag</h2>
+<p>Hver kapabilitet vektes mot de fire samhandlingslagene i European Interoperability Framework (EIF):</p>
+<ul>
+<li><strong>Juridisk:</strong> regelverk, hjemler, avtaler og rettslige rammer</li>
+<li><strong>Organisatorisk:</strong> styring, ansvar, arbeidsprosesser, samarbeid og kompetanse</li>
+<li><strong>Semantisk:</strong> begreper, informasjonsmodeller, metadata og felles forståelse av data</li>
+<li><strong>Teknisk:</strong> løsninger, grensesnitt, infrastruktur og tekniske standarder</li>
+</ul>
+<p>Vektingen uttrykker hvor mye kapabiliteten <em>selv</em> må ivareta på laget, ikke hva den forutsetter at andre kapabiliteter leverer. Et lag som i hovedsak ivaretas av en annen kapabilitet, vektes lavere her og høyere der.</p>
+<h3>Vektingsnivåer</h3>
+<h3>Vektingsnivåer</h3>
+<ul>
+<li><strong>Svært høy vekt (4):</strong> Laget er kjernen i kapabiliteten. Kapabiliteten er et primært virkemiddel på dette laget.</li>
+<li><strong>Høy vekt (3):</strong> Laget er en vesentlig forutsetning. Svikt her gir betydelig redusert evne.</li>
+<li><strong>Middels vekt (2):</strong> Laget bidrar og understøtter, men gjelder deler av kapabiliteten eller ivaretas i stor grad av andre kapabiliteter.</li>
+<li><strong>Lav vekt (1):</strong> Laget berører kapabiliteten indirekte eller bare i avgrensede tilfeller.</li>
+<li><strong>Ikke relevant (0):</strong> Laget har ingen meningsfull betydning for kapabiliteten.</li>
+</ul>
+<h3>Vekting på nivå 2 og nivå 3</h3>
+<ul>
+<li>Vekting på nivå 2 vurderes selvstendig ut fra kapabiliteten som helhet. Vektingen på nivå 3 er et innspill, men ikke styrende.</li>
+<li>Ikke relevant brukes på nivå 2 bare når ingen underkapabiliteter har vekt på laget.</li>
+<li>Avvik på to trinn eller mer mellom nivå 2 og nivå 3 bør begrunnes i teksten for laget.</li>
+</ul>
+<h3>Format i dokumentasjonen</h3>
+<p>Vektingen står i seksjonen <code>### Hva det innebærer (Omfang)</code> som ett kulepunkt per lag, alltid med alle fire lagene i rekkefølgen Juridisk, Organisatorisk, Semantisk, Teknisk.</p>
 </div></div>
                         <div class="convertlinks documentation" style="white-space:pre-wrap"></div>
 					</div>
@@ -126,14 +152,14 @@
 											<td><a href="../elements/id-3c14c3595df64671b23817284cc1ff02.html" target="element"> Nasjonal arkitektur</a></td>
 											<td><a href="../elements/id-eb6f01d0d0ef4230b7a5c9c73c3842c5.html" target="element"> Kapabilitet</a></td>
 										</tr><tr>
-											<td><a href="../elements/id-5a850b6aaf4a46bd85747ca3a95ebf5a.html" target="element" title="forbedrer eller benytter">forbedrer eller benytter</a></td>
-											<td><span class="i18n-elementtype-AssociationRelationship" /></td>
-											<td><a href="../elements/id-ed6c7d640e81477780c82285ae079706.html" target="element"> Tiltak</a></td>
-											<td><a href="../elements/id-eb6f01d0d0ef4230b7a5c9c73c3842c5.html" target="element"> Kapabilitet</a></td>
-										</tr><tr>
 											<td><a href="../elements/id-d5318309384e4320a3cd32747322e52c.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-AssociationRelationship" /></td>
 											<td><a href="../elements/id-d7a27706ca3240468e16d88afbcd4a3e.html" target="element"> Dekningsgradsvurdering</a></td>
+											<td><a href="../elements/id-eb6f01d0d0ef4230b7a5c9c73c3842c5.html" target="element"> Kapabilitet</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-b447553cc3ab4798ada2fddda23b20ce.html" target="element" title="forbedrer eller benytter">forbedrer eller benytter</a></td>
+											<td><span class="i18n-elementtype-AssociationRelationship" /></td>
+											<td><a href="../elements/id-ed6c7d640e81477780c82285ae079706.html" target="element"> Tiltak</a></td>
 											<td><a href="../elements/id-eb6f01d0d0ef4230b7a5c9c73c3842c5.html" target="element"> Kapabilitet</a></td>
 										</tr>
 							</tbody>

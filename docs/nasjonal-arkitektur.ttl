@@ -127,7 +127,33 @@ Den konkrete kapabilitetsmodellen for Nasjonal arkitektur er organisert i tre ni
 - **Nivå 3: Underkapabilitet** beskriver mer konkrete og operasjonelle evner som kan vurderes, forbedres og kobles til ressurser, tiltak, gap og effektmål.
 
 Alle nivåene modelleres som ArchiMate 'Capability'. Nivåene uttrykker abstraksjonsnivå og struktur i modellen, ikke ulike metamodellelementer.
-Kapabiliteter er knyttet til ressurser som realiserer eller understøtter dem. Forvaltning av kapabilitetene er en kontinuerlig strategisk prosess som gjøres i dekningsgradsvurderinger opp mot strategiske mål."""@nb .
+Kapabiliteter er knyttet til ressurser som realiserer eller understøtter dem. Forvaltning av kapabilitetene er en kontinuerlig strategisk prosess som gjøres i dekningsgradsvurderinger opp mot strategiske mål.
+
+## Vekting av EIF-lag
+Hver kapabilitet vektes mot de fire samhandlingslagene i European Interoperability Framework (EIF):
+- **Juridisk:** regelverk, hjemler, avtaler og rettslige rammer
+- **Organisatorisk:** styring, ansvar, arbeidsprosesser, samarbeid og kompetanse
+- **Semantisk:** begreper, informasjonsmodeller, metadata og felles forståelse av data
+- **Teknisk:** løsninger, grensesnitt, infrastruktur og tekniske standarder
+
+Vektingen uttrykker hvor mye kapabiliteten *selv* må ivareta på laget, ikke hva den forutsetter at andre kapabiliteter leverer. Et lag som i hovedsak ivaretas av en annen kapabilitet, vektes lavere her og høyere der.
+
+### Vektingsnivåer
+
+### Vektingsnivåer
+- **Svært høy vekt (4):** Laget er kjernen i kapabiliteten. Kapabiliteten er et primært virkemiddel på dette laget.
+- **Høy vekt (3):** Laget er en vesentlig forutsetning. Svikt her gir betydelig redusert evne.
+- **Middels vekt (2):** Laget bidrar og understøtter, men gjelder deler av kapabiliteten eller ivaretas i stor grad av andre kapabiliteter.
+- **Lav vekt (1):** Laget berører kapabiliteten indirekte eller bare i avgrensede tilfeller.
+- **Ikke relevant (0):** Laget har ingen meningsfull betydning for kapabiliteten.
+
+### Vekting på nivå 2 og nivå 3
+- Vekting på nivå 2 vurderes selvstendig ut fra kapabiliteten som helhet. Vektingen på nivå 3 er et innspill, men ikke styrende.
+- Ikke relevant brukes på nivå 2 bare når ingen underkapabiliteter har vekt på laget.
+- Avvik på to trinn eller mer mellom nivå 2 og nivå 3 bør begrunnes i teksten for laget.
+
+### Format i dokumentasjonen
+Vektingen står i seksjonen `### Hva det innebærer (Omfang)` som ett kulepunkt per lag, alltid med alle fire lagene i rekkefølgen Juridisk, Organisatorisk, Semantisk, Teknisk."""@nb .
 
 na:id-ed6c7d640e81477780c82285ae079706
     a archimate:CourseOfAction ;
@@ -135,14 +161,17 @@ na:id-ed6c7d640e81477780c82285ae079706
     archimate:name "Tiltak"@nb ;
     archimate:documentation """Konkrete tiltak er endringer, initiativer eller leveranser som forbedrer eller benytter kapabiliteter. Et tiltak kan virke på kapabiliteter i Nasjonal arkitektur, på kapabiliteter i et domene, eller på begge nivåer samtidig.
 Om tiltaket er nasjonalt, domenespesifikt eller tverrgående fremgår av hvilke kapabiliteter, gap, mål eller effektmål tiltaket knyttes til.
-Dette gjør det mulig å vise hvordan samme tiltak kan bidra til nasjonale mål, lukke gap i et domene og samtidig bygge på felles kapabiliteter og ressurser i Nasjonal arkitektur.
+Dette gjør det mulig å vise hvordan tiltak kan bidra til nasjonale mål, lukke gap i et domene og samtidig bygge på felles kapabiliteter og ressurser i Nasjonal arkitektur.
 Tiltak kan være pågående eller planlagt.
 Tiltaket kan forbedre eller realisere en kapabilitet, men er også avhengig av kapabiliteter som finnes.
 
 - Tiltak forbedrer kapabiliteter slik at effektmål oppnås
 - Tiltak benytter kapabiliteter (og ressurser) slik at effekten oppnås
 - Tiltak reduserer gap.
-- Tiltak bidrar til effektmål for å vise hvilken ønsket virkning tiltaket skal bidra til"""@nb .
+- Tiltak bidrar til effektmål for å vise hvilken ønsket virkning tiltaket skal bidra til
+
+Et strategisk tiltak forbedrer NA-kapabiliteter, reduserer nasjonale gap og bidrar til strategiske mål via effektmål.
+Et operasjonelt tiltak benytter NA-kapabiliteter og -ressurser, forbedrer domenekapabiliteter og bidrar til domenets effektmål."""@nb .
 
 na:id-a601bb3d7b11478185903149965f7842
     a archimate:Capability ;
@@ -378,7 +407,10 @@ na:id-ecdde89168314bfb94b6a6ac70a55bc7
 Tradisjonelle finansieringsmodeller følger i stor grad den enkelte virksomhets budsjettrammer. Dette skaper store utfordringer for tverrgående digitale tiltak. Ofte må én enkelt virksomhet ta hele utviklingskostnaden, mens gevinstene hentes ut av andre aktører eller av samfunnet som helhet. Det skal sikre langsiktige og forutsigbare økonomiske rammer for felles digital infrastruktur og tverrgående digitale tjenester.
 
 ### Hva det innebærer (Omfang)
+- **Juridisk (Ikke relevant):** Kapabiliteten handler om finansieringsmodeller og kostnadsdeling, mens økonomiregelverket er en ytre ramme.
 - **Organisatorisk (Svært høy vekt):** Konkrete prosesser for søknad om statlig medfinansiering. Etablering av bindende avtaler om kostnadsdeling mellom samhandlende virksomheter. Utarbeidelse av forretningsmodeller og rutiner for tverrgående gevinstrealisering.
+- **Semantisk (Ikke relevant):** Kapabiliteten handler ikke om betydningen av data eller begreper.
+- **Teknisk (Ikke relevant):** Kapabiliteten handler ikke om tekniske løsninger.
 
 ### Bidrag til sammenhengende tjenester og felles økosystem
 Kapabiliteten bidrar til sammenhengende tjenester ved å redusere de økonomiske barrierene som ofte bremser tverrgående digitaliseringstiltak. Når finansiering av utvikling, drift, forvaltning og videreutvikling er avklart, får virksomhetene bedre forutsetninger for å samarbeide langsiktig og forpliktende.
@@ -418,6 +450,7 @@ na:id-f696350f5d844a96854deadb83bc3c81
 Gjenbrukbare tjenester leverer forretningsmessig verdi ved å løse funksjonelle problemer som er felles for flere virksomheter. Det er en kritisk nyanse her: Et system kan være teknisk integrerbart (ha et API) uten å være gjenbrukbart, dersom forretningslogikken er for spesifikk eller låst til én kontekst. Kapabiliteten løser problemet med at virksomheter kaster bort ressurser på å duplisere og kode den samme forretningslogikken hver for seg i isolerte siloer.
 
 ### Hva det innebærer (Omfang)
+- **Juridisk (Ikke relevant):** Rammer for bruk av gjenbrukbare tjenester ivaretas i tjenesteforvaltning og avtaleverk.
 - **Organisatorisk (Svært høy vekt):** Rutiner for å identifisere generiske forretningsbehov som deles av flere aktører i økosystemet. Etablering av felles forvaltningsmodeller og insentiver som oppmuntrer virksomheter til å gjenbruke andres tjenester fremfor å bygge egne.
 - **Semantisk (Middels vekt):** Omforente definisjoner av funksjonelle tjenester og forretningsregler i felles katalog. Standardisering av tjenestetaksonomier for å sikre lik forståelse av hva en delt tjeneste faktisk utfører.
 - **Teknisk (Middels vekt):** Utvikling av modulær forretningslogikk som er frikoblet fra spesifikke, proprietære fagsystemer. Anvendelse av arkitekturmønstre som sikrer at tjenestekomponenten enkelt kan plugges inn i helt nye sammenhenger.
@@ -561,6 +594,7 @@ na:id-60827614648541ef8520df87fa25d100
 Tradisjonell systemutvikling låser ofte data og funksjonalitet til spesifikke brukerapplikasjoner eller lukkede fagsystemer. Dette tvinger eksterne virksomheter til å bygge kostbare, skreddersydde og tette integrasjoner for hvert nye behov. Underkapabiliteten løser problemet med fragmentert arkitektur og teknisk gjeld ved å frikoble forretningslogikk og gjøre den universelt tilgjengelig via standardiserte, pluggbare grensesnitt.
 
 ### Hva det innebærer (Omfang)
+- **Juridisk (Ikke relevant):** Kapabiliteten handler om teknisk og organisatorisk integrerbarhet, mens juridiske rammer for bruk ivaretas i datautveksling og tilgangsstyring.
 - **Organisatorisk (Middels vekt):** Operasjonalisering av en robust livssyklusforvaltning for digitale byggeklosser. Etablering av klare rutiner for versjonering, kontinuerlig vedlikehold og forutsigbar utfasing av tjenester for å sikre varig stabilitet for konsumentene.
 - **Semantisk (Middels vekt):** Dokumentasjon og publisering av funksjonalitet i felles kataloger. Sikring av at tekniske grensesnitt og tilhørende datafelter utformes standardisert, slik at de er enkle å oppdage og tolke korrekt av eksterne utviklere.
 - **Teknisk (Svært høy vekt):** Konkret anvendelse av \"API-først\"-metodikk der det maskinlesbare grensesnittet utvikles som det primære produktet, uavhengig av spesifikke applikasjoner. Teknisk implementering av innebygd sikkerhet og kontrollert tilgangsstyring i grensesnittet, slik at data kun utveksles ved lovlig grunnlag og legitimt behov.
@@ -574,16 +608,16 @@ na:id-299fc063873a4f278a1d3c0ac9480467
     archimate:name "Juridisk samhandling"@nb ;
     archimate:documentation """Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.
 
-### 1. Begrunnelse (Hvorfor)
+### Begrunnelse (Hvorfor)
 Digital samhandling og datadeling på tvers av uavhengige virksomheter krever en trygg og felles juridisk grunnmur. Uten denne kapabiliteten vil uklarheter rundt lovlighet, personvern og deling av opplysninger skape usikkerhet, føre til unødig lange utredningsprosesser og i verste fall stanse utviklingen av tverrgående digitale tjenester fordi aktørene ikke har avklart om de har lov til å samhandle.
 
-### 2. Hva det innebærer (Omfang)
+### Hva det innebærer (Omfang)
 - **Juridisk (Svært høy vekt):** Dette utgjør selve kjernen i kapabiliteten. Det innebærer å foreslå, koordinere og harmonisere endringer i regelverket (regelverksutvikling) samt å tilby felles, autoritative tolkninger av eksisterende regelverk (regelverkstolkning). Det sikrer at det rettslige hjemmelsgrunnlaget for deling av data er på plass og i tråd med nasjonale lover og europeiske forordninger (som GDPR og eIDAS).
 - **Organisatorisk (Høy vekt):** Etablere tverrgående samarbeidsarenaer og nettverk mellom jurister, departementer og etater for å samordne forvaltningspraksis. Dette sikrer en koordinert tilnærming til rettslige problemstillinger og fjerner silobaserte tolkninger som hindrer samhandling.
 - **Semantisk (Middels vekt):** Oversette komplekse juridiske begreper, vilkår og lovtekster til en omforent forståelse, slik at lovens intensjon tolkes likt av saksbehandlere og virksomheter i hele økosystemet.
 - **Teknisk (Lav vekt):** Underbygge prinsippet om digitaliseringsvennlig regelverk, der lover og forskrifter utformes med tanke på at rettslige regler, plikter og rettigheter senere skal kunne omsettes til maskinlesbar logikk og automatiserte saksbehandlingsprosesser.
 
-### 3. Bidrag til sammenhengende tjenester og felles økosystem
+### Bidrag til sammenhengende tjenester og felles økosystem
 Kapabiliteten rydder bort juridiske gråsoner og hindringer bak fasaden, slik at data lovlig kan flyte mellom uavhengige aktører i en tjenestekjede. For sluttbrukeren betyr dette en sømløs opplevelse der det offentlige kan samhandle på tvers av etater uten at brukeren selv må fungere som budbringer av attester, vedtak eller dokumentasjon."""@nb .
 
 na:id-ba60560a9ed64b4d87b2fd4fa6b32937
@@ -609,6 +643,7 @@ For å lage sammenhengende tjenester må uavhengige etater og virksomheter funge
 - **Juridisk (Middels vekt):** Overordnede rammeverk for samarbeidsavtaler og nasjonale føringer, som Digitaliseringsrundskrivet, regulerer plikten til å samhandle og dele data.
 - **Organisatorisk (Svært høy vekt):** Nasjonale styringsmodeller, samstyring, finansieringsordninger og porteføljestyring avklarer strategisk ansvar, prioriteringer og spilleregler for samarbeid.
 - **Semantisk (Middels vekt):** Felles forståelse av organisatoriske roller, ansvar, eierskap og tjenestekjeder gjør det tydelig hvem som har ansvar på tvers av sektorer og livshendelser.
+- **Teknisk (Ikke relevant):** Kapabiliteten handler om arbeidsprosesser, roller og ansvarsdeling, ikke om tekniske løsninger.
 
 ### Bidrag til sammenhengende tjenester og felles økosystem
 Kapabiliteten bygger bro mellom organisatoriske siloer og sikrer bredere enighet om prioriteringer, ansvar og økonomi på forhånd. Dette gir operative team mandatet de trenger for å utvikle sømløse tjenester på tvers av virksomheter. For sluttbrukeren betyr det at offentlig sektor i større grad kan opptre som én samordnet aktør, selv om tjenestene leveres av flere uavhengige virksomheter."""@nb .
@@ -745,7 +780,7 @@ Uten proaktivitet forblir selv de beste digitale tjenestene passive verktøy som
 ### Hva det innebærer (Omfang)
 - **Juridisk (Middels vekt):** Rettslig forankring av automatiserte forretningsregler som kobler spesifikke tjenester til rettigheter og plikter. Sikring av juridisk hjemmel for proaktiv varsling og behandling av delte data uten forutgående søknad.
 - **Organisatorisk (Svært høy vekt):** Etablering av operative rutiner for personalisert og kanal-uavhengig varsling via brukerens foretrukne digitale kanal. Utforming av nye arbeidsprosesser for å igangsette forhåndsutfylte tjenester og proaktiv veiledning som avlaster kommunikasjonssentre.
-- **Semantisk (Middels vekt):** Standardisering av logiske forretningsregler og relevanskriterier på tvers av sektorer. Harmonisering av datastrukturer og begreper knyttet til viktige tjenester for å sikre treffsikker og intelligent regelstyring.
+- **Semantisk (Høy vekt):** Standardisering av logiske forretningsregler og relevanskriterier på tvers av sektorer. Harmonisering av datastrukturer og begreper knyttet til viktige tjenester for å sikre treffsikker og intelligent regelstyring.
 - **Teknisk (Svært høy vekt):** Bruk av hendelsesdrevet arkitektur for å lytte etter endringer i autoritative datakilder som Folkeregisteret og Enhetsregisteret. Implementering av tekniske integrasjoner for utsendelse av sikre, betimelige varsler og automatisert generering av forhåndsutfylte søknadsskjemaer.
 
 ### Bidrag til sammenhengende tjenester og felles økosystem
@@ -822,7 +857,10 @@ na:id-e67a4f2983ce40f9823ec34ba460055a
 Sammenhengende tjenester kan ikke bygges i isolasjon. Aktørene i økosystemet må fungere som ett lag for å løse felles utfordringer, unngå dobbeltarbeid og bryte ned silotenking. Denne overordnede pilaren eksisterer for å sikre helhetlig samfunnsverdi og felles strategisk retning. Den løser problemet med at virksomheter prioriterer interne oppgaver fremfor tverrgående brukerreiser.
 
 ### Hva det innebærer (Omfang)
+- **Juridisk (Høy vekt):** Samarbeidsavtaler, tjenesteavtaler og forpliktende rammer for samhandling må gi et tydelig juridisk grunnlag for felles tjenesteforvaltning og ansvarsdeling.
 - **Organisatorisk (Svært høy vekt):** Overordnede styringsmodeller, samstyring og finansiering koordinerer samhandlingsmodeller og avtaler for å tilpasse tjenestekjeder og prosesser.
+- **Semantisk (Middels vekt):** Felles begreper og beskrivelser må sikre at samarbeidende virksomheter har samme forståelse av roller, ansvar og tjenester.
+- **Teknisk (Middels vekt):** Felles verktøy og digitale samarbeidsflater må understøtte forvaltning og samhandling på tvers av virksomheter.
 
 ### Bidrag til sammenhengende tjenester og felles økosystem
 Kapabiliteten bygger bro mellom organisatoriske siloer og sikrer overordnet strategisk koordinering. Når man er enige om prioriteringer, økonomi og spilleregler på forhånd, sikres et tydelig mandat for samarbeid. Dette gir de operative teamene fundamentet de trenger for å binde tjenester sammen til en uavbrutt og guidet reise, slik at sluttbrukeren opplever forvaltningen som én samordnet aktør."""@nb .
@@ -837,8 +875,10 @@ na:id-b4a86e2e430c472b9f74bedb7f66fd74
 Sammenhengende tjenester kan ikke bygges i isolasjon. Aktørene i økosystemet må møtes for å dele erfaringer, løse felles utfordringer og samordne planer. Denne kapabiliteten sikrer velfungerende møteplasser som reduserer dobbeltarbeid, motvirker silotenking og gjør det mulig å koordinere utvikling på tvers av virksomheter.
 
 ### Hva det innebærer (Omfang)
+- **Juridisk (Ikke relevant):** Arenaer og nettverk er frivillige samarbeidsformer uten egne juridiske forpliktelser.
 - **Organisatorisk (Svært høy vekt):** Sette opp og drifte konkrete nettverk, faggrupper og forum. Avklare roller, mandater og spilleregler for deltakelse, samt sikre at arbeidet er forankret hos ledelsen i virksomhetene.
 - **Semantisk (Middels vekt):** Bruke arenaene til å bygge felles kultur, terminologi og forståelse mellom arkitekter, jurister, utviklere og fagmiljøer fra ulike sektorer.
+- **Teknisk (Ikke relevant):** Kapabiliteten handler om møteplasser og faglige nettverk, ikke om tekniske løsninger.
 
 ### Bidrag til sammenhengende tjenester og felles økosystem
 Når fagfolk møtes på tvers av organisasjoner, blir det lettere å oppdage hvor tjenester berører hverandre. Arenaene bidrar til å identifisere nye tverrgående brukerreiser, dele erfaringer og koordinere endringer i økosystemet. Dette gir bedre grunnlag for sammenhengende tjenester og gjør at virksomhetene kan utvikle løsninger som henger bedre sammen for sluttbrukeren."""@nb .
@@ -855,7 +895,7 @@ Når digitale tjenester er splittet opp mellom ulike uavhengige etater, blir bru
 ### Hva det innebærer (Omfang)
 - **Juridisk (Middels vekt):** Harmoniserte avklaringsprosesser under forvaltningsloven og personopplysningsloven sikrer det rettslige fundamentet for tverretatlig datadeling.
 - **Organisatorisk (Svært høy vekt):** Utforming av tverrgående arbeidsprosesser understøtter en uavbrutt og guidet reise der brukeren ledes steg-for-steg uten å måtte forholde seg til statlige eller kommunale grenser.
-- **Semantisk (Middels vekt):** Operasjonalisering av \"kun én gang\"-prinsippet sikrer at oppgitte data gjenbrukes via felles informasjonsmodeller.
+- **Semantisk (Høy vekt):** Operasjonalisering av \"kun én gang\"-prinsippet sikrer at oppgitte data gjenbrukes via felles informasjonsmodeller.
 - **Teknisk (Høy vekt):** Teknisk integrasjon via standardiserte grensesnitt (API-er) og fellesløsninger sikrer at data deles og gjenbrukes.
 
 ### Bidrag til sammenhengende tjenester og felles økosystem
@@ -889,10 +929,10 @@ na:id-034543e002414306a8fbecc8c9d8e496
 For å lykkes med sammenhengende digitale tjenester kan ikke virksomheter lenger optimalisere kun for seg selv. Kapabiliteten krever en tydelig styring eller et mandat som forplikter uavhengige aktører til å tilpasse seg hverandre, slik at offentlig sektor kan opptre koordinert og effektivt.
 
 ### Hva det innebærer (Omfang)
-- **Juridisk:** Å sørge for at juss og forvaltningspraksis i ulike virksomheter er kompatible, slik at det rettslige hjemmelsgrunnlaget for deling av data er på plass (f.eks. mellom Skatteetaten og NAV).
-- **Organisatorisk:** Å sørge for felles arbeidsprosesser og en tydelig ansvarsfordeling mellom de samhandlende virksomhetene for å definere stegene i en tjenestekjede.
-- **Semantisk:** Å sørge for en omforent og felles forståelse av hva dataene betyr (f.eks. at begrepet \"ansatt\" betyr det samme i to ulike systemer), slik at maskiner kan forstå hverandre.
-- **Teknisk:** Å sørge for at felles standarder og nasjonale fellesløsninger blir tatt i bruk, fremfor at virksomheter bygger egne, proprietære løsninger.
+- **Juridisk (Middels vekt):** Koordinere at juss og forvaltningspraksis i ulike virksomheter gjøres kompatible, og at nødvendig hjemmelsgrunnlag for deling av data avklares på tvers (f.eks. mellom Skatteetaten og NAV).
+- **Organisatorisk (Svært høy vekt):** Etablere mandat, felles beslutningsarenaer og tydelig ansvarsfordeling som forplikter samhandlende virksomheter til felles arbeidsprosesser, prioriteringer og ressursbruk i tjenestekjeder.
+- **Semantisk (Middels vekt):** Sørge for at virksomhetene forplikter seg til omforente begreper og en felles forståelse av hva dataene betyr (f.eks. at «ansatt» betyr det samme i to ulike systemer), slik at maskiner kan forstå hverandre.
+- **Teknisk (Middels vekt):** Sørge for at felles standarder og nasjonale fellesløsninger blir valgt og tatt i bruk, fremfor at virksomheter bygger egne, proprietære løsninger.
 
 ### Bidrag til sammenhengende tjenester og felles økosystem
 Samordning kobler strategi, arkitektur, beslutninger og ressurser på tvers, slik at offentlig sektor kan levere helhetlige tjenester rundt brukerens behov."""@nb .
@@ -1194,6 +1234,7 @@ Digitale tjenester utvikles ofte basert på den enkelte virksomhets interne stru
 - **Juridisk (Middels vekt):** Sikring av rettighetene til sårbare grupper i tråd med Likestillings- og diskrimineringsloven. Etterlevelse av forskrift om universell utforming av IKT-løsninger (WCAG-standarden) for å hindre diskriminering.
 - **Organisatorisk (Svært høy vekt):** Systematisk innhenting av brukerinnsikt for å kartlegge tverrsektorielle brukerreiser som dekker hele behovet fra start til slutt. Etablering av samarbeidsrutiner på tvers av forvaltningsnivåer for å fjerne manuelle steg i brukerreisen og motvirke digitalt utenforskap.
 - **Semantisk (Middels vekt):** Harmonisering av brukernes naturlige språk og terminologi med forvaltningens interne fagbegreper. Sikring av at tjenestebeskrivelser, skjemaer og veiledninger utformes slik at innholdet er umiddelbart forståelig for innbyggere og næringsliv.
+- **Teknisk (Ikke relevant):** Kapabiliteten handler om brukerinnsikt og design av tjenesteforløp, mens teknisk realisering ivaretas i andre kapabiliteter under Tjenesteutvikling.
 
 ### Bidrag til sammenhengende tjenester og felles økosystem
 Kapabiliteten gjør at komplekse prosesser bak fasaden skjules for brukeren, slik at opplevelsen fremstår som én uavbrutt og guidet reise. Ved å designe tjenester på tvers av organisatoriske grenser slipper innbyggeren å oppgi samme informasjon flere ganger eller strande i \"døde ender\". Sluttbrukeren opplever i stedet en helhetlig offentlig sektor som proaktivt støtter dem i deres gitte livssituasjon."""@nb .
@@ -1210,6 +1251,7 @@ Når tjenester settes sammen av bidrag fra flere ulike virksomheter, oppstår de
 ### Hva det innebærer (Omfang)
 - **Juridisk (Høy vekt):** Inngåelse av formelle avtaler mellom virksomhetene, inkludert samforståelsesmemorandum som sikrer rettslig forankring og gjensidig forpliktelse.
 - **Organisatorisk (Svært høy vekt):** Etablering av klare roller, ansvar og avtalefesting gjennom SLA og governance i tjenestekjeder. Tydelig plassering av ansvar for hele kjeden fra ende til ende, slik at hver virksomhet vet hva som forventes av dem i samarbeidet.
+- **Semantisk (Ikke relevant):** Kapabiliteten handler om eierskap, drift og livssyklus for tjenester, mens tjenestebeskrivelser ivaretas av Oversikt over tjenester.
 - **Teknisk (Middels vekt):** Operasjonalisering og oppfølging av tjenestenivåavtaler gjennom teknisk måling og felles monitorering av tjenestekjedene.
 
 ### Bidrag til sammenhengende tjenester og felles økosystem
@@ -1227,7 +1269,7 @@ Selv om enkeltvirksomheter tilbyr digitale tjenester med gode tekniske grensesni
 ### Hva det innebærer (Omfang)
 - **Juridisk (Middels vekt):** Operasjonalisering av tverrgående samarbeidsavtaler og rettslige rammer sikrer lovlig automatisert informasjonsflyt mellom selvstendige tjenesteeiere.
 - **Organisatorisk (Svært høy vekt):** Avtalefesting av operasjonelt ansvar (SLA) og etablering av tverrgående arbeidsprosesser definerer stegene i tjenestekjeden.
-- **Semantisk (Middels vekt):** Anvendelse av spesifikke informasjonsmodeller og standardiserte dataformater sikrer korrekt tolking av data som utveksles mellom tjenestene.
+- **Semantisk (Høy vekt):** Anvendelse av spesifikke informasjonsmodeller og standardiserte dataformater sikrer korrekt tolking av data som utveksles mellom tjenestene.
 - **Teknisk (Svært høy vekt):** Implementering av tekniske grensesnitt (API-er) og hendelsesdrevet arkitektur kobler distribuerte løsninger sammen uten tette koblinger.
 
 ### Bidrag til sammenhengende tjenester og felles økosystem
@@ -1243,6 +1285,7 @@ na:id-cd3b6a8989a448a2b4dfbf430a41bad4
 Offentlig og privat sektor må øke digitaliseringstakten for å løse felles samfunnsutfordringer og unngå fragmenterte løsninger. Denne hovedkapabiliteten eksisterer som en strategisk paraply for å styrke den felles prosess- og kompetanseevnen på tvers av økosystemet. Den løser problemet med silobasert og isolert systemutvikling ved å samordne innsatsen rundt helhetlig metodikk, design, koding og samarbeid.
 
 ### Hva det innebærer (Omfang)
+- **Juridisk (Middels vekt):** Krav til personvern, universell utforming og innebygd regelverksetterlevelse må ivaretas tidlig i utviklingen av tjenester.
 - **Organisatorisk (Svært høy vekt):** Felles smidige metodikker, brukerorienterte designdrevne prosesser og tverrgående samarbeidsmodeller sikrer helhetlig produktutvikling.
 - **Semantisk (Middels vekt):** Nasjonale referansemodeller og omforent begrepsforståelse legges systematisk til grunn under modellering av nye tjenestegrensesnitt.
 - **Teknisk (Høy vekt):** Overordnede plattformstrategier for standardiserte byggeklosser, integrerbare API-er og felles kjøretidsmiljøer sikrer teknologisk samsvar.
@@ -1304,6 +1347,7 @@ Tjenesteutvikling foregår i stor grad i sektorene og den enkelte virksomhet. De
 ### Hva det innebærer (Omfang)
 - **Juridisk (Lav vekt):** Inngåelse og oppfølging av databehandleravtaler for sky- og plattformtjenester. Sikring av at kjøretidsmiljøene etterlever spesifikke krav.
 - **Organisatorisk (Middels vekt):** Konkrete arbeidsprosesser for onboarding av utviklingsteam til felles plattformer. Definering av operative roller, supportrutiner og tjenestenivåavtaler (SLA) som regulerer oppetid og plattformforvaltning.
+- **Semantisk (Ikke relevant):** Kapabiliteten handler om plattform og infrastruktur for utvikling og drift, ikke om betydningen av data.
 - **Teknisk (Svært høy vekt):** Operasjonell drift av skalerbar skyinfrastruktur, container-teknologi og automatiserte prosesser for kontinuerlig integrasjon og leveranse (CI/CD). Tilgjengeliggjøring av standardiserte verktøykasser, kodebiblioteker og felleskomponenter for applikasjonsutvikling og sanntidsovervåking.
 
 ### Bidrag til sammenhengende tjenester og felles økosystem
@@ -1315,18 +1359,17 @@ na:id-c0547226c598467a942dced879d0c18b
     archimate:name "Veiledning"@nb ;
     archimate:documentation """Evne til å sikre at veiledninger for digital samhandling utarbeides, formidles og benyttes.
 
-Dette innebærer:
-* Beskrivelser av beste praksis
-* Omforente prinsipper, mønstre og standarder for hvordan løsninger skal bygges for å fungere optimalt, sikkert og sammenhengende i det nasjonale økosystemet.
-* Referansearkitekturer
+### Begrunnelse (Hvorfor)
+Kapabiliteten sikrer at virksomheter i økosystemet får veiledning på hva som er god faglig praksis, hvordan relevant regelverk bør forstås i digital samhandling, og hvilke prioriteringer som er i samsvar med vedtatt politikk. 
 
-* hva som er god faglig praksis
-* hvordan relevant regelverk skal tolkes
-* hvilke prioriteringer som er i samsvar med vedtatt politikk
+### Hva det innebærer (Omfang)
+- **Juridisk (Middels vekt):** Veiledning må forklare hvordan regelverk, føringer og krav kan anvendes i digital samhandling, uten å erstatte formelle rettskilder, regelverkstolkning eller myndighetsansvar.
+- **Organisatorisk (Høy vekt):** Det må finnes rutiner for å utarbeide, kvalitetssikre, forvalte og formidle veiledning, med tydelig angivelse av veiledningens styrke (bør benyttes eller kan benyttes).
+- **Semantisk (Høy vekt):** Beskrivelser av beste praksis, prinsipper, mønstre og referansearkitekturer må bruke omforente begreper og felles maler, slik at veiledningen forstås og anvendes likt på tvers av virksomheter.
+- **Teknisk (Lav vekt):** Veiledning må være tilgjengelig i digitale kanaler, kataloger og kunnskapsbaser med versjonering og lenking, og tekniske veiledere og referansearkitekturer må kunne brukes direkte som grunnlag for løsningsvalg.
 
-Veiledere kan ha ulik grad av styrke:
-* Bør benyttes: en sterk anbefaling/råd som vil gjelde de aller fleste. Denne er så klart faglig forankret at det sjelden er forsvarlig ikke å gjøre som anbefalt
-* Kan eller foreslår: en svak anbefaling/råd der ulike valg kan være riktig."""@nb .
+### Bidrag til sammenhengende tjenester og felles økosystem
+Når veiledningen er kvalitetssikret, lett tilgjengelig og brukes aktivt, reduseres lokale tolkninger og ulik praksis, og felles prinsipper og standarder tas raskere i bruk. For felles økosystem gir dette bedre etterlevelse og mer gjenbruk. For sluttbrukeren betyr det mer konsistente og sammenhengende digitale tjenester, fordi virksomhetene utvikler og forvalter løsninger etter samme kunnskapsgrunnlag."""@nb .
 
 na:id-8914d57f4f1442b1b562252a3630a686
     a archimate:Capability ;
@@ -1450,7 +1493,7 @@ na:id-f1c6e616a4744bdd92bb4618980a9ff5
 na:id-9b0a9570968543b9801adac1a26b9561
     a archimate:Constraint ;
     archimate:identifier "id-9b0a9570968543b9801adac1a26b9561" ;
-    archimate:name "Teknologiske løsninger og infrastruktur"@nb .
+    archimate:name "Tekniske løsninger og infrastruktur"@nb .
 
 na:id-4bd51b22f8894f87b3ce4bf869e2a912
     a archimate:Driver ;
@@ -2646,13 +2689,6 @@ na:id-2bc8ee7e35c04ac4815ab8a2d649df03
     archimate:source na:id-374db9b5a8cf46ddb5e7f4e6672460d6 ;
     archimate:target na:id-3c14c3595df64671b23817284cc1ff02 .
 
-na:id-5a850b6aaf4a46bd85747ca3a95ebf5a
-    a archimate:AssociationRelationship, archimate:Relationship ;
-    archimate:identifier "id-5a850b6aaf4a46bd85747ca3a95ebf5a" ;
-    archimate:name "forbedrer eller benytter"@nb ;
-    archimate:source na:id-ed6c7d640e81477780c82285ae079706 ;
-    archimate:target na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5 .
-
 na:id-deba9c82669841f1ab38247c7e7aff20
     a archimate:RealizationRelationship, archimate:Relationship ;
     archimate:identifier "id-deba9c82669841f1ab38247c7e7aff20" ;
@@ -2689,6 +2725,13 @@ na:id-96e8393ba04d4618a66e8935bb793586
     archimate:identifier "id-96e8393ba04d4618a66e8935bb793586" ;
     archimate:source na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 ;
     archimate:target na:id-534850df1c7b48e2a2e7cc966ece233f .
+
+na:id-b447553cc3ab4798ada2fddda23b20ce
+    a archimate:AssociationRelationship, archimate:Relationship ;
+    archimate:identifier "id-b447553cc3ab4798ada2fddda23b20ce" ;
+    archimate:name "forbedrer eller benytter"@nb ;
+    archimate:source na:id-ed6c7d640e81477780c82285ae079706 ;
+    archimate:target na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5 .
 
 ### ── Properties (archimate:Property individuals) ────────────────────────
 
