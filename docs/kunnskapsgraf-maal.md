@@ -90,4 +90,4 @@ Når strukturen er etablert og vi ser at informasjonen flyter godt, modner vi mo
 * **Sømløs systemintegrasjon**: Med en formell ontologi på plass vil systemet vårt automatisk og maskinelt kunne utveksle data med andre nasjonale fellesløsninger, referansearkitekturer og kataloger. Selve datafilene trenger minimal endring; det er hovedsakelig `@context`-definisjonen i toppen av filene som oppgraderes.
 
 
-<small>Sist oppdatert: 11. september 2026</small>
+<small>Sist oppdatert: 30. september 2026</small>

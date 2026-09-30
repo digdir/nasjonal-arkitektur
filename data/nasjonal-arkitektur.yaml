@@ -55,9 +55,9 @@ elements:
     folder_path: *id001
   id-199ae45b0a6c47b28b3507837647c6c8:
     type: Resource
-    name: Gjenbrukbar løsning
+    name: Gjenbrukbare løsninger
     documentation: "Gjenbrukbare løsninger er tekniske komponenter, applikasjoner\
-      \ som leverer funksjonalitet eller dataprodukter og dekker behov på tvers av\
+      \ som leverer funksjonalitet eller dataprodukter, og dekker behov på tvers av\
       \ eller innenfor sektorer, og/eller forvaltningsnivå. \nEn nasjonal fellesløsning\
       \ er en byggekloss som offentlige virksomheter kan dra nytte av i sine digitale\
       \ tjenester. Løsningene utvikles én gang og kan deretter brukes av mange.\n\
@@ -202,24 +202,6 @@ elements:
 
 
       '
-    properties: {}
-    folder_path: *id001
-  id-31be9bc0b80e4be4b2df2d8e0000dc6f:
-    type: ValueStream
-    name: Verdistrømmer og prosesser
-    documentation: 'Verdistrømmer og prosesser beskriver hvordan Nasjonal arkitektur
-      brukes i ulike arbeidsflyter, beslutningsprosesser og utviklingsløp.
-
-
-      Nasjonal arkitektur skal være et kunnskapsgrunnlag og en verktøykasse som kan
-      gjenbrukes i både strategiske og operative sammenhenger. Strategiske verdistrømmer
-      kan handle om å sette retning, prioritere tiltak, vurdere gap og beslutte felles
-      utvikling. Operasjonelle verdistrømmer kan handle om tjenesteutvikling, produktutvikling,
-      arkitekturarbeid, analyse av kapabiliteter og vurdering av relevante ressurser.
-
-
-      Verdistrømmer og prosesser er derfor ikke en del av kjernemetamodellen, men
-      viser hvordan modellen anvendes.'
     properties: {}
     folder_path: *id001
   id-ed6c7d640e81477780c82285ae079706:
@@ -3244,26 +3226,14 @@ elements:
       '
     properties: {}
     folder_path: *id002
-  id-1785953dbdda41fbaa0b7dbd4861c31c:
-    type: Driver
-    name: Andre forhold?
-    documentation: ''
-    properties: {}
-    folder_path: &id003
-    - Motivation
-    - Drivere og begresninger
-  id-2abff1b661b844539a878fbd5c93871d:
-    type: Constraint
-    name: Andre forhold?
-    documentation: ''
-    properties: {}
-    folder_path: *id003
   id-fdd16850a7e14a44aa6eee04e7fb7933:
     type: Driver
     name: Data (tilgang, kvalitet, standardisering)
     documentation: ''
     properties: {}
-    folder_path: *id003
+    folder_path: &id003
+    - Motivation
+    - Drivere og begrensninger
   id-f063a8707ed544e19d37cd3202144f95:
     type: Constraint
     name: Data (tilgang, kvalitet, standardisering)
@@ -3525,7 +3495,7 @@ elements:
     folder_path: *id005
   id-d4632a56bcf04c768517303bf05c2882:
     type: Goal
-    name: Innovasjon og næringsutviling
+    name: Innovasjon og næringsutvikling
     documentation: ''
     properties: {}
     folder_path: *id005
@@ -3899,13 +3869,6 @@ elements:
     properties: {}
     folder_path: *id007
 relationships:
-  id-1f3c8faf7c4a47f59cafef9cf07dc47e:
-    type: AssociationRelationship
-    name: ''
-    source_id: id-0cf363c3f2ff4fa3a34bda7a610e6f70
-    target_id: id-534850df1c7b48e2a2e7cc966ece233f
-    documentation: ''
-    properties: {}
   id-fb26fa3c9d7d4095b3d1e294c479caff:
     type: RealizationRelationship
     name: dekningsgrad
@@ -3960,13 +3923,6 @@ relationships:
     name: ''
     source_id: id-d503cf06faa1417b8acd4b26a5c0741e
     target_id: id-f5214c3db8de4738ab03abb7b7e553ed
-    documentation: ''
-    properties: {}
-  id-bdd7b5946ff24e8d966fdec23ebe54c3:
-    type: ServingRelationship
-    name: benyttes i
-    source_id: id-eb6f01d0d0ef4230b7a5c9c73c3842c5
-    target_id: id-31be9bc0b80e4be4b2df2d8e0000dc6f
     documentation: ''
     properties: {}
   id-3608c7db061346b7974df54281fbf632:
@@ -4390,13 +4346,6 @@ relationships:
     target_id: id-682d96a51e604ed2a00e1f4824023bab
     documentation: ''
     properties: {}
-  id-6a9e29e1b72b43c6a2c284ed79013100:
-    type: RealizationRelationship
-    name: ''
-    source_id: id-0cf363c3f2ff4fa3a34bda7a610e6f70
-    target_id: id-534850df1c7b48e2a2e7cc966ece233f
-    documentation: ''
-    properties: {}
   id-24b3a80613b7424da16872dbf7b35544:
     type: AggregationRelationship
     name: ''
@@ -4674,20 +4623,6 @@ relationships:
     target_id: id-0cf363c3f2ff4fa3a34bda7a610e6f70
     documentation: ''
     properties: {}
-  id-ac32845d657e4dee923712ffc6766bee:
-    type: ServingRelationship
-    name: benyttes i
-    source_id: id-23598cee556747ef80cab10dbad84e65
-    target_id: id-31be9bc0b80e4be4b2df2d8e0000dc6f
-    documentation: ''
-    properties: {}
-  id-ddfd40b6fd8d434d8388970444b41f34:
-    type: RealizationRelationship
-    name: ''
-    source_id: id-31be9bc0b80e4be4b2df2d8e0000dc6f
-    target_id: id-0cf363c3f2ff4fa3a34bda7a610e6f70
-    documentation: ''
-    properties: {}
   id-eb5ea45fb81343aa850be6613dfe1c28:
     type: ServingRelationship
     name: realiserer
@@ -4779,6 +4714,13 @@ relationships:
     target_id: id-0cf363c3f2ff4fa3a34bda7a610e6f70
     documentation: Vurderingen påvirker motivasjonen for eller oppnåelsen av ønsket
       mål
+    properties: {}
+  id-96e8393ba04d4618a66e8935bb793586:
+    type: RealizationRelationship
+    name: ''
+    source_id: id-0cf363c3f2ff4fa3a34bda7a610e6f70
+    target_id: id-534850df1c7b48e2a2e7cc966ece233f
+    documentation: ''
     properties: {}
 views:
   id-dea95464961449d88f082fa02cceb50f:
@@ -6523,6 +6465,11 @@ views:
       og hvordan tiltak kan brukes til å lukke gap mellom nåsituasjon og ønsket situasjon.
 
 
+      Metamodellen beskriver hvilke begreper nasjonal arkitektur bruker, og hvordan
+      de henger sammen. Den er grunnmuren som gjør kapabilitetskartet til et verktøy
+      for analyse og styring, og ikke bare en oversikt.
+
+
       Nasjonal arkitektur beskriver det generelle og tverrgående nivået i felles økosystem.
       Den skal ikke beskrive alle detaljer i alle sektorer, virksomheter, fagområder
       eller europeiske initiativer. I stedet gir den et felles språk, en felles struktur
@@ -6662,7 +6609,7 @@ views:
         parent_node_id: null
         bounds:
           x: '528'
-          y: '126'
+          y: '114'
           width: '120'
           height: '55'
       id-7f03797d1e674f24855925ccb2839c5f:
@@ -6804,12 +6751,7 @@ views:
         relationship_id: ''
         source_node: id-bdad134aceda47c1a2c7f0069067c506
         target_node: id-b8c8de25c41643c39930d2080c90e2e3
-      id-a99b458c5fb64896868ce0d9f7d40637:
-        type: Connection
-        relationship_id: ''
-        source_node: id-7f03797d1e674f24855925ccb2839c5f
-        target_node: id-d0529378105044e1b81b2f087ccac006
-      id-256e2b5538864860b9a7dbfe00a39ef4:
+      id-44fe84f0dc33432c98d867dc260b8f15:
         type: Connection
         relationship_id: ''
         source_node: id-7f03797d1e674f24855925ccb2839c5f

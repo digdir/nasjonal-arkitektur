@@ -43,8 +43,8 @@ Dette gjør at hvert domene kan beskrive sine egne konkrete ressurser uten at Na
 na:id-199ae45b0a6c47b28b3507837647c6c8
     a archimate:Resource ;
     archimate:identifier "id-199ae45b0a6c47b28b3507837647c6c8" ;
-    archimate:name "Gjenbrukbar løsning"@nb ;
-    archimate:documentation """Gjenbrukbare løsninger er tekniske komponenter, applikasjoner som leverer funksjonalitet eller dataprodukter og dekker behov på tvers av eller innenfor sektorer, og/eller forvaltningsnivå. 
+    archimate:name "Gjenbrukbare løsninger"@nb ;
+    archimate:documentation """Gjenbrukbare løsninger er tekniske komponenter, applikasjoner som leverer funksjonalitet eller dataprodukter, og dekker behov på tvers av eller innenfor sektorer, og/eller forvaltningsnivå. 
 En nasjonal fellesløsning er en byggekloss som offentlige virksomheter kan dra nytte av i sine digitale tjenester. Løsningene utvikles én gang og kan deretter brukes av mange.
 De viktigste fellesløsningene kalles nasjonale felleskomponenter: Altinn, Digital postkasse til innbyggere, Enhetsregisteret, Folkeregisteret, ID-porten, Kontakt- og reservasjonsregisteret og Matrikkelen. Noen er obligatoriske å bruke, andre er anbefalte - både for statlige virksomheter og for kommunal sektor.
 
@@ -128,16 +128,6 @@ Den konkrete kapabilitetsmodellen for Nasjonal arkitektur er organisert i tre ni
 
 Alle nivåene modelleres som ArchiMate 'Capability'. Nivåene uttrykker abstraksjonsnivå og struktur i modellen, ikke ulike metamodellelementer.
 Kapabiliteter er knyttet til ressurser som realiserer eller understøtter dem. Forvaltning av kapabilitetene er en kontinuerlig strategisk prosess som gjøres i dekningsgradsvurderinger opp mot strategiske mål."""@nb .
-
-na:id-31be9bc0b80e4be4b2df2d8e0000dc6f
-    a archimate:ValueStream ;
-    archimate:identifier "id-31be9bc0b80e4be4b2df2d8e0000dc6f" ;
-    archimate:name "Verdistrømmer og prosesser"@nb ;
-    archimate:documentation """Verdistrømmer og prosesser beskriver hvordan Nasjonal arkitektur brukes i ulike arbeidsflyter, beslutningsprosesser og utviklingsløp.
-
-Nasjonal arkitektur skal være et kunnskapsgrunnlag og en verktøykasse som kan gjenbrukes i både strategiske og operative sammenhenger. Strategiske verdistrømmer kan handle om å sette retning, prioritere tiltak, vurdere gap og beslutte felles utvikling. Operasjonelle verdistrømmer kan handle om tjenesteutvikling, produktutvikling, arkitekturarbeid, analyse av kapabiliteter og vurdering av relevante ressurser.
-
-Verdistrømmer og prosesser er derfor ikke en del av kjernemetamodellen, men viser hvordan modellen anvendes."""@nb .
 
 na:id-ed6c7d640e81477780c82285ae079706
     a archimate:CourseOfAction ;
@@ -1399,16 +1389,6 @@ Meldingsutveksling gjør det mulig for virksomheter å samhandle digitalt uten a
 Meldingsutveksling bidrar til sammenhengende tjenester ved å sikre at nødvendig informasjon kan flyte strukturert og pålitelig mellom virksomheter i en tjenestekjede. Brukeren slipper å være bærer av informasjon mellom aktørene, og virksomhetene kan behandle saker mer helhetlig og effektivt.
 Kapabiliteten styrker det felles digitale økosystemet ved å redusere behovet for særskilte integrasjoner, øke gjenbruk av standarder og legge til rette for mer forutsigbar samhandling mellom offentlige og private aktører."""@nb .
 
-na:id-1785953dbdda41fbaa0b7dbd4861c31c
-    a archimate:Driver ;
-    archimate:identifier "id-1785953dbdda41fbaa0b7dbd4861c31c" ;
-    archimate:name "Andre forhold?"@nb .
-
-na:id-2abff1b661b844539a878fbd5c93871d
-    a archimate:Constraint ;
-    archimate:identifier "id-2abff1b661b844539a878fbd5c93871d" ;
-    archimate:name "Andre forhold?"@nb .
-
 na:id-fdd16850a7e14a44aa6eee04e7fb7933
     a archimate:Driver ;
     archimate:identifier "id-fdd16850a7e14a44aa6eee04e7fb7933" ;
@@ -1581,7 +1561,7 @@ na:id-46a97f13294345f89decd549d4269848
 na:id-d4632a56bcf04c768517303bf05c2882
     a archimate:Goal ;
     archimate:identifier "id-d4632a56bcf04c768517303bf05c2882" ;
-    archimate:name "Innovasjon og næringsutviling"@nb .
+    archimate:name "Innovasjon og næringsutvikling"@nb .
 
 na:id-76a32d89c68c4e5f86e29d261e3d2253
     a archimate:Principle ;
@@ -1966,6 +1946,8 @@ na:id-b513e2dbd37e447184ee9f969874a681
     archimate:documentation """Modellen for Nasjonal arkitektur viser kjernebegrepene i metamodellen for Nasjonal arkitektur og hvordan kapabiliteter, ressurser, tiltak, gap, mål og effektmål henger sammen.
 Den forklarer den grunnleggende strukturen som brukes for å beskrive hva økosystemet må kunne gjøre (kapabiliteter), hvilke ressurser som realiserer kapabilitetene, og hvordan tiltak kan brukes til å lukke gap mellom nåsituasjon og ønsket situasjon.
 
+Metamodellen beskriver hvilke begreper nasjonal arkitektur bruker, og hvordan de henger sammen. Den er grunnmuren som gjør kapabilitetskartet til et verktøy for analyse og styring, og ikke bare en oversikt.
+
 Nasjonal arkitektur beskriver det generelle og tverrgående nivået i felles økosystem. Den skal ikke beskrive alle detaljer i alle sektorer, virksomheter, fagområder eller europeiske initiativer. I stedet gir den et felles språk, en felles struktur og et felles sett av kapabiliteter og ressurstyper som andre domener kan knytte seg til.
 
 Et domene kan være en sektor, en virksomhet, kommunal sektor, et fagområde, et EU data space eller et annet europeisk område. Domenet kan beskrive egne spesialiseringer, behov, kapabiliteter, ressurser, tiltak og mål, men bør koble disse til relevante generiske kapabiliteter og ressurser i Nasjonal arkitektur. På den måten kan lokale og domenespesifikke arkitekturer utvikles videre uten at Nasjonal arkitektur må modellere alle detaljer.
@@ -1974,12 +1956,6 @@ Relasjonen mellom Nasjonal arkitektur og domener viser derfor både gjenbruk og 
 Nasjonal arkitektur gir felles rammer for samhandling og beskriver det generelle, tverrgående og normerende nivåe, mens domenene konkretiserer hvordan rammene realiseres i sin kontekst. Dette gjør det mulig å sammenligne behov, avdekke gap, prioritere tiltak og vurdere modenhet på tvers av domener, samtidig som hvert domene beholder nødvendig handlingsrom."""@nb .
 
 ### ── Relationships ─────────────────────────────────────────────────────
-
-na:id-1f3c8faf7c4a47f59cafef9cf07dc47e
-    a archimate:AssociationRelationship, archimate:Relationship ;
-    archimate:identifier "id-1f3c8faf7c4a47f59cafef9cf07dc47e" ;
-    archimate:source na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 ;
-    archimate:target na:id-534850df1c7b48e2a2e7cc966ece233f .
 
 na:id-fb26fa3c9d7d4095b3d1e294c479caff
     a archimate:RealizationRelationship, archimate:Relationship ;
@@ -2029,13 +2005,6 @@ na:id-5c9d4f96d8ed4f209a13d6341bcd0a3a
     archimate:identifier "id-5c9d4f96d8ed4f209a13d6341bcd0a3a" ;
     archimate:source na:id-d503cf06faa1417b8acd4b26a5c0741e ;
     archimate:target na:id-f5214c3db8de4738ab03abb7b7e553ed .
-
-na:id-bdd7b5946ff24e8d966fdec23ebe54c3
-    a archimate:ServingRelationship, archimate:Relationship ;
-    archimate:identifier "id-bdd7b5946ff24e8d966fdec23ebe54c3" ;
-    archimate:name "benyttes i"@nb ;
-    archimate:source na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5 ;
-    archimate:target na:id-31be9bc0b80e4be4b2df2d8e0000dc6f .
 
 na:id-3608c7db061346b7974df54281fbf632
     a archimate:AggregationRelationship, archimate:Relationship ;
@@ -2397,12 +2366,6 @@ na:id-3984560851fc4112afa742c81fe56888
     archimate:source na:id-ba60560a9ed64b4d87b2fd4fa6b32937 ;
     archimate:target na:id-682d96a51e604ed2a00e1f4824023bab .
 
-na:id-6a9e29e1b72b43c6a2c284ed79013100
-    a archimate:RealizationRelationship, archimate:Relationship ;
-    archimate:identifier "id-6a9e29e1b72b43c6a2c284ed79013100" ;
-    archimate:source na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 ;
-    archimate:target na:id-534850df1c7b48e2a2e7cc966ece233f .
-
 na:id-24b3a80613b7424da16872dbf7b35544
     a archimate:AggregationRelationship, archimate:Relationship ;
     archimate:identifier "id-24b3a80613b7424da16872dbf7b35544" ;
@@ -2639,19 +2602,6 @@ na:id-b41dc2536c3448babbf3a7ac3b47ef58
     archimate:source na:id-23598cee556747ef80cab10dbad84e65 ;
     archimate:target na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 .
 
-na:id-ac32845d657e4dee923712ffc6766bee
-    a archimate:ServingRelationship, archimate:Relationship ;
-    archimate:identifier "id-ac32845d657e4dee923712ffc6766bee" ;
-    archimate:name "benyttes i"@nb ;
-    archimate:source na:id-23598cee556747ef80cab10dbad84e65 ;
-    archimate:target na:id-31be9bc0b80e4be4b2df2d8e0000dc6f .
-
-na:id-ddfd40b6fd8d434d8388970444b41f34
-    a archimate:RealizationRelationship, archimate:Relationship ;
-    archimate:identifier "id-ddfd40b6fd8d434d8388970444b41f34" ;
-    archimate:source na:id-31be9bc0b80e4be4b2df2d8e0000dc6f ;
-    archimate:target na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 .
-
 na:id-eb5ea45fb81343aa850be6613dfe1c28
     a archimate:ServingRelationship, archimate:Relationship ;
     archimate:identifier "id-eb5ea45fb81343aa850be6613dfe1c28" ;
@@ -2733,6 +2683,12 @@ na:id-50b30a1d44894f87b31f472b277ff4b1
     archimate:name "påvirker"@nb ;
     archimate:source na:id-d7a27706ca3240468e16d88afbcd4a3e ;
     archimate:target na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 .
+
+na:id-96e8393ba04d4618a66e8935bb793586
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-96e8393ba04d4618a66e8935bb793586" ;
+    archimate:source na:id-0cf363c3f2ff4fa3a34bda7a610e6f70 ;
+    archimate:target na:id-534850df1c7b48e2a2e7cc966ece233f .
 
 ### ── Properties (archimate:Property individuals) ────────────────────────
 

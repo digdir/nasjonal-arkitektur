@@ -34,4 +34,4 @@ Denne viser Nivå 1 til Nivå 2 av kapabiliteter i Nasjonal arkitektur:
 - **Utvikling og brukeropplevelse**
 
 
-<small>Sist oppdatert: 11. september 2026</small>
+<small>Sist oppdatert: 30. september 2026</small>

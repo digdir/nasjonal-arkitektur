@@ -295,4 +295,4 @@ Normeringsgrad kan være knyttet til disse virkemidlene.
 
 ---
 
-<small>Sist oppdatert: 11. september 2026</small>
+<small>Sist oppdatert: 30. september 2026</small>

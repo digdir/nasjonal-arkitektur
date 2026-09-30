@@ -19,4 +19,4 @@
   - **Strategisk styring** - *Evnen til å sette retning for nasjonal arkitektur og realisere strategiske mål.*
   - **Juridisk samhandling** - *Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.*
 
-<small>Sist oppdatert: 11. september 2026</small>
+<small>Sist oppdatert: 30. september 2026</small>

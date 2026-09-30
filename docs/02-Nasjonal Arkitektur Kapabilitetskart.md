@@ -68,4 +68,4 @@
     - **Anvendelse av veiledning** - *Evne til tolke og benytte veiledere i prosjekter og tiltak.*
     - **Utvikling og formidling av veiledning** - *Evne til å utarbeide, kvalitetssikre og tilgjengeliggjøre veiledning.*
 
-<small>Sist oppdatert: 11. september 2026</small>
+<small>Sist oppdatert: 30. september 2026</small>
