@@ -141,3 +141,6 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# MkDocs build output (publiseres via gh-pages, ikke fra main)
+/site/

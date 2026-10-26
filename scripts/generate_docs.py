@@ -3,6 +3,12 @@ import os
 import re
 import shutil
 import glob
+import stat
+
+def remove_readonly(func, path, _exc_info):
+    """Windows/OneDrive kan sette mapper som skrivebeskyttet, noe som stopper rmtree."""
+    os.chmod(path, stat.S_IWRITE)
+    func(path)
 
 def generate_markdown(yaml_file, docs_dir):
     with open(yaml_file, 'r', encoding='utf-8') as f:
@@ -16,7 +22,10 @@ def generate_markdown(yaml_file, docs_dir):
     report_dest = os.path.join(docs_dir, 'archimate-report')
     has_report = False
     if os.path.exists(html_export_dir):
-        shutil.copytree(html_export_dir, report_dest, dirs_exist_ok=True)
+        # Tøm målmappen først, slik at filer fra eldre eksporter ikke blir liggende igjen
+        if os.path.exists(report_dest):
+            shutil.rmtree(report_dest, onerror=remove_readonly)
+        shutil.copytree(html_export_dir, report_dest)
         has_report = True
         
         # Skjul den originale Archi-headeren siden vi nå har MkDocs-header i iframe-en
