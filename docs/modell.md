@@ -32,32 +32,6 @@ Du kan se HTML-rapporten generert fra Archi her:
 
 > **Merk:** Denne dokumentasjonen skal forbedres! Inntil videre kan du få tilgang til all dokumentasjon ved å **[Åpne interaktiv Archi-rapport](interaktiv-modell.md)**.
 
-Arkitekturen er beskrevet gjennom følgende visuelle views:
-
-### [001-Metamodell](001-Metamodell.md)
-
-Modellen for Nasjonal arkitektur viser kjernebegrepene i metamodellen for Nasjonal arkitektur og hvordan kapabiliteter, ressurser, tiltak, gap, mål og effektmål henger sammen.
-
-### [01-Nasjonal arkitektur - Hovedkapabiliteter](01-Nasjonal arkitektur - Hovedkapabiliteter.md)
-
-Denne viser Nivå 1 til Nivå 2 av kapabiliteter i Nasjonal arkitektur:
-
-### [02-Nasjonal Arkitektur - Kapabilitetskart alle nivåer](02-Nasjonal Arkitektur - Kapabilitetskart alle niver.md)
-
-Den konkrete kapabilitetsmodellen for Nasjonal arkitektur er organisert i tre nivåer, denne viser alle nivåene:
-
-### [03-Arkitekturprinsipper og NA](03-Arkitekturprinsipper og NA.md)
-
-Denne viser (grovt) relasjonene mellom nasjonale arkitekturprinsipper og Nasjonal arkitektur hovedkapabiliteter (Nivå 2)
-
-### [04-Digitaliseringsstrategiens mål og NA](04-Digitaliseringsstrategiens ml og NA.md)
-
-Digitaliseringsstrategiens mest relevante mål for Nasjonal arkitektur 
-
-### [05-EIF lagmodell](05-EIF lagmodell.md)
-
-EIF lagmodell fra EU, rammeverk for digital samhandling.
 
 
-
-<small>Sist oppdatert: 30. september 2026</small>
+<small>Sist oppdatert: 26. oktober 2026</small>
