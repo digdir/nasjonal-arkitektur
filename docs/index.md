@@ -84,4 +84,4 @@ Dette er den "viktigste" delen av modellen, sammen med oversikt og relasjon til 
 
 
 
-<small>Sist oppdatert: 29. oktober 2026</small>
+<small>Sist oppdatert: 3. november 2026</small>

@@ -1316,7 +1316,7 @@ elements:
     folder_path: *id002
   id-299fc063873a4f278a1d3c0ac9480467:
     type: Capability
-    name: Juridisk samhandling
+    name: Regelverksforvaltning
     documentation: 'Evne til å etablere, forvalte og formidle et helhetlig juridisk
       rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.
 
@@ -2776,7 +2776,7 @@ elements:
     folder_path: *id002
   id-d503cf06faa1417b8acd4b26a5c0741e:
     type: Capability
-    name: Tillit
+    name: Digital tillit
     documentation: 'Evne til å tilby tillitstjenester som muliggjører autentisering
       og autorisasjon på tvers av tjenestekjeder, og støtte en distribuert arkitektur
       og føderering mellom ulike domener og tjeneste.
@@ -3643,12 +3643,6 @@ elements:
     documentation: ''
     properties: {}
     folder_path: *id005
-  id-76a32d89c68c4e5f86e29d261e3d2253:
-    type: Principle
-    name: Kun en gang
-    documentation: ''
-    properties: {}
-    folder_path: *id005
   id-04fef6c083b449dba91c876ae2e3715f:
     type: Principle
     name: Prinsipp
@@ -3797,43 +3791,245 @@ elements:
   id-94f7473fb4184e3b94bb92c35186b88f:
     type: Principle
     name: 'P1: Ta utgangspunkt i brukernes behov'
-    documentation: https://www.digdir.no/digital-samhandling/prinsipp-1-ta-utgangspunkt-i-brukernes-behov/1055
+    documentation: 'Offentlige tjenester skal bygge på brukernes behov og perspektiver
+      og kunne brukes av alle, uavhengig av alder og funksjonsevne. Brukerne forventer
+      brukervennlige og sammenhengende tjenester, noe som krever samordnede arbeidsprosesser
+      på tvers av sektorer, mellom offentlig og privat sektor og over landegrenser.
+
+
+      Begrunnelse: Brukerne får et enklere møte med forvaltningen, opplever tjenestene
+      som helhetlige og sammenhengende, og får ivaretatt sine rettigheter og plikter.
+
+
+      Kjennetegn ved etterlevelse:
+
+      - Løsningen er utformet ut fra brukernes behov.
+
+      - Prosessene er bygd på tvers av virksomheter og sektorer, slik at brukeren
+      møter sammenhengende tjenester.
+
+      - Krav og regelverk for universell utforming følges, også i fagsystemer og saksbehandlingsverktøy.
+
+      - Kommunikasjonen med brukerne bruker klart språk.
+
+      - Egnede metoder, som tjenestedesign, prosessmodellering og brukertesting med
+      bred representasjon, er brukt for å avdekke behov og sammenhenger, også behov
+      brukerne ikke selv etterspør.
+
+
+      Kilde: Overordnede arkitekturprinsipper Digdir.
+
+      https://www.digdir.no/digital-samhandling/prinsipp-1-ta-utgangspunkt-i-brukernes-behov/1055'
     properties: {}
     folder_path: *id005
   id-dbfcb14c3e024a40b6cb71138311abc0:
     type: Principle
-    name: 'P2: Ta arkitektur-beslutninger på rett nivå'
-    documentation: https://www.digdir.no/digital-samhandling/prinsipp-2-ta-arkitekturbeslutninger-pa-rett-niva/1056
+    name: 'P2: Ta arkitekturbeslutninger på rett nivå'
+    documentation: 'Arkitektur er en utviklings- og styringsoppgave som påvirker virksomhetens
+      kostnader og gevinster. Arkitekturbeslutninger bør tas så nær oppgaveløsningen
+      og brukernes behov som mulig, men enkelte beslutninger må løftes for å sikre
+      samhandling med andre og ivareta felles mål for digitalisering i offentlig sektor.
+
+
+      Begrunnelse: Gir balanse mellom effektiv, brukernær oppgaveløsning og samhandlingsevne
+      internt, på tvers av offentlig sektor og mellom offentlige og private virksomheter.
+
+
+      Kjennetegn ved etterlevelse – løsningen (ansvarsplassering og styringsnivå):
+
+      - Ansvar og beslutninger er plassert så nær oppgaveløsningen som hensiktsmessig,
+      mens det som påvirker samhandling med andre er løftet til riktig nivå.
+
+      - Løsningen følger nasjonale og sektorielle krav og føringer og målene for digitalisering
+      av offentlig sektor.
+
+      - Designet er vurdert mot relevante nasjonale og europeiske tjenester.
+
+
+      Kjennetegn ved etterlevelse – prosessen (hvem beslutter):
+
+      - Det er klart hvem som tar arkitekturbeslutningene, og på hvilket nivå.
+
+      - Arkitekturstyring er en integrert del av virksomhetens styring.
+
+
+      Kilde: Overordnede arkitekturprinsipper Digdir.
+
+      https://www.digdir.no/digital-samhandling/prinsipp-2-ta-arkitekturbeslutninger-pa-rett-niva/1056'
     properties: {}
     folder_path: *id005
   id-7d62a886cdc14d20a5b361cf68da5754:
     type: Principle
     name: 'P3: Bidra til digitaliseringsvennlige regelverk'
-    documentation: https://www.digdir.no/digital-samhandling/prinsipp-3-bidra-til-digitaliseringsvennlige-regelverk/1057
+    documentation: 'Regelverk setter rammene for offentlig oppgaveløsning og må videreutvikles
+      i takt med nye muligheter og utfordringer. Arkitekturarbeidet kan avdekke juridiske
+      barrierer for samhandling og digitalisering og bidra til at lov- og forskriftsendringer
+      settes i gang.
+
+
+      Begrunnelse: Digitaliseringsvennlige regelverk er en forutsetning for effektive
+      arbeidsprosesser og sammenhengende tjenester, og kan gjøre automatisering av
+      oppgaveløsningen mulig.
+
+
+      Kjennetegn ved etterlevelse:
+
+      - Handlingsrommet i eksisterende regelverk er undersøkt og brukt.
+
+      - Behov for lov- eller forskriftsendringer er spilt inn til ansvarlig departement.
+
+      - Jurister, teknologer og fagsiden samarbeider i regel- og IT-utviklingsarbeidet.
+
+      - Digdir er informert om eller rådført om regelverk som hindrer digitalisering.
+
+
+      Kilde: Overordnede arkitekturprinsipper Digdir.
+
+      https://www.digdir.no/digital-samhandling/prinsipp-3-bidra-til-digitaliseringsvennlige-regelverk/1057'
     properties: {}
     folder_path: *id005
   id-a27833cb9e324549916a528f31481dce:
     type: Principle
     name: 'P4: Del og gjenbruk data'
-    documentation: https://www.digdir.no/digital-samhandling/prinsipp-4-del-og-gjenbruk-data/1061
+    documentation: 'Virksomheter skal legge til rette for deling og gjenbruk av data.
+      Data er en fellesressurs som gir store gevinster for forvaltningen, innbyggere,
+      næringsliv og frivillige organisasjoner når de deles og gjenbrukes.
+
+
+      Begrunnelse: Deling av offentlige data gir økt kunnskap, verdiskaping, innovasjon,
+      effektivitet og åpenhet. Det er en forutsetning for effektive arbeidsprosesser,
+      sammenhengende tjenester og automatisering, gjør at brukerne slipper å oppgi
+      informasjon det offentlige allerede har (kun én gang), og kan gi bedre datakvalitet.
+
+
+      Kjennetegn ved etterlevelse:
+
+      - Relevante data gjenbrukes, og egne data legges til rette for deling, når tjenester
+      etableres eller videreutvikles.
+
+      - Data hentes fra autoritative kilder; kopier brukes bare der det er nødvendig
+      og holdes oppdatert.
+
+      - Data tilbys i tråd med regjeringens retningslinjer for tilgjengeliggjøring
+      av offentlige data.
+
+      - Datasett, API-er, begreper og informasjonsmodeller er beskrevet i Felles datakatalog.
+
+      - Data er ikke låst i systemspesifikke formater, og egne data forvaltes etter
+      Rammeverk for informasjonsforvaltning.
+
+
+      Kilde: Overordnede arkitekturprinsipper Digdir.
+
+      https://www.digdir.no/digital-samhandling/prinsipp-4-del-og-gjenbruk-data/1061'
     properties: {}
     folder_path: *id005
   id-5b6ec861e2d246ce90c99ea282d35610:
     type: Principle
     name: 'P7: Sørg for tillit til oppgaveløsningen'
-    documentation: https://www.digdir.no/digital-samhandling/prinsipp-7-sorg-tillit-til-oppgavelosningen/1064
+    documentation: 'Innbyggere, næringsliv og frivillige organisasjoner skal kunne
+      stole på at offentlige virksomheter løser oppgavene sine godt og sikkert. Det
+      forutsetter at regelverket etterleves, at rettssikkerhet, effektivitet, informasjonssikkerhet
+      og personvern ivaretas, og at forvaltningen er så åpen og gjennomsiktig som
+      mulig om regler, prosesser, data, tjenester og vedtak.
+
+
+      Begrunnelse: Tillit er en forutsetning for at brukerne velger de digitale offentlige
+      tjenestene. Rettssikkerhet, effektivitet, personvern, informasjonssikkerhet,
+      åpenhet og gjennomsiktighet er viktige bidrag til denne tilliten.
+
+
+      Kjennetegn ved etterlevelse:
+
+      - Rettssikkerhet, effektivitet, informasjonssikkerhet og personvern er vektlagt
+      og veid mot hverandre i valget mellom arkitekturalternativer.
+
+      - Personvern og informasjonssikkerhet ivaretas i alle utviklingsfaser og gjennom
+      hele livsløpet, med styring og kontroll som sikrer dette.
+
+      - Datatilsynets prinsipper og anbefalinger for personvern følges.
+
+      - Beslutninger og vedtak er klart formulert, sporbare og etterprøvbare.
+
+      - Saksbehandling og vedtak dokumenteres i tråd med krav til arkiv og samfunnsdokumentasjon
+      i et langtidsperspektiv.
+
+
+      Kilde: Overordnede arkitekturprinsipper Digdir.
+
+      https://www.digdir.no/digital-samhandling/prinsipp-7-sorg-tillit-til-oppgavelosningen/1064'
     properties: {}
     folder_path: *id005
   id-d0918d8701a4408b93a9ab278ecbb85e:
     type: Principle
     name: 'P5: Del og gjenbruk løsninger'
-    documentation: https://www.digdir.no/digital-samhandling/prinsipp-5-del-og-gjenbruk-losninger/1062
+    documentation: 'Deling og gjenbruk av løsninger omfatter arkitekturprodukter,
+      løsningskomponenter og tjenester, på nasjonalt, sektorielt og virksomhetsnivå.
+
+
+      Begrunnelse: Deling og gjenbruk fremmer samhandlingsevne, innovasjon og effektivitet,
+      og bidrar til harmonisering, informasjonssikkerhet og personvern. Virksomhetene
+      kan da konsentrere seg om å digitalisere kjernevirksomheten i stedet for å løse
+      utfordringer som allerede er løst.
+
+
+      Kjennetegn ved etterlevelse:
+
+      - Eksisterende og planlagte løsninger som kan gjenbrukes, er kartlagt.
+
+      - Fellesløsninger og felleskomponenter brukes der de er egnet for formålet.
+
+      - Markeds- og skyløsninger er vurdert før egenutvikling, og bindinger til enkeltleverandører
+      er vurdert.
+
+      - Arkitekturen gir endrings- og vedlikeholdsevne over tid, blant annet gjennom
+      løse koplinger, modularisering, standardiserte tjenestekontrakter og redusert
+      kompleksitet og teknisk gjeld.
+
+      - Egne løsninger som kan være nyttige for andre, er gjort kjent og tilbudt for
+      gjenbruk, og forbedringsinnspill gis til forvalterne av løsninger som brukes.
+
+
+      Kilde: Overordnede arkitekturprinsipper Digdir.
+
+      https://www.digdir.no/digital-samhandling/prinsipp-5-del-og-gjenbruk-losninger/1062'
     properties: {}
     folder_path: *id005
   id-0007ec16e9a1406d9f6aabd1f975d993:
     type: Principle
     name: 'P6: Lag digitale løsninger som støtter samhandling'
-    documentation: https://www.digdir.no/digital-samhandling/prinsipp-6-lag-digitale-losninger-som-stotter-samhandling/1063
+    documentation: 'Digitale løsninger skal utvikles slik at de kan samhandle med
+      andre løsninger i offentlig og privat sektor. Det krever juridisk, organisatorisk,
+      semantisk og teknisk samhandlingsevne, blant annet standardisering, avtaler
+      og felles begrepsapparat.
+
+
+      Begrunnelse: Samhandlingsvennlige løsninger er en forutsetning for sammenhengende
+      tjenester og tverrgående prosesser, realisert på en fleksibel og kostnadseffektiv
+      måte.
+
+
+      Kjennetegn ved etterlevelse:
+
+      - Løsningen er utformet for samspill med andre løsninger, både ved egenutvikling
+      og ved anskaffelse.
+
+      - Obligatoriske standarder i forskrift om IT-standarder i offentlig forvaltning
+      følges, og ellers brukes anbefalte eller andre åpne standarder.
+
+      - Norsk arkitekturrammeverk for samhandling er brukt når tjenesten skal inngå
+      i samhandling med andre virksomheter.
+
+      - Det finnes avtaler mellom samhandlingspartene om informasjonssikkerhet, personvern,
+      tjenestekvalitet og samhandlingsevne.
+
+      - Informasjonsutvekslingen har ytelse som gjør at brukerne opplever tjenestene
+      som oppdaterte, og løsningen kan skalere ved endret bruk.
+
+
+      Kilde: Overordnede arkitekturprinsipper Digdir.
+
+      https://www.digdir.no/digital-samhandling/prinsipp-6-lag-digitale-losninger-som-stotter-samhandling/1063'
     properties: {}
     folder_path: *id005
   id-74e15ee821794ae09cd9f7f7a38f32aa:
@@ -3929,7 +4125,7 @@ elements:
     folder_path: *id007
   id-661cb46063c544be82d804511f5ea9f9:
     type: Grouping
-    name: Styrings og forvaltning
+    name: Styring og forvaltning
     documentation: Styring og forvaltning av integrerbare og sammenhengende offentlige
       tjenester er det femte området, og løper på tvers av de andre samhandlingsområdene.
       Det er viktig å komme i gang med avklaringer rundt styring og forvaltning så
@@ -3970,46 +4166,28 @@ elements:
     folder_path: *id007
   id-e3f6bfa044574121a50a0df37751dd32:
     type: Grouping
-    name: Retning og rammer
-    documentation: 'Strategisk styring
-
-      Samarbeid
-
-      Standardisering
-
-      Veiledning
-
-      Juridisk samhandling
+    name: Styring, rammer og samarbeid
+    documentation: '
 
       '
     properties: {}
     folder_path: *id007
   id-cc737b0bd6ef4f3d8ca332a5aacb6c81:
     type: Grouping
-    name: Data og interoperabilitet
-    documentation: 'Informasjonsforvaltning
-
-      Datakilder
-
-      Datautveksling og integrasjon
-
-      Datadrevet'
+    name: Data og informasjon
+    documentation: ''
     properties: {}
     folder_path: *id007
   id-09bad257f69747f9808ad42219d70a6f:
     type: Grouping
-    name: Tillit og trygghet
-    documentation: 'Tillit
-
-      Informasjonssikkerhet'
+    name: Tillit og sikkerhet
+    documentation: ''
     properties: {}
     folder_path: *id007
   id-5e0047d4179840aead479f6f223b2cc7:
     type: Grouping
-    name: Utvikling og brukeropplevelse
-    documentation: 'Tjenesteutvikling
-
-      Sluttbrukertjenester'
+    name: Tjenester og brukeropplevelse
+    documentation: ''
     properties: {}
     folder_path: *id007
 relationships:
@@ -4315,13 +4493,6 @@ relationships:
     target_id: id-dbfcb14c3e024a40b6cb71138311abc0
     documentation: ''
     properties: {}
-  id-943a2b26870746c88fcd686f5be81f0f:
-    type: RealizationRelationship
-    name: ''
-    source_id: id-e67a4f2983ce40f9823ec34ba460055a
-    target_id: id-dbfcb14c3e024a40b6cb71138311abc0
-    documentation: ''
-    properties: {}
   id-ee332cb030944bd9bbae55e9f4416b3b:
     type: RealizationRelationship
     name: ''
@@ -4348,13 +4519,6 @@ relationships:
     name: ''
     source_id: id-98df6c2b4df340c7a3a3ad32d99ca37e
     target_id: id-a27833cb9e324549916a528f31481dce
-    documentation: ''
-    properties: {}
-  id-9ee23600ae524a5e98962a28dcab7ef9:
-    type: RealizationRelationship
-    name: ''
-    source_id: id-1be148b57796458993c3f7f5f24815ca
-    target_id: id-d0918d8701a4408b93a9ab278ecbb85e
     documentation: ''
     properties: {}
   id-2ff2758133c04007a9f3e4cc6ce381da:
@@ -4718,13 +4882,6 @@ relationships:
     target_id: id-9860d11ff3fd40a5b541b8f929ed305f
     documentation: ''
     properties: {}
-  id-1a3cd1a136bd44ca82b526fad88746c2:
-    type: RealizationRelationship
-    name: ''
-    source_id: id-1be148b57796458993c3f7f5f24815ca
-    target_id: id-0007ec16e9a1406d9f6aabd1f975d993
-    documentation: ''
-    properties: {}
   id-60f5b70a00c54834988ff75f1923dae4:
     type: AggregationRelationship
     name: ''
@@ -4866,6 +5023,118 @@ relationships:
     target_id: id-eb6f01d0d0ef4230b7a5c9c73c3842c5
     documentation: ''
     properties: {}
+  id-bc3694713faf4f8c9e02d04dce3bd03b:
+    type: AggregationRelationship
+    name: ''
+    source_id: id-e3f6bfa044574121a50a0df37751dd32
+    target_id: id-299fc063873a4f278a1d3c0ac9480467
+    documentation: ''
+    properties: {}
+  id-c551775cafa242928e561cee7daafc09:
+    type: AggregationRelationship
+    name: ''
+    source_id: id-e3f6bfa044574121a50a0df37751dd32
+    target_id: id-c0547226c598467a942dced879d0c18b
+    documentation: ''
+    properties: {}
+  id-b857260243194f05b7cc162625df8ef9:
+    type: AggregationRelationship
+    name: ''
+    source_id: id-e3f6bfa044574121a50a0df37751dd32
+    target_id: id-c3f87c86b19547359c677a333b16f03b
+    documentation: ''
+    properties: {}
+  id-3470fe704a584562a616083a62c39968:
+    type: AggregationRelationship
+    name: ''
+    source_id: id-e3f6bfa044574121a50a0df37751dd32
+    target_id: id-e67a4f2983ce40f9823ec34ba460055a
+    documentation: ''
+    properties: {}
+  id-b583bfde355a46faa96c7d4affb15bc3:
+    type: AggregationRelationship
+    name: ''
+    source_id: id-e3f6bfa044574121a50a0df37751dd32
+    target_id: id-682d96a51e604ed2a00e1f4824023bab
+    documentation: ''
+    properties: {}
+  id-5c5b9b07af234bb69d3e775eb5d2adaa:
+    type: AggregationRelationship
+    name: ''
+    source_id: id-5e0047d4179840aead479f6f223b2cc7
+    target_id: id-1be148b57796458993c3f7f5f24815ca
+    documentation: ''
+    properties: {}
+  id-6b2fbb16e5104b1daf485d8d508ffe85:
+    type: AggregationRelationship
+    name: ''
+    source_id: id-5e0047d4179840aead479f6f223b2cc7
+    target_id: id-cd3b6a8989a448a2b4dfbf430a41bad4
+    documentation: ''
+    properties: {}
+  id-e58fb497dcca45a4a17fc05d2b21a279:
+    type: AggregationRelationship
+    name: ''
+    source_id: id-cc737b0bd6ef4f3d8ca332a5aacb6c81
+    target_id: id-d7aa97e6319a492d8a1345bcaa8e154a
+    documentation: ''
+    properties: {}
+  id-2cdb563c513543f3ac6ffe0a0c164537:
+    type: AggregationRelationship
+    name: ''
+    source_id: id-cc737b0bd6ef4f3d8ca332a5aacb6c81
+    target_id: id-896e4c1434604caa891b94bcce964720
+    documentation: ''
+    properties: {}
+  id-a38245c93da04b3dabf9db0cf939a9f3:
+    type: AggregationRelationship
+    name: ''
+    source_id: id-cc737b0bd6ef4f3d8ca332a5aacb6c81
+    target_id: id-98df6c2b4df340c7a3a3ad32d99ca37e
+    documentation: ''
+    properties: {}
+  id-98dbc88022524ad59d4e1186ae012220:
+    type: AggregationRelationship
+    name: ''
+    source_id: id-cc737b0bd6ef4f3d8ca332a5aacb6c81
+    target_id: id-ad6f81e892a74590840828b6aabb270d
+    documentation: ''
+    properties: {}
+  id-cd503542ab3a49308e38f67dc615767e:
+    type: AggregationRelationship
+    name: ''
+    source_id: id-09bad257f69747f9808ad42219d70a6f
+    target_id: id-48c9873ae59341a49c2dca27379fab55
+    documentation: ''
+    properties: {}
+  id-2cc8a883fbad449ea8843b194b1538c5:
+    type: AggregationRelationship
+    name: ''
+    source_id: id-09bad257f69747f9808ad42219d70a6f
+    target_id: id-d503cf06faa1417b8acd4b26a5c0741e
+    documentation: ''
+    properties: {}
+  id-5866ee85d4704155994dd95d4a32f25d:
+    type: RealizationRelationship
+    name: ''
+    source_id: id-896e4c1434604caa891b94bcce964720
+    target_id: id-a27833cb9e324549916a528f31481dce
+    documentation: ''
+    properties: {}
+  id-368621fb5f864b06a73f5af4ac31731b:
+    type: RealizationRelationship
+    name: ''
+    source_id: id-682d96a51e604ed2a00e1f4824023bab
+    target_id: id-d0918d8701a4408b93a9ab278ecbb85e
+    documentation: ''
+    properties: {}
+  id-69258de26bb44a56aaae5b62079ec7b5:
+    type: RealizationRelationship
+    name: ''
+    source_id: id-cd3b6a8989a448a2b4dfbf430a41bad4
+    target_id: id-0007ec16e9a1406d9f6aabd1f975d993
+    documentation: ''
+    properties: {}
 views:
   id-dea95464961449d88f082fa02cceb50f:
     type: ArchimateDiagramModel
@@ -4896,17 +5165,17 @@ views:
         archimate_element_id: id-ba60560a9ed64b4d87b2fd4fa6b32937
         parent_node_id: null
         bounds:
-          x: '96'
+          x: '120'
           y: '-840'
-          width: '1297'
-          height: '997'
+          width: '1237'
+          height: '961'
       id-93baba518bcd4cdc88be11aec6de3cae:
         type: DiagramObject
         archimate_element_id: id-d503cf06faa1417b8acd4b26a5c0741e
         parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
-          x: '43'
-          y: '660'
+          x: '16'
+          y: '792'
           width: '762'
           height: '157'
       id-8d79b6a466e34131b788b183b6c6fd78:
@@ -4915,7 +5184,7 @@ views:
         parent_node_id: id-93baba518bcd4cdc88be11aec6de3cae
         bounds:
           x: '157'
-          y: '18'
+          y: '24'
           width: '145'
           height: '55'
       id-e9478b9b6d5d4be79448cd79ed620ab5:
@@ -4933,7 +5202,7 @@ views:
         parent_node_id: id-93baba518bcd4cdc88be11aec6de3cae
         bounds:
           x: '312'
-          y: '18'
+          y: '24'
           width: '120'
           height: '55'
       id-b8031edbf29c41479100041b076fdf2e:
@@ -4941,8 +5210,8 @@ views:
         archimate_element_id: id-f5214c3db8de4738ab03abb7b7e553ed
         parent_node_id: id-93baba518bcd4cdc88be11aec6de3cae
         bounds:
-          x: '624'
-          y: '18'
+          x: '576'
+          y: '24'
           width: '120'
           height: '55'
       id-2739f03c99554a7abc226ddefe696272:
@@ -4960,7 +5229,7 @@ views:
         parent_node_id: id-93baba518bcd4cdc88be11aec6de3cae
         bounds:
           x: '25'
-          y: '18'
+          y: '24'
           width: '120'
           height: '55'
       id-143e7bc326f44a4ea56a103c54471433:
@@ -4977,8 +5246,8 @@ views:
         archimate_element_id: id-2dfe07b3eae740b9a292e0a4a42d22db
         parent_node_id: id-93baba518bcd4cdc88be11aec6de3cae
         bounds:
-          x: '456'
-          y: '18'
+          x: '444'
+          y: '24'
           width: '120'
           height: '55'
       id-e87e977abf2b472480b8a3ae48829afc:
@@ -4986,8 +5255,8 @@ views:
         archimate_element_id: id-1be148b57796458993c3f7f5f24815ca
         parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
-          x: '660'
-          y: '144'
+          x: '638'
+          y: '276'
           width: '577'
           height: '107'
       id-1a18c0ef7f35411c8d119b97eb93625d:
@@ -5022,16 +5291,16 @@ views:
         archimate_element_id: id-ad6f81e892a74590840828b6aabb270d
         parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
-          x: '36'
-          y: '261'
-          width: '757'
+          x: '16'
+          y: '516'
+          width: '621'
           height: '100'
       id-207638d177b841e3adabcd2e34688539:
         type: DiagramObject
         archimate_element_id: id-84629318a3b84213ac3a83bdb6a1aad9
         parent_node_id: id-4b5c46cbbaeb4d52baf61e075bf1c98e
         bounds:
-          x: '468'
+          x: '336'
           y: '24'
           width: '120'
           height: '55'
@@ -5040,8 +5309,8 @@ views:
         archimate_element_id: id-64811e71d98647e5a678a0a2e79ae617
         parent_node_id: id-4b5c46cbbaeb4d52baf61e075bf1c98e
         bounds:
-          x: '312'
-          y: '21'
+          x: '180'
+          y: '24'
           width: '143'
           height: '55'
       id-c8dd71a193384f5aa573a9ca849f3205:
@@ -5049,8 +5318,8 @@ views:
         archimate_element_id: id-c447ce23ba0c49a9bf0f8c8820c29234
         parent_node_id: id-4b5c46cbbaeb4d52baf61e075bf1c98e
         bounds:
-          x: '120'
-          y: '21'
+          x: '24'
+          y: '24'
           width: '144'
           height: '55'
       id-94b20a5aebde43ab9050d57d7b03aeaa:
@@ -5058,7 +5327,7 @@ views:
         archimate_element_id: id-efe1a2676c124eeab946802af96a1ab7
         parent_node_id: id-4b5c46cbbaeb4d52baf61e075bf1c98e
         bounds:
-          x: '612'
+          x: '468'
           y: '24'
           width: '120'
           height: '55'
@@ -5067,8 +5336,8 @@ views:
         archimate_element_id: id-c3f87c86b19547359c677a333b16f03b
         parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
-          x: '48'
-          y: '828'
+          x: '14'
+          y: '144'
           width: '493'
           height: '109'
       id-2c444f342cdb4e95b63fff94790709ee:
@@ -5094,7 +5363,7 @@ views:
         archimate_element_id: id-682d96a51e604ed2a00e1f4824023bab
         parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
-          x: '38'
+          x: '14'
           y: '36'
           width: '516'
           height: '94'
@@ -5130,8 +5399,8 @@ views:
         archimate_element_id: id-cd3b6a8989a448a2b4dfbf430a41bad4
         parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
-          x: '38'
-          y: '144'
+          x: '16'
+          y: '276'
           width: '611'
           height: '107'
       id-2094572b8eae4d41b7fbddedb82d3c94:
@@ -5175,8 +5444,8 @@ views:
         archimate_element_id: id-48c9873ae59341a49c2dca27379fab55
         parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
-          x: '816'
-          y: '660'
+          x: '793'
+          y: '792'
           width: '420'
           height: '157'
       id-88844f6f597f497080cf3480e925ef3f:
@@ -5184,26 +5453,26 @@ views:
         archimate_element_id: id-980043f78fa94eec8ecf46338a5b9c6b
         parent_node_id: id-5862a6b1eb0b4c4081576575dd4ffc39
         bounds:
-          x: '228'
+          x: '276'
           y: '24'
           width: '120'
-          height: '72'
+          height: '61'
       id-2d34e59bf6ee4cedb21c3c0b592cceb0:
         type: DiagramObject
         archimate_element_id: id-34d3d64b3afe4327a29ee6c2f7f74dff
         parent_node_id: id-5862a6b1eb0b4c4081576575dd4ffc39
         bounds:
-          x: '48'
+          x: '24'
           y: '24'
           width: '144'
-          height: '72'
+          height: '61'
       id-e0de5fff7f9f48d89cc0327a8ebfd25d:
         type: DiagramObject
         archimate_element_id: id-896e4c1434604caa891b94bcce964720
         parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
-          x: '38'
-          y: '492'
+          x: '16'
+          y: '624'
           width: '1193'
           height: '150'
       id-f805166cbdc8407ab20ab49df8a7fb86:
@@ -5283,8 +5552,8 @@ views:
         archimate_element_id: id-d7aa97e6319a492d8a1345bcaa8e154a
         parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
-          x: '516'
-          y: '379'
+          x: '16'
+          y: '396'
           width: '721'
           height: '99'
       id-9471b51e5e35430cba5a4beaea608fc8:
@@ -5328,7 +5597,7 @@ views:
         archimate_element_id: id-08d657e690c046019dbf6d52b1ed4d63
         parent_node_id: id-bdfc6e078e7c4a2fb3fd1d76ccf1942c
         bounds:
-          x: '564'
+          x: '552'
           y: '24'
           width: '120'
           height: '55'
@@ -5337,8 +5606,8 @@ views:
         archimate_element_id: id-98df6c2b4df340c7a3a3ad32d99ca37e
         parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
-          x: '36'
-          y: '381'
+          x: '746'
+          y: '398'
           width: '469'
           height: '96'
       id-ed1af7480d9c4b3588eb39e53e14d7f7:
@@ -5347,7 +5616,7 @@ views:
         parent_node_id: id-6599228a8ca64dcc9e11f74721671a5c
         bounds:
           x: '12'
-          y: '33'
+          y: '24'
           width: '121'
           height: '52'
       id-a03136b60d8f4a179a8264b2912b066b:
@@ -5356,7 +5625,7 @@ views:
         parent_node_id: id-6599228a8ca64dcc9e11f74721671a5c
         bounds:
           x: '144'
-          y: '34'
+          y: '25'
           width: '133'
           height: '49'
       id-645471456f92437982c62430ea8ad5cb:
@@ -5365,7 +5634,7 @@ views:
         parent_node_id: id-6599228a8ca64dcc9e11f74721671a5c
         bounds:
           x: '288'
-          y: '33'
+          y: '24'
           width: '120'
           height: '52'
       id-097184c9fb104c4486607319c83d7b7b:
@@ -5373,7 +5642,7 @@ views:
         archimate_element_id: id-e67a4f2983ce40f9823ec34ba460055a
         parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
-          x: '564'
+          x: '540'
           y: '36'
           width: '433'
           height: '94'
@@ -5409,8 +5678,8 @@ views:
         archimate_element_id: id-c0547226c598467a942dced879d0c18b
         parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
-          x: '564'
-          y: '828'
+          x: '530'
+          y: '144'
           width: '337'
           height: '109'
       id-a28546521a6446df904b97c96d8118e2:
@@ -5436,7 +5705,7 @@ views:
         archimate_element_id: id-299fc063873a4f278a1d3c0ac9480467
         parent_node_id: id-69ebf83823574f2fa97704aa3caf2af2
         bounds:
-          x: '1012'
+          x: '988'
           y: '36'
           width: '225'
           height: '93'
@@ -5463,9 +5732,9 @@ views:
         archimate_element_id: ''
         parent_node_id: null
         bounds:
-          x: '96'
+          x: '120'
           y: '-900'
-          width: '1297'
+          width: '1237'
           height: '46'
     connections:
       id-dac64c458ca44c37b08718c92d7ed0d7:
@@ -5944,7 +6213,7 @@ views:
         parent_node_id: null
         bounds:
           x: '792'
-          y: '240'
+          y: '230'
           width: '222'
           height: '57'
       id-9bba3e32a19d41c38c573bc7736480fe:
@@ -5971,7 +6240,7 @@ views:
         parent_node_id: null
         bounds:
           x: '792'
-          y: '532'
+          y: '528'
           width: '222'
           height: '57'
       id-82d425fc125c4c338ebca97ba8dead1b:
@@ -5980,7 +6249,7 @@ views:
         parent_node_id: null
         bounds:
           x: '792'
-          y: '312'
+          y: '302'
           width: '222'
           height: '57'
       id-42c3e3046a4e41ab81604bbbc499b27d:
@@ -5997,8 +6266,8 @@ views:
         archimate_element_id: id-0007ec16e9a1406d9f6aabd1f975d993
         parent_node_id: null
         bounds:
-          x: '792'
-          y: '618'
+          x: '800'
+          y: '612'
           width: '222'
           height: '57'
       id-1d34e68f83484b4eb89d2e0a784ae12c:
@@ -6025,7 +6294,7 @@ views:
         parent_node_id: null
         bounds:
           x: '516'
-          y: '350'
+          y: '348'
           width: '144'
           height: '35'
       id-bf0d236e678f40ff8bc7eb560fd82069:
@@ -6042,8 +6311,8 @@ views:
         archimate_element_id: id-cd3b6a8989a448a2b4dfbf430a41bad4
         parent_node_id: null
         bounds:
-          x: '1146'
-          y: '542'
+          x: '1140'
+          y: '528'
           width: '193'
           height: '37'
       id-1c12fdc443024162af92bb422913c53f:
@@ -6145,6 +6414,24 @@ views:
           y: '12'
           width: '789'
           height: '46'
+      id-1de37286bd1d454b81632b25a2074990:
+        type: DiagramObject
+        archimate_element_id: id-707202a7db214363817d403344afb867
+        parent_node_id: null
+        bounds:
+          x: '528'
+          y: '132'
+          width: '120'
+          height: '55'
+      id-9939fa345e2c4e1aa7d2adc9cc2aaefa:
+        type: DiagramObject
+        archimate_element_id: id-74e15ee821794ae09cd9f7f7a38f32aa
+        parent_node_id: null
+        bounds:
+          x: '659'
+          y: '132'
+          width: '120'
+          height: '55'
     connections:
       id-17d6f5f313ce492681cfdb706ece9fd6:
         type: Connection
@@ -6156,16 +6443,16 @@ views:
         relationship_id: ''
         source_node: id-a550995f1e27415f8f7afd5c2fe97ab6
         target_node: id-82d425fc125c4c338ebca97ba8dead1b
+      id-370fc6062f36473081e4f0211f6e06b2:
+        type: Connection
+        relationship_id: ''
+        source_node: id-a550995f1e27415f8f7afd5c2fe97ab6
+        target_node: id-02ee3561e2f84cd5983480124bea5b43
       id-25b881262d854c8c90a97ac169c76cc8:
         type: Connection
         relationship_id: ''
         source_node: id-5148a0efdd7849ba83656218a15283dd
         target_node: id-338781f4da7044f39ae23564a1843f93
-      id-9b9ca82d2f0343dbbc9e49b9bc2f0163:
-        type: Connection
-        relationship_id: ''
-        source_node: id-5148a0efdd7849ba83656218a15283dd
-        target_node: id-82d425fc125c4c338ebca97ba8dead1b
       id-9eb24ee7fe3c4bd292020483d9e4557e:
         type: Connection
         relationship_id: ''
@@ -6186,26 +6473,26 @@ views:
         relationship_id: ''
         source_node: id-9b4b91d920aa4d1481c812198859f3d9
         target_node: id-02ee3561e2f84cd5983480124bea5b43
+      id-d487ca5ac6da4f4d958bff26610edf6b:
+        type: Connection
+        relationship_id: ''
+        source_node: id-9b4b91d920aa4d1481c812198859f3d9
+        target_node: id-338781f4da7044f39ae23564a1843f93
       id-dbf26302c88647e880015f969040dc5b:
         type: Connection
         relationship_id: ''
         source_node: id-1c12fdc443024162af92bb422913c53f
         target_node: id-eda656d8cf9d4e46bc80318e053b1921
-      id-0ab1292306cd4be1b933883f9f2528c3:
-        type: Connection
-        relationship_id: ''
-        source_node: id-1c12fdc443024162af92bb422913c53f
-        target_node: id-02ee3561e2f84cd5983480124bea5b43
-      id-e2bc45c8995b469fbad232375e1582a5:
-        type: Connection
-        relationship_id: ''
-        source_node: id-1c12fdc443024162af92bb422913c53f
-        target_node: id-338781f4da7044f39ae23564a1843f93
       id-751636e448e54fd5adb7d0b7db60d356:
         type: Connection
         relationship_id: ''
         source_node: id-fee7aa9f0aff4d29b5831c7c14c3e1df
         target_node: id-338781f4da7044f39ae23564a1843f93
+      id-82f3575895c64c228cccd29bc39d4baa:
+        type: Connection
+        relationship_id: ''
+        source_node: id-fee7aa9f0aff4d29b5831c7c14c3e1df
+        target_node: id-9bba3e32a19d41c38c573bc7736480fe
       id-6c1a1f35da9f42049ce7658a1b15d7da:
         type: Connection
         relationship_id: ''
@@ -6365,238 +6652,238 @@ views:
         archimate_element_id: id-ba60560a9ed64b4d87b2fd4fa6b32937
         parent_node_id: null
         bounds:
-          x: '240'
+          x: '83'
           y: '120'
-          width: '457'
-          height: '397'
-      id-0fc1bf9be19f43fab6184ae6e9df1073:
+          width: '745'
+          height: '504'
+      id-482531c313ba4b73972e661b990e33e4:
         type: DiagramObject
-        archimate_element_id: id-1be148b57796458993c3f7f5f24815ca
+        archimate_element_id: id-e3f6bfa044574121a50a0df37751dd32
         parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
         bounds:
-          x: '228'
-          y: '96'
-          width: '186'
+          x: '13'
+          y: '24'
+          width: '710'
+          height: '133'
+      id-3105c19b44884ca7a3ac3061f9a71e3d:
+        type: DiagramObject
+        archimate_element_id: id-299fc063873a4f278a1d3c0ac9480467
+        parent_node_id: id-482531c313ba4b73972e661b990e33e4
+        bounds:
+          x: '420'
+          y: '24'
+          width: '190'
+          height: '37'
+      id-6cb52dc0ab77441b9a2c4bd57630698f:
+        type: DiagramObject
+        archimate_element_id: id-c0547226c598467a942dced879d0c18b
+        parent_node_id: id-482531c313ba4b73972e661b990e33e4
+        bounds:
+          x: '216'
+          y: '72'
+          width: '190'
+          height: '37'
+      id-c923dc542a474638820475f3e78a0d85:
+        type: DiagramObject
+        archimate_element_id: id-c3f87c86b19547359c677a333b16f03b
+        parent_node_id: id-482531c313ba4b73972e661b990e33e4
+        bounds:
+          x: '12'
+          y: '72'
+          width: '190'
           height: '37'
       id-205e55052332487d9cc4d487272d2c75:
         type: DiagramObject
         archimate_element_id: id-e67a4f2983ce40f9823ec34ba460055a
+        parent_node_id: id-482531c313ba4b73972e661b990e33e4
+        bounds:
+          x: '216'
+          y: '24'
+          width: '190'
+          height: '37'
+      id-16afd8a2e18142dcbed616fd0c67431c:
+        type: DiagramObject
+        archimate_element_id: id-682d96a51e604ed2a00e1f4824023bab
+        parent_node_id: id-482531c313ba4b73972e661b990e33e4
+        bounds:
+          x: '12'
+          y: '24'
+          width: '190'
+          height: '37'
+      id-e6c457b44805487bb93fdb9be918da39:
+        type: DiagramObject
+        archimate_element_id: id-5e0047d4179840aead479f6f223b2cc7
         parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
         bounds:
-          x: '162'
-          y: '36'
-          width: '118'
-          height: '55'
+          x: '13'
+          y: '168'
+          width: '709'
+          height: '85'
+      id-0fc1bf9be19f43fab6184ae6e9df1073:
+        type: DiagramObject
+        archimate_element_id: id-1be148b57796458993c3f7f5f24815ca
+        parent_node_id: id-e6c457b44805487bb93fdb9be918da39
+        bounds:
+          x: '216'
+          y: '24'
+          width: '190'
+          height: '37'
+      id-d95b8a46a6904c34ac2d99a8eebcae34:
+        type: DiagramObject
+        archimate_element_id: id-cd3b6a8989a448a2b4dfbf430a41bad4
+        parent_node_id: id-e6c457b44805487bb93fdb9be918da39
+        bounds:
+          x: '12'
+          y: '24'
+          width: '193'
+          height: '37'
+      id-279fd670ec1645d79a336b3f72bba904:
+        type: DiagramObject
+        archimate_element_id: id-cc737b0bd6ef4f3d8ca332a5aacb6c81
+        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
+        bounds:
+          x: '13'
+          y: '264'
+          width: '709'
+          height: '133'
       id-7c38a9a5752448129f03440eed0edac3:
         type: DiagramObject
         archimate_element_id: id-d7aa97e6319a492d8a1345bcaa8e154a
+        parent_node_id: id-279fd670ec1645d79a336b3f72bba904
+        bounds:
+          x: '12'
+          y: '24'
+          width: '190'
+          height: '37'
+      id-9a9047c9ecc8432abd140d348b59e89c:
+        type: DiagramObject
+        archimate_element_id: id-896e4c1434604caa891b94bcce964720
+        parent_node_id: id-279fd670ec1645d79a336b3f72bba904
+        bounds:
+          x: '228'
+          y: '24'
+          width: '191'
+          height: '37'
+      id-2ba40c796cf34863be235f6fe636ae01:
+        type: DiagramObject
+        archimate_element_id: id-98df6c2b4df340c7a3a3ad32d99ca37e
+        parent_node_id: id-279fd670ec1645d79a336b3f72bba904
+        bounds:
+          x: '229'
+          y: '72'
+          width: '190'
+          height: '37'
+      id-7a4f94bd27624fb4be1ae09c22b223a3:
+        type: DiagramObject
+        archimate_element_id: id-ad6f81e892a74590840828b6aabb270d
+        parent_node_id: id-279fd670ec1645d79a336b3f72bba904
+        bounds:
+          x: '11'
+          y: '72'
+          width: '191'
+          height: '37'
+      id-139206fdcb2e4389966c824e6969ea86:
+        type: DiagramObject
+        archimate_element_id: id-09bad257f69747f9808ad42219d70a6f
         parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
         bounds:
-          x: '26'
-          y: '192'
+          x: '13'
+          y: '408'
+          width: '708'
+          height: '84'
+      id-8ab706826d234552be1e89b72900d5ed:
+        type: DiagramObject
+        archimate_element_id: id-48c9873ae59341a49c2dca27379fab55
+        parent_node_id: id-139206fdcb2e4389966c824e6969ea86
+        bounds:
+          x: '228'
+          y: '24'
           width: '190'
           height: '37'
       id-8381d1c70aa8433889c23fa3201f19fa:
         type: DiagramObject
         archimate_element_id: id-d503cf06faa1417b8acd4b26a5c0741e
-        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
+        parent_node_id: id-139206fdcb2e4389966c824e6969ea86
         bounds:
-          x: '28'
-          y: '288'
-          width: '188'
-          height: '37'
-      id-2ba40c796cf34863be235f6fe636ae01:
-        type: DiagramObject
-        archimate_element_id: id-98df6c2b4df340c7a3a3ad32d99ca37e
-        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
-        bounds:
-          x: '28'
-          y: '144'
-          width: '386'
-          height: '37'
-      id-8ab706826d234552be1e89b72900d5ed:
-        type: DiagramObject
-        archimate_element_id: id-48c9873ae59341a49c2dca27379fab55
-        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
-        bounds:
-          x: '228'
-          y: '288'
-          width: '186'
-          height: '37'
-      id-d95b8a46a6904c34ac2d99a8eebcae34:
-        type: DiagramObject
-        archimate_element_id: id-cd3b6a8989a448a2b4dfbf430a41bad4
-        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
-        bounds:
-          x: '25'
-          y: '96'
-          width: '193'
-          height: '37'
-      id-9a9047c9ecc8432abd140d348b59e89c:
-        type: DiagramObject
-        archimate_element_id: id-896e4c1434604caa891b94bcce964720
-        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
-        bounds:
-          x: '26'
-          y: '240'
-          width: '392'
-          height: '37'
-      id-7a4f94bd27624fb4be1ae09c22b223a3:
-        type: DiagramObject
-        archimate_element_id: id-ad6f81e892a74590840828b6aabb270d
-        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
-        bounds:
-          x: '231'
-          y: '192'
-          width: '177'
-          height: '37'
-      id-16afd8a2e18142dcbed616fd0c67431c:
-        type: DiagramObject
-        archimate_element_id: id-682d96a51e604ed2a00e1f4824023bab
-        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
-        bounds:
-          x: '24'
-          y: '36'
-          width: '133'
-          height: '55'
-      id-3105c19b44884ca7a3ac3061f9a71e3d:
-        type: DiagramObject
-        archimate_element_id: id-299fc063873a4f278a1d3c0ac9480467
-        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
-        bounds:
-          x: '288'
-          y: '36'
-          width: '120'
-          height: '55'
-      id-c923dc542a474638820475f3e78a0d85:
-        type: DiagramObject
-        archimate_element_id: id-c3f87c86b19547359c677a333b16f03b
-        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
-        bounds:
-          x: '28'
-          y: '336'
-          width: '188'
-          height: '37'
-      id-6cb52dc0ab77441b9a2c4bd57630698f:
-        type: DiagramObject
-        archimate_element_id: id-c0547226c598467a942dced879d0c18b
-        parent_node_id: id-0e7e71bde9d041cea455d34949f55c93
-        bounds:
-          x: '231'
-          y: '336'
-          width: '186'
+          x: '12'
+          y: '24'
+          width: '190'
           height: '37'
       id-2b04c41bf1a847209356a2d19bf93e6c:
         type: Note
         archimate_element_id: ''
         parent_node_id: null
         bounds:
-          x: '240'
+          x: '83'
           y: '48'
-          width: '457'
+          width: '745'
           height: '46'
-      id-482531c313ba4b73972e661b990e33e4:
-        type: DiagramObject
-        archimate_element_id: id-e3f6bfa044574121a50a0df37751dd32
-        parent_node_id: null
-        bounds:
-          x: '144'
-          y: '528'
-          width: '156'
-          height: '132'
-      id-279fd670ec1645d79a336b3f72bba904:
-        type: DiagramObject
-        archimate_element_id: id-cc737b0bd6ef4f3d8ca332a5aacb6c81
-        parent_node_id: null
-        bounds:
-          x: '720'
-          y: '444'
-          width: '216'
-          height: '140'
-      id-139206fdcb2e4389966c824e6969ea86:
-        type: DiagramObject
-        archimate_element_id: id-09bad257f69747f9808ad42219d70a6f
-        parent_node_id: null
-        bounds:
-          x: '348'
-          y: '554'
-          width: '280'
-          height: '120'
-      id-e6c457b44805487bb93fdb9be918da39:
-        type: DiagramObject
-        archimate_element_id: id-5e0047d4179840aead479f6f223b2cc7
-        parent_node_id: null
-        bounds:
-          x: '732'
-          y: '300'
-          width: '328'
-          height: '116'
     connections:
-      id-062821a1358443c0b2f3416df0e8248c:
+      id-2a764aa8dbd74ba09c4b3f4f40729055:
         type: Connection
         relationship_id: ''
-        source_node: id-0e7e71bde9d041cea455d34949f55c93
-        target_node: id-0fc1bf9be19f43fab6184ae6e9df1073
-      id-794d08a72aa14b4189b29e3a78555b69:
-        type: Connection
-        relationship_id: ''
-        source_node: id-0e7e71bde9d041cea455d34949f55c93
-        target_node: id-205e55052332487d9cc4d487272d2c75
-      id-ecc511c5ed0646c894aeed44cce73ca4:
-        type: Connection
-        relationship_id: ''
-        source_node: id-0e7e71bde9d041cea455d34949f55c93
-        target_node: id-7c38a9a5752448129f03440eed0edac3
-      id-7c32198b5aa24578bd6b8e1ac0e84947:
-        type: Connection
-        relationship_id: ''
-        source_node: id-0e7e71bde9d041cea455d34949f55c93
-        target_node: id-8381d1c70aa8433889c23fa3201f19fa
-      id-9e2e7e06479548e8bdffe0194dee4085:
-        type: Connection
-        relationship_id: ''
-        source_node: id-0e7e71bde9d041cea455d34949f55c93
-        target_node: id-2ba40c796cf34863be235f6fe636ae01
-      id-5eb1fd79941a4162a49c276471662618:
-        type: Connection
-        relationship_id: ''
-        source_node: id-0e7e71bde9d041cea455d34949f55c93
-        target_node: id-8ab706826d234552be1e89b72900d5ed
-      id-e08d2e56e7d04bec8be0d35bb9e042b3:
-        type: Connection
-        relationship_id: ''
-        source_node: id-0e7e71bde9d041cea455d34949f55c93
-        target_node: id-d95b8a46a6904c34ac2d99a8eebcae34
-      id-921b46fd67e048d7a64091a0f09a35c1:
-        type: Connection
-        relationship_id: ''
-        source_node: id-0e7e71bde9d041cea455d34949f55c93
-        target_node: id-9a9047c9ecc8432abd140d348b59e89c
-      id-72af6998ee0541fa8104a4962e61be97:
-        type: Connection
-        relationship_id: ''
-        source_node: id-0e7e71bde9d041cea455d34949f55c93
-        target_node: id-7a4f94bd27624fb4be1ae09c22b223a3
-      id-f9662001b591415fa94d496f5fc0aa0e:
-        type: Connection
-        relationship_id: ''
-        source_node: id-0e7e71bde9d041cea455d34949f55c93
-        target_node: id-c923dc542a474638820475f3e78a0d85
-      id-55d4ea06ff12483cbd80514f3109bc82:
-        type: Connection
-        relationship_id: ''
-        source_node: id-0e7e71bde9d041cea455d34949f55c93
-        target_node: id-16afd8a2e18142dcbed616fd0c67431c
-      id-8cc183bc83014131949808471b6a9758:
-        type: Connection
-        relationship_id: ''
-        source_node: id-0e7e71bde9d041cea455d34949f55c93
+        source_node: id-482531c313ba4b73972e661b990e33e4
         target_node: id-3105c19b44884ca7a3ac3061f9a71e3d
-      id-49ae1cbc74584231bdb359200f0f83b5:
+      id-fce75b422f0f424a8e38e9e6280ed1e4:
         type: Connection
         relationship_id: ''
-        source_node: id-0e7e71bde9d041cea455d34949f55c93
+        source_node: id-482531c313ba4b73972e661b990e33e4
         target_node: id-6cb52dc0ab77441b9a2c4bd57630698f
+      id-42ad7f703d7a4d2386d70eb567b61c91:
+        type: Connection
+        relationship_id: ''
+        source_node: id-482531c313ba4b73972e661b990e33e4
+        target_node: id-c923dc542a474638820475f3e78a0d85
+      id-b9760c5da889458f87a54a55be801713:
+        type: Connection
+        relationship_id: ''
+        source_node: id-482531c313ba4b73972e661b990e33e4
+        target_node: id-205e55052332487d9cc4d487272d2c75
+      id-d55a2ceb43da4e5a95d60ee2516eb76f:
+        type: Connection
+        relationship_id: ''
+        source_node: id-482531c313ba4b73972e661b990e33e4
+        target_node: id-16afd8a2e18142dcbed616fd0c67431c
+      id-e9ceaa11d2ba4f78a34f78c87150f990:
+        type: Connection
+        relationship_id: ''
+        source_node: id-e6c457b44805487bb93fdb9be918da39
+        target_node: id-0fc1bf9be19f43fab6184ae6e9df1073
+      id-fd787b98f09f4b648b978c9a903ca197:
+        type: Connection
+        relationship_id: ''
+        source_node: id-e6c457b44805487bb93fdb9be918da39
+        target_node: id-d95b8a46a6904c34ac2d99a8eebcae34
+      id-0cc0ad1d32a845cbb3fc5e41547ff10e:
+        type: Connection
+        relationship_id: ''
+        source_node: id-279fd670ec1645d79a336b3f72bba904
+        target_node: id-7c38a9a5752448129f03440eed0edac3
+      id-989ff036c20c46a5920405f153383a2a:
+        type: Connection
+        relationship_id: ''
+        source_node: id-279fd670ec1645d79a336b3f72bba904
+        target_node: id-9a9047c9ecc8432abd140d348b59e89c
+      id-4dd6d531cd174860858ddb15e1dfa165:
+        type: Connection
+        relationship_id: ''
+        source_node: id-279fd670ec1645d79a336b3f72bba904
+        target_node: id-2ba40c796cf34863be235f6fe636ae01
+      id-5a412452fa144778a51260234293bb58:
+        type: Connection
+        relationship_id: ''
+        source_node: id-279fd670ec1645d79a336b3f72bba904
+        target_node: id-7a4f94bd27624fb4be1ae09c22b223a3
+      id-2ef9ccd8ea0f4a52a816bbc4731dfd32:
+        type: Connection
+        relationship_id: ''
+        source_node: id-139206fdcb2e4389966c824e6969ea86
+        target_node: id-8ab706826d234552be1e89b72900d5ed
+      id-d82f21638b01431fa5197fdf8bbfdaa6:
+        type: Connection
+        relationship_id: ''
+        source_node: id-139206fdcb2e4389966c824e6969ea86
+        target_node: id-8381d1c70aa8433889c23fa3201f19fa
   id-b513e2dbd37e447184ee9f969874a681:
     type: ArchimateDiagramModel
     name: 001-Metamodell

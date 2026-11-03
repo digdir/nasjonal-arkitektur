@@ -603,7 +603,7 @@ Når virksomheter eksponerer sine kjernefunksjoner som integrerbare, frittståen
 na:id-299fc063873a4f278a1d3c0ac9480467
     a archimate:Capability ;
     archimate:identifier "id-299fc063873a4f278a1d3c0ac9480467" ;
-    archimate:name "Juridisk samhandling"@nb ;
+    archimate:name "Regelverksforvaltning"@nb ;
     archimate:documentation """Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.
 
 ### Begrunnelse (Hvorfor)
@@ -1209,7 +1209,7 @@ Kapabiliteten styrker det felles økosystemet ved å gi felles mekanismer for au
 na:id-d503cf06faa1417b8acd4b26a5c0741e
     a archimate:Capability ;
     archimate:identifier "id-d503cf06faa1417b8acd4b26a5c0741e" ;
-    archimate:name "Tillit"@nb ;
+    archimate:name "Digital tillit"@nb ;
     archimate:documentation """Evne til å tilby tillitstjenester som muliggjører autentisering og autorisasjon på tvers av tjenestekjeder, og støtte en distribuert arkitektur og føderering mellom ulike domener og tjeneste.
 
 ### Begrunnelse (Hvorfor)
@@ -1618,11 +1618,6 @@ na:id-d4632a56bcf04c768517303bf05c2882
     archimate:identifier "id-d4632a56bcf04c768517303bf05c2882" ;
     archimate:name "Innovasjon og næringsutvikling"@nb .
 
-na:id-76a32d89c68c4e5f86e29d261e3d2253
-    a archimate:Principle ;
-    archimate:identifier "id-76a32d89c68c4e5f86e29d261e3d2253" ;
-    archimate:name "Kun en gang"@nb .
-
 na:id-04fef6c083b449dba91c876ae2e3715f
     a archimate:Principle ;
     archimate:identifier "id-04fef6c083b449dba91c876ae2e3715f" ;
@@ -1784,43 +1779,128 @@ na:id-94f7473fb4184e3b94bb92c35186b88f
     a archimate:Principle ;
     archimate:identifier "id-94f7473fb4184e3b94bb92c35186b88f" ;
     archimate:name "P1: Ta utgangspunkt i brukernes behov"@nb ;
-    archimate:documentation """https://www.digdir.no/digital-samhandling/prinsipp-1-ta-utgangspunkt-i-brukernes-behov/1055"""@nb .
+    archimate:documentation """Offentlige tjenester skal bygge på brukernes behov og perspektiver og kunne brukes av alle, uavhengig av alder og funksjonsevne. Brukerne forventer brukervennlige og sammenhengende tjenester, noe som krever samordnede arbeidsprosesser på tvers av sektorer, mellom offentlig og privat sektor og over landegrenser.
+
+Begrunnelse: Brukerne får et enklere møte med forvaltningen, opplever tjenestene som helhetlige og sammenhengende, og får ivaretatt sine rettigheter og plikter.
+
+Kjennetegn ved etterlevelse:
+- Løsningen er utformet ut fra brukernes behov.
+- Prosessene er bygd på tvers av virksomheter og sektorer, slik at brukeren møter sammenhengende tjenester.
+- Krav og regelverk for universell utforming følges, også i fagsystemer og saksbehandlingsverktøy.
+- Kommunikasjonen med brukerne bruker klart språk.
+- Egnede metoder, som tjenestedesign, prosessmodellering og brukertesting med bred representasjon, er brukt for å avdekke behov og sammenhenger, også behov brukerne ikke selv etterspør.
+
+Kilde: Overordnede arkitekturprinsipper Digdir.
+https://www.digdir.no/digital-samhandling/prinsipp-1-ta-utgangspunkt-i-brukernes-behov/1055"""@nb .
 
 na:id-dbfcb14c3e024a40b6cb71138311abc0
     a archimate:Principle ;
     archimate:identifier "id-dbfcb14c3e024a40b6cb71138311abc0" ;
-    archimate:name "P2: Ta arkitektur-beslutninger på rett nivå"@nb ;
-    archimate:documentation """https://www.digdir.no/digital-samhandling/prinsipp-2-ta-arkitekturbeslutninger-pa-rett-niva/1056"""@nb .
+    archimate:name "P2: Ta arkitekturbeslutninger på rett nivå"@nb ;
+    archimate:documentation """Arkitektur er en utviklings- og styringsoppgave som påvirker virksomhetens kostnader og gevinster. Arkitekturbeslutninger bør tas så nær oppgaveløsningen og brukernes behov som mulig, men enkelte beslutninger må løftes for å sikre samhandling med andre og ivareta felles mål for digitalisering i offentlig sektor.
+
+Begrunnelse: Gir balanse mellom effektiv, brukernær oppgaveløsning og samhandlingsevne internt, på tvers av offentlig sektor og mellom offentlige og private virksomheter.
+
+Kjennetegn ved etterlevelse – løsningen (ansvarsplassering og styringsnivå):
+- Ansvar og beslutninger er plassert så nær oppgaveløsningen som hensiktsmessig, mens det som påvirker samhandling med andre er løftet til riktig nivå.
+- Løsningen følger nasjonale og sektorielle krav og føringer og målene for digitalisering av offentlig sektor.
+- Designet er vurdert mot relevante nasjonale og europeiske tjenester.
+
+Kjennetegn ved etterlevelse – prosessen (hvem beslutter):
+- Det er klart hvem som tar arkitekturbeslutningene, og på hvilket nivå.
+- Arkitekturstyring er en integrert del av virksomhetens styring.
+
+Kilde: Overordnede arkitekturprinsipper Digdir.
+https://www.digdir.no/digital-samhandling/prinsipp-2-ta-arkitekturbeslutninger-pa-rett-niva/1056"""@nb .
 
 na:id-7d62a886cdc14d20a5b361cf68da5754
     a archimate:Principle ;
     archimate:identifier "id-7d62a886cdc14d20a5b361cf68da5754" ;
     archimate:name "P3: Bidra til digitaliseringsvennlige regelverk"@nb ;
-    archimate:documentation """https://www.digdir.no/digital-samhandling/prinsipp-3-bidra-til-digitaliseringsvennlige-regelverk/1057"""@nb .
+    archimate:documentation """Regelverk setter rammene for offentlig oppgaveløsning og må videreutvikles i takt med nye muligheter og utfordringer. Arkitekturarbeidet kan avdekke juridiske barrierer for samhandling og digitalisering og bidra til at lov- og forskriftsendringer settes i gang.
+
+Begrunnelse: Digitaliseringsvennlige regelverk er en forutsetning for effektive arbeidsprosesser og sammenhengende tjenester, og kan gjøre automatisering av oppgaveløsningen mulig.
+
+Kjennetegn ved etterlevelse:
+- Handlingsrommet i eksisterende regelverk er undersøkt og brukt.
+- Behov for lov- eller forskriftsendringer er spilt inn til ansvarlig departement.
+- Jurister, teknologer og fagsiden samarbeider i regel- og IT-utviklingsarbeidet.
+- Digdir er informert om eller rådført om regelverk som hindrer digitalisering.
+
+Kilde: Overordnede arkitekturprinsipper Digdir.
+https://www.digdir.no/digital-samhandling/prinsipp-3-bidra-til-digitaliseringsvennlige-regelverk/1057"""@nb .
 
 na:id-a27833cb9e324549916a528f31481dce
     a archimate:Principle ;
     archimate:identifier "id-a27833cb9e324549916a528f31481dce" ;
     archimate:name "P4: Del og gjenbruk data"@nb ;
-    archimate:documentation """https://www.digdir.no/digital-samhandling/prinsipp-4-del-og-gjenbruk-data/1061"""@nb .
+    archimate:documentation """Virksomheter skal legge til rette for deling og gjenbruk av data. Data er en fellesressurs som gir store gevinster for forvaltningen, innbyggere, næringsliv og frivillige organisasjoner når de deles og gjenbrukes.
+
+Begrunnelse: Deling av offentlige data gir økt kunnskap, verdiskaping, innovasjon, effektivitet og åpenhet. Det er en forutsetning for effektive arbeidsprosesser, sammenhengende tjenester og automatisering, gjør at brukerne slipper å oppgi informasjon det offentlige allerede har (kun én gang), og kan gi bedre datakvalitet.
+
+Kjennetegn ved etterlevelse:
+- Relevante data gjenbrukes, og egne data legges til rette for deling, når tjenester etableres eller videreutvikles.
+- Data hentes fra autoritative kilder; kopier brukes bare der det er nødvendig og holdes oppdatert.
+- Data tilbys i tråd med regjeringens retningslinjer for tilgjengeliggjøring av offentlige data.
+- Datasett, API-er, begreper og informasjonsmodeller er beskrevet i Felles datakatalog.
+- Data er ikke låst i systemspesifikke formater, og egne data forvaltes etter Rammeverk for informasjonsforvaltning.
+
+Kilde: Overordnede arkitekturprinsipper Digdir.
+https://www.digdir.no/digital-samhandling/prinsipp-4-del-og-gjenbruk-data/1061"""@nb .
 
 na:id-5b6ec861e2d246ce90c99ea282d35610
     a archimate:Principle ;
     archimate:identifier "id-5b6ec861e2d246ce90c99ea282d35610" ;
     archimate:name "P7: Sørg for tillit til oppgaveløsningen"@nb ;
-    archimate:documentation """https://www.digdir.no/digital-samhandling/prinsipp-7-sorg-tillit-til-oppgavelosningen/1064"""@nb .
+    archimate:documentation """Innbyggere, næringsliv og frivillige organisasjoner skal kunne stole på at offentlige virksomheter løser oppgavene sine godt og sikkert. Det forutsetter at regelverket etterleves, at rettssikkerhet, effektivitet, informasjonssikkerhet og personvern ivaretas, og at forvaltningen er så åpen og gjennomsiktig som mulig om regler, prosesser, data, tjenester og vedtak.
+
+Begrunnelse: Tillit er en forutsetning for at brukerne velger de digitale offentlige tjenestene. Rettssikkerhet, effektivitet, personvern, informasjonssikkerhet, åpenhet og gjennomsiktighet er viktige bidrag til denne tilliten.
+
+Kjennetegn ved etterlevelse:
+- Rettssikkerhet, effektivitet, informasjonssikkerhet og personvern er vektlagt og veid mot hverandre i valget mellom arkitekturalternativer.
+- Personvern og informasjonssikkerhet ivaretas i alle utviklingsfaser og gjennom hele livsløpet, med styring og kontroll som sikrer dette.
+- Datatilsynets prinsipper og anbefalinger for personvern følges.
+- Beslutninger og vedtak er klart formulert, sporbare og etterprøvbare.
+- Saksbehandling og vedtak dokumenteres i tråd med krav til arkiv og samfunnsdokumentasjon i et langtidsperspektiv.
+
+Kilde: Overordnede arkitekturprinsipper Digdir.
+https://www.digdir.no/digital-samhandling/prinsipp-7-sorg-tillit-til-oppgavelosningen/1064"""@nb .
 
 na:id-d0918d8701a4408b93a9ab278ecbb85e
     a archimate:Principle ;
     archimate:identifier "id-d0918d8701a4408b93a9ab278ecbb85e" ;
     archimate:name "P5: Del og gjenbruk løsninger"@nb ;
-    archimate:documentation """https://www.digdir.no/digital-samhandling/prinsipp-5-del-og-gjenbruk-losninger/1062"""@nb .
+    archimate:documentation """Deling og gjenbruk av løsninger omfatter arkitekturprodukter, løsningskomponenter og tjenester, på nasjonalt, sektorielt og virksomhetsnivå.
+
+Begrunnelse: Deling og gjenbruk fremmer samhandlingsevne, innovasjon og effektivitet, og bidrar til harmonisering, informasjonssikkerhet og personvern. Virksomhetene kan da konsentrere seg om å digitalisere kjernevirksomheten i stedet for å løse utfordringer som allerede er løst.
+
+Kjennetegn ved etterlevelse:
+- Eksisterende og planlagte løsninger som kan gjenbrukes, er kartlagt.
+- Fellesløsninger og felleskomponenter brukes der de er egnet for formålet.
+- Markeds- og skyløsninger er vurdert før egenutvikling, og bindinger til enkeltleverandører er vurdert.
+- Arkitekturen gir endrings- og vedlikeholdsevne over tid, blant annet gjennom løse koplinger, modularisering, standardiserte tjenestekontrakter og redusert kompleksitet og teknisk gjeld.
+- Egne løsninger som kan være nyttige for andre, er gjort kjent og tilbudt for gjenbruk, og forbedringsinnspill gis til forvalterne av løsninger som brukes.
+
+Kilde: Overordnede arkitekturprinsipper Digdir.
+https://www.digdir.no/digital-samhandling/prinsipp-5-del-og-gjenbruk-losninger/1062"""@nb .
 
 na:id-0007ec16e9a1406d9f6aabd1f975d993
     a archimate:Principle ;
     archimate:identifier "id-0007ec16e9a1406d9f6aabd1f975d993" ;
     archimate:name "P6: Lag digitale løsninger som støtter samhandling"@nb ;
-    archimate:documentation """https://www.digdir.no/digital-samhandling/prinsipp-6-lag-digitale-losninger-som-stotter-samhandling/1063"""@nb .
+    archimate:documentation """Digitale løsninger skal utvikles slik at de kan samhandle med andre løsninger i offentlig og privat sektor. Det krever juridisk, organisatorisk, semantisk og teknisk samhandlingsevne, blant annet standardisering, avtaler og felles begrepsapparat.
+
+Begrunnelse: Samhandlingsvennlige løsninger er en forutsetning for sammenhengende tjenester og tverrgående prosesser, realisert på en fleksibel og kostnadseffektiv måte.
+
+Kjennetegn ved etterlevelse:
+- Løsningen er utformet for samspill med andre løsninger, både ved egenutvikling og ved anskaffelse.
+- Obligatoriske standarder i forskrift om IT-standarder i offentlig forvaltning følges, og ellers brukes anbefalte eller andre åpne standarder.
+- Norsk arkitekturrammeverk for samhandling er brukt når tjenesten skal inngå i samhandling med andre virksomheter.
+- Det finnes avtaler mellom samhandlingspartene om informasjonssikkerhet, personvern, tjenestekvalitet og samhandlingsevne.
+- Informasjonsutvekslingen har ytelse som gjør at brukerne opplever tjenestene som oppdaterte, og løsningen kan skalere ved endret bruk.
+
+Kilde: Overordnede arkitekturprinsipper Digdir.
+https://www.digdir.no/digital-samhandling/prinsipp-6-lag-digitale-losninger-som-stotter-samhandling/1063"""@nb .
 
 na:id-74e15ee821794ae09cd9f7f7a38f32aa
     a archimate:Principle ;
@@ -1882,7 +1962,7 @@ na:id-6c59a946ea8e4ad8903fbb1a6ffa9219
 na:id-661cb46063c544be82d804511f5ea9f9
     a archimate:Grouping ;
     archimate:identifier "id-661cb46063c544be82d804511f5ea9f9" ;
-    archimate:name "Styrings og forvaltning"@nb ;
+    archimate:name "Styring og forvaltning"@nb ;
     archimate:documentation """Styring og forvaltning av integrerbare og sammenhengende offentlige tjenester er det femte området, og løper på tvers av de andre samhandlingsområdene. Det er viktig å komme i gang med avklaringer rundt styring og forvaltning så tidlig som mulig i prosessen ved etablering av nye tjenester. I tillegg vil det være nødvendig å gå mer i dybden etter hvert."""@nb .
 
 na:id-374db9b5a8cf46ddb5e7f4e6672460d6
@@ -1916,35 +1996,22 @@ Gruppen viser hvilke begreper som hører til Nasjonal arkitektur som felles ramm
 na:id-e3f6bfa044574121a50a0df37751dd32
     a archimate:Grouping ;
     archimate:identifier "id-e3f6bfa044574121a50a0df37751dd32" ;
-    archimate:name "Retning og rammer"@nb ;
-    archimate:documentation """Strategisk styring
-Samarbeid
-Standardisering
-Veiledning
-Juridisk samhandling"""@nb .
+    archimate:name "Styring, rammer og samarbeid"@nb .
 
 na:id-cc737b0bd6ef4f3d8ca332a5aacb6c81
     a archimate:Grouping ;
     archimate:identifier "id-cc737b0bd6ef4f3d8ca332a5aacb6c81" ;
-    archimate:name "Data og interoperabilitet"@nb ;
-    archimate:documentation """Informasjonsforvaltning
-Datakilder
-Datautveksling og integrasjon
-Datadrevet"""@nb .
+    archimate:name "Data og informasjon"@nb .
 
 na:id-09bad257f69747f9808ad42219d70a6f
     a archimate:Grouping ;
     archimate:identifier "id-09bad257f69747f9808ad42219d70a6f" ;
-    archimate:name "Tillit og trygghet"@nb ;
-    archimate:documentation """Tillit
-Informasjonssikkerhet"""@nb .
+    archimate:name "Tillit og sikkerhet"@nb .
 
 na:id-5e0047d4179840aead479f6f223b2cc7
     a archimate:Grouping ;
     archimate:identifier "id-5e0047d4179840aead479f6f223b2cc7" ;
-    archimate:name "Utvikling og brukeropplevelse"@nb ;
-    archimate:documentation """Tjenesteutvikling
-Sluttbrukertjenester"""@nb .
+    archimate:name "Tjenester og brukeropplevelse"@nb .
 
 na:id-dea95464961449d88f082fa02cceb50f
     a archimate:ArchimateDiagramModel ;
@@ -2271,12 +2338,6 @@ na:id-91feb34123364ee3886817428b41c2b8
     archimate:source na:id-682d96a51e604ed2a00e1f4824023bab ;
     archimate:target na:id-dbfcb14c3e024a40b6cb71138311abc0 .
 
-na:id-943a2b26870746c88fcd686f5be81f0f
-    a archimate:RealizationRelationship, archimate:Relationship ;
-    archimate:identifier "id-943a2b26870746c88fcd686f5be81f0f" ;
-    archimate:source na:id-e67a4f2983ce40f9823ec34ba460055a ;
-    archimate:target na:id-dbfcb14c3e024a40b6cb71138311abc0 .
-
 na:id-ee332cb030944bd9bbae55e9f4416b3b
     a archimate:RealizationRelationship, archimate:Relationship ;
     archimate:identifier "id-ee332cb030944bd9bbae55e9f4416b3b" ;
@@ -2300,12 +2361,6 @@ na:id-b564abff977a40aab67389c44b080805
     archimate:identifier "id-b564abff977a40aab67389c44b080805" ;
     archimate:source na:id-98df6c2b4df340c7a3a3ad32d99ca37e ;
     archimate:target na:id-a27833cb9e324549916a528f31481dce .
-
-na:id-9ee23600ae524a5e98962a28dcab7ef9
-    a archimate:RealizationRelationship, archimate:Relationship ;
-    archimate:identifier "id-9ee23600ae524a5e98962a28dcab7ef9" ;
-    archimate:source na:id-1be148b57796458993c3f7f5f24815ca ;
-    archimate:target na:id-d0918d8701a4408b93a9ab278ecbb85e .
 
 na:id-2ff2758133c04007a9f3e4cc6ce381da
     a archimate:RealizationRelationship, archimate:Relationship ;
@@ -2614,12 +2669,6 @@ na:id-2cc89b2f962f4183a6beb4191ece7ef6
     archimate:source na:id-199ae45b0a6c47b28b3507837647c6c8 ;
     archimate:target na:id-9860d11ff3fd40a5b541b8f929ed305f .
 
-na:id-1a3cd1a136bd44ca82b526fad88746c2
-    a archimate:RealizationRelationship, archimate:Relationship ;
-    archimate:identifier "id-1a3cd1a136bd44ca82b526fad88746c2" ;
-    archimate:source na:id-1be148b57796458993c3f7f5f24815ca ;
-    archimate:target na:id-0007ec16e9a1406d9f6aabd1f975d993 .
-
 na:id-60f5b70a00c54834988ff75f1923dae4
     a archimate:AggregationRelationship, archimate:Relationship ;
     archimate:identifier "id-60f5b70a00c54834988ff75f1923dae4" ;
@@ -2744,6 +2793,102 @@ na:id-b447553cc3ab4798ada2fddda23b20ce
     archimate:name "forbedrer eller benytter"@nb ;
     archimate:source na:id-ed6c7d640e81477780c82285ae079706 ;
     archimate:target na:id-eb6f01d0d0ef4230b7a5c9c73c3842c5 .
+
+na:id-bc3694713faf4f8c9e02d04dce3bd03b
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-bc3694713faf4f8c9e02d04dce3bd03b" ;
+    archimate:source na:id-e3f6bfa044574121a50a0df37751dd32 ;
+    archimate:target na:id-299fc063873a4f278a1d3c0ac9480467 .
+
+na:id-c551775cafa242928e561cee7daafc09
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-c551775cafa242928e561cee7daafc09" ;
+    archimate:source na:id-e3f6bfa044574121a50a0df37751dd32 ;
+    archimate:target na:id-c0547226c598467a942dced879d0c18b .
+
+na:id-b857260243194f05b7cc162625df8ef9
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-b857260243194f05b7cc162625df8ef9" ;
+    archimate:source na:id-e3f6bfa044574121a50a0df37751dd32 ;
+    archimate:target na:id-c3f87c86b19547359c677a333b16f03b .
+
+na:id-3470fe704a584562a616083a62c39968
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-3470fe704a584562a616083a62c39968" ;
+    archimate:source na:id-e3f6bfa044574121a50a0df37751dd32 ;
+    archimate:target na:id-e67a4f2983ce40f9823ec34ba460055a .
+
+na:id-b583bfde355a46faa96c7d4affb15bc3
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-b583bfde355a46faa96c7d4affb15bc3" ;
+    archimate:source na:id-e3f6bfa044574121a50a0df37751dd32 ;
+    archimate:target na:id-682d96a51e604ed2a00e1f4824023bab .
+
+na:id-5c5b9b07af234bb69d3e775eb5d2adaa
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-5c5b9b07af234bb69d3e775eb5d2adaa" ;
+    archimate:source na:id-5e0047d4179840aead479f6f223b2cc7 ;
+    archimate:target na:id-1be148b57796458993c3f7f5f24815ca .
+
+na:id-6b2fbb16e5104b1daf485d8d508ffe85
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-6b2fbb16e5104b1daf485d8d508ffe85" ;
+    archimate:source na:id-5e0047d4179840aead479f6f223b2cc7 ;
+    archimate:target na:id-cd3b6a8989a448a2b4dfbf430a41bad4 .
+
+na:id-e58fb497dcca45a4a17fc05d2b21a279
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-e58fb497dcca45a4a17fc05d2b21a279" ;
+    archimate:source na:id-cc737b0bd6ef4f3d8ca332a5aacb6c81 ;
+    archimate:target na:id-d7aa97e6319a492d8a1345bcaa8e154a .
+
+na:id-2cdb563c513543f3ac6ffe0a0c164537
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-2cdb563c513543f3ac6ffe0a0c164537" ;
+    archimate:source na:id-cc737b0bd6ef4f3d8ca332a5aacb6c81 ;
+    archimate:target na:id-896e4c1434604caa891b94bcce964720 .
+
+na:id-a38245c93da04b3dabf9db0cf939a9f3
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-a38245c93da04b3dabf9db0cf939a9f3" ;
+    archimate:source na:id-cc737b0bd6ef4f3d8ca332a5aacb6c81 ;
+    archimate:target na:id-98df6c2b4df340c7a3a3ad32d99ca37e .
+
+na:id-98dbc88022524ad59d4e1186ae012220
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-98dbc88022524ad59d4e1186ae012220" ;
+    archimate:source na:id-cc737b0bd6ef4f3d8ca332a5aacb6c81 ;
+    archimate:target na:id-ad6f81e892a74590840828b6aabb270d .
+
+na:id-cd503542ab3a49308e38f67dc615767e
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-cd503542ab3a49308e38f67dc615767e" ;
+    archimate:source na:id-09bad257f69747f9808ad42219d70a6f ;
+    archimate:target na:id-48c9873ae59341a49c2dca27379fab55 .
+
+na:id-2cc8a883fbad449ea8843b194b1538c5
+    a archimate:AggregationRelationship, archimate:Relationship ;
+    archimate:identifier "id-2cc8a883fbad449ea8843b194b1538c5" ;
+    archimate:source na:id-09bad257f69747f9808ad42219d70a6f ;
+    archimate:target na:id-d503cf06faa1417b8acd4b26a5c0741e .
+
+na:id-5866ee85d4704155994dd95d4a32f25d
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-5866ee85d4704155994dd95d4a32f25d" ;
+    archimate:source na:id-896e4c1434604caa891b94bcce964720 ;
+    archimate:target na:id-a27833cb9e324549916a528f31481dce .
+
+na:id-368621fb5f864b06a73f5af4ac31731b
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-368621fb5f864b06a73f5af4ac31731b" ;
+    archimate:source na:id-682d96a51e604ed2a00e1f4824023bab ;
+    archimate:target na:id-d0918d8701a4408b93a9ab278ecbb85e .
+
+na:id-69258de26bb44a56aaae5b62079ec7b5
+    a archimate:RealizationRelationship, archimate:Relationship ;
+    archimate:identifier "id-69258de26bb44a56aaae5b62079ec7b5" ;
+    archimate:source na:id-cd3b6a8989a448a2b4dfbf430a41bad4 ;
+    archimate:target na:id-0007ec16e9a1406d9f6aabd1f975d993 .
 
 ### ── Properties (archimate:Property individuals) ────────────────────────
 
