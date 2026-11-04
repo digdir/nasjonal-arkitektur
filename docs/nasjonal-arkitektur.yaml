@@ -1316,9 +1316,9 @@ elements:
     folder_path: *id002
   id-299fc063873a4f278a1d3c0ac9480467:
     type: Capability
-    name: Regelverksforvaltning
-    documentation: 'Evne til å etablere, forvalte og formidle et helhetlig juridisk
-      rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.
+    name: Regelverk og rettslig grunnlag
+    documentation: 'Evne til å utvikle, forvalte, tolke og anvende regelverk som gir
+      rettslig grunnlag for sikker og effektiv digital samhandling.
 
 
       ### Begrunnelse (Hvorfor)

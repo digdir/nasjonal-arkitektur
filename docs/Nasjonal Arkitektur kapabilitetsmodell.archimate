@@ -521,8 +521,8 @@ Tradisjonell systemutvikling låser ofte data og funksjonalitet til spesifikke b
 ### Bidrag til sammenhengende tjenester og felles økosystem&#xD;
 Når virksomheter eksponerer sine kjernefunksjoner som integrerbare, frittstående API-er, fjernes den tekniske friksjonen mellom uavhengige systemer. Dette gjør det mulig for samarbeidende etater å hente og oppdatere nødvendig informasjon i sanntid. For sluttbrukeren betyr dette en mer sammenhengende brukerreise der forvaltningens underliggende systemgrenser blir skjult.</documentation>
       </element>
-      <element xsi:type="archimate:Capability" name="Regelverksforvaltning" id="id-299fc063873a4f278a1d3c0ac9480467">
-        <documentation>Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.&#xD;
+      <element xsi:type="archimate:Capability" name="Regelverk og rettslig grunnlag" id="id-299fc063873a4f278a1d3c0ac9480467">
+        <documentation>Evne til å utvikle, forvalte, tolke og anvende regelverk som gir rettslig grunnlag for sikker og effektiv digital samhandling.&#xD;
 &#xD;
 ### Begrunnelse (Hvorfor)&#xD;
 Digital samhandling og datadeling på tvers av uavhengige virksomheter krever en trygg og felles juridisk grunnmur. Uten denne kapabiliteten vil uklarheter rundt lovlighet, personvern og deling av opplysninger skape usikkerhet, føre til unødig lange utredningsprosesser og i verste fall stanse utviklingen av tverrgående digitale tjenester fordi aktørene ikke har avklart om de har lov til å samhandle.&#xD;

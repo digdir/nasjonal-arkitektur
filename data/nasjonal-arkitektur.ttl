@@ -603,8 +603,8 @@ Når virksomheter eksponerer sine kjernefunksjoner som integrerbare, frittståen
 na:id-299fc063873a4f278a1d3c0ac9480467
     a archimate:Capability ;
     archimate:identifier "id-299fc063873a4f278a1d3c0ac9480467" ;
-    archimate:name "Regelverksforvaltning"@nb ;
-    archimate:documentation """Evne til å etablere, forvalte og formidle et helhetlig juridisk rammeverk som muliggjør og regulerer sikker og effektiv digital samhandling.
+    archimate:name "Regelverk og rettslig grunnlag"@nb ;
+    archimate:documentation """Evne til å utvikle, forvalte, tolke og anvende regelverk som gir rettslig grunnlag for sikker og effektiv digital samhandling.
 
 ### Begrunnelse (Hvorfor)
 Digital samhandling og datadeling på tvers av uavhengige virksomheter krever en trygg og felles juridisk grunnmur. Uten denne kapabiliteten vil uklarheter rundt lovlighet, personvern og deling av opplysninger skape usikkerhet, føre til unødig lange utredningsprosesser og i verste fall stanse utviklingen av tverrgående digitale tjenester fordi aktørene ikke har avklart om de har lov til å samhandle.
