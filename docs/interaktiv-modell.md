@@ -24,4 +24,4 @@ hide:
 
 <iframe class="archi-report" src="../archimate-report/index.html"></iframe>
 
-<small>Sist oppdatert: 4. november 2026</small>
+<small>Sist oppdatert: 6. november 2026</small>

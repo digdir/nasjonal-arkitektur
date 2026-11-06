@@ -42,14 +42,21 @@ Fordelene med å bruke disse formatene ut av ArchiMate-pipelinen er flere:
 Valget av en Kunnskapsgraf og YAML/JSON-LD som representasjon av ArchiMate-modellen legger fundamentet for å bruke avansert KI i arkitekturarbeidet:
 
 * **Sikker og deterministisk KI-analyse (kunnskapsanalyse og sammenhenger):** Rene språkmodeller (LLMs) kan "hallusinere" hvis de må gjette seg frem til relasjoner basert på vanlig tekst. Hvis arkitekturen eksisterer som en JSON-LD/YAML-LD-drevet kunnskapsgraf, kan KI-en (gjennom såkalt *Graph RAG* - Retrieval-Augmented Generation) kjøre presise, strukturerte spørringer (som SPARQL) mot grafen.
-* **Besvarelse av komplekse spørsmål:** KI-systemer vil med 100 % nøyaktighet kunne besvare spørsmål som: *"Hvilke underliggende databaser og tjenester må moderniseres dersom vi ønsker å styrke den strategiske kapabiliteten X, og hvilke aktører påvirkes?"*
+* **Besvarelse av komplekse spørsmål:** Fordi relasjonene er modellert, trenger ikke KI å gjette hvordan kunnskapen henger sammen. Spørsmål som *"Hvilke underliggende databaser og tjenester må moderniseres dersom vi ønsker å styrke den strategiske kapabiliteten X, og hvilke aktører påvirkes?"* kan besvares ved å følge relasjonene i grafen. Samme spørring gir samme svar hver gang, og hvert svar kan spores tilbake til modellen. Svaret blir likevel aldri mer komplett eller korrekt enn modellen det bygger på.
 * **Kompakt for LLM-prompts:** Om KI-en skal lese rådataene direkte (utenom en grafdatabase), er YAML/JSON-LD ideelt. Den kompakte strukturen sparer verdifulle "tokens" (spesielt YAML-LD), mens den påklistrede `@context`-semantikken sikrer at språkmodellen har den nøyaktige meningsbærende konteksten den trenger for å unngå feiltolkninger.
 
 <figure>
-  <img src="../images/KI-agentisk.png" alt="Bruk av KI" />
-  <br><br>
-  <img src="../images/Graf-eks.png" alt="Eksempel på Graf" />
+  <a href="../images/KI-kunnskap-paa-tvers.png" title="Klikk for full størrelse">
+    <img src="../images/KI-kunnskap-paa-tvers.png" alt="Bruk av KI: brukere og eksterne KI-agenter bruker KI og et agentgrensesnitt mot et felles kunnskapsgrunnlag med Nasjonal arkitektur, data.norge.no og andre datakilder" />
+  </a>
   <figcaption>Bruk av KI - Datadrevet kunnskap på tvers: Gjør arkitekturen umiddelbart operativ for ulike brukere og ulike behov</figcaption>
+</figure>
+
+<figure>
+  <a href="../images/kunnskapsgraf-relasjoner.svg" title="Klikk for full størrelse">
+    <img src="../images/kunnskapsgraf-relasjoner.svg" alt="Kunnskapsgraf: semantisk søk finner startpunkter, grafnavigasjon følger eksplisitte relasjoner på tvers av kildene, og KI setter sammen svaret" />
+  </a>
+  <figcaption>Kunnskapsgraf: Semantisk søk finner startpunktene, og KI følger modellerte relasjoner i stedet for å gjette hvordan kunnskapen henger sammen</figcaption>
 </figure>
 
 ## Oppsummering av dataflyt for fremtiden
