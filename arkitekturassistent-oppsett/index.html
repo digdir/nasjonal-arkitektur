@@ -1,0 +1,1177 @@
+
+<!doctype html>
+<html lang="nb" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Dokumentasjon generert fra ArchiMate-modell">
+      
+      
+      
+      
+        <link rel="prev" href="../arkitekturassistent/">
+      
+      
+        <link rel="next" href="../kunnskapsgraf-maal/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+    
+    
+      
+        <title>Oppsett og bruk - Nasjonal arkitektur for et felles digitalt økosystem</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/arkitekturassistent.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-hva-er-arkitekturassistenten" class="md-skip">
+          Gå til innhold
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Nasjonal arkitektur for et felles digitalt økosystem" class="md-header__button md-logo" aria-label="Nasjonal arkitektur for et felles digitalt økosystem" data-md-component="logo">
+      
+  <img src="../images/digdir_logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nasjonal arkitektur for et felles digitalt økosystem
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Oppsett og bruk
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Søk" placeholder="Søk" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Søk">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Nullstill" aria-label="Nullstill" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Starter søk
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasjon" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Nasjonal arkitektur for et felles digitalt økosystem" class="md-nav__button md-logo" aria-label="Nasjonal arkitektur for et felles digitalt økosystem" data-md-component="logo">
+      
+  <img src="../images/digdir_logo.svg" alt="logo">
+
+    </a>
+    Nasjonal arkitektur for et felles digitalt økosystem
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Innledning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dokumentasjon av modell for Nasjonal arkitektur
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dokumentasjon av modell for Nasjonal arkitektur
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Innledning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interaktiv-modell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interaktiv modell i Archi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prøv Arkitekturassistenten (KI)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Prøv Arkitekturassistenten (KI)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arkitekturassistent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Om arkitekturassistenten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oppsett og bruk
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oppsett og bruk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Innhold på denne siden">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innhold på denne siden
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-hva-er-arkitekturassistenten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Hva er Arkitekturassistenten?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-filene-i-oppsettpakken" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Filene i oppsettpakken
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-oppsett-steg-for-steg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Oppsett steg for steg
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Oppsett steg for steg">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#startinstruksen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Startinstruksen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternativ-1-prosjekt-eller-egen-assistent-anbefalt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternativ 1: Prosjekt eller egen assistent (anbefalt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternativ-2-rett-i-chatten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternativ 2: Rett i chatten
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hvor-gjr-jeg-dette-i-mitt-verkty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hvor gjør jeg dette i mitt verktøy?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valg-av-modell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valg av modell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-slik-starter-du" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Slik starter du
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-slik-legger-du-inn-egne-dokumenter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Slik legger du inn egne dokumenter
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Slik legger du inn egne dokumenter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kontekst-fra-eget-program-eller-domene" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kontekst fra eget program eller domene
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Tips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-husk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Husk
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dypdykk og konsepter
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dypdykk og konsepter
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kunnskapsgraf-maal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nasjonal arkitektur som Kunnskapsgraf
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ressurser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oversikt over ressurser i felles økosystem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Innhold på denne siden">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innhold på denne siden
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-hva-er-arkitekturassistenten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Hva er Arkitekturassistenten?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-filene-i-oppsettpakken" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Filene i oppsettpakken
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-oppsett-steg-for-steg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Oppsett steg for steg
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Oppsett steg for steg">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#startinstruksen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Startinstruksen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternativ-1-prosjekt-eller-egen-assistent-anbefalt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternativ 1: Prosjekt eller egen assistent (anbefalt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternativ-2-rett-i-chatten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternativ 2: Rett i chatten
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hvor-gjr-jeg-dette-i-mitt-verkty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hvor gjør jeg dette i mitt verktøy?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valg-av-modell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valg av modell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-slik-starter-du" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Slik starter du
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-slik-legger-du-inn-egne-dokumenter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Slik legger du inn egne dokumenter
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Slik legger du inn egne dokumenter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kontekst-fra-eget-program-eller-domene" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kontekst fra eget program eller domene
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Tips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-husk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Husk
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="arkitekturassistenten-sett-opp-assistenten-i-ditt-eget-ki-verkty">Arkitekturassistenten – sett opp assistenten i ditt eget KI-verktøy</h1>
+<p>Denne veiledningen forklarer hvordan du setter opp og bruker Arkitekturassistenten i et KI-verktøy du selv har tilgang til, for eksempel Claude, ChatGPT, Microsoft 365 Copilot eller Gemini. Assistenten kjører i ditt eget verktøy og på din egen lisens.</p>
+<blockquote>
+<p><strong>Under arbeid:</strong> Digitaliseringsdirektoratet (Digdir) arbeider med å gjøre Arkitekturassistenten tilgjengelig som en brukervennlig KI-tjeneste og som en del av et fremtidig agentisk rammeverk. Inntil videre kan du kjøre den i ditt eget KI-verktøy slik det er beskrevet her.</p>
+</blockquote>
+<h2 id="1-hva-er-arkitekturassistenten">1. Hva er Arkitekturassistenten?</h2>
+<p>Arkitekturassistenten hjelper deg å vurdere egne behov, prosjekter og dokumenter opp mot Nasjonal arkitektur for samhandling og det felles digitale økosystemet i Norge.</p>
+<p>Assistenten er ikke et eget program. Den består av en <strong>systeminstruks</strong>, som forteller KI-verktøyet hvordan det skal arbeide, og et <strong>kunnskapsgrunnlag</strong> med kapabiliteter, arkitekturprinsipper, fellesløsninger og datasett. Når du laster opp disse filene i ditt eget KI-verktøy, arbeider verktøyet som Arkitekturassistenten.</p>
+<p>Assistenten kan hjelpe deg på tre måter:</p>
+<ul>
+<li><strong>Spørsmål om kunnskapsgrunnlaget.</strong> Eksempel: «Hvilke kapabiliteter finnes under Datadeling?» Du får et direkte svar.</li>
+<li><strong>Drøfting av et case.</strong> Eksempel: «La oss drøfte dette caset» eller «Hva er det egentlige problemet her?» Assistenten drøfter i dialog, utfordrer problemforståelsen og stiller oppfølgingsspørsmål, uten å lage en full analyse.</li>
+<li><strong>Full analyse av et behov, prosjekt eller dokument.</strong> Du får en strukturert analyse med behov, kapabiliteter og prinsipper, gjenbrukbare fellesløsninger og datasett, dekning og gap, alternative tiltak, en tom evalueringsmal, en foreløpig vurdering og en oppsummering for prosjektleder og styringsgruppe.</li>
+</ul>
+<p>Assistenten svarer på grunnlag av filene du laster opp. Den finner ikke på fellesløsninger, prinsipper eller kapabiliteter, og den sier fra hvis en kilde mangler.</p>
+<h2 id="2-filene-i-oppsettpakken">2. Filene i oppsettpakken</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Fil</th>
+<th style="text-align: left;">Innhold</th>
+<th style="text-align: left;">Bruk</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Systeminstruks-Arkitektur-assistenten-v2_1.md</code></td>
+<td style="text-align: left;">Systeminstruksen: rollen, arbeidsmåten og formatet på analysene.</td>
+<td style="text-align: left;">Påkrevd</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>nasjonal-arkitektur.yaml</code></td>
+<td style="text-align: left;">Modellen for Nasjonal arkitektur: kapabilitetskartet (nivå 1–3) og arkitekturprinsippene.</td>
+<td style="text-align: left;">Påkrevd</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>na_ressursoversikt.md</code></td>
+<td style="text-align: left;">Fellesløsninger og fellesressurser: løsninger, standarder og veiledning, samhandlingsarenaer og økonomiske og juridiske virkemidler.</td>
+<td style="text-align: left;">Påkrevd</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Hent-ressurs-resultat-liten.csv</code></td>
+<td style="text-align: left;">Gjenbrukbare datasett fra Felles datakatalog (data.norge.no).</td>
+<td style="text-align: left;">Påkrevd</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Digitaliseringsrundskrivet.md</code></td>
+<td style="text-align: left;">Digitaliseringsrundskrivet. Brukes bare til å forankre anbefalingene i statlige krav og anbefalinger.</td>
+<td style="text-align: left;">Valgfri</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LESMEG.md</code></td>
+<td style="text-align: left;">Denne veiledningen.</td>
+<td style="text-align: left;">Lastes ikke opp</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Merk:</strong> Systeminstruksen nevner også Nasjonal digitaliseringsstrategi som kilde. Den er ikke med i pakken. Hvis assistenten sier at strategien mangler, kan du se bort fra det.</p>
+</blockquote>
+<p>Ressursoversikten og datasettfilen er store. Bruk derfor helst verktøyets funksjon for prosjekt eller egen assistent (alternativ 1 nedenfor). Da slipper du også å laste opp filene på nytt hver gang.</p>
+<h2 id="3-oppsett-steg-for-steg">3. Oppsett steg for steg</h2>
+<p>Systeminstruksen lastes alltid opp som en fil, sammen med de andre filene. I feltet for instruksjoner limer du bare inn en kort <strong>startinstruks</strong>. Slik fungerer oppsettet likt i alle verktøyene, også der instruksfeltet har en grense for antall tegn.</p>
+<h3 id="startinstruksen">Startinstruksen</h3>
+<p>Kopier denne teksten:</p>
+<div class="language-text highlight"><pre><span></span><code>Du er Arkitekturassistenten. Les hele filen Systeminstruks-Arkitektur-assistenten-v2_1.md før du svarer, og følg instruksene i den gjennom hele samtalen. Bruk de andre opplastede filene som kunnskapsgrunnlag, slik systeminstruksen beskriver. Svar på norsk.
+</code></pre></div>
+<h3 id="alternativ-1-prosjekt-eller-egen-assistent-anbefalt">Alternativ 1: Prosjekt eller egen assistent (anbefalt)</h3>
+<ol>
+<li>Opprett et nytt prosjekt eller en egen assistent i KI-verktøyet (se tabellen nedenfor).</li>
+<li>Lim inn startinstruksen i feltet for instruksjoner.</li>
+<li>Last opp alle filene i pakken unntatt <code>LESMEG.md</code> som kunnskap eller filer. Systeminstruksen skal også lastes opp.</li>
+<li>Start en ny samtale.</li>
+</ol>
+<h3 id="alternativ-2-rett-i-chatten">Alternativ 2: Rett i chatten</h3>
+<ol>
+<li>Åpne en ny samtale.</li>
+<li>Last opp alle filene i pakken unntatt <code>LESMEG.md</code> i samme melding.</li>
+<li>Lim inn startinstruksen som meldingstekst, og send.</li>
+<li>Gjenta dette for hver nye samtale. Filene huskes ikke mellom samtaler.</li>
+</ol>
+<p>Vanlige samtaler uten prosjekt kan ha problemer med å lese så store filer. Fungerer det dårlig, bruk alternativ 1.</p>
+<h3 id="hvor-gjr-jeg-dette-i-mitt-verkty">Hvor gjør jeg dette i mitt verktøy?</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">KI-verktøy</th>
+<th style="text-align: left;">Bruk</th>
+<th style="text-align: left;">Startinstruksen limes inn i</th>
+<th style="text-align: left;">Filene lastes opp som</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Claude</td>
+<td style="text-align: left;">Prosjekt</td>
+<td style="text-align: left;">Prosjektinstruksjoner</td>
+<td style="text-align: left;">Prosjektkunnskap</td>
+</tr>
+<tr>
+<td style="text-align: left;">ChatGPT</td>
+<td style="text-align: left;">Prosjekt eller egen GPT</td>
+<td style="text-align: left;">Instruksjoner</td>
+<td style="text-align: left;">Filer (prosjekt) eller kunnskap (GPT)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Microsoft 365 Copilot</td>
+<td style="text-align: left;">Agent</td>
+<td style="text-align: left;">Instruksjoner</td>
+<td style="text-align: left;">Kunnskap (inntil 20 filer; krever Microsoft 365 Copilot-lisens)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gemini</td>
+<td style="text-align: left;">Gem</td>
+<td style="text-align: left;">Instruksjoner</td>
+<td style="text-align: left;">Kunnskap (inntil 10 filer)</td>
+</tr>
+</tbody>
+</table>
+<p>Tabellen gjelder per november 2026. Verktøyene endres ofte, så sjekk verktøyets egen dokumentasjon hvis noe ser annerledes ut.</p>
+<h3 id="valg-av-modell">Valg av modell</h3>
+<p>Standardmodellen i verktøyet holder. Slå ikke på dyp resonnering («thinking») eller dyp research. Det tar lang tid uten å gi bedre analyser.</p>
+<h2 id="4-slik-starter-du">4. Slik starter du</h2>
+<p>Send en kort melding, for eksempel «Hei» eller «Hva kan du hjelpe meg med?». Bruker du alternativ 2, er startinstruksen den første meldingen.</p>
+<p>Assistenten svarer med en kort introduksjon: hva den kan hjelpe med, hvilke kilder den har tilgang til og hva en analyse inneholder. Sjekk at den bekrefter at de fire påkrevde filene er tilgjengelige. Mangler noe, laster du opp filen på nytt.</p>
+<h2 id="5-slik-legger-du-inn-egne-dokumenter">5. Slik legger du inn egne dokumenter</h2>
+<p>Assistenten blir først nyttig når den får ditt eget materiale å arbeide med.</p>
+<ol>
+<li>Last opp dokumentene dine i samtalen, for eksempel casebeskrivelse, prosjektbeskrivelse, behovsanalyse, kravliste, beskrivelse av dagens situasjon eller effektmål.</li>
+<li>
+<p>Skriv i samme melding hva du vil ha hjelp til, for eksempel:</p>
+<ul>
+<li>«Lag en full arkitekturanalyse av caset» (analyse)</li>
+<li>«La oss drøfte dette caset» (drøfting)</li>
+<li>«Hvilke fellesløsninger kan dekke behov X?» (spørsmål eller drøfting)</li>
+</ul>
+<p>Sier du ikke hva du vil, tolker assistenten opplastet dokumentasjon som en bestilling av full analyse, eller spør deg først.</p>
+</li>
+<li>
+<p>Nevn gjerne egne løsninger, fagsystemer, standarder eller plattformer i domenet ditt. Assistenten tar bare med slike domeneressurser når de er nevnt i materialet ditt.</p>
+</li>
+</ol>
+<h3 id="kontekst-fra-eget-program-eller-domene">Kontekst fra eget program eller domene</h3>
+<p>Arbeider du i et program, et prosjekt eller et domene med felles rammer, kan du laste opp en egen kontekstfil sammen med casen, for eksempel en beskrivelse av målbilde, aktører, prinsipper og løsninger i domenet. Assistenten bruker den som en del av din dokumentasjon. Uten slik kontekst vurderes caset bare opp mot det nasjonale kunnskapsgrunnlaget, og viktige forutsetninger i domenet kan bli oversett.</p>
+<p>Last opp både kontekstfilen og casen før du ber om analyse eller drøfting, og si hvordan kontekstfilen skal brukes. For eksempel: «Her er konteksten for programmet vårt og casebeskrivelsen. Bruk kontekstfilen som grunnlag og lag en arkitekturanalyse av caset.»</p>
+<h2 id="6-tips">6. Tips</h2>
+<ul>
+<li>Jo mer konkret beskrivelsen er (mål, behov, aktører, krav, dagens situasjon), jo bedre blir analysen. Er beskrivelsen for overordnet, stiller assistenten 1–3 oppfølgingsspørsmål før den analyserer.</li>
+<li>Prosjekter og kunnskapsbaser søker ofte i filene i stedet for å lese alt. Mangler noe i et svar, kan du be assistenten sjekke en bestemt kapabilitet, fellesløsning eller et bestemt datasett.</li>
+<li>Følger ikke assistenten arbeidsmåten eller disposisjonen, kan du be den lese systeminstruksen på nytt.</li>
+<li>Etter en analyse kan du korrigere behov, effektmål eller antagelser. Assistenten kjører da analysen på nytt fra delen som berøres.</li>
+<li>Vil du ha analysen som samlet dokument (Word, PDF eller Markdown), ber du om det til slutt.</li>
+<li>Les alltid resultatet kritisk. Analysen er en foreløpig vurdering og et innspill til videre arbeid, ikke et vedtak.</li>
+</ul>
+<h2 id="7-husk">7. Husk</h2>
+<ul>
+<li>Følg virksomhetens retningslinjer for bruk av KI-verktøy.</li>
+<li>Ikke last opp personopplysninger, taushetsbelagt eller gradert informasjon med mindre KI-verktøyet ditt er godkjent for det i virksomheten din.</li>
+<li>Kunnskapsgrunnlaget oppdateres jevnlig. Siste versjon av oppsettpakken finner du på <a href="https://digdir.github.io/nasjonal-arkitektur/arkitekturassistent/">https://digdir.github.io/nasjonal-arkitektur/arkitekturassistent/</a>.</li>
+</ul>
+<p><small>Sist oppdatert: 10. november 2026</small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Kopiert til utklippstavlen", "clipboard.copy": "Kopier til utklippstavlen", "search.result.more.one": "1 til p\u00e5 denne siden", "search.result.more.other": "# flere p\u00e5 denne siden", "search.result.none": "Ingen treff", "search.result.one": "1 treff", "search.result.other": "# treff", "search.result.placeholder": "Skriv s\u00f8keord", "search.result.term.missing": "Mangler", "select.version": "Velg versjon"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../javascripts/custom.js"></script>
+      
+    
+  </body>
+</html>
