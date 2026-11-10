@@ -7,18 +7,31 @@ theme:
   palette:
     primary: indigo
     accent: indigo
+  features:
+    - content.code.copy
 markdown_extensions:
   - toc:
       title: "Innhold på denne siden"
       toc_depth: 2-6
+  - admonition
+  - attr_list
+  - pymdownx.highlight:
+      pygments_lang_class: true
+  - pymdownx.superfences
 nav:
   - Innledning: index.md
   - Dokumentasjon av modell for Nasjonal arkitektur:
     - Innledning: modell.md
     - Interaktiv modell i Archi: interaktiv-modell.md
+  - Prøv Arkitekturassistenten (KI):
+    - Om arkitekturassistenten: arkitekturassistent.md
+    - Oppsett og bruk: arkitekturassistent-oppsett.md
   - Dypdykk og konsepter:
       - Nasjonal arkitektur som Kunnskapsgraf: kunnskapsgraf-maal.md
   - Oversikt over ressurser i felles økosystem: ressurser.md
+
+extra_css:
+  - stylesheets/arkitekturassistent.css
 
 extra_javascript:
   - javascripts/custom.js

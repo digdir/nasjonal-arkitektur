@@ -1,0 +1,191 @@
+/* Figuren «Slik fungerer det» på siden om Arkitekturassistenten.
+   Vedlikeholdes manuelt (overskrives ikke av bygg_lokalt.py).
+   Farger etter artefakten «Arkitektur-assistenten 2.1». */
+
+.aa-figur {
+  --aa-eff-bg: #E6EFFA; --aa-eff-fg: #1C4C8C;
+  --aa-kap-bg: #E0F2EF; --aa-kap-fg: #0A5A51;
+  --aa-pri-bg: #ECE8F7; --aa-pri-fg: #46378A;
+  --aa-out-bg: #F7E4CE; --aa-out-fg: #8F4A10; --aa-out-line: #B5651D;
+  --aa-dom-bg: #EEF1F4; --aa-dom-fg: #3C4A57;
+  --aa-ink: #13293D; --aa-mute: #52627A; --aa-line: #C9D3DD; --aa-panel: #FFFFFF;
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+[data-md-color-scheme="slate"] .aa-figur {
+  --aa-eff-bg: #1B3252; --aa-eff-fg: #BFD6F5;
+  --aa-kap-bg: #143C38; --aa-kap-fg: #A6E3D8;
+  --aa-pri-bg: #2C2550; --aa-pri-fg: #CFC6F4;
+  --aa-out-bg: #3E2A17; --aa-out-fg: #F2C9A0; --aa-out-line: #D08A4A;
+  --aa-dom-bg: #22303C; --aa-dom-fg: #C6D1DB;
+  --aa-ink: #E8EEF4; --aa-mute: #A9B7C5; --aa-line: #3A4A5A; --aa-panel: #16222D;
+}
+
+/* Paneler */
+.md-typeset .aa-panel {
+  background: var(--aa-panel);
+  border: 1px solid var(--aa-line);
+  border-radius: 0.7rem;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 1px 2px rgba(19, 41, 61, .06), 0 8px 24px rgba(19, 41, 61, .06);
+}
+.md-typeset .aa-figur h3 {
+  margin: 0 0 0.8rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--aa-ink);
+}
+.md-typeset .aa-figur h4 {
+  margin: 0.1rem 0 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Fargeklasser */
+.md-typeset .aa-dom { background: var(--aa-dom-bg); border-color: var(--aa-dom-fg); }
+.md-typeset .aa-eff { background: var(--aa-eff-bg); border-color: var(--aa-eff-fg); }
+.md-typeset .aa-eff h4 { color: var(--aa-eff-fg); }
+.md-typeset .aa-kap { background: var(--aa-kap-bg); border-color: var(--aa-kap-fg); }
+.md-typeset .aa-kap h4 { color: var(--aa-kap-fg); }
+.md-typeset .aa-pri { background: var(--aa-pri-bg); border-color: var(--aa-pri-fg); }
+.md-typeset .aa-pri h4 { color: var(--aa-pri-fg); }
+.md-typeset .aa-res { background: var(--aa-out-bg); border-color: var(--aa-out-line); }
+.md-typeset .aa-res h4 { color: var(--aa-out-fg); }
+
+/* Panel 1: tre måter å bruke assistenten på */
+.aa-modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 6rem 1fr;
+  gap: 0.7rem;
+  align-items: stretch;
+}
+.md-typeset .aa-mode {
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 0.7rem;
+  padding: 0.7rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+.md-typeset .aa-mode h4 { font-size: 0.85rem; margin: 0; }
+.md-typeset .aa-mode p { margin: 0; }
+.aa-mode .aa-out {
+  margin-top: auto;
+  padding-top: 0.3rem;
+  font-size: 0.68rem;
+  color: var(--aa-mute);
+}
+.aa-tag {
+  align-self: flex-start;
+  font-size: 0.6rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.1rem 0.45rem;
+  background: var(--aa-panel);
+  border: 1px solid var(--aa-line);
+  color: var(--aa-ink);
+}
+.aa-marrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  text-align: center;
+  font-size: 0.62rem;
+  line-height: 1.35;
+  color: var(--aa-mute);
+}
+.aa-marrow svg { color: var(--aa-kap-fg); flex: none; }
+
+/* Panel 2: analyseflyten */
+.md-typeset ol.aa-flow {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+.md-typeset ol.aa-flow > li {
+  position: relative;
+  margin: 0;
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 0.7rem;
+  padding: 0.6rem 0.7rem;
+  font-size: 0.68rem;
+  line-height: 1.4;
+}
+.md-typeset ol.aa-flow > li > i {
+  display: block;
+  font-style: normal;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--aa-mute);
+}
+.md-typeset ol.aa-flow > li > span { display: block; }
+
+/* Piler mellom kort på samme rad (4 per rad) */
+.md-typeset ol.aa-flow > li::after {
+  content: "";
+  position: absolute;
+  right: -1.05rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0.35rem solid transparent;
+  border-left-color: var(--aa-ink);
+}
+.md-typeset ol.aa-flow > li:nth-child(4n)::after,
+.md-typeset ol.aa-flow > li:last-child::after { display: none; }
+
+/* Faktarad */
+.md-typeset .aa-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.aa-facts > div { border-top: 3px solid var(--aa-ink); padding-top: 0.5rem; }
+.aa-facts b { display: block; color: var(--aa-ink); font-size: 0.8rem; }
+.aa-facts span { display: block; font-size: 0.72rem; color: var(--aa-mute); line-height: 1.45; }
+
+/* Nettbrett */
+@media screen and (max-width: 60em) {
+  .aa-modes { grid-template-columns: 1fr; }
+  .aa-marrow { flex-direction: row; padding: 0.2rem 0; }
+  .aa-marrow svg { transform: rotate(90deg); }
+  .md-typeset ol.aa-flow { grid-template-columns: repeat(2, 1fr); }
+  .md-typeset ol.aa-flow > li::after { display: block; }
+  .md-typeset ol.aa-flow > li:nth-child(2n)::after,
+  .md-typeset ol.aa-flow > li:last-child::after { display: none; }
+  .md-typeset .aa-facts { grid-template-columns: 1fr; }
+}
+
+/* Mobil */
+@media screen and (max-width: 30em) {
+  .md-typeset .aa-panel { padding: 0.8rem; }
+  .md-typeset ol.aa-flow { grid-template-columns: 1fr; gap: 0.6rem; }
+  .md-typeset ol.aa-flow > li::after { display: none; }
+}
+
+/* Tekstblokker (f.eks. startinstruksen) brytes i stedet for å rulle sidelengs */
+.md-typeset .language-text.highlight code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* Ingress øverst på siden om Arkitekturassistenten */
+.md-typeset .aa-lead {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--md-default-fg-color);
+  border-left: 4px solid var(--md-primary-fg-color);
+  padding-left: 0.8rem;
+  margin: 0 0 1.2rem;
+}

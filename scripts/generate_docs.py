@@ -4,11 +4,42 @@ import re
 import shutil
 import glob
 import stat
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from bygg_oppsettpakke import KILDEMAPPE, LESMEG, PakkeFeil, fyll_inn, les_startinstruks, plassholdere
+
+MONTHS = ["januar", "februar", "mars", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "desember"]
 
 def remove_readonly(func, path, _exc_info):
     """Windows/OneDrive kan sette mapper som skrivebeskyttet, noe som stopper rmtree."""
     os.chmod(path, stat.S_IWRITE)
     func(path)
+
+def modell_dato():
+    """Datoen i filnavnet til den nyeste modellen i model/, f.eks. «28. oktober 2026»."""
+    filer = sorted(glob.glob('model/*.archimate'))
+    if filer:
+        m = re.search(r'(\d{4})-(\d{2})-(\d{2})', os.path.basename(filer[-1]))
+        if m:
+            return f"{int(m.group(3))}. {MONTHS[int(m.group(2)) - 1]} {m.group(1)}"
+    return "ukjent dato"
+
+def generate_arkitekturassistent(docs_dir):
+    """Lager sidene om Arkitekturassistenten: oversikt (fra mal) og veiledning (fra LESMEG.md)."""
+    verdier = plassholdere()
+    verdier['modell_dato'] = modell_dato()
+    verdier['startinstruks'] = les_startinstruks()
+
+    with open('templates/arkitekturassistent.md', 'r', encoding='utf-8') as f:
+        oversikt = fyll_inn(f.read(), verdier)
+    with open(os.path.join(docs_dir, 'arkitekturassistent.md'), 'w', encoding='utf-8') as f:
+        f.write(oversikt)
+
+    with open(os.path.join(KILDEMAPPE, LESMEG), 'r', encoding='utf-8') as f:
+        veiledning = fyll_inn(f.read(), verdier)
+    with open(os.path.join(docs_dir, 'arkitekturassistent-oppsett.md'), 'w', encoding='utf-8') as f:
+        f.write(veiledning)
 
 def generate_markdown(yaml_file, docs_dir):
     with open(yaml_file, 'r', encoding='utf-8') as f:
@@ -16,6 +47,14 @@ def generate_markdown(yaml_file, docs_dir):
     
     os.makedirs(docs_dir, exist_ok=True)
     os.makedirs(os.path.join(docs_dir, 'images'), exist_ok=True)
+
+    # Sidene om Arkitekturassistenten lages først, slik at en feil i arkitekturassistent/
+    # stopper byggingen før de andre sidene skrives om.
+    try:
+        generate_arkitekturassistent(docs_dir)
+    except PakkeFeil as e:
+        print(f"Feil i arkitekturassistent/: {e}")
+        sys.exit(1)
 
     # Copy the entire HTML export to docs/archimate-report if it exists
     html_export_dir = 'model/html-export'
@@ -83,7 +122,7 @@ def generate_markdown(yaml_file, docs_dir):
 
     # Legg til "Sist oppdatert" nederst i alle genererte markdown-filer
     import datetime
-    months = ["januar", "februar", "mars", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "desember"]
+    months = MONTHS
     now = datetime.datetime.now()
     date_str = f"{now.day}. {months[now.month - 1]} {now.year}"
     footer = f"\n\n<small>Sist oppdatert: {date_str}</small>\n"

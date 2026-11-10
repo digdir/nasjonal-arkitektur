@@ -34,4 +34,4 @@ Du kan se HTML-rapporten generert fra Archi her:
 
 
 
-<small>Sist oppdatert: 6. november 2026</small>
+<small>Sist oppdatert: 10. november 2026</small>
