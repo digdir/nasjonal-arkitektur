@@ -3,6 +3,8 @@
 Denne veiledningen forklarer hvordan du setter opp og bruker Arkitekturassistenten i et KI-verktøy du selv har tilgang til, for eksempel Claude, ChatGPT, Microsoft 365 Copilot eller Gemini. Assistenten kjører i ditt eget verktøy og på din egen lisens.
 
 > **Under arbeid:** Digitaliseringsdirektoratet (Digdir) arbeider med å gjøre Arkitekturassistenten tilgjengelig som en brukervennlig KI-tjeneste og som en del av et fremtidig agentisk rammeverk. Inntil videre kan du kjøre den i ditt eget KI-verktøy slik det er beskrevet her.
+>
+> Digdir vil også ta i bruk [Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/open-knowledge-format) for store deler av kunnskapsgrunnlaget, først og fremst ressursoversikten. OKF er et åpent og leverandøruavhengig format der kunnskap lagres som vanlige Markdown-filer med strukturerte metadata. Det gjør det enklere å bruke kunnskapsgrunnlaget i egne KI-tjenester.
 
 ## 1. Hva er Arkitekturassistenten?
 
@@ -118,4 +120,4 @@ Last opp både kontekstfilen og casen før du ber om analyse eller drøfting, og
 - Kunnskapsgrunnlaget oppdateres jevnlig. Siste versjon av oppsettpakken finner du på <https://digdir.github.io/nasjonal-arkitektur/arkitekturassistent/>.
 
 
-<small>Sist oppdatert: 10. november 2026</small>
+<small>Sist oppdatert: 17. november 2026</small>

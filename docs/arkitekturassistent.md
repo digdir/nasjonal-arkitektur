@@ -14,6 +14,8 @@ Assistenten vurderer behov, prosjekter og dokumenter opp mot Nasjonal arkitektur
 
     Digitaliseringsdirektoratet (Digdir) arbeider med å gjøre Arkitekturassistenten tilgjengelig som en brukervennlig KI-tjeneste og som en del av et fremtidig agentisk rammeverk. Inntil videre kan du kjøre den i ditt eget KI-verktøy, for eksempel Claude, ChatGPT, Microsoft 365 Copilot eller Gemini, slik det er beskrevet på denne siden.
 
+    Digdir vil også ta i bruk [Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/open-knowledge-format) for store deler av kunnskapsgrunnlaget, først og fremst ressursoversikten. OKF er et åpent og leverandøruavhengig format der kunnskap lagres som vanlige Markdown-filer med strukturerte metadata. Det gjør det enklere å bruke kunnskapsgrunnlaget i egne KI-tjenester.
+
 ## Slik fungerer det
 
 <div class="aa-figur">
@@ -81,4 +83,4 @@ Les veiledningen [Oppsett og bruk](arkitekturassistent-oppsett.md) for detaljer 
 **Tilbakemeldinger** tas gjerne imot på [nasjonalarkitektur@digdir.no](mailto:nasjonalarkitektur@digdir.no).
 
 
-<small>Sist oppdatert: 10. november 2026</small>
+<small>Sist oppdatert: 17. november 2026</small>
