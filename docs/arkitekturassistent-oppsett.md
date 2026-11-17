@@ -2,6 +2,8 @@
 
 Denne veiledningen forklarer hvordan du setter opp og bruker Arkitekturassistenten i et KI-verktøy du selv har tilgang til, for eksempel Claude, ChatGPT, Microsoft 365 Copilot eller Gemini. Assistenten kjører i ditt eget verktøy og på din egen lisens.
 
+> **Proof of Concept (PoC):** Arkitekturassistenten er en Proof of Concept (PoC) som viser mulighetene for operasjonalisering av Nasjonal arkitektur.
+>
 > **Under arbeid:** Digitaliseringsdirektoratet (Digdir) arbeider med å gjøre Arkitekturassistenten tilgjengelig som en brukervennlig KI-tjeneste og som en del av et fremtidig agentisk rammeverk. Inntil videre kan du kjøre den i ditt eget KI-verktøy slik det er beskrevet her.
 >
 > Digdir vil også ta i bruk [Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/open-knowledge-format) for store deler av kunnskapsgrunnlaget, først og fremst ressursoversikten. OKF er et åpent og leverandøruavhengig format der kunnskap lagres som vanlige Markdown-filer med strukturerte metadata. Det gjør det enklere å bruke kunnskapsgrunnlaget i egne KI-tjenester.

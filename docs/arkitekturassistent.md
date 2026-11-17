@@ -10,7 +10,9 @@ Få hjelp av KI til å se hva prosjektet ditt kan gjenbruke av fellesløsninger 
 
 Assistenten vurderer behov, prosjekter og dokumenter opp mot Nasjonal arkitektur for samhandling, foreslår tiltak og gir en foreløpig vurdering som prosjektleder og styringsgruppe kan bruke videre. Den er laget for arkitekter, prosjektledere og andre som arbeider med digitaliseringstiltak i offentlig sektor.
 
-!!! info "Under arbeid"
+!!! info "Proof of Concept (PoC) – under arbeid"
+
+    **Arkitekturassistenten er en Proof of Concept (PoC) som viser mulighetene for operasjonalisering av Nasjonal arkitektur.**
 
     Digitaliseringsdirektoratet (Digdir) arbeider med å gjøre Arkitekturassistenten tilgjengelig som en brukervennlig KI-tjeneste og som en del av et fremtidig agentisk rammeverk. Inntil videre kan du kjøre den i ditt eget KI-verktøy, for eksempel Claude, ChatGPT, Microsoft 365 Copilot eller Gemini, slik det er beskrevet på denne siden.
 
@@ -76,6 +78,7 @@ Les veiledningen [Oppsett og bruk](arkitekturassistent-oppsett.md) for detaljer 
 
 ## Forbehold
 
+- Arkitekturassistenten er en Proof of Concept (PoC), ikke en ferdig tjeneste.
 - Analysene er foreløpige vurderinger og innspill til videre arbeid, ikke vedtak. Les alltid resultatet kritisk.
 - Assistenten kjører i ditt eget KI-verktøy og på din egen lisens. Følg virksomhetens retningslinjer for bruk av KI-verktøy.
 - Ikke last opp personopplysninger, taushetsbelagt eller gradert informasjon med mindre KI-verktøyet ditt er godkjent for det i virksomheten din.
