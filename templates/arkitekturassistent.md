@@ -18,6 +18,35 @@ Assistenten vurderer behov, prosjekter og dokumenter opp mot Nasjonal arkitektur
 
     Digdir vil også ta i bruk [Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/open-knowledge-format) for store deler av kunnskapsgrunnlaget, først og fremst ressursoversikten. OKF er et åpent og leverandøruavhengig format der kunnskap lagres som vanlige Markdown-filer med strukturerte metadata. Det gjør det enklere å bruke kunnskapsgrunnlaget i egne KI-tjenester.
 
+## Hva kan du bruke den til?
+
+Arkitekturassistenten gjør Nasjonal arkitektur operativ i ditt eget arbeid. Svarene bygger på et felles rammeverk, så de blir konsistente, begrunnede og sporbare. Assistenten hjelper deg å:
+
+<div class="aa-figur">
+<div class="aa-nytte">
+<div class="aa-nytte-kort aa-pri"><span class="aa-nr" aria-hidden="true">1</span><div><h4>Etterleve</h4><p>Sjekk at løsningen følger de overordnede arkitekturprinsippene og Digitaliseringsrundskrivet.</p></div></div>
+<div class="aa-nytte-kort aa-res"><span class="aa-nr" aria-hidden="true">2</span><div><h4>Navigere</h4><p>Finn fellesløsninger, fellesressurser og datasett du kan gjenbruke i stedet for å bygge selv.</p></div></div>
+<div class="aa-nytte-kort aa-kap"><span class="aa-nr" aria-hidden="true">3</span><div><h4>Analysere</h4><p>Få et beslutningsgrunnlag for arkitekturvalg, med behov, gap og alternative tiltak.</p></div></div>
+</div>
+</div>
+
+Bruk den tidlig, mens arkitekturen fortsatt kan sette rammer og føringer for spesifikasjon og utvikling.
+
+### Typiske eksempler
+
+<div class="aa-figur">
+<div class="aa-eksempler">
+<div class="aa-eks"><b>Tjenesteutvikling</b><span>«Jeg skal lage en sammenhengende tjeneste med kommuner og stat. Hvordan kommer jeg i gang, og hvilke områder i arkitekturen trenger jeg?»</span></div>
+<div class="aa-eks"><b>Gjenbruk</b><span>«Hvilke fellesløsninger kan jeg bruke, og hvilke data kan jeg gjenbruke?»</span></div>
+<div class="aa-eks"><b>Søknad om medfinansiering</b><span>«Her er en søknad til medfinansieringsordningen. Det er krav om at data og løsninger gjenbrukes når de finnes. Er dette fulgt?»</span></div>
+<div class="aa-eks"><b>Datadeling</b><span>«Hvilke løsninger og standarder finnes hvis jeg trenger å dele data?»</span></div>
+<div class="aa-eks"><b>Drøfting av et case</b><span>«Hva er det egentlige problemet her, og hvilke data må kunne flyte, fra hvem til hvem?»</span></div>
+<div class="aa-eks"><b>Leverandører og innovasjon</b><span>«Jeg er en privat leverandør. Hvordan kan jeg bygge verdi på toppen av Nasjonal arkitektur, og hvilke data finnes?»</span></div>
+<div class="aa-eks"><b>Oppslag i rammeverket</b><span>«Hva sier Nasjonal arkitektur om Tillit og dets underkapabiliteter?»</span></div>
+<div class="aa-eks"><b>Datasett</b><span>«Finn datasett fra Skatteetaten.»</span></div>
+</div>
+</div>
+
 ## Slik fungerer det
 
 <div class="aa-figur">

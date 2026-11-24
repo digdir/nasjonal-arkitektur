@@ -189,3 +189,66 @@
   padding-left: 0.8rem;
   margin: 0 0 1.2rem;
 }
+
+/* Seksjonen «Hva kan du bruke den til?» */
+.aa-nytte {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+}
+.md-typeset .aa-nytte-kort {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 0.7rem;
+  padding: 0.7rem 0.8rem;
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+.md-typeset .aa-nytte-kort h4 { font-size: 0.85rem; margin: 0 0 0.2rem; }
+.md-typeset .aa-nytte-kort p { margin: 0; }
+.aa-nr {
+  flex: none;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 0.7rem;
+  background: var(--aa-panel);
+  border: 1px solid var(--aa-line);
+  color: var(--aa-ink);
+}
+.aa-eksempler {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.7rem;
+}
+.md-typeset .aa-eks {
+  background: var(--aa-panel);
+  border: 1px solid var(--aa-line);
+  border-left: 4px solid var(--md-primary-fg-color);
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+.aa-eks b {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--aa-mute);
+}
+.aa-eks span { color: var(--aa-ink); }
+
+@media screen and (max-width: 60em) {
+  .aa-nytte { grid-template-columns: 1fr; }
+}
+@media screen and (max-width: 45em) {
+  .aa-eksempler { grid-template-columns: 1fr; }
+}
