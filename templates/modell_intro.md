@@ -8,6 +8,13 @@ Nasjonal arkitektur skal være et levende, maskinlesbart og strategisk verktøy,
 
 - [Nasjonal arkitektur som Kunnskapsgraf](kunnskapsgraf-maal.md)
 
+## Utforsk modell
+
+Du kan utforske modellen på to måter. Begge bygges fra den samme modellen og viser det samme innholdet.
+
+- **[Modellutforskeren](modellutforsker-visning.md)** gir deg oversikt over hele modellen og er den mest interaktive måten å bruke den på. Du kan følge relasjonene i et nettverk og se kapabilitetskartet i tre nivåer. Du finner også mål og prinsipper, diagrammene fra modellen og en søkbar katalog over alle elementer og relasjoner. Du kan også [åpne modellutforskeren alene i en ny fane](modellutforsker/index.html){ target="_blank" rel="noopener" }, slik at den fyller hele vinduet.
+- **[Archi-rapporten](interaktiv-modell.md)** er HTML-rapporten som eksporteres fra modelleringsverktøyet Archi. Den viser diagrammer, elementer og egenskaper slik de er modellert, og passer godt hvis du kjenner ArchiMate.
+
 ## Last ned filer
 
 Her kan du laste ned selve arkitekturmodellen i ulike formater:
@@ -23,5 +30,3 @@ Her kan du laste ned selve arkitekturmodellen i ulike formater:
 | **[ArchiMate](Nasjonal%20Arkitektur%20kapabilitetsmodell.archimate)** | Originalmodellen. Kan åpnes i [Archi](https://www.archimatetool.com/) eller andre verktøy som støtter ArchiMate. |
 | **[YAML](nasjonal-arkitektur.yaml)**                                  | En strukturert data-representasjon av modellen, egnet for analyse, maskinell lesing og KI-agenter.                                                                                                                                                                                   |
 | **[Turtle](nasjonal-arkitektur.ttl)**                                 | Turtle-representasjon av modellen (Archi-xml til RDF Turtle), basert på [archimate-RDF-vocabular](https://htmlpreview.github.io/?https://github.com/AlbertoDMendoza/archimate_ontology/blob/main/archimate.html). En strukturert representasjon av modellen i RDF Turtle (lenkede data), egnet for resonnering, analyse, maskinell lesing og KI-agenter. |
-
-## Utforsk modell

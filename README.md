@@ -22,8 +22,9 @@ Dette vil:
 1. Konvertere ArchiMate-modellen til YAML.
 2. Konvertere modellen til Turtle (TTL).
 3. Generere Markdown-dokumentasjon basert på YAML-filen og tekstmaler i `templates/`-mappen.
-4. Kopiere nødvendige filer inn i `docs/`-mappen slik at MkDocs kan bruke dem.
-5. Bygge oppsettpakken for Arkitekturassistenten (se nedenfor).
+4. Bygge modellutforskeren, en interaktiv HTML-visning av hele modellen (se `scripts/modellutforsker/README.md`).
+5. Kopiere nødvendige filer inn i `docs/`-mappen slik at MkDocs kan bruke dem.
+6. Bygge oppsettpakken for Arkitekturassistenten (se nedenfor).
 
 For å se resultatet lokalt, kan du kjøre (krever at MkDocs er installert):
 

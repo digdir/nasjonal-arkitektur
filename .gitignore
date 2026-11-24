@@ -144,3 +144,6 @@ vite.config.ts.timestamp-*
 
 # MkDocs build output (publiseres via gh-pages, ikke fra main)
 /site/
+
+# Lokal oppstartsfil for forhåndsvisning i Claude Code
+.claude/launch.json

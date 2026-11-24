@@ -59,14 +59,12 @@ def generate_markdown(yaml_file, docs_dir):
     # Copy the entire HTML export to docs/archimate-report if it exists
     html_export_dir = 'model/html-export'
     report_dest = os.path.join(docs_dir, 'archimate-report')
-    has_report = False
     if os.path.exists(html_export_dir):
         # Tøm målmappen først, slik at filer fra eldre eksporter ikke blir liggende igjen
         if os.path.exists(report_dest):
             shutil.rmtree(report_dest, onerror=remove_readonly)
         shutil.copytree(html_export_dir, report_dest)
-        has_report = True
-        
+
         # Skjul den originale Archi-headeren siden vi nå har MkDocs-header i iframe-en
         index_html_path = os.path.join(report_dest, 'index.html')
         if os.path.exists(index_html_path):
@@ -97,18 +95,17 @@ def generate_markdown(yaml_file, docs_dir):
     except FileNotFoundError:
         pass
 
+    # Hele modellsiden, også «Utforsk modell» med lenkene til modellutforskeren og Archi-rapporten,
+    # ligger i malen.
     with open(os.path.join(docs_dir, 'modell.md'), 'w', encoding='utf-8') as f:
         if modell_intro:
             f.write(modell_intro + "\n\n")
         else:
             f.write("# Rammeverksmodell for Nasjonal arkitektur\n\n")
-            f.write("## Utforsk modell\n\n")
-        
-        if has_report:
-            f.write("Du kan se HTML-rapporten generert fra Archi her:\n")
-            f.write("- **[Åpne interaktiv Archi-rapport](interaktiv-modell.md)**\n\n")
 
-        f.write("> **Merk:** Denne dokumentasjonen skal forbedres! Inntil videre kan du få tilgang til all dokumentasjon ved å **[Åpne interaktiv Archi-rapport](interaktiv-modell.md)**.\n\n")
+    # Siden som viser modellutforskeren innebygd. Selve utforskeren
+    # (docs/modellutforsker/index.html) bygges av scripts/modellutforsker/build_modellutforsker.py.
+    shutil.copy2('templates/modellutforsker-visning.md', os.path.join(docs_dir, 'modellutforsker-visning.md'))
 
     try:
         shutil.copy2('templates/kunnskapsgraf-maal.md', os.path.join(docs_dir, 'kunnskapsgraf-maal.md'))

@@ -17,31 +17,39 @@ def main():
     archimate_files.sort()
     model_path = archimate_files[-1]
     print(f"Fant nyeste modell: {model_path}")
-    print("\n[1/5] Konverterer ArchiMate til YAML...")
+    print("\n[1/6] Konverterer ArchiMate til YAML...")
     result = subprocess.run(["python", "scripts/convert_archimate_to_yaml.py", model_path, "data/nasjonal-arkitektur.yaml"])
     if result.returncode != 0:
         print("Feil under konvertering til YAML.")
         sys.exit(1)
         
-    print("\n[2/5] Konverterer ArchiMate til TTL...")
+    print("\n[2/6] Konverterer ArchiMate til TTL...")
     result = subprocess.run(["python", "scripts/archimate2ttl.py", model_path, "data/nasjonal-arkitektur.ttl"])
     if result.returncode != 0:
         print("Feil under konvertering til TTL.")
         sys.exit(1)
         
-    print("\n[3/5] Genererer Markdown-dokumentasjon...")
+    print("\n[3/6] Genererer Markdown-dokumentasjon...")
     result = subprocess.run(["python", "scripts/generate_docs.py"])
     if result.returncode != 0:
         print("Feil under generering av dokumentasjon.")
         sys.exit(1)
-        
-    print("\n[4/5] Kopierer kilde- og datafiler til docs-mappen for nedlasting...")
+
+    print("\n[4/6] Bygger modellutforskeren...")
+    result = subprocess.run(["python", "scripts/modellutforsker/build_modellutforsker.py",
+                             "--yaml", "data/nasjonal-arkitektur.yaml",
+                             "--out", "docs/modellutforsker/index.html"])
+    if result.returncode != 0:
+        print("Feil under bygging av modellutforskeren.")
+        sys.exit(1)
+
+    print("\n[5/6] Kopierer kilde- og datafiler til docs-mappen for nedlasting...")
     os.makedirs("docs", exist_ok=True)
     shutil.copy2("data/nasjonal-arkitektur.yaml", "docs/nasjonal-arkitektur.yaml")
     shutil.copy2("data/nasjonal-arkitektur.ttl", "docs/nasjonal-arkitektur.ttl")
     shutil.copy2(model_path, "docs/Nasjonal Arkitektur kapabilitetsmodell.archimate")
 
-    print("\n[5/5] Bygger oppsettpakken for Arkitekturassistenten...")
+    print("\n[6/6] Bygger oppsettpakken for Arkitekturassistenten...")
     result = subprocess.run(["python", "scripts/bygg_oppsettpakke.py"])
     if result.returncode != 0:
         print("Feil under bygging av oppsettpakken.")

@@ -122,4 +122,4 @@ Last opp både kontekstfilen og casen før du ber om analyse eller drøfting, og
 - Kunnskapsgrunnlaget oppdateres jevnlig. Siste versjon av oppsettpakken finner du på <https://digdir.github.io/nasjonal-arkitektur/arkitekturassistent/>.
 
 
-<small>Sist oppdatert: 17. november 2026</small>
+<small>Sist oppdatert: 24. november 2026</small>

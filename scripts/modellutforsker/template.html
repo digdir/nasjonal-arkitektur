@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nasjonal arkitektur: modellutforsker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --bg:#EEF1F5; --surface:#FFFFFF; --surface-2:#F7F8FA; --ink:#17223B; --muted:#5A6476; --rule:#D5DBE4;
+  --accent:#1F4FC1; --accent-soft:#E3EAFB; --focus:#1F4FC1;
+  --strat-fill:#F5DEAA; --strat-ink:#6E4600; --strat-line:#C9A660;
+  --mot-fill:#D6D6FF; --mot-ink:#33338F; --mot-line:#9C9CE0;
+  --impl-fill:#D8F2DA; --impl-ink:#245E2C; --impl-line:#8CC694;
+  --other-fill:rgba(90,100,118,.05); --other-ink:#465063; --other-line:#8A93A3;
+  --edge:#7A8496; --edge-hi:#1F4FC1; --dim:.18;
+  --l1-fill:#B5650A; --l1-line:#6B3A00; --l2-fill:#E6A33A; --l2-line:#8C5800; --l3-fill:#F8E1AA; --l3-line:#B08333; --s0-fill:#E7E0D3; --s0-line:#8A7A5C;
+  --shadow:0 1px 2px rgba(23,34,59,.08),0 6px 20px rgba(23,34,59,.06);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1522; --surface:#172033; --surface-2:#1C2639; --ink:#E7ECF5; --muted:#9AA5B8; --rule:#2C3850;
+    --accent:#8FB0FF; --accent-soft:#22325A; --focus:#8FB0FF;
+    --strat-fill:#4A3A16; --strat-ink:#F3D28C; --strat-line:#8A6C2C;
+    --mot-fill:#2D2D5E; --mot-ink:#C9C9FF; --mot-line:#5A5AA6;
+    --impl-fill:#1D3D24; --impl-ink:#A9E2B0; --impl-line:#3F7A49;
+    --other-fill:rgba(180,190,210,.05); --other-ink:#B8C0CF; --other-line:#6B7690;
+    --edge:#7D889C; --edge-hi:#8FB0FF;
+    --l1-fill:#F0A23A; --l1-line:#FFD796; --l2-fill:#B07A22; --l2-line:#E9B868; --l3-fill:#4B3B17; --l3-line:#C79D4E; --s0-fill:#38342D; --s0-line:#9A8B6C;
+    --l1-fill:#F0A23A; --l1-line:#FFD796; --l2-fill:#B07A22; --l2-line:#E9B868; --l3-fill:#4B3B17; --l3-line:#C79D4E; --s0-fill:#38342D; --s0-line:#9A8B6C;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 20px rgba(0,0,0,.25);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1522; --surface:#172033; --surface-2:#1C2639; --ink:#E7ECF5; --muted:#9AA5B8; --rule:#2C3850;
+  --accent:#8FB0FF; --accent-soft:#22325A; --focus:#8FB0FF;
+  --strat-fill:#4A3A16; --strat-ink:#F3D28C; --strat-line:#8A6C2C;
+  --mot-fill:#2D2D5E; --mot-ink:#C9C9FF; --mot-line:#5A5AA6;
+  --impl-fill:#1D3D24; --impl-ink:#A9E2B0; --impl-line:#3F7A49;
+  --other-fill:rgba(180,190,210,.05); --other-ink:#B8C0CF; --other-line:#6B7690;
+  --edge:#7D889C; --edge-hi:#8FB0FF;
+    --l1-fill:#F0A23A; --l1-line:#FFD796; --l2-fill:#B07A22; --l2-line:#E9B868; --l3-fill:#4B3B17; --l3-line:#C79D4E; --s0-fill:#38342D; --s0-line:#9A8B6C;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 20px rgba(0,0,0,.25);
+  color-scheme:dark;
+}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;height:100%;background:var(--bg);color:var(--ink);font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:15px;line-height:1.5;display:flex;flex-direction:column;overflow:hidden}
+button{font:inherit;color:inherit}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+
+/* Topp */
+.top{display:flex;align-items:center;gap:20px;padding:12px 20px;background:var(--surface);border-bottom:1px solid var(--rule);flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand svg{flex:none}
+.brand h1{font-size:19px;margin:0;line-height:1.15;letter-spacing:-.01em}
+.brand p{margin:0;color:var(--muted);font-size:13px}
+.search{position:relative;margin-left:auto;flex:1 1 280px;max-width:440px}
+.search input{width:100%;padding:9px 12px 9px 34px;border:1px solid var(--rule);border-radius:8px;background:var(--surface-2);color:var(--ink);font:inherit}
+.search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.results{position:absolute;z-index:40;top:calc(100% + 6px);left:0;right:0;background:var(--surface);border:1px solid var(--rule);border-radius:10px;box-shadow:var(--shadow);max-height:60vh;overflow:auto;display:none}
+.results.open{display:block}
+.results button{display:flex;gap:10px;align-items:baseline;width:100%;text-align:left;padding:8px 12px;border:0;background:none;cursor:pointer;border-bottom:1px solid var(--rule)}
+.results button:last-child{border-bottom:0}
+.results button:hover,.results button.act{background:var(--accent-soft)}
+.results .ctx{display:block;color:var(--muted);font-size:12.5px}
+.results .empty{padding:12px;color:var(--muted)}
+.theme-btn[hidden]{display:none!important}
+.theme-btn{color:var(--ink);display:inline-flex;border:1px solid var(--rule);background:var(--surface-2);border-radius:8px;padding:8px 10px;cursor:pointer;line-height:0}
+
+.tabs{display:flex;gap:2px;padding:0 16px;background:var(--surface);border-bottom:1px solid var(--rule);overflow-x:auto;scrollbar-width:none}
+.tabs button{border:0;background:none;padding:11px 14px 10px;cursor:pointer;color:var(--muted);border-bottom:3px solid transparent;white-space:nowrap;font-weight:700}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.tabs button:hover{color:var(--ink)}
+
+.shell{flex:1;display:flex;min-height:0}
+main{flex:1;min-width:0;position:relative;overflow:hidden}
+.view{position:absolute;inset:0;overflow:auto;display:none}
+.view.on{display:block}
+.view.fill{overflow:hidden}
+.view.fill.on{display:flex;flex-direction:column}
+.pad{padding:22px 24px 48px;max-width:1500px}
+
+/* Typemerker */
+.tb{display:inline-block;font-size:11.5px;font-weight:700;padding:1px 7px;border-radius:4px;white-space:nowrap;border:1px solid transparent;vertical-align:1px}
+.L-strat{--f:var(--strat-fill);--i:var(--strat-ink);--l:var(--strat-line)}
+.L-mot{--f:var(--mot-fill);--i:var(--mot-ink);--l:var(--mot-line)}
+.L-impl{--f:var(--impl-fill);--i:var(--impl-ink);--l:var(--impl-line)}
+.L-other{--f:var(--other-fill);--i:var(--other-ink);--l:var(--other-line)}
+.tb{background:var(--f);color:var(--i);border-color:var(--l)}
+.tb.L-other{border-style:dashed}
+
+/* Kapabilitetskart */
+.intro{max-width:72ch;color:var(--muted);margin:0 0 16px}
+.l1{display:block;width:100%;text-align:left;background:var(--strat-fill);color:var(--strat-ink);border:1.5px solid var(--strat-line);border-radius:14px;padding:16px 20px;cursor:pointer;margin-bottom:14px}
+.l1 .lv{font-size:13px;font-weight:700;opacity:.8}
+.l1 .nm{display:block;font-size:26px;font-weight:700;letter-spacing:-.015em;line-height:1.15;margin:2px 0 4px}
+.l1 .sub{font-size:14px;color:var(--ink);opacity:.85}
+.tools{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin:4px 0 16px}
+.tools .lbl{font-size:13px;color:var(--muted);font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--rule);background:var(--surface);border-radius:999px;padding:4px 11px;font-size:13px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+.filter{padding:7px 10px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit;font-size:14px;min-width:220px}
+.persp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;align-items:start}
+.pcol{border:1.5px dashed var(--other-line);border-radius:12px;padding:10px 10px 12px;background:var(--other-fill)}
+.ptitle{display:block;width:100%;text-align:left;border:0;background:none;cursor:pointer;font-weight:700;font-size:15.5px;padding:2px 4px 8px;color:var(--other-ink)}
+.ptitle small{display:block;font-weight:400;color:var(--muted);font-size:12.5px}
+.l2{background:var(--surface);border:1px solid var(--strat-line);border-left:5px solid var(--strat-line);border-radius:8px;margin-top:10px;transition:opacity .15s}
+.l2 > button{display:block;width:100%;text-align:left;border:0;background:none;cursor:pointer;padding:9px 11px 4px;font-weight:700;font-size:15px}
+.l2 > button .cnt{float:right;font-weight:400;color:var(--muted);font-size:12.5px}
+.l2 .pr{padding:0 11px 4px;display:flex;flex-wrap:wrap;gap:4px}
+.l2 .pr span{font-size:11px;color:var(--mot-ink);background:var(--mot-fill);border-radius:3px;padding:0 5px}
+.l3s{list-style:none;margin:0;padding:4px 8px 9px;display:flex;flex-direction:column;gap:3px}
+.l3s button{display:block;width:100%;text-align:left;background:var(--strat-fill);color:var(--strat-ink);border:0;border-radius:5px;padding:4px 9px;font-size:13.5px;cursor:pointer;line-height:1.3}
+.l3s button:hover{filter:brightness(.97)}
+.l2.dim,.l3s li.dim{opacity:var(--dim)}
+.l2.hit{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent)}
+.sel-ring{box-shadow:0 0 0 2.5px var(--accent)!important}
+
+/* Motivasjon */
+.mgrid{display:grid;grid-template-columns:1.1fr 1.2fr 1fr;gap:18px;align-items:start}
+.mcol h2{font-size:17px;margin:0 0 4px}
+.mcol > p{margin:0 0 12px;color:var(--muted);font-size:13.5px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:10px 12px;margin-bottom:10px}
+.ebtn{border:0;background:none;padding:0;text-align:left;cursor:pointer;font-weight:700;color:var(--ink)}
+.ebtn:hover{color:var(--accent);text-decoration:underline}
+.goal-main{background:var(--mot-fill);border-color:var(--mot-line)}
+.goal-main .ebtn{color:var(--mot-ink);font-size:16px}
+.sublist{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-direction:column;gap:6px}
+.sublist li{padding-left:14px;position:relative;font-size:14px}
+.sublist li::before{content:"";position:absolute;left:2px;top:.65em;width:6px;height:6px;border-radius:50%;background:var(--mot-line)}
+.via{font-size:12.5px;color:var(--muted);margin-top:6px}
+.mini{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.mini button{font-size:12.5px;border:1px solid var(--strat-line);background:var(--strat-fill);color:var(--strat-ink);border-radius:4px;padding:1px 7px;cursor:pointer}
+.dc{width:100%;border-collapse:collapse;font-size:14px}
+.dc th{text-align:left;font-size:12.5px;color:var(--muted);padding:4px 6px;border-bottom:1px solid var(--rule)}
+.dc td{padding:6px;border-bottom:1px solid var(--rule);vertical-align:top}
+.dc td button{border:1px solid var(--mot-line);background:var(--mot-fill);color:var(--mot-ink);border-radius:5px;padding:2px 8px;font-size:13px;cursor:pointer;text-align:left}
+
+/* Nettverk og diagram */
+.bar{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;padding:8px 16px;border-bottom:1px solid var(--rule);background:var(--surface)}
+.bar .grp{display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+.bar .lbl{font-size:12.5px;color:var(--muted);font-weight:700;margin-right:2px}
+.tog{border:1px solid var(--rule);background:var(--surface-2);border-radius:6px;padding:3px 9px;font-size:12.5px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.tog i{width:10px;height:10px;border-radius:50%;background:var(--f,var(--edge));border:1px solid var(--l,var(--edge));display:inline-block}
+.tog[aria-pressed="false"]{opacity:.45;text-decoration:line-through}
+.btn{border:1px solid var(--rule);background:var(--surface);border-radius:6px;padding:4px 10px;font-size:13px;cursor:pointer}
+.btn:hover{border-color:var(--accent)}
+.canvas{flex:1;min-height:0;position:relative}
+.canvas svg{width:100%;height:100%;display:block;cursor:grab;touch-action:none}
+.canvas svg:active{cursor:grabbing}
+.hint{position:absolute;left:14px;bottom:12px;font-size:12px;color:var(--muted);background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:3px 8px;pointer-events:none}
+
+.gnode .dot{stroke-width:1.5;cursor:pointer}
+.gnode .plus circle{fill:var(--accent);stroke:var(--surface);stroke-width:1.5}
+.gnode .plus path{stroke:var(--surface);stroke-width:1.6;pointer-events:none}
+.gnode .plus{pointer-events:none}
+.gnode.f-l1 .dot,.lg.f-l1{fill:var(--l1-fill);background:var(--l1-fill);stroke:var(--l1-line);border-color:var(--l1-line)}
+.gnode.f-l2 .dot,.lg.f-l2{fill:var(--l2-fill);background:var(--l2-fill);stroke:var(--l2-line);border-color:var(--l2-line)}
+.gnode.f-l3 .dot,.lg.f-l3{fill:var(--l3-fill);background:var(--l3-fill);stroke:var(--l3-line);border-color:var(--l3-line)}
+.gnode.f-s0 .dot,.lg.f-s0{fill:var(--s0-fill);background:var(--s0-fill);stroke:var(--s0-line);border-color:var(--s0-line)}
+.gnode.f-l1 text{font-size:14px;font-weight:700}
+.gnode.f-l2 text{font-size:11.5px;font-weight:700}
+.gnode.faded{opacity:.6}
+.gedge.faded{opacity:.25}
+.legend span{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;margin-right:6px}
+.lg{width:11px;height:11px;border-radius:50%;border:1.5px solid;display:inline-block}
+.btn:disabled{opacity:.45;cursor:default}
+.btn[aria-pressed="true"]{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+.gnode:focus:not(:focus-visible){outline:none}
+.gnode text{font-size:10.5px;fill:var(--ink);pointer-events:none;paint-order:stroke;stroke:var(--bg);stroke-width:3px;stroke-linejoin:round}
+.gnode.f-strat .dot{fill:var(--strat-fill);stroke:var(--strat-ink)}
+.gnode.f-mot .dot{fill:var(--mot-fill);stroke:var(--mot-ink)}
+.gnode.f-impl .dot{fill:var(--impl-fill);stroke:var(--impl-ink)}
+.gnode.f-other .dot{fill:var(--surface);stroke:var(--other-ink);stroke-dasharray:3 2}
+.gnode.sel .dot{stroke:var(--accent);stroke-width:4}
+.gnode.sel text{font-weight:700}
+.gnode.nb text{font-weight:700}
+.gedge{stroke:var(--edge);stroke-width:1.1;fill:none;opacity:.65}
+.gedge.hi{stroke:var(--edge-hi);opacity:1;stroke-width:1.8}
+.dimmed{opacity:.12}
+.d-Realization,.d-Influence{stroke-dasharray:5 3}
+.gedge.d-Association,.dedge.d-Association{stroke-dasharray:2 4;stroke-linecap:round;stroke-width:1;opacity:.5}
+.gedge.d-Association.hi,.dedge.d-Association.hi{opacity:.85;stroke-width:1.5}
+.gedge.d-Association.faded{opacity:.15}
+.mk{fill:var(--edge);stroke:var(--edge)}
+.mk.h{fill:var(--bg)}
+
+.dlayout{display:flex;flex:1;min-height:0}
+.dlist{width:250px;flex:none;border-right:1px solid var(--rule);background:var(--surface);overflow:auto;padding:10px 8px}
+.dlist button{display:block;width:100%;text-align:left;border:0;background:none;padding:8px 10px;border-radius:7px;cursor:pointer;font-size:14px;line-height:1.3}
+.dlist button[aria-current="true"]{background:var(--accent-soft);font-weight:700}
+.dlist button small{display:block;color:var(--muted);font-size:12px;font-weight:400}
+.dmain{flex:1;min-width:0;display:flex;flex-direction:column}
+.ddoc{padding:10px 16px 8px;border-bottom:1px solid var(--rule);background:var(--surface);font-size:14px;max-height:30vh;overflow:auto}
+.ddoc h2{font-size:17px;margin:0 0 2px}
+.ddoc details summary{cursor:pointer;color:var(--accent);font-size:13.5px}
+.ddoc .doc{max-width:90ch}
+.dsel{display:none}
+.dn rect{stroke-width:1.2;cursor:pointer}
+.dn.f-strat rect{fill:var(--strat-fill);stroke:var(--strat-ink)}
+.dn.f-mot rect{fill:var(--mot-fill);stroke:var(--mot-ink)}
+.dn.f-impl rect{fill:var(--impl-fill);stroke:var(--impl-ink)}
+.dn.f-other rect{fill:var(--other-fill);stroke:var(--other-ink);stroke-dasharray:6 4}
+.dn.sel rect{stroke:var(--accent);stroke-width:3.5}
+.dn .lab{font-size:12.5px;line-height:1.2;color:var(--ink);display:flex;align-items:center;justify-content:center;text-align:center;height:100%;padding:4px 6px;overflow:hidden;pointer-events:none;font-family:inherit}
+.dn.f-other .lab,.dn.cont .lab{align-items:flex-start;justify-content:flex-start;text-align:left;font-weight:700}
+.dn .tp{font-size:9.5px;fill:var(--muted);pointer-events:none}
+.dedge{stroke:var(--edge);stroke-width:1.2;fill:none;pointer-events:none}
+.dedge.hi{stroke:var(--edge-hi);stroke-width:2.2}
+
+/* Katalog */
+.kbar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-bottom:14px}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:var(--surface);padding:6px 12px;cursor:pointer;font-size:14px}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--surface)}
+.folder{margin-bottom:18px}
+.folder h3{font-size:15px;margin:0 0 6px;display:flex;gap:8px;align-items:baseline}
+.folder h3 small{color:var(--muted);font-weight:400}
+.folder h4{font-size:13.5px;margin:10px 0 4px 2px;color:var(--muted)}
+.rows{background:var(--surface);border:1px solid var(--rule);border-radius:10px;overflow:hidden}
+.row{display:grid;grid-template-columns:120px minmax(140px,1fr) minmax(0,2.2fr) 96px;gap:6px 14px;align-items:baseline;width:100%;text-align:left;border:0;border-bottom:1px solid var(--rule);background:none;padding:7px 12px;cursor:pointer;font-size:14px}
+.row:last-child{border-bottom:0}
+.row:hover{background:var(--surface-2)}
+.row.sel{background:var(--accent-soft)}
+.row .meta{color:var(--muted);font-size:12.5px;white-space:nowrap}
+.relrow{grid-template-columns:1fr 150px 1fr}
+.relrow .rt{color:var(--muted);font-size:12.5px;text-align:center}
+.relrow .lk{border:0;background:none;padding:0;text-align:left;cursor:pointer;color:var(--ink)}
+.relrow .lk:hover{color:var(--accent);text-decoration:underline}
+
+/* Panel */
+.panel{width:430px;flex:none;border-left:1px solid var(--rule);background:var(--surface);display:none;flex-direction:column;min-height:0}
+.panel.open{display:flex}
+.phead{display:flex;gap:6px;align-items:center;padding:10px 12px;border-bottom:1px solid var(--rule)}
+.phead .sp{flex:1}
+.iconbtn{border:1px solid var(--rule);background:var(--surface-2);border-radius:7px;padding:4px 9px;cursor:pointer;font-size:13px}
+.iconbtn:disabled{opacity:.4;cursor:default}
+.pbody{overflow:auto;padding:16px 18px 40px}
+.pbody h2{font-size:22px;line-height:1.2;margin:8px 0 4px;letter-spacing:-.01em}
+.crumb{font-size:12.5px;color:var(--muted)}
+.lvl{font-size:13px;color:var(--strat-ink);font-weight:700}
+.doc{font-size:14.5px;max-width:68ch}
+.doc p{margin:.55em 0}
+.doc ul{margin:.4em 0;padding-left:1.2em}
+.doc h4{margin:1em 0 .2em;font-size:14.5px}
+.nodoc{color:var(--muted);font-style:italic;font-size:14px}
+.sec{margin-top:18px}
+.sec h3{font-size:14px;margin:0 0 6px;padding-bottom:4px;border-bottom:1px solid var(--rule)}
+.acts{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.rl{list-style:none;margin:0;padding:0}
+.rl li{padding:5px 0;border-bottom:1px dashed var(--rule);font-size:14px}
+.rl li:last-child{border-bottom:0}
+.rl .verb{color:var(--muted);font-size:12.5px;display:block}
+.rl .rn{font-size:12.5px;color:var(--muted);font-style:italic}
+.rl .rd{font-size:12.5px;color:var(--muted);margin-top:2px}
+.props{width:100%;border-collapse:collapse;font-size:14px}
+.props td{padding:4px 6px;border-bottom:1px solid var(--rule)}
+.props td:first-child{color:var(--muted);width:40%}
+.emptyp{padding:24px;color:var(--muted)}
+
+@media (max-width:1100px){
+  .persp{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mgrid{grid-template-columns:1fr 1fr}
+  .panel{position:absolute;right:0;top:0;bottom:0;z-index:30;box-shadow:var(--shadow);width:min(430px,92vw)}
+  .shell{position:relative}
+}
+.row .rname{font-weight:700}
+.row .def{color:var(--muted);font-size:13.5px;line-height:1.4}
+@media (max-width:720px){
+  .top{padding:10px 14px;gap:10px}
+  .brand{flex:1}
+  .search{max-width:none;flex-basis:100%;order:3}
+  .pad{padding:16px 14px 40px}
+  .persp,.mgrid{grid-template-columns:1fr}
+  .l1 .nm{font-size:21px}
+  .dlist{display:none}
+  .dsel{display:block;margin:8px 16px 0;padding:6px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit}
+  .panel{left:0;width:auto;top:auto;height:72%;border-left:0;border-top:1px solid var(--rule);border-radius:14px 14px 0 0}
+  .row{grid-template-columns:1fr auto}
+  .row .def{grid-column:1/-1;grid-row:3}
+  .row .def:empty{display:none}
+  .row .tbc{grid-column:1/-1}
+  .relrow{grid-template-columns:1fr}
+  .relrow .rt{text-align:left}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+/* Nivåfarger: nivå 1 i egen fargetone */
+:root{--l1-fill:#1E6E7A;--l1-line:#0E434A;--l1-ink:#FFFFFF;--l2-ink:#2A1A00}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--l1-fill:#4FB3BF;--l1-line:#A6E3EA;--l1-ink:#0F1522;--l2-ink:#1A1206}}
+:root[data-theme="dark"]{--l1-fill:#4FB3BF;--l1-line:#A6E3EA;--l1-ink:#0F1522;--l2-ink:#1A1206}
+.l1{background:var(--l1-fill);color:var(--l1-ink);border-color:var(--l1-line)}
+.l1 .lv,.l1 .sub{color:inherit;opacity:.9}
+.l2{border:1.5px solid var(--l2-line);border-left:1.5px solid var(--l2-line);overflow:hidden}
+.l2 > button{background:var(--l2-fill);color:var(--l2-ink);padding:9px 11px}
+.l3s{padding-top:8px}
+.l3s button{background:var(--l3-fill);color:var(--ink);border:1px solid var(--l3-line)}
+.tools .legend{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect x="1" y="1" width="32" height="32" rx="7" fill="var(--strat-fill)" stroke="var(--strat-ink)"/><rect x="7" y="20" width="6" height="7" rx="1" fill="var(--strat-ink)"/><rect x="14" y="14" width="6" height="13" rx="1" fill="var(--strat-ink)"/><rect x="21" y="8" width="6" height="19" rx="1" fill="var(--strat-ink)"/></svg>
+    <div><h1>Nasjonal arkitektur</h1><p id="mver"></p></div>
+  </div>
+  <div class="search">
+    <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <input id="q" type="search" placeholder="Søk etter kapabilitet, prinsipp, mål …" autocomplete="off" aria-label="Søk i modellen">
+    <div class="results" id="res" role="listbox"></div>
+  </div>
+  <a class="theme-btn" id="newtab" href="#" target="_blank" rel="noopener" title="Åpne modellutforskeren i en egen fane" aria-label="Åpne i egen fane" hidden><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2L7.5 8.5M12 9.5V14H2V4h4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  <button class="theme-btn" id="fullscreen" title="Vis modellutforskeren i fullskjerm" aria-label="Fullskjerm" hidden><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 6V2h4M10 2h4v4M14 10v4h-4M6 14H2v-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <button class="theme-btn" id="theme" title="Bytt mellom lys og mørk visning" aria-label="Bytt mellom lys og mørk visning"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+</header>
+<nav class="tabs" role="tablist">
+  <button role="tab" data-v="nettverk">Nettverk</button>
+  <button role="tab" data-v="kart">Kapabilitetskart</button>
+  <button role="tab" data-v="diagrammer">Diagrammer</button>
+  <button role="tab" data-v="motivasjon">Mål og prinsipper</button>
+  <button role="tab" data-v="katalog">Katalog</button>
+</nav>
+<div class="shell">
+<main>
+  <section class="view" id="v-kart"><div class="pad" id="kart"></div></section>
+  <section class="view" id="v-motivasjon"><div class="pad" id="mot"></div></section>
+  <section class="view fill" id="v-nettverk">
+    <div class="bar" id="gbar"></div>
+    <div class="canvas"><svg id="gsvg"></svg><div class="hint">Klikk på et element for å vise naboene og detaljene. Pluss betyr at elementet har skjulte naboer.</div></div>
+  </section>
+  <section class="view fill" id="v-diagrammer">
+    <div class="dlayout">
+      <nav class="dlist" id="dlist" aria-label="Diagrammer"></nav>
+      <div class="dmain">
+        <select class="dsel" id="dsel" aria-label="Velg diagram"></select>
+        <div class="ddoc" id="ddoc"></div>
+        <div class="bar"><button class="btn" id="dfit">Tilpass til skjerm</button><span class="lbl" style="font-size:12.5px;color:var(--muted)">Klikk på et element i diagrammet for detaljer</span></div>
+        <div class="canvas"><svg id="dsvg"></svg></div>
+      </div>
+    </div>
+  </section>
+  <section class="view" id="v-katalog"><div class="pad" id="kat"></div></section>
+</main>
+<aside class="panel" id="panel" aria-label="Detaljer">
+  <div class="phead">
+    <button class="iconbtn" id="pback" title="Forrige element">← Tilbake</button>
+    <span class="sp"></span>
+    <button class="iconbtn" id="pclose" title="Lukk detaljpanelet">Lukk ✕</button>
+  </div>
+  <div class="pbody" id="pbody"></div>
+</aside>
+</div>
+
+<script>
+const DATA = __NA_DATA__;
+const E = DATA.els, R = DATA.rels, VIEWS = DATA.views;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+const TYPE_NO = {Capability:'Kapabilitet',Resource:'Ressurs',CourseOfAction:'Tiltak',Goal:'Mål',Principle:'Prinsipp',Driver:'Driver',Constraint:'Begrensning',Outcome:'Effektmål',Assessment:'Vurdering',Gap:'Gap',Plateau:'Platå',Grouping:'Gruppering'};
+const LAYER = {Capability:'strat',Resource:'strat',CourseOfAction:'strat',Goal:'mot',Principle:'mot',Driver:'mot',Constraint:'mot',Outcome:'mot',Assessment:'mot',Gap:'impl',Plateau:'impl',Grouping:'other'};
+const LAYER_NO = {strat:'Strategi',mot:'Motivasjon',impl:'Implementering',other:'Grupperinger'};
+const FOLDER_NO = {'Strategy':'Strategi','Motivation':'Motivasjon','Implementation & Migration':'Implementering og migrering','Other':'Grupperinger og rammeverk'};
+const REL_NO = {
+  Aggregation:['består av','er del av','Aggregering'],
+  Composition:['er sammensatt av','inngår i','Komposisjon'],
+  Realization:['realiserer','realiseres av','Realisering'],
+  Specialization:['er en spesialisering av','spesialiseres som','Spesialisering'],
+  Influence:['påvirker','påvirkes av','Påvirkning'],
+  Serving:['betjener','betjenes av','Betjening'],
+  Association:['er knyttet til','er knyttet til','Assosiasjon']
+};
+const layerOf = id => LAYER[E[id]?.t] || 'other';
+const tbadge = id => `<span class="tb L-${layerOf(id)}">${esc(TYPE_NO[E[id].t]||E[id].t)}</span>`;
+
+/* ---------- Indekser ---------- */
+const OUT = {}, IN = {};
+for (const r of Object.values(R)) { (OUT[r.s] ||= []).push(r); (IN[r.g] ||= []).push(r); }
+const deg = id => (OUT[id]?.length||0) + (IN[id]?.length||0);
+const viewsOf = {};
+VIEWS.forEach((v, vi) => v.nodes.forEach(n => { if (n.e) (viewsOf[n.e] ||= new Set()).add(vi); }));
+function posIn(prefix, id){
+  const v = VIEWS.find(v => v.n.startsWith(prefix)); if (!v) return [1e9,1e9];
+  const n = v.nodes.find(n => n.e === id); return n ? [n.y, n.x] : [1e9,1e9];
+}
+const byPos = prefix => (a,b) => { const pa=posIn(prefix,a), pb=posIn(prefix,b); return (Math.round(pa[0]/20)-Math.round(pb[0]/20)) || (pa[1]-pb[1]) || E[a].n.localeCompare(E[b].n,'nb'); };
+
+// Kapabilitetsnivåer
+const caps = Object.values(E).filter(e => e.t==='Capability' && e.f.includes('Kapabiliteter i NA'));
+const capChildren = id => (OUT[id]||[]).filter(r => r.t==='Aggregation' && E[r.g]?.t==='Capability').map(r=>r.g);
+const hasCapParent = id => (IN[id]||[]).some(r => r.t==='Aggregation' && E[r.s]?.t==='Capability');
+const L1 = caps.filter(c => !hasCapParent(c.id) && capChildren(c.id).length).map(c=>c.id);
+const LEVEL = {}, PARENT = {};
+L1.forEach(id => { LEVEL[id]=1; capChildren(id).forEach(c => { LEVEL[c]=2; PARENT[c]=id; capChildren(c).forEach(g => { LEVEL[g]=3; PARENT[g]=c; }); }); });
+const LEVEL_NO = {1:'Nivå 1, overordnet kapabilitet',2:'Nivå 2, hovedkapabilitet',3:'Nivå 3, underkapabilitet'};
+// Perspektiver (grupperinger som aggregerer nivå 2)
+const PERSP = Object.values(E).filter(e => e.t==='Grouping' && (OUT[e.id]||[]).some(r => LEVEL[r.g]===2)).map(e=>e.id).sort(byPos('01-'));
+const perspOf = {};
+PERSP.forEach(p => (OUT[p]||[]).forEach(r => { if (LEVEL[r.g]===2) perspOf[r.g]=p; }));
+// Prinsipper realisert av kapabiliteter
+const principlesOf = id => (OUT[id]||[]).filter(r => r.t==='Realization' && E[r.g]?.t==='Principle').map(r=>r.g);
+
+/* ---------- Markdown-light ---------- */
+function inline(s){
+  s = esc(s);
+  s = s.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+  s = s.replace(/(https?:\/\/[^\s<)]+[^\s<).,;:])/g,'<a href="$1" target="_blank" rel="noopener">$1</a>');
+  return s;
+}
+function md(src){
+  if (!src) return '';
+  const blocks = src.replace(/\r/g,'').split(/\n\s*\n/);
+  let html = '';
+  for (const b of blocks){
+    const lines = b.split('\n'); let para = [], list = [];
+    const flushP = () => { if (para.length){ html += '<p>'+para.map(inline).join('<br>')+'</p>'; para=[]; } };
+    const flushL = () => { if (list.length){ html += '<ul>'+list.map(l=>'<li>'+inline(l)+'</li>').join('')+'</ul>'; list=[]; } };
+    for (const raw of lines){
+      const l = raw.trim(); if (!l) continue;
+      const m = l.match(/^(?:[-*•]|\d+[.)])\s+(.*)$/);
+      const h = l.match(/^#{1,6}\s+(.*)$/);
+      if (h){ flushP(); flushL(); html += '<h4>'+inline(h[1])+'</h4>'; }
+      else if (m){ flushP(); list.push(m[1]); }
+      else { flushL(); para.push(l); }
+    }
+    flushP(); flushL();
+  }
+  return html;
+}
+const firstSentence = s => { if(!s) return ''; const t = s.replace(/\*\*/g,'').replace(/\s+/g,' ').trim(); const m = t.match(/^(.{40,220}?[.!?])\s/); return m ? m[1] : (t.length>220 ? t.slice(0,217)+'…' : t); };
+
+/* ---------- Navigasjon og state ---------- */
+const state = { view:'nettverk', sel:null, hist:[], diagram:0 };
+let ignoreHash = false;
+function setHash(h){ if (location.hash.slice(1) !== h){ ignoreHash = true; location.hash = h; } }
+const inited = {};
+function show(view, opts={}){
+  state.view = view;
+  document.querySelectorAll('.tabs button').forEach(b => b.setAttribute('aria-selected', b.dataset.v===view));
+  document.querySelectorAll('.view').forEach(v => v.classList.toggle('on', v.id==='v-'+view));
+  if (!inited[view]){ inited[view]=true; ({kart:renderKart,motivasjon:renderMot,nettverk:initGraph,diagrammer:initDiagrams,katalog:renderKat})[view](); }
+  if (view==='diagrammer' && opts.diagram!=null) openDiagram(opts.diagram);
+  if (!opts.noHash) setHash(view==='diagrammer' ? 'diagram-'+(state.diagram+1) : view);
+  markSelection({enter: view==='nettverk'});
+}
+document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => show(b.dataset.v));
+
+function select(id, opts={}){
+  if (!E[id]) return;
+  if (state.sel && state.sel!==id && !opts.noHist) state.hist.push(state.sel);
+  state.sel = id;
+  renderPanel();
+  markSelection(opts);
+}
+function markSelection(opts={}){
+  const id = state.sel;
+  document.querySelectorAll('.sel-ring').forEach(n => n.classList.remove('sel-ring'));
+  if (state.view==='kart' && id){ document.querySelectorAll(`#kart [data-id="${id}"]`).forEach(n => { n.classList.add('sel-ring'); if(opts.scroll) n.scrollIntoView({block:'center',behavior:'smooth'}); }); }
+  if (state.view==='katalog'){ document.querySelectorAll('#kat .row').forEach(r => r.classList.toggle('sel', r.dataset.id===id)); }
+  if (state.view==='nettverk' && graph) graph.highlight(id, opts.center || opts.enter);
+  if (state.view==='diagrammer' && diag) diag.highlight(id, opts.center);
+}
+$('#pclose').onclick = () => { $('#panel').classList.remove('open'); state.sel=null; state.hist=[]; markSelection(); };
+$('#pback').onclick = () => { const p = state.hist.pop(); if (p) select(p,{noHist:true,center:true,scroll:true}); };
+document.addEventListener('click', e => {
+  const t = e.target.closest('[data-go]'); if (!t) return;
+  e.preventDefault(); select(t.dataset.go, {center:true, scroll:true});
+});
+
+/* ---------- Detaljpanel ---------- */
+function relItem(r, dir){
+  const other = dir==='out' ? r.g : r.s;
+  const verb = (REL_NO[r.t]||[r.t,r.t])[dir==='out'?0:1];
+  return `<li><span class="verb">${esc(verb)}${r.n?` <span class="rn">(${esc(r.n)})</span>`:''}</span>
+    <button class="ebtn" data-go="${other}">${esc(E[other]?.n)}</button> ${tbadge(other)}
+    ${r.d?`<div class="rd">${esc(r.d)}</div>`:''}</li>`;
+}
+function renderPanel(){
+  const id = state.sel, e = E[id]; if (!e) return;
+  $('#panel').classList.add('open');
+  $('#pback').disabled = !state.hist.length;
+  const L = LEVEL[id];
+  const crumbs = [];
+  if (L){ let p = PARENT[id]; const chain=[]; while(p){ chain.unshift(p); p=PARENT[p]; }
+    if (L>=2 && perspOf[L===2?id:PARENT[id]]) chain.splice(1,0,perspOf[L===2?id:PARENT[id]]);
+    chain.forEach(c => crumbs.push(`<button class="ebtn" style="font-weight:400" data-go="${c}">${esc(E[c].n)}</button>`)); }
+  const folder = e.f.map(f => FOLDER_NO[f]||f).join(' / ');
+  const out = (OUT[id]||[]), inn = (IN[id]||[]);
+  const groups = {};
+  out.forEach(r => (groups[r.t+'|out'] ||= []).push(r));
+  inn.forEach(r => (groups[r.t+'|in'] ||= []).push(r));
+  const order = ['Aggregation','Composition','Realization','Serving','Influence','Specialization','Association'];
+  let relHtml = '';
+  for (const t of order) for (const dir of ['out','in']){
+    const g = groups[t+'|'+dir]; if (!g) continue;
+    g.sort((a,b) => (LEVEL[id] ? byPos('02-') : ((x,y)=>E[x].n.localeCompare(E[y].n,'nb')))(dir==='out'?a.g:a.s, dir==='out'?b.g:b.s));
+    relHtml += `<div class="sec"><h3>${esc(REL_NO[t][dir==='out'?0:1].replace(/^./,c=>c.toUpperCase()))} (${g.length})</h3><ul class="rl">${g.map(r=>relItem(r,dir)).join('')}</ul></div>`;
+  }
+  const vs = [...(viewsOf[id]||[])];
+  const props = Object.entries(e.p||{});
+  $('#pbody').innerHTML = `
+    <div>${tbadge(id)} ${L?`<span class="lvl">${LEVEL_NO[L]}</span>`:''}</div>
+    <h2>${esc(e.n)}</h2>
+    <div class="crumb">${crumbs.length ? crumbs.join(' › ') : esc(folder)}</div>
+    <div class="acts">
+      ${L ? `<button class="btn" data-act="kart">Vis i kapabilitetskart</button>`:''}
+      <button class="btn" data-act="graf">Vis i nettverk</button>
+    </div>
+    <div class="sec doc">${e.d ? md(e.d) : '<p class="nodoc">Elementet har ingen beskrivelse i modellen.</p>'}</div>
+    ${props.length ? `<div class="sec"><h3>Egenskaper</h3><table class="props">${props.map(([k,v])=>`<tr><td>${esc(k)}</td><td>${esc(v)}</td></tr>`).join('')}</table></div>`:''}
+    ${relHtml || '<div class="sec"><h3>Relasjoner</h3><p class="nodoc">Ingen relasjoner til andre elementer.</p></div>'}
+    <div class="sec"><h3>Vises i diagrammer (${vs.length})</h3>
+      ${vs.length ? `<div class="acts" style="margin-top:4px">${vs.sort().map(i=>`<button class="btn" data-diag="${i}">${esc(VIEWS[i].n)}</button>`).join('')}</div>` : '<p class="nodoc">Elementet er ikke brukt i noen diagrammer.</p>'}
+    </div>
+    <div class="sec"><h3>Plassering i modellen</h3><p class="crumb" style="margin:0">Mappe: ${esc(folder)}<br>Id: ${esc(id)}</p></div>`;
+  $('#pbody').scrollTop = 0;
+  $('#pbody').querySelectorAll('[data-act]').forEach(b => b.onclick = () => {
+    if (b.dataset.act==='kart'){ show('kart'); markSelection({scroll:true}); }
+    else { show('nettverk'); graph.highlight(id, true); }
+  });
+  $('#pbody').querySelectorAll('[data-diag]').forEach(b => b.onclick = () => { show('diagrammer',{diagram:+b.dataset.diag}); diag.highlight(id,true); });
+}
+
+/* ---------- Kapabilitetskart ---------- */
+let activePrinciple = null, kartFilter = '';
+function renderKart(){
+  const root = L1[0];
+  const allPr = Object.values(E).filter(e => e.t==='Principle' && /^P\d/.test(e.n)).map(e=>e.id).sort((a,b)=>E[a].n.localeCompare(E[b].n,'nb',{numeric:true}));
+  const l2s = Object.keys(LEVEL).filter(k=>LEVEL[k]===2).length, l3s = Object.keys(LEVEL).filter(k=>LEVEL[k]===3).length;
+  let h = `<p class="intro">Kapabilitetsmodellen i tre nivåer: én overordnet kapabilitet, hovedkapabiliteter fordelt på perspektiver, og underkapabiliteter. Klikk på en kapabilitet for å se beskrivelse, relasjoner og diagrammer den inngår i.</p>
+  <button class="l1" data-go="${root}" data-id="${root}"><span class="lv">${LEVEL_NO[1]}</span><span class="nm">${esc(E[root].n)}</span><span class="sub">${esc(firstSentence(E[root].d))}</span></button>
+  <div class="tools">
+    <input class="filter" id="kf" type="search" placeholder="Filtrer kapabiliteter" aria-label="Filtrer kapabiliteter">
+    <span class="legend"><span><i class="lg f-l1"></i>Nivå 1</span><span><i class="lg f-l2"></i>Nivå 2</span><span><i class="lg f-l3"></i>Nivå 3</span></span>
+  </div>
+  <div class="persp">`;
+  for (const p of PERSP){
+    const l2 = (OUT[p]||[]).filter(r=>LEVEL[r.g]===2).map(r=>r.g).sort(byPos('01-'));
+    h += `<div class="pcol"><button class="ptitle" data-go="${p}" data-id="${p}">${esc(E[p].n)}<small>Perspektiv</small></button>`;
+    for (const c of l2){
+      const kids = capChildren(c).sort(byPos('02-'));
+      h += `<div class="l2" data-l2="${c}" data-id="${c}"><button data-go="${c}">${esc(E[c].n)}</button>
+        <ul class="l3s">${kids.map(k=>`<li data-name="${esc(E[k].n.toLowerCase())}"><button data-go="${k}" data-id="${k}">${esc(E[k].n)}</button></li>`).join('')}</ul></div>`;
+    }
+    h += `</div>`;
+  }
+  h += `</div>`;
+  $('#kart').innerHTML = h;
+  $('#kf').oninput = e => { kartFilter = e.target.value.trim().toLowerCase(); applyKart(); };
+}
+function applyKart(){
+  document.querySelectorAll('#kart .l2').forEach(card => {
+    const c = card.dataset.l2;
+    const prOk = true;
+    let anyMatch = !kartFilter || E[c].n.toLowerCase().includes(kartFilter);
+    card.querySelectorAll('.l3s li').forEach(li => {
+      const m = !kartFilter || li.dataset.name.includes(kartFilter) || E[c].n.toLowerCase().includes(kartFilter);
+      li.classList.toggle('dim', !m); if (m && kartFilter) anyMatch = true;
+    });
+    card.classList.toggle('dim', !prOk || !anyMatch);
+  });
+}
+
+/* ---------- Mål og prinsipper ---------- */
+function renderMot(){
+  const goals = Object.values(E).filter(e=>e.t==='Goal');
+  const mainGoal = goals.find(g => (OUT[g.id]||[]).some(r=>r.t==='Influence'));
+  const subGoals = mainGoal ? (OUT[mainGoal.id]||[]).filter(r=>r.t==='Influence').map(r=>r.g) : [];
+  const realizers = id => (IN[id]||[]).filter(r=>r.t==='Realization').map(r=>r.s);
+  const btn = id => `<button data-go="${id}">${esc(E[id].n)}</button>`;
+  let h = `<p class="intro">Motivasjonssiden av modellen: hvilke mål fra Digitaliseringsstrategien Nasjonal arkitektur bidrar til, hvilke prinsipper hovedkapabilitetene realiserer, og hvilke drivere og hindringer som påvirker arbeidet.</p><div class="mgrid">`;
+  // Mål
+  h += `<div class="mcol"><h2>Mål fra Digitaliseringsstrategien</h2><p>Det overordnede målet påvirker de øvrige strategimålene.</p>`;
+  if (mainGoal){
+    h += `<div class="card goal-main"><button class="ebtn" data-go="${mainGoal.id}">${esc(mainGoal.n)}</button>
+      ${realizers(mainGoal.id).length?`<div class="via">Realiseres av</div><div class="mini">${realizers(mainGoal.id).map(btn).join('')}</div>`:''}
+      <div class="via">Påvirker</div><ul class="sublist">${subGoals.map(g=>`<li><button class="ebtn" style="font-weight:400" data-go="${g}">${esc(E[g].n)}</button></li>`).join('')}</ul></div>`;
+  }
+  goals.filter(g => g.id!==mainGoal?.id && !subGoals.includes(g.id)).forEach(g => {
+    h += `<div class="card"><button class="ebtn" data-go="${g.id}">${esc(g.n)}</button> ${tbadge(g.id)}
+      ${realizers(g.id).length?`<div class="via">Realiseres av</div><div class="mini">${realizers(g.id).map(btn).join('')}</div>`:''}</div>`;
+  });
+  h += `</div>`;
+  // Prinsipper
+  const prs = Object.values(E).filter(e=>e.t==='Principle').sort((a,b)=>{ const pa=/^P\d/.test(a.n), pb=/^P\d/.test(b.n); return (pb-pa) || a.n.localeCompare(b.n,'nb',{numeric:true}); });
+  h += `<div class="mcol"><h2>Arkitekturprinsipper</h2><p>Hovedkapabilitetene som realiserer hvert prinsipp.</p>`;
+  prs.forEach(p => { const rs = realizers(p.id).sort(byPos('01-'));
+    h += `<div class="card"><button class="ebtn" data-go="${p.id}">${esc(p.n)}</button>
+      ${p.d?`<div class="via">${esc(firstSentence(p.d))}</div>`:''}
+      ${rs.length?`<div class="mini">${rs.map(btn).join('')}</div>`:''}</div>`; });
+  h += `</div>`;
+  // Drivere/hindringer
+  const drv = Object.values(E).filter(e=>e.t==='Driver'), con = Object.values(E).filter(e=>e.t==='Constraint');
+  const topics = [...new Set([...drv,...con].filter(e=>e.f.includes('Drivere og begrensninger')).map(e=>e.n))].sort((a,b)=>a.localeCompare(b,'nb'));
+  h += `<div class="mcol"><h2>Drivere og hindringer</h2><p>Samme forhold kan både drive og hindre arbeidet.</p><div class="card"><table class="dc"><thead><tr><th>Forhold</th><th>Driver</th><th>Hindring</th></tr></thead><tbody>`;
+  topics.forEach(t => { const d = drv.find(e=>e.n===t && e.f.includes('Drivere og begrensninger')), c = con.find(e=>e.n===t && e.f.includes('Drivere og begrensninger'));
+    h += `<tr><td>${esc(t)}</td><td>${d?`<button data-go="${d.id}">Driver</button>`:''}</td><td>${c?`<button data-go="${c.id}">Hindring</button>`:''}</td></tr>`; });
+  h += `</tbody></table></div>`;
+  const rest = Object.values(E).filter(e => LAYER[e.t]==='mot' && !['Goal','Principle'].includes(e.t) && !e.f.includes('Drivere og begrensninger'));
+  if (rest.length){ h += `<h2 style="margin-top:18px">Øvrige motivasjonselementer</h2><p style="color:var(--muted);font-size:13.5px;margin:0 0 10px">Begreper fra metamodellen.</p>`;
+    rest.sort((a,b)=>a.n.localeCompare(b.n,'nb')).forEach(e => h += `<div class="card"><button class="ebtn" data-go="${e.id}">${esc(e.n)}</button> ${tbadge(e.id)}${e.d?`<div class="via">${esc(firstSentence(e.d))}</div>`:''}</div>`); }
+  h += `</div></div>`;
+  $('#mot').innerHTML = h;
+}
+
+/* ---------- Nettverksgraf ---------- */
+let graph = null;
+function edgeMarkers(defs, prefix){
+  const mk = (id, path, w, h, rx, ry, cls) => defs.append('marker').attr('id',prefix+id).attr('viewBox',`0 0 ${w} ${h}`).attr('refX',rx).attr('refY',ry).attr('markerWidth',w).attr('markerHeight',h).attr('markerUnits','userSpaceOnUse').attr('orient','auto-start-reverse').append('path').attr('d',path).attr('class','mk'+(cls?' '+cls:''));
+  mk('tri','M1,1 L13,7 L1,13 Z',14,14,13,7,'h');
+  mk('arr','M1,1 L11,6 L1,11',12,12,11,6,'h');
+  mk('dia','M1,6 L8,1 L15,6 L8,11 Z',16,12,1,6,'h');
+  mk('diaf','M1,6 L8,1 L15,6 L8,11 Z',16,12,1,6,'');
+}
+function markerFor(t, prefix){
+  return {Realization:[null,'tri'],Specialization:[null,'tri'],Influence:[null,'arr'],Serving:[null,'arr'],Aggregation:['dia',null],Composition:['diaf',null],Association:[null,null]}[t].map(m=>m?`url(#${prefix}${m})`:null);
+}
+function wrapLabel(s){
+  const words = s.split(/\s+/), lines = [''];
+  for (const w of words){
+    const cur = lines[lines.length-1];
+    if (cur && (cur+' '+w).length > 20){ if (lines.length===2){ lines[1] = (lines[1]+' '+w); break; } lines.push(w); }
+    else lines[lines.length-1] = cur ? cur+' '+w : w;
+  }
+  if (lines[1] && lines[1].length > 20) lines[1] = lines[1].slice(0,19)+'…';
+  return lines;
+}
+const nodeCls = id => LEVEL[id] ? 'f-l'+LEVEL[id] : (layerOf(id)==='strat' ? 'f-s0' : 'f-'+layerOf(id));
+function initGraph(){
+  const top = L1[0];
+  const layers = {strat:true,mot:false,impl:true,other:true};
+  const relOn = Object.fromEntries(Object.keys(REL_NO).map(k=>[k,true]));
+  let showAll = false, pendingFit = false, visSet = new Set();
+  const expanded = new Set([top]);
+  const nodes = Object.values(E).map(e => {
+    const L = LEVEL[e.id], lines = wrapLabel(e.n);
+    const r = L===1 ? 24 : L===2 ? 14 : L===3 ? 9 : 7 + Math.sqrt(deg(e.id))*1.6;
+    const lw = Math.max(...lines.map(l=>l.length)) * (L===1 ? 7.2 : 6);
+    return {id:e.id, e, r, lines, cr: Math.max(r+10, lw/2+6, (r + lines.length*13 + 8)/1.4)};
+  });
+  const nmap = Object.fromEntries(nodes.map(n=>[n.id,n]));
+  nmap[top].x = 0; nmap[top].y = 0; nmap[top].fx = 0; nmap[top].fy = 0;
+  const allLinks = Object.values(R).map(r => ({id:r.id, r, source:nmap[r.s], target:nmap[r.g]}));
+  const NB = {}; nodes.forEach(n => { const s = new Set(); (OUT[n.id]||[]).forEach(r=>s.add(r.g)); (IN[n.id]||[]).forEach(r=>s.add(r.s)); NB[n.id] = s; });
+  const layerOk = id => layers[layerOf(id)];
+
+  const bar = $('#gbar');
+  bar.innerHTML = `<div class="grp"><button class="btn" aria-pressed="false" id="gall" title="Vis alle elementene i lagene som er slått på">Hele modellen</button>
+      <button class="btn" id="greset" title="Vis bare nivå 1 og hovedkapabilitetene">Start fra toppnivå</button>
+      <button class="btn" id="gcollapse" title="Skjul naboene som ble vist da du åpnet det valgte elementet">Skjul naboene til valgt</button>
+      <button class="btn" id="gfit">Tilpass til skjerm</button></div>
+    <div class="grp"><span class="lbl">Lag</span>${Object.keys(layers).map(l=>`<button class="tog L-${l}" aria-pressed="${layers[l]}" data-l="${l}"><i></i>${LAYER_NO[l]}</button>`).join('')}</div>
+    <div class="grp"><span class="lbl">Relasjoner</span>${Object.keys(REL_NO).filter(t => Object.values(R).some(r => r.t===t)).map(t=>`<button class="tog" aria-pressed="true" data-r="${t}">${REL_NO[t][2]} (${Object.values(R).filter(r => r.t===t).length})</button>`).join('')}</div>
+    <div class="grp legend"><span class="lbl">Kapabiliteter</span><span><i class="lg f-l1"></i>Nivå 1</span><span><i class="lg f-l2"></i>Nivå 2</span><span><i class="lg f-l3"></i>Nivå 3</span><span><i class="lg f-s0"></i>Øvrig strategi</span></div>`;
+
+  const svg = d3.select('#gsvg');
+  const defs = svg.append('defs'); edgeMarkers(defs,'g-');
+  const root = svg.append('g');
+  const eg = root.append('g'), ng = root.append('g');
+  let gn = ng.selectAll('g.gnode'), edges = eg.selectAll('path');
+
+  const nearTop = id => !LEVEL[id] && NB[top].has(id);
+  const ringR = id => LEVEL[id]===1 ? 0 : LEVEL[id]===2 ? 210 : LEVEL[id]===3 ? 400 : nearTop(id) ? 100 : 560;
+  const sim = d3.forceSimulation().alphaDecay(.04)
+    .force('link', d3.forceLink().distance(l => (LEVEL[l.r.s] && LEVEL[l.r.g]) ? 120 : (l.r.s===top || l.r.g===top) ? 70 : 160).strength(.35))
+    .force('charge', d3.forceManyBody().strength(-260).distanceMax(700))
+    .force('radial', d3.forceRadial(d => ringR(d.id), 0, 0).strength(d => (LEVEL[d.id] || nearTop(d.id)) ? .32 : .05))
+    .force('collide', d3.forceCollide(d => d.cr).iterations(3).strength(1))
+    .on('tick', () => { draw(); if (pendingFit){ if (sim.alpha() < .03){ pendingFit = false; fit(); } else fit(.12); } });
+
+  function computeVisible(){
+    const v = new Set([top]);
+    if (state.sel && E[state.sel]) v.add(state.sel);
+    if (showAll) nodes.forEach(n => { if (layerOk(n.id)) v.add(n.id); });
+    expanded.forEach(x => {
+      if (!(x===top || x===state.sel || layerOk(x))) return;
+      v.add(x); NB[x].forEach(y => { if (layerOk(y)) v.add(y); });
+    });
+    return v;
+  }
+  const hasHidden = id => [...NB[id]].some(y => layerOk(y) && !visSet.has(y));
+  function update(doFit = true){
+    visSet = computeVisible();
+    const vn = nodes.filter(n => visSet.has(n.id));
+    vn.forEach(n => { if (n.x == null){
+      const p = [...NB[n.id]].map(i=>nmap[i]).find(m => m.x != null && visSet.has(m.id)) || {x:0,y:0};
+      const a = Math.random()*Math.PI*2; n.x = p.x + Math.cos(a)*60; n.y = p.y + Math.sin(a)*60; } });
+    const vl = allLinks.filter(l => relOn[l.r.t] && visSet.has(l.r.s) && visSet.has(l.r.g));
+    edges = eg.selectAll('path').data(vl, d=>d.id).join(enter => {
+      const p = enter.append('path').attr('class', d=>'gedge d-'+d.r.t)
+        .attr('marker-start', d=>markerFor(d.r.t,'g-')[0]).attr('marker-end', d=>markerFor(d.r.t,'g-')[1]);
+      p.append('title').text(d => `${E[d.r.s].n} ${REL_NO[d.r.t][0]} ${E[d.r.g].n}`);
+      return p; });
+    gn = ng.selectAll('g.gnode').data(vn, d=>d.id).join(enter => {
+      const g = enter.append('g').attr('class', d=>'gnode '+nodeCls(d.id)).attr('tabindex',0).attr('role','button').attr('aria-label', d=>E[d.id].n);
+      g.each(function(d){ const s = d3.select(this);
+        if (d.e.t==='Grouping') s.append('rect').attr('class','dot').attr('x',-d.r).attr('y',-d.r).attr('width',2*d.r).attr('height',2*d.r).attr('rx',2);
+        else s.append('circle').attr('class','dot').attr('r', d.r); });
+      const t = g.append('text').attr('text-anchor','middle');
+      t.selectAll('tspan').data(d => d.lines.map((l,i)=>({l,i,d}))).join('tspan').attr('x',0).attr('y', o => o.d.r + 13 + o.i*12.5).text(o=>o.l);
+      const pl = g.append('g').attr('class','plus').attr('transform', d=>`translate(${d.r*.72},${-d.r*.72})`);
+      pl.append('circle').attr('r',6.5); pl.append('path').attr('d','M-3.2,0H3.2M0,-3.2V3.2');
+      g.append('title').text(d => `${d.e.n} (${LEVEL[d.id] ? LEVEL_NO[LEVEL[d.id]] : TYPE_NO[d.e.t]})`);
+      g.on('click', (ev,d) => { ev.stopPropagation(); select(d.id); })
+       .on('keydown', (ev,d) => { if (ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); select(d.id); } })
+       .call(d3.drag()
+         .on('start', (ev,d) => { if (!ev.active) sim.alphaTarget(.2).restart(); d.fx = d.x; d.fy = d.y; })
+         .on('drag', (ev,d) => { d.fx = ev.x; d.fy = ev.y; })
+         .on('end', (ev,d) => { if (!ev.active) sim.alphaTarget(0); if (d.id!==top){ d.fx = null; d.fy = null; } }));
+      return g; });
+    sim.nodes(vn); sim.force('link').links(vl);
+    sim.alpha(.75).restart();
+    pendingFit = doFit;
+    style();
+    $('#gall').setAttribute('aria-pressed', showAll);
+  }
+  function draw(){
+    gn.attr('transform', d=>`translate(${d.x},${d.y})`);
+    edges.attr('d', d => {
+      const s=d.source, t=d.target, dx=t.x-s.x, dy=t.y-s.y, L=Math.hypot(dx,dy)||1;
+      return `M${s.x+dx/L*(s.r+1)},${s.y+dy/L*(s.r+1)}L${t.x-dx/L*(t.r+2)},${t.y-dy/L*(t.r+2)}`; });
+  }
+  function style(){
+    const sel = state.sel, nb = sel ? NB[sel] : null;
+    gn.classed('sel', d=>d.id===sel).classed('nb', d=>nb && nb.has(d.id)).classed('faded', d=>nb && d.id!==sel && !nb.has(d.id));
+    gn.select('.plus').style('display', d => hasHidden(d.id) ? null : 'none');
+    edges.classed('hi', d=>sel && (d.r.s===sel || d.r.g===sel)).classed('faded', d=>sel && d.r.s!==sel && d.r.g!==sel);
+    $('#gcollapse').disabled = !(sel && expanded.has(sel) && sel!==top && !showAll);
+  }
+  const zoom = d3.zoom().scaleExtent([.12,4]).on('zoom', ev => root.attr('transform', ev.transform));
+  svg.call(zoom).on('dblclick.zoom', null);
+  function fit(step){
+    const el = svg.node(), W = el.clientWidth||800, H = el.clientHeight||600;
+    const ns = nodes.filter(n => visSet.has(n.id) && n.x != null); if (!ns.length || !W) return;
+    const x0=d3.min(ns,n=>n.x-n.cr), x1=d3.max(ns,n=>n.x+n.cr), y0=d3.min(ns,n=>n.y-n.r-10), y1=d3.max(ns,n=>n.y+n.r+n.lines.length*13+12);
+    const k = Math.min(1.5, .94*Math.min(W/(x1-x0), H/(y1-y0)));
+    const tx = W/2-k*(x0+x1)/2, ty = H/2-k*(y0+y1)/2;
+    if (step){ const c = d3.zoomTransform(el), kk = c.k + (k-c.k)*step;
+      svg.call(zoom.transform, d3.zoomIdentity.translate(c.x + (tx-c.x)*step, c.y + (ty-c.y)*step).scale(kk)); }
+    else svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(k));
+  }
+  const sameSet = (a,b) => a.size===b.size && [...a].every(x=>b.has(x));
+
+  bar.querySelectorAll('[data-l]').forEach(b => b.onclick = () => { layers[b.dataset.l] = !layers[b.dataset.l]; b.setAttribute('aria-pressed', layers[b.dataset.l]); update(); });
+  bar.querySelectorAll('[data-r]').forEach(b => b.onclick = () => { relOn[b.dataset.r] = !relOn[b.dataset.r]; b.setAttribute('aria-pressed', relOn[b.dataset.r]); update(false); });
+  $('#gall').onclick = () => { showAll = !showAll; update(); };
+  $('#greset').onclick = () => { showAll = false; expanded.clear(); expanded.add(top); update(); };
+  $('#gcollapse').onclick = () => { if (state.sel){ expanded.delete(state.sel); update(); } };
+  $("#gfit").onclick = () => fit();
+
+  graph = {
+    highlight(id, center){
+      if (id && !expanded.has(id)) expanded.add(id);
+      const nv = computeVisible();
+      if (!sameSet(nv, visSet)) update(true);
+      else { style(); if (center && id){ const n = nmap[id], el = svg.node(), k = Math.max(.8, d3.zoomTransform(el).k);
+        if (n && n.x != null) svg.transition().duration(450).call(zoom.transform, d3.zoomIdentity.translate(el.clientWidth/2-k*n.x, el.clientHeight/2-k*n.y).scale(k)); } }
+    }
+  };
+  if (state.sel) expanded.add(state.sel);
+  update(false);
+  for (let i=0;i<220;i++) sim.tick();
+  draw();
+  requestAnimationFrame(() => fit());
+}
+
+/* ---------- Diagrammer ---------- */
+let diag = null;
+function initDiagrams(){
+  $('#dlist').innerHTML = VIEWS.map((v,i)=>`<button data-i="${i}"><span>${esc(v.n)}</span><small>${v.nodes.filter(n=>n.e).length} elementer</small></button>`).join('');
+  $('#dsel').innerHTML = VIEWS.map((v,i)=>`<option value="${i}">${esc(v.n)}</option>`).join('');
+  $('#dlist').querySelectorAll('button').forEach(b => b.onclick = () => { openDiagram(+b.dataset.i); setHash('diagram-'+(+b.dataset.i+1)); });
+  $('#dsel').onchange = e => { openDiagram(+e.target.value); setHash('diagram-'+(+e.target.value+1)); };
+  const svg = d3.select('#dsvg');
+  const defs = svg.append('defs'); edgeMarkers(defs,'d-');
+  const root = svg.append('g');
+  const zoom = d3.zoom().scaleExtent([.1,4]).on('zoom', ev => root.attr('transform', ev.transform));
+  svg.call(zoom).on('dblclick.zoom', null);
+  let cur = null, bbox = null, nodeById = {};
+  function fit(){
+    if (!bbox) return; const el = svg.node(), W = el.clientWidth||800, H = el.clientHeight||500;
+    const k = Math.min(1.4, .94*Math.min(W/bbox.w, H/bbox.h));
+    svg.call(zoom.transform, d3.zoomIdentity.translate(W/2-k*(bbox.x+bbox.w/2), H/2-k*(bbox.y+bbox.h/2)).scale(k));
+  }
+  $('#dfit').onclick = fit;
+  function render(i){
+    const v = VIEWS[i]; cur = i; root.selectAll('*').remove();
+    nodeById = Object.fromEntries(v.nodes.map(n=>[n.id,n]));
+    const isAnc = (a,b) => { let p = nodeById[b]?.par; while(p){ if (p===a) return true; p = nodeById[p]?.par; } return false; };
+    const hasKids = new Set(v.nodes.map(n=>n.par).filter(Boolean));
+    const ns = v.nodes.filter(n=>n.e && E[n.e]).sort((a,b)=>a.dp-b.dp);
+    bbox = {x:d3.min(ns,n=>n.x)-30, y:d3.min(ns,n=>n.y)-30}; bbox.w = d3.max(ns,n=>n.x+n.w)+30-bbox.x; bbox.h = d3.max(ns,n=>n.y+n.h)+30-bbox.y;
+    const ng = root.append('g'), eg = root.append('g');
+    const g = ng.selectAll('g').data(ns).join('g').attr('class', n => `dn f-${layerOf(n.e)}${hasKids.has(n.id)?' cont':''}`).attr('data-e', n=>n.e)
+      .attr('tabindex',0).attr('role','button').attr('aria-label', n=>E[n.e].n);
+    g.append('rect').attr('x',n=>n.x).attr('y',n=>n.y).attr('width',n=>n.w).attr('height',n=>n.h).attr('rx', n => E[n.e].t==='Capability'||E[n.e].t==='Resource' ? 6 : 3);
+    g.append('foreignObject').attr('x',n=>n.x).attr('y',n=>n.y).attr('width',n=>n.w).attr('height',n=>n.h)
+      .append('xhtml:div').attr('class','lab').text(n=>E[n.e].n);
+    g.append('text').attr('class','tp').attr('x',n=>n.x+n.w-5).attr('y',n=>n.y+n.h-5).attr('text-anchor','end').text(n => n.h>=60 && n.w>=110 ? TYPE_NO[E[n.e].t] : '');
+    g.append('title').text(n=>`${E[n.e].n} (${TYPE_NO[E[n.e].t]})`);
+    g.on('click', (ev,n) => { ev.stopPropagation(); select(n.e); })
+     .on('keydown', (ev,n) => { if (ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); select(n.e); } });
+    const clip = (r, tx, ty) => { const cx=r.x+r.w/2, cy=r.y+r.h/2, dx=tx-cx, dy=ty-cy; if(!dx&&!dy) return [cx,cy]; const s=Math.min((r.w/2)/Math.abs(dx||1e-9),(r.h/2)/Math.abs(dy||1e-9)); return [cx+dx*s, cy+dy*s]; };
+    const cs = v.conns.filter(c => nodeById[c.s] && nodeById[c.g] && !isAnc(c.s,c.g) && !isAnc(c.g,c.s));
+    eg.selectAll('path').data(cs).join('path').attr('class', c => 'dedge d-'+(R[c.r]?.t||'Association'))
+      .attr('data-s', c=>nodeById[c.s].e).attr('data-g', c=>nodeById[c.g].e)
+      .attr('marker-start', c=>markerFor(R[c.r]?.t||'Association','d-')[0]).attr('marker-end', c=>markerFor(R[c.r]?.t||'Association','d-')[1])
+      .attr('d', c => { const a=nodeById[c.s], b=nodeById[c.g]; const p1=clip(a,b.x+b.w/2,b.y+b.h/2), p2=clip(b,a.x+a.w/2,a.y+a.h/2); return `M${p1[0]},${p1[1]}L${p2[0]},${p2[1]}`; });
+    // Dokumentasjon
+    const doc = v.d ? md(v.d) : '';
+    $('#ddoc').innerHTML = `<h2>${esc(v.n)}</h2>${doc ? `<details><summary>Om diagrammet</summary><div class="doc">${doc}</div></details>` : ''}`;
+    $('#dlist').querySelectorAll('button').forEach(b => b.setAttribute('aria-current', +b.dataset.i===i));
+    $('#dsel').value = i;
+    requestAnimationFrame(() => { fit(); diag.highlight(state.sel); });
+  }
+  diag = {
+    render,
+    highlight(id, center){
+      d3.selectAll('#dsvg .dn').classed('sel', function(){ return this.dataset.e===id; });
+      d3.selectAll('#dsvg .dedge').classed('hi', function(){ return id && (this.dataset.s===id || this.dataset.g===id); });
+      if (center && id && cur!=null){
+        const n = VIEWS[cur].nodes.find(n=>n.e===id); if (!n) return;
+        const el = svg.node(), W = el.clientWidth, H = el.clientHeight, k = Math.max(.9, d3.zoomTransform(el).k);
+        svg.transition().duration(450).call(zoom.transform, d3.zoomIdentity.translate(W/2-k*(n.x+n.w/2), H/2-k*(n.y+n.h/2)).scale(k));
+      }
+    }
+  };
+  render(state.diagram);
+}
+function openDiagram(i){ state.diagram = i; if (diag) diag.render(i); }
+
+/* ---------- Katalog ---------- */
+let katMode = 'el', katType = null, katQ = '';
+function renderKat(){
+  const types = [...new Set(Object.values(E).map(e=>e.t))].sort((a,b)=>(TYPE_NO[a]).localeCompare(TYPE_NO[b],'nb'));
+  $('#kat').innerHTML = `<p class="intro">Alt innholdet i modellen: ${Object.keys(E).length} elementer, ${Object.keys(R).length} relasjoner og ${VIEWS.length} diagrammer, ordnet etter mappestrukturen i modellen.</p>
+    <div class="kbar">
+      <div class="seg" role="group" aria-label="Vis"><button aria-pressed="true" data-m="el">Elementer</button><button aria-pressed="false" data-m="rel">Relasjoner</button></div>
+      <input class="filter" id="kq" type="search" placeholder="Filtrer på navn eller beskrivelse" aria-label="Filtrer katalogen">
+    </div>
+    <div class="chips" id="ktypes" style="margin-bottom:16px"><button class="chip" aria-pressed="true" data-t="">Alle typer</button>${types.map(t=>`<button class="chip" aria-pressed="false" data-t="${t}">${TYPE_NO[t]} (${Object.values(E).filter(e=>e.t===t).length})</button>`).join('')}</div>
+    <div id="klist"></div>`;
+  $('#kat').querySelectorAll('[data-m]').forEach(b => b.onclick = () => { katMode = b.dataset.m; $('#kat').querySelectorAll('[data-m]').forEach(x=>x.setAttribute('aria-pressed', x===b)); listKat(); });
+  $('#ktypes').querySelectorAll('.chip').forEach(b => b.onclick = () => { katType = b.dataset.t || null; $('#ktypes').querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed', x===b)); listKat(); });
+  $('#kq').oninput = e => { katQ = e.target.value.trim().toLowerCase(); listKat(); };
+  listKat();
+}
+function listKat(){
+  const match = e => (!katType || e.t===katType) && (!katQ || e.n.toLowerCase().includes(katQ) || e.d.toLowerCase().includes(katQ));
+  const capDef = e => (e.d||'').replace(/\r/g,'').split(/\n\s*\n/)[0].replace(/\*\*/g,'').replace(/^#+\s*/,'').replace(/\s+/g,' ').trim();
+  const row = e => `<button class="row" data-go="${e.id}" data-id="${e.id}"><span class="tbc">${tbadge(e.id)}${LEVEL[e.id]?` <span class="meta">N${LEVEL[e.id]}</span>`:''}</span><span class="rname">${esc(e.n)}</span><span class="def">${e.t==='Capability' ? esc(capDef(e)) : ''}</span><span class="meta">${deg(e.id)} relasjoner</span></button>`;
+  let h = '';
+  if (katMode==='el'){
+    const tree = {};
+    Object.values(E).filter(match).forEach(e => { const top = e.f[0]||'Annet', sub = e.f.slice(1).join(' / '); ((tree[top] ||= {})[sub] ||= []).push(e); });
+    const tops = ['Strategy','Motivation','Implementation & Migration','Other'].filter(t=>tree[t]).concat(Object.keys(tree).filter(t=>!['Strategy','Motivation','Implementation & Migration','Other'].includes(t)));
+    for (const t of tops){
+      const subs = tree[t]; const n = Object.values(subs).reduce((a,b)=>a+b.length,0);
+      h += `<div class="folder"><h3>${esc(FOLDER_NO[t]||t)} <small>${n} elementer</small></h3>`;
+      for (const s of Object.keys(subs).sort((a,b)=> (a===''?-1:b===''?1:a.localeCompare(b,'nb')))){
+        const list = subs[s].sort((a,b) => (LEVEL[a.id]||9)-(LEVEL[b.id]||9) || a.n.localeCompare(b.n,'nb'));
+        if (s) h += `<h4>${esc(s)}</h4>`;
+        h += `<div class="rows">${list.map(row).join('')}</div>`;
+      }
+      h += `</div>`;
+    }
+    if (!h) h = '<p class="emptyp">Ingen elementer passer filteret. Fjern typefilteret eller endre søkeordet.</p>';
+  } else {
+    const rels = Object.values(R).filter(r => match(E[r.s]) || match(E[r.g]));
+    const byT = {}; rels.forEach(r => (byT[r.t] ||= []).push(r));
+    for (const t of Object.keys(REL_NO).filter(t=>byT[t])){
+      h += `<div class="folder"><h3>${REL_NO[t][2]} <small>${byT[t].length} relasjoner</small></h3><div class="rows">` +
+        byT[t].sort((a,b)=>E[a.s].n.localeCompare(E[b.s].n,'nb')||E[a.g].n.localeCompare(E[b.g].n,'nb')).map(r=>`<div class="row relrow"><button class="lk" data-go="${r.s}">${esc(E[r.s].n)}</button><span class="rt">${esc(REL_NO[t][0])}${r.n?`<br><i>${esc(r.n)}</i>`:''}</span><button class="lk" data-go="${r.g}">${esc(E[r.g].n)}</button></div>`).join('') + `</div></div>`;
+    }
+    if (!h) h = '<p class="emptyp">Ingen relasjoner passer filteret. Fjern typefilteret eller endre søkeordet.</p>';
+  }
+  $('#klist').innerHTML = h;
+  markSelection();
+}
+
+/* ---------- Søk ---------- */
+const q = $('#q'), res = $('#res'); let hits = [], act = 0;
+function doSearch(){
+  const s = q.value.trim().toLowerCase();
+  if (!s){ res.classList.remove('open'); return; }
+  const all = Object.values(E);
+  hits = all.filter(e=>e.n.toLowerCase().includes(s)).sort((a,b)=>(a.n.toLowerCase().indexOf(s))-(b.n.toLowerCase().indexOf(s)) || a.n.length-b.n.length)
+    .concat(all.filter(e=>!e.n.toLowerCase().includes(s) && e.d.toLowerCase().includes(s))).slice(0,14);
+  act = 0;
+  res.innerHTML = hits.length ? hits.map((e,i)=>`<button role="option" data-i="${i}" class="${i===0?'act':''}">${tbadge(e.id)}<span><b>${esc(e.n)}</b><span class="ctx">${LEVEL[e.id]?LEVEL_NO[LEVEL[e.id]]:esc(e.f.map(f=>FOLDER_NO[f]||f).join(' / '))}${e.n.toLowerCase().includes(s)?'':', treff i beskrivelsen'}</span></span></button>`).join('')
+    : `<div class="empty">Ingen treff på «${esc(q.value)}». Prøv et kortere eller annet ord.</div>`;
+  res.classList.add('open');
+  res.querySelectorAll('button').forEach(b => b.onclick = () => pick(+b.dataset.i));
+}
+function pick(i){ const e = hits[i]; if (!e) return; res.classList.remove('open'); q.value=''; select(e.id,{center:true,scroll:true}); }
+q.addEventListener('input', doSearch);
+q.addEventListener('keydown', ev => {
+  if (ev.key==='ArrowDown'||ev.key==='ArrowUp'){ ev.preventDefault(); act = Math.max(0, Math.min(hits.length-1, act + (ev.key==='ArrowDown'?1:-1))); res.querySelectorAll('button').forEach((b,i)=>b.classList.toggle('act', i===act)); }
+  else if (ev.key==='Enter'){ ev.preventDefault(); pick(act); }
+  else if (ev.key==='Escape'){ res.classList.remove('open'); }
+});
+document.addEventListener('click', ev => { if (!ev.target.closest('.search')) res.classList.remove('open'); });
+document.addEventListener('keydown', ev => { if (ev.key==='/' && document.activeElement!==q && !/input|textarea|select/i.test(document.activeElement.tagName)){ ev.preventDefault(); q.focus(); } });
+
+/* ---------- Tema ---------- */
+$('#theme').onclick = () => {
+  const r = document.documentElement, dark = r.dataset.theme ? r.dataset.theme==='dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  r.dataset.theme = dark ? 'light' : 'dark';
+  try { localStorage.setItem('na-theme', r.dataset.theme); } catch(e){}
+};
+try { const t = localStorage.getItem('na-theme'); if (t) document.documentElement.dataset.theme = t; } catch(e){}
+
+/* ---------- Fullskjerm og innebygging ---------- */
+(function(){
+  const fs = $('#fullscreen'), nt = $('#newtab');
+  if (document.fullscreenEnabled){
+    fs.hidden = false;
+    fs.onclick = () => document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen().catch(()=>{});
+    document.addEventListener('fullscreenchange', () => fs.setAttribute('aria-pressed', !!document.fullscreenElement));
+  }
+  let embedded = false; try { embedded = window.self !== window.top; } catch(e){ embedded = true; }
+  if (embedded){ nt.hidden = false; const upd = () => nt.href = location.href; upd(); window.addEventListener('hashchange', upd); }
+})();
+
+/* ---------- Ruting ---------- */
+$('#mver').textContent = `Modellversjon ${DATA.model.version}, ${Object.keys(E).length} elementer og ${Object.keys(R).length} relasjoner` + (DATA.generated ? `, generert ${DATA.generated}` : '');
+function route(){
+  if (ignoreHash){ ignoreHash = false; return; }
+  const h = location.hash.slice(1);
+  const m = h.match(/^diagram-(\d+)$/);
+  if (m && VIEWS[+m[1]-1]) show('diagrammer',{diagram:+m[1]-1, noHash:true});
+  else if (['kart','motivasjon','nettverk','diagrammer','katalog'].includes(h)) show(h,{noHash:true});
+  else if (E[h]){ if(!inited[state.view]) show('nettverk',{noHash:true}); select(h,{scroll:true,center:true}); }
+  else show('nettverk',{noHash:true});
+}
+window.addEventListener('hashchange', route);
+route();
+</script>
+</body>
+</html>

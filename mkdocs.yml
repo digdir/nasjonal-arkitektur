@@ -22,7 +22,8 @@ nav:
   - Innledning: index.md
   - Dokumentasjon av modell for Nasjonal arkitektur:
     - Innledning: modell.md
-    - Interaktiv modell i Archi: interaktiv-modell.md
+    - Modellutforsker: modellutforsker-visning.md
+    - Archi-rapport: interaktiv-modell.md
   - Prøv Arkitekturassistenten (PoC):
     - Om arkitekturassistenten: arkitekturassistent.md
     - Oppsett og bruk: arkitekturassistent-oppsett.md
