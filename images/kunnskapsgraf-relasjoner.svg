@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 892" width="1200" height="892" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="pB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2F5597"/></marker><marker id="pG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6B7280"/></marker><marker id="pL" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C3C8D1"/></marker></defs>
+<rect width="1200" height="892" fill="#FFFFFF"/>
+<rect x="20" y="16" width="700" height="72" rx="10" fill="#FFFFFF" stroke="#1F2A3C" stroke-width="1.5"/>
+<circle cx="48" cy="36" r="7" fill="#2F5597"/><path d="M36,61 Q36,46 48,46 Q60,46 60,61 z" fill="#2F5597"/>
+<text x="74" y="45" font-size="15" fill="#1F2A3C"><tspan font-weight="bold">Behov: </tspan>«En regnskapsfører skal hente opplysninger på vegne av en kunde – hva trengs?»</text>
+<text x="74" y="73" font-size="13.5" fill="#6B7280" text-anchor="start" font-weight="normal" font-style="italic">… eller en spørring på innhold, f.eks. «Hvilke API-er bruker begrepet fullmakt?»</text>
+<line x1="140" y1="88" x2="140" y2="106" stroke="#6B7280" stroke-width="1.5" marker-end="url(#pG)"/>
+<rect x="740" y="16" width="440" height="72" rx="10" fill="#FFFFFF" stroke="#C3C8D1" stroke-width="1.2"/>
+<text x="756" y="40" font-size="13.5" fill="#1F2A3C" text-anchor="start" font-weight="bold" font-style="normal">Kunnskapsgraf = kildene + eksplisitte koblinger mellom dem</text>
+<rect x="756" y="56" width="26" height="16" rx="4" fill="#E8F0FA" stroke="#F4C542" stroke-width="4"/>
+<text x="788" y="69" font-size="12.5" fill="#1F2A3C" text-anchor="start" font-weight="normal" font-style="normal">semantisk treff</text>
+<line x1="886" y1="64" x2="914" y2="64" stroke="#2F5597" stroke-width="2.5" marker-end="url(#pB)"/>
+<text x="920" y="69" font-size="12.5" fill="#1F2A3C" text-anchor="start" font-weight="normal" font-style="normal">relasjon som følges</text>
+<rect x="1046" y="56" width="22" height="16" rx="4" fill="#FFFFFF" stroke="#C3C8D1" stroke-dasharray="3 2"/>
+<text x="1074" y="69" font-size="12.5" fill="#1F2A3C" text-anchor="start" font-weight="normal" font-style="normal">ikke relevant</text>
+<rect x="20" y="108" width="1160" height="482" rx="12" fill="#F5F7FB" stroke="#C9D6EA"/>
+<circle cx="46" cy="133" r="12" fill="#7F6000"/>
+<text x="46" y="138" font-size="14" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal">1</text>
+<text x="66" y="139" font-size="16" fill="#7F6000"><tspan font-weight="bold">Semantisk søk</tspan><tspan font-size="13" fill="#6B7280"> – finner startpunkter ut fra mening</tspan></text>
+<circle cx="452" cy="133" r="12" fill="#2F5597"/>
+<text x="452" y="138" font-size="14" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal">2</text>
+<text x="472" y="139" font-size="16" fill="#2F5597"><tspan font-weight="bold">Grafnavigasjon</tspan><tspan font-size="13" fill="#6B7280"> – følger eksplisitte relasjoner på tvers av kildene</tspan></text>
+<text x="1166" y="138" font-size="12" fill="#8A93A3" text-anchor="end" font-weight="normal" font-style="italic">forenklet eksempel</text>
+<line x1="830" y1="522.0" x2="938" y2="522.0" stroke="#C3C8D1" stroke-width="1.3" marker-end="url(#pL)"/>
+<line x1="235" y1="258.0" x2="318" y2="258.0" stroke="#2F5597" stroke-width="2.5" marker-end="url(#pB)"/>
+<line x1="235" y1="346.0" x2="318" y2="346.0" stroke="#2F5597" stroke-width="2.5" marker-end="url(#pB)"/>
+<line x1="235" y1="434.0" x2="318" y2="434.0" stroke="#2F5597" stroke-width="2.5" marker-end="url(#pB)"/>
+<line x1="520" y1="258.0" x2="628" y2="258.0" stroke="#2F5597" stroke-width="2.5" marker-end="url(#pB)"/>
+<line x1="520" y1="426.0" x2="628" y2="354.0" stroke="#2F5597" stroke-width="2.5" marker-end="url(#pB)"/>
+<line x1="830" y1="258.0" x2="938" y2="258.0" stroke="#2F5597" stroke-width="2.5" marker-end="url(#pB)"/>
+<line x1="830" y1="346.0" x2="938" y2="346.0" stroke="#2F5597" stroke-width="2.5" marker-end="url(#pB)"/>
+<line x1="1040.0" y1="284" x2="1038.0" y2="320" stroke="#2F5597" stroke-width="2.5" marker-end="url(#pB)"/>
+<rect x="30" y="227" width="210" height="62" rx="12" fill="none" stroke="#F4C542" stroke-width="5"/>
+<rect x="35" y="232" width="200" height="52" rx="8" fill="#E8F0FA" stroke="#2F5597" stroke-width="2"/>
+<text x="135.0" y="251" font-size="12" fill="#2F5597" text-anchor="middle" font-weight="normal" font-style="normal">NA-modellen · kapabilitet</text>
+<text x="135.0" y="272" font-size="15" fill="#1F2A3C" text-anchor="middle" font-weight="bold" font-style="normal">Representasjon</text>
+<rect x="30" y="315" width="210" height="62" rx="12" fill="none" stroke="#F4C542" stroke-width="5"/>
+<rect x="35" y="320" width="200" height="52" rx="8" fill="#E3F1EC" stroke="#2E7D5B" stroke-width="2"/>
+<text x="135.0" y="339" font-size="12" fill="#2E7D5B" text-anchor="middle" font-weight="normal" font-style="normal">data.norge.no · begrep</text>
+<text x="135.0" y="360" font-size="15" fill="#1F2A3C" text-anchor="middle" font-weight="bold" font-style="normal">Fullmakt</text>
+<rect x="30" y="403" width="210" height="62" rx="12" fill="none" stroke="#F4C542" stroke-width="5"/>
+<rect x="35" y="408" width="200" height="52" rx="8" fill="#E3F1EC" stroke="#2E7D5B" stroke-width="2"/>
+<text x="135.0" y="427" font-size="12" fill="#2E7D5B" text-anchor="middle" font-weight="normal" font-style="normal">data.norge.no · begrep</text>
+<text x="135.0" y="448" font-size="15" fill="#1F2A3C" text-anchor="middle" font-weight="bold" font-style="normal">Regnskapsfører</text>
+<rect x="35" y="496" width="200" height="52" rx="8" fill="#FFFFFF" stroke="#C3C8D1" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="135.0" y="515" font-size="12" fill="#A0A7B4" text-anchor="middle" font-weight="normal" font-style="normal">NA-modellen · kapabilitet</text>
+<text x="135.0" y="536" font-size="15" fill="#A0A7B4" text-anchor="middle" font-weight="normal" font-style="normal">Samtykke</text>
+<rect x="315" y="227" width="210" height="62" rx="12" fill="none" stroke="#F4C542" stroke-width="5"/>
+<rect x="320" y="232" width="200" height="52" rx="8" fill="#E6E9EF" stroke="#1F2A3C" stroke-width="2"/>
+<text x="420.0" y="251" font-size="12" fill="#1F2A3C" text-anchor="middle" font-weight="normal" font-style="normal">Ressursoversikten · løsning</text>
+<text x="420.0" y="272" font-size="15" fill="#1F2A3C" text-anchor="middle" font-weight="bold" font-style="normal">Altinn autorisasjon</text>
+<rect x="320" y="320" width="200" height="52" rx="8" fill="#FFFFFF" stroke="#5A6270" stroke-width="2"/>
+<text x="420.0" y="339" font-size="12" fill="#5A6270" text-anchor="middle" font-weight="normal" font-style="normal">Dokumentasjon · veiledning</text>
+<text x="420.0" y="360" font-size="15" fill="#1F2A3C" text-anchor="middle" font-weight="bold" font-style="normal">Delegering av tilgang</text>
+<rect x="320" y="408" width="200" height="52" rx="8" fill="#F3EAF7" stroke="#7A4E8E" stroke-width="2"/>
+<text x="420.0" y="427" font-size="12" fill="#7A4E8E" text-anchor="middle" font-weight="normal" font-style="normal">Annen graf · regelverk</text>
+<text x="420.0" y="448" font-size="15" fill="#1F2A3C" text-anchor="middle" font-weight="bold" font-style="normal">Krav til regnskapsførere</text>
+<rect x="630" y="232" width="200" height="52" rx="8" fill="#E6E9EF" stroke="#1F2A3C" stroke-width="2"/>
+<text x="730.0" y="251" font-size="12" fill="#1F2A3C" text-anchor="middle" font-weight="normal" font-style="normal">Ressursoversikten · løsning</text>
+<text x="730.0" y="272" font-size="15" fill="#1F2A3C" text-anchor="middle" font-weight="bold" font-style="normal">Maskinporten</text>
+<rect x="630" y="320" width="200" height="52" rx="8" fill="#E3F1EC" stroke="#2E7D5B" stroke-width="2"/>
+<text x="730.0" y="339" font-size="12" fill="#2E7D5B" text-anchor="middle" font-weight="normal" font-style="normal">data.norge.no · informasjonsmodell</text>
+<text x="730.0" y="360" font-size="15" fill="#1F2A3C" text-anchor="middle" font-weight="bold" font-style="normal">Kundeopplysninger</text>
+<rect x="630" y="496" width="200" height="52" rx="8" fill="#FFFFFF" stroke="#C3C8D1" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="730.0" y="515" font-size="12" fill="#A0A7B4" text-anchor="middle" font-weight="normal" font-style="normal">NA-modellen · kapabilitet</text>
+<text x="730.0" y="536" font-size="15" fill="#A0A7B4" text-anchor="middle" font-weight="normal" font-style="normal">Åpne data</text>
+<rect x="940" y="232" width="200" height="52" rx="8" fill="#E3F1EC" stroke="#2E7D5B" stroke-width="2"/>
+<text x="1040.0" y="251" font-size="12" fill="#2E7D5B" text-anchor="middle" font-weight="normal" font-style="normal">data.norge.no · API</text>
+<text x="1040.0" y="272" font-size="15" fill="#1F2A3C" text-anchor="middle" font-weight="bold" font-style="normal">Kundeopplysnings-API</text>
+<rect x="940" y="320" width="200" height="52" rx="8" fill="#E3F1EC" stroke="#2E7D5B" stroke-width="2"/>
+<text x="1040.0" y="339" font-size="12" fill="#2E7D5B" text-anchor="middle" font-weight="normal" font-style="normal">data.norge.no · datasett</text>
+<text x="1040.0" y="360" font-size="15" fill="#1F2A3C" text-anchor="middle" font-weight="bold" font-style="normal">Kundeopplysninger</text>
+<rect x="940" y="496" width="200" height="52" rx="8" fill="#FFFFFF" stroke="#C3C8D1" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="1040.0" y="515" font-size="12" fill="#A0A7B4" text-anchor="middle" font-weight="normal" font-style="normal">data.norge.no · katalog</text>
+<text x="1040.0" y="536" font-size="15" fill="#A0A7B4" text-anchor="middle" font-weight="normal" font-style="normal">Felles datakatalog</text>
+<text x="277.5" y="251.0" font-size="12" fill="#2F5597" text-anchor="middle" font-style="italic" paint-order="stroke" stroke="#F5F7FB" stroke-width="6" stroke-linejoin="round">realiseres av</text>
+<text x="277.5" y="339.0" font-size="12" fill="#2F5597" text-anchor="middle" font-style="italic" paint-order="stroke" stroke="#F5F7FB" stroke-width="6" stroke-linejoin="round">omtalt i</text>
+<text x="277.5" y="427.0" font-size="12" fill="#2F5597" text-anchor="middle" font-style="italic" paint-order="stroke" stroke="#F5F7FB" stroke-width="6" stroke-linejoin="round">definert i</text>
+<text x="575.0" y="251.0" font-size="12" fill="#2F5597" text-anchor="middle" font-style="italic" paint-order="stroke" stroke="#F5F7FB" stroke-width="6" stroke-linejoin="round">brukes med</text>
+<text x="585.0" y="408.0" font-size="12" fill="#2F5597" text-anchor="start" font-style="italic" paint-order="stroke" stroke="#F5F7FB" stroke-width="6" stroke-linejoin="round">stiller krav til</text>
+<text x="885.0" y="251.0" font-size="12" fill="#2F5597" text-anchor="middle" font-style="italic" paint-order="stroke" stroke="#F5F7FB" stroke-width="6" stroke-linejoin="round">sikrer tilgang til</text>
+<text x="885.0" y="339.0" font-size="12" fill="#2F5597" text-anchor="middle" font-style="italic" paint-order="stroke" stroke="#F5F7FB" stroke-width="6" stroke-linejoin="round">beskriver</text>
+<text x="1048.0" y="306.0" font-size="12" fill="#2F5597" text-anchor="start" font-style="italic" paint-order="stroke" stroke="#F5F7FB" stroke-width="6" stroke-linejoin="round">leverer</text>
+<rect x="96" y="160" width="432" height="34" rx="8" fill="#FFF8E1" stroke="#BF9000" stroke-width="1.3"/>
+<text x="312" y="182" font-size="13" fill="#7F6000" text-anchor="middle" font-weight="bold" font-style="normal">RAG kan finne begge – men koblingen mellom dem må KI gjette</text>
+<line x1="277" y1="194" x2="277" y2="236" stroke="#BF9000" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="890" y="578" font-size="13" fill="#2F5597" text-anchor="middle" font-weight="bold" font-style="normal">API, datasett og regelverk ligner ikke spørsmålet – de nås via relasjonene</text>
+<line x1="600" y1="590" x2="600" y2="604" stroke="#2F5597" stroke-width="2" marker-end="url(#pB)"/>
+<rect x="20" y="606" width="1160" height="66" rx="10" fill="#E8F0FA" stroke="#2F5597" stroke-width="1.5"/>
+<circle cx="52" cy="639" r="16" fill="#2F5597"/>
+<text x="52" y="645" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal">3</text>
+<text x="80" y="633" font-size="16" fill="#1F2A3C" text-anchor="start" font-weight="bold" font-style="normal">KI setter sammen svaret fra det relevante utsnittet av grafen</text>
+<text x="80" y="656" font-size="14" fill="#6B7280" text-anchor="start" font-weight="normal" font-style="normal">Hver del av svaret peker tilbake til en node og en relasjon – svaret kan etterprøves.</text>
+<rect x="20" y="690" width="570" height="116" rx="10" fill="#FFF8E1" stroke="#BF9000" stroke-width="1.5"/>
+<text x="38" y="716" font-size="15.5" fill="#7F6000" text-anchor="start" font-weight="bold" font-style="normal">Tradisjonell RAG: KI må finne relasjonene selv</text>
+<text x="38" y="741" font-size="14" fill="#1F2A3C" text-anchor="start" font-weight="normal" font-style="normal">Finner relevante tekster – også løsninger i ressursoversikten. Men små</text>
+<text x="38" y="763" font-size="14" fill="#1F2A3C" text-anchor="start" font-weight="normal" font-style="normal">tekstbiter mister sammenhengene, og store gir upresise treff. KI må selv</text>
+<text x="38" y="785" font-size="14" fill="#1F2A3C" text-anchor="start" font-weight="normal" font-style="normal">gjette hvordan bitene henger sammen – ulikt fra gang til gang.</text>
+<rect x="610" y="690" width="570" height="116" rx="10" fill="#E8F0FA" stroke="#2F5597" stroke-width="1.5"/>
+<text x="628" y="716" font-size="15.5" fill="#2F5597" text-anchor="start" font-weight="bold" font-style="normal">Kunnskapsgraf: relasjonene er modellert</text>
+<text x="628" y="741" font-size="14" fill="#1F2A3C" text-anchor="start" font-weight="normal" font-style="normal">Koblingene er beskrevet én gang, eksplisitt og på tvers av kildene.</text>
+<text x="628" y="763" font-size="14" fill="#1F2A3C" text-anchor="start" font-weight="normal" font-style="normal">KI følger dem i stedet for å gjette – også til det som ikke ligner</text>
+<text x="628" y="785" font-size="14" fill="#1F2A3C" text-anchor="start" font-weight="normal" font-style="normal">spørsmålet. Samme utsnitt hver gang, og hver kobling kan etterprøves.</text>
+<rect x="20" y="822" width="1160" height="54" rx="10" fill="#1F2A3C"/>
+<text x="600" y="855" font-size="17" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal">Med RAG må KI finne relasjonene selv – i en kunnskapsgraf er de allerede der</text>
+</svg>
